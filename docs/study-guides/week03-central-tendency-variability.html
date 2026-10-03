@@ -105,6 +105,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -162,6 +163,8 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#part-i-central-tendency" id="toc-part-i-central-tendency" class="nav-link" data-scroll-target="#part-i-central-tendency">Part I — Central Tendency</a>
+  <ul class="collapse">
   <li><a href="#why-do-we-need-measures-of-center" id="toc-why-do-we-need-measures-of-center" class="nav-link" data-scroll-target="#why-do-we-need-measures-of-center">1. Why Do We Need Measures of Center?</a></li>
   <li><a href="#the-mode" id="toc-the-mode" class="nav-link" data-scroll-target="#the-mode">2. The Mode</a></li>
   <li><a href="#the-median" id="toc-the-median" class="nav-link" data-scroll-target="#the-median">3. The Median</a></li>
@@ -179,9 +182,15 @@ window.Quarto = {
   <li><a href="#how-the-mean-changes" id="toc-how-the-mean-changes" class="nav-link" data-scroll-target="#how-the-mean-changes">15. How the Mean Changes</a></li>
   <li><a href="#why-do-we-need-three-measures-of-center" id="toc-why-do-we-need-three-measures-of-center" class="nav-link" data-scroll-target="#why-do-we-need-three-measures-of-center">16. Why Do We Need Three Measures of Center?</a></li>
   <li><a href="#outliers-mean-vs.-median" id="toc-outliers-mean-vs.-median" class="nav-link" data-scroll-target="#outliers-mean-vs.-median">17. Outliers: Mean vs.&nbsp;Median</a></li>
+  </ul></li>
+  <li><a href="#part-ii-distribution-shape" id="toc-part-ii-distribution-shape" class="nav-link" data-scroll-target="#part-ii-distribution-shape">Part II — Distribution Shape</a>
+  <ul class="collapse">
   <li><a href="#distribution-shape-and-skewness" id="toc-distribution-shape-and-skewness" class="nav-link" data-scroll-target="#distribution-shape-and-skewness">18. Distribution Shape and Skewness</a></li>
   <li><a href="#mean-median-mode-and-shape" id="toc-mean-median-mode-and-shape" class="nav-link" data-scroll-target="#mean-median-mode-and-shape">19. Mean, Median, Mode, and Shape</a></li>
   <li><a href="#other-distribution-shapes" id="toc-other-distribution-shapes" class="nav-link" data-scroll-target="#other-distribution-shapes">20. Other Distribution Shapes</a></li>
+  </ul></li>
+  <li><a href="#part-iii-variability" id="toc-part-iii-variability" class="nav-link" data-scroll-target="#part-iii-variability">Part III — Variability</a>
+  <ul class="collapse">
   <li><a href="#why-variability-matters" id="toc-why-variability-matters" class="nav-link" data-scroll-target="#why-variability-matters">21. Why Variability Matters</a></li>
   <li><a href="#the-range" id="toc-the-range" class="nav-link" data-scroll-target="#the-range">22. The Range</a></li>
   <li><a href="#interquartile-range" id="toc-interquartile-range" class="nav-link" data-scroll-target="#interquartile-range">23. Interquartile Range</a></li>
@@ -195,32 +204,35 @@ window.Quarto = {
   <li><a href="#standard-deviation" id="toc-standard-deviation" class="nav-link" data-scroll-target="#standard-deviation">31. Standard Deviation</a></li>
   <li><a href="#variance-vs.-standard-deviation" id="toc-variance-vs.-standard-deviation" class="nav-link" data-scroll-target="#variance-vs.-standard-deviation">32. Variance vs.&nbsp;Standard Deviation</a></li>
   <li><a href="#what-happens-when-scores-are-transformed" id="toc-what-happens-when-scores-are-transformed" class="nav-link" data-scroll-target="#what-happens-when-scores-are-transformed">33. What Happens When Scores Are Transformed?</a></li>
+  </ul></li>
+  <li><a href="#part-iv-applied-practice" id="toc-part-iv-applied-practice" class="nav-link" data-scroll-target="#part-iv-applied-practice">Part IV — Applied Practice</a>
+  <ul class="collapse">
   <li><a href="#the-week-3-worksheet" id="toc-the-week-3-worksheet" class="nav-link" data-scroll-target="#the-week-3-worksheet">34. The Week 3 Worksheet</a></li>
   <li><a href="#a-second-worksheet-dataset" id="toc-a-second-worksheet-dataset" class="nav-link" data-scroll-target="#a-second-worksheet-dataset">35. A Second Worksheet Dataset</a></li>
   <li><a href="#what-should-be-reported-together" id="toc-what-should-be-reported-together" class="nav-link" data-scroll-target="#what-should-be-reported-together">36. What Should Be Reported Together?</a></li>
   <li><a href="#choosing-measures-for-lucys-dataset" id="toc-choosing-measures-for-lucys-dataset" class="nav-link" data-scroll-target="#choosing-measures-for-lucys-dataset">37. Choosing Measures for Lucy’s Dataset</a></li>
+  </ul></li>
+  <li><a href="#part-v-integration-and-review" id="toc-part-v-integration-and-review" class="nav-link" data-scroll-target="#part-v-integration-and-review">Part V — Integration and Review</a>
+  <ul class="collapse">
   <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">38. How the Concepts Fit Together</a></li>
   <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">39. Important Terms</a></li>
   <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">40. Common Misunderstandings</a></li>
   <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">41. Tutorial Preparation</a></li>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">42. Practice Questions</a>
-  <ul class="collapse">
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">42. Practice Questions</a></li>
   <li><a href="#central-tendency" id="toc-central-tendency" class="nav-link" data-scroll-target="#central-tendency">Central Tendency</a></li>
   <li><a href="#weighted-mean" id="toc-weighted-mean" class="nav-link" data-scroll-target="#weighted-mean">Weighted Mean</a></li>
   <li><a href="#shape" id="toc-shape" class="nav-link" data-scroll-target="#shape">Shape</a></li>
   <li><a href="#variability" id="toc-variability" class="nav-link" data-scroll-target="#variability">Variability</a></li>
   <li><a href="#transformations" id="toc-transformations" class="nav-link" data-scroll-target="#transformations">Transformations</a></li>
-  </ul></li>
   <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">43. What You Should Be Able to Explain</a></li>
-  <li><a href="#readings-and-practice" id="toc-readings-and-practice" class="nav-link" data-scroll-target="#readings-and-practice">44. Readings and Practice</a>
-  <ul class="collapse">
+  <li><a href="#readings-and-practice" id="toc-readings-and-practice" class="nav-link" data-scroll-target="#readings-and-practice">44. Readings and Practice</a></li>
   <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">Required reading</a></li>
   <li><a href="#additional-supplied-reading" id="toc-additional-supplied-reading" class="nav-link" data-scroll-target="#additional-supplied-reading">Additional supplied reading</a></li>
   <li><a href="#lecture-and-course-materials" id="toc-lecture-and-course-materials" class="nav-link" data-scroll-target="#lecture-and-course-materials">Lecture and course materials</a></li>
   <li><a href="#instructor-assigned-practice" id="toc-instructor-assigned-practice" class="nav-link" data-scroll-target="#instructor-assigned-practice">Instructor-assigned practice</a></li>
-  </ul></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">45. References</a></li>
   <li><a href="#week-3-takeaway" id="toc-week-3-takeaway" class="nav-link" data-scroll-target="#week-3-takeaway">46. Week 3 Takeaway</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -246,8 +258,8 @@ window.Quarto = {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="overview" class="level1">
+<h1>Overview</h1>
 <p>Week 3 asks two closely related questions:</p>
 <ol type="1">
 <li><strong>Where is the center of a distribution?</strong></li>
@@ -267,8 +279,8 @@ window.Quarto = {
 </ul>
 <hr>
 </section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
 <p>By the end of this week, you should be able to:</p>
 <ol type="1">
 <li>Define <strong>mode, median, and mean</strong> and explain how they differ.</li>
@@ -292,8 +304,10 @@ window.Quarto = {
 </ol>
 <hr>
 </section>
-<section id="why-do-we-need-measures-of-center" class="level1">
-<h1>1. Why Do We Need Measures of Center?</h1>
+<section id="part-i-central-tendency" class="level1">
+<h1>Part I — Central Tendency</h1>
+<section id="why-do-we-need-measures-of-center" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-need-measures-of-center">1. Why Do We Need Measures of Center?</h2>
 <p>A frequency distribution tells us how scores are distributed, but researchers often also want a single value that summarizes what is <strong>typical</strong> or <strong>representative</strong>.</p>
 <p>The Week 3 lecture frames central tendency as an attempt to locate the “center” of a sample or population, while emphasizing that “center” can mean different things (Sigal, 2026).</p>
 <p>The three standard measures are:</p>
@@ -328,8 +342,8 @@ window.Quarto = {
 <p>The fact that there are three measures is not redundancy. They behave differently and are useful under different conditions.</p>
 <hr>
 </section>
-<section id="the-mode" class="level1">
-<h1>2. The Mode</h1>
+<section id="the-mode" class="level2">
+<h2 class="anchored" data-anchor-id="the-mode">2. The Mode</h2>
 <p>The <strong>mode</strong> is the value or category that occurs most often.</p>
 <p>For:</p>
 <p><span class="math display">\[
@@ -369,8 +383,8 @@ X=\{0,1,1,1,1,2,2,3,3,3,3,5\},
 <hr>
 </section>
 </section>
-<section id="the-median" class="level1">
-<h1>3. The Median</h1>
+<section id="the-median" class="level2">
+<h2 class="anchored" data-anchor-id="the-median">3. The Median</h2>
 <p>The <strong>median</strong> is the value that divides an ordered distribution in half based on frequency.</p>
 <p>It is also the <strong>50th percentile</strong> (Sigal, 2026).</p>
 <p>The median is not necessarily an observed score.</p>
@@ -399,8 +413,8 @@ Md=8.
 <hr>
 </section>
 </section>
-<section id="median-with-an-even-number-of-scores" class="level1">
-<h1>4. Median With an Even Number of Scores</h1>
+<section id="median-with-an-even-number-of-scores" class="level2">
+<h2 class="anchored" data-anchor-id="median-with-an-even-number-of-scores">4. Median With an Even Number of Scores</h2>
 <p>Suppose:</p>
 <p><span class="math display">\[
 X=\{3,3,4,5,7,8\}.
@@ -418,8 +432,8 @@ Md=\frac{4+5}{2}=4.5.
 <p>However, the Week 3 lecture introduces a more general interpolation method because the instructor wants students to think about the median as a <strong>location within an interval</strong>, especially when ties or grouped data are involved (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="the-courses-interpolated-median-formula" class="level1">
-<h1>5. The Course’s Interpolated Median Formula</h1>
+<section id="the-courses-interpolated-median-formula" class="level2">
+<h2 class="anchored" data-anchor-id="the-courses-interpolated-median-formula">5. The Course’s Interpolated Median Formula</h2>
 <p>The lecture uses cumulative frequency to estimate the location of the median within a score interval:</p>
 <p><span class="math display">\[
 Md = LL + W\left[\frac{0.5n-cf}{f}\right].
@@ -444,8 +458,8 @@ Md = LL + W\left[\frac{0.5n-cf}{f}\right].
 <p>This is the method the course expects students to learn for the Week 3 exercises.</p>
 <hr>
 </section>
-<section id="worked-interpolated-median-example" class="level1">
-<h1>6. Worked Interpolated Median Example</h1>
+<section id="worked-interpolated-median-example" class="level2">
+<h2 class="anchored" data-anchor-id="worked-interpolated-median-example">6. Worked Interpolated Median Example</h2>
 <p>The lecture uses:</p>
 <p><span class="math display">\[
 X=\{1,2,2,3,4,4,4,4,4,5\}.
@@ -523,8 +537,8 @@ Md
 <p>This value is an <strong>interpolated estimate within the median interval</strong>, not the ordinary midpoint of the 5th and 6th raw-score positions (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="a-course-specific-median-convention" class="level1">
-<h1>7. A Course-Specific Median Convention</h1>
+<section id="a-course-specific-median-convention" class="level2">
+<h2 class="anchored" data-anchor-id="a-course-specific-median-convention">7. A Course-Specific Median Convention</h2>
 <p>There is an important methodological point here.</p>
 <p>For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when (n) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).</p>
 <p>The supplemental median handout makes this intention explicit. It states that the quick ((n+1)/2) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).</p>
@@ -538,8 +552,8 @@ Md
 <hr>
 </section>
 </section>
-<section id="percentiles-beyond-the-median" class="level1">
-<h1>8. Percentiles Beyond the Median</h1>
+<section id="percentiles-beyond-the-median" class="level2">
+<h2 class="anchored" data-anchor-id="percentiles-beyond-the-median">8. Percentiles Beyond the Median</h2>
 <p>The (0.5) in the median formula is not arbitrary.</p>
 <p>It represents the desired percentile:</p>
 <p><span class="math display">\[
@@ -558,8 +572,8 @@ W\left[
 <p>Thus the median formula is part of a more general percentile-interpolation framework (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="median-for-grouped-data" class="level1">
-<h1>9. Median for Grouped Data</h1>
+<section id="median-for-grouped-data" class="level2">
+<h2 class="anchored" data-anchor-id="median-for-grouped-data">9. Median for Grouped Data</h2>
 <p>For grouped data, interval width does not have to equal 1.</p>
 <p>The lecture example is:</p>
 <table class="caption-top table">
@@ -620,8 +634,8 @@ Md
 <p>The same formula works because (W) explicitly represents the real width of the interval (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="supplemental-median-example" class="level1">
-<h1>10. Supplemental Median Example</h1>
+<section id="supplemental-median-example" class="level2">
+<h2 class="anchored" data-anchor-id="supplemental-median-example">10. Supplemental Median Example</h2>
 <p>The supplemental handout uses 30 age observations recorded in 3-year bins.</p>
 <p>The median falls in the <strong>24–26</strong> interval.</p>
 <p>The handout identifies:</p>
@@ -648,8 +662,8 @@ Md=24.1.
 <p>The handout contrasts this with the quick ((n+1)/2) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).</p>
 <hr>
 </section>
-<section id="the-mean" class="level1">
-<h1>11. The Mean</h1>
+<section id="the-mean" class="level2">
+<h2 class="anchored" data-anchor-id="the-mean">11. The Mean</h2>
 <p>The <strong>mean</strong> is the arithmetic average.</p>
 <p>For a sample:</p>
 <p><span class="math display">\[
@@ -674,8 +688,8 @@ X=\{3,7,4,6\},
 <p>Conceptually, the mean is a <strong>balance point</strong> based on magnitudes.</p>
 <hr>
 </section>
-<section id="sample-and-population-mean-notation" class="level1">
-<h1>12. Sample and Population Mean Notation</h1>
+<section id="sample-and-population-mean-notation" class="level2">
+<h2 class="anchored" data-anchor-id="sample-and-population-mean-notation">12. Sample and Population Mean Notation</h2>
 <p>The lecture distinguishes:</p>
 <ul>
 <li>sample mean: ({x}) or (M);</li>
@@ -692,8 +706,8 @@ M=\frac{\sum X}{n},
 <p>The symbols remind us whether the calculation describes a sample or the entire population of interest.</p>
 <hr>
 </section>
-<section id="the-weighted-mean" class="level1">
-<h1>13. The Weighted Mean</h1>
+<section id="the-weighted-mean" class="level2">
+<h2 class="anchored" data-anchor-id="the-weighted-mean">13. The Weighted Mean</h2>
 <p>A simple average of group means is only correct when the groups contribute equal weight.</p>
 <p>Suppose:</p>
 <ul>
@@ -733,8 +747,8 @@ M=\frac{\sum X}{n},
 <p>The larger group contributes more information and therefore more weight (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="weighted-mean-from-group-means" class="level1">
-<h1>14. Weighted Mean From Group Means</h1>
+<section id="weighted-mean-from-group-means" class="level2">
+<h2 class="anchored" data-anchor-id="weighted-mean-from-group-means">14. Weighted Mean From Group Means</h2>
 <p>If the original sums are not given, recover each group sum using:</p>
 <p><span class="math display">\[
 \sum X = \bar{x}n.
@@ -789,8 +803,8 @@ n_1+n_2+\cdots+n_k
 \]</span></p>
 <hr>
 </section>
-<section id="how-the-mean-changes" class="level1">
-<h1>15. How the Mean Changes</h1>
+<section id="how-the-mean-changes" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-mean-changes">15. How the Mean Changes</h2>
 <p>The Week 3 worksheet asks students to explore how transformations affect the mean (PSYC 210 Teaching Team, 2026b).</p>
 <p>The key patterns are:</p>
 <section id="change-one-score" class="level3">
@@ -831,8 +845,8 @@ Y_i=X_i-M,
 <hr>
 </section>
 </section>
-<section id="why-do-we-need-three-measures-of-center" class="level1">
-<h1>16. Why Do We Need Three Measures of Center?</h1>
+<section id="why-do-we-need-three-measures-of-center" class="level2">
+<h2 class="anchored" data-anchor-id="why-do-we-need-three-measures-of-center">16. Why Do We Need Three Measures of Center?</h2>
 <p>The lecture answers this by asking what kinds of data and distributions we have (Sigal, 2026).</p>
 <section id="mode" class="level3">
 <h3 class="anchored" data-anchor-id="mode">Mode</h3>
@@ -862,8 +876,8 @@ Y_i=X_i-M,
 <hr>
 </section>
 </section>
-<section id="outliers-mean-vs.-median" class="level1">
-<h1>17. Outliers: Mean vs.&nbsp;Median</h1>
+<section id="outliers-mean-vs.-median" class="level2">
+<h2 class="anchored" data-anchor-id="outliers-mean-vs.-median">17. Outliers: Mean vs.&nbsp;Median</h2>
 <p>The lecture gives the following error counts:</p>
 <table class="caption-top table">
 <thead>
@@ -907,8 +921,11 @@ Md=1.5.
 <p>The example demonstrates why the median can be more robust to extreme values than the mean (Sigal, 2026).</p>
 <hr>
 </section>
-<section id="distribution-shape-and-skewness" class="level1">
-<h1>18. Distribution Shape and Skewness</h1>
+</section>
+<section id="part-ii-distribution-shape" class="level1">
+<h1>Part II — Distribution Shape</h1>
+<section id="distribution-shape-and-skewness" class="level2">
+<h2 class="anchored" data-anchor-id="distribution-shape-and-skewness">18. Distribution Shape and Skewness</h2>
 <p>A distribution can be described not only by its center but also by its <strong>shape</strong>.</p>
 <p><strong>Skewness</strong> refers to asymmetry.</p>
 <p>The lecture distinguishes:</p>
@@ -929,8 +946,8 @@ Md=1.5.
 </ul>
 <hr>
 </section>
-<section id="mean-median-mode-and-shape" class="level1">
-<h1>19. Mean, Median, Mode, and Shape</h1>
+<section id="mean-median-mode-and-shape" class="level2">
+<h2 class="anchored" data-anchor-id="mean-median-mode-and-shape">19. Mean, Median, Mode, and Shape</h2>
 <p>The lecture presents a useful heuristic:</p>
 <section id="approximately-symmetric-bell-shaped" class="level3">
 <h3 class="anchored" data-anchor-id="approximately-symmetric-bell-shaped">Approximately symmetric / bell-shaped</h3>
@@ -954,8 +971,8 @@ Md=1.5.
 <hr>
 </section>
 </section>
-<section id="other-distribution-shapes" class="level1">
-<h1>20. Other Distribution Shapes</h1>
+<section id="other-distribution-shapes" class="level2">
+<h2 class="anchored" data-anchor-id="other-distribution-shapes">20. Other Distribution Shapes</h2>
 <p>The lecture also illustrates several shapes:</p>
 <ul>
 <li>bell-shaped;</li>
@@ -972,8 +989,11 @@ Md=1.5.
 <p>Two datasets can have similar means but radically different shapes.</p>
 <hr>
 </section>
-<section id="why-variability-matters" class="level1">
-<h1>21. Why Variability Matters</h1>
+</section>
+<section id="part-iii-variability" class="level1">
+<h1>Part III — Variability</h1>
+<section id="why-variability-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-variability-matters">21. Why Variability Matters</h2>
 <p>Central tendency tells us about the middle.</p>
 <p><strong>Variability</strong> tells us about spread.</p>
 <p>Privitera (2018, 2024) emphasizes that behavior naturally varies. Two groups can have the same mean but very different dispersion.</p>
@@ -987,8 +1007,8 @@ Md=1.5.
 </ol>
 <hr>
 </section>
-<section id="the-range" class="level1">
-<h1>22. The Range</h1>
+<section id="the-range" class="level2">
+<h2 class="anchored" data-anchor-id="the-range">22. The Range</h2>
 <p>The range is:</p>
 <p><span class="math display">\[
 \text{Range}
@@ -1015,8 +1035,8 @@ X_{\max}-X_{\min}.
 <hr>
 </section>
 </section>
-<section id="interquartile-range" class="level1">
-<h1>23. Interquartile Range</h1>
+<section id="interquartile-range" class="level2">
+<h2 class="anchored" data-anchor-id="interquartile-range">23. Interquartile Range</h2>
 <p>The <strong>interquartile range (IQR)</strong> describes the spread of the middle 50% of a distribution.</p>
 <p>It is:</p>
 <p><span class="math display">\[
@@ -1031,8 +1051,8 @@ IQR=Q_3-Q_1.
 <p>Because the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024).</p>
 <hr>
 </section>
-<section id="from-deviation-to-variance" class="level1">
-<h1>24. From Deviation to Variance</h1>
+<section id="from-deviation-to-variance" class="level2">
+<h2 class="anchored" data-anchor-id="from-deviation-to-variance">24. From Deviation to Variance</h2>
 <p>Suppose we want to quantify how far scores are from the mean.</p>
 <p>For each score:</p>
 <p><span class="math display">\[
@@ -1061,8 +1081,8 @@ M=6.
 <p>This is why deviations are squared before they are summed.</p>
 <hr>
 </section>
-<section id="sum-of-squares" class="level1">
-<h1>25. Sum of Squares</h1>
+<section id="sum-of-squares" class="level2">
+<h2 class="anchored" data-anchor-id="sum-of-squares">25. Sum of Squares</h2>
 <p>The <strong>sum of squares (SS)</strong> is:</p>
 <p><span class="math display">\[
 SS
@@ -1089,8 +1109,8 @@ SS=0.
 <p>Privitera (2018, 2024) describes SS as the sum of squared deviations from the mean and the numerator used in the variance formulas.</p>
 <hr>
 </section>
-<section id="population-variance" class="level1">
-<h1>26. Population Variance</h1>
+<section id="population-variance" class="level2">
+<h2 class="anchored" data-anchor-id="population-variance">26. Population Variance</h2>
 <p>Population variance is:</p>
 <p><span class="math display">\[
 \sigma^2
@@ -1131,8 +1151,8 @@ SS=22.
 \]</span></p>
 <hr>
 </section>
-<section id="standard-deviation-for-a-population" class="level1">
-<h1>27. Standard Deviation for a Population</h1>
+<section id="standard-deviation-for-a-population" class="level2">
+<h2 class="anchored" data-anchor-id="standard-deviation-for-a-population">27. Standard Deviation for a Population</h2>
 <p>The population standard deviation is the square root of the population variance:</p>
 <p><span class="math display">\[
 \sigma
@@ -1151,8 +1171,8 @@ SS=22.
 <p>Standard deviation returns the measure of spread to the <strong>original units</strong> of measurement (Privitera, 2018, 2024; Sigal, 2026).</p>
 <hr>
 </section>
-<section id="sample-variance" class="level1">
-<h1>28. Sample Variance</h1>
+<section id="sample-variance" class="level2">
+<h2 class="anchored" data-anchor-id="sample-variance">28. Sample Variance</h2>
 <p>When the observed data are a sample rather than the entire population, the Week 3 materials use:</p>
 <p><span class="math display">\[
 s^2
@@ -1191,8 +1211,8 @@ s
 \]</span></p>
 <hr>
 </section>
-<section id="why-does-sample-variance-use-n-1" class="level1">
-<h1>29. Why Does Sample Variance Use (n-1)?</h1>
+<section id="why-does-sample-variance-use-n-1" class="level2">
+<h2 class="anchored" data-anchor-id="why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use (n-1)?</h2>
 <p>This is one of the most important conceptual ideas in Week 3.</p>
 <p>If we calculate sample variance using (n), it tends to underestimate the population variance.</p>
 <p>Dividing by:</p>
@@ -1207,8 +1227,8 @@ n-1
 <p>This correction is often associated with <strong>Bessel’s correction</strong>.</p>
 <hr>
 </section>
-<section id="degrees-of-freedom" class="level1">
-<h1>30. Degrees of Freedom</h1>
+<section id="degrees-of-freedom" class="level2">
+<h2 class="anchored" data-anchor-id="degrees-of-freedom">30. Degrees of Freedom</h2>
 <p>The denominator:</p>
 <p><span class="math display">\[
 n-1
@@ -1239,8 +1259,8 @@ n-1
 <p>scores are independently free to vary (Privitera, 2018, 2024; Sigal, 2026).</p>
 <hr>
 </section>
-<section id="standard-deviation" class="level1">
-<h1>31. Standard Deviation</h1>
+<section id="standard-deviation" class="level2">
+<h2 class="anchored" data-anchor-id="standard-deviation">31. Standard Deviation</h2>
 <p>The standard deviation is the square root of the variance.</p>
 <p>For a sample:</p>
 <p><span class="math display">\[
@@ -1264,8 +1284,8 @@ s=\sqrt{s^2}
 <hr>
 </section>
 </section>
-<section id="variance-vs.-standard-deviation" class="level1">
-<h1>32. Variance vs.&nbsp;Standard Deviation</h1>
+<section id="variance-vs.-standard-deviation" class="level2">
+<h2 class="anchored" data-anchor-id="variance-vs.-standard-deviation">32. Variance vs.&nbsp;Standard Deviation</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1295,8 +1315,8 @@ s=\sqrt{s^2}
 <p>This is one reason standard deviation is easier to interpret directly.</p>
 <hr>
 </section>
-<section id="what-happens-when-scores-are-transformed" class="level1">
-<h1>33. What Happens When Scores Are Transformed?</h1>
+<section id="what-happens-when-scores-are-transformed" class="level2">
+<h2 class="anchored" data-anchor-id="what-happens-when-scores-are-transformed">33. What Happens When Scores Are Transformed?</h2>
 <p>The Week 3 worksheet explicitly asks students to investigate transformations (PSYC 210 Teaching Team, 2026b).</p>
 <section id="add-or-subtract-the-same-constant-from-every-score" class="level3">
 <h3 class="anchored" data-anchor-id="add-or-subtract-the-same-constant-from-every-score">Add or subtract the same constant from every score</h3>
@@ -1339,8 +1359,11 @@ s_Y^2=c^2s_X^2.
 <hr>
 </section>
 </section>
-<section id="the-week-3-worksheet" class="level1">
-<h1>34. The Week 3 Worksheet</h1>
+</section>
+<section id="part-iv-applied-practice" class="level1">
+<h1>Part IV — Applied Practice</h1>
+<section id="the-week-3-worksheet" class="level2">
+<h2 class="anchored" data-anchor-id="the-week-3-worksheet">34. The Week 3 Worksheet</h2>
 <p>The worksheet uses:</p>
 <p><span class="math display">\[
 X=\{6,3,9,11,15,24,4,5,13\}.
@@ -1366,8 +1389,8 @@ X=\{6,3,9,11,15,24,4,5,13\}.
 </ul>
 <hr>
 </section>
-<section id="a-second-worksheet-dataset" class="level1">
-<h1>35. A Second Worksheet Dataset</h1>
+<section id="a-second-worksheet-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="a-second-worksheet-dataset">35. A Second Worksheet Dataset</h2>
 <p>The worksheet also gives weekly grocery-shopping times:</p>
 <p><span class="math display">\[
 75,72,71,55,56,72,93,73,72,72,73,91,66,71,56,59.
@@ -1387,8 +1410,8 @@ X=\{6,3,9,11,15,24,4,5,13\}.
 </blockquote>
 <hr>
 </section>
-<section id="what-should-be-reported-together" class="level1">
-<h1>36. What Should Be Reported Together?</h1>
+<section id="what-should-be-reported-together" class="level2">
+<h2 class="anchored" data-anchor-id="what-should-be-reported-together">36. What Should Be Reported Together?</h2>
 <p>Measures of center and variability are most informative when interpreted together.</p>
 <p>For many quantitative variables, researchers commonly report:</p>
 <p><span class="math display">\[
@@ -1400,8 +1423,8 @@ M\pm SD.
 <p>For skewed distributions or variables with important outliers, a median paired with a robust measure such as the IQR may be more informative.</p>
 <hr>
 </section>
-<section id="choosing-measures-for-lucys-dataset" class="level1">
-<h1>37. Choosing Measures for Lucy’s Dataset</h1>
+<section id="choosing-measures-for-lucys-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="choosing-measures-for-lucys-dataset">37. Choosing Measures for Lucy’s Dataset</h2>
 <p>The lecture returns to Lucy’s dataset:</p>
 <table class="caption-top table">
 <colgroup>
@@ -1464,8 +1487,11 @@ M\pm SD.
 </ul>
 <hr>
 </section>
-<section id="how-the-concepts-fit-together" class="level1">
-<h1>38. How the Concepts Fit Together</h1>
+</section>
+<section id="part-v-integration-and-review" class="level1">
+<h1>Part V — Integration and Review</h1>
+<section id="how-the-concepts-fit-together" class="level2">
+<h2 class="anchored" data-anchor-id="how-the-concepts-fit-together">38. How the Concepts Fit Together</h2>
 <p>Week 3 can be understood as a sequence:</p>
 <p><strong>What is the distribution’s center?</strong></p>
 <p>↓</p>
@@ -1487,8 +1513,8 @@ M\pm SD.
 <p>This is the transition from simply organizing data to describing the mathematical structure of a distribution.</p>
 <hr>
 </section>
-<section id="important-terms" class="level1">
-<h1>39. Important Terms</h1>
+<section id="important-terms" class="level2">
+<h2 class="anchored" data-anchor-id="important-terms">39. Important Terms</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -1581,8 +1607,8 @@ M\pm SD.
 </table>
 <hr>
 </section>
-<section id="common-misunderstandings" class="level1">
-<h1>40. Common Misunderstandings</h1>
+<section id="common-misunderstandings" class="level2">
+<h2 class="anchored" data-anchor-id="common-misunderstandings">40. Common Misunderstandings</h2>
 <section id="the-mode-has-to-be-a-number." class="level3">
 <h3 class="anchored" data-anchor-id="the-mode-has-to-be-a-number.">“The mode has to be a number.”</h3>
 <p>No.&nbsp;The mode can be a category.</p>
@@ -1632,8 +1658,8 @@ M\pm SD.
 <hr>
 </section>
 </section>
-<section id="tutorial-preparation" class="level1">
-<h1>41. Tutorial Preparation</h1>
+<section id="tutorial-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="tutorial-preparation">41. Tutorial Preparation</h2>
 <p>A TA should be ready to explain both <strong>procedures</strong> and <strong>why the procedures work</strong>.</p>
 <section id="why-are-there-three-measures-of-central-tendency" class="level3">
 <h3 class="anchored" data-anchor-id="why-are-there-three-measures-of-central-tendency">“Why are there three measures of central tendency?”</h3>
@@ -1669,8 +1695,9 @@ M\pm SD.
 <hr>
 </section>
 </section>
-<section id="practice-questions" class="level1">
-<h1>42. Practice Questions</h1>
+<section id="practice-questions" class="level2">
+<h2 class="anchored" data-anchor-id="practice-questions">42. Practice Questions</h2>
+</section>
 <section id="central-tendency" class="level2">
 <h2 class="anchored" data-anchor-id="central-tendency">Central Tendency</h2>
 <p>For:</p>
@@ -1737,9 +1764,8 @@ M=10,\quad s=4,\quad s^2=16.
 <p>State the new mean, standard deviation, and variance.</p>
 <hr>
 </section>
-</section>
-<section id="what-you-should-be-able-to-explain" class="level1">
-<h1>43. What You Should Be Able to Explain</h1>
+<section id="what-you-should-be-able-to-explain" class="level2">
+<h2 class="anchored" data-anchor-id="what-you-should-be-able-to-explain">43. What You Should Be Able to Explain</h2>
 <p>Before moving on, you should be able to explain:</p>
 <ul>
 <li>how mode, median, and mean define center differently;</li>
@@ -1761,8 +1787,9 @@ M=10,\quad s=4,\quad s^2=16.
 </ul>
 <hr>
 </section>
-<section id="readings-and-practice" class="level1">
-<h1>44. Readings and Practice</h1>
+<section id="readings-and-practice" class="level2">
+<h2 class="anchored" data-anchor-id="readings-and-practice">44. Readings and Practice</h2>
+</section>
 <section id="required-reading" class="level2">
 <h2 class="anchored" data-anchor-id="required-reading">Required reading</h2>
 <ul>
@@ -1792,9 +1819,8 @@ M=10,\quad s=4,\quad s^2=16.
 <p>The lecture also instructs students to skip or ignore the textbook’s section on computational formulas for variance for current course purposes (Sigal, 2026).</p>
 <hr>
 </section>
-</section>
-<section id="references" class="level1">
-<h1>45. References</h1>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">45. References</h2>
 <p>Privitera, G. J. (2018). <em>Essential statistics for the behavioral sciences</em> (2nd ed.). SAGE.</p>
 <p>Privitera, G. J. (2024). <em>Statistics for the behavioral sciences</em> (4th ed.). SAGE.</p>
 <p>PSYC 210 Teaching Team. (2026a). <em>An additional example of calculating the median</em> [Supplemental course handout]. Simon Fraser University.</p>
@@ -1802,8 +1828,8 @@ M=10,\quad s=4,\quad s^2=16.
 <p>Sigal, M. (2026, September 28). <em>PSYC 210: Introduction to data analysis—Lecture 3: Measures of central tendency and variability</em> [Lecture slides]. Simon Fraser University.</p>
 <hr>
 </section>
-<section id="week-3-takeaway" class="level1">
-<h1>46. Week 3 Takeaway</h1>
+<section id="week-3-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="week-3-takeaway">46. Week 3 Takeaway</h2>
 <p>Week 3 adds two essential dimensions to descriptive statistics:</p>
 <blockquote class="blockquote">
 <p><strong>Where is the distribution centered, and how much do observations vary around that center?</strong></p>
@@ -1824,8 +1850,75 @@ M=10,\quad s=4,\quad s^2=16.
 
 
 </section>
+</section>
 
 </main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#TOC");
+  if (!toc) return;
+
+  const topLevelItems = Array.from(toc.querySelectorAll(":scope > ul > li"));
+
+  const parts = topLevelItems.filter((li) => {
+    const link = li.querySelector(":scope > a");
+    const childList = li.querySelector(":scope > ul");
+    return link && childList && /^Part\s+[IVXLCDM0-9]+\b/i.test(link.textContent.trim());
+  });
+
+  if (!parts.length) return;
+
+  function setOpen(li, open) {
+    const link = li.querySelector(":scope > a");
+    li.classList.toggle("is-open", open);
+    if (link) link.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  function openOnly(target) {
+    parts.forEach((li) => setOpen(li, li === target));
+  }
+
+  parts.forEach((li) => {
+    const link = li.querySelector(":scope > a");
+    li.classList.add("toc-collapsible-part");
+    link.classList.add("toc-part-link");
+    link.setAttribute("aria-expanded", "false");
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const willOpen = !li.classList.contains("is-open");
+      if (willOpen) openOnly(li);
+      else setOpen(li, false);
+    });
+  });
+
+  function openPartForHash() {
+    if (!window.location.hash) return;
+    const matchingLink = Array.from(toc.querySelectorAll('a[href^="#"]'))
+      .find(a => a.getAttribute("href") === window.location.hash);
+    if (!matchingLink) return;
+
+    const part = matchingLink.closest("li.toc-collapsible-part");
+    if (part) openOnly(part);
+  }
+
+  openPartForHash();
+  window.addEventListener("hashchange", openPartForHash);
+
+  const observer = new MutationObserver(function () {
+    const active = toc.querySelector("a.active");
+    if (!active) return;
+    const part = active.closest("li.toc-collapsible-part");
+    if (part && !part.classList.contains("is-open")) openOnly(part);
+  });
+
+  observer.observe(toc, {
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["class"]
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

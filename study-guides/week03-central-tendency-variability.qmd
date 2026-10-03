@@ -3,7 +3,7 @@ title: "Week 03 — Central Tendency, Shape, and Variability"
 toc-depth: 2
 ---
 
-## Overview
+# Overview
 
 Week 3 asks two closely related questions:
 
@@ -26,7 +26,7 @@ The Week 3 materials also introduce several foundational ideas that become impor
 
 ---
 
-## Learning Objectives
+# Learning Objectives
 
 By the end of this week, you should be able to:
 
@@ -51,7 +51,9 @@ By the end of this week, you should be able to:
 
 ---
 
-# 1. Why Do We Need Measures of Center?
+# Part I — Central Tendency
+
+## 1. Why Do We Need Measures of Center?
 
 A frequency distribution tells us how scores are distributed, but researchers often also want a single value that summarizes what is **typical** or **representative**.
 
@@ -75,7 +77,7 @@ The fact that there are three measures is not redundancy. They behave differentl
 
 ---
 
-# 2. The Mode
+## 2. The Mode
 
 The **mode** is the value or category that occurs most often.
 
@@ -125,7 +127,7 @@ For example, if browser preference is categorical, the "most common browser" is 
 
 ---
 
-# 3. The Median
+## 3. The Median
 
 The **median** is the value that divides an ordered distribution in half based on frequency.
 
@@ -167,7 +169,7 @@ $$
 
 ---
 
-# 4. Median With an Even Number of Scores
+## 4. Median With an Even Number of Scores
 
 Suppose:
 
@@ -195,7 +197,7 @@ However, the Week 3 lecture introduces a more general interpolation method becau
 
 ---
 
-# 5. The Course's Interpolated Median Formula
+## 5. The Course's Interpolated Median Formula
 
 The lecture uses cumulative frequency to estimate the location of the median within a score interval:
 
@@ -224,7 +226,7 @@ This is the method the course expects students to learn for the Week 3 exercises
 
 ---
 
-# 6. Worked Interpolated Median Example
+## 6. Worked Interpolated Median Example
 
 The lecture uses:
 
@@ -278,7 +280,7 @@ This value is an **interpolated estimate within the median interval**, not the o
 
 ---
 
-# 7. A Course-Specific Median Convention
+## 7. A Course-Specific Median Convention
 
 There is an important methodological point here.
 
@@ -296,7 +298,7 @@ Do not silently substitute the simpler textbook convention when the problem is c
 
 ---
 
-# 8. Percentiles Beyond the Median
+## 8. Percentiles Beyond the Median
 
 The \(0.5\) in the median formula is not arbitrary.
 
@@ -323,7 +325,7 @@ Thus the median formula is part of a more general percentile-interpolation frame
 
 ---
 
-# 9. Median for Grouped Data
+## 9. Median for Grouped Data
 
 For grouped data, interval width does not have to equal 1.
 
@@ -361,7 +363,7 @@ The same formula works because \(W\) explicitly represents the real width of the
 
 ---
 
-# 10. Supplemental Median Example
+## 10. Supplemental Median Example
 
 The supplemental handout uses 30 age observations recorded in 3-year bins.
 
@@ -396,7 +398,7 @@ The handout contrasts this with the quick \((n+1)/2\) method and explains why th
 
 ---
 
-# 11. The Mean
+## 11. The Mean
 
 The **mean** is the arithmetic average.
 
@@ -430,7 +432,7 @@ Conceptually, the mean is a **balance point** based on magnitudes.
 
 ---
 
-# 12. Sample and Population Mean Notation
+## 12. Sample and Population Mean Notation
 
 The lecture distinguishes:
 
@@ -453,7 +455,7 @@ The symbols remind us whether the calculation describes a sample or the entire p
 
 ---
 
-# 13. The Weighted Mean
+## 13. The Weighted Mean
 
 A simple average of group means is only correct when the groups contribute equal weight.
 
@@ -507,7 +509,7 @@ The larger group contributes more information and therefore more weight (Sigal, 
 
 ---
 
-# 14. Weighted Mean From Group Means
+## 14. Weighted Mean From Group Means
 
 If the original sums are not given, recover each group sum using:
 
@@ -550,7 +552,7 @@ $$
 
 ---
 
-# 15. How the Mean Changes
+## 15. How the Mean Changes
 
 The Week 3 worksheet asks students to explore how transformations affect the mean (PSYC 210 Teaching Team, 2026b).
 
@@ -602,7 +604,7 @@ A new score equal to the old mean leaves the mean unchanged.
 
 ---
 
-# 16. Why Do We Need Three Measures of Center?
+## 16. Why Do We Need Three Measures of Center?
 
 The lecture answers this by asking what kinds of data and distributions we have (Sigal, 2026).
 
@@ -632,7 +634,7 @@ The key principle is:
 
 ---
 
-# 17. Outliers: Mean vs. Median
+## 17. Outliers: Mean vs. Median
 
 The lecture gives the following error counts:
 
@@ -668,7 +670,9 @@ The example demonstrates why the median can be more robust to extreme values tha
 
 ---
 
-# 18. Distribution Shape and Skewness
+# Part II — Distribution Shape
+
+## 18. Distribution Shape and Skewness
 
 A distribution can be described not only by its center but also by its **shape**.
 
@@ -692,7 +696,7 @@ In a negatively skewed distribution:
 
 ---
 
-# 19. Mean, Median, Mode, and Shape
+## 19. Mean, Median, Mode, and Shape
 
 The lecture presents a useful heuristic:
 
@@ -720,7 +724,7 @@ These relationships are useful descriptive clues, not universal mathematical ide
 
 ---
 
-# 20. Other Distribution Shapes
+## 20. Other Distribution Shapes
 
 The lecture also illustrates several shapes:
 
@@ -739,7 +743,9 @@ Two datasets can have similar means but radically different shapes.
 
 ---
 
-# 21. Why Variability Matters
+# Part III — Variability
+
+## 21. Why Variability Matters
 
 Central tendency tells us about the middle.
 
@@ -758,7 +764,7 @@ Measures introduced this week include:
 
 ---
 
-# 22. The Range
+## 22. The Range
 
 The range is:
 
@@ -793,7 +799,7 @@ Privitera (2018, 2024) emphasizes that the range is most informative when import
 
 ---
 
-# 23. Interquartile Range
+## 23. Interquartile Range
 
 The **interquartile range (IQR)** describes the spread of the middle 50% of a distribution.
 
@@ -813,7 +819,7 @@ Because the top and bottom 25% are excluded, the IQR is less sensitive to extrem
 
 ---
 
-# 24. From Deviation to Variance
+## 24. From Deviation to Variance
 
 Suppose we want to quantify how far scores are from the mean.
 
@@ -857,7 +863,7 @@ This is why deviations are squared before they are summed.
 
 ---
 
-# 25. Sum of Squares
+## 25. Sum of Squares
 
 The **sum of squares (SS)** is:
 
@@ -893,7 +899,7 @@ Privitera (2018, 2024) describes SS as the sum of squared deviations from the me
 
 ---
 
-# 26. Population Variance
+## 26. Population Variance
 
 Population variance is:
 
@@ -949,7 +955,7 @@ $$
 
 ---
 
-# 27. Standard Deviation for a Population
+## 27. Standard Deviation for a Population
 
 The population standard deviation is the square root of the population variance:
 
@@ -975,7 +981,7 @@ Standard deviation returns the measure of spread to the **original units** of me
 
 ---
 
-# 28. Sample Variance
+## 28. Sample Variance
 
 When the observed data are a sample rather than the entire population, the Week 3 materials use:
 
@@ -1025,7 +1031,7 @@ $$
 
 ---
 
-# 29. Why Does Sample Variance Use \(n-1\)?
+## 29. Why Does Sample Variance Use \(n-1\)?
 
 This is one of the most important conceptual ideas in Week 3.
 
@@ -1047,7 +1053,7 @@ This correction is often associated with **Bessel's correction**.
 
 ---
 
-# 30. Degrees of Freedom
+## 30. Degrees of Freedom
 
 The denominator:
 
@@ -1095,7 +1101,7 @@ scores are independently free to vary (Privitera, 2018, 2024; Sigal, 2026).
 
 ---
 
-# 31. Standard Deviation
+## 31. Standard Deviation
 
 The standard deviation is the square root of the variance.
 
@@ -1124,7 +1130,7 @@ The standard deviation gives a measure of the typical distance of scores from th
 
 ---
 
-# 32. Variance vs. Standard Deviation
+## 32. Variance vs. Standard Deviation
 
 | Quantity | What it measures | Units |
 |---|---|---|
@@ -1140,7 +1146,7 @@ This is one reason standard deviation is easier to interpret directly.
 
 ---
 
-# 33. What Happens When Scores Are Transformed?
+## 33. What Happens When Scores Are Transformed?
 
 The Week 3 worksheet explicitly asks students to investigate transformations (PSYC 210 Teaching Team, 2026b).
 
@@ -1200,7 +1206,9 @@ These relationships are central to understanding standardization later in the co
 
 ---
 
-# 34. The Week 3 Worksheet
+# Part IV — Applied Practice
+
+## 34. The Week 3 Worksheet
 
 The worksheet uses:
 
@@ -1230,7 +1238,7 @@ It is to recognize predictable structural relationships among:
 
 ---
 
-# 35. A Second Worksheet Dataset
+## 35. A Second Worksheet Dataset
 
 The worksheet also gives weekly grocery-shopping times:
 
@@ -1254,7 +1262,7 @@ That is the larger Week 3 goal:
 
 ---
 
-# 36. What Should Be Reported Together?
+## 36. What Should Be Reported Together?
 
 Measures of center and variability are most informative when interpreted together.
 
@@ -1274,7 +1282,7 @@ For skewed distributions or variables with important outliers, a median paired w
 
 ---
 
-# 37. Choosing Measures for Lucy's Dataset
+## 37. Choosing Measures for Lucy's Dataset
 
 The lecture returns to Lucy's dataset:
 
@@ -1299,7 +1307,9 @@ The choice depends on:
 
 ---
 
-# 38. How the Concepts Fit Together
+# Part V — Integration and Review
+
+## 38. How the Concepts Fit Together
 
 Week 3 can be understood as a sequence:
 
@@ -1341,7 +1351,7 @@ This is the transition from simply organizing data to describing the mathematica
 
 ---
 
-# 39. Important Terms
+## 39. Important Terms
 
 | Term | Plain-language explanation |
 |---|---|
@@ -1367,7 +1377,7 @@ This is the transition from simply organizing data to describing the mathematica
 
 ---
 
-# 40. Common Misunderstandings
+## 40. Common Misunderstandings
 
 ### "The mode has to be a number."
 
@@ -1419,7 +1429,7 @@ $$
 
 ---
 
-# 41. Tutorial Preparation
+## 41. Tutorial Preparation
 
 A TA should be ready to explain both **procedures** and **why the procedures work**.
 
@@ -1457,7 +1467,7 @@ Because every score and the mean shift by exactly the same amount, so the deviat
 
 ---
 
-# 42. Practice Questions
+## 42. Practice Questions
 
 ## Central Tendency
 
@@ -1529,7 +1539,7 @@ State the new mean, standard deviation, and variance.
 
 ---
 
-# 43. What You Should Be Able to Explain
+## 43. What You Should Be Able to Explain
 
 Before moving on, you should be able to explain:
 
@@ -1552,7 +1562,7 @@ Before moving on, you should be able to explain:
 
 ---
 
-# 44. Readings and Practice
+## 44. Readings and Practice
 
 ## Required reading
 
@@ -1583,7 +1593,7 @@ The lecture also instructs students to skip or ignore the textbook's section on 
 
 ---
 
-# 45. References
+## 45. References
 
 Privitera, G. J. (2018). *Essential statistics for the behavioral sciences* (2nd ed.). SAGE.
 
@@ -1597,7 +1607,7 @@ Sigal, M. (2026, September 28). *PSYC 210: Introduction to data analysis—Lectu
 
 ---
 
-# 46. Week 3 Takeaway
+## 46. Week 3 Takeaway
 
 Week 3 adds two essential dimensions to descriptive statistics:
 

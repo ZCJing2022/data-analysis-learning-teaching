@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "assignments/"
+    - "resources/"
+    - "study-guides/"
+    - "!downloads/"
 
 website:
   title: "Data Analysis: Learning & Teaching"
@@ -24,6 +30,8 @@ format:
     theme: cosmo
     toc: true
     smooth-scroll: true
+    css: styles.css
+    include-after-body: toc-collapse.html
 
 execute:
   freeze: auto

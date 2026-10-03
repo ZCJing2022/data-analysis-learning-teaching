@@ -1,0 +1,42 @@
+/* Collapsible TOC: only "Part ..." entries are expandable. */
+#TOC li.toc-collapsible-part > ul {
+  display: none;
+}
+
+#TOC li.toc-collapsible-part.is-open > ul {
+  display: block;
+}
+
+#TOC a.toc-part-link {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#TOC a.toc-part-link::before {
+  content: "▸";
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2rem;
+  transition: transform 0.15s ease;
+}
+
+#TOC li.toc-collapsible-part.is-open > a.toc-part-link::before {
+  transform: rotate(90deg);
+}
+
+#TOC li.toc-collapsible-part > ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.35rem;
+  padding-left: 1.15rem;
+}
+
+#TOC li.toc-collapsible-part > ul a {
+  font-size: 0.94em;
+  line-height: 1.25;
+}
+
+#TOC a.toc-part-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}

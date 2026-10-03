@@ -1,390 +1,5 @@
 [
   {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "",
-    "text": "Week 1 introduces the logic of data analysis in psychology. The central idea is that statistics is not simply a collection of formulas. It is a way to connect questions, theories, measurements, data, and evidence-based conclusions.\nThe lecture begins with the goals of science and then moves through the basic research process: identify something that needs explaining, decide how to measure it, formulate a research hypothesis, collect data, and analyze those data descriptively or inferentially. It also introduces the distinction between populations and samples, basic research designs, and several mathematical tools—especially summation notation—that will be used throughout the course.\nThe tutorials and practice materials reinforce these ideas through hands-on work with summation notation and the basic organization of data into frequency tables and histograms."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#overview",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#overview",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "",
-    "text": "Week 1 introduces the logic of data analysis in psychology. The central idea is that statistics is not simply a collection of formulas. It is a way to connect questions, theories, measurements, data, and evidence-based conclusions.\nThe lecture begins with the goals of science and then moves through the basic research process: identify something that needs explaining, decide how to measure it, formulate a research hypothesis, collect data, and analyze those data descriptively or inferentially. It also introduces the distinction between populations and samples, basic research designs, and several mathematical tools—especially summation notation—that will be used throughout the course.\nThe tutorials and practice materials reinforce these ideas through hands-on work with summation notation and the basic organization of data into frequency tables and histograms."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#learning-objectives",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#learning-objectives",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nExplain why statistics is important for psychological research.\nDistinguish descriptive statistics from inferential statistics.\nDistinguish a population from a sample, and a parameter from a statistic.\nExplain what a variable is and distinguish independent, dependent, and extraneous/confounding variables.\nExplain the difference between a research hypothesis and a statistical hypothesis.\nDistinguish experimental, quasi-experimental, and correlational/observational research designs.\nExplain why representativeness and sampling error matter when generalizing from a sample to a population.\nUse basic mathematical notation correctly, including order of operations, exponents, roots, inequalities, and summation notation.\nRead and construct basic frequency tables using frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency.\nExplain what a histogram shows and how grouped and ungrouped histograms summarize distributions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#operational-definitions",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#operational-definitions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Operational definitions",
-    "text": "Operational definitions\nPsychological concepts are often abstract. Anxiety, memory, stress, motivation, intelligence, and attention are not directly visible in the same way as height or weight.\nResearchers therefore need to operationally define variables.\nAn operational definition states exactly how a concept will be observed or measured.\nFor example:\n\n“anxiety” might be measured using a questionnaire score;\n“memory” might be measured as the number of words correctly recalled;\n“autonomic arousal” might be measured using heart rate or blood pressure.\n\nOperational definitions connect theoretical ideas to observable data."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#descriptive-statistics",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#descriptive-statistics",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Descriptive statistics",
-    "text": "Descriptive statistics\nDescriptive statistics summarize and organize data.\nThey answer questions such as:\n\nWhat values occurred?\nHow frequently did they occur?\nWhat is a typical score?\nHow spread out are the scores?\nWhat does the distribution look like?\n\nDescriptive statistics can be presented as numbers, tables, graphs, percentages, frequencies, and averages."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#inferential-statistics",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#inferential-statistics",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Inferential statistics",
-    "text": "Inferential statistics\nInferential statistics use data from a sample to make a reasoned statement about a larger population.\nThe logic is:\nPopulation → Sample → Data → Statistical analysis → Inference about the population\nThis is a conceptual leap because researchers usually observe only the sample, while their scientific question concerns the larger population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#experimental-design",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#experimental-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Experimental design",
-    "text": "Experimental design\nA true experiment is designed to support a cause-and-effect conclusion.\nThe lecture emphasizes three important features:\n\nManipulation — the researcher creates different conditions.\nRandomization — participants are randomly allocated to conditions.\nComparison/control — outcomes are compared across conditions.\n\n\nExample\nTo study whether watching television affects reaction time:\n\nparticipants could be randomly assigned to a TV condition or a no-TV condition;\nthe researcher manipulates whether television is present;\nreaction time is measured in both groups.\n\nRandom assignment is important because it helps distribute other participant characteristics across conditions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#quasi-experimental-design",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#quasi-experimental-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Quasi-experimental design",
-    "text": "Quasi-experimental design\nA quasi-experiment resembles an experiment but lacks one or more elements needed for a true experiment.\nThis often happens because:\n\nthe independent variable cannot be manipulated;\nparticipants cannot be randomly assigned;\na comparison/control group is missing.\n\nMany psychological variables are preexisting and cannot ethically or practically be randomized."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#correlational-or-observational-design",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#correlational-or-observational-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Correlational or observational design",
-    "text": "Correlational or observational design\nIn a correlational design, researchers measure two or more variables without manipulating them.\nThe purpose is to determine whether variables are related.\nFor example:\n\ncomputer use and exercise;\nextroversion and school achievement;\nincome and life satisfaction.\n\nA correlational design can demonstrate a relationship, but it cannot by itself establish causation.\n\nComparison\n\n\n\n\n\n\n\n\n\nDesign\nManipulation?\nRandom assignment?\nCan support causal conclusions?\n\n\n\n\nExperimental\nYes\nYes\nYes, if appropriately conducted\n\n\nQuasi-experimental\nOften no / incomplete\nOften no\nMore limited\n\n\nCorrelational\nNo\nNo\nNo"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#order-of-operations",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#order-of-operations",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Order of operations",
-    "text": "Order of operations\nUse PEDMAS/BEDMAS:\n\nParentheses / Brackets\nExponents\nDivision / Multiplication\nAddition / Subtraction\n\nChanging the order can produce completely different results."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#brackets-and-absolute-value",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#brackets-and-absolute-value",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Brackets and absolute value",
-    "text": "Brackets and absolute value\nParentheses and square brackets group operations.\nAbsolute-value brackets indicate distance from zero:\n\\[\n|4| = 4\n\\]\n\\[\n|-39| = 39\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#inequalities",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#inequalities",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Inequalities",
-    "text": "Inequalities\nKnow the meaning of \\(&gt;\\), \\(&lt;\\), and \\(\\leq\\)."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#fractions",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#fractions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Fractions",
-    "text": "Fractions\nYou should be able to add and subtract fractions, find common denominators, and convert fractions to decimals."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#negative-numbers",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#negative-numbers",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Negative numbers",
-    "text": "Negative numbers\n\\[\n(-a)(b) = -ab\n\\]\n\\[\n(-a)(-b) = ab\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#basic-equations",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#basic-equations",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Basic equations",
-    "text": "Basic equations\nFor example:\n\\[\n15x + 10 = 40\n\\]\nSubtract 10 from both sides:\n\\[\n15x = 30\n\\]\nThen divide by 15:\n\\[\nx = 2\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#exponents-and-square-roots",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#exponents-and-square-roots",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Exponents and square roots",
-    "text": "Exponents and square roots\n\\[\n3^2 = 9\n\\]\n\\[\n\\sqrt{9} = 3\n\\]\n\\[\n3^4 = 81\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#indices-matter",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#indices-matter",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Indices matter",
-    "text": "Indices matter\nIf\n\\[\nX = \\{4,8,6,3,5,6,4,2\\}\n\\]\nthen\n\\[\n\\sum_{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22\n\\]\nOnly values with indices 2 through 5 are included."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#summing-products",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#summing-products",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Summing products",
-    "text": "Summing products\nIf two variables are paired,\n\\[\n\\sum XY\n\\]\nmeans multiply \\(X_i\\) and \\(Y_i\\) within each row and then add the resulting products.\nIt does not mean\n\\[\n(\\sum X)(\\sum Y)\n\\]\nunless that is explicitly written."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#squaring-a-sum-is-not-the-same-as-summing-squares",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#squaring-a-sum-is-not-the-same-as-summing-squares",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Squaring a sum is not the same as summing squares",
-    "text": "Squaring a sum is not the same as summing squares\nThese expressions are different:\n\\[\n\\left(\\sum X\\right)^2\n\\]\nand\n\\[\n\\sum X^2\n\\]\nFor example, if \\(X=\\{1,2,3\\}\\):\n\\[\n\\left(\\sum X\\right)^2 = (1+2+3)^2 = 36\n\\]\nbut\n\\[\n\\sum X^2 = 1^2+2^2+3^2 = 14\n\\]\nThis distinction becomes extremely important later in formulas for variance and other statistics."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#parentheses-prevent-ambiguity",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#parentheses-prevent-ambiguity",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Parentheses prevent ambiguity",
-    "text": "Parentheses prevent ambiguity\nCompare:\n\\[\n\\sum(X_i + 2)\n\\]\nwith\n\\[\n\\left(\\sum X_i\\right)+2\n\\]\nThey are not equivalent."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#frequency",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Frequency",
-    "text": "Frequency\nThe frequency \\(f\\) is the number of observations with a particular value."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#proportion-relative-frequency",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#proportion-relative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Proportion / relative frequency",
-    "text": "Proportion / relative frequency\n\\[\n\\text{Proportion}=\\frac{f}{n}\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#percentage-frequency",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#percentage-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Percentage frequency",
-    "text": "Percentage frequency\n\\[\n\\text{Percentage}= \\frac{f}{n}\\times 100\n\\]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-frequency",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative frequency",
-    "text": "Cumulative frequency\nCumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal \\(n\\)."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-relative-frequency",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-relative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative relative frequency",
-    "text": "Cumulative relative frequency\nThis is the running total of proportions. The final value should equal 1.00."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-percentage",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#cumulative-percentage",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative percentage",
-    "text": "Cumulative percentage\nThe final cumulative percentage should equal 100%.\n\nInternal checks\nA correctly completed frequency table should satisfy:\n\\[\n\\sum f=n\n\\]\n\\[\n\\sum \\text{Prop.}=1.00\n\\]\n\\[\n\\sum \\%=100\\%\n\\]\nand the last cumulative entries should be \\(CF=n\\), \\(CRF=1.00\\), and \\(C\\%=100\\%\\)."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#statistics-proves-that-something-is-true.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#statistics-proves-that-something-is-true.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Statistics proves that something is true.”",
-    "text": "“Statistics proves that something is true.”\nNo. Statistical analysis helps quantify evidence and uncertainty. Conclusions remain dependent on the study design, measurement quality, sample, assumptions, and context."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#a-sample-is-basically-the-same-thing-as-a-population.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#a-sample-is-basically-the-same-thing-as-a-population.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A sample is basically the same thing as a population.”",
-    "text": "“A sample is basically the same thing as a population.”\nNo. A sample is only a subset. Inferential statistics is needed precisely because we usually do not observe the whole population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#a-statistic-and-a-parameter-are-interchangeable.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#a-statistic-and-a-parameter-are-interchangeable.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A statistic and a parameter are interchangeable.”",
-    "text": "“A statistic and a parameter are interchangeable.”\nNo. Statistic → sample; parameter → population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#random-assignment-and-random-sampling-are-the-same.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#random-assignment-and-random-sampling-are-the-same.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Random assignment and random sampling are the same.”",
-    "text": "“Random assignment and random sampling are the same.”\nNo. Random sampling concerns how people are selected from a population. Random assignment concerns how selected participants are placed into experimental conditions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#correlation-shows-that-one-variable-causes-the-other.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#correlation-shows-that-one-variable-causes-the-other.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Correlation shows that one variable causes the other.”",
-    "text": "“Correlation shows that one variable causes the other.”\nNo. Correlation shows a relationship, not cause."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#sum-x2-and-sum-x2-mean-the-same-thing.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#sum-x2-and-sum-x2-mean-the-same-thing.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“\\(\\sum X^2\\) and \\((\\sum X)^2\\) mean the same thing.”",
-    "text": "“\\(\\sum X^2\\) and \\((\\sum X)^2\\) mean the same thing.”\nNo. One squares each score before summing; the other sums first and then squares."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#the-number-after-sigma-is-always-added-once.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#the-number-after-sigma-is-always-added-once.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“The number after sigma is always added once.”",
-    "text": "“The number after sigma is always added once.”\nNot necessarily. If a constant is inside the summation, it is applied once for each indexed observation."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#a-histogram-is-an-objective-picture-of-the-data.",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#a-histogram-is-an-objective-picture-of-the-data.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A histogram is an objective picture of the data.”",
-    "text": "“A histogram is an objective picture of the data.”\nThe data are objective observations, but the display still depends on choices such as bin width, axis range, and grouping."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#conceptual-questions-students-may-ask",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#conceptual-questions-students-may-ask",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Conceptual questions students may ask",
-    "text": "Conceptual questions students may ask\n\n“Why do we need statistics if we can just look at the data?”\nRaw data often contain too many individual observations to interpret easily. Descriptive statistics organize the observations; inferential statistics help researchers reason beyond the observed sample.\n\n\n“Why can experiments show causation but correlations cannot?”\nA properly conducted experiment uses manipulation, random assignment, and comparison/control. These design features help rule out competing explanations. A correlation only observes how variables co-vary.\n\n\n“Why do we care so much about populations if we only collect samples?”\nPsychological research usually aims to understand a broader group or process, not only the particular participants who happened to take part.\n\n\n“Why is summation notation necessary?”\nStatistical formulas often apply the same arithmetic operation to many observations. Summation notation provides a compact and precise way to express this."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#computation-issues-to-watch-for",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#computation-issues-to-watch-for",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Computation issues to watch for",
-    "text": "Computation issues to watch for\nStudents often make mistakes by:\n\nignoring the lower and upper index of a summation;\nconfusing \\(\\sum X^2\\) with \\((\\sum X)^2\\);\nmultiplying \\(\\sum X\\) and \\(\\sum Y\\) when the expression actually requires \\(\\sum XY\\);\nforgetting that a constant inside a summation is applied to every included score;\nskipping parentheses;\ncalculating cumulative frequencies incorrectly;\nforgetting that proportions must sum to 1.00;\nforgetting that percentages must sum to 100%;\ndrawing histogram bars with heights that do not match the frequency table."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#conceptual-questions",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#conceptual-questions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Conceptual Questions",
-    "text": "Conceptual Questions\n\nExplain in your own words why statistics is useful in psychology.\nWhat is the difference between descriptive and inferential statistics?\nGive an example of a psychological population and a sample drawn from it.\nExplain the difference between a population parameter and a sample statistic.\nWhy does sampling error matter?\nGive an operational definition for “academic stress.”\nWhat three elements characterize a true experiment in this course?\nWhy can a correlational study not establish causation?\nExplain the difference between a research hypothesis and a statistical hypothesis.\nWhy can two graphs based on the same data create different impressions?"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#summation-practice",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#summation-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Summation Practice",
-    "text": "Summation Practice\nLet\n\\[\nX=\\{2,4,6,8\\}\n\\]\nand\n\\[\nY=\\{5,3,7,1\\}\n\\]\nCalculate:\n\n\\(\\sum X\\)\n\\(\\sum Y\\)\n\\(\\sum(X+Y)\\)\n\\(\\sum XY\\)\n\\(\\sum X^2\\)\n\\((\\sum X)^2\\)\n\\(\\sum_{i=2}^{4}X_i\\)\n\\(\\sum_{i=1}^{3}(X_i+2)\\)"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#frequency-table-practice",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#frequency-table-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Frequency Table Practice",
-    "text": "Frequency Table Practice\nFor the scores\n\\[\n2,3,3,4,4,4,5,6,6,7\n\\]\nconstruct a table containing \\(X\\), \\(f\\), relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#research-design-practice",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#research-design-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Research Design Practice",
-    "text": "Research Design Practice\nFor each example, identify whether the design is experimental, quasi-experimental, or correlational.\n\nParticipants are randomly assigned to study with music or without music, then take the same memory test.\nResearchers compare stress scores of first-year and fourth-year university students.\nResearchers measure weekly exercise and depressive symptoms in the same participants.\nA researcher introduces a mindfulness program in one class but has no comparison class."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#required-reading",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#required-reading",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Required reading",
-    "text": "Required reading\n\nPrivitera, G. J. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.), Chapter 1.\nThe 2024 edition of Privitera Chapter 1 covers the same core foundations with updated organization and examples."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#lecture-and-tutorial-materials",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#lecture-and-tutorial-materials",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Lecture and tutorial materials",
-    "text": "Lecture and tutorial materials\n\nLecture 1: Introduction to Data Analysis.\nLecture 1 Worksheet.\nTutorial: Summation Operator.\nTutorial: Frequency Tables and Histograms.\nFrequency Table Practice."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts-quarto-fixed.html#suggested-practice-from-the-lecture",
-    "href": "downloads/week01-basic-concepts-quarto-fixed.html#suggested-practice-from-the-lecture",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Suggested practice from the lecture",
-    "text": "Suggested practice from the lecture\nThe lecture recommends completing the Lecture 1 worksheet, attempting Learning Check 1 and Learning Check 2, reviewing the basic mathematics appendix, and completing selected end-of-chapter Chapter 1 problems."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html",
-    "href": "downloads/week03-central-tendency-variability.html",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "",
-    "text": "Week 3 asks two closely related questions:\n\nWhere is the center of a distribution?\nHow spread out are the scores around that center?\n\nThe first question is addressed with measures of central tendency: the mode, median, and mean. The second is addressed with measures of variability: the range, interquartile range, variance, and standard deviation.\nThe lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).\nThe Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:\n\nweighted means;\npercentiles and interpolated medians;\nskewness;\nsum of squares;\nsample versus population variance;\ndegrees of freedom;\nthe standard deviation as a measure in the original units of measurement."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#overview",
-    "href": "downloads/week03-central-tendency-variability.html#overview",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "",
-    "text": "Week 3 asks two closely related questions:\n\nWhere is the center of a distribution?\nHow spread out are the scores around that center?\n\nThe first question is addressed with measures of central tendency: the mode, median, and mean. The second is addressed with measures of variability: the range, interquartile range, variance, and standard deviation.\nThe lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).\nThe Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:\n\nweighted means;\npercentiles and interpolated medians;\nskewness;\nsum of squares;\nsample versus population variance;\ndegrees of freedom;\nthe standard deviation as a measure in the original units of measurement."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#learning-objectives",
-    "href": "downloads/week03-central-tendency-variability.html#learning-objectives",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nDefine mode, median, and mean and explain how they differ.\nIdentify unimodal, bimodal, multimodal, and nonmodal distributions.\nCalculate a median for odd- and even-sized ungrouped datasets.\nUse the course’s cumulative-frequency interpolation formula to estimate medians and other percentiles.\nApply the median formula to grouped data.\nCalculate a sample mean and population mean using appropriate notation.\nCalculate a weighted/combined mean when group sizes differ.\nExplain how changing, adding, or transforming scores affects the mean.\nExplain why the mean, median, and mode respond differently to extreme scores.\nUse the relative positions of mean, median, and mode to describe skewness.\nDefine variability and explain why measures of center are not enough.\nCalculate and interpret the range and interquartile range.\nExplain deviation, sum of squares (SS), variance, and standard deviation.\nDistinguish population variance from sample variance.\nExplain why sample variance uses (n-1) rather than (n).\nExplain degrees of freedom in the context of sample variance.\nPredict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.\nChoose useful measures of center and spread for variables in a real dataset."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#central-tendency",
-    "href": "downloads/week03-central-tendency-variability.html#central-tendency",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Central Tendency",
-    "text": "Central Tendency\nFor:\n\\[\nX=\\{2,3,4,4,5,7,20\\},\n\\]\ncalculate:\n\nmode;\nordinary median;\nmean;\nexplain which measure is most affected by the score 20."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#weighted-mean",
-    "href": "downloads/week03-central-tendency-variability.html#weighted-mean",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Weighted Mean",
-    "text": "Weighted Mean\nTwo groups have:\n\nGroup A: (M=8, n=10)\nGroup B: (M=14, n=30)\n\nCalculate the combined mean."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#shape",
-    "href": "downloads/week03-central-tendency-variability.html#shape",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Shape",
-    "text": "Shape\nFor each relationship, identify the likely shape:\n\nmean ≈ median ≈ mode;\nmean &gt; median &gt; mode;\nmean &lt; median &lt; mode."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#variability",
-    "href": "downloads/week03-central-tendency-variability.html#variability",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Variability",
-    "text": "Variability\nFor:\n\\[\nX=\\{2,4,6,8,10\\},\n\\]\ncalculate:\n\nrange;\nmean;\neach deviation from the mean;\nSS;\npopulation variance;\npopulation standard deviation;\nsample variance;\nsample standard deviation."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#transformations",
-    "href": "downloads/week03-central-tendency-variability.html#transformations",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Transformations",
-    "text": "Transformations\nSuppose:\n\\[\nM=10,\\quad s=4,\\quad s^2=16.\n\\]\nWhat happens if every score is:\n\nincreased by 3?\ndecreased by 5?\nmultiplied by 2?\ndivided by 4?\n\nState the new mean, standard deviation, and variance."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#required-reading",
-    "href": "downloads/week03-central-tendency-variability.html#required-reading",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Required reading",
-    "text": "Required reading\n\nPrivitera, G. J. (2018), Chapter 4: Summarizing Data: Variability."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#additional-supplied-reading",
-    "href": "downloads/week03-central-tendency-variability.html#additional-supplied-reading",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Additional supplied reading",
-    "text": "Additional supplied reading\n\nPrivitera, G. J. (2024), Chapter 4: Summarizing Data: Variability."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#lecture-and-course-materials",
-    "href": "downloads/week03-central-tendency-variability.html#lecture-and-course-materials",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Lecture and course materials",
-    "text": "Lecture and course materials\n\nLecture 3: Measures of Central Tendency and Variability.\nLecture 3 annotated slides.\nLecture 3 worksheet.\nSupplemental median example."
-  },
-  {
-    "objectID": "downloads/week03-central-tendency-variability.html#instructor-assigned-practice",
-    "href": "downloads/week03-central-tendency-variability.html#instructor-assigned-practice",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Instructor-assigned practice",
-    "text": "Instructor-assigned practice\nThe lecture identifies the following practice problems:\nCentral tendency - Questions 11, 17, 21, 22, 32.\nVariability - Questions 11, 12, 21, 29.\nThe lecture also instructs students to skip or ignore the textbook’s section on computational formulas for variance for current course purposes (Sigal, 2026)."
-  },
-  {
     "objectID": "syllabus.html",
     "href": "syllabus.html",
     "title": "Abbreviated Syllabus",
@@ -427,256 +42,172 @@
     "text": "Supplementary Resources\n\nLane, D. M. et al. (n.d.). OnlineStatBook. Free online resource with interactive applets and videos.\nGravetter, F. G., Wallnau, L. B., Forzano, L. B., & Witnauer, J. E. (2021). Essentials of Statistics for the Behavioral Sciences (10th ed.). Cengage."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html",
-    "href": "study-guides/week05-probability-clt.html",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html",
+    "href": "study-guides/week10-regression.html",
+    "title": "Week 10 — Introduction to Regression",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#overview",
-    "href": "study-guides/week05-probability-clt.html#overview",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#overview",
+    "href": "study-guides/week10-regression.html#overview",
+    "title": "Week 10 — Introduction to Regression",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#learning-objectives",
-    "href": "study-guides/week05-probability-clt.html#learning-objectives",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#learning-objectives",
+    "href": "study-guides/week10-regression.html#learning-objectives",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#key-concepts",
-    "href": "study-guides/week05-probability-clt.html#key-concepts",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#key-concepts",
+    "href": "study-guides/week10-regression.html#key-concepts",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Key Concepts",
     "text": "Key Concepts\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#how-the-concepts-fit-together",
-    "href": "study-guides/week05-probability-clt.html#how-the-concepts-fit-together",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#how-the-concepts-fit-together",
+    "href": "study-guides/week10-regression.html#how-the-concepts-fit-together",
+    "title": "Week 10 — Introduction to Regression",
     "section": "How the Concepts Fit Together",
     "text": "How the Concepts Fit Together\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#important-terms",
-    "href": "study-guides/week05-probability-clt.html#important-terms",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#important-terms",
+    "href": "study-guides/week10-regression.html#important-terms",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Important Terms",
     "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#worked-examples",
-    "href": "study-guides/week05-probability-clt.html#worked-examples",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#worked-examples",
+    "href": "study-guides/week10-regression.html#worked-examples",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Worked Examples",
     "text": "Worked Examples\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#common-misunderstandings",
-    "href": "study-guides/week05-probability-clt.html#common-misunderstandings",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#common-misunderstandings",
+    "href": "study-guides/week10-regression.html#common-misunderstandings",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Common Misunderstandings",
     "text": "Common Misunderstandings\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#tutorial-preparation",
-    "href": "study-guides/week05-probability-clt.html#tutorial-preparation",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#tutorial-preparation",
+    "href": "study-guides/week10-regression.html#tutorial-preparation",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Tutorial Preparation",
     "text": "Tutorial Preparation\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#practice-questions",
-    "href": "study-guides/week05-probability-clt.html#practice-questions",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#practice-questions",
+    "href": "study-guides/week10-regression.html#practice-questions",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Practice Questions",
     "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week05-probability-clt.html#what-you-should-be-able-to-explain",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week10-regression.html#what-you-should-be-able-to-explain",
+    "title": "Week 10 — Introduction to Regression",
     "section": "What You Should Be Able to Explain",
     "text": "What You Should Be Able to Explain\nTo be added."
   },
   {
-    "objectID": "study-guides/week05-probability-clt.html#reading",
-    "href": "study-guides/week05-probability-clt.html#reading",
-    "title": "Week 05 — Probability and the Central Limit Theorem",
+    "objectID": "study-guides/week10-regression.html#reading",
+    "href": "study-guides/week10-regression.html#reading",
+    "title": "Week 10 — Introduction to Regression",
     "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapter 6"
+    "text": "Reading\nPrivitera (2018), Chapter 13"
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html",
-    "href": "study-guides/week07-t-tests-independent.html",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html",
+    "href": "study-guides/week08-t-tests-dependent-anova.html",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#overview",
-    "href": "study-guides/week07-t-tests-independent.html#overview",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#overview",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#overview",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#learning-objectives",
-    "href": "study-guides/week07-t-tests-independent.html#learning-objectives",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#learning-objectives",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#learning-objectives",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#key-concepts",
-    "href": "study-guides/week07-t-tests-independent.html#key-concepts",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#key-concepts",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#key-concepts",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Key Concepts",
     "text": "Key Concepts\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#how-the-concepts-fit-together",
-    "href": "study-guides/week07-t-tests-independent.html#how-the-concepts-fit-together",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#how-the-concepts-fit-together",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#how-the-concepts-fit-together",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "How the Concepts Fit Together",
     "text": "How the Concepts Fit Together\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#important-terms",
-    "href": "study-guides/week07-t-tests-independent.html#important-terms",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#important-terms",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#important-terms",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Important Terms",
     "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#worked-examples",
-    "href": "study-guides/week07-t-tests-independent.html#worked-examples",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#worked-examples",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#worked-examples",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Worked Examples",
     "text": "Worked Examples\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#common-misunderstandings",
-    "href": "study-guides/week07-t-tests-independent.html#common-misunderstandings",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#common-misunderstandings",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#common-misunderstandings",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Common Misunderstandings",
     "text": "Common Misunderstandings\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#tutorial-preparation",
-    "href": "study-guides/week07-t-tests-independent.html#tutorial-preparation",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#tutorial-preparation",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#tutorial-preparation",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Tutorial Preparation",
     "text": "Tutorial Preparation\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#practice-questions",
-    "href": "study-guides/week07-t-tests-independent.html#practice-questions",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#practice-questions",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#practice-questions",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Practice Questions",
     "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week07-t-tests-independent.html#what-you-should-be-able-to-explain",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#what-you-should-be-able-to-explain",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "What You Should Be Able to Explain",
     "text": "What You Should Be Able to Explain\nTo be added."
   },
   {
-    "objectID": "study-guides/week07-t-tests-independent.html#reading",
-    "href": "study-guides/week07-t-tests-independent.html#reading",
-    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "objectID": "study-guides/week08-t-tests-dependent-anova.html#reading",
+    "href": "study-guides/week08-t-tests-dependent-anova.html#reading",
+    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
     "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapters 8 and 9"
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html",
-    "href": "study-guides/week03-central-tendency-variability.html",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "",
-    "text": "Week 3 asks two closely related questions:\n\nWhere is the center of a distribution?\nHow spread out are the scores around that center?\n\nThe first question is addressed with measures of central tendency: the mode, median, and mean. The second is addressed with measures of variability: the range, interquartile range, variance, and standard deviation.\nThe lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).\nThe Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:\n\nweighted means;\npercentiles and interpolated medians;\nskewness;\nsum of squares;\nsample versus population variance;\ndegrees of freedom;\nthe standard deviation as a measure in the original units of measurement."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#overview",
-    "href": "study-guides/week03-central-tendency-variability.html#overview",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "",
-    "text": "Week 3 asks two closely related questions:\n\nWhere is the center of a distribution?\nHow spread out are the scores around that center?\n\nThe first question is addressed with measures of central tendency: the mode, median, and mean. The second is addressed with measures of variability: the range, interquartile range, variance, and standard deviation.\nThe lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).\nThe Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:\n\nweighted means;\npercentiles and interpolated medians;\nskewness;\nsum of squares;\nsample versus population variance;\ndegrees of freedom;\nthe standard deviation as a measure in the original units of measurement."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#learning-objectives",
-    "href": "study-guides/week03-central-tendency-variability.html#learning-objectives",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nDefine mode, median, and mean and explain how they differ.\nIdentify unimodal, bimodal, multimodal, and nonmodal distributions.\nCalculate a median for odd- and even-sized ungrouped datasets.\nUse the course’s cumulative-frequency interpolation formula to estimate medians and other percentiles.\nApply the median formula to grouped data.\nCalculate a sample mean and population mean using appropriate notation.\nCalculate a weighted/combined mean when group sizes differ.\nExplain how changing, adding, or transforming scores affects the mean.\nExplain why the mean, median, and mode respond differently to extreme scores.\nUse the relative positions of mean, median, and mode to describe skewness.\nDefine variability and explain why measures of center are not enough.\nCalculate and interpret the range and interquartile range.\nExplain deviation, sum of squares (SS), variance, and standard deviation.\nDistinguish population variance from sample variance.\nExplain why sample variance uses (n-1) rather than (n).\nExplain degrees of freedom in the context of sample variance.\nPredict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.\nChoose useful measures of center and spread for variables in a real dataset."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#central-tendency",
-    "href": "study-guides/week03-central-tendency-variability.html#central-tendency",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Central Tendency",
-    "text": "Central Tendency\nFor:\n\\[\nX=\\{2,3,4,4,5,7,20\\},\n\\]\ncalculate:\n\nmode;\nordinary median;\nmean;\nexplain which measure is most affected by the score 20."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#weighted-mean",
-    "href": "study-guides/week03-central-tendency-variability.html#weighted-mean",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Weighted Mean",
-    "text": "Weighted Mean\nTwo groups have:\n\nGroup A: (M=8, n=10)\nGroup B: (M=14, n=30)\n\nCalculate the combined mean."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#shape",
-    "href": "study-guides/week03-central-tendency-variability.html#shape",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Shape",
-    "text": "Shape\nFor each relationship, identify the likely shape:\n\nmean ≈ median ≈ mode;\nmean &gt; median &gt; mode;\nmean &lt; median &lt; mode."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#variability",
-    "href": "study-guides/week03-central-tendency-variability.html#variability",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Variability",
-    "text": "Variability\nFor:\n\\[\nX=\\{2,4,6,8,10\\},\n\\]\ncalculate:\n\nrange;\nmean;\neach deviation from the mean;\nSS;\npopulation variance;\npopulation standard deviation;\nsample variance;\nsample standard deviation."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#transformations",
-    "href": "study-guides/week03-central-tendency-variability.html#transformations",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Transformations",
-    "text": "Transformations\nSuppose:\n\\[\nM=10,\\quad s=4,\\quad s^2=16.\n\\]\nWhat happens if every score is:\n\nincreased by 3?\ndecreased by 5?\nmultiplied by 2?\ndivided by 4?\n\nState the new mean, standard deviation, and variance."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#required-reading",
-    "href": "study-guides/week03-central-tendency-variability.html#required-reading",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Required reading",
-    "text": "Required reading\n\nPrivitera, G. J. (2018), Chapter 4: Summarizing Data: Variability."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#additional-supplied-reading",
-    "href": "study-guides/week03-central-tendency-variability.html#additional-supplied-reading",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Additional supplied reading",
-    "text": "Additional supplied reading\n\nPrivitera, G. J. (2024), Chapter 4: Summarizing Data: Variability."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#lecture-and-course-materials",
-    "href": "study-guides/week03-central-tendency-variability.html#lecture-and-course-materials",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Lecture and course materials",
-    "text": "Lecture and course materials\n\nLecture 3: Measures of Central Tendency and Variability.\nLecture 3 annotated slides.\nLecture 3 worksheet.\nSupplemental median example."
-  },
-  {
-    "objectID": "study-guides/week03-central-tendency-variability.html#instructor-assigned-practice",
-    "href": "study-guides/week03-central-tendency-variability.html#instructor-assigned-practice",
-    "title": "Week 03 — Central Tendency, Shape, and Variability",
-    "section": "Instructor-assigned practice",
-    "text": "Instructor-assigned practice\nThe lecture identifies the following practice problems:\nCentral tendency - Questions 11, 17, 21, 22, 32.\nVariability - Questions 11, 12, 21, 29.\nThe lecture also instructs students to skip or ignore the textbook’s section on computational formulas for variance for current course purposes (Sigal, 2026)."
+    "text": "Reading\nPrivitera (2018), Chapters 10 and 11"
   },
   {
     "objectID": "study-guides/week06-hypothesis-testing.html",
@@ -847,158 +378,123 @@
     "text": "Reading\nPrivitera (2018), Chapter 5"
   },
   {
-    "objectID": "study-guides/week10-regression.html",
-    "href": "study-guides/week10-regression.html",
-    "title": "Week 10 — Introduction to Regression",
+    "objectID": "study-guides/week02-data-types-visualization.html",
+    "href": "study-guides/week02-data-types-visualization.html",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
     "section": "",
-    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
+    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
   },
   {
-    "objectID": "study-guides/week10-regression.html#overview",
-    "href": "study-guides/week10-regression.html#overview",
-    "title": "Week 10 — Introduction to Regression",
+    "objectID": "study-guides/week02-data-types-visualization.html#overview",
+    "href": "study-guides/week02-data-types-visualization.html#overview",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
     "section": "",
-    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
+    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
   },
   {
-    "objectID": "study-guides/week10-regression.html#learning-objectives",
-    "href": "study-guides/week10-regression.html#learning-objectives",
-    "title": "Week 10 — Introduction to Regression",
+    "objectID": "study-guides/week02-data-types-visualization.html#learning-objectives",
+    "href": "study-guides/week02-data-types-visualization.html#learning-objectives",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nTo be added."
+    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nDistinguish categorical/discrete variables from continuous/quantitative variables.\nDefine and recognize the four scales of measurement: nominal, ordinal, interval, and ratio.\nExplain what information is—and is not—contained in each scale of measurement.\nExplain why numerical coding does not necessarily make a variable quantitative.\nConstruct an ungrouped frequency distribution.\nCalculate frequency, proportion/relative frequency, percentage, cumulative frequency, and cumulative relative frequency/percentage.\nExplain when grouped frequency distributions are useful.\nCalculate a reasonable class interval/bin width, and identify lower and upper limits.\nDistinguish apparent limits from real limits.\nChoose an appropriate graph for a variable: bar chart, histogram, or frequency polygon.\nExplain how graphical design choices can create misleading impressions.\nUse summation notation correctly when constants, products, and multiple variables are involved.\nDefine mean, median, and mode and explain how the appropriate measure of central tendency depends on the data and distribution.\nIdentify a documented disagreement in the Week 2 materials concerning how Likert-like/rating-scale data should be treated."
   },
   {
-    "objectID": "study-guides/week10-regression.html#key-concepts",
-    "href": "study-guides/week10-regression.html#key-concepts",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Key Concepts",
-    "text": "Key Concepts\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#frequency",
+    "href": "study-guides/week02-data-types-visualization.html#frequency",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Frequency",
+    "text": "Frequency\nFrequency (f) is the number of observations at a value or in an interval."
   },
   {
-    "objectID": "study-guides/week10-regression.html#how-the-concepts-fit-together",
-    "href": "study-guides/week10-regression.html#how-the-concepts-fit-together",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "How the Concepts Fit Together",
-    "text": "How the Concepts Fit Together\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#proportion-relative-frequency",
+    "href": "study-guides/week02-data-types-visualization.html#proportion-relative-frequency",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Proportion / relative frequency",
+    "text": "Proportion / relative frequency\n\\[\np=\\frac{f}{n}.\n\\]\nThe proportions should sum to approximately:\n\\[\n\\sum p=1.00.\n\\]"
   },
   {
-    "objectID": "study-guides/week10-regression.html#important-terms",
-    "href": "study-guides/week10-regression.html#important-terms",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Important Terms",
-    "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
+    "objectID": "study-guides/week02-data-types-visualization.html#percentage",
+    "href": "study-guides/week02-data-types-visualization.html#percentage",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Percentage",
+    "text": "Percentage\n\\[\n\\%=p\\times100.\n\\]\nPercentages should sum to approximately:\n\\[\n100\\%.\n\\]"
   },
   {
-    "objectID": "study-guides/week10-regression.html#worked-examples",
-    "href": "study-guides/week10-regression.html#worked-examples",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Worked Examples",
-    "text": "Worked Examples\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#cumulative-frequency",
+    "href": "study-guides/week02-data-types-visualization.html#cumulative-frequency",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Cumulative frequency",
+    "text": "Cumulative frequency\nCumulative frequency is the running total of frequencies.\nFor an ascending table, it answers:\n\nHow many observations scored this value or less?\n\nThe final cumulative frequency should equal (n)."
   },
   {
-    "objectID": "study-guides/week10-regression.html#common-misunderstandings",
-    "href": "study-guides/week10-regression.html#common-misunderstandings",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Common Misunderstandings",
-    "text": "Common Misunderstandings\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
+    "href": "study-guides/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Cumulative relative frequency / cumulative percentage",
+    "text": "Cumulative relative frequency / cumulative percentage\nA cumulative relative frequency is the running total of proportions.\nA cumulative percentage is the running total of percentages.\nThe final values should be approximately:\n\\[\n1.00\n\\]\nand\n\\[\n100\\%.\n\\]\nrespectively (Privitera, 2018, 2024; Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week10-regression.html#tutorial-preparation",
-    "href": "study-guides/week10-regression.html#tutorial-preparation",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Tutorial Preparation",
-    "text": "Tutorial Preparation\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#measurement-scales",
+    "href": "study-guides/week02-data-types-visualization.html#measurement-scales",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Measurement Scales",
+    "text": "Measurement Scales\n\nPreferred web browser: nominal, ordinal, interval, or ratio?\nFinishing position in a marathon: nominal, ordinal, interval, or ratio?\nCelsius temperature: nominal, ordinal, interval, or ratio?\nReaction time in milliseconds: nominal, ordinal, interval, or ratio?\nExplain why coding categories 1, 2, 3, and 4 does not automatically justify calculating their mean."
   },
   {
-    "objectID": "study-guides/week10-regression.html#practice-questions",
-    "href": "study-guides/week10-regression.html#practice-questions",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Practice Questions",
-    "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#frequency-tables",
+    "href": "study-guides/week02-data-types-visualization.html#frequency-tables",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Frequency Tables",
+    "text": "Frequency Tables\nFor:\n\\[\nX=\\{2,4,4,5,5,5,7,8,8,9\\},\n\\]\nconstruct a table containing:\n\n(X);\n(f);\n(p);\npercentage;\ncumulative frequency;\ncumulative percentage.\n\nCheck that:\n\\[\n\\sum f=n,\n\\]\n\\[\n\\sum p=1,\n\\]\nand percentages sum to 100%."
   },
   {
-    "objectID": "study-guides/week10-regression.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week10-regression.html#what-you-should-be-able-to-explain",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "What You Should Be Able to Explain",
-    "text": "What You Should Be Able to Explain\nTo be added."
+    "objectID": "study-guides/week02-data-types-visualization.html#grouping",
+    "href": "study-guides/week02-data-types-visualization.html#grouping",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Grouping",
+    "text": "Grouping\nFor scores ranging from 12 to 92:\n\nCalculate the observed range.\nEstimate a bin width for approximately 10 bins.\nPropose a set of non-overlapping class intervals.\nExplain what information is lost after grouping."
   },
   {
-    "objectID": "study-guides/week10-regression.html#reading",
-    "href": "study-guides/week10-regression.html#reading",
-    "title": "Week 10 — Introduction to Regression",
-    "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapter 13"
+    "objectID": "study-guides/week02-data-types-visualization.html#graph-choice",
+    "href": "study-guides/week02-data-types-visualization.html#graph-choice",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Graph Choice",
+    "text": "Graph Choice\nChoose the most appropriate basic display and explain why:\n\nfavorite music genre;\ncourse letter grade;\nreaction time;\nage in years measured continuously;\nnumber of children in a household."
   },
   {
-    "objectID": "resources/index.html",
-    "href": "resources/index.html",
-    "title": "Resources",
+    "objectID": "study-guides/week02-data-types-visualization.html#central-tendency",
+    "href": "study-guides/week02-data-types-visualization.html#central-tendency",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Central Tendency",
+    "text": "Central Tendency\nFor:\n\\[\n2,3,4,5,6,6,100\n\\]\ncalculate:\n\nmean;\nmedian;\nmode.\n\nThen explain which value is most representative and why."
+  },
+  {
+    "objectID": "study-guides/week02-data-types-visualization.html#required-readings",
+    "href": "study-guides/week02-data-types-visualization.html#required-readings",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Required readings",
+    "text": "Required readings\n\nPrivitera, G. J. (2018), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2018), Chapter 3: Summarizing Data: Central Tendency."
+  },
+  {
+    "objectID": "study-guides/week02-data-types-visualization.html#additional-supplied-readings",
+    "href": "study-guides/week02-data-types-visualization.html#additional-supplied-readings",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Additional supplied readings",
+    "text": "Additional supplied readings\n\nPrivitera, G. J. (2024), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2024), Chapter 3: Summarizing Data: Central Tendency."
+  },
+  {
+    "objectID": "study-guides/week02-data-types-visualization.html#lecture-and-tutorial-materials",
+    "href": "study-guides/week02-data-types-visualization.html#lecture-and-tutorial-materials",
+    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "section": "Lecture and tutorial materials",
+    "text": "Lecture and tutorial materials\n\nLecture 2: Data Types and Visualization.\nLecture 2 Worksheet and key.\nScales of Measurement and Frequency Distributions tutorial.\nApplied Practice: Summation Operator worksheet and key.\nFrequency Table Practice exercises."
+  },
+  {
+    "objectID": "study-guides/index.html",
+    "href": "study-guides/index.html",
+    "title": "Study Guides",
     "section": "",
-    "text": "Privitera, G. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.). Sage Publishing."
-  },
-  {
-    "objectID": "resources/index.html#required-text",
-    "href": "resources/index.html#required-text",
-    "title": "Resources",
-    "section": "",
-    "text": "Privitera, G. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.). Sage Publishing."
-  },
-  {
-    "objectID": "resources/index.html#supplementary-resources",
-    "href": "resources/index.html#supplementary-resources",
-    "title": "Resources",
-    "section": "Supplementary Resources",
-    "text": "Supplementary Resources\n\nLane, D. M. et al. (n.d.). OnlineStatBook. A free online statistics resource with interactive applets and videos.\nGravetter, F. G., Wallnau, L. B., Forzano, L. B., & Witnauer, J. E. (2021). Essentials of Statistics for the Behavioral Sciences (10th ed.). Cengage."
-  },
-  {
-    "objectID": "assignments/assignment01.html",
-    "href": "assignments/assignment01.html",
-    "title": "Assignment 1",
-    "section": "",
-    "text": "Weight: 10%\nDue: October 9, 2026, 11:59 PM"
-  },
-  {
-    "objectID": "assignments/assignment01.html#assignment-materials",
-    "href": "assignments/assignment01.html#assignment-materials",
-    "title": "Assignment 1",
-    "section": "Assignment Materials",
-    "text": "Assignment Materials\nDetailed assignment instructions to be added when available."
-  },
-  {
-    "objectID": "assignments/assignment01.html#preparation",
-    "href": "assignments/assignment01.html#preparation",
-    "title": "Assignment 1",
-    "section": "Preparation",
-    "text": "Preparation\nTo be developed from the relevant course materials."
-  },
-  {
-    "objectID": "assignments/assignment02.html",
-    "href": "assignments/assignment02.html",
-    "title": "Assignment 2",
-    "section": "",
-    "text": "Weight: 15%\nDue: November 27, 2026, 11:59 PM"
-  },
-  {
-    "objectID": "assignments/assignment02.html#assignment-materials",
-    "href": "assignments/assignment02.html#assignment-materials",
-    "title": "Assignment 2",
-    "section": "Assignment Materials",
-    "text": "Assignment Materials\nDetailed assignment instructions to be added when available."
-  },
-  {
-    "objectID": "assignments/assignment02.html#preparation",
-    "href": "assignments/assignment02.html#preparation",
-    "title": "Assignment 2",
-    "section": "Preparation",
-    "text": "Preparation\nTo be developed from the relevant course materials."
-  },
-  {
-    "objectID": "assignments/index.html",
-    "href": "assignments/index.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "The course includes two assignments. Detailed instructions can be added when the assignment sheets are available.\n\nAssignment 1 — 10%, due October 9, 2026\nAssignment 2 — 15%, due November 27, 2026"
+    "text": "The Study Guides are organized by major course subject. Each guide will be developed from the lecture notes, tutorials, exercises, and readings supplied for that subject.\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types and Visualization\nWeek 03 — Measures of Central Tendency and Variability\nWeek 04 — Standard Scores\nWeek 05 — Probability and the Central Limit Theorem\nWeek 06 — Hypothesis Testing\nWeek 07 — t-tests: One-Sample and Independent Measures\nWeek 08 — t-tests: Dependent Measures and ANOVA\nWeek 09 — Introduction to Correlation\nWeek 10 — Introduction to Regression\nWeek 11 — Categorical Data Analysis / Course Wrap-Up"
   },
   {
     "objectID": "index.html",
@@ -1027,6 +523,76 @@
     "title": "Data Analysis: Learning & Teaching",
     "section": "Study Guide workflow",
     "text": "Study Guide workflow\nEach Study Guide will be developed from the materials supplied for that week, including lecture notes, tutorials, exercises, and readings. These source materials will remain the primary basis for the guide."
+  },
+  {
+    "objectID": "assignments/assignment02.html",
+    "href": "assignments/assignment02.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Weight: 15%\nDue: November 27, 2026, 11:59 PM"
+  },
+  {
+    "objectID": "assignments/assignment02.html#assignment-materials",
+    "href": "assignments/assignment02.html#assignment-materials",
+    "title": "Assignment 2",
+    "section": "Assignment Materials",
+    "text": "Assignment Materials\nDetailed assignment instructions to be added when available."
+  },
+  {
+    "objectID": "assignments/assignment02.html#preparation",
+    "href": "assignments/assignment02.html#preparation",
+    "title": "Assignment 2",
+    "section": "Preparation",
+    "text": "Preparation\nTo be developed from the relevant course materials."
+  },
+  {
+    "objectID": "assignments/assignment01.html",
+    "href": "assignments/assignment01.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "Weight: 10%\nDue: October 9, 2026, 11:59 PM"
+  },
+  {
+    "objectID": "assignments/assignment01.html#assignment-materials",
+    "href": "assignments/assignment01.html#assignment-materials",
+    "title": "Assignment 1",
+    "section": "Assignment Materials",
+    "text": "Assignment Materials\nDetailed assignment instructions to be added when available."
+  },
+  {
+    "objectID": "assignments/assignment01.html#preparation",
+    "href": "assignments/assignment01.html#preparation",
+    "title": "Assignment 1",
+    "section": "Preparation",
+    "text": "Preparation\nTo be developed from the relevant course materials."
+  },
+  {
+    "objectID": "assignments/index.html",
+    "href": "assignments/index.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "The course includes two assignments. Detailed instructions can be added when the assignment sheets are available.\n\nAssignment 1 — 10%, due October 9, 2026\nAssignment 2 — 15%, due November 27, 2026"
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Privitera, G. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.). Sage Publishing."
+  },
+  {
+    "objectID": "resources/index.html#required-text",
+    "href": "resources/index.html#required-text",
+    "title": "Resources",
+    "section": "",
+    "text": "Privitera, G. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.). Sage Publishing."
+  },
+  {
+    "objectID": "resources/index.html#supplementary-resources",
+    "href": "resources/index.html#supplementary-resources",
+    "title": "Resources",
+    "section": "Supplementary Resources",
+    "text": "Supplementary Resources\n\nLane, D. M. et al. (n.d.). OnlineStatBook. A free online statistics resource with interactive applets and videos.\nGravetter, F. G., Wallnau, L. B., Forzano, L. B., & Witnauer, J. E. (2021). Essentials of Statistics for the Behavioral Sciences (10th ed.). Cengage."
   },
   {
     "objectID": "study-guides/week01-basic-concepts.html",
@@ -1330,207 +896,564 @@
     "text": "Suggested practice from the lecture\nThe lecture recommends completing the Lecture 1 worksheet, attempting Learning Check 1 and Learning Check 2, reviewing the basic mathematics appendix, and completing selected end-of-chapter Chapter 1 problems."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html",
-    "href": "study-guides/week11-categorical-data.html",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week03-central-tendency-variability.html",
+    "href": "study-guides/week03-central-tendency-variability.html",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "",
+    "text": "Week 3 asks two closely related questions:\n\nWhere is the center of a distribution?\nHow spread out are the scores around that center?\n\nThe first question is addressed with measures of central tendency: the mode, median, and mean. The second is addressed with measures of variability: the range, interquartile range, variance, and standard deviation.\nThe lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).\nThe Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:\n\nweighted means;\npercentiles and interpolated medians;\nskewness;\nsum of squares;\nsample versus population variance;\ndegrees of freedom;\nthe standard deviation as a measure in the original units of measurement."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#why-do-we-need-measures-of-center",
+    "href": "study-guides/week03-central-tendency-variability.html#why-do-we-need-measures-of-center",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "1. Why Do We Need Measures of Center?",
+    "text": "1. Why Do We Need Measures of Center?\nA frequency distribution tells us how scores are distributed, but researchers often also want a single value that summarizes what is typical or representative.\nThe Week 3 lecture frames central tendency as an attempt to locate the “center” of a sample or population, while emphasizing that “center” can mean different things (Sigal, 2026).\nThe three standard measures are:\n\nMode\nMedian\nMean\n\nEach defines “center” differently.\n\n\n\nMeasure\nBasic idea\n\n\n\n\nMode\nMost frequently occurring value/category\n\n\nMedian\nMiddle position in terms of frequency\n\n\nMean\nArithmetic balance point in terms of magnitudes\n\n\n\nThe fact that there are three measures is not redundancy. They behave differently and are useful under different conditions."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-mode",
+    "href": "study-guides/week03-central-tendency-variability.html#the-mode",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "2. The Mode",
+    "text": "2. The Mode\nThe mode is the value or category that occurs most often.\nFor:\n\\[\nX=\\{0,1,2,2,3\\},\n\\]\nthe mode is:\n\\[\n2.\n\\]\nThe lecture recommends a simple procedure:\n\ninspect the values;\nsort if useful;\ncount frequencies;\nidentify the value with the highest frequency (Sigal, 2026).\n\n\nMore than one mode\nFor:\n\\[\nX=\\{0,1,1,1,1,2,2,3,3,3,3,5\\},\n\\]\nboth 1 and 3 occur four times.\nThe distribution is therefore bimodal.\nA distribution may be:\n\nunimodal — one mode;\nbimodal — two modes;\nmultimodal — more than two modes;\nnonmodal — no value occurs more often than the others.\n\n\n\nWhy the mode is special\nThe mode can be used with categorical data because it depends only on frequency.\nFor example, if browser preference is categorical, the “most common browser” is meaningful even though an arithmetic mean of browser codes would not be."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-median",
+    "href": "study-guides/week03-central-tendency-variability.html#the-median",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "3. The Median",
+    "text": "3. The Median\nThe median is the value that divides an ordered distribution in half based on frequency.\nIt is also the 50th percentile (Sigal, 2026).\nThe median is not necessarily an observed score.\n\nBasic position rule\nA common quick rule for the median position is:\n\\[\n\\frac{n+1}{2}.\n\\]\nFor an odd sample size:\n\\[\nX=\\{11,5,8,10,3\\}.\n\\]\nSort the values:\n\\[\n\\{3,5,8,10,11\\}.\n\\]\nBecause:\n\\[\n\\frac{5+1}{2}=3,\n\\]\nthe median is the third score:\n\\[\nMd=8.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#median-with-an-even-number-of-scores",
+    "href": "study-guides/week03-central-tendency-variability.html#median-with-an-even-number-of-scores",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "4. Median With an Even Number of Scores",
+    "text": "4. Median With an Even Number of Scores\nSuppose:\n\\[\nX=\\{3,3,4,5,7,8\\}.\n\\]\nThen:\n\\[\n\\frac{6+1}{2}=3.5.\n\\]\nThe median falls halfway between positions 3 and 4.\nAverage those two scores:\n\\[\nMd=\\frac{4+5}{2}=4.5.\n\\]\nFor ordinary ungrouped data, this is the familiar textbook procedure.\nHowever, the Week 3 lecture introduces a more general interpolation method because the instructor wants students to think about the median as a location within an interval, especially when ties or grouped data are involved (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-courses-interpolated-median-formula",
+    "href": "study-guides/week03-central-tendency-variability.html#the-courses-interpolated-median-formula",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "5. The Course’s Interpolated Median Formula",
+    "text": "5. The Course’s Interpolated Median Formula\nThe lecture uses cumulative frequency to estimate the location of the median within a score interval:\n\\[\nMd = LL + W\\left[\\frac{0.5n-cf}{f}\\right].\n\\]\nwhere:\n\n(LL) = lower real limit of the interval containing the median;\n(W) = interval width;\n(n) = sample size;\n(cf) = cumulative frequency below the median interval;\n(f) = frequency in the median interval.\n\nThe procedure is:\n\ncreate a cumulative frequency table in descending order;\nidentify the row containing the 50th percentile;\nfind (LL) and (W);\nuse the cumulative frequency in the row below;\nuse the frequency in the highlighted row;\nsubstitute into the formula (Sigal, 2026).\n\nThis is the method the course expects students to learn for the Week 3 exercises."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#worked-interpolated-median-example",
+    "href": "study-guides/week03-central-tendency-variability.html#worked-interpolated-median-example",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "6. Worked Interpolated Median Example",
+    "text": "6. Worked Interpolated Median Example\nThe lecture uses:\n\\[\nX=\\{1,2,2,3,4,4,4,4,4,5\\}.\n\\]\nThe cumulative table is:\n\n\n\nScore\n(f)\n(cf)\n(cf%)\n\n\n\n\n5\n1\n10\n100\n\n\n4\n5\n9\n90\n\n\n3\n1\n4\n40\n\n\n2\n2\n3\n30\n\n\n1\n1\n1\n10\n\n\n\nThe 50th percentile lies in the row for score 4.\nTherefore:\n\n(LL=3.5)\n(W=1)\n(n=10)\n(cf=4)\n(f=5)\n\nSubstitute:\n\\[\nMd\n=\n3.5+\n1\\left[\n\\frac{0.5(10)-4}{5}\n\\right].\n\\]\nSo:\n\\[\nMd\n=\n3.5+\n\\frac{1}{5}\n=\n3.7.\n\\]\nThis value is an interpolated estimate within the median interval, not the ordinary midpoint of the 5th and 6th raw-score positions (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#a-course-specific-median-convention",
+    "href": "study-guides/week03-central-tendency-variability.html#a-course-specific-median-convention",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "7. A Course-Specific Median Convention",
+    "text": "7. A Course-Specific Median Convention\nThere is an important methodological point here.\nFor simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when (n) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).\nThe supplemental median handout makes this intention explicit. It states that the quick ((n+1)/2) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).\n\nFor this course\nWhen solving course problems that ask for the formula-based median:\n\nUse the interpolation procedure demonstrated in the lecture and supplemental handout.\n\nDo not silently substitute the simpler textbook convention when the problem is clearly designed around cumulative frequency and real limits."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#percentiles-beyond-the-median",
+    "href": "study-guides/week03-central-tendency-variability.html#percentiles-beyond-the-median",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "8. Percentiles Beyond the Median",
+    "text": "8. Percentiles Beyond the Median\nThe (0.5) in the median formula is not arbitrary.\nIt represents the desired percentile:\n\\[\nP_{50}.\n\\]\nThe same logic can be generalized.\nFor example, the 25th percentile can be estimated using:\n\\[\nP_{25}\n=\nLL+\nW\\left[\n\\frac{0.25n-cf}{f}\n\\right].\n\\]\nThus the median formula is part of a more general percentile-interpolation framework (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#median-for-grouped-data",
+    "href": "study-guides/week03-central-tendency-variability.html#median-for-grouped-data",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "9. Median for Grouped Data",
+    "text": "9. Median for Grouped Data\nFor grouped data, interval width does not have to equal 1.\nThe lecture example is:\n\n\n\nInterval\n(f)\n(cf)\n(cf%)\n\n\n\n\n12–15\n3\n8\n100\n\n\n8–11\n1\n5\n62.5\n\n\n4–7\n3\n4\n50\n\n\n0–3\n1\n1\n12.5\n\n\n\nFor the median interval 4–7:\n\n(LL=3.5)\n(W=7.5-3.5=4)\n(n=8)\n(cf=1)\n(f=3)\n\nThen:\n\\[\nMd\n=\n3.5+\n4\\left[\n\\frac{0.5(8)-1}{3}\n\\right]\n=\n7.5.\n\\]\nThe same formula works because (W) explicitly represents the real width of the interval (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#supplemental-median-example",
+    "href": "study-guides/week03-central-tendency-variability.html#supplemental-median-example",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "10. Supplemental Median Example",
+    "text": "10. Supplemental Median Example\nThe supplemental handout uses 30 age observations recorded in 3-year bins.\nThe median falls in the 24–26 interval.\nThe handout identifies:\n\n(LL=23.5)\n(W=3)\n(n=30)\n(cf=14)\n(f=5)\n\nThen:\n\\[\nMd\n=\n23.5+\n3\\left[\n\\frac{0.5(30)-14}{5}\n\\right].\n\\]\nTherefore:\n\\[\nMd=24.1.\n\\]\nThe handout contrasts this with the quick ((n+1)/2) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-mean",
+    "href": "study-guides/week03-central-tendency-variability.html#the-mean",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "11. The Mean",
+    "text": "11. The Mean\nThe mean is the arithmetic average.\nFor a sample:\n\\[\n\\bar{x}\n=\n\\frac{\\sum x_i}{n}.\n\\]\nThe lecture notes that APA-style reporting commonly uses (M) for a sample mean, while () is used for a population mean (Sigal, 2026).\nFor:\n\\[\nX=\\{3,7,4,6\\},\n\\]\n\\[\n\\bar{x}\n=\n\\frac{3+7+4+6}{4}\n=\n\\frac{20}{4}\n=\n5.\n\\]\nConceptually, the mean is a balance point based on magnitudes."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#sample-and-population-mean-notation",
+    "href": "study-guides/week03-central-tendency-variability.html#sample-and-population-mean-notation",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "12. Sample and Population Mean Notation",
+    "text": "12. Sample and Population Mean Notation\nThe lecture distinguishes:\n\nsample mean: ({x}) or (M);\npopulation mean: ().\n\nThe calculation itself is structurally the same:\n\\[\nM=\\frac{\\sum X}{n},\n\\]\nand:\n\\[\n\\mu=\\frac{\\sum X}{N}.\n\\]\nThe symbols remind us whether the calculation describes a sample or the entire population of interest."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-weighted-mean",
+    "href": "study-guides/week03-central-tendency-variability.html#the-weighted-mean",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "13. The Weighted Mean",
+    "text": "13. The Weighted Mean\nA simple average of group means is only correct when the groups contribute equal weight.\nSuppose:\n\nGroup 1: ({x}_1=6, n_1=20)\nGroup 2: ({x}_2=15, n_2=3)\n\nIt would be wrong to calculate:\n\\[\n\\frac{6+15}{2}=10.5.\n\\]\nThe groups are not equally large.\nInstead:\n\\[\n\\bar{x}_C\n=\n\\frac{\\sum X_1+\\sum X_2}\n{n_1+n_2}.\n\\]\nBecause:\n\\[\n\\sum X_1=120\n\\]\nand:\n\\[\n\\sum X_2=45,\n\\]\nthe combined mean is:\n\\[\n\\bar{x}_C\n=\n\\frac{120+45}{20+3}\n=\n\\frac{165}{23}\n=\n7.17.\n\\]\nThe larger group contributes more information and therefore more weight (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#weighted-mean-from-group-means",
+    "href": "study-guides/week03-central-tendency-variability.html#weighted-mean-from-group-means",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "14. Weighted Mean From Group Means",
+    "text": "14. Weighted Mean From Group Means\nIf the original sums are not given, recover each group sum using:\n\\[\n\\sum X = \\bar{x}n.\n\\]\nThen:\n\\[\n\\bar{x}_C\n=\n\\frac{\n\\bar{x}_1n_1+\\bar{x}_2n_2+\\cdots+\\bar{x}_kn_k\n}{\nn_1+n_2+\\cdots+n_k\n}.\n\\]\nThe lecture example gives:\n\n\n\nGroup\nMean\n(n)\n\n\n\n\nDrivers\n1\n7\n\n\nBus\n6\n20\n\n\nWalk/Bicycle\n3\n45\n\n\n\nTherefore:\n\\[\n\\bar{x}_C\n=\n\\frac{1(7)+6(20)+3(45)}\n{7+20+45}\n=\n\\frac{262}{72}\n=\n3.64.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#how-the-mean-changes",
+    "href": "study-guides/week03-central-tendency-variability.html#how-the-mean-changes",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "15. How the Mean Changes",
+    "text": "15. How the Mean Changes\nThe Week 3 worksheet asks students to explore how transformations affect the mean (PSYC 210 Teaching Team, 2026b).\nThe key patterns are:\n\nChange one score\nChanging one observation changes the mean because the total sum changes.\n\n\nAdd a constant to every score\nIf every observation increases by (c),\n\\[\nM_{\\text{new}}=M_{\\text{old}}+c.\n\\]\n\n\nMultiply every score by a constant\nIf every observation is multiplied by (c),\n\\[\nM_{\\text{new}}=cM_{\\text{old}}.\n\\]\n\n\nSubtract the mean from every score\nIf:\n\\[\nY_i=X_i-M,\n\\]\nthen:\n\\[\n\\bar{Y}=0.\n\\]\nThis is because deviations from the mean sum to zero.\n\n\nAdd a new score\nA new score above the old mean pulls the mean upward.\nA new score below the old mean pulls the mean downward.\nA new score equal to the old mean leaves the mean unchanged."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#why-do-we-need-three-measures-of-center",
+    "href": "study-guides/week03-central-tendency-variability.html#why-do-we-need-three-measures-of-center",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "16. Why Do We Need Three Measures of Center?",
+    "text": "16. Why Do We Need Three Measures of Center?\nThe lecture answers this by asking what kinds of data and distributions we have (Sigal, 2026).\n\nMode\nUseful for:\n\ncategorical/discrete data;\nidentifying the most common response;\ndescribing modality.\n\n\n\nMedian\nUseful when:\n\nscores are ordinal;\nthe distribution has extreme scores or outliers;\na robust description of the middle is desirable.\n\n\n\nMean\nUseful in many quantitative settings because it incorporates the magnitude of every score.\nThe key principle is:\n\nThe best measure depends on the structure of the data."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#outliers-mean-vs.-median",
+    "href": "study-guides/week03-central-tendency-variability.html#outliers-mean-vs.-median",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "17. Outliers: Mean vs. Median",
+    "text": "17. Outliers: Mean vs. Median\nThe lecture gives the following error counts:\n\n\n\nErrors\n0\n1\n2\n3\n100\n\n\n\n\nFrequency\n1\n4\n3\n1\n1\n\n\n\nThe raw scores are:\n\\[\n0,1,1,1,1,2,2,2,3,100.\n\\]\nThe mean is:\n\\[\nM\n=\n\\frac{113}{10}\n=\n11.3.\n\\]\nThis is a poor description of the typical observation because one extreme score pulls the mean upward.\nUsing the course’s interpolated median method, the lecture obtains:\n\\[\nMd=1.5.\n\\]\nThe example demonstrates why the median can be more robust to extreme values than the mean (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#distribution-shape-and-skewness",
+    "href": "study-guides/week03-central-tendency-variability.html#distribution-shape-and-skewness",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "18. Distribution Shape and Skewness",
+    "text": "18. Distribution Shape and Skewness\nA distribution can be described not only by its center but also by its shape.\nSkewness refers to asymmetry.\nThe lecture distinguishes:\n\nsymmetric distributions;\npositively skewed distributions;\nnegatively skewed distributions (Sigal, 2026).\n\nIn a positively skewed distribution:\n\nmost scores cluster toward the lower end;\nthe tail stretches to the right.\n\nIn a negatively skewed distribution:\n\nmost scores cluster toward the higher end;\nthe tail stretches to the left."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#mean-median-mode-and-shape",
+    "href": "study-guides/week03-central-tendency-variability.html#mean-median-mode-and-shape",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "19. Mean, Median, Mode, and Shape",
+    "text": "19. Mean, Median, Mode, and Shape\nThe lecture presents a useful heuristic:\n\nApproximately symmetric / bell-shaped\n\\[\n\\text{mean} \\approx \\text{median} \\approx \\text{mode}.\n\\]\n\n\nPositive skew\n\\[\n\\text{mean}&gt;\\text{median}&gt;\\text{mode}.\n\\]\n\n\nNegative skew\n\\[\n\\text{mean}&lt;\\text{median}&lt;\\text{mode}.\n\\]\nThe reason is that the mean is particularly sensitive to extreme values and is pulled toward the long tail (Sigal, 2026).\nThese relationships are useful descriptive clues, not universal mathematical identities for every irregular dataset."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#other-distribution-shapes",
+    "href": "study-guides/week03-central-tendency-variability.html#other-distribution-shapes",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "20. Other Distribution Shapes",
+    "text": "20. Other Distribution Shapes\nThe lecture also illustrates several shapes:\n\nbell-shaped;\nrectangular/uniform;\nU-shaped;\nJ-shaped;\npositively skewed;\nnegatively skewed.\n\nThese examples reinforce an important point:\n\nA measure of center does not tell you the whole shape of a distribution.\n\nTwo datasets can have similar means but radically different shapes."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#why-variability-matters",
+    "href": "study-guides/week03-central-tendency-variability.html#why-variability-matters",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "21. Why Variability Matters",
+    "text": "21. Why Variability Matters\nCentral tendency tells us about the middle.\nVariability tells us about spread.\nPrivitera (2018, 2024) emphasizes that behavior naturally varies. Two groups can have the same mean but very different dispersion.\nThe lecture frames the goal of variability as understanding the width of a distribution (Sigal, 2026).\nMeasures introduced this week include:\n\nrange;\ninterquartile range;\nvariance;\nstandard deviation."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-range",
+    "href": "study-guides/week03-central-tendency-variability.html#the-range",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "22. The Range",
+    "text": "22. The Range\nThe range is:\n\\[\n\\text{Range}\n=\nX_{\\max}-X_{\\min}.\n\\]\nIt is the simplest measure of variability.\nFor:\n\\[\n1,2,3,4,5,\n\\]\n\\[\n\\text{Range}=5-1=4.\n\\]\n\nLimitation\nThe range uses only two observations:\n\nthe minimum;\nthe maximum.\n\nTherefore, a single extreme score can drastically inflate it.\nPrivitera (2018, 2024) emphasizes that the range is most informative when important outliers are absent."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#interquartile-range",
+    "href": "study-guides/week03-central-tendency-variability.html#interquartile-range",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "23. Interquartile Range",
+    "text": "23. Interquartile Range\nThe interquartile range (IQR) describes the spread of the middle 50% of a distribution.\nIt is:\n\\[\nIQR=Q_3-Q_1.\n\\]\nwhere:\n\n(Q_1) = 25th percentile;\n(Q_2) = median / 50th percentile;\n(Q_3) = 75th percentile.\n\nBecause the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#from-deviation-to-variance",
+    "href": "study-guides/week03-central-tendency-variability.html#from-deviation-to-variance",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "24. From Deviation to Variance",
+    "text": "24. From Deviation to Variance\nSuppose we want to quantify how far scores are from the mean.\nFor each score:\n\\[\n\\text{deviation}\n=\nX_i-M.\n\\]\nIf the data are:\n\\[\nX=\\{3,4,5,6,12\\},\n\\]\nthe mean is:\n\\[\nM=6.\n\\]\nThe deviations are:\n\\[\n-3,-2,-1,0,6.\n\\]\nBut:\n\\[\n\\sum(X_i-M)=0.\n\\]\nPositive and negative deviations cancel.\nTherefore, simply averaging raw signed deviations would always make variability look like zero.\nThis is why deviations are squared before they are summed."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#sum-of-squares",
+    "href": "study-guides/week03-central-tendency-variability.html#sum-of-squares",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "25. Sum of Squares",
+    "text": "25. Sum of Squares\nThe sum of squares (SS) is:\n\\[\nSS\n=\n\\sum(X_i-M)^2\n\\]\nfor a sample, or:\n\\[\nSS\n=\n\\sum(X_i-\\mu)^2\n\\]\nfor a population.\nBecause each deviation is squared:\n\nnegative signs disappear;\nlarger deviations contribute more;\n(SS).\n\nIf every observation is identical, every deviation is zero, and:\n\\[\nSS=0.\n\\]\nPrivitera (2018, 2024) describes SS as the sum of squared deviations from the mean and the numerator used in the variance formulas."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#population-variance",
+    "href": "study-guides/week03-central-tendency-variability.html#population-variance",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "26. Population Variance",
+    "text": "26. Population Variance\nPopulation variance is:\n\\[\n\\sigma^2\n=\n\\frac{\n\\sum(X_i-\\mu)^2\n}{N}\n=\n\\frac{SS}{N}.\n\\]\nThe lecture example uses:\n\\[\nX=\\{1,0,6,1\\}\n\\]\nwith:\n\\[\n\\mu=2.\n\\]\nThe deviations are:\n\\[\n-1,-2,4,-1.\n\\]\nSquared deviations:\n\\[\n1,4,16,1.\n\\]\nThus:\n\\[\nSS=22.\n\\]\nPopulation variance is:\n\\[\n\\sigma^2\n=\n\\frac{22}{4}\n=\n5.5.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#standard-deviation-for-a-population",
+    "href": "study-guides/week03-central-tendency-variability.html#standard-deviation-for-a-population",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "27. Standard Deviation for a Population",
+    "text": "27. Standard Deviation for a Population\nThe population standard deviation is the square root of the population variance:\n\\[\n\\sigma\n=\n\\sqrt{\\sigma^2}.\n\\]\nFor the previous example:\n\\[\n\\sigma\n=\n\\sqrt{5.5}\n\\approx\n2.35.\n\\]\nVariance is expressed in squared units.\nStandard deviation returns the measure of spread to the original units of measurement (Privitera, 2018, 2024; Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#sample-variance",
+    "href": "study-guides/week03-central-tendency-variability.html#sample-variance",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "28. Sample Variance",
+    "text": "28. Sample Variance\nWhen the observed data are a sample rather than the entire population, the Week 3 materials use:\n\\[\ns^2\n=\n\\frac{\n\\sum(X_i-\\bar{X})^2\n}{n-1}\n=\n\\frac{SS}{n-1}.\n\\]\nUsing the same values:\n\\[\nX=\\{1,0,6,1\\},\n\\]\nwe still have:\n\\[\nSS=22.\n\\]\nBut now:\n\\[\ns^2\n=\n\\frac{22}{4-1}\n=\n\\frac{22}{3}\n\\approx\n7.33.\n\\]\nThe sample standard deviation is:\n\\[\ns\n=\n\\sqrt{7.33}\n\\approx\n2.71.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#why-does-sample-variance-use-n-1",
+    "href": "study-guides/week03-central-tendency-variability.html#why-does-sample-variance-use-n-1",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "29. Why Does Sample Variance Use (n-1)?",
+    "text": "29. Why Does Sample Variance Use (n-1)?\nThis is one of the most important conceptual ideas in Week 3.\nIf we calculate sample variance using (n), it tends to underestimate the population variance.\nDividing by:\n\\[\nn-1\n\\]\nmakes the sample variance a better estimator of population variance on average (Privitera, 2018, 2024; Sigal, 2026).\nPrivitera describes this as an unbiased estimator:\n\nAcross repeated random samples, variance calculated with (n-1) equals the population variance on average.\n\nThis correction is often associated with Bessel’s correction."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#degrees-of-freedom",
+    "href": "study-guides/week03-central-tendency-variability.html#degrees-of-freedom",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "30. Degrees of Freedom",
+    "text": "30. Degrees of Freedom\nThe denominator:\n\\[\nn-1\n\\]\nis also the degrees of freedom for sample variance.\nDegrees of freedom can be understood as the number of scores that remain free to vary once the sample mean is known.\nSuppose a sample contains three scores and has:\n\\[\nM=4.\n\\]\nIf two scores are:\n\\[\n3,\\ 4,\n\\]\nthen the third cannot be arbitrary.\nBecause the three scores must sum to:\n\\[\n3(4)=12,\n\\]\nthe missing value must be:\n\\[\n5.\n\\]\nThus only:\n\\[\nn-1\n\\]\nscores are independently free to vary (Privitera, 2018, 2024; Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#standard-deviation",
+    "href": "study-guides/week03-central-tendency-variability.html#standard-deviation",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "31. Standard Deviation",
+    "text": "31. Standard Deviation\nThe standard deviation is the square root of the variance.\nFor a sample:\n\\[\ns=\\sqrt{s^2}\n=\n\\sqrt{\\frac{SS}{n-1}}.\n\\]\nFor a population:\n\\[\n\\sigma=\\sqrt{\\sigma^2}\n=\n\\sqrt{\\frac{SS}{N}}.\n\\]\nThe standard deviation gives a measure of the typical distance of scores from the mean in the original scale of measurement (Privitera, 2018, 2024).\n\nInterpretation\n\nsmaller SD → scores are more tightly clustered around the mean;\nlarger SD → scores are more widely spread."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#variance-vs.-standard-deviation",
+    "href": "study-guides/week03-central-tendency-variability.html#variance-vs.-standard-deviation",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "32. Variance vs. Standard Deviation",
+    "text": "32. Variance vs. Standard Deviation\n\n\n\nQuantity\nWhat it measures\nUnits\n\n\n\n\nVariance\nAverage squared spread from the mean\nSquared units\n\n\nStandard deviation\nSpread around the mean\nOriginal units\n\n\n\nFor example, if heights are measured in inches:\n\nvariance is in inches squared;\nstandard deviation is in inches.\n\nThis is one reason standard deviation is easier to interpret directly."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#what-happens-when-scores-are-transformed",
+    "href": "study-guides/week03-central-tendency-variability.html#what-happens-when-scores-are-transformed",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "33. What Happens When Scores Are Transformed?",
+    "text": "33. What Happens When Scores Are Transformed?\nThe Week 3 worksheet explicitly asks students to investigate transformations (PSYC 210 Teaching Team, 2026b).\n\nAdd or subtract the same constant from every score\nIf:\n\\[\nY_i=X_i+c,\n\\]\nthen the mean shifts:\n\\[\nM_Y=M_X+c.\n\\]\nBut distances from the mean do not change.\nTherefore:\n\\[\ns_Y=s_X\n\\]\nand:\n\\[\ns_Y^2=s_X^2.\n\\]\n\n\nMultiply every score by a constant\nIf:\n\\[\nY_i=cX_i,\n\\]\nthen:\n\\[\nM_Y=cM_X,\n\\]\n\\[\ns_Y=|c|s_X,\n\\]\nand:\n\\[\ns_Y^2=c^2s_X^2.\n\\]\nThese relationships are central to understanding standardization later in the course."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#the-week-3-worksheet",
+    "href": "study-guides/week03-central-tendency-variability.html#the-week-3-worksheet",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "34. The Week 3 Worksheet",
+    "text": "34. The Week 3 Worksheet\nThe worksheet uses:\n\\[\nX=\\{6,3,9,11,15,24,4,5,13\\}.\n\\]\nStudents are asked to investigate what happens when they:\n\nsubtract 3 from every score;\nmultiply every score by 4;\nsubtract the mean from every score;\nadd a new score of 16;\nadd a new score of 10;\ncalculate sample variance and standard deviation;\ncompare variability after linear transformations (PSYC 210 Teaching Team, 2026b).\n\nThe purpose is not only to practice arithmetic.\nIt is to recognize predictable structural relationships among:\n\nraw scores;\nmeans;\ndeviations;\nvariance;\nstandard deviation."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#a-second-worksheet-dataset",
+    "href": "study-guides/week03-central-tendency-variability.html#a-second-worksheet-dataset",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "35. A Second Worksheet Dataset",
+    "text": "35. A Second Worksheet Dataset\nThe worksheet also gives weekly grocery-shopping times:\n\\[\n75,72,71,55,56,72,93,73,72,72,73,91,66,71,56,59.\n\\]\nStudents are asked to calculate:\n\nmode;\nmedian;\nmean;\nrange;\nstandard deviation (PSYC 210 Teaching Team, 2026b).\n\nThis problem integrates central tendency and variability into one descriptive summary.\nThat is the larger Week 3 goal:\n\nA useful description of a dataset normally requires more than one statistic."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#what-should-be-reported-together",
+    "href": "study-guides/week03-central-tendency-variability.html#what-should-be-reported-together",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "36. What Should Be Reported Together?",
+    "text": "36. What Should Be Reported Together?\nMeasures of center and variability are most informative when interpreted together.\nFor many quantitative variables, researchers commonly report:\n\\[\nM\\pm SD.\n\\]\nThe mean tells us about the center.\nThe standard deviation tells us about spread around that center.\nPrivitera (2018, 2024) emphasizes that the standard deviation is especially informative when reported with the mean.\nFor skewed distributions or variables with important outliers, a median paired with a robust measure such as the IQR may be more informative."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#choosing-measures-for-lucys-dataset",
+    "href": "study-guides/week03-central-tendency-variability.html#choosing-measures-for-lucys-dataset",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "37. Choosing Measures for Lucy’s Dataset",
+    "text": "37. Choosing Measures for Lucy’s Dataset\nThe lecture returns to Lucy’s dataset:\n\n\n\n\n\n\n\n\nVariable\nType\nPotential useful summary\n\n\n\n\nName\nIdentifier\nNone as a quantitative summary\n\n\nAge\nQuantitative\nMean/median + SD/range\n\n\nIQ\nQuantitative\nMean + SD; inspect shape/outliers\n\n\nHeight\nQuantitative\nMean + SD\n\n\nGrade\nOrdinal\nMedian/mode; frequencies\n\n\nBrowser\nNominal\nMode; frequencies\n\n\nCARS\nScale score\nMean/median + variability, depending on distribution and course assumptions\n\n\n\nThe point is not that one fixed rule always applies.\nThe choice depends on:\n\nscale of measurement;\ndistribution shape;\noutliers;\nthe substantive research question (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#how-the-concepts-fit-together",
+    "href": "study-guides/week03-central-tendency-variability.html#how-the-concepts-fit-together",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "38. How the Concepts Fit Together",
+    "text": "38. How the Concepts Fit Together\nWeek 3 can be understood as a sequence:\nWhat is the distribution’s center?\n↓\nMode, median, mean\n↓\nWhat is the distribution’s shape?\n↓\nSymmetric? Positively skewed? Negatively skewed? Multimodal?\n↓\nHow spread out are the observations?\n↓\nRange, IQR, variance, standard deviation\n↓\nSample or population?\n↓\nUse (N) or (n-1)\n↓\nInterpret center and spread together\nThis is the transition from simply organizing data to describing the mathematical structure of a distribution."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#important-terms",
+    "href": "study-guides/week03-central-tendency-variability.html#important-terms",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "39. Important Terms",
+    "text": "39. Important Terms\n\n\n\n\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nMode\nMost frequently occurring value or category.\n\n\nMedian\nMiddle position of an ordered distribution; 50th percentile.\n\n\nMean\nArithmetic average; balance point based on magnitudes.\n\n\nWeighted mean\nMean in which groups/values contribute according to their weights or sample sizes.\n\n\nSkewness\nAsymmetry of a distribution.\n\n\nPositive skew\nLong tail toward larger values.\n\n\nNegative skew\nLong tail toward smaller values.\n\n\nVariability\nDegree to which scores are dispersed or spread.\n\n\nRange\nMaximum minus minimum.\n\n\nQuartile\nBoundary dividing a distribution into four parts.\n\n\nInterquartile range (IQR)\n(Q_3-Q_1); spread of the middle 50%.\n\n\nDeviation\nDifference between a score and the mean.\n\n\nSum of squares (SS)\nSum of squared deviations from the mean.\n\n\nPopulation variance\n(SS/N).\n\n\nSample variance\n(SS/(n-1)).\n\n\nStandard deviation\nSquare root of variance; spread in original units.\n\n\nDegrees of freedom\nNumber of independently free scores used in estimating sample variance; (n-1).\n\n\nUnbiased estimator\nStatistic that equals the target population parameter on average across repeated samples.\n\n\nReal limit\nBoundary extending halfway between adjacent measurable values."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#common-misunderstandings",
+    "href": "study-guides/week03-central-tendency-variability.html#common-misunderstandings",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "40. Common Misunderstandings",
+    "text": "40. Common Misunderstandings\n\n“The mode has to be a number.”\nNo. The mode can be a category.\n\n\n“A distribution can only have one mode.”\nNo. It can be bimodal or multimodal.\n\n\n“The median is always an observed score.”\nNo. It can lie between observed scores or be interpolated within an interval.\n\n\n“The mean is always the best measure of center.”\nNo. Extreme scores can make it misleading.\n\n\n“A positively skewed distribution has most scores on the right.”\nNo. The tail points right; most observations are concentrated more toward the lower side.\n\n\n“Variance and standard deviation are the same thing.”\nNo. Standard deviation is the square root of variance.\n\n\n“Standard deviation can be negative.”\nNo. Variability cannot be negative.\n\n\n“Sample and population variance use the same denominator.”\nNo. Population variance divides by (N); sample variance divides by (n-1).\n\n\n“Using (n-1) is just a strange convention.”\nNo. It corrects the systematic downward bias that occurs when sample variance is calculated with (n), and it corresponds to the degrees of freedom available after estimating the mean.\n\n\n“If I add 10 to every score, standard deviation increases by 10.”\nNo. The mean shifts, but the distances between scores and their mean remain unchanged.\n\n\n“If I multiply every score by 10, variance also multiplies by 10.”\nNo. Standard deviation multiplies by 10; variance multiplies by:\n\\[\n10^2=100.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#tutorial-preparation",
+    "href": "study-guides/week03-central-tendency-variability.html#tutorial-preparation",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "41. Tutorial Preparation",
+    "text": "41. Tutorial Preparation\nA TA should be ready to explain both procedures and why the procedures work.\n\n“Why are there three measures of central tendency?”\nBecause they define “center” differently and respond differently to scale, skewness, and outliers.\n\n\n“Why can’t I average group means?”\nYou can only do that directly when the groups contribute equally. With unequal sample sizes, use a weighted mean.\n\n\n“Why does the mean move toward an outlier?”\nBecause every score contributes its magnitude to the total sum.\n\n\n“Why does the median resist outliers?”\nBecause it depends primarily on ordered position rather than the magnitude of extreme values.\n\n\n“Why do we square deviations?”\nBecause signed deviations sum to zero. Squaring prevents cancellation and produces a positive measure of spread.\n\n\n“Why take the square root afterward?”\nBecause variance is in squared units. The square root produces standard deviation in the original units.\n\n\n“Why (n-1)?”\nBecause estimating the sample mean consumes one degree of freedom, and dividing by (n-1) corrects the average downward bias in sample variance.\n\n\n“Why does adding a constant not change SD?”\nBecause every score and the mean shift by exactly the same amount, so the deviations remain unchanged."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#practice-questions",
+    "href": "study-guides/week03-central-tendency-variability.html#practice-questions",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "42. Practice Questions",
+    "text": "42. Practice Questions"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#central-tendency",
+    "href": "study-guides/week03-central-tendency-variability.html#central-tendency",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Central Tendency",
+    "text": "Central Tendency\nFor:\n\\[\nX=\\{2,3,4,4,5,7,20\\},\n\\]\ncalculate:\n\nmode;\nordinary median;\nmean;\nexplain which measure is most affected by the score 20."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#weighted-mean",
+    "href": "study-guides/week03-central-tendency-variability.html#weighted-mean",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Weighted Mean",
+    "text": "Weighted Mean\nTwo groups have:\n\nGroup A: (M=8, n=10)\nGroup B: (M=14, n=30)\n\nCalculate the combined mean."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#shape",
+    "href": "study-guides/week03-central-tendency-variability.html#shape",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Shape",
+    "text": "Shape\nFor each relationship, identify the likely shape:\n\nmean ≈ median ≈ mode;\nmean &gt; median &gt; mode;\nmean &lt; median &lt; mode."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#variability",
+    "href": "study-guides/week03-central-tendency-variability.html#variability",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Variability",
+    "text": "Variability\nFor:\n\\[\nX=\\{2,4,6,8,10\\},\n\\]\ncalculate:\n\nrange;\nmean;\neach deviation from the mean;\nSS;\npopulation variance;\npopulation standard deviation;\nsample variance;\nsample standard deviation."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#transformations",
+    "href": "study-guides/week03-central-tendency-variability.html#transformations",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Transformations",
+    "text": "Transformations\nSuppose:\n\\[\nM=10,\\quad s=4,\\quad s^2=16.\n\\]\nWhat happens if every score is:\n\nincreased by 3?\ndecreased by 5?\nmultiplied by 2?\ndivided by 4?\n\nState the new mean, standard deviation, and variance."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week03-central-tendency-variability.html#what-you-should-be-able-to-explain",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "43. What You Should Be Able to Explain",
+    "text": "43. What You Should Be Able to Explain\nBefore moving on, you should be able to explain:\n\nhow mode, median, and mean define center differently;\nwhy a distribution can have more than one mode;\nhow to calculate an ordinary median;\nhow the course’s interpolation formula estimates a percentile within an interval;\nhow to calculate a weighted mean;\nwhy extreme scores affect mean more strongly than median;\nhow mean, median, and mode relate to skewness;\nwhy central tendency alone is insufficient;\nwhat the range and IQR measure;\nwhy raw deviations from the mean sum to zero;\nwhat SS represents;\nwhy variance squares deviations;\nwhy standard deviation is more directly interpretable than variance;\nwhy sample variance uses (n-1);\nwhat degrees of freedom mean;\nhow linear transformations affect mean, variance, and standard deviation."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#readings-and-practice",
+    "href": "study-guides/week03-central-tendency-variability.html#readings-and-practice",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "44. Readings and Practice",
+    "text": "44. Readings and Practice"
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#required-reading",
+    "href": "study-guides/week03-central-tendency-variability.html#required-reading",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Required reading",
+    "text": "Required reading\n\nPrivitera, G. J. (2018), Chapter 4: Summarizing Data: Variability."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#additional-supplied-reading",
+    "href": "study-guides/week03-central-tendency-variability.html#additional-supplied-reading",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Additional supplied reading",
+    "text": "Additional supplied reading\n\nPrivitera, G. J. (2024), Chapter 4: Summarizing Data: Variability."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#lecture-and-course-materials",
+    "href": "study-guides/week03-central-tendency-variability.html#lecture-and-course-materials",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Lecture and course materials",
+    "text": "Lecture and course materials\n\nLecture 3: Measures of Central Tendency and Variability.\nLecture 3 annotated slides.\nLecture 3 worksheet.\nSupplemental median example."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#instructor-assigned-practice",
+    "href": "study-guides/week03-central-tendency-variability.html#instructor-assigned-practice",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "Instructor-assigned practice",
+    "text": "Instructor-assigned practice\nThe lecture identifies the following practice problems:\nCentral tendency - Questions 11, 17, 21, 22, 32.\nVariability - Questions 11, 12, 21, 29.\nThe lecture also instructs students to skip or ignore the textbook’s section on computational formulas for variance for current course purposes (Sigal, 2026)."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#references",
+    "href": "study-guides/week03-central-tendency-variability.html#references",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "45. References",
+    "text": "45. References\nPrivitera, G. J. (2018). Essential statistics for the behavioral sciences (2nd ed.). SAGE.\nPrivitera, G. J. (2024). Statistics for the behavioral sciences (4th ed.). SAGE.\nPSYC 210 Teaching Team. (2026a). An additional example of calculating the median [Supplemental course handout]. Simon Fraser University.\nPSYC 210 Teaching Team. (2026b). PSYC 210 Lecture 3 worksheet [Course worksheet]. Simon Fraser University.\nSigal, M. (2026, September 28). PSYC 210: Introduction to data analysis—Lecture 3: Measures of central tendency and variability [Lecture slides]. Simon Fraser University."
+  },
+  {
+    "objectID": "study-guides/week03-central-tendency-variability.html#week-3-takeaway",
+    "href": "study-guides/week03-central-tendency-variability.html#week-3-takeaway",
+    "title": "Week 03 — Central Tendency, Shape, and Variability",
+    "section": "46. Week 3 Takeaway",
+    "text": "46. Week 3 Takeaway\nWeek 3 adds two essential dimensions to descriptive statistics:\n\nWhere is the distribution centered, and how much do observations vary around that center?\n\nA single average is never the whole story.\nTo describe data responsibly, consider:\n\nthe appropriate measure of center;\nthe shape of the distribution;\nthe presence of outliers;\nthe amount of variability;\nwhether the data are a sample or a population.\n\nThe mean and standard deviation will become especially important in later weeks, but the deeper lesson is broader:\n\nGood statistical description requires understanding both location and spread."
+  },
+  {
+    "objectID": "study-guides/week05-probability-clt.html",
+    "href": "study-guides/week05-probability-clt.html",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#overview",
-    "href": "study-guides/week11-categorical-data.html#overview",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#overview",
+    "href": "study-guides/week05-probability-clt.html#overview",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#learning-objectives",
-    "href": "study-guides/week11-categorical-data.html#learning-objectives",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#learning-objectives",
+    "href": "study-guides/week05-probability-clt.html#learning-objectives",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#key-concepts",
-    "href": "study-guides/week11-categorical-data.html#key-concepts",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#key-concepts",
+    "href": "study-guides/week05-probability-clt.html#key-concepts",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Key Concepts",
     "text": "Key Concepts\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#how-the-concepts-fit-together",
-    "href": "study-guides/week11-categorical-data.html#how-the-concepts-fit-together",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#how-the-concepts-fit-together",
+    "href": "study-guides/week05-probability-clt.html#how-the-concepts-fit-together",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "How the Concepts Fit Together",
     "text": "How the Concepts Fit Together\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#important-terms",
-    "href": "study-guides/week11-categorical-data.html#important-terms",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#important-terms",
+    "href": "study-guides/week05-probability-clt.html#important-terms",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Important Terms",
     "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#worked-examples",
-    "href": "study-guides/week11-categorical-data.html#worked-examples",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#worked-examples",
+    "href": "study-guides/week05-probability-clt.html#worked-examples",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Worked Examples",
     "text": "Worked Examples\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#common-misunderstandings",
-    "href": "study-guides/week11-categorical-data.html#common-misunderstandings",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#common-misunderstandings",
+    "href": "study-guides/week05-probability-clt.html#common-misunderstandings",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Common Misunderstandings",
     "text": "Common Misunderstandings\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#tutorial-preparation",
-    "href": "study-guides/week11-categorical-data.html#tutorial-preparation",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#tutorial-preparation",
+    "href": "study-guides/week05-probability-clt.html#tutorial-preparation",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Tutorial Preparation",
     "text": "Tutorial Preparation\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#practice-questions",
-    "href": "study-guides/week11-categorical-data.html#practice-questions",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#practice-questions",
+    "href": "study-guides/week05-probability-clt.html#practice-questions",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Practice Questions",
     "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week11-categorical-data.html#what-you-should-be-able-to-explain",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week05-probability-clt.html#what-you-should-be-able-to-explain",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "What You Should Be Able to Explain",
     "text": "What You Should Be Able to Explain\nTo be added."
   },
   {
-    "objectID": "study-guides/week11-categorical-data.html#reading",
-    "href": "study-guides/week11-categorical-data.html#reading",
-    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
+    "objectID": "study-guides/week05-probability-clt.html#reading",
+    "href": "study-guides/week05-probability-clt.html#reading",
+    "title": "Week 05 — Probability and the Central Limit Theorem",
     "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapter 14"
+    "text": "Reading\nPrivitera (2018), Chapter 6"
   },
   {
-    "objectID": "study-guides/index.html",
-    "href": "study-guides/index.html",
-    "title": "Study Guides",
+    "objectID": "study-guides/week07-t-tests-independent.html",
+    "href": "study-guides/week07-t-tests-independent.html",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
     "section": "",
-    "text": "The Study Guides are organized by major course subject. Each guide will be developed from the lecture notes, tutorials, exercises, and readings supplied for that subject.\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types and Visualization\nWeek 03 — Measures of Central Tendency and Variability\nWeek 04 — Standard Scores\nWeek 05 — Probability and the Central Limit Theorem\nWeek 06 — Hypothesis Testing\nWeek 07 — t-tests: One-Sample and Independent Measures\nWeek 08 — t-tests: Dependent Measures and ANOVA\nWeek 09 — Introduction to Correlation\nWeek 10 — Introduction to Regression\nWeek 11 — Categorical Data Analysis / Course Wrap-Up"
+    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html",
-    "href": "study-guides/week02-data-types-visualization.html",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "objectID": "study-guides/week07-t-tests-independent.html#overview",
+    "href": "study-guides/week07-t-tests-independent.html#overview",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
     "section": "",
-    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
+    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#overview",
-    "href": "study-guides/week02-data-types-visualization.html#overview",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "",
-    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
-  },
-  {
-    "objectID": "study-guides/week02-data-types-visualization.html#learning-objectives",
-    "href": "study-guides/week02-data-types-visualization.html#learning-objectives",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
+    "objectID": "study-guides/week07-t-tests-independent.html#learning-objectives",
+    "href": "study-guides/week07-t-tests-independent.html#learning-objectives",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
     "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nDistinguish categorical/discrete variables from continuous/quantitative variables.\nDefine and recognize the four scales of measurement: nominal, ordinal, interval, and ratio.\nExplain what information is—and is not—contained in each scale of measurement.\nExplain why numerical coding does not necessarily make a variable quantitative.\nConstruct an ungrouped frequency distribution.\nCalculate frequency, proportion/relative frequency, percentage, cumulative frequency, and cumulative relative frequency/percentage.\nExplain when grouped frequency distributions are useful.\nCalculate a reasonable class interval/bin width, and identify lower and upper limits.\nDistinguish apparent limits from real limits.\nChoose an appropriate graph for a variable: bar chart, histogram, or frequency polygon.\nExplain how graphical design choices can create misleading impressions.\nUse summation notation correctly when constants, products, and multiple variables are involved.\nDefine mean, median, and mode and explain how the appropriate measure of central tendency depends on the data and distribution.\nIdentify a documented disagreement in the Week 2 materials concerning how Likert-like/rating-scale data should be treated."
+    "text": "Learning Objectives\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#frequency",
-    "href": "study-guides/week02-data-types-visualization.html#frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Frequency",
-    "text": "Frequency\nFrequency (f) is the number of observations at a value or in an interval."
+    "objectID": "study-guides/week07-t-tests-independent.html#key-concepts",
+    "href": "study-guides/week07-t-tests-independent.html#key-concepts",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Key Concepts",
+    "text": "Key Concepts\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#proportion-relative-frequency",
-    "href": "study-guides/week02-data-types-visualization.html#proportion-relative-frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Proportion / relative frequency",
-    "text": "Proportion / relative frequency\n\\[\np=\\frac{f}{n}.\n\\]\nThe proportions should sum to approximately:\n\\[\n\\sum p=1.00.\n\\]"
+    "objectID": "study-guides/week07-t-tests-independent.html#how-the-concepts-fit-together",
+    "href": "study-guides/week07-t-tests-independent.html#how-the-concepts-fit-together",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "How the Concepts Fit Together",
+    "text": "How the Concepts Fit Together\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#percentage",
-    "href": "study-guides/week02-data-types-visualization.html#percentage",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Percentage",
-    "text": "Percentage\n\\[\n\\%=p\\times100.\n\\]\nPercentages should sum to approximately:\n\\[\n100\\%.\n\\]"
+    "objectID": "study-guides/week07-t-tests-independent.html#important-terms",
+    "href": "study-guides/week07-t-tests-independent.html#important-terms",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Important Terms",
+    "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#cumulative-frequency",
-    "href": "study-guides/week02-data-types-visualization.html#cumulative-frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Cumulative frequency",
-    "text": "Cumulative frequency\nCumulative frequency is the running total of frequencies.\nFor an ascending table, it answers:\n\nHow many observations scored this value or less?\n\nThe final cumulative frequency should equal (n)."
+    "objectID": "study-guides/week07-t-tests-independent.html#worked-examples",
+    "href": "study-guides/week07-t-tests-independent.html#worked-examples",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Worked Examples",
+    "text": "Worked Examples\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
-    "href": "study-guides/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Cumulative relative frequency / cumulative percentage",
-    "text": "Cumulative relative frequency / cumulative percentage\nA cumulative relative frequency is the running total of proportions.\nA cumulative percentage is the running total of percentages.\nThe final values should be approximately:\n\\[\n1.00\n\\]\nand\n\\[\n100\\%.\n\\]\nrespectively (Privitera, 2018, 2024; Sigal, 2026)."
+    "objectID": "study-guides/week07-t-tests-independent.html#common-misunderstandings",
+    "href": "study-guides/week07-t-tests-independent.html#common-misunderstandings",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Common Misunderstandings",
+    "text": "Common Misunderstandings\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#measurement-scales",
-    "href": "study-guides/week02-data-types-visualization.html#measurement-scales",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Measurement Scales",
-    "text": "Measurement Scales\n\nPreferred web browser: nominal, ordinal, interval, or ratio?\nFinishing position in a marathon: nominal, ordinal, interval, or ratio?\nCelsius temperature: nominal, ordinal, interval, or ratio?\nReaction time in milliseconds: nominal, ordinal, interval, or ratio?\nExplain why coding categories 1, 2, 3, and 4 does not automatically justify calculating their mean."
+    "objectID": "study-guides/week07-t-tests-independent.html#tutorial-preparation",
+    "href": "study-guides/week07-t-tests-independent.html#tutorial-preparation",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Tutorial Preparation",
+    "text": "Tutorial Preparation\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#frequency-tables",
-    "href": "study-guides/week02-data-types-visualization.html#frequency-tables",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Frequency Tables",
-    "text": "Frequency Tables\nFor:\n\\[\nX=\\{2,4,4,5,5,5,7,8,8,9\\},\n\\]\nconstruct a table containing:\n\n(X);\n(f);\n(p);\npercentage;\ncumulative frequency;\ncumulative percentage.\n\nCheck that:\n\\[\n\\sum f=n,\n\\]\n\\[\n\\sum p=1,\n\\]\nand percentages sum to 100%."
+    "objectID": "study-guides/week07-t-tests-independent.html#practice-questions",
+    "href": "study-guides/week07-t-tests-independent.html#practice-questions",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Practice Questions",
+    "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#grouping",
-    "href": "study-guides/week02-data-types-visualization.html#grouping",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Grouping",
-    "text": "Grouping\nFor scores ranging from 12 to 92:\n\nCalculate the observed range.\nEstimate a bin width for approximately 10 bins.\nPropose a set of non-overlapping class intervals.\nExplain what information is lost after grouping."
+    "objectID": "study-guides/week07-t-tests-independent.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week07-t-tests-independent.html#what-you-should-be-able-to-explain",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "What You Should Be Able to Explain",
+    "text": "What You Should Be Able to Explain\nTo be added."
   },
   {
-    "objectID": "study-guides/week02-data-types-visualization.html#graph-choice",
-    "href": "study-guides/week02-data-types-visualization.html#graph-choice",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Graph Choice",
-    "text": "Graph Choice\nChoose the most appropriate basic display and explain why:\n\nfavorite music genre;\ncourse letter grade;\nreaction time;\nage in years measured continuously;\nnumber of children in a household."
-  },
-  {
-    "objectID": "study-guides/week02-data-types-visualization.html#central-tendency",
-    "href": "study-guides/week02-data-types-visualization.html#central-tendency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Central Tendency",
-    "text": "Central Tendency\nFor:\n\\[\n2,3,4,5,6,6,100\n\\]\ncalculate:\n\nmean;\nmedian;\nmode.\n\nThen explain which value is most representative and why."
-  },
-  {
-    "objectID": "study-guides/week02-data-types-visualization.html#required-readings",
-    "href": "study-guides/week02-data-types-visualization.html#required-readings",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Required readings",
-    "text": "Required readings\n\nPrivitera, G. J. (2018), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2018), Chapter 3: Summarizing Data: Central Tendency."
-  },
-  {
-    "objectID": "study-guides/week02-data-types-visualization.html#additional-supplied-readings",
-    "href": "study-guides/week02-data-types-visualization.html#additional-supplied-readings",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Additional supplied readings",
-    "text": "Additional supplied readings\n\nPrivitera, G. J. (2024), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2024), Chapter 3: Summarizing Data: Central Tendency."
-  },
-  {
-    "objectID": "study-guides/week02-data-types-visualization.html#lecture-and-tutorial-materials",
-    "href": "study-guides/week02-data-types-visualization.html#lecture-and-tutorial-materials",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Lecture and tutorial materials",
-    "text": "Lecture and tutorial materials\n\nLecture 2: Data Types and Visualization.\nLecture 2 Worksheet and key.\nScales of Measurement and Frequency Distributions tutorial.\nApplied Practice: Summation Operator worksheet and key.\nFrequency Table Practice exercises."
+    "objectID": "study-guides/week07-t-tests-independent.html#reading",
+    "href": "study-guides/week07-t-tests-independent.html#reading",
+    "title": "Week 07 — t-tests: One-Sample and Independent Measures",
+    "section": "Reading",
+    "text": "Reading\nPrivitera (2018), Chapters 8 and 9"
   },
   {
     "objectID": "study-guides/week09-correlation.html",
@@ -1617,500 +1540,87 @@
     "text": "Reading\nPrivitera (2018), Chapter 13"
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html",
-    "href": "study-guides/week08-t-tests-dependent-anova.html",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html",
+    "href": "study-guides/week11-categorical-data.html",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#overview",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#overview",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#overview",
+    "href": "study-guides/week11-categorical-data.html#overview",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "",
     "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#learning-objectives",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#learning-objectives",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#learning-objectives",
+    "href": "study-guides/week11-categorical-data.html#learning-objectives",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Learning Objectives",
     "text": "Learning Objectives\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#key-concepts",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#key-concepts",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#key-concepts",
+    "href": "study-guides/week11-categorical-data.html#key-concepts",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Key Concepts",
     "text": "Key Concepts\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#how-the-concepts-fit-together",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#how-the-concepts-fit-together",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#how-the-concepts-fit-together",
+    "href": "study-guides/week11-categorical-data.html#how-the-concepts-fit-together",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "How the Concepts Fit Together",
     "text": "How the Concepts Fit Together\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#important-terms",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#important-terms",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#important-terms",
+    "href": "study-guides/week11-categorical-data.html#important-terms",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Important Terms",
     "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#worked-examples",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#worked-examples",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#worked-examples",
+    "href": "study-guides/week11-categorical-data.html#worked-examples",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Worked Examples",
     "text": "Worked Examples\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#common-misunderstandings",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#common-misunderstandings",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#common-misunderstandings",
+    "href": "study-guides/week11-categorical-data.html#common-misunderstandings",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Common Misunderstandings",
     "text": "Common Misunderstandings\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#tutorial-preparation",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#tutorial-preparation",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#tutorial-preparation",
+    "href": "study-guides/week11-categorical-data.html#tutorial-preparation",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Tutorial Preparation",
     "text": "Tutorial Preparation\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#practice-questions",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#practice-questions",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#practice-questions",
+    "href": "study-guides/week11-categorical-data.html#practice-questions",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Practice Questions",
     "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#what-you-should-be-able-to-explain",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#what-you-should-be-able-to-explain",
+    "href": "study-guides/week11-categorical-data.html#what-you-should-be-able-to-explain",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "What You Should Be Able to Explain",
     "text": "What You Should Be Able to Explain\nTo be added."
   },
   {
-    "objectID": "study-guides/week08-t-tests-dependent-anova.html#reading",
-    "href": "study-guides/week08-t-tests-dependent-anova.html#reading",
-    "title": "Week 08 — t-tests: Dependent Measures and ANOVA",
+    "objectID": "study-guides/week11-categorical-data.html#reading",
+    "href": "study-guides/week11-categorical-data.html#reading",
+    "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapters 10 and 11"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html",
-    "href": "downloads/week01-basic-concepts.html",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "",
-    "text": "Week 1 introduces the logic of data analysis in psychology. The central idea is that statistics is not simply a collection of formulas. It is a way to connect questions, theories, measurements, data, and evidence-based conclusions.\nThe lecture begins with the goals of science and then moves through the basic research process: identify something that needs explaining, decide how to measure it, formulate a research hypothesis, collect data, and analyze those data descriptively or inferentially. It also introduces the distinction between populations and samples, basic research designs, and several mathematical tools—especially summation notation—that will be used throughout the course.\nThe tutorials and practice materials reinforce these ideas through hands-on work with summation notation and the basic organization of data into frequency tables and histograms."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#overview",
-    "href": "downloads/week01-basic-concepts.html#overview",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "",
-    "text": "Week 1 introduces the logic of data analysis in psychology. The central idea is that statistics is not simply a collection of formulas. It is a way to connect questions, theories, measurements, data, and evidence-based conclusions.\nThe lecture begins with the goals of science and then moves through the basic research process: identify something that needs explaining, decide how to measure it, formulate a research hypothesis, collect data, and analyze those data descriptively or inferentially. It also introduces the distinction between populations and samples, basic research designs, and several mathematical tools—especially summation notation—that will be used throughout the course.\nThe tutorials and practice materials reinforce these ideas through hands-on work with summation notation and the basic organization of data into frequency tables and histograms."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#learning-objectives",
-    "href": "downloads/week01-basic-concepts.html#learning-objectives",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nExplain why statistics is important for psychological research.\nDistinguish descriptive statistics from inferential statistics.\nDistinguish a population from a sample, and a parameter from a statistic.\nExplain what a variable is and distinguish independent, dependent, and extraneous/confounding variables.\nExplain the difference between a research hypothesis and a statistical hypothesis.\nDistinguish experimental, quasi-experimental, and correlational/observational research designs.\nExplain why representativeness and sampling error matter when generalizing from a sample to a population.\nUse basic mathematical notation correctly, including order of operations, exponents, roots, inequalities, and summation notation.\nRead and construct basic frequency tables using frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency.\nExplain what a histogram shows and how grouped and ungrouped histograms summarize distributions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#operational-definitions",
-    "href": "downloads/week01-basic-concepts.html#operational-definitions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Operational definitions",
-    "text": "Operational definitions\nPsychological concepts are often abstract. Anxiety, memory, stress, motivation, intelligence, and attention are not directly visible in the same way as height or weight.\nResearchers therefore need to operationally define variables.\nAn operational definition states exactly how a concept will be observed or measured.\nFor example:\n\n“anxiety” might be measured using a questionnaire score;\n“memory” might be measured as the number of words correctly recalled;\n“autonomic arousal” might be measured using heart rate or blood pressure.\n\nOperational definitions connect theoretical ideas to observable data."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#descriptive-statistics",
-    "href": "downloads/week01-basic-concepts.html#descriptive-statistics",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Descriptive statistics",
-    "text": "Descriptive statistics\nDescriptive statistics summarize and organize data.\nThey answer questions such as:\n\nWhat values occurred?\nHow frequently did they occur?\nWhat is a typical score?\nHow spread out are the scores?\nWhat does the distribution look like?\n\nDescriptive statistics can be presented as numbers, tables, graphs, percentages, frequencies, and averages."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#inferential-statistics",
-    "href": "downloads/week01-basic-concepts.html#inferential-statistics",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Inferential statistics",
-    "text": "Inferential statistics\nInferential statistics use data from a sample to make a reasoned statement about a larger population.\nThe logic is:\nPopulation → Sample → Data → Statistical analysis → Inference about the population\nThis is a conceptual leap because researchers usually observe only the sample, while their scientific question concerns the larger population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#experimental-design",
-    "href": "downloads/week01-basic-concepts.html#experimental-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Experimental design",
-    "text": "Experimental design\nA true experiment is designed to support a cause-and-effect conclusion.\nThe lecture emphasizes three important features:\n\nManipulation — the researcher creates different conditions.\nRandomization — participants are randomly allocated to conditions.\nComparison/control — outcomes are compared across conditions.\n\n\nExample\nTo study whether watching television affects reaction time:\n\nparticipants could be randomly assigned to a TV condition or a no-TV condition;\nthe researcher manipulates whether television is present;\nreaction time is measured in both groups.\n\nRandom assignment is important because it helps distribute other participant characteristics across conditions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#quasi-experimental-design",
-    "href": "downloads/week01-basic-concepts.html#quasi-experimental-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Quasi-experimental design",
-    "text": "Quasi-experimental design\nA quasi-experiment resembles an experiment but lacks one or more elements needed for a true experiment.\nThis often happens because:\n\nthe independent variable cannot be manipulated;\nparticipants cannot be randomly assigned;\na comparison/control group is missing.\n\nMany psychological variables are preexisting and cannot ethically or practically be randomized."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#correlational-or-observational-design",
-    "href": "downloads/week01-basic-concepts.html#correlational-or-observational-design",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Correlational or observational design",
-    "text": "Correlational or observational design\nIn a correlational design, researchers measure two or more variables without manipulating them.\nThe purpose is to determine whether variables are related.\nFor example:\n\ncomputer use and exercise;\nextroversion and school achievement;\nincome and life satisfaction.\n\nA correlational design can demonstrate a relationship, but it cannot by itself establish causation.\n\nComparison\n\n\n\n\n\n\n\n\n\nDesign\nManipulation?\nRandom assignment?\nCan support causal conclusions?\n\n\n\n\nExperimental\nYes\nYes\nYes, if appropriately conducted\n\n\nQuasi-experimental\nOften no / incomplete\nOften no\nMore limited\n\n\nCorrelational\nNo\nNo\nNo"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#order-of-operations",
-    "href": "downloads/week01-basic-concepts.html#order-of-operations",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Order of operations",
-    "text": "Order of operations\nUse PEDMAS/BEDMAS:\n\nParentheses / Brackets\nExponents\nDivision / Multiplication\nAddition / Subtraction\n\nChanging the order can produce completely different results."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#brackets-and-absolute-value",
-    "href": "downloads/week01-basic-concepts.html#brackets-and-absolute-value",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Brackets and absolute value",
-    "text": "Brackets and absolute value\nParentheses and square brackets group operations.\nAbsolute-value brackets indicate distance from zero:\n[ |4| = 4 ]\n[ |-39| = 39 ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#inequalities",
-    "href": "downloads/week01-basic-concepts.html#inequalities",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Inequalities",
-    "text": "Inequalities\nKnow the meaning of (&gt;), (&lt;), and ()."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#fractions",
-    "href": "downloads/week01-basic-concepts.html#fractions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Fractions",
-    "text": "Fractions\nYou should be able to add and subtract fractions, find common denominators, and convert fractions to decimals."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#negative-numbers",
-    "href": "downloads/week01-basic-concepts.html#negative-numbers",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Negative numbers",
-    "text": "Negative numbers\n[ (-a)(b) = -ab ]\n[ (-a)(-b) = ab ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#basic-equations",
-    "href": "downloads/week01-basic-concepts.html#basic-equations",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Basic equations",
-    "text": "Basic equations\nFor example:\n[ 15x + 10 = 40 ]\nSubtract 10 from both sides:\n[ 15x = 30 ]\nThen divide by 15:\n[ x = 2 ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#exponents-and-square-roots",
-    "href": "downloads/week01-basic-concepts.html#exponents-and-square-roots",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Exponents and square roots",
-    "text": "Exponents and square roots\n[ 3^2 = 9 ]\n[ = 3 ]\n[ 3^4 = 81 ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#indices-matter",
-    "href": "downloads/week01-basic-concepts.html#indices-matter",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Indices matter",
-    "text": "Indices matter\nIf\n[ X = {4,8,6,3,5,6,4,2} ]\nthen\n[ _{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22 ]\nOnly values with indices 2 through 5 are included."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#summing-products",
-    "href": "downloads/week01-basic-concepts.html#summing-products",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Summing products",
-    "text": "Summing products\nIf two variables are paired,\n[ XY ]\nmeans multiply (X_i) and (Y_i) within each row and then add the resulting products.\nIt does not mean\n[ (X)(Y) ]\nunless that is explicitly written."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#squaring-a-sum-is-not-the-same-as-summing-squares",
-    "href": "downloads/week01-basic-concepts.html#squaring-a-sum-is-not-the-same-as-summing-squares",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Squaring a sum is not the same as summing squares",
-    "text": "Squaring a sum is not the same as summing squares\nThese expressions are different:\n[ (X)^2 ]\nand\n[ X^2 ]\nFor example, if (X={1,2,3}):\n[ (X)^2 = (1+2+3)^2 = 36 ]\nbut\n[ X^2 = 12+22+3^2 = 14 ]\nThis distinction becomes extremely important later in formulas for variance and other statistics."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#parentheses-prevent-ambiguity",
-    "href": "downloads/week01-basic-concepts.html#parentheses-prevent-ambiguity",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Parentheses prevent ambiguity",
-    "text": "Parentheses prevent ambiguity\nCompare:\n[ (X_i + 2) ]\nwith\n[ (X_i)+2 ]\nThey are not equivalent."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#frequency",
-    "href": "downloads/week01-basic-concepts.html#frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Frequency",
-    "text": "Frequency\nThe frequency (f) is the number of observations with a particular value."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#proportion-relative-frequency",
-    "href": "downloads/week01-basic-concepts.html#proportion-relative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Proportion / relative frequency",
-    "text": "Proportion / relative frequency\n[ = ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#percentage-frequency",
-    "href": "downloads/week01-basic-concepts.html#percentage-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Percentage frequency",
-    "text": "Percentage frequency\n[ = ]"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#cumulative-frequency",
-    "href": "downloads/week01-basic-concepts.html#cumulative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative frequency",
-    "text": "Cumulative frequency\nCumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal (n)."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#cumulative-relative-frequency",
-    "href": "downloads/week01-basic-concepts.html#cumulative-relative-frequency",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative relative frequency",
-    "text": "Cumulative relative frequency\nThis is the running total of proportions. The final value should equal 1.00."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#cumulative-percentage",
-    "href": "downloads/week01-basic-concepts.html#cumulative-percentage",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Cumulative percentage",
-    "text": "Cumulative percentage\nThe final cumulative percentage should equal 100%.\n\nInternal checks\nA correctly completed frequency table should satisfy:\n[ f=n ]\n[ =1.00 ]\n[ %=100% ]\nand the last cumulative entries should be (CF=n), (CRF=1.00), and (C%=100%)."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#statistics-proves-that-something-is-true.",
-    "href": "downloads/week01-basic-concepts.html#statistics-proves-that-something-is-true.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Statistics proves that something is true.”",
-    "text": "“Statistics proves that something is true.”\nNo. Statistical analysis helps quantify evidence and uncertainty. Conclusions remain dependent on the study design, measurement quality, sample, assumptions, and context."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#a-sample-is-basically-the-same-thing-as-a-population.",
-    "href": "downloads/week01-basic-concepts.html#a-sample-is-basically-the-same-thing-as-a-population.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A sample is basically the same thing as a population.”",
-    "text": "“A sample is basically the same thing as a population.”\nNo. A sample is only a subset. Inferential statistics is needed precisely because we usually do not observe the whole population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#a-statistic-and-a-parameter-are-interchangeable.",
-    "href": "downloads/week01-basic-concepts.html#a-statistic-and-a-parameter-are-interchangeable.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A statistic and a parameter are interchangeable.”",
-    "text": "“A statistic and a parameter are interchangeable.”\nNo. Statistic → sample; parameter → population."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#random-assignment-and-random-sampling-are-the-same.",
-    "href": "downloads/week01-basic-concepts.html#random-assignment-and-random-sampling-are-the-same.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Random assignment and random sampling are the same.”",
-    "text": "“Random assignment and random sampling are the same.”\nNo. Random sampling concerns how people are selected from a population. Random assignment concerns how selected participants are placed into experimental conditions."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#correlation-shows-that-one-variable-causes-the-other.",
-    "href": "downloads/week01-basic-concepts.html#correlation-shows-that-one-variable-causes-the-other.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“Correlation shows that one variable causes the other.”",
-    "text": "“Correlation shows that one variable causes the other.”\nNo. Correlation shows a relationship, not cause."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#x2-and-x2-mean-the-same-thing.",
-    "href": "downloads/week01-basic-concepts.html#x2-and-x2-mean-the-same-thing.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“(X^2) and ((X)^2) mean the same thing.”",
-    "text": "“(X^2) and ((X)^2) mean the same thing.”\nNo. One squares each score before summing; the other sums first and then squares."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#the-number-after-sigma-is-always-added-once.",
-    "href": "downloads/week01-basic-concepts.html#the-number-after-sigma-is-always-added-once.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“The number after sigma is always added once.”",
-    "text": "“The number after sigma is always added once.”\nNot necessarily. If a constant is inside the summation, it is applied once for each indexed observation."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#a-histogram-is-an-objective-picture-of-the-data.",
-    "href": "downloads/week01-basic-concepts.html#a-histogram-is-an-objective-picture-of-the-data.",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "“A histogram is an objective picture of the data.”",
-    "text": "“A histogram is an objective picture of the data.”\nThe data are objective observations, but the display still depends on choices such as bin width, axis range, and grouping."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#conceptual-questions-students-may-ask",
-    "href": "downloads/week01-basic-concepts.html#conceptual-questions-students-may-ask",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Conceptual questions students may ask",
-    "text": "Conceptual questions students may ask\n\n“Why do we need statistics if we can just look at the data?”\nRaw data often contain too many individual observations to interpret easily. Descriptive statistics organize the observations; inferential statistics help researchers reason beyond the observed sample.\n\n\n“Why can experiments show causation but correlations cannot?”\nA properly conducted experiment uses manipulation, random assignment, and comparison/control. These design features help rule out competing explanations. A correlation only observes how variables co-vary.\n\n\n“Why do we care so much about populations if we only collect samples?”\nPsychological research usually aims to understand a broader group or process, not only the particular participants who happened to take part.\n\n\n“Why is summation notation necessary?”\nStatistical formulas often apply the same arithmetic operation to many observations. Summation notation provides a compact and precise way to express this."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#computation-issues-to-watch-for",
-    "href": "downloads/week01-basic-concepts.html#computation-issues-to-watch-for",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Computation issues to watch for",
-    "text": "Computation issues to watch for\nStudents often make mistakes by:\n\nignoring the lower and upper index of a summation;\nconfusing (X^2) with ((X)^2);\nmultiplying (X) and (Y) when the expression actually requires (XY);\nforgetting that a constant inside a summation is applied to every included score;\nskipping parentheses;\ncalculating cumulative frequencies incorrectly;\nforgetting that proportions must sum to 1.00;\nforgetting that percentages must sum to 100%;\ndrawing histogram bars with heights that do not match the frequency table."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#conceptual-questions",
-    "href": "downloads/week01-basic-concepts.html#conceptual-questions",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Conceptual Questions",
-    "text": "Conceptual Questions\n\nExplain in your own words why statistics is useful in psychology.\nWhat is the difference between descriptive and inferential statistics?\nGive an example of a psychological population and a sample drawn from it.\nExplain the difference between a population parameter and a sample statistic.\nWhy does sampling error matter?\nGive an operational definition for “academic stress.”\nWhat three elements characterize a true experiment in this course?\nWhy can a correlational study not establish causation?\nExplain the difference between a research hypothesis and a statistical hypothesis.\nWhy can two graphs based on the same data create different impressions?"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#summation-practice",
-    "href": "downloads/week01-basic-concepts.html#summation-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Summation Practice",
-    "text": "Summation Practice\nLet\n[ X={2,4,6,8} ]\nand\n[ Y={5,3,7,1} ]\nCalculate:\n\n(X)\n(Y)\n((X+Y))\n(XY)\n(X^2)\n((X)^2)\n(_{i=2}^{4}X_i)\n(_{i=1}^{3}(X_i+2))"
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#frequency-table-practice",
-    "href": "downloads/week01-basic-concepts.html#frequency-table-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Frequency Table Practice",
-    "text": "Frequency Table Practice\nFor the scores\n[ 2,3,3,4,4,4,5,6,6,7 ]\nconstruct a table containing (X), (f), relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#research-design-practice",
-    "href": "downloads/week01-basic-concepts.html#research-design-practice",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Research Design Practice",
-    "text": "Research Design Practice\nFor each example, identify whether the design is experimental, quasi-experimental, or correlational.\n\nParticipants are randomly assigned to study with music or without music, then take the same memory test.\nResearchers compare stress scores of first-year and fourth-year university students.\nResearchers measure weekly exercise and depressive symptoms in the same participants.\nA researcher introduces a mindfulness program in one class but has no comparison class."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#required-reading",
-    "href": "downloads/week01-basic-concepts.html#required-reading",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Required reading",
-    "text": "Required reading\n\nPrivitera, G. J. (2018). Essential Statistics for the Behavioral Sciences (2nd ed.), Chapter 1.\nThe 2024 edition of Privitera Chapter 1 covers the same core foundations with updated organization and examples."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#lecture-and-tutorial-materials",
-    "href": "downloads/week01-basic-concepts.html#lecture-and-tutorial-materials",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Lecture and tutorial materials",
-    "text": "Lecture and tutorial materials\n\nLecture 1: Introduction to Data Analysis.\nLecture 1 Worksheet.\nTutorial: Summation Operator.\nTutorial: Frequency Tables and Histograms.\nFrequency Table Practice."
-  },
-  {
-    "objectID": "downloads/week01-basic-concepts.html#suggested-practice-from-the-lecture",
-    "href": "downloads/week01-basic-concepts.html#suggested-practice-from-the-lecture",
-    "title": "Week 01 — Course Introduction and Basic Concepts",
-    "section": "Suggested practice from the lecture",
-    "text": "Suggested practice from the lecture\nThe lecture recommends completing the Lecture 1 worksheet, attempting Learning Check 1 and Learning Check 2, reviewing the basic mathematics appendix, and completing selected end-of-chapter Chapter 1 problems."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html",
-    "href": "downloads/week02-data-types-visualization.html",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "",
-    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#overview",
-    "href": "downloads/week02-data-types-visualization.html#overview",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "",
-    "text": "Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:\n\nOnce data have been collected, how should we represent them so that their structure can be understood accurately?\n\nThe week begins by reviewing summation notation and then turns to types of variables, scales of measurement, frequency distributions, grouped and ungrouped data, and graphical displays. The assigned readings also introduce central tendency—the mean, median, and mode—as another way to summarize a distribution with a single representative value.\nThe lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#learning-objectives",
-    "href": "downloads/week02-data-types-visualization.html#learning-objectives",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nBy the end of this week, you should be able to:\n\nDistinguish categorical/discrete variables from continuous/quantitative variables.\nDefine and recognize the four scales of measurement: nominal, ordinal, interval, and ratio.\nExplain what information is—and is not—contained in each scale of measurement.\nExplain why numerical coding does not necessarily make a variable quantitative.\nConstruct an ungrouped frequency distribution.\nCalculate frequency, proportion/relative frequency, percentage, cumulative frequency, and cumulative relative frequency/percentage.\nExplain when grouped frequency distributions are useful.\nCalculate a reasonable class interval/bin width, and identify lower and upper limits.\nDistinguish apparent limits from real limits.\nChoose an appropriate graph for a variable: bar chart, histogram, or frequency polygon.\nExplain how graphical design choices can create misleading impressions.\nUse summation notation correctly when constants, products, and multiple variables are involved.\nDefine mean, median, and mode and explain how the appropriate measure of central tendency depends on the data and distribution.\nIdentify a documented disagreement in the Week 2 materials concerning how Likert-like/rating-scale data should be treated."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#frequency",
-    "href": "downloads/week02-data-types-visualization.html#frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Frequency",
-    "text": "Frequency\nFrequency (f) is the number of observations at a value or in an interval."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#proportion-relative-frequency",
-    "href": "downloads/week02-data-types-visualization.html#proportion-relative-frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Proportion / relative frequency",
-    "text": "Proportion / relative frequency\n\\[\np=\\frac{f}{n}.\n\\]\nThe proportions should sum to approximately:\n\\[\n\\sum p=1.00.\n\\]"
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#percentage",
-    "href": "downloads/week02-data-types-visualization.html#percentage",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Percentage",
-    "text": "Percentage\n\\[\n\\%=p\\times100.\n\\]\nPercentages should sum to approximately:\n\\[\n100\\%.\n\\]"
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#cumulative-frequency",
-    "href": "downloads/week02-data-types-visualization.html#cumulative-frequency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Cumulative frequency",
-    "text": "Cumulative frequency\nCumulative frequency is the running total of frequencies.\nFor an ascending table, it answers:\n\nHow many observations scored this value or less?\n\nThe final cumulative frequency should equal (n)."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
-    "href": "downloads/week02-data-types-visualization.html#cumulative-relative-frequency-cumulative-percentage",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Cumulative relative frequency / cumulative percentage",
-    "text": "Cumulative relative frequency / cumulative percentage\nA cumulative relative frequency is the running total of proportions.\nA cumulative percentage is the running total of percentages.\nThe final values should be approximately:\n\\[\n1.00\n\\]\nand\n\\[\n100\\%.\n\\]\nrespectively (Privitera, 2018, 2024; Sigal, 2026)."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#measurement-scales",
-    "href": "downloads/week02-data-types-visualization.html#measurement-scales",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Measurement Scales",
-    "text": "Measurement Scales\n\nPreferred web browser: nominal, ordinal, interval, or ratio?\nFinishing position in a marathon: nominal, ordinal, interval, or ratio?\nCelsius temperature: nominal, ordinal, interval, or ratio?\nReaction time in milliseconds: nominal, ordinal, interval, or ratio?\nExplain why coding categories 1, 2, 3, and 4 does not automatically justify calculating their mean."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#frequency-tables",
-    "href": "downloads/week02-data-types-visualization.html#frequency-tables",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Frequency Tables",
-    "text": "Frequency Tables\nFor:\n\\[\nX=\\{2,4,4,5,5,5,7,8,8,9\\},\n\\]\nconstruct a table containing:\n\n(X);\n(f);\n(p);\npercentage;\ncumulative frequency;\ncumulative percentage.\n\nCheck that:\n\\[\n\\sum f=n,\n\\]\n\\[\n\\sum p=1,\n\\]\nand percentages sum to 100%."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#grouping",
-    "href": "downloads/week02-data-types-visualization.html#grouping",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Grouping",
-    "text": "Grouping\nFor scores ranging from 12 to 92:\n\nCalculate the observed range.\nEstimate a bin width for approximately 10 bins.\nPropose a set of non-overlapping class intervals.\nExplain what information is lost after grouping."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#graph-choice",
-    "href": "downloads/week02-data-types-visualization.html#graph-choice",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Graph Choice",
-    "text": "Graph Choice\nChoose the most appropriate basic display and explain why:\n\nfavorite music genre;\ncourse letter grade;\nreaction time;\nage in years measured continuously;\nnumber of children in a household."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#central-tendency",
-    "href": "downloads/week02-data-types-visualization.html#central-tendency",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Central Tendency",
-    "text": "Central Tendency\nFor:\n\\[\n2,3,4,5,6,6,100\n\\]\ncalculate:\n\nmean;\nmedian;\nmode.\n\nThen explain which value is most representative and why."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#required-readings",
-    "href": "downloads/week02-data-types-visualization.html#required-readings",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Required readings",
-    "text": "Required readings\n\nPrivitera, G. J. (2018), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2018), Chapter 3: Summarizing Data: Central Tendency."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#additional-supplied-readings",
-    "href": "downloads/week02-data-types-visualization.html#additional-supplied-readings",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Additional supplied readings",
-    "text": "Additional supplied readings\n\nPrivitera, G. J. (2024), Chapter 2: Summarizing Data: Frequency Distributions in Tables and Graphs.\nPrivitera, G. J. (2024), Chapter 3: Summarizing Data: Central Tendency."
-  },
-  {
-    "objectID": "downloads/week02-data-types-visualization.html#lecture-and-tutorial-materials",
-    "href": "downloads/week02-data-types-visualization.html#lecture-and-tutorial-materials",
-    "title": "Week 02 — Data Types, Frequency Distributions, and Visualization",
-    "section": "Lecture and tutorial materials",
-    "text": "Lecture and tutorial materials\n\nLecture 2: Data Types and Visualization.\nLecture 2 Worksheet and key.\nScales of Measurement and Frequency Distributions tutorial.\nApplied Practice: Summation Operator worksheet and key.\nFrequency Table Practice exercises."
+    "text": "Reading\nPrivitera (2018), Chapter 14"
   }
 ]

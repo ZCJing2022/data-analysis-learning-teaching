@@ -1,0 +1,66 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#TOC");
+  if (!toc) return;
+
+  const topLevelItems = Array.from(toc.querySelectorAll(":scope > ul > li"));
+
+  const parts = topLevelItems.filter((li) => {
+    const link = li.querySelector(":scope > a");
+    const childList = li.querySelector(":scope > ul");
+    return link && childList && /^Part\s+[IVXLCDM0-9]+\b/i.test(link.textContent.trim());
+  });
+
+  if (!parts.length) return;
+
+  function setOpen(li, open) {
+    const link = li.querySelector(":scope > a");
+    li.classList.toggle("is-open", open);
+    if (link) link.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  function openOnly(target) {
+    parts.forEach((li) => setOpen(li, li === target));
+  }
+
+  parts.forEach((li) => {
+    const link = li.querySelector(":scope > a");
+    li.classList.add("toc-collapsible-part");
+    link.classList.add("toc-part-link");
+    link.setAttribute("aria-expanded", "false");
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const willOpen = !li.classList.contains("is-open");
+      if (willOpen) openOnly(li);
+      else setOpen(li, false);
+    });
+  });
+
+  function openPartForHash() {
+    if (!window.location.hash) return;
+    const matchingLink = Array.from(toc.querySelectorAll('a[href^="#"]'))
+      .find(a => a.getAttribute("href") === window.location.hash);
+    if (!matchingLink) return;
+
+    const part = matchingLink.closest("li.toc-collapsible-part");
+    if (part) openOnly(part);
+  }
+
+  openPartForHash();
+  window.addEventListener("hashchange", openPartForHash);
+
+  const observer = new MutationObserver(function () {
+    const active = toc.querySelector("a.active");
+    if (!active) return;
+    const part = active.closest("li.toc-collapsible-part");
+    if (part && !part.classList.contains("is-open")) openOnly(part);
+  });
+
+  observer.observe(toc, {
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["class"]
+  });
+});
+</script>
