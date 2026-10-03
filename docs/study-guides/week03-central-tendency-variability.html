@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 03 — Measures of Central Tendency and Variability – Data Analysis: Learning &amp; Teaching</title>
+<title>Week 03 — Central Tendency, Shape, and Variability – Data Analysis: Learning &amp; Teaching</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -130,22 +159,68 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts</a></li>
-  <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">How the Concepts Fit Together</a></li>
-  <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">Important Terms</a></li>
-  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples">Worked Examples</a></li>
-  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">Common Misunderstandings</a></li>
-  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">Tutorial Preparation</a></li>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a>
+  <li><a href="#why-do-we-need-measures-of-center" id="toc-why-do-we-need-measures-of-center" class="nav-link" data-scroll-target="#why-do-we-need-measures-of-center">1. Why Do We Need Measures of Center?</a></li>
+  <li><a href="#the-mode" id="toc-the-mode" class="nav-link" data-scroll-target="#the-mode">2. The Mode</a></li>
+  <li><a href="#the-median" id="toc-the-median" class="nav-link" data-scroll-target="#the-median">3. The Median</a></li>
+  <li><a href="#median-with-an-even-number-of-scores" id="toc-median-with-an-even-number-of-scores" class="nav-link" data-scroll-target="#median-with-an-even-number-of-scores">4. Median With an Even Number of Scores</a></li>
+  <li><a href="#the-courses-interpolated-median-formula" id="toc-the-courses-interpolated-median-formula" class="nav-link" data-scroll-target="#the-courses-interpolated-median-formula">5. The Course’s Interpolated Median Formula</a></li>
+  <li><a href="#worked-interpolated-median-example" id="toc-worked-interpolated-median-example" class="nav-link" data-scroll-target="#worked-interpolated-median-example">6. Worked Interpolated Median Example</a></li>
+  <li><a href="#a-course-specific-median-convention" id="toc-a-course-specific-median-convention" class="nav-link" data-scroll-target="#a-course-specific-median-convention">7. A Course-Specific Median Convention</a></li>
+  <li><a href="#percentiles-beyond-the-median" id="toc-percentiles-beyond-the-median" class="nav-link" data-scroll-target="#percentiles-beyond-the-median">8. Percentiles Beyond the Median</a></li>
+  <li><a href="#median-for-grouped-data" id="toc-median-for-grouped-data" class="nav-link" data-scroll-target="#median-for-grouped-data">9. Median for Grouped Data</a></li>
+  <li><a href="#supplemental-median-example" id="toc-supplemental-median-example" class="nav-link" data-scroll-target="#supplemental-median-example">10. Supplemental Median Example</a></li>
+  <li><a href="#the-mean" id="toc-the-mean" class="nav-link" data-scroll-target="#the-mean">11. The Mean</a></li>
+  <li><a href="#sample-and-population-mean-notation" id="toc-sample-and-population-mean-notation" class="nav-link" data-scroll-target="#sample-and-population-mean-notation">12. Sample and Population Mean Notation</a></li>
+  <li><a href="#the-weighted-mean" id="toc-the-weighted-mean" class="nav-link" data-scroll-target="#the-weighted-mean">13. The Weighted Mean</a></li>
+  <li><a href="#weighted-mean-from-group-means" id="toc-weighted-mean-from-group-means" class="nav-link" data-scroll-target="#weighted-mean-from-group-means">14. Weighted Mean From Group Means</a></li>
+  <li><a href="#how-the-mean-changes" id="toc-how-the-mean-changes" class="nav-link" data-scroll-target="#how-the-mean-changes">15. How the Mean Changes</a></li>
+  <li><a href="#why-do-we-need-three-measures-of-center" id="toc-why-do-we-need-three-measures-of-center" class="nav-link" data-scroll-target="#why-do-we-need-three-measures-of-center">16. Why Do We Need Three Measures of Center?</a></li>
+  <li><a href="#outliers-mean-vs.-median" id="toc-outliers-mean-vs.-median" class="nav-link" data-scroll-target="#outliers-mean-vs.-median">17. Outliers: Mean vs.&nbsp;Median</a></li>
+  <li><a href="#distribution-shape-and-skewness" id="toc-distribution-shape-and-skewness" class="nav-link" data-scroll-target="#distribution-shape-and-skewness">18. Distribution Shape and Skewness</a></li>
+  <li><a href="#mean-median-mode-and-shape" id="toc-mean-median-mode-and-shape" class="nav-link" data-scroll-target="#mean-median-mode-and-shape">19. Mean, Median, Mode, and Shape</a></li>
+  <li><a href="#other-distribution-shapes" id="toc-other-distribution-shapes" class="nav-link" data-scroll-target="#other-distribution-shapes">20. Other Distribution Shapes</a></li>
+  <li><a href="#why-variability-matters" id="toc-why-variability-matters" class="nav-link" data-scroll-target="#why-variability-matters">21. Why Variability Matters</a></li>
+  <li><a href="#the-range" id="toc-the-range" class="nav-link" data-scroll-target="#the-range">22. The Range</a></li>
+  <li><a href="#interquartile-range" id="toc-interquartile-range" class="nav-link" data-scroll-target="#interquartile-range">23. Interquartile Range</a></li>
+  <li><a href="#from-deviation-to-variance" id="toc-from-deviation-to-variance" class="nav-link" data-scroll-target="#from-deviation-to-variance">24. From Deviation to Variance</a></li>
+  <li><a href="#sum-of-squares" id="toc-sum-of-squares" class="nav-link" data-scroll-target="#sum-of-squares">25. Sum of Squares</a></li>
+  <li><a href="#population-variance" id="toc-population-variance" class="nav-link" data-scroll-target="#population-variance">26. Population Variance</a></li>
+  <li><a href="#standard-deviation-for-a-population" id="toc-standard-deviation-for-a-population" class="nav-link" data-scroll-target="#standard-deviation-for-a-population">27. Standard Deviation for a Population</a></li>
+  <li><a href="#sample-variance" id="toc-sample-variance" class="nav-link" data-scroll-target="#sample-variance">28. Sample Variance</a></li>
+  <li><a href="#why-does-sample-variance-use-n-1" id="toc-why-does-sample-variance-use-n-1" class="nav-link" data-scroll-target="#why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use (n-1)?</a></li>
+  <li><a href="#degrees-of-freedom" id="toc-degrees-of-freedom" class="nav-link" data-scroll-target="#degrees-of-freedom">30. Degrees of Freedom</a></li>
+  <li><a href="#standard-deviation" id="toc-standard-deviation" class="nav-link" data-scroll-target="#standard-deviation">31. Standard Deviation</a></li>
+  <li><a href="#variance-vs.-standard-deviation" id="toc-variance-vs.-standard-deviation" class="nav-link" data-scroll-target="#variance-vs.-standard-deviation">32. Variance vs.&nbsp;Standard Deviation</a></li>
+  <li><a href="#what-happens-when-scores-are-transformed" id="toc-what-happens-when-scores-are-transformed" class="nav-link" data-scroll-target="#what-happens-when-scores-are-transformed">33. What Happens When Scores Are Transformed?</a></li>
+  <li><a href="#the-week-3-worksheet" id="toc-the-week-3-worksheet" class="nav-link" data-scroll-target="#the-week-3-worksheet">34. The Week 3 Worksheet</a></li>
+  <li><a href="#a-second-worksheet-dataset" id="toc-a-second-worksheet-dataset" class="nav-link" data-scroll-target="#a-second-worksheet-dataset">35. A Second Worksheet Dataset</a></li>
+  <li><a href="#what-should-be-reported-together" id="toc-what-should-be-reported-together" class="nav-link" data-scroll-target="#what-should-be-reported-together">36. What Should Be Reported Together?</a></li>
+  <li><a href="#choosing-measures-for-lucys-dataset" id="toc-choosing-measures-for-lucys-dataset" class="nav-link" data-scroll-target="#choosing-measures-for-lucys-dataset">37. Choosing Measures for Lucy’s Dataset</a></li>
+  <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">38. How the Concepts Fit Together</a></li>
+  <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">39. Important Terms</a></li>
+  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">40. Common Misunderstandings</a></li>
+  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">41. Tutorial Preparation</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">42. Practice Questions</a>
   <ul class="collapse">
-  <li><a href="#conceptual-questions" id="toc-conceptual-questions" class="nav-link" data-scroll-target="#conceptual-questions">Conceptual Questions</a></li>
-  <li><a href="#applied-questions" id="toc-applied-questions" class="nav-link" data-scroll-target="#applied-questions">Applied Questions</a></li>
+  <li><a href="#central-tendency" id="toc-central-tendency" class="nav-link" data-scroll-target="#central-tendency">Central Tendency</a></li>
+  <li><a href="#weighted-mean" id="toc-weighted-mean" class="nav-link" data-scroll-target="#weighted-mean">Weighted Mean</a></li>
+  <li><a href="#shape" id="toc-shape" class="nav-link" data-scroll-target="#shape">Shape</a></li>
+  <li><a href="#variability" id="toc-variability" class="nav-link" data-scroll-target="#variability">Variability</a></li>
+  <li><a href="#transformations" id="toc-transformations" class="nav-link" data-scroll-target="#transformations">Transformations</a></li>
   </ul></li>
-  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">What You Should Be Able to Explain</a></li>
-  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">43. What You Should Be Able to Explain</a></li>
+  <li><a href="#readings-and-practice" id="toc-readings-and-practice" class="nav-link" data-scroll-target="#readings-and-practice">44. Readings and Practice</a>
+  <ul class="collapse">
+  <li><a href="#required-reading" id="toc-required-reading" class="nav-link" data-scroll-target="#required-reading">Required reading</a></li>
+  <li><a href="#additional-supplied-reading" id="toc-additional-supplied-reading" class="nav-link" data-scroll-target="#additional-supplied-reading">Additional supplied reading</a></li>
+  <li><a href="#lecture-and-course-materials" id="toc-lecture-and-course-materials" class="nav-link" data-scroll-target="#lecture-and-course-materials">Lecture and course materials</a></li>
+  <li><a href="#instructor-assigned-practice" id="toc-instructor-assigned-practice" class="nav-link" data-scroll-target="#instructor-assigned-practice">Instructor-assigned practice</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">45. References</a></li>
+  <li><a href="#week-3-takeaway" id="toc-week-3-takeaway" class="nav-link" data-scroll-target="#week-3-takeaway">46. Week 3 Takeaway</a></li>
   </ul>
 </nav>
     </div>
@@ -154,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 03 — Measures of Central Tendency and Variability</h1>
+<h1 class="title">Week 03 — Central Tendency, Shape, and Variability</h1>
 </div>
 
 
@@ -173,23 +248,1252 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><em>To be developed from the supplied lecture notes, tutorials, exercises, and readings.</em></p>
+<p>Week 3 asks two closely related questions:</p>
+<ol type="1">
+<li><strong>Where is the center of a distribution?</strong></li>
+<li><strong>How spread out are the scores around that center?</strong></li>
+</ol>
+<p>The first question is addressed with measures of <strong>central tendency</strong>: the mode, median, and mean. The second is addressed with measures of <strong>variability</strong>: the range, interquartile range, variance, and standard deviation.</p>
+<p>The lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).</p>
+<p>The Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:</p>
+<ul>
+<li>weighted means;</li>
+<li>percentiles and interpolated medians;</li>
+<li>skewness;</li>
+<li>sum of squares;</li>
+<li>sample versus population variance;</li>
+<li>degrees of freedom;</li>
+<li>the standard deviation as a measure in the original units of measurement.</li>
+</ul>
+<hr>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p><em>To be added.</em></p>
+<p>By the end of this week, you should be able to:</p>
+<ol type="1">
+<li>Define <strong>mode, median, and mean</strong> and explain how they differ.</li>
+<li>Identify unimodal, bimodal, multimodal, and nonmodal distributions.</li>
+<li>Calculate a median for odd- and even-sized ungrouped datasets.</li>
+<li>Use the course’s cumulative-frequency interpolation formula to estimate medians and other percentiles.</li>
+<li>Apply the median formula to grouped data.</li>
+<li>Calculate a sample mean and population mean using appropriate notation.</li>
+<li>Calculate a weighted/combined mean when group sizes differ.</li>
+<li>Explain how changing, adding, or transforming scores affects the mean.</li>
+<li>Explain why the mean, median, and mode respond differently to extreme scores.</li>
+<li>Use the relative positions of mean, median, and mode to describe skewness.</li>
+<li>Define variability and explain why measures of center are not enough.</li>
+<li>Calculate and interpret the range and interquartile range.</li>
+<li>Explain <strong>deviation</strong>, <strong>sum of squares (SS)</strong>, <strong>variance</strong>, and <strong>standard deviation</strong>.</li>
+<li>Distinguish population variance from sample variance.</li>
+<li>Explain why sample variance uses (n-1) rather than (n).</li>
+<li>Explain degrees of freedom in the context of sample variance.</li>
+<li>Predict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.</li>
+<li>Choose useful measures of center and spread for variables in a real dataset.</li>
+</ol>
+<hr>
 </section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts</h2>
-<p><em>To be added.</em></p>
-</section>
-<section id="how-the-concepts-fit-together" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-concepts-fit-together">How the Concepts Fit Together</h2>
-<p><em>To be added.</em></p>
-</section>
-<section id="important-terms" class="level2">
-<h2 class="anchored" data-anchor-id="important-terms">Important Terms</h2>
+<section id="why-do-we-need-measures-of-center" class="level1">
+<h1>1. Why Do We Need Measures of Center?</h1>
+<p>A frequency distribution tells us how scores are distributed, but researchers often also want a single value that summarizes what is <strong>typical</strong> or <strong>representative</strong>.</p>
+<p>The Week 3 lecture frames central tendency as an attempt to locate the “center” of a sample or population, while emphasizing that “center” can mean different things (Sigal, 2026).</p>
+<p>The three standard measures are:</p>
+<ol type="1">
+<li><strong>Mode</strong></li>
+<li><strong>Median</strong></li>
+<li><strong>Mean</strong></li>
+</ol>
+<p>Each defines “center” differently.</p>
 <table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Basic idea</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Mode</td>
+<td>Most frequently occurring value/category</td>
+</tr>
+<tr class="even">
+<td>Median</td>
+<td>Middle position in terms of frequency</td>
+</tr>
+<tr class="odd">
+<td>Mean</td>
+<td>Arithmetic balance point in terms of magnitudes</td>
+</tr>
+</tbody>
+</table>
+<p>The fact that there are three measures is not redundancy. They behave differently and are useful under different conditions.</p>
+<hr>
+</section>
+<section id="the-mode" class="level1">
+<h1>2. The Mode</h1>
+<p>The <strong>mode</strong> is the value or category that occurs most often.</p>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{0,1,2,2,3\},
+\]</span></p>
+<p>the mode is:</p>
+<p><span class="math display">\[
+2.
+\]</span></p>
+<p>The lecture recommends a simple procedure:</p>
+<ol type="1">
+<li>inspect the values;</li>
+<li>sort if useful;</li>
+<li>count frequencies;</li>
+<li>identify the value with the highest frequency (Sigal, 2026).</li>
+</ol>
+<section id="more-than-one-mode" class="level3">
+<h3 class="anchored" data-anchor-id="more-than-one-mode">More than one mode</h3>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{0,1,1,1,1,2,2,3,3,3,3,5\},
+\]</span></p>
+<p>both 1 and 3 occur four times.</p>
+<p>The distribution is therefore <strong>bimodal</strong>.</p>
+<p>A distribution may be:</p>
+<ul>
+<li><strong>unimodal</strong> — one mode;</li>
+<li><strong>bimodal</strong> — two modes;</li>
+<li><strong>multimodal</strong> — more than two modes;</li>
+<li><strong>nonmodal</strong> — no value occurs more often than the others.</li>
+</ul>
+</section>
+<section id="why-the-mode-is-special" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-mode-is-special">Why the mode is special</h3>
+<p>The mode can be used with <strong>categorical data</strong> because it depends only on frequency.</p>
+<p>For example, if browser preference is categorical, the “most common browser” is meaningful even though an arithmetic mean of browser codes would not be.</p>
+<hr>
+</section>
+</section>
+<section id="the-median" class="level1">
+<h1>3. The Median</h1>
+<p>The <strong>median</strong> is the value that divides an ordered distribution in half based on frequency.</p>
+<p>It is also the <strong>50th percentile</strong> (Sigal, 2026).</p>
+<p>The median is not necessarily an observed score.</p>
+<section id="basic-position-rule" class="level3">
+<h3 class="anchored" data-anchor-id="basic-position-rule">Basic position rule</h3>
+<p>A common quick rule for the median position is:</p>
+<p><span class="math display">\[
+\frac{n+1}{2}.
+\]</span></p>
+<p>For an odd sample size:</p>
+<p><span class="math display">\[
+X=\{11,5,8,10,3\}.
+\]</span></p>
+<p>Sort the values:</p>
+<p><span class="math display">\[
+\{3,5,8,10,11\}.
+\]</span></p>
+<p>Because:</p>
+<p><span class="math display">\[
+\frac{5+1}{2}=3,
+\]</span></p>
+<p>the median is the third score:</p>
+<p><span class="math display">\[
+Md=8.
+\]</span></p>
+<hr>
+</section>
+</section>
+<section id="median-with-an-even-number-of-scores" class="level1">
+<h1>4. Median With an Even Number of Scores</h1>
+<p>Suppose:</p>
+<p><span class="math display">\[
+X=\{3,3,4,5,7,8\}.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+\frac{6+1}{2}=3.5.
+\]</span></p>
+<p>The median falls halfway between positions 3 and 4.</p>
+<p>Average those two scores:</p>
+<p><span class="math display">\[
+Md=\frac{4+5}{2}=4.5.
+\]</span></p>
+<p>For ordinary ungrouped data, this is the familiar textbook procedure.</p>
+<p>However, the Week 3 lecture introduces a more general interpolation method because the instructor wants students to think about the median as a <strong>location within an interval</strong>, especially when ties or grouped data are involved (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="the-courses-interpolated-median-formula" class="level1">
+<h1>5. The Course’s Interpolated Median Formula</h1>
+<p>The lecture uses cumulative frequency to estimate the location of the median within a score interval:</p>
+<p><span class="math display">\[
+Md = LL + W\left[\frac{0.5n-cf}{f}\right].
+\]</span></p>
+<p>where:</p>
+<ul>
+<li>(LL) = lower real limit of the interval containing the median;</li>
+<li>(W) = interval width;</li>
+<li>(n) = sample size;</li>
+<li>(cf) = cumulative frequency below the median interval;</li>
+<li>(f) = frequency in the median interval.</li>
+</ul>
+<p>The procedure is:</p>
+<ol type="1">
+<li>create a cumulative frequency table in <strong>descending order</strong>;</li>
+<li>identify the row containing the 50th percentile;</li>
+<li>find (LL) and (W);</li>
+<li>use the cumulative frequency in the row below;</li>
+<li>use the frequency in the highlighted row;</li>
+<li>substitute into the formula (Sigal, 2026).</li>
+</ol>
+<p>This is the method the course expects students to learn for the Week 3 exercises.</p>
+<hr>
+</section>
+<section id="worked-interpolated-median-example" class="level1">
+<h1>6. Worked Interpolated Median Example</h1>
+<p>The lecture uses:</p>
+<p><span class="math display">\[
+X=\{1,2,2,3,4,4,4,4,4,5\}.
+\]</span></p>
+<p>The cumulative table is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Score</th>
+<th style="text-align: right;">(f)</th>
+<th style="text-align: right;">(cf)</th>
+<th style="text-align: right;">(cf%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">90</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">40</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10</td>
+</tr>
+</tbody>
+</table>
+<p>The 50th percentile lies in the row for score 4.</p>
+<p>Therefore:</p>
+<ul>
+<li>(LL=3.5)</li>
+<li>(W=1)</li>
+<li>(n=10)</li>
+<li>(cf=4)</li>
+<li>(f=5)</li>
+</ul>
+<p>Substitute:</p>
+<p><span class="math display">\[
+Md
+=
+3.5+
+1\left[
+\frac{0.5(10)-4}{5}
+\right].
+\]</span></p>
+<p>So:</p>
+<p><span class="math display">\[
+Md
+=
+3.5+
+\frac{1}{5}
+=
+3.7.
+\]</span></p>
+<p>This value is an <strong>interpolated estimate within the median interval</strong>, not the ordinary midpoint of the 5th and 6th raw-score positions (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="a-course-specific-median-convention" class="level1">
+<h1>7. A Course-Specific Median Convention</h1>
+<p>There is an important methodological point here.</p>
+<p>For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when (n) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).</p>
+<p>The supplemental median handout makes this intention explicit. It states that the quick ((n+1)/2) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).</p>
+<section id="for-this-course" class="level3">
+<h3 class="anchored" data-anchor-id="for-this-course">For this course</h3>
+<p>When solving course problems that ask for the formula-based median:</p>
+<blockquote class="blockquote">
+<p>Use the interpolation procedure demonstrated in the lecture and supplemental handout.</p>
+</blockquote>
+<p>Do not silently substitute the simpler textbook convention when the problem is clearly designed around cumulative frequency and real limits.</p>
+<hr>
+</section>
+</section>
+<section id="percentiles-beyond-the-median" class="level1">
+<h1>8. Percentiles Beyond the Median</h1>
+<p>The (0.5) in the median formula is not arbitrary.</p>
+<p>It represents the desired percentile:</p>
+<p><span class="math display">\[
+P_{50}.
+\]</span></p>
+<p>The same logic can be generalized.</p>
+<p>For example, the 25th percentile can be estimated using:</p>
+<p><span class="math display">\[
+P_{25}
+=
+LL+
+W\left[
+\frac{0.25n-cf}{f}
+\right].
+\]</span></p>
+<p>Thus the median formula is part of a more general percentile-interpolation framework (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="median-for-grouped-data" class="level1">
+<h1>9. Median for Grouped Data</h1>
+<p>For grouped data, interval width does not have to equal 1.</p>
+<p>The lecture example is:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Interval</th>
+<th style="text-align: right;">(f)</th>
+<th style="text-align: right;">(cf)</th>
+<th style="text-align: right;">(cf%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12–15</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">100</td>
+</tr>
+<tr class="even">
+<td>8–11</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">62.5</td>
+</tr>
+<tr class="odd">
+<td>4–7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">50</td>
+</tr>
+<tr class="even">
+<td>0–3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12.5</td>
+</tr>
+</tbody>
+</table>
+<p>For the median interval 4–7:</p>
+<ul>
+<li>(LL=3.5)</li>
+<li>(W=7.5-3.5=4)</li>
+<li>(n=8)</li>
+<li>(cf=1)</li>
+<li>(f=3)</li>
+</ul>
+<p>Then:</p>
+<p><span class="math display">\[
+Md
+=
+3.5+
+4\left[
+\frac{0.5(8)-1}{3}
+\right]
+=
+7.5.
+\]</span></p>
+<p>The same formula works because (W) explicitly represents the real width of the interval (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="supplemental-median-example" class="level1">
+<h1>10. Supplemental Median Example</h1>
+<p>The supplemental handout uses 30 age observations recorded in 3-year bins.</p>
+<p>The median falls in the <strong>24–26</strong> interval.</p>
+<p>The handout identifies:</p>
+<ul>
+<li>(LL=23.5)</li>
+<li>(W=3)</li>
+<li>(n=30)</li>
+<li>(cf=14)</li>
+<li>(f=5)</li>
+</ul>
+<p>Then:</p>
+<p><span class="math display">\[
+Md
+=
+23.5+
+3\left[
+\frac{0.5(30)-14}{5}
+\right].
+\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+Md=24.1.
+\]</span></p>
+<p>The handout contrasts this with the quick ((n+1)/2) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).</p>
+<hr>
+</section>
+<section id="the-mean" class="level1">
+<h1>11. The Mean</h1>
+<p>The <strong>mean</strong> is the arithmetic average.</p>
+<p>For a sample:</p>
+<p><span class="math display">\[
+\bar{x}
+=
+\frac{\sum x_i}{n}.
+\]</span></p>
+<p>The lecture notes that APA-style reporting commonly uses (M) for a sample mean, while () is used for a population mean (Sigal, 2026).</p>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{3,7,4,6\},
+\]</span></p>
+<p><span class="math display">\[
+\bar{x}
+=
+\frac{3+7+4+6}{4}
+=
+\frac{20}{4}
+=
+5.
+\]</span></p>
+<p>Conceptually, the mean is a <strong>balance point</strong> based on magnitudes.</p>
+<hr>
+</section>
+<section id="sample-and-population-mean-notation" class="level1">
+<h1>12. Sample and Population Mean Notation</h1>
+<p>The lecture distinguishes:</p>
+<ul>
+<li>sample mean: ({x}) or (M);</li>
+<li>population mean: ().</li>
+</ul>
+<p>The calculation itself is structurally the same:</p>
+<p><span class="math display">\[
+M=\frac{\sum X}{n},
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+\mu=\frac{\sum X}{N}.
+\]</span></p>
+<p>The symbols remind us whether the calculation describes a sample or the entire population of interest.</p>
+<hr>
+</section>
+<section id="the-weighted-mean" class="level1">
+<h1>13. The Weighted Mean</h1>
+<p>A simple average of group means is only correct when the groups contribute equal weight.</p>
+<p>Suppose:</p>
+<ul>
+<li>Group 1: ({x}_1=6,&nbsp;n_1=20)</li>
+<li>Group 2: ({x}_2=15,&nbsp;n_2=3)</li>
+</ul>
+<p>It would be wrong to calculate:</p>
+<p><span class="math display">\[
+\frac{6+15}{2}=10.5.
+\]</span></p>
+<p>The groups are not equally large.</p>
+<p>Instead:</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{\sum X_1+\sum X_2}
+{n_1+n_2}.
+\]</span></p>
+<p>Because:</p>
+<p><span class="math display">\[
+\sum X_1=120
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+\sum X_2=45,
+\]</span></p>
+<p>the combined mean is:</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{120+45}{20+3}
+=
+\frac{165}{23}
+=
+7.17.
+\]</span></p>
+<p>The larger group contributes more information and therefore more weight (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="weighted-mean-from-group-means" class="level1">
+<h1>14. Weighted Mean From Group Means</h1>
+<p>If the original sums are not given, recover each group sum using:</p>
+<p><span class="math display">\[
+\sum X = \bar{x}n.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{
+\bar{x}_1n_1+\bar{x}_2n_2+\cdots+\bar{x}_kn_k
+}{
+n_1+n_2+\cdots+n_k
+}.
+\]</span></p>
+<p>The lecture example gives:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Group</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">(n)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Drivers</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td>Bus</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="odd">
+<td>Walk/Bicycle</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">45</td>
+</tr>
+</tbody>
+</table>
+<p>Therefore:</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{1(7)+6(20)+3(45)}
+{7+20+45}
+=
+\frac{262}{72}
+=
+3.64.
+\]</span></p>
+<hr>
+</section>
+<section id="how-the-mean-changes" class="level1">
+<h1>15. How the Mean Changes</h1>
+<p>The Week 3 worksheet asks students to explore how transformations affect the mean (PSYC 210 Teaching Team, 2026b).</p>
+<p>The key patterns are:</p>
+<section id="change-one-score" class="level3">
+<h3 class="anchored" data-anchor-id="change-one-score">Change one score</h3>
+<p>Changing one observation changes the mean because the total sum changes.</p>
+</section>
+<section id="add-a-constant-to-every-score" class="level3">
+<h3 class="anchored" data-anchor-id="add-a-constant-to-every-score">Add a constant to every score</h3>
+<p>If every observation increases by (c),</p>
+<p><span class="math display">\[
+M_{\text{new}}=M_{\text{old}}+c.
+\]</span></p>
+</section>
+<section id="multiply-every-score-by-a-constant" class="level3">
+<h3 class="anchored" data-anchor-id="multiply-every-score-by-a-constant">Multiply every score by a constant</h3>
+<p>If every observation is multiplied by (c),</p>
+<p><span class="math display">\[
+M_{\text{new}}=cM_{\text{old}}.
+\]</span></p>
+</section>
+<section id="subtract-the-mean-from-every-score" class="level3">
+<h3 class="anchored" data-anchor-id="subtract-the-mean-from-every-score">Subtract the mean from every score</h3>
+<p>If:</p>
+<p><span class="math display">\[
+Y_i=X_i-M,
+\]</span></p>
+<p>then:</p>
+<p><span class="math display">\[
+\bar{Y}=0.
+\]</span></p>
+<p>This is because deviations from the mean sum to zero.</p>
+</section>
+<section id="add-a-new-score" class="level3">
+<h3 class="anchored" data-anchor-id="add-a-new-score">Add a new score</h3>
+<p>A new score above the old mean pulls the mean upward.</p>
+<p>A new score below the old mean pulls the mean downward.</p>
+<p>A new score equal to the old mean leaves the mean unchanged.</p>
+<hr>
+</section>
+</section>
+<section id="why-do-we-need-three-measures-of-center" class="level1">
+<h1>16. Why Do We Need Three Measures of Center?</h1>
+<p>The lecture answers this by asking what kinds of data and distributions we have (Sigal, 2026).</p>
+<section id="mode" class="level3">
+<h3 class="anchored" data-anchor-id="mode">Mode</h3>
+<p>Useful for:</p>
+<ul>
+<li>categorical/discrete data;</li>
+<li>identifying the most common response;</li>
+<li>describing modality.</li>
+</ul>
+</section>
+<section id="median" class="level3">
+<h3 class="anchored" data-anchor-id="median">Median</h3>
+<p>Useful when:</p>
+<ul>
+<li>scores are ordinal;</li>
+<li>the distribution has extreme scores or outliers;</li>
+<li>a robust description of the middle is desirable.</li>
+</ul>
+</section>
+<section id="mean" class="level3">
+<h3 class="anchored" data-anchor-id="mean">Mean</h3>
+<p>Useful in many quantitative settings because it incorporates the magnitude of every score.</p>
+<p>The key principle is:</p>
+<blockquote class="blockquote">
+<p>The best measure depends on the structure of the data.</p>
+</blockquote>
+<hr>
+</section>
+</section>
+<section id="outliers-mean-vs.-median" class="level1">
+<h1>17. Outliers: Mean vs.&nbsp;Median</h1>
+<p>The lecture gives the following error counts:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Errors</th>
+<th style="text-align: right;">0</th>
+<th style="text-align: right;">1</th>
+<th style="text-align: right;">2</th>
+<th style="text-align: right;">3</th>
+<th style="text-align: right;">100</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frequency</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<p>The raw scores are:</p>
+<p><span class="math display">\[
+0,1,1,1,1,2,2,2,3,100.
+\]</span></p>
+<p>The mean is:</p>
+<p><span class="math display">\[
+M
+=
+\frac{113}{10}
+=
+11.3.
+\]</span></p>
+<p>This is a poor description of the typical observation because one extreme score pulls the mean upward.</p>
+<p>Using the course’s interpolated median method, the lecture obtains:</p>
+<p><span class="math display">\[
+Md=1.5.
+\]</span></p>
+<p>The example demonstrates why the median can be more robust to extreme values than the mean (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="distribution-shape-and-skewness" class="level1">
+<h1>18. Distribution Shape and Skewness</h1>
+<p>A distribution can be described not only by its center but also by its <strong>shape</strong>.</p>
+<p><strong>Skewness</strong> refers to asymmetry.</p>
+<p>The lecture distinguishes:</p>
+<ul>
+<li><strong>symmetric distributions</strong>;</li>
+<li><strong>positively skewed distributions</strong>;</li>
+<li><strong>negatively skewed distributions</strong> (Sigal, 2026).</li>
+</ul>
+<p>In a positively skewed distribution:</p>
+<ul>
+<li>most scores cluster toward the lower end;</li>
+<li>the tail stretches to the right.</li>
+</ul>
+<p>In a negatively skewed distribution:</p>
+<ul>
+<li>most scores cluster toward the higher end;</li>
+<li>the tail stretches to the left.</li>
+</ul>
+<hr>
+</section>
+<section id="mean-median-mode-and-shape" class="level1">
+<h1>19. Mean, Median, Mode, and Shape</h1>
+<p>The lecture presents a useful heuristic:</p>
+<section id="approximately-symmetric-bell-shaped" class="level3">
+<h3 class="anchored" data-anchor-id="approximately-symmetric-bell-shaped">Approximately symmetric / bell-shaped</h3>
+<p><span class="math display">\[
+\text{mean} \approx \text{median} \approx \text{mode}.
+\]</span></p>
+</section>
+<section id="positive-skew" class="level3">
+<h3 class="anchored" data-anchor-id="positive-skew">Positive skew</h3>
+<p><span class="math display">\[
+\text{mean}&gt;\text{median}&gt;\text{mode}.
+\]</span></p>
+</section>
+<section id="negative-skew" class="level3">
+<h3 class="anchored" data-anchor-id="negative-skew">Negative skew</h3>
+<p><span class="math display">\[
+\text{mean}&lt;\text{median}&lt;\text{mode}.
+\]</span></p>
+<p>The reason is that the mean is particularly sensitive to extreme values and is pulled toward the long tail (Sigal, 2026).</p>
+<p>These relationships are useful descriptive clues, not universal mathematical identities for every irregular dataset.</p>
+<hr>
+</section>
+</section>
+<section id="other-distribution-shapes" class="level1">
+<h1>20. Other Distribution Shapes</h1>
+<p>The lecture also illustrates several shapes:</p>
+<ul>
+<li>bell-shaped;</li>
+<li>rectangular/uniform;</li>
+<li>U-shaped;</li>
+<li>J-shaped;</li>
+<li>positively skewed;</li>
+<li>negatively skewed.</li>
+</ul>
+<p>These examples reinforce an important point:</p>
+<blockquote class="blockquote">
+<p>A measure of center does not tell you the whole shape of a distribution.</p>
+</blockquote>
+<p>Two datasets can have similar means but radically different shapes.</p>
+<hr>
+</section>
+<section id="why-variability-matters" class="level1">
+<h1>21. Why Variability Matters</h1>
+<p>Central tendency tells us about the middle.</p>
+<p><strong>Variability</strong> tells us about spread.</p>
+<p>Privitera (2018, 2024) emphasizes that behavior naturally varies. Two groups can have the same mean but very different dispersion.</p>
+<p>The lecture frames the goal of variability as understanding the <strong>width of a distribution</strong> (Sigal, 2026).</p>
+<p>Measures introduced this week include:</p>
+<ol type="1">
+<li>range;</li>
+<li>interquartile range;</li>
+<li>variance;</li>
+<li>standard deviation.</li>
+</ol>
+<hr>
+</section>
+<section id="the-range" class="level1">
+<h1>22. The Range</h1>
+<p>The range is:</p>
+<p><span class="math display">\[
+\text{Range}
+=
+X_{\max}-X_{\min}.
+\]</span></p>
+<p>It is the simplest measure of variability.</p>
+<p>For:</p>
+<p><span class="math display">\[
+1,2,3,4,5,
+\]</span></p>
+<p><span class="math display">\[
+\text{Range}=5-1=4.
+\]</span></p>
+<section id="limitation" class="level3">
+<h3 class="anchored" data-anchor-id="limitation">Limitation</h3>
+<p>The range uses only two observations:</p>
+<ul>
+<li>the minimum;</li>
+<li>the maximum.</li>
+</ul>
+<p>Therefore, a single extreme score can drastically inflate it.</p>
+<p>Privitera (2018, 2024) emphasizes that the range is most informative when important outliers are absent.</p>
+<hr>
+</section>
+</section>
+<section id="interquartile-range" class="level1">
+<h1>23. Interquartile Range</h1>
+<p>The <strong>interquartile range (IQR)</strong> describes the spread of the middle 50% of a distribution.</p>
+<p>It is:</p>
+<p><span class="math display">\[
+IQR=Q_3-Q_1.
+\]</span></p>
+<p>where:</p>
+<ul>
+<li>(Q_1) = 25th percentile;</li>
+<li>(Q_2) = median / 50th percentile;</li>
+<li>(Q_3) = 75th percentile.</li>
+</ul>
+<p>Because the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="from-deviation-to-variance" class="level1">
+<h1>24. From Deviation to Variance</h1>
+<p>Suppose we want to quantify how far scores are from the mean.</p>
+<p>For each score:</p>
+<p><span class="math display">\[
+\text{deviation}
+=
+X_i-M.
+\]</span></p>
+<p>If the data are:</p>
+<p><span class="math display">\[
+X=\{3,4,5,6,12\},
+\]</span></p>
+<p>the mean is:</p>
+<p><span class="math display">\[
+M=6.
+\]</span></p>
+<p>The deviations are:</p>
+<p><span class="math display">\[
+-3,-2,-1,0,6.
+\]</span></p>
+<p>But:</p>
+<p><span class="math display">\[
+\sum(X_i-M)=0.
+\]</span></p>
+<p>Positive and negative deviations cancel.</p>
+<p>Therefore, simply averaging raw signed deviations would always make variability look like zero.</p>
+<p>This is why deviations are squared before they are summed.</p>
+<hr>
+</section>
+<section id="sum-of-squares" class="level1">
+<h1>25. Sum of Squares</h1>
+<p>The <strong>sum of squares (SS)</strong> is:</p>
+<p><span class="math display">\[
+SS
+=
+\sum(X_i-M)^2
+\]</span></p>
+<p>for a sample, or:</p>
+<p><span class="math display">\[
+SS
+=
+\sum(X_i-\mu)^2
+\]</span></p>
+<p>for a population.</p>
+<p>Because each deviation is squared:</p>
+<ul>
+<li>negative signs disappear;</li>
+<li>larger deviations contribute more;</li>
+<li>(SS).</li>
+</ul>
+<p>If every observation is identical, every deviation is zero, and:</p>
+<p><span class="math display">\[
+SS=0.
+\]</span></p>
+<p>Privitera (2018, 2024) describes SS as the sum of squared deviations from the mean and the numerator used in the variance formulas.</p>
+<hr>
+</section>
+<section id="population-variance" class="level1">
+<h1>26. Population Variance</h1>
+<p>Population variance is:</p>
+<p><span class="math display">\[
+\sigma^2
+=
+\frac{
+\sum(X_i-\mu)^2
+}{N}
+=
+\frac{SS}{N}.
+\]</span></p>
+<p>The lecture example uses:</p>
+<p><span class="math display">\[
+X=\{1,0,6,1\}
+\]</span></p>
+<p>with:</p>
+<p><span class="math display">\[
+\mu=2.
+\]</span></p>
+<p>The deviations are:</p>
+<p><span class="math display">\[
+-1,-2,4,-1.
+\]</span></p>
+<p>Squared deviations:</p>
+<p><span class="math display">\[
+1,4,16,1.
+\]</span></p>
+<p>Thus:</p>
+<p><span class="math display">\[
+SS=22.
+\]</span></p>
+<p>Population variance is:</p>
+<p><span class="math display">\[
+\sigma^2
+=
+\frac{22}{4}
+=
+5.5.
+\]</span></p>
+<hr>
+</section>
+<section id="standard-deviation-for-a-population" class="level1">
+<h1>27. Standard Deviation for a Population</h1>
+<p>The population standard deviation is the square root of the population variance:</p>
+<p><span class="math display">\[
+\sigma
+=
+\sqrt{\sigma^2}.
+\]</span></p>
+<p>For the previous example:</p>
+<p><span class="math display">\[
+\sigma
+=
+\sqrt{5.5}
+\approx
+2.35.
+\]</span></p>
+<p>Variance is expressed in <strong>squared units</strong>.</p>
+<p>Standard deviation returns the measure of spread to the <strong>original units</strong> of measurement (Privitera, 2018, 2024; Sigal, 2026).</p>
+<hr>
+</section>
+<section id="sample-variance" class="level1">
+<h1>28. Sample Variance</h1>
+<p>When the observed data are a sample rather than the entire population, the Week 3 materials use:</p>
+<p><span class="math display">\[
+s^2
+=
+\frac{
+\sum(X_i-\bar{X})^2
+}{n-1}
+=
+\frac{SS}{n-1}.
+\]</span></p>
+<p>Using the same values:</p>
+<p><span class="math display">\[
+X=\{1,0,6,1\},
+\]</span></p>
+<p>we still have:</p>
+<p><span class="math display">\[
+SS=22.
+\]</span></p>
+<p>But now:</p>
+<p><span class="math display">\[
+s^2
+=
+\frac{22}{4-1}
+=
+\frac{22}{3}
+\approx
+7.33.
+\]</span></p>
+<p>The sample standard deviation is:</p>
+<p><span class="math display">\[
+s
+=
+\sqrt{7.33}
+\approx
+2.71.
+\]</span></p>
+<hr>
+</section>
+<section id="why-does-sample-variance-use-n-1" class="level1">
+<h1>29. Why Does Sample Variance Use (n-1)?</h1>
+<p>This is one of the most important conceptual ideas in Week 3.</p>
+<p>If we calculate sample variance using (n), it tends to underestimate the population variance.</p>
+<p>Dividing by:</p>
+<p><span class="math display">\[
+n-1
+\]</span></p>
+<p>makes the sample variance a better estimator of population variance on average (Privitera, 2018, 2024; Sigal, 2026).</p>
+<p>Privitera describes this as an <strong>unbiased estimator</strong>:</p>
+<blockquote class="blockquote">
+<p>Across repeated random samples, variance calculated with (n-1) equals the population variance on average.</p>
+</blockquote>
+<p>This correction is often associated with <strong>Bessel’s correction</strong>.</p>
+<hr>
+</section>
+<section id="degrees-of-freedom" class="level1">
+<h1>30. Degrees of Freedom</h1>
+<p>The denominator:</p>
+<p><span class="math display">\[
+n-1
+\]</span></p>
+<p>is also the <strong>degrees of freedom</strong> for sample variance.</p>
+<p>Degrees of freedom can be understood as the number of scores that remain free to vary once the sample mean is known.</p>
+<p>Suppose a sample contains three scores and has:</p>
+<p><span class="math display">\[
+M=4.
+\]</span></p>
+<p>If two scores are:</p>
+<p><span class="math display">\[
+3,\ 4,
+\]</span></p>
+<p>then the third cannot be arbitrary.</p>
+<p>Because the three scores must sum to:</p>
+<p><span class="math display">\[
+3(4)=12,
+\]</span></p>
+<p>the missing value must be:</p>
+<p><span class="math display">\[
+5.
+\]</span></p>
+<p>Thus only:</p>
+<p><span class="math display">\[
+n-1
+\]</span></p>
+<p>scores are independently free to vary (Privitera, 2018, 2024; Sigal, 2026).</p>
+<hr>
+</section>
+<section id="standard-deviation" class="level1">
+<h1>31. Standard Deviation</h1>
+<p>The standard deviation is the square root of the variance.</p>
+<p>For a sample:</p>
+<p><span class="math display">\[
+s=\sqrt{s^2}
+=
+\sqrt{\frac{SS}{n-1}}.
+\]</span></p>
+<p>For a population:</p>
+<p><span class="math display">\[
+\sigma=\sqrt{\sigma^2}
+=
+\sqrt{\frac{SS}{N}}.
+\]</span></p>
+<p>The standard deviation gives a measure of the typical distance of scores from the mean in the original scale of measurement (Privitera, 2018, 2024).</p>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation</h3>
+<ul>
+<li>smaller SD → scores are more tightly clustered around the mean;</li>
+<li>larger SD → scores are more widely spread.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="variance-vs.-standard-deviation" class="level1">
+<h1>32. Variance vs.&nbsp;Standard Deviation</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>What it measures</th>
+<th>Units</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Variance</td>
+<td>Average squared spread from the mean</td>
+<td>Squared units</td>
+</tr>
+<tr class="even">
+<td>Standard deviation</td>
+<td>Spread around the mean</td>
+<td>Original units</td>
+</tr>
+</tbody>
+</table>
+<p>For example, if heights are measured in inches:</p>
+<ul>
+<li>variance is in <strong>inches squared</strong>;</li>
+<li>standard deviation is in <strong>inches</strong>.</li>
+</ul>
+<p>This is one reason standard deviation is easier to interpret directly.</p>
+<hr>
+</section>
+<section id="what-happens-when-scores-are-transformed" class="level1">
+<h1>33. What Happens When Scores Are Transformed?</h1>
+<p>The Week 3 worksheet explicitly asks students to investigate transformations (PSYC 210 Teaching Team, 2026b).</p>
+<section id="add-or-subtract-the-same-constant-from-every-score" class="level3">
+<h3 class="anchored" data-anchor-id="add-or-subtract-the-same-constant-from-every-score">Add or subtract the same constant from every score</h3>
+<p>If:</p>
+<p><span class="math display">\[
+Y_i=X_i+c,
+\]</span></p>
+<p>then the mean shifts:</p>
+<p><span class="math display">\[
+M_Y=M_X+c.
+\]</span></p>
+<p>But distances from the mean do not change.</p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+s_Y=s_X
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+s_Y^2=s_X^2.
+\]</span></p>
+</section>
+<section id="multiply-every-score-by-a-constant-1" class="level3">
+<h3 class="anchored" data-anchor-id="multiply-every-score-by-a-constant-1">Multiply every score by a constant</h3>
+<p>If:</p>
+<p><span class="math display">\[
+Y_i=cX_i,
+\]</span></p>
+<p>then:</p>
+<p><span class="math display">\[
+M_Y=cM_X,
+\]</span></p>
+<p><span class="math display">\[
+s_Y=|c|s_X,
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+s_Y^2=c^2s_X^2.
+\]</span></p>
+<p>These relationships are central to understanding standardization later in the course.</p>
+<hr>
+</section>
+</section>
+<section id="the-week-3-worksheet" class="level1">
+<h1>34. The Week 3 Worksheet</h1>
+<p>The worksheet uses:</p>
+<p><span class="math display">\[
+X=\{6,3,9,11,15,24,4,5,13\}.
+\]</span></p>
+<p>Students are asked to investigate what happens when they:</p>
+<ul>
+<li>subtract 3 from every score;</li>
+<li>multiply every score by 4;</li>
+<li>subtract the mean from every score;</li>
+<li>add a new score of 16;</li>
+<li>add a new score of 10;</li>
+<li>calculate sample variance and standard deviation;</li>
+<li>compare variability after linear transformations (PSYC 210 Teaching Team, 2026b).</li>
+</ul>
+<p>The purpose is not only to practice arithmetic.</p>
+<p>It is to recognize predictable structural relationships among:</p>
+<ul>
+<li>raw scores;</li>
+<li>means;</li>
+<li>deviations;</li>
+<li>variance;</li>
+<li>standard deviation.</li>
+</ul>
+<hr>
+</section>
+<section id="a-second-worksheet-dataset" class="level1">
+<h1>35. A Second Worksheet Dataset</h1>
+<p>The worksheet also gives weekly grocery-shopping times:</p>
+<p><span class="math display">\[
+75,72,71,55,56,72,93,73,72,72,73,91,66,71,56,59.
+\]</span></p>
+<p>Students are asked to calculate:</p>
+<ul>
+<li>mode;</li>
+<li>median;</li>
+<li>mean;</li>
+<li>range;</li>
+<li>standard deviation (PSYC 210 Teaching Team, 2026b).</li>
+</ul>
+<p>This problem integrates central tendency and variability into one descriptive summary.</p>
+<p>That is the larger Week 3 goal:</p>
+<blockquote class="blockquote">
+<p>A useful description of a dataset normally requires more than one statistic.</p>
+</blockquote>
+<hr>
+</section>
+<section id="what-should-be-reported-together" class="level1">
+<h1>36. What Should Be Reported Together?</h1>
+<p>Measures of center and variability are most informative when interpreted together.</p>
+<p>For many quantitative variables, researchers commonly report:</p>
+<p><span class="math display">\[
+M\pm SD.
+\]</span></p>
+<p>The mean tells us about the center.</p>
+<p>The standard deviation tells us about spread around that center.</p>
+<p>Privitera (2018, 2024) emphasizes that the standard deviation is especially informative when reported with the mean.</p>
+<p>For skewed distributions or variables with important outliers, a median paired with a robust measure such as the IQR may be more informative.</p>
+<hr>
+</section>
+<section id="choosing-measures-for-lucys-dataset" class="level1">
+<h1>37. Choosing Measures for Lucy’s Dataset</h1>
+<p>The lecture returns to Lucy’s dataset:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Type</th>
+<th>Potential useful summary</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Name</td>
+<td>Identifier</td>
+<td>None as a quantitative summary</td>
+</tr>
+<tr class="even">
+<td>Age</td>
+<td>Quantitative</td>
+<td>Mean/median + SD/range</td>
+</tr>
+<tr class="odd">
+<td>IQ</td>
+<td>Quantitative</td>
+<td>Mean + SD; inspect shape/outliers</td>
+</tr>
+<tr class="even">
+<td>Height</td>
+<td>Quantitative</td>
+<td>Mean + SD</td>
+</tr>
+<tr class="odd">
+<td>Grade</td>
+<td>Ordinal</td>
+<td>Median/mode; frequencies</td>
+</tr>
+<tr class="even">
+<td>Browser</td>
+<td>Nominal</td>
+<td>Mode; frequencies</td>
+</tr>
+<tr class="odd">
+<td>CARS</td>
+<td>Scale score</td>
+<td>Mean/median + variability, depending on distribution and course assumptions</td>
+</tr>
+</tbody>
+</table>
+<p>The point is not that one fixed rule always applies.</p>
+<p>The choice depends on:</p>
+<ul>
+<li>scale of measurement;</li>
+<li>distribution shape;</li>
+<li>outliers;</li>
+<li>the substantive research question (Sigal, 2026).</li>
+</ul>
+<hr>
+</section>
+<section id="how-the-concepts-fit-together" class="level1">
+<h1>38. How the Concepts Fit Together</h1>
+<p>Week 3 can be understood as a sequence:</p>
+<p><strong>What is the distribution’s center?</strong></p>
+<p>↓</p>
+<p><strong>Mode, median, mean</strong></p>
+<p>↓</p>
+<p><strong>What is the distribution’s shape?</strong></p>
+<p>↓</p>
+<p><strong>Symmetric? Positively skewed? Negatively skewed? Multimodal?</strong></p>
+<p>↓</p>
+<p><strong>How spread out are the observations?</strong></p>
+<p>↓</p>
+<p><strong>Range, IQR, variance, standard deviation</strong></p>
+<p>↓</p>
+<p><strong>Sample or population?</strong></p>
+<p>↓</p>
+<p><strong>Use (N) or (n-1)</strong></p>
+<p>↓</p>
+<p><strong>Interpret center and spread together</strong></p>
+<p>This is the transition from simply organizing data to describing the mathematical structure of a distribution.</p>
+<hr>
+</section>
+<section id="important-terms" class="level1">
+<h1>39. Important Terms</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Term</th>
@@ -198,42 +1502,325 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>To be added</em></td>
-<td></td>
+<td><strong>Mode</strong></td>
+<td>Most frequently occurring value or category.</td>
+</tr>
+<tr class="even">
+<td><strong>Median</strong></td>
+<td>Middle position of an ordered distribution; 50th percentile.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mean</strong></td>
+<td>Arithmetic average; balance point based on magnitudes.</td>
+</tr>
+<tr class="even">
+<td><strong>Weighted mean</strong></td>
+<td>Mean in which groups/values contribute according to their weights or sample sizes.</td>
+</tr>
+<tr class="odd">
+<td><strong>Skewness</strong></td>
+<td>Asymmetry of a distribution.</td>
+</tr>
+<tr class="even">
+<td><strong>Positive skew</strong></td>
+<td>Long tail toward larger values.</td>
+</tr>
+<tr class="odd">
+<td><strong>Negative skew</strong></td>
+<td>Long tail toward smaller values.</td>
+</tr>
+<tr class="even">
+<td><strong>Variability</strong></td>
+<td>Degree to which scores are dispersed or spread.</td>
+</tr>
+<tr class="odd">
+<td><strong>Range</strong></td>
+<td>Maximum minus minimum.</td>
+</tr>
+<tr class="even">
+<td><strong>Quartile</strong></td>
+<td>Boundary dividing a distribution into four parts.</td>
+</tr>
+<tr class="odd">
+<td><strong>Interquartile range (IQR)</strong></td>
+<td>(Q_3-Q_1); spread of the middle 50%.</td>
+</tr>
+<tr class="even">
+<td><strong>Deviation</strong></td>
+<td>Difference between a score and the mean.</td>
+</tr>
+<tr class="odd">
+<td><strong>Sum of squares (SS)</strong></td>
+<td>Sum of squared deviations from the mean.</td>
+</tr>
+<tr class="even">
+<td><strong>Population variance</strong></td>
+<td>(SS/N).</td>
+</tr>
+<tr class="odd">
+<td><strong>Sample variance</strong></td>
+<td>(SS/(n-1)).</td>
+</tr>
+<tr class="even">
+<td><strong>Standard deviation</strong></td>
+<td>Square root of variance; spread in original units.</td>
+</tr>
+<tr class="odd">
+<td><strong>Degrees of freedom</strong></td>
+<td>Number of independently free scores used in estimating sample variance; (n-1).</td>
+</tr>
+<tr class="even">
+<td><strong>Unbiased estimator</strong></td>
+<td>Statistic that equals the target population parameter on average across repeated samples.</td>
+</tr>
+<tr class="odd">
+<td><strong>Real limit</strong></td>
+<td>Boundary extending halfway between adjacent measurable values.</td>
 </tr>
 </tbody>
 </table>
+<hr>
 </section>
-<section id="worked-examples" class="level2">
-<h2 class="anchored" data-anchor-id="worked-examples">Worked Examples</h2>
-<p><em>To be added.</em></p>
+<section id="common-misunderstandings" class="level1">
+<h1>40. Common Misunderstandings</h1>
+<section id="the-mode-has-to-be-a-number." class="level3">
+<h3 class="anchored" data-anchor-id="the-mode-has-to-be-a-number.">“The mode has to be a number.”</h3>
+<p>No.&nbsp;The mode can be a category.</p>
 </section>
-<section id="common-misunderstandings" class="level2">
-<h2 class="anchored" data-anchor-id="common-misunderstandings">Common Misunderstandings</h2>
-<p><em>To be added.</em></p>
+<section id="a-distribution-can-only-have-one-mode." class="level3">
+<h3 class="anchored" data-anchor-id="a-distribution-can-only-have-one-mode.">“A distribution can only have one mode.”</h3>
+<p>No.&nbsp;It can be bimodal or multimodal.</p>
 </section>
-<section id="tutorial-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-preparation">Tutorial Preparation</h2>
-<p><em>To be added.</em></p>
+<section id="the-median-is-always-an-observed-score." class="level3">
+<h3 class="anchored" data-anchor-id="the-median-is-always-an-observed-score.">“The median is always an observed score.”</h3>
+<p>No.&nbsp;It can lie between observed scores or be interpolated within an interval.</p>
 </section>
-<section id="practice-questions" class="level2">
-<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
-<section id="conceptual-questions" class="level3">
-<h3 class="anchored" data-anchor-id="conceptual-questions">Conceptual Questions</h3>
-<p><em>To be added.</em></p>
+<section id="the-mean-is-always-the-best-measure-of-center." class="level3">
+<h3 class="anchored" data-anchor-id="the-mean-is-always-the-best-measure-of-center.">“The mean is always the best measure of center.”</h3>
+<p>No.&nbsp;Extreme scores can make it misleading.</p>
 </section>
-<section id="applied-questions" class="level3">
-<h3 class="anchored" data-anchor-id="applied-questions">Applied Questions</h3>
-<p><em>To be added.</em></p>
+<section id="a-positively-skewed-distribution-has-most-scores-on-the-right." class="level3">
+<h3 class="anchored" data-anchor-id="a-positively-skewed-distribution-has-most-scores-on-the-right.">“A positively skewed distribution has most scores on the right.”</h3>
+<p>No.&nbsp;The <strong>tail</strong> points right; most observations are concentrated more toward the lower side.</p>
+</section>
+<section id="variance-and-standard-deviation-are-the-same-thing." class="level3">
+<h3 class="anchored" data-anchor-id="variance-and-standard-deviation-are-the-same-thing.">“Variance and standard deviation are the same thing.”</h3>
+<p>No.&nbsp;Standard deviation is the square root of variance.</p>
+</section>
+<section id="standard-deviation-can-be-negative." class="level3">
+<h3 class="anchored" data-anchor-id="standard-deviation-can-be-negative.">“Standard deviation can be negative.”</h3>
+<p>No.&nbsp;Variability cannot be negative.</p>
+</section>
+<section id="sample-and-population-variance-use-the-same-denominator." class="level3">
+<h3 class="anchored" data-anchor-id="sample-and-population-variance-use-the-same-denominator.">“Sample and population variance use the same denominator.”</h3>
+<p>No.&nbsp;Population variance divides by (N); sample variance divides by (n-1).</p>
+</section>
+<section id="using-n-1-is-just-a-strange-convention." class="level3">
+<h3 class="anchored" data-anchor-id="using-n-1-is-just-a-strange-convention.">“Using (n-1) is just a strange convention.”</h3>
+<p>No.&nbsp;It corrects the systematic downward bias that occurs when sample variance is calculated with (n), and it corresponds to the degrees of freedom available after estimating the mean.</p>
+</section>
+<section id="if-i-add-10-to-every-score-standard-deviation-increases-by-10." class="level3">
+<h3 class="anchored" data-anchor-id="if-i-add-10-to-every-score-standard-deviation-increases-by-10.">“If I add 10 to every score, standard deviation increases by 10.”</h3>
+<p>No.&nbsp;The mean shifts, but the distances between scores and their mean remain unchanged.</p>
+</section>
+<section id="if-i-multiply-every-score-by-10-variance-also-multiplies-by-10." class="level3">
+<h3 class="anchored" data-anchor-id="if-i-multiply-every-score-by-10-variance-also-multiplies-by-10.">“If I multiply every score by 10, variance also multiplies by 10.”</h3>
+<p>No.&nbsp;Standard deviation multiplies by 10; variance multiplies by:</p>
+<p><span class="math display">\[
+10^2=100.
+\]</span></p>
+<hr>
 </section>
 </section>
-<section id="what-you-should-be-able-to-explain" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-should-be-able-to-explain">What You Should Be Able to Explain</h2>
-<p><em>To be added.</em></p>
+<section id="tutorial-preparation" class="level1">
+<h1>41. Tutorial Preparation</h1>
+<p>A TA should be ready to explain both <strong>procedures</strong> and <strong>why the procedures work</strong>.</p>
+<section id="why-are-there-three-measures-of-central-tendency" class="level3">
+<h3 class="anchored" data-anchor-id="why-are-there-three-measures-of-central-tendency">“Why are there three measures of central tendency?”</h3>
+<p>Because they define “center” differently and respond differently to scale, skewness, and outliers.</p>
 </section>
-<section id="reading" class="level2">
-<h2 class="anchored" data-anchor-id="reading">Reading</h2>
-<p>Privitera (2018), Chapter 4</p>
+<section id="why-cant-i-average-group-means" class="level3">
+<h3 class="anchored" data-anchor-id="why-cant-i-average-group-means">“Why can’t I average group means?”</h3>
+<p>You can only do that directly when the groups contribute equally. With unequal sample sizes, use a weighted mean.</p>
+</section>
+<section id="why-does-the-mean-move-toward-an-outlier" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-the-mean-move-toward-an-outlier">“Why does the mean move toward an outlier?”</h3>
+<p>Because every score contributes its magnitude to the total sum.</p>
+</section>
+<section id="why-does-the-median-resist-outliers" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-the-median-resist-outliers">“Why does the median resist outliers?”</h3>
+<p>Because it depends primarily on ordered position rather than the magnitude of extreme values.</p>
+</section>
+<section id="why-do-we-square-deviations" class="level3">
+<h3 class="anchored" data-anchor-id="why-do-we-square-deviations">“Why do we square deviations?”</h3>
+<p>Because signed deviations sum to zero. Squaring prevents cancellation and produces a positive measure of spread.</p>
+</section>
+<section id="why-take-the-square-root-afterward" class="level3">
+<h3 class="anchored" data-anchor-id="why-take-the-square-root-afterward">“Why take the square root afterward?”</h3>
+<p>Because variance is in squared units. The square root produces standard deviation in the original units.</p>
+</section>
+<section id="why-n-1" class="level3">
+<h3 class="anchored" data-anchor-id="why-n-1">“Why (n-1)?”</h3>
+<p>Because estimating the sample mean consumes one degree of freedom, and dividing by (n-1) corrects the average downward bias in sample variance.</p>
+</section>
+<section id="why-does-adding-a-constant-not-change-sd" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-adding-a-constant-not-change-sd">“Why does adding a constant not change SD?”</h3>
+<p>Because every score and the mean shift by exactly the same amount, so the deviations remain unchanged.</p>
+<hr>
+</section>
+</section>
+<section id="practice-questions" class="level1">
+<h1>42. Practice Questions</h1>
+<section id="central-tendency" class="level2">
+<h2 class="anchored" data-anchor-id="central-tendency">Central Tendency</h2>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{2,3,4,4,5,7,20\},
+\]</span></p>
+<p>calculate:</p>
+<ol type="1">
+<li>mode;</li>
+<li>ordinary median;</li>
+<li>mean;</li>
+<li>explain which measure is most affected by the score 20.</li>
+</ol>
+</section>
+<section id="weighted-mean" class="level2">
+<h2 class="anchored" data-anchor-id="weighted-mean">Weighted Mean</h2>
+<p>Two groups have:</p>
+<ul>
+<li>Group A: (M=8,&nbsp;n=10)</li>
+<li>Group B: (M=14,&nbsp;n=30)</li>
+</ul>
+<p>Calculate the combined mean.</p>
+</section>
+<section id="shape" class="level2">
+<h2 class="anchored" data-anchor-id="shape">Shape</h2>
+<p>For each relationship, identify the likely shape:</p>
+<ol type="1">
+<li>mean ≈ median ≈ mode;</li>
+<li>mean &gt; median &gt; mode;</li>
+<li>mean &lt; median &lt; mode.</li>
+</ol>
+</section>
+<section id="variability" class="level2">
+<h2 class="anchored" data-anchor-id="variability">Variability</h2>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{2,4,6,8,10\},
+\]</span></p>
+<p>calculate:</p>
+<ol type="1">
+<li>range;</li>
+<li>mean;</li>
+<li>each deviation from the mean;</li>
+<li>SS;</li>
+<li>population variance;</li>
+<li>population standard deviation;</li>
+<li>sample variance;</li>
+<li>sample standard deviation.</li>
+</ol>
+</section>
+<section id="transformations" class="level2">
+<h2 class="anchored" data-anchor-id="transformations">Transformations</h2>
+<p>Suppose:</p>
+<p><span class="math display">\[
+M=10,\quad s=4,\quad s^2=16.
+\]</span></p>
+<p>What happens if every score is:</p>
+<ol type="1">
+<li>increased by 3?</li>
+<li>decreased by 5?</li>
+<li>multiplied by 2?</li>
+<li>divided by 4?</li>
+</ol>
+<p>State the new mean, standard deviation, and variance.</p>
+<hr>
+</section>
+</section>
+<section id="what-you-should-be-able-to-explain" class="level1">
+<h1>43. What You Should Be Able to Explain</h1>
+<p>Before moving on, you should be able to explain:</p>
+<ul>
+<li>how mode, median, and mean define center differently;</li>
+<li>why a distribution can have more than one mode;</li>
+<li>how to calculate an ordinary median;</li>
+<li>how the course’s interpolation formula estimates a percentile within an interval;</li>
+<li>how to calculate a weighted mean;</li>
+<li>why extreme scores affect mean more strongly than median;</li>
+<li>how mean, median, and mode relate to skewness;</li>
+<li>why central tendency alone is insufficient;</li>
+<li>what the range and IQR measure;</li>
+<li>why raw deviations from the mean sum to zero;</li>
+<li>what SS represents;</li>
+<li>why variance squares deviations;</li>
+<li>why standard deviation is more directly interpretable than variance;</li>
+<li>why sample variance uses (n-1);</li>
+<li>what degrees of freedom mean;</li>
+<li>how linear transformations affect mean, variance, and standard deviation.</li>
+</ul>
+<hr>
+</section>
+<section id="readings-and-practice" class="level1">
+<h1>44. Readings and Practice</h1>
+<section id="required-reading" class="level2">
+<h2 class="anchored" data-anchor-id="required-reading">Required reading</h2>
+<ul>
+<li>Privitera, G. J. (2018), Chapter 4: <em>Summarizing Data: Variability</em>.</li>
+</ul>
+</section>
+<section id="additional-supplied-reading" class="level2">
+<h2 class="anchored" data-anchor-id="additional-supplied-reading">Additional supplied reading</h2>
+<ul>
+<li>Privitera, G. J. (2024), Chapter 4: <em>Summarizing Data: Variability</em>.</li>
+</ul>
+</section>
+<section id="lecture-and-course-materials" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-and-course-materials">Lecture and course materials</h2>
+<ul>
+<li>Lecture 3: <em>Measures of Central Tendency and Variability</em>.</li>
+<li>Lecture 3 annotated slides.</li>
+<li>Lecture 3 worksheet.</li>
+<li>Supplemental median example.</li>
+</ul>
+</section>
+<section id="instructor-assigned-practice" class="level2">
+<h2 class="anchored" data-anchor-id="instructor-assigned-practice">Instructor-assigned practice</h2>
+<p>The lecture identifies the following practice problems:</p>
+<p><strong>Central tendency</strong> - Questions 11, 17, 21, 22, 32.</p>
+<p><strong>Variability</strong> - Questions 11, 12, 21, 29.</p>
+<p>The lecture also instructs students to skip or ignore the textbook’s section on computational formulas for variance for current course purposes (Sigal, 2026).</p>
+<hr>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>45. References</h1>
+<p>Privitera, G. J. (2018). <em>Essential statistics for the behavioral sciences</em> (2nd ed.). SAGE.</p>
+<p>Privitera, G. J. (2024). <em>Statistics for the behavioral sciences</em> (4th ed.). SAGE.</p>
+<p>PSYC 210 Teaching Team. (2026a). <em>An additional example of calculating the median</em> [Supplemental course handout]. Simon Fraser University.</p>
+<p>PSYC 210 Teaching Team. (2026b). <em>PSYC 210 Lecture 3 worksheet</em> [Course worksheet]. Simon Fraser University.</p>
+<p>Sigal, M. (2026, September 28). <em>PSYC 210: Introduction to data analysis—Lecture 3: Measures of central tendency and variability</em> [Lecture slides]. Simon Fraser University.</p>
+<hr>
+</section>
+<section id="week-3-takeaway" class="level1">
+<h1>46. Week 3 Takeaway</h1>
+<p>Week 3 adds two essential dimensions to descriptive statistics:</p>
+<blockquote class="blockquote">
+<p><strong>Where is the distribution centered, and how much do observations vary around that center?</strong></p>
+</blockquote>
+<p>A single average is never the whole story.</p>
+<p>To describe data responsibly, consider:</p>
+<ul>
+<li>the appropriate measure of center;</li>
+<li>the shape of the distribution;</li>
+<li>the presence of outliers;</li>
+<li>the amount of variability;</li>
+<li>whether the data are a sample or a population.</li>
+</ul>
+<p>The mean and standard deviation will become especially important in later weeks, but the deeper lesson is broader:</p>
+<blockquote class="blockquote">
+<p>Good statistical description requires understanding both <strong>location</strong> and <strong>spread</strong>.</p>
+</blockquote>
 
 
 </section>

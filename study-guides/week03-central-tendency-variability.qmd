@@ -1,55 +1,1618 @@
 ---
-title: "Week 03 — Measures of Central Tendency and Variability"
+title: "Week 03 — Central Tendency, Shape, and Variability"
+toc-depth: 2
 ---
 
 ## Overview
 
-*To be developed from the supplied lecture notes, tutorials, exercises, and readings.*
+Week 3 asks two closely related questions:
+
+1. **Where is the center of a distribution?**
+2. **How spread out are the scores around that center?**
+
+The first question is addressed with measures of **central tendency**: the mode, median, and mean. The second is addressed with measures of **variability**: the range, interquartile range, variance, and standard deviation.
+
+The lecture emphasizes that no single number can fully describe a distribution. A measure of center tells us what is typical or representative, while a measure of variability tells us how widely observations differ from one another. The shape of a distribution—especially whether it is symmetric or skewed—also affects which summaries are most informative (Sigal, 2026).
+
+The Week 3 materials also introduce several foundational ideas that become important later in inferential statistics:
+
+- weighted means;
+- percentiles and interpolated medians;
+- skewness;
+- sum of squares;
+- sample versus population variance;
+- degrees of freedom;
+- the standard deviation as a measure in the original units of measurement.
+
+---
 
 ## Learning Objectives
 
-*To be added.*
+By the end of this week, you should be able to:
 
-## Key Concepts
+1. Define **mode, median, and mean** and explain how they differ.
+2. Identify unimodal, bimodal, multimodal, and nonmodal distributions.
+3. Calculate a median for odd- and even-sized ungrouped datasets.
+4. Use the course's cumulative-frequency interpolation formula to estimate medians and other percentiles.
+5. Apply the median formula to grouped data.
+6. Calculate a sample mean and population mean using appropriate notation.
+7. Calculate a weighted/combined mean when group sizes differ.
+8. Explain how changing, adding, or transforming scores affects the mean.
+9. Explain why the mean, median, and mode respond differently to extreme scores.
+10. Use the relative positions of mean, median, and mode to describe skewness.
+11. Define variability and explain why measures of center are not enough.
+12. Calculate and interpret the range and interquartile range.
+13. Explain **deviation**, **sum of squares (SS)**, **variance**, and **standard deviation**.
+14. Distinguish population variance from sample variance.
+15. Explain why sample variance uses \(n-1\) rather than \(n\).
+16. Explain degrees of freedom in the context of sample variance.
+17. Predict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.
+18. Choose useful measures of center and spread for variables in a real dataset.
 
-*To be added.*
+---
 
-## How the Concepts Fit Together
+# 1. Why Do We Need Measures of Center?
 
-*To be added.*
+A frequency distribution tells us how scores are distributed, but researchers often also want a single value that summarizes what is **typical** or **representative**.
 
-## Important Terms
+The Week 3 lecture frames central tendency as an attempt to locate the "center" of a sample or population, while emphasizing that "center" can mean different things (Sigal, 2026).
+
+The three standard measures are:
+
+1. **Mode**
+2. **Median**
+3. **Mean**
+
+Each defines "center" differently.
+
+| Measure | Basic idea |
+|---|---|
+| Mode | Most frequently occurring value/category |
+| Median | Middle position in terms of frequency |
+| Mean | Arithmetic balance point in terms of magnitudes |
+
+The fact that there are three measures is not redundancy. They behave differently and are useful under different conditions.
+
+---
+
+# 2. The Mode
+
+The **mode** is the value or category that occurs most often.
+
+For:
+
+$$
+X=\{0,1,2,2,3\},
+$$
+
+the mode is:
+
+$$
+2.
+$$
+
+The lecture recommends a simple procedure:
+
+1. inspect the values;
+2. sort if useful;
+3. count frequencies;
+4. identify the value with the highest frequency (Sigal, 2026).
+
+### More than one mode
+
+For:
+
+$$
+X=\{0,1,1,1,1,2,2,3,3,3,3,5\},
+$$
+
+both 1 and 3 occur four times.
+
+The distribution is therefore **bimodal**.
+
+A distribution may be:
+
+- **unimodal** — one mode;
+- **bimodal** — two modes;
+- **multimodal** — more than two modes;
+- **nonmodal** — no value occurs more often than the others.
+
+### Why the mode is special
+
+The mode can be used with **categorical data** because it depends only on frequency.
+
+For example, if browser preference is categorical, the "most common browser" is meaningful even though an arithmetic mean of browser codes would not be.
+
+---
+
+# 3. The Median
+
+The **median** is the value that divides an ordered distribution in half based on frequency.
+
+It is also the **50th percentile** (Sigal, 2026).
+
+The median is not necessarily an observed score.
+
+### Basic position rule
+
+A common quick rule for the median position is:
+
+$$
+\frac{n+1}{2}.
+$$
+
+For an odd sample size:
+
+$$
+X=\{11,5,8,10,3\}.
+$$
+
+Sort the values:
+
+$$
+\{3,5,8,10,11\}.
+$$
+
+Because:
+
+$$
+\frac{5+1}{2}=3,
+$$
+
+the median is the third score:
+
+$$
+Md=8.
+$$
+
+---
+
+# 4. Median With an Even Number of Scores
+
+Suppose:
+
+$$
+X=\{3,3,4,5,7,8\}.
+$$
+
+Then:
+
+$$
+\frac{6+1}{2}=3.5.
+$$
+
+The median falls halfway between positions 3 and 4.
+
+Average those two scores:
+
+$$
+Md=\frac{4+5}{2}=4.5.
+$$
+
+For ordinary ungrouped data, this is the familiar textbook procedure.
+
+However, the Week 3 lecture introduces a more general interpolation method because the instructor wants students to think about the median as a **location within an interval**, especially when ties or grouped data are involved (Sigal, 2026).
+
+---
+
+# 5. The Course's Interpolated Median Formula
+
+The lecture uses cumulative frequency to estimate the location of the median within a score interval:
+
+$$
+Md = LL + W\left[\frac{0.5n-cf}{f}\right].
+$$
+
+where:
+
+- \(LL\) = lower real limit of the interval containing the median;
+- \(W\) = interval width;
+- \(n\) = sample size;
+- \(cf\) = cumulative frequency below the median interval;
+- \(f\) = frequency in the median interval.
+
+The procedure is:
+
+1. create a cumulative frequency table in **descending order**;
+2. identify the row containing the 50th percentile;
+3. find \(LL\) and \(W\);
+4. use the cumulative frequency in the row below;
+5. use the frequency in the highlighted row;
+6. substitute into the formula (Sigal, 2026).
+
+This is the method the course expects students to learn for the Week 3 exercises.
+
+---
+
+# 6. Worked Interpolated Median Example
+
+The lecture uses:
+
+$$
+X=\{1,2,2,3,4,4,4,4,4,5\}.
+$$
+
+The cumulative table is:
+
+| Score | \(f\) | \(cf\) | \(cf\%\) |
+|---:|---:|---:|---:|
+| 5 | 1 | 10 | 100 |
+| 4 | 5 | 9 | 90 |
+| 3 | 1 | 4 | 40 |
+| 2 | 2 | 3 | 30 |
+| 1 | 1 | 1 | 10 |
+
+The 50th percentile lies in the row for score 4.
+
+Therefore:
+
+- \(LL=3.5\)
+- \(W=1\)
+- \(n=10\)
+- \(cf=4\)
+- \(f=5\)
+
+Substitute:
+
+$$
+Md
+=
+3.5+
+1\left[
+\frac{0.5(10)-4}{5}
+\right].
+$$
+
+So:
+
+$$
+Md
+=
+3.5+
+\frac{1}{5}
+=
+3.7.
+$$
+
+This value is an **interpolated estimate within the median interval**, not the ordinary midpoint of the 5th and 6th raw-score positions (Sigal, 2026).
+
+---
+
+# 7. A Course-Specific Median Convention
+
+There is an important methodological point here.
+
+For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when \(n\) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).
+
+The supplemental median handout makes this intention explicit. It states that the quick \((n+1)/2\) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).
+
+### For this course
+
+When solving course problems that ask for the formula-based median:
+
+> Use the interpolation procedure demonstrated in the lecture and supplemental handout.
+
+Do not silently substitute the simpler textbook convention when the problem is clearly designed around cumulative frequency and real limits.
+
+---
+
+# 8. Percentiles Beyond the Median
+
+The \(0.5\) in the median formula is not arbitrary.
+
+It represents the desired percentile:
+
+$$
+P_{50}.
+$$
+
+The same logic can be generalized.
+
+For example, the 25th percentile can be estimated using:
+
+$$
+P_{25}
+=
+LL+
+W\left[
+\frac{0.25n-cf}{f}
+\right].
+$$
+
+Thus the median formula is part of a more general percentile-interpolation framework (Sigal, 2026).
+
+---
+
+# 9. Median for Grouped Data
+
+For grouped data, interval width does not have to equal 1.
+
+The lecture example is:
+
+| Interval | \(f\) | \(cf\) | \(cf\%\) |
+|---|---:|---:|---:|
+| 12–15 | 3 | 8 | 100 |
+| 8–11 | 1 | 5 | 62.5 |
+| 4–7 | 3 | 4 | 50 |
+| 0–3 | 1 | 1 | 12.5 |
+
+For the median interval 4–7:
+
+- \(LL=3.5\)
+- \(W=7.5-3.5=4\)
+- \(n=8\)
+- \(cf=1\)
+- \(f=3\)
+
+Then:
+
+$$
+Md
+=
+3.5+
+4\left[
+\frac{0.5(8)-1}{3}
+\right]
+=
+7.5.
+$$
+
+The same formula works because \(W\) explicitly represents the real width of the interval (Sigal, 2026).
+
+---
+
+# 10. Supplemental Median Example
+
+The supplemental handout uses 30 age observations recorded in 3-year bins.
+
+The median falls in the **24–26** interval.
+
+The handout identifies:
+
+- \(LL=23.5\)
+- \(W=3\)
+- \(n=30\)
+- \(cf=14\)
+- \(f=5\)
+
+Then:
+
+$$
+Md
+=
+23.5+
+3\left[
+\frac{0.5(30)-14}{5}
+\right].
+$$
+
+Therefore:
+
+$$
+Md=24.1.
+$$
+
+The handout contrasts this with the quick \((n+1)/2\) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).
+
+---
+
+# 11. The Mean
+
+The **mean** is the arithmetic average.
+
+For a sample:
+
+$$
+\bar{x}
+=
+\frac{\sum x_i}{n}.
+$$
+
+The lecture notes that APA-style reporting commonly uses \(M\) for a sample mean, while \(\mu\) is used for a population mean (Sigal, 2026).
+
+For:
+
+$$
+X=\{3,7,4,6\},
+$$
+
+$$
+\bar{x}
+=
+\frac{3+7+4+6}{4}
+=
+\frac{20}{4}
+=
+5.
+$$
+
+Conceptually, the mean is a **balance point** based on magnitudes.
+
+---
+
+# 12. Sample and Population Mean Notation
+
+The lecture distinguishes:
+
+- sample mean: \(\bar{x}\) or \(M\);
+- population mean: \(\mu\).
+
+The calculation itself is structurally the same:
+
+$$
+M=\frac{\sum X}{n},
+$$
+
+and:
+
+$$
+\mu=\frac{\sum X}{N}.
+$$
+
+The symbols remind us whether the calculation describes a sample or the entire population of interest.
+
+---
+
+# 13. The Weighted Mean
+
+A simple average of group means is only correct when the groups contribute equal weight.
+
+Suppose:
+
+- Group 1: \(\bar{x}_1=6,\ n_1=20\)
+- Group 2: \(\bar{x}_2=15,\ n_2=3\)
+
+It would be wrong to calculate:
+
+$$
+\frac{6+15}{2}=10.5.
+$$
+
+The groups are not equally large.
+
+Instead:
+
+$$
+\bar{x}_C
+=
+\frac{\sum X_1+\sum X_2}
+{n_1+n_2}.
+$$
+
+Because:
+
+$$
+\sum X_1=120
+$$
+
+and:
+
+$$
+\sum X_2=45,
+$$
+
+the combined mean is:
+
+$$
+\bar{x}_C
+=
+\frac{120+45}{20+3}
+=
+\frac{165}{23}
+=
+7.17.
+$$
+
+The larger group contributes more information and therefore more weight (Sigal, 2026).
+
+---
+
+# 14. Weighted Mean From Group Means
+
+If the original sums are not given, recover each group sum using:
+
+$$
+\sum X = \bar{x}n.
+$$
+
+Then:
+
+$$
+\bar{x}_C
+=
+\frac{
+\bar{x}_1n_1+\bar{x}_2n_2+\cdots+\bar{x}_kn_k
+}{
+n_1+n_2+\cdots+n_k
+}.
+$$
+
+The lecture example gives:
+
+| Group | Mean | \(n\) |
+|---|---:|---:|
+| Drivers | 1 | 7 |
+| Bus | 6 | 20 |
+| Walk/Bicycle | 3 | 45 |
+
+Therefore:
+
+$$
+\bar{x}_C
+=
+\frac{1(7)+6(20)+3(45)}
+{7+20+45}
+=
+\frac{262}{72}
+=
+3.64.
+$$
+
+---
+
+# 15. How the Mean Changes
+
+The Week 3 worksheet asks students to explore how transformations affect the mean (PSYC 210 Teaching Team, 2026b).
+
+The key patterns are:
+
+### Change one score
+
+Changing one observation changes the mean because the total sum changes.
+
+### Add a constant to every score
+
+If every observation increases by \(c\),
+
+$$
+M_{\text{new}}=M_{\text{old}}+c.
+$$
+
+### Multiply every score by a constant
+
+If every observation is multiplied by \(c\),
+
+$$
+M_{\text{new}}=cM_{\text{old}}.
+$$
+
+### Subtract the mean from every score
+
+If:
+
+$$
+Y_i=X_i-M,
+$$
+
+then:
+
+$$
+\bar{Y}=0.
+$$
+
+This is because deviations from the mean sum to zero.
+
+### Add a new score
+
+A new score above the old mean pulls the mean upward.
+
+A new score below the old mean pulls the mean downward.
+
+A new score equal to the old mean leaves the mean unchanged.
+
+---
+
+# 16. Why Do We Need Three Measures of Center?
+
+The lecture answers this by asking what kinds of data and distributions we have (Sigal, 2026).
+
+### Mode
+
+Useful for:
+
+- categorical/discrete data;
+- identifying the most common response;
+- describing modality.
+
+### Median
+
+Useful when:
+
+- scores are ordinal;
+- the distribution has extreme scores or outliers;
+- a robust description of the middle is desirable.
+
+### Mean
+
+Useful in many quantitative settings because it incorporates the magnitude of every score.
+
+The key principle is:
+
+> The best measure depends on the structure of the data.
+
+---
+
+# 17. Outliers: Mean vs. Median
+
+The lecture gives the following error counts:
+
+| Errors | 0 | 1 | 2 | 3 | 100 |
+|---|---:|---:|---:|---:|---:|
+| Frequency | 1 | 4 | 3 | 1 | 1 |
+
+The raw scores are:
+
+$$
+0,1,1,1,1,2,2,2,3,100.
+$$
+
+The mean is:
+
+$$
+M
+=
+\frac{113}{10}
+=
+11.3.
+$$
+
+This is a poor description of the typical observation because one extreme score pulls the mean upward.
+
+Using the course's interpolated median method, the lecture obtains:
+
+$$
+Md=1.5.
+$$
+
+The example demonstrates why the median can be more robust to extreme values than the mean (Sigal, 2026).
+
+---
+
+# 18. Distribution Shape and Skewness
+
+A distribution can be described not only by its center but also by its **shape**.
+
+**Skewness** refers to asymmetry.
+
+The lecture distinguishes:
+
+- **symmetric distributions**;
+- **positively skewed distributions**;
+- **negatively skewed distributions** (Sigal, 2026).
+
+In a positively skewed distribution:
+
+- most scores cluster toward the lower end;
+- the tail stretches to the right.
+
+In a negatively skewed distribution:
+
+- most scores cluster toward the higher end;
+- the tail stretches to the left.
+
+---
+
+# 19. Mean, Median, Mode, and Shape
+
+The lecture presents a useful heuristic:
+
+### Approximately symmetric / bell-shaped
+
+$$
+\text{mean} \approx \text{median} \approx \text{mode}.
+$$
+
+### Positive skew
+
+$$
+\text{mean}>\text{median}>\text{mode}.
+$$
+
+### Negative skew
+
+$$
+\text{mean}<\text{median}<\text{mode}.
+$$
+
+The reason is that the mean is particularly sensitive to extreme values and is pulled toward the long tail (Sigal, 2026).
+
+These relationships are useful descriptive clues, not universal mathematical identities for every irregular dataset.
+
+---
+
+# 20. Other Distribution Shapes
+
+The lecture also illustrates several shapes:
+
+- bell-shaped;
+- rectangular/uniform;
+- U-shaped;
+- J-shaped;
+- positively skewed;
+- negatively skewed.
+
+These examples reinforce an important point:
+
+> A measure of center does not tell you the whole shape of a distribution.
+
+Two datasets can have similar means but radically different shapes.
+
+---
+
+# 21. Why Variability Matters
+
+Central tendency tells us about the middle.
+
+**Variability** tells us about spread.
+
+Privitera (2018, 2024) emphasizes that behavior naturally varies. Two groups can have the same mean but very different dispersion.
+
+The lecture frames the goal of variability as understanding the **width of a distribution** (Sigal, 2026).
+
+Measures introduced this week include:
+
+1. range;
+2. interquartile range;
+3. variance;
+4. standard deviation.
+
+---
+
+# 22. The Range
+
+The range is:
+
+$$
+\text{Range}
+=
+X_{\max}-X_{\min}.
+$$
+
+It is the simplest measure of variability.
+
+For:
+
+$$
+1,2,3,4,5,
+$$
+
+$$
+\text{Range}=5-1=4.
+$$
+
+### Limitation
+
+The range uses only two observations:
+
+- the minimum;
+- the maximum.
+
+Therefore, a single extreme score can drastically inflate it.
+
+Privitera (2018, 2024) emphasizes that the range is most informative when important outliers are absent.
+
+---
+
+# 23. Interquartile Range
+
+The **interquartile range (IQR)** describes the spread of the middle 50% of a distribution.
+
+It is:
+
+$$
+IQR=Q_3-Q_1.
+$$
+
+where:
+
+- \(Q_1\) = 25th percentile;
+- \(Q_2\) = median / 50th percentile;
+- \(Q_3\) = 75th percentile.
+
+Because the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024).
+
+---
+
+# 24. From Deviation to Variance
+
+Suppose we want to quantify how far scores are from the mean.
+
+For each score:
+
+$$
+\text{deviation}
+=
+X_i-M.
+$$
+
+If the data are:
+
+$$
+X=\{3,4,5,6,12\},
+$$
+
+the mean is:
+
+$$
+M=6.
+$$
+
+The deviations are:
+
+$$
+-3,-2,-1,0,6.
+$$
+
+But:
+
+$$
+\sum(X_i-M)=0.
+$$
+
+Positive and negative deviations cancel.
+
+Therefore, simply averaging raw signed deviations would always make variability look like zero.
+
+This is why deviations are squared before they are summed.
+
+---
+
+# 25. Sum of Squares
+
+The **sum of squares (SS)** is:
+
+$$
+SS
+=
+\sum(X_i-M)^2
+$$
+
+for a sample, or:
+
+$$
+SS
+=
+\sum(X_i-\mu)^2
+$$
+
+for a population.
+
+Because each deviation is squared:
+
+- negative signs disappear;
+- larger deviations contribute more;
+- \(SS\ge0\).
+
+If every observation is identical, every deviation is zero, and:
+
+$$
+SS=0.
+$$
+
+Privitera (2018, 2024) describes SS as the sum of squared deviations from the mean and the numerator used in the variance formulas.
+
+---
+
+# 26. Population Variance
+
+Population variance is:
+
+$$
+\sigma^2
+=
+\frac{
+\sum(X_i-\mu)^2
+}{N}
+=
+\frac{SS}{N}.
+$$
+
+The lecture example uses:
+
+$$
+X=\{1,0,6,1\}
+$$
+
+with:
+
+$$
+\mu=2.
+$$
+
+The deviations are:
+
+$$
+-1,-2,4,-1.
+$$
+
+Squared deviations:
+
+$$
+1,4,16,1.
+$$
+
+Thus:
+
+$$
+SS=22.
+$$
+
+Population variance is:
+
+$$
+\sigma^2
+=
+\frac{22}{4}
+=
+5.5.
+$$
+
+---
+
+# 27. Standard Deviation for a Population
+
+The population standard deviation is the square root of the population variance:
+
+$$
+\sigma
+=
+\sqrt{\sigma^2}.
+$$
+
+For the previous example:
+
+$$
+\sigma
+=
+\sqrt{5.5}
+\approx
+2.35.
+$$
+
+Variance is expressed in **squared units**.
+
+Standard deviation returns the measure of spread to the **original units** of measurement (Privitera, 2018, 2024; Sigal, 2026).
+
+---
+
+# 28. Sample Variance
+
+When the observed data are a sample rather than the entire population, the Week 3 materials use:
+
+$$
+s^2
+=
+\frac{
+\sum(X_i-\bar{X})^2
+}{n-1}
+=
+\frac{SS}{n-1}.
+$$
+
+Using the same values:
+
+$$
+X=\{1,0,6,1\},
+$$
+
+we still have:
+
+$$
+SS=22.
+$$
+
+But now:
+
+$$
+s^2
+=
+\frac{22}{4-1}
+=
+\frac{22}{3}
+\approx
+7.33.
+$$
+
+The sample standard deviation is:
+
+$$
+s
+=
+\sqrt{7.33}
+\approx
+2.71.
+$$
+
+---
+
+# 29. Why Does Sample Variance Use \(n-1\)?
+
+This is one of the most important conceptual ideas in Week 3.
+
+If we calculate sample variance using \(n\), it tends to underestimate the population variance.
+
+Dividing by:
+
+$$
+n-1
+$$
+
+makes the sample variance a better estimator of population variance on average (Privitera, 2018, 2024; Sigal, 2026).
+
+Privitera describes this as an **unbiased estimator**:
+
+> Across repeated random samples, variance calculated with \(n-1\) equals the population variance on average.
+
+This correction is often associated with **Bessel's correction**.
+
+---
+
+# 30. Degrees of Freedom
+
+The denominator:
+
+$$
+n-1
+$$
+
+is also the **degrees of freedom** for sample variance.
+
+Degrees of freedom can be understood as the number of scores that remain free to vary once the sample mean is known.
+
+Suppose a sample contains three scores and has:
+
+$$
+M=4.
+$$
+
+If two scores are:
+
+$$
+3,\ 4,
+$$
+
+then the third cannot be arbitrary.
+
+Because the three scores must sum to:
+
+$$
+3(4)=12,
+$$
+
+the missing value must be:
+
+$$
+5.
+$$
+
+Thus only:
+
+$$
+n-1
+$$
+
+scores are independently free to vary (Privitera, 2018, 2024; Sigal, 2026).
+
+---
+
+# 31. Standard Deviation
+
+The standard deviation is the square root of the variance.
+
+For a sample:
+
+$$
+s=\sqrt{s^2}
+=
+\sqrt{\frac{SS}{n-1}}.
+$$
+
+For a population:
+
+$$
+\sigma=\sqrt{\sigma^2}
+=
+\sqrt{\frac{SS}{N}}.
+$$
+
+The standard deviation gives a measure of the typical distance of scores from the mean in the original scale of measurement (Privitera, 2018, 2024).
+
+### Interpretation
+
+- smaller SD → scores are more tightly clustered around the mean;
+- larger SD → scores are more widely spread.
+
+---
+
+# 32. Variance vs. Standard Deviation
+
+| Quantity | What it measures | Units |
+|---|---|---|
+| Variance | Average squared spread from the mean | Squared units |
+| Standard deviation | Spread around the mean | Original units |
+
+For example, if heights are measured in inches:
+
+- variance is in **inches squared**;
+- standard deviation is in **inches**.
+
+This is one reason standard deviation is easier to interpret directly.
+
+---
+
+# 33. What Happens When Scores Are Transformed?
+
+The Week 3 worksheet explicitly asks students to investigate transformations (PSYC 210 Teaching Team, 2026b).
+
+### Add or subtract the same constant from every score
+
+If:
+
+$$
+Y_i=X_i+c,
+$$
+
+then the mean shifts:
+
+$$
+M_Y=M_X+c.
+$$
+
+But distances from the mean do not change.
+
+Therefore:
+
+$$
+s_Y=s_X
+$$
+
+and:
+
+$$
+s_Y^2=s_X^2.
+$$
+
+### Multiply every score by a constant
+
+If:
+
+$$
+Y_i=cX_i,
+$$
+
+then:
+
+$$
+M_Y=cM_X,
+$$
+
+$$
+s_Y=|c|s_X,
+$$
+
+and:
+
+$$
+s_Y^2=c^2s_X^2.
+$$
+
+These relationships are central to understanding standardization later in the course.
+
+---
+
+# 34. The Week 3 Worksheet
+
+The worksheet uses:
+
+$$
+X=\{6,3,9,11,15,24,4,5,13\}.
+$$
+
+Students are asked to investigate what happens when they:
+
+- subtract 3 from every score;
+- multiply every score by 4;
+- subtract the mean from every score;
+- add a new score of 16;
+- add a new score of 10;
+- calculate sample variance and standard deviation;
+- compare variability after linear transformations (PSYC 210 Teaching Team, 2026b).
+
+The purpose is not only to practice arithmetic.
+
+It is to recognize predictable structural relationships among:
+
+- raw scores;
+- means;
+- deviations;
+- variance;
+- standard deviation.
+
+---
+
+# 35. A Second Worksheet Dataset
+
+The worksheet also gives weekly grocery-shopping times:
+
+$$
+75,72,71,55,56,72,93,73,72,72,73,91,66,71,56,59.
+$$
+
+Students are asked to calculate:
+
+- mode;
+- median;
+- mean;
+- range;
+- standard deviation (PSYC 210 Teaching Team, 2026b).
+
+This problem integrates central tendency and variability into one descriptive summary.
+
+That is the larger Week 3 goal:
+
+> A useful description of a dataset normally requires more than one statistic.
+
+---
+
+# 36. What Should Be Reported Together?
+
+Measures of center and variability are most informative when interpreted together.
+
+For many quantitative variables, researchers commonly report:
+
+$$
+M\pm SD.
+$$
+
+The mean tells us about the center.
+
+The standard deviation tells us about spread around that center.
+
+Privitera (2018, 2024) emphasizes that the standard deviation is especially informative when reported with the mean.
+
+For skewed distributions or variables with important outliers, a median paired with a robust measure such as the IQR may be more informative.
+
+---
+
+# 37. Choosing Measures for Lucy's Dataset
+
+The lecture returns to Lucy's dataset:
+
+| Variable | Type | Potential useful summary |
+|---|---|---|
+| Name | Identifier | None as a quantitative summary |
+| Age | Quantitative | Mean/median + SD/range |
+| IQ | Quantitative | Mean + SD; inspect shape/outliers |
+| Height | Quantitative | Mean + SD |
+| Grade | Ordinal | Median/mode; frequencies |
+| Browser | Nominal | Mode; frequencies |
+| CARS | Scale score | Mean/median + variability, depending on distribution and course assumptions |
+
+The point is not that one fixed rule always applies.
+
+The choice depends on:
+
+- scale of measurement;
+- distribution shape;
+- outliers;
+- the substantive research question (Sigal, 2026).
+
+---
+
+# 38. How the Concepts Fit Together
+
+Week 3 can be understood as a sequence:
+
+**What is the distribution's center?**
+
+↓  
+
+**Mode, median, mean**
+
+↓  
+
+**What is the distribution's shape?**
+
+↓  
+
+**Symmetric? Positively skewed? Negatively skewed? Multimodal?**
+
+↓  
+
+**How spread out are the observations?**
+
+↓  
+
+**Range, IQR, variance, standard deviation**
+
+↓  
+
+**Sample or population?**
+
+↓  
+
+**Use \(N\) or \(n-1\)**
+
+↓  
+
+**Interpret center and spread together**
+
+This is the transition from simply organizing data to describing the mathematical structure of a distribution.
+
+---
+
+# 39. Important Terms
 
 | Term | Plain-language explanation |
 |---|---|
-| *To be added* | |
+| **Mode** | Most frequently occurring value or category. |
+| **Median** | Middle position of an ordered distribution; 50th percentile. |
+| **Mean** | Arithmetic average; balance point based on magnitudes. |
+| **Weighted mean** | Mean in which groups/values contribute according to their weights or sample sizes. |
+| **Skewness** | Asymmetry of a distribution. |
+| **Positive skew** | Long tail toward larger values. |
+| **Negative skew** | Long tail toward smaller values. |
+| **Variability** | Degree to which scores are dispersed or spread. |
+| **Range** | Maximum minus minimum. |
+| **Quartile** | Boundary dividing a distribution into four parts. |
+| **Interquartile range (IQR)** | \(Q_3-Q_1\); spread of the middle 50%. |
+| **Deviation** | Difference between a score and the mean. |
+| **Sum of squares (SS)** | Sum of squared deviations from the mean. |
+| **Population variance** | \(SS/N\). |
+| **Sample variance** | \(SS/(n-1)\). |
+| **Standard deviation** | Square root of variance; spread in original units. |
+| **Degrees of freedom** | Number of independently free scores used in estimating sample variance; \(n-1\). |
+| **Unbiased estimator** | Statistic that equals the target population parameter on average across repeated samples. |
+| **Real limit** | Boundary extending halfway between adjacent measurable values. |
 
-## Worked Examples
+---
 
-*To be added.*
+# 40. Common Misunderstandings
 
-## Common Misunderstandings
+### "The mode has to be a number."
 
-*To be added.*
+No. The mode can be a category.
 
-## Tutorial Preparation
+### "A distribution can only have one mode."
 
-*To be added.*
+No. It can be bimodal or multimodal.
 
-## Practice Questions
+### "The median is always an observed score."
 
-### Conceptual Questions
+No. It can lie between observed scores or be interpolated within an interval.
 
-*To be added.*
+### "The mean is always the best measure of center."
 
-### Applied Questions
+No. Extreme scores can make it misleading.
 
-*To be added.*
+### "A positively skewed distribution has most scores on the right."
 
-## What You Should Be Able to Explain
+No. The **tail** points right; most observations are concentrated more toward the lower side.
 
-*To be added.*
+### "Variance and standard deviation are the same thing."
 
-## Reading
+No. Standard deviation is the square root of variance.
 
-Privitera (2018), Chapter 4
+### "Standard deviation can be negative."
+
+No. Variability cannot be negative.
+
+### "Sample and population variance use the same denominator."
+
+No. Population variance divides by \(N\); sample variance divides by \(n-1\).
+
+### "Using \(n-1\) is just a strange convention."
+
+No. It corrects the systematic downward bias that occurs when sample variance is calculated with \(n\), and it corresponds to the degrees of freedom available after estimating the mean.
+
+### "If I add 10 to every score, standard deviation increases by 10."
+
+No. The mean shifts, but the distances between scores and their mean remain unchanged.
+
+### "If I multiply every score by 10, variance also multiplies by 10."
+
+No. Standard deviation multiplies by 10; variance multiplies by:
+
+$$
+10^2=100.
+$$
+
+---
+
+# 41. Tutorial Preparation
+
+A TA should be ready to explain both **procedures** and **why the procedures work**.
+
+### "Why are there three measures of central tendency?"
+
+Because they define "center" differently and respond differently to scale, skewness, and outliers.
+
+### "Why can't I average group means?"
+
+You can only do that directly when the groups contribute equally. With unequal sample sizes, use a weighted mean.
+
+### "Why does the mean move toward an outlier?"
+
+Because every score contributes its magnitude to the total sum.
+
+### "Why does the median resist outliers?"
+
+Because it depends primarily on ordered position rather than the magnitude of extreme values.
+
+### "Why do we square deviations?"
+
+Because signed deviations sum to zero. Squaring prevents cancellation and produces a positive measure of spread.
+
+### "Why take the square root afterward?"
+
+Because variance is in squared units. The square root produces standard deviation in the original units.
+
+### "Why \(n-1\)?"
+
+Because estimating the sample mean consumes one degree of freedom, and dividing by \(n-1\) corrects the average downward bias in sample variance.
+
+### "Why does adding a constant not change SD?"
+
+Because every score and the mean shift by exactly the same amount, so the deviations remain unchanged.
+
+---
+
+# 42. Practice Questions
+
+## Central Tendency
+
+For:
+
+$$
+X=\{2,3,4,4,5,7,20\},
+$$
+
+calculate:
+
+1. mode;
+2. ordinary median;
+3. mean;
+4. explain which measure is most affected by the score 20.
+
+## Weighted Mean
+
+Two groups have:
+
+- Group A: \(M=8,\ n=10\)
+- Group B: \(M=14,\ n=30\)
+
+Calculate the combined mean.
+
+## Shape
+
+For each relationship, identify the likely shape:
+
+1. mean ≈ median ≈ mode;
+2. mean > median > mode;
+3. mean < median < mode.
+
+## Variability
+
+For:
+
+$$
+X=\{2,4,6,8,10\},
+$$
+
+calculate:
+
+1. range;
+2. mean;
+3. each deviation from the mean;
+4. SS;
+5. population variance;
+6. population standard deviation;
+7. sample variance;
+8. sample standard deviation.
+
+## Transformations
+
+Suppose:
+
+$$
+M=10,\quad s=4,\quad s^2=16.
+$$
+
+What happens if every score is:
+
+1. increased by 3?
+2. decreased by 5?
+3. multiplied by 2?
+4. divided by 4?
+
+State the new mean, standard deviation, and variance.
+
+---
+
+# 43. What You Should Be Able to Explain
+
+Before moving on, you should be able to explain:
+
+- how mode, median, and mean define center differently;
+- why a distribution can have more than one mode;
+- how to calculate an ordinary median;
+- how the course's interpolation formula estimates a percentile within an interval;
+- how to calculate a weighted mean;
+- why extreme scores affect mean more strongly than median;
+- how mean, median, and mode relate to skewness;
+- why central tendency alone is insufficient;
+- what the range and IQR measure;
+- why raw deviations from the mean sum to zero;
+- what SS represents;
+- why variance squares deviations;
+- why standard deviation is more directly interpretable than variance;
+- why sample variance uses \(n-1\);
+- what degrees of freedom mean;
+- how linear transformations affect mean, variance, and standard deviation.
+
+---
+
+# 44. Readings and Practice
+
+## Required reading
+
+- Privitera, G. J. (2018), Chapter 4: *Summarizing Data: Variability*.
+
+## Additional supplied reading
+
+- Privitera, G. J. (2024), Chapter 4: *Summarizing Data: Variability*.
+
+## Lecture and course materials
+
+- Lecture 3: *Measures of Central Tendency and Variability*.
+- Lecture 3 annotated slides.
+- Lecture 3 worksheet.
+- Supplemental median example.
+
+## Instructor-assigned practice
+
+The lecture identifies the following practice problems:
+
+**Central tendency**
+- Questions 11, 17, 21, 22, 32.
+
+**Variability**
+- Questions 11, 12, 21, 29.
+
+The lecture also instructs students to skip or ignore the textbook's section on computational formulas for variance for current course purposes (Sigal, 2026).
+
+---
+
+# 45. References
+
+Privitera, G. J. (2018). *Essential statistics for the behavioral sciences* (2nd ed.). SAGE.
+
+Privitera, G. J. (2024). *Statistics for the behavioral sciences* (4th ed.). SAGE.
+
+PSYC 210 Teaching Team. (2026a). *An additional example of calculating the median* [Supplemental course handout]. Simon Fraser University.
+
+PSYC 210 Teaching Team. (2026b). *PSYC 210 Lecture 3 worksheet* [Course worksheet]. Simon Fraser University.
+
+Sigal, M. (2026, September 28). *PSYC 210: Introduction to data analysis—Lecture 3: Measures of central tendency and variability* [Lecture slides]. Simon Fraser University.
+
+---
+
+# 46. Week 3 Takeaway
+
+Week 3 adds two essential dimensions to descriptive statistics:
+
+> **Where is the distribution centered, and how much do observations vary around that center?**
+
+A single average is never the whole story.
+
+To describe data responsibly, consider:
+
+- the appropriate measure of center;
+- the shape of the distribution;
+- the presence of outliers;
+- the amount of variability;
+- whether the data are a sample or a population.
+
+The mean and standard deviation will become especially important in later weeks, but the deeper lesson is broader:
+
+> Good statistical description requires understanding both **location** and **spread**.
