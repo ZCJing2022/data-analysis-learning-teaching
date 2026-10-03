@@ -1,10 +1,6 @@
-/.quarto/
+
 _site/
 .DS_Store
-
 **/*.quarto_ipynb
-
-.DS_Store
-downloads/
-downloads/
+/.quarto/
 downloads/
