@@ -10,12 +10,24 @@ toc-depth: 2
 ::: {.callout-important}
 ## How to use this page
 
-This guide identifies the concepts and Study Guide sections relevant to each Assignment 1 question. It does **not** provide the assignment answers.
+This page reproduces the **original Assignment 1 questions** and then explains, for each one:
 
-Assignment 1 must be completed independently. Generative AI may not be used to produce content submitted for credit. Review the linked course material, then complete the calculations and explanations yourself.
+1. **what the question is asking you to do;**
+2. **how to approach it step by step;**
+3. **which Study Guide sections to consult.**
+
+It is a preparation guide, **not an answer key**. Assignment 1 must be completed independently, and generative AI may not be used to produce content submitted for credit.
 :::
 
-## Study Guides
+## Original submission requirements
+
+Your final submission must be uploaded to Canvas by **11:59 PM on October 9**. Name the file:
+
+**PSYC210-A1_LASTNAME_FIRSTINITIAL**
+
+Submit a **single PDF file**. Write your name, the name of your TA, and your tutorial section (e.g., D102) in the document. Show your work where appropriate and briefly answer each question.
+
+## Study Guides used in Assignment 1
 
 - [Week 01 — Course Introduction and Basic Concepts](../study-guides/week01-basic-concepts.qmd)
 - [Week 02 — Data Types, Frequency Distributions, and Visualization](../study-guides/week02-data-types-visualization.qmd)
@@ -23,49 +35,180 @@ Assignment 1 must be completed independently. Generative AI may not be used to p
 
 # Question 1 — Summation Notation
 
-**Review**
+::: {.callout-note}
+## Original question
+
+**1. (/6)** Given
+
+$$
+x_i=\{16,14,6,11,19,18,17,6\}
+$$
+
+and
+
+$$
+y_i=\{14,-4,14,9,15,14,2,14\},
+$$
+
+calculate:
+
+| | | |
+|---|---|---|
+| a. $\sum(x_i)$ | b. $\sum(y_i)$ | c. $[\sum(x_i)]^2$ |
+| d. $[\sum(y_i)]^2$ | e. $\sum(x_i-y_i)$ | f. $\sum(x_iy_i)$ |
+| g. $\sum(x_i)^2$ | h. $\sum(y_i)^2$ | i. $[\sum(x_i-y_i)]^2$ |
+| j. $(\sum x_i)(\sum y_i)$ | k. $\sum(x_i+3)^2$ | l. $\sum(y_i/2^2)$ |
+:::
+
+## What this question is asking you to do
+
+This question tests whether you can **read summation notation correctly** and apply the operations in the correct order. The main challenge is not arithmetic; it is deciding **what is done first**.
+
+Several expressions look very similar but mean different things. For example:
+
+- $[\sum(x_i)]^2$ means **sum first, then square the total**.
+- $\sum(x_i)^2$ means **square each $x_i$ value first, then sum**.
+- $\sum(x_i-y_i)$ means **subtract within each paired row, then sum**.
+- $(\sum x_i)(\sum y_i)$ means **find two separate sums, then multiply them**.
+
+## How to approach it
+
+1. Write the two vectors in parallel so that each $x_i$ stays paired with the corresponding $y_i$.
+2. For each subquestion, translate the notation into words before calculating.
+3. Use BEDMAS/PEDMAS:
+   - brackets/parentheses;
+   - exponents;
+   - multiplication/division;
+   - addition/subtraction.
+4. For a and b, simply add the values in the requested vector.
+5. For c and d, calculate the sum first and square only after the summation is complete.
+6. For e, calculate each paired difference $x_i-y_i$, then add the differences.
+7. For f, calculate each paired product $x_iy_i$, then add the products.
+8. For g and h, square each individual value first, then sum the squared values.
+9. For i, calculate the paired differences, sum those differences, then square the final sum.
+10. For j, calculate $\sum x_i$ and $\sum y_i$ separately, then multiply the two totals.
+11. For k, add 3 to each $x_i$, square each transformed value, then sum.
+12. For l, pay close attention to the denominator: evaluate $2^2$ according to order of operations, apply the division to each $y_i$, and then sum.
+
+### Study Guide sections
 
 - [Week 01 §11 — Fundamental Mathematics](../study-guides/week01-basic-concepts.qmd#fundamental-mathematics)
 - [Week 01 §12 — Summation Notation](../study-guides/week01-basic-concepts.qmd#summation-notation)
 - [Week 01 §13 — Worked Summation Example](../study-guides/week01-basic-concepts.qmd#worked-summation-example)
 - [Week 02 §1 — Review: Summation Notation](../study-guides/week02-data-types-visualization.qmd#review-summation-notation)
 
-**Method**
-
-1. Translate each expression into words before calculating.
-2. Identify exactly what is inside the summation sign.
-3. Follow BEDMAS/PEDMAS.
-4. Keep $x_i$ and $y_i$ paired by their common index.
-5. Distinguish $(\sum X)^2$ from $\sum X^2$: one sums first and then squares; the other squares each observation first and then sums.
-6. For $\sum(x_i-y_i)$ or $\sum(x_iy_i)$, work row by row before adding.
-7. For $(\sum x_i)(\sum y_i)$, calculate the two sums separately and multiply only at the end.
-8. A constant inside a summation is applied once for every included observation.
-
 # Question 2 — Adding a Constant to Every Score
 
-**Review**
+::: {.callout-note}
+## Original question
+
+**2. (/2)** If an instructor adds a constant bonus of 5 points to every student’s exam score in a class, what happens to the class **mean** and what happens to the class **standard deviation**? Briefly explain why the standard deviation behaves the way it does.
+:::
+
+## What this question is asking you to do
+
+You need to explain how adding the **same constant to every score** affects:
+
+1. the center of the distribution, represented by the mean; and
+2. the spread of the distribution, represented by the standard deviation.
+
+The explanation matters. You should not only state what happens; you should show that you understand **why**.
+
+## How to approach it
+
+Represent the transformed score as:
+
+$$
+Y_i=X_i+5.
+$$
+
+Then consider the two statistics separately.
+
+For the mean, ask: if every score is shifted upward by exactly the same amount, what happens to the average?
+
+For standard deviation, remember that it is based on distances from the mean. Compare:
+
+$$
+X_i-M_X
+$$
+
+with
+
+$$
+(X_i+5)-(M_X+5).
+$$
+
+Simplify the second expression and use that result to explain whether the distances from the mean change.
+
+### Study Guide sections
 
 - [Week 03 §15 — How the Mean Changes](../study-guides/week03-central-tendency-variability.qmd#how-the-mean-changes)
 - [Week 03 §33 — What Happens When Scores Are Transformed?](../study-guides/week03-central-tendency-variability.qmd#what-happens-when-scores-are-transformed)
 
-Represent the transformation as $Y_i=X_i+c$. Consider the mean and standard deviation separately.
-
-For the mean, ask what adding the same constant to every observation does to the average.
-
-For the standard deviation, compare the deviation $X_i-M_X$ with $(X_i+c)-(M_X+c)$. Use that comparison to explain what happens to the spread.
-
 # Question 3 — Research Design and Causation
 
-**Review**
+::: {.callout-note}
+## Original question
+
+**3. (/1)** What fundamental design feature distinguishes a **true experimental design** from a **correlational or quasi-experimental design**, and why does this distinction allow researchers to make cause-and-effect claims?
+:::
+
+## What this question is asking you to do
+
+This is a conceptual question about **causal inference**. You need to identify the design feature or combination of features that makes a true experiment different from designs in which variables are merely observed or participants are not randomly assigned.
+
+Then you need to explain why that difference matters for cause-and-effect reasoning.
+
+## How to approach it
+
+Compare the three designs by asking:
+
+- Is an independent variable manipulated?
+- Are participants randomly assigned to conditions?
+- Is there a comparison or control condition?
+- Could pre-existing differences between participants explain the result?
+
+A strong answer connects the design feature to the logic of ruling out alternative explanations. Do not stop at saying “experiments can show causation.” Explain **how the design helps isolate the effect of the independent variable**.
+
+### Study Guide sections
 
 - [Week 01 §9 — Three Basic Research Designs](../study-guides/week01-basic-concepts.qmd#three-basic-research-designs)
 - [Week 01 §21 — Tutorial Preparation](../study-guides/week01-basic-concepts.qmd#tutorial-preparation)
 
-Compare experimental, quasi-experimental, and correlational designs by asking whether there is manipulation, random assignment, and a comparison/control condition. Identify what distinguishes a true experiment, then explain how those design features reduce competing explanations. Do not stop at saying that experiments allow causal conclusions; explain why.
+# Question 4 — Scales of Measurement
 
-# Questions 4–6 — Scales of Measurement
+::: {.callout-note}
+## Original question
 
-**Review**
+**4. (/4)** A clinical psychologist evaluates participants entering a treatment program. Identify the scale of measurement used for each of the following variables and briefly justify your answer:
+
+a. Reaction time in milliseconds to detect an emotional stimulus probe  
+b. Total score on the Beck Depression Inventory (ranging from 0 to 63)  
+c. Primary psychiatric diagnosis (e.g., Major Depressive Disorder, Generalized Anxiety Disorder, PTSD)  
+d. Intake symptom severity rating assessed as Mild, Moderate, or Severe
+:::
+
+## What this question is asking you to do
+
+For each variable, you must do two things:
+
+1. identify its measurement scale: **nominal, ordinal, interval, or ratio**;
+2. briefly justify that classification from the properties of the variable.
+
+Do not classify a variable simply because it contains numbers. Ask what those numbers actually mean.
+
+## How to approach it
+
+For each variable, work through this decision sequence:
+
+1. Are the values merely different categories?
+2. Can those categories be placed in a meaningful order?
+3. If the variable is numerical, do equal numerical differences represent equal differences in the measured quantity?
+4. Does zero represent a genuine absence of the measured quantity?
+
+Use those properties in your justification. A good justification is usually one sentence explaining the key feature that determines the scale.
+
+### Study Guide sections
 
 - [Week 02 §4 — The Four Scales of Measurement](../study-guides/week02-data-types-visualization.qmd#the-four-scales-of-measurement)
 - [Week 02 §5 — Nominal Variables](../study-guides/week02-data-types-visualization.qmd#nominal-variables)
@@ -73,182 +216,464 @@ Compare experimental, quasi-experimental, and correlational designs by asking wh
 - [Week 02 §7 — Interval Variables](../study-guides/week02-data-types-visualization.qmd#interval-variables)
 - [Week 02 §32 — Important Terms](../study-guides/week02-data-types-visualization.qmd#important-terms)
 
-For each variable, ask:
+# Question 5 — Two Measurement Scales
 
-1. Are the values only labels or categories?
-2. Can the categories be meaningfully ordered?
-3. Are equal numerical differences meaningful?
-4. Does zero represent a genuine absence of the measured quantity?
+::: {.callout-note}
+## Original question
 
-For **Question 4**, apply these criteria separately to every variable and justify the classification from the properties of the measurement.
+**5. (/1)** In a cognitive psychology experiment, participants completed a visual search task where reaction time was measured in milliseconds. This variable was measured on a(n) ______ scale. Participants were also asked to report their dominant hand as “Left-handed” or “Right-handed”, which was measured on a(n) ______ scale.
+:::
 
-For **Question 5**, classify reaction time and handedness independently.
+## What this question is asking you to do
 
-For **Question 6**, classify the variable **as it was recorded**: the survey records ordered income ranges, not exact income values.
+This question asks you to classify **two different variables** using the four scales of measurement.
+
+## How to approach it
+
+Treat the variables separately.
+
+For reaction time, ask whether the values have equal units and whether zero has a meaningful interpretation.
+
+For handedness, ask whether the categories have any inherent order or whether they simply identify different groups.
+
+### Study Guide sections
+
+- [Week 02 §4 — The Four Scales of Measurement](../study-guides/week02-data-types-visualization.qmd#the-four-scales-of-measurement)
+- [Week 02 §5 — Nominal Variables](../study-guides/week02-data-types-visualization.qmd#nominal-variables)
+- [Week 02 §32 — Important Terms](../study-guides/week02-data-types-visualization.qmd#important-terms)
+
+# Question 6 — Income Categories
+
+::: {.callout-note}
+## Original question
+
+**6. (/1)** A survey on financial stress asks participants to indicate their annual household income using the categories: Under $30,000, $30,000–$59,999, $60,000–$89,999, $90,000 or more. This variable was measured on a(n) ______ measurement scale.
+:::
+
+## What this question is asking you to do
+
+You need to classify the **recorded variable**, not the underlying concept of income in the abstract.
+
+## How to approach it
+
+Notice that the survey does not record each person's exact income. Instead, it places respondents into categories.
+
+Ask:
+
+- Do the categories have a meaningful order?
+- Do the recorded category labels provide exact, equal numerical distances between respondents?
+- Would arithmetic using category labels preserve the information actually collected?
+
+Use those questions to identify the scale.
+
+### Study Guide sections
+
+- [Week 02 §4 — The Four Scales of Measurement](../study-guides/week02-data-types-visualization.qmd#the-four-scales-of-measurement)
+- [Week 02 §6 — Ordinal Variables](../study-guides/week02-data-types-visualization.qmd#ordinal-variables)
+- [Week 02 §33 — Common Misunderstandings](../study-guides/week02-data-types-visualization.qmd#common-misunderstandings)
 
 # Question 7 — Distribution Shape
 
-**Review**
+::: {.callout-note}
+## Original question
+
+**7. (/1)** In a survey measuring weekly video gaming hours among university students, the distribution showed a few people with zero, a large cluster of people in the lowest category (1–2 hours), a moderate amount in the middle (3–5 hours), and only a couple of individuals reporting extreme hours at the very top. In terms of shape, this is an example of a ______ distribution. Draw and label a rough sketch of what this data might look like.
+:::
+
+## What this question is asking you to do
+
+You need to:
+
+1. identify the overall shape of the distribution from the verbal description; and
+2. draw a rough graph showing that shape.
+
+## How to approach it
+
+Translate the description into a frequency pattern:
+
+1. Locate where most observations are concentrated.
+2. Locate the few extreme observations.
+3. Decide which side has the longer, thinner tail.
+4. Remember that skew is named for the **direction of the tail**, not the side containing most observations.
+5. Draw a simple sketch:
+   - horizontal axis = weekly gaming hours;
+   - vertical axis = frequency;
+   - show the large cluster and the sparse extreme values.
+
+### Study Guide sections
 
 - [Week 02 §12 — Ungrouped Frequency Distributions](../study-guides/week02-data-types-visualization.qmd#ungrouped-frequency-distributions)
 - [Week 02 §23 — Frequency Polygons](../study-guides/week02-data-types-visualization.qmd#frequency-polygons)
 - [Week 03 §18 — Distribution Shape and Skewness](../study-guides/week03-central-tendency-variability.qmd#distribution-shape-and-skewness)
 - [Week 03 §20 — Other Distribution Shapes](../study-guides/week03-central-tendency-variability.qmd#other-distribution-shapes)
 
-Identify where most observations are concentrated and where the few extreme observations occur. The direction of the long tail determines the direction of skew. Your sketch should show the variable on the horizontal axis and frequency on the vertical axis.
-
 # Question 8 — Movie Ratings
+
+::: {.callout-note}
+## Original question
+
+**8. (/8 overall)** The National Association of Theatre Owners (NATO) keeps track of the movie-going public, tallying the kinds of movies people go to see, where they see them, and how much money they spend on such outings. Suppose you attend a city council meeting and a citizen claims that only R-rated films are being shown these days. You are intrigued and visit NATO’s website to see if you can find any numbers to corroborate that claim. You find the following **fictional** table showing the number of movies released by year for each rating:
+
+| Year | G | PG | PG13 | R |
+|---:|---:|---:|---:|---:|
+| 2025 | 6 | 4 | 3 | 3 |
+| 2024 | 8 | 5 | 5 | 4 |
+| 2023 | 10 | 7 | 3 | 1 |
+| 2022 | 9 | 7 | 6 | 3 |
+| 2021 | 5 | 7 | 6 | 3 |
+| 2020 | 8 | 4 | 4 | 3 |
+| 2019 | 6 | 6 | 7 | 2 |
+| 2018 | 6 | 7 | 6 | 2 |
+| 2017 | 9 | 6 | 6 | 2 |
+| 2016 | 5 | 7 | 3 | 1 |
+| 2015 | 7 | 5 | 3 | 4 |
+| 2014 | 7 | 6 | 4 | 4 |
+| 2013 | 10 | 6 | 2 | 5 |
+| 2012 | 5 | 5 | 3 | 4 |
+
+a. **(/1)** What scale of measurement do the variables “film rating” and “Year” use?  
+b. **(/1)** Find the total number of films for each rating and the total number of films included in the sample for the data depicted in the table.  
+c. **(/1)** Find the percentage of films for each rating.  
+d. **(/2)** Using an appropriate visualization, graph the counts of films shown by rating.  
+e. **(/1)** How would you describe the shape of this visualization? Briefly explain your answer.  
+f. **(/1)** What is the most popular type of film rating shown over this time span? How many were there?  
+g. **(/1)** Does the data seem to support the argument being made by the citizen?
+:::
 
 ## 8a — Measurement scales
 
-Review [Week 02 §4 — The Four Scales of Measurement](../study-guides/week02-data-types-visualization.qmd#the-four-scales-of-measurement).
+### What you need to do
 
-Classify **film rating** and **year** separately. Ask whether each variable conveys category, order, equal intervals, and/or a meaningful zero.
+Classify **film rating** and **Year** separately.
+
+### How to do it
+
+For each variable, ask whether it represents:
+
+- categories only;
+- ordered categories;
+- equal intervals;
+- a meaningful zero.
+
+Do not assume that a variable is ratio simply because it is represented by numbers.
+
+### Study Guide
+
+- [Week 02 §4 — The Four Scales of Measurement](../study-guides/week02-data-types-visualization.qmd#the-four-scales-of-measurement)
 
 ## 8b — Total frequencies
 
-**Review**
+### What you need to do
+
+Find:
+
+1. the total number of G films;
+2. the total number of PG films;
+3. the total number of PG13 films;
+4. the total number of R films;
+5. the grand total of all films.
+
+### How to do it
+
+Add each rating column down the table. Then add the four column totals together.
+
+Use a second check: sum each year's row total and confirm that the resulting grand total matches the total obtained from the columns.
+
+### Study Guide
 
 - [Week 02 §12 — Ungrouped Frequency Distributions](../study-guides/week02-data-types-visualization.qmd#ungrouped-frequency-distributions)
 - [Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values)
 
-Sum each rating column across all years, then add the four rating totals to obtain the overall $n$. Check the result by confirming that summing the yearly totals gives the same grand total.
-
 ## 8c — Percentages
 
-Review [Week 02 §13](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values).
+### What you need to do
 
-For each rating, calculate
+Convert each rating's frequency into a percentage of all films.
 
-$
+### How to do it
+
+For each rating:
+
+$$
 p=\frac{f}{n}
-$
+$$
 
-and then
+and then:
 
-$
+$$
 \%=p\times100.
-$
+$$
 
-The four percentages should total approximately $100\%$, allowing for rounding.
+Check that the four percentages sum to approximately 100%, allowing for rounding.
+
+### Study Guide
+
+- [Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values)
 
 ## 8d — Visualization
 
-**Review**
+### What you need to do
 
-- Week 02 sections on bar charts, histograms, and frequency polygons
+Graph the **counts of films by rating** using a graph appropriate for the variable.
+
+### How to do it
+
+1. Identify the measurement type of film rating.
+2. Choose a graph appropriate for categorical/discrete data.
+3. Put film-rating categories on the horizontal axis.
+4. Put frequency/count on the vertical axis.
+5. Use the totals calculated in 8b as the plotted values.
+6. Label both axes and give the graph a clear title.
+
+### Study Guide
+
+- Week 02 graphing sections on bar charts, histograms, and frequency polygons
 - [Week 02 §35 — Practice Questions](../study-guides/week02-data-types-visualization.qmd#practice-questions), especially **Graph Choice**
 
-First identify whether film rating is categorical or continuous, then choose the graph appropriate to that variable type. Put rating categories on the horizontal axis and film counts on the vertical axis. Label both axes.
+## 8e — Describe the visualization
 
-## 8e — Describe the graph
+### What you need to do
 
-Review [Week 02 §25 — Graphs Can Clarify—and Mislead](../study-guides/week02-data-types-visualization.qmd#graphs-can-clarifyand-mislead).
+Describe the pattern visible in the graph and briefly justify your description.
 
-Describe the relative heights of the categories. Because the display is categorical, do not automatically apply continuous-distribution terms such as positive or negative skew.
+### How to do it
+
+Compare the heights of the category bars. Ask whether one category dominates, whether categories are relatively balanced, or whether there is another obvious pattern.
+
+Be cautious about applying terminology such as positive or negative skew to a categorical graph, because skewness is most naturally used for ordered quantitative distributions.
+
+### Study Guide
+
+- [Week 02 §25 — Graphs Can Clarify—and Mislead](../study-guides/week02-data-types-visualization.qmd#graphs-can-clarifyand-mislead)
 
 ## 8f — Most popular rating
 
-**Review**
+### What you need to do
+
+Identify the film-rating category with the highest total frequency and report its count.
+
+### How to do it
+
+Compare the four totals from 8b. The category with the highest frequency is the **mode** or modal category.
+
+### Study Guide
 
 - [Week 02 §29 — The Mode](../study-guides/week02-data-types-visualization.qmd#the-mode)
 - [Week 03 §2 — The Mode](../study-guides/week03-central-tendency-variability.qmd#the-mode)
 
-Compare the four totals from 8b. The category with the largest frequency is the modal category. Report the category and its count.
+## 8g — Evaluate the citizen's claim
 
-## 8g — Evaluate the claim
+### What you need to do
 
-Use the frequency and percentage ideas in [Week 02 §13](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values) together with the mode.
+Use the data to decide whether the citizen's statement is supported.
 
-Translate the citizen's statement into something the table can test. Compare the relevant count and percentage with the other categories and the total. Base the conclusion only on the supplied fictional data.
+### How to do it
+
+Translate the claim into something testable using the table. Compare:
+
+- the R-rated count;
+- the R-rated percentage;
+- the counts and percentages of the other categories;
+- the modal category.
+
+Base the conclusion only on the fictional dataset provided. Do not make a broader claim about real movie releases.
+
+### Study Guide
+
+- [Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values)
+- [Week 02 §29 — The Mode](../study-guides/week02-data-types-visualization.qmd#the-mode)
 
 # Question 9 — Distracted vs. Not-Distracted Groups
 
-Keep the two groups separate throughout the calculations.
+::: {.callout-note}
+## Original question
+
+**9. (/8 overall)** Syndulla and Wren (20XX) examined memory recall accuracy in children in two conditions. They theorized that reading is a complex memory task that requires children to associate meaning with what is initially a series of abstract squiggly lines and that heightened levels of distraction might impact their ability to make such associations.
+
+The authors put one group of children in a high-stimulus environment (the **“distracted”** group) and compared their memory scores with a group who were presented the information without distraction (the **“no distraction”** group).
+
+These groups were matched on various demographic variables and memory was tested using the Associate Memory (AM) test. A series of 15 black-and-white line drawings were presented, and the children were told a word to associate with each drawing. Later, the same symbols were presented and the children were asked to remember the word associated with each one. AM scores can range from 0 to 15.
+
+| Distracted | Not Distracted |
+|---:|---:|
+| 8 | 10 |
+| 8 | 6 |
+| 6 | 7 |
+| 6 | 13 |
+| 3 | 15 |
+| 9 | 12 |
+| 5 | 11 |
+| 1 | 6 |
+| 9 | 10 |
+| 4 | 13 |
+| 9 | 15 |
+| 10 | 13 |
+| 7 | 12 |
+
+a. **(/1)** What were the average scores on the AM test for each group?  
+b. **(/1)** Calculate the range of the AM scores for each group.  
+c. **(/1)** Calculate the standard deviation of the AM test scores for each group.  
+d. **(/2)** Calculate the median and mode for the scores in each group.  
+e. **(/2)** Calculate the 75th percentile for the AM test scores for each group.  
+f. **(/1)** What information could you use to discuss differences in AM test scores across the two groups? Is there support for a prediction that children who are distracted have lower scores compared to those presented the test in a neutral environment?
+:::
 
 ## 9a — Mean
 
-**Review**
+### What you need to do
+
+Calculate the average AM score separately for the distracted and not-distracted groups.
+
+### How to do it
+
+For each group:
+
+$$
+M=\frac{\sum X}{n}.
+$$
+
+1. Add all scores in that group.
+2. Count the number of observations.
+3. Divide the sum by $n$.
+4. Keep the two groups separate throughout the calculation.
+
+### Study Guide
 
 - [Week 02 §27 — The Mean](../study-guides/week02-data-types-visualization.qmd#the-mean)
 - [Week 03 §1 — Why Do We Need Measures of Center?](../study-guides/week03-central-tendency-variability.qmd#why-do-we-need-measures-of-center)
 
-For each group, calculate
-
-$
-M=\frac{\sum X}{n}.
-$
-
-Show the sum and $n$, then divide.
-
 ## 9b — Range
 
-Review [Week 03 §22 — The Range](../study-guides/week03-central-tendency-variability.qmd#the-range).
+### What you need to do
+
+Calculate the range of scores separately for each group.
+
+### How to do it
 
 For each group:
 
-$
+1. identify the maximum score;
+2. identify the minimum score;
+3. calculate:
+
+$$
 \text{Range}=X_{\max}-X_{\min}.
-$
+$$
+
+### Study Guide
+
+- [Week 03 §22 — The Range](../study-guides/week03-central-tendency-variability.qmd#the-range)
 
 ## 9c — Standard deviation
 
-**Review**
+### What you need to do
+
+Calculate the standard deviation separately for each group.
+
+### How to do it
+
+For each group:
+
+1. calculate the mean;
+2. calculate each deviation $X_i-M$;
+3. square each deviation;
+4. add the squared deviations to obtain $SS$;
+5. determine whether the course expects the sample or population variance formula for this dataset;
+6. divide by the appropriate denominator;
+7. take the square root of the variance to obtain the standard deviation.
+
+Show enough intermediate work that the calculation can be followed.
+
+### Study Guide
 
 - [Week 03 §24 — From Deviation to Variance](../study-guides/week03-central-tendency-variability.qmd#from-deviation-to-variance)
 - [Week 03 §39 — Important Terms](../study-guides/week03-central-tendency-variability.qmd#important-terms)
 - [Week 03 §42 — Practice Questions](../study-guides/week03-central-tendency-variability.qmd#practice-questions)
 
-For each group:
-
-1. Calculate the mean.
-2. Calculate each deviation $X_i-M$.
-3. Square the deviations.
-4. Sum the squared deviations to obtain $SS$.
-5. Apply the sample or population variance formula required by the course.
-6. Take the square root of the variance.
-
-Check the Week 3 distinction between (N) and (n-1).
-
 ## 9d — Median and mode
 
-**Review**
+### What you need to do
+
+Find both the median and the mode for each group.
+
+### How to do it
+
+For each group, first sort the scores from smallest to largest.
+
+For the **median**:
+
+1. identify the middle position;
+2. apply the appropriate procedure for the number of observations;
+3. follow the course convention where interpolation is required.
+
+For the **mode**:
+
+1. count how often each score appears;
+2. identify the most frequent score or scores;
+3. note whether the distribution is unimodal, bimodal, multimodal, or nonmodal if relevant.
+
+### Study Guide
 
 - [Week 03 §2 — The Mode](../study-guides/week03-central-tendency-variability.qmd#the-mode)
 - [Week 03 §3 — The Median](../study-guides/week03-central-tendency-variability.qmd#the-median)
 - [Week 03 §4 — Median With an Even Number of Scores](../study-guides/week03-central-tendency-variability.qmd#median-with-an-even-number-of-scores)
 
-Sort each group first. For the median, locate the middle position and apply the appropriate odd/even-(n) procedure. For the mode, count frequencies and check whether the group is unimodal, bimodal, multimodal, or nonmodal.
-
 ## 9e — 75th percentile
 
-**Review**
+### What you need to do
+
+Find the score corresponding to the 75th percentile separately for each group.
+
+### How to do it
+
+1. Order the scores.
+2. Use cumulative frequency to locate the point containing 75% of observations.
+3. Apply the **course's percentile/interpolation procedure**, not a different software default.
+4. Remember that the 75th percentile is the third quartile, $Q_3$.
+
+### Study Guide
 
 - [Week 03 §5 — The Course's Interpolated Median Formula](../study-guides/week03-central-tendency-variability.qmd#the-courses-interpolated-median-formula)
 - [Week 03 §23 — Interquartile Range](../study-guides/week03-central-tendency-variability.qmd#interquartile-range)
 
-Use the **course's percentile procedure** rather than substituting a different software convention. Order the data, use cumulative frequency to locate the 75th percentile, and apply the course interpolation procedure when required. The 75th percentile is $Q_3$.
+## 9f — Compare the two groups
 
-## 9f — Compare the groups
+### What you need to do
 
-**Review**
+Use the descriptive statistics you have already calculated to discuss how the two groups differ and whether the pattern is consistent with the prediction about distraction.
+
+### How to do it
+
+Bring together the results from 9a–9e. Compare:
+
+- mean;
+- median;
+- mode where informative;
+- range;
+- standard deviation;
+- 75th percentile;
+- any visible differences in the distributions.
+
+Then ask whether these descriptive summaries consistently point in the direction predicted by the study.
+
+Keep the conclusion at the correct level: this assignment provides **descriptive statistics**. Do not claim statistical significance unless an inferential statistical test has actually been conducted.
+
+### Study Guide
 
 - [Week 03 §36 — What Should Be Reported Together?](../study-guides/week03-central-tendency-variability.qmd#what-should-be-reported-together)
 - [Week 03 §38 — How the Concepts Fit Together](../study-guides/week03-central-tendency-variability.qmd#how-the-concepts-fit-together)
-
-This is an interpretation question. Compare the groups using the descriptive statistics already calculated: mean, median, mode where informative, range, standard deviation, 75th percentile, and any obvious distributional differences.
-
-Then decide whether those descriptive summaries are consistent with the stated prediction. Do **not** describe the difference as statistically significant unless an inferential test has actually been conducted.
 
 # Final Self-Check
 
 Before submitting, verify that you have:
 
-- shown enough work for the calculations to be followed;
+- answered every part of every question;
+- shown enough work for calculations to be followed;
 - kept paired $x_i$ and $y_i$ values aligned in Question 1;
-- distinguished $(\sum X)^2$ from $\sum X^2$;
+- distinguished $[\sum(x_i)]^2$ from $\sum(x_i)^2$;
 - justified measurement scales from their properties;
 - labeled graphs clearly;
 - used the course's percentile convention;
-- distinguished sample from population variance where required;
-- interpreted Question 9 using both center and spread.
+- used the correct variance denominator required by the course;
+- interpreted Question 9 using both center and spread;
+- kept descriptive conclusions separate from claims of statistical significance.
