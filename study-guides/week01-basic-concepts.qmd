@@ -1,5 +1,6 @@
 ---
 title: "Week 01 — Course Introduction and Basic Concepts"
+toc-depth: 2
 ---
 
 ## Overview
@@ -306,17 +307,17 @@ Parentheses and square brackets group operations.
 
 Absolute-value brackets indicate distance from zero:
 
-\[
+$$
 |4| = 4
-\]
+$$
 
-\[
+$$
 |-39| = 39
-\]
+$$
 
 ## Inequalities
 
-Know the meaning of \(>\), \(<\), and \(\leq\).
+Know the meaning of $>$, $<$, and $\leq$.
 
 ## Fractions
 
@@ -324,85 +325,85 @@ You should be able to add and subtract fractions, find common denominators, and 
 
 ## Negative numbers
 
-\[
+$$
 (-a)(b) = -ab
-\]
+$$
 
-\[
+$$
 (-a)(-b) = ab
-\]
+$$
 
 ## Basic equations
 
 For example:
 
-\[
+$$
 15x + 10 = 40
-\]
+$$
 
 Subtract 10 from both sides:
 
-\[
+$$
 15x = 30
-\]
+$$
 
 Then divide by 15:
 
-\[
+$$
 x = 2
-\]
+$$
 
 ## Exponents and square roots
 
-\[
+$$
 3^2 = 9
-\]
+$$
 
-\[
+$$
 \sqrt{9} = 3
-\]
+$$
 
-\[
+$$
 3^4 = 81
-\]
+$$
 
 # 12. Summation Notation
 
-The Greek letter sigma, \(\Sigma\), means **sum** or **add together**.
+The Greek letter sigma, $\Sigma$, means **sum** or **add together**.
 
 If
 
-\[
+$$
 X = \{1,5,10\}
-\]
+$$
 
 then
 
-\[
+$$
 \sum X = 1 + 5 + 10 = 16
-\]
+$$
 
 More complete notation looks like:
 
-\[
+$$
 \sum_{i=1}^{n} X_i
-\]
+$$
 
-This means: add the values of \(X_i\), beginning with the first indexed value and ending with the \(n\)th value.
+This means: add the values of $X_i$, beginning with the first indexed value and ending with the $n$th value.
 
 ## Indices matter
 
 If
 
-\[
+$$
 X = \{4,8,6,3,5,6,4,2\}
-\]
+$$
 
 then
 
-\[
+$$
 \sum_{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22
-\]
+$$
 
 Only values with indices 2 through 5 are included.
 
@@ -410,17 +411,17 @@ Only values with indices 2 through 5 are included.
 
 If two variables are paired,
 
-\[
+$$
 \sum XY
-\]
+$$
 
-means multiply \(X_i\) and \(Y_i\) within each row and then add the resulting products.
+means multiply $X_i$ and $Y_i$ within each row and then add the resulting products.
 
 It does **not** mean
 
-\[
+$$
 (\sum X)(\sum Y)
-\]
+$$
 
 unless that is explicitly written.
 
@@ -428,27 +429,27 @@ unless that is explicitly written.
 
 These expressions are different:
 
-\[
+$$
 \left(\sum X\right)^2
-\]
+$$
 
 and
 
-\[
+$$
 \sum X^2
-\]
+$$
 
-For example, if \(X=\{1,2,3\}\):
+For example, if $X=\{1,2,3\}$:
 
-\[
+$$
 \left(\sum X\right)^2 = (1+2+3)^2 = 36
-\]
+$$
 
 but
 
-\[
+$$
 \sum X^2 = 1^2+2^2+3^2 = 14
-\]
+$$
 
 This distinction becomes extremely important later in formulas for variance and other statistics.
 
@@ -456,23 +457,23 @@ This distinction becomes extremely important later in formulas for variance and 
 
 Compare:
 
-\[
+$$
 \sum(X_i + 2)
-\]
+$$
 
 with
 
-\[
+$$
 \left(\sum X_i\right)+2
-\]
+$$
 
 They are not equivalent.
 
 # 13. Worked Summation Example
 
-The tutorial uses paired values for \(X\) and \(Y\):
+The tutorial uses paired values for $X$ and $Y$:
 
-| \(i\) | \(X\) | \(Y\) |
+| $i$ | $X$ | $Y$ |
 |---:|---:|---:|
 | 1 | 4 | 6 |
 | 2 | 8 | 6 |
@@ -485,39 +486,39 @@ The tutorial uses paired values for \(X\) and \(Y\):
 
 Then:
 
-\[
+$$
 \sum_{i=1}^{8} Y_i = 6+6+7+3+5+4+1+3 = 35
-\]
+$$
 
 For a restricted sum:
 
-\[
+$$
 \sum_{i=1}^{4} X_i^2 = 4^2+8^2+6^2+3^2 = 125
-\]
+$$
 
 For a squared sum:
 
-\[
+$$
 \left(\sum_{i=2}^{7}Y_i\right)^2 = (6+7+3+5+4+1)^2 = 26^2 = 676
-\]
+$$
 
 For paired products:
 
-\[
+$$
 \sum_{i=6}^{8}X_iY_i = (6\times 4)+(4\times 1)+(2\times 3) = 34
-\]
+$$
 
 The tutorial also demonstrates two useful summation rules:
 
-\[
+$$
 \sum(X+Y)=\sum X+\sum Y
-\]
+$$
 
 and
 
-\[
+$$
 \sum(cX)=c\sum X
-\]
+$$
 
 If a constant is added to each score, the constant is added once for **each included observation**.
 
@@ -531,7 +532,7 @@ Common columns include:
 
 | Symbol | Meaning |
 |---|---|
-| \(f\) | Frequency |
+| $f$ | Frequency |
 | Prop. or RF | Proportion / relative frequency |
 | % or F% | Percentage frequency |
 | CF | Cumulative frequency |
@@ -540,23 +541,23 @@ Common columns include:
 
 ## Frequency
 
-The **frequency** \(f\) is the number of observations with a particular value.
+The **frequency** $f$ is the number of observations with a particular value.
 
 ## Proportion / relative frequency
 
-\[
+$$
 \text{Proportion}=\frac{f}{n}
-\]
+$$
 
 ## Percentage frequency
 
-\[
+$$
 \text{Percentage}= \frac{f}{n}\times 100
-\]
+$$
 
 ## Cumulative frequency
 
-Cumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal \(n\).
+Cumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal $n$.
 
 ## Cumulative relative frequency
 
@@ -570,31 +571,31 @@ The final cumulative percentage should equal 100%.
 
 A correctly completed frequency table should satisfy:
 
-\[
+$$
 \sum f=n
-\]
+$$
 
-\[
+$$
 \sum \text{Prop.}=1.00
-\]
+$$
 
-\[
+$$
 \sum \%=100\%
-\]
+$$
 
-and the last cumulative entries should be \(CF=n\), \(CRF=1.00\), and \(C\%=100\%\).
+and the last cumulative entries should be $CF=n$, $CRF=1.00$, and $C\%=100\%$.
 
 # 15. Ungrouped Frequency Table Example
 
 The tutorial uses the following 20 scores:
 
-\[
+$$
 6,7,4,5,5,6,6,5,9,3,3,5,2,2,1,4,7,8,8,4
-\]
+$$
 
 An ungrouped frequency table is:
 
-| \(X\) | \(f\) | Proportion | % | CF | CRF |
+| $X$ | $f$ | Proportion | % | CF | CRF |
 |---:|---:|---:|---:|---:|---:|
 | 1 | 1 | .05 | 5% | 1 | 5% |
 | 2 | 2 | .10 | 10% | 3 | 15% |
@@ -608,9 +609,9 @@ An ungrouped frequency table is:
 
 Checks:
 
-\[
+$$
 \sum f=20, \qquad \sum \text{Proportion}=1.00, \qquad \sum \%=100\%
-\]
+$$
 
 # 16. Histograms
 
@@ -638,7 +639,7 @@ The Week 1 tutorial groups the same 20 scores into five bins of width 2:
 
 The grouped table is:
 
-| Score interval | \(f\) | Proportion | % | CF | CRF |
+| Score interval | $f$ | Proportion | % | CF | CRF |
 |---|---:|---:|---:|---:|---:|
 | 0–1 | 1 | .05 | 5% | 1 | 5% |
 | 2–3 | 4 | .20 | 20% | 5 | 25% |
@@ -719,7 +720,7 @@ Mathematical notation and frequency tables are not separate topics. They are too
 | **Experiment** | A design using manipulation, randomization, and comparison/control. |
 | **Quasi-experiment** | An experiment-like design missing some element of experimental control. |
 | **Correlational design** | A design measuring relationships among variables without manipulation. |
-| **Summation notation** | Mathematical notation using \(\Sigma\) to represent addition across indexed observations. |
+| **Summation notation** | Mathematical notation using $\Sigma$ to represent addition across indexed observations. |
 | **Frequency** | Number of observations having a value or falling within a class. |
 | **Relative frequency** | Frequency divided by the total number of observations. |
 | **Cumulative frequency** | Running total of frequencies. |
@@ -747,7 +748,7 @@ No. **Random sampling** concerns how people are selected from a population. **Ra
 
 No. Correlation shows a relationship, not cause.
 
-## “\(\sum X^2\) and \((\sum X)^2\) mean the same thing.”
+## “$\sum X^2$ and $(\sum X)^2$ mean the same thing.”
 
 No. One squares each score before summing; the other sums first and then squares.
 
@@ -786,8 +787,8 @@ Statistical formulas often apply the same arithmetic operation to many observati
 Students often make mistakes by:
 
 - ignoring the lower and upper index of a summation;
-- confusing \(\sum X^2\) with \((\sum X)^2\);
-- multiplying \(\sum X\) and \(\sum Y\) when the expression actually requires \(\sum XY\);
+- confusing $\sum X^2$ with $(\sum X)^2$;
+- multiplying $\sum X$ and $\sum Y$ when the expression actually requires $\sum XY$;
 - forgetting that a constant inside a summation is applied to every included score;
 - skipping parentheses;
 - calculating cumulative frequencies incorrectly;
@@ -814,36 +815,36 @@ Students often make mistakes by:
 
 Let
 
-\[
+$$
 X=\{2,4,6,8\}
-\]
+$$
 
 and
 
-\[
+$$
 Y=\{5,3,7,1\}
-\]
+$$
 
 Calculate:
 
-1. \(\sum X\)
-2. \(\sum Y\)
-3. \(\sum(X+Y)\)
-4. \(\sum XY\)
-5. \(\sum X^2\)
-6. \((\sum X)^2\)
-7. \(\sum_{i=2}^{4}X_i\)
-8. \(\sum_{i=1}^{3}(X_i+2)\)
+1. $\sum X$
+2. $\sum Y$
+3. $\sum(X+Y)$
+4. $\sum XY$
+5. $\sum X^2$
+6. $(\sum X)^2$
+7. $\sum_{i=2}^{4}X_i$
+8. $\sum_{i=1}^{3}(X_i+2)$
 
 ## Frequency Table Practice
 
 For the scores
 
-\[
+$$
 2,3,3,4,4,4,5,6,6,7
-\]
+$$
 
-construct a table containing \(X\), \(f\), relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram.
+construct a table containing $X$, $f$, relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram.
 
 ## Research Design Practice
 
@@ -866,7 +867,7 @@ Before moving on, you should be able to explain—without relying on memorized d
 - why experimental, quasi-experimental, and correlational designs support different kinds of conclusions;
 - why sampling error and representativeness matter;
 - how to interpret basic summation notation;
-- how to distinguish \(\sum X^2\) from \((\sum X)^2\);
+- how to distinguish $\sum X^2$ from $(\sum X)^2$;
 - how to calculate frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency;
 - how to read a histogram critically.
 

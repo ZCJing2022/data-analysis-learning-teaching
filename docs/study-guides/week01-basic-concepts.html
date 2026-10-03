@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -130,52 +159,31 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#why-learn-data-analysis" id="toc-why-learn-data-analysis" class="nav-link" data-scroll-target="#why-learn-data-analysis">1. Why Learn Data Analysis?</a>
-  <ul class="collapse">
-  <li><a href="#key-idea" id="toc-key-idea" class="nav-link" data-scroll-target="#key-idea">Key idea</a></li>
-  </ul></li>
+  <li><a href="#why-learn-data-analysis" id="toc-why-learn-data-analysis" class="nav-link" data-scroll-target="#why-learn-data-analysis">1. Why Learn Data Analysis?</a></li>
   <li><a href="#the-goals-of-science" id="toc-the-goals-of-science" class="nav-link" data-scroll-target="#the-goals-of-science">2. The Goals of Science</a></li>
   <li><a href="#from-a-question-to-data" id="toc-from-a-question-to-data" class="nav-link" data-scroll-target="#from-a-question-to-data">3. From a Question to Data</a>
   <ul class="collapse">
   <li><a href="#operational-definitions" id="toc-operational-definitions" class="nav-link" data-scroll-target="#operational-definitions">Operational definitions</a></li>
   </ul></li>
-  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">4. Variables</a>
-  <ul class="collapse">
-  <li><a href="#example-pet-therapy" id="toc-example-pet-therapy" class="nav-link" data-scroll-target="#example-pet-therapy">Example: Pet therapy</a></li>
-  </ul></li>
-  <li><a href="#research-hypotheses-and-statistical-hypotheses" id="toc-research-hypotheses-and-statistical-hypotheses" class="nav-link" data-scroll-target="#research-hypotheses-and-statistical-hypotheses">5. Research Hypotheses and Statistical Hypotheses</a>
-  <ul class="collapse">
-  <li><a href="#important-caution" id="toc-important-caution" class="nav-link" data-scroll-target="#important-caution">Important caution</a></li>
-  </ul></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">4. Variables</a></li>
+  <li><a href="#research-hypotheses-and-statistical-hypotheses" id="toc-research-hypotheses-and-statistical-hypotheses" class="nav-link" data-scroll-target="#research-hypotheses-and-statistical-hypotheses">5. Research Hypotheses and Statistical Hypotheses</a></li>
   <li><a href="#descriptive-and-inferential-statistics" id="toc-descriptive-and-inferential-statistics" class="nav-link" data-scroll-target="#descriptive-and-inferential-statistics">6. Descriptive and Inferential Statistics</a>
   <ul class="collapse">
   <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive statistics</a></li>
   <li><a href="#inferential-statistics" id="toc-inferential-statistics" class="nav-link" data-scroll-target="#inferential-statistics">Inferential statistics</a></li>
   </ul></li>
   <li><a href="#populations-samples-parameters-and-statistics" id="toc-populations-samples-parameters-and-statistics" class="nav-link" data-scroll-target="#populations-samples-parameters-and-statistics">7. Populations, Samples, Parameters, and Statistics</a></li>
-  <li><a href="#representativeness-and-sampling-error" id="toc-representativeness-and-sampling-error" class="nav-link" data-scroll-target="#representativeness-and-sampling-error">8. Representativeness and Sampling Error</a>
-  <ul class="collapse">
-  <li><a href="#ta-teaching-point" id="toc-ta-teaching-point" class="nav-link" data-scroll-target="#ta-teaching-point">TA teaching point</a></li>
-  </ul></li>
+  <li><a href="#representativeness-and-sampling-error" id="toc-representativeness-and-sampling-error" class="nav-link" data-scroll-target="#representativeness-and-sampling-error">8. Representativeness and Sampling Error</a></li>
   <li><a href="#three-basic-research-designs" id="toc-three-basic-research-designs" class="nav-link" data-scroll-target="#three-basic-research-designs">9. Three Basic Research Designs</a>
   <ul class="collapse">
-  <li><a href="#experimental-design" id="toc-experimental-design" class="nav-link" data-scroll-target="#experimental-design">Experimental design</a>
-  <ul class="collapse">
-  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a></li>
-  </ul></li>
+  <li><a href="#experimental-design" id="toc-experimental-design" class="nav-link" data-scroll-target="#experimental-design">Experimental design</a></li>
   <li><a href="#quasi-experimental-design" id="toc-quasi-experimental-design" class="nav-link" data-scroll-target="#quasi-experimental-design">Quasi-experimental design</a></li>
-  <li><a href="#correlational-or-observational-design" id="toc-correlational-or-observational-design" class="nav-link" data-scroll-target="#correlational-or-observational-design">Correlational or observational design</a>
-  <ul class="collapse">
-  <li><a href="#comparison" id="toc-comparison" class="nav-link" data-scroll-target="#comparison">Comparison</a></li>
+  <li><a href="#correlational-or-observational-design" id="toc-correlational-or-observational-design" class="nav-link" data-scroll-target="#correlational-or-observational-design">Correlational or observational design</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#statistical-results-need-context" id="toc-statistical-results-need-context" class="nav-link" data-scroll-target="#statistical-results-need-context">10. Statistical Results Need Context</a>
-  <ul class="collapse">
-  <li><a href="#questions-to-ask-when-reading-a-graph" id="toc-questions-to-ask-when-reading-a-graph" class="nav-link" data-scroll-target="#questions-to-ask-when-reading-a-graph">Questions to ask when reading a graph</a></li>
-  </ul></li>
+  <li><a href="#statistical-results-need-context" id="toc-statistical-results-need-context" class="nav-link" data-scroll-target="#statistical-results-need-context">10. Statistical Results Need Context</a></li>
   <li><a href="#fundamental-mathematics" id="toc-fundamental-mathematics" class="nav-link" data-scroll-target="#fundamental-mathematics">11. Fundamental Mathematics</a>
   <ul class="collapse">
   <li><a href="#order-of-operations" id="toc-order-of-operations" class="nav-link" data-scroll-target="#order-of-operations">Order of operations</a></li>
@@ -201,20 +209,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#percentage-frequency" id="toc-percentage-frequency" class="nav-link" data-scroll-target="#percentage-frequency">Percentage frequency</a></li>
   <li><a href="#cumulative-frequency" id="toc-cumulative-frequency" class="nav-link" data-scroll-target="#cumulative-frequency">Cumulative frequency</a></li>
   <li><a href="#cumulative-relative-frequency" id="toc-cumulative-relative-frequency" class="nav-link" data-scroll-target="#cumulative-relative-frequency">Cumulative relative frequency</a></li>
-  <li><a href="#cumulative-percentage" id="toc-cumulative-percentage" class="nav-link" data-scroll-target="#cumulative-percentage">Cumulative percentage</a>
-  <ul class="collapse">
-  <li><a href="#internal-checks" id="toc-internal-checks" class="nav-link" data-scroll-target="#internal-checks">Internal checks</a></li>
-  </ul></li>
+  <li><a href="#cumulative-percentage" id="toc-cumulative-percentage" class="nav-link" data-scroll-target="#cumulative-percentage">Cumulative percentage</a></li>
   </ul></li>
   <li><a href="#ungrouped-frequency-table-example" id="toc-ungrouped-frequency-table-example" class="nav-link" data-scroll-target="#ungrouped-frequency-table-example">15. Ungrouped Frequency Table Example</a></li>
-  <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">16. Histograms</a>
-  <ul class="collapse">
-  <li><a href="#important-distinction" id="toc-important-distinction" class="nav-link" data-scroll-target="#important-distinction">Important distinction</a></li>
-  </ul></li>
-  <li><a href="#grouped-frequency-tables-and-histograms" id="toc-grouped-frequency-tables-and-histograms" class="nav-link" data-scroll-target="#grouped-frequency-tables-and-histograms">17. Grouped Frequency Tables and Histograms</a>
-  <ul class="collapse">
-  <li><a href="#trade-off" id="toc-trade-off" class="nav-link" data-scroll-target="#trade-off">Trade-off</a></li>
-  </ul></li>
+  <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">16. Histograms</a></li>
+  <li><a href="#grouped-frequency-tables-and-histograms" id="toc-grouped-frequency-tables-and-histograms" class="nav-link" data-scroll-target="#grouped-frequency-tables-and-histograms">17. Grouped Frequency Tables and Histograms</a></li>
   <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">18. How the Concepts Fit Together</a></li>
   <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">19. Important Terms</a></li>
   <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">20. Common Misunderstandings</a>
@@ -224,19 +223,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#a-statistic-and-a-parameter-are-interchangeable." id="toc-a-statistic-and-a-parameter-are-interchangeable." class="nav-link" data-scroll-target="#a-statistic-and-a-parameter-are-interchangeable.">“A statistic and a parameter are interchangeable.”</a></li>
   <li><a href="#random-assignment-and-random-sampling-are-the-same." id="toc-random-assignment-and-random-sampling-are-the-same." class="nav-link" data-scroll-target="#random-assignment-and-random-sampling-are-the-same.">“Random assignment and random sampling are the same.”</a></li>
   <li><a href="#correlation-shows-that-one-variable-causes-the-other." id="toc-correlation-shows-that-one-variable-causes-the-other." class="nav-link" data-scroll-target="#correlation-shows-that-one-variable-causes-the-other.">“Correlation shows that one variable causes the other.”</a></li>
-  <li><a href="#x2-and-x2-mean-the-same-thing." id="toc-x2-and-x2-mean-the-same-thing." class="nav-link" data-scroll-target="#x2-and-x2-mean-the-same-thing.">“(X^2) and ((X)^2) mean the same thing.”</a></li>
+  <li><a href="#sum-x2-and-sum-x2-mean-the-same-thing." id="toc-sum-x2-and-sum-x2-mean-the-same-thing." class="nav-link" data-scroll-target="#sum-x2-and-sum-x2-mean-the-same-thing.">“<span class="math inline">\(\sum X^2\)</span> and <span class="math inline">\((\sum X)^2\)</span> mean the same thing.”</a></li>
   <li><a href="#the-number-after-sigma-is-always-added-once." id="toc-the-number-after-sigma-is-always-added-once." class="nav-link" data-scroll-target="#the-number-after-sigma-is-always-added-once.">“The number after sigma is always added once.”</a></li>
   <li><a href="#a-histogram-is-an-objective-picture-of-the-data." id="toc-a-histogram-is-an-objective-picture-of-the-data." class="nav-link" data-scroll-target="#a-histogram-is-an-objective-picture-of-the-data.">“A histogram is an objective picture of the data.”</a></li>
   </ul></li>
   <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">21. Tutorial Preparation</a>
   <ul class="collapse">
-  <li><a href="#conceptual-questions-students-may-ask" id="toc-conceptual-questions-students-may-ask" class="nav-link" data-scroll-target="#conceptual-questions-students-may-ask">Conceptual questions students may ask</a>
-  <ul class="collapse">
-  <li><a href="#why-do-we-need-statistics-if-we-can-just-look-at-the-data" id="toc-why-do-we-need-statistics-if-we-can-just-look-at-the-data" class="nav-link" data-scroll-target="#why-do-we-need-statistics-if-we-can-just-look-at-the-data">“Why do we need statistics if we can just look at the data?”</a></li>
-  <li><a href="#why-can-experiments-show-causation-but-correlations-cannot" id="toc-why-can-experiments-show-causation-but-correlations-cannot" class="nav-link" data-scroll-target="#why-can-experiments-show-causation-but-correlations-cannot">“Why can experiments show causation but correlations cannot?”</a></li>
-  <li><a href="#why-do-we-care-so-much-about-populations-if-we-only-collect-samples" id="toc-why-do-we-care-so-much-about-populations-if-we-only-collect-samples" class="nav-link" data-scroll-target="#why-do-we-care-so-much-about-populations-if-we-only-collect-samples">“Why do we care so much about populations if we only collect samples?”</a></li>
-  <li><a href="#why-is-summation-notation-necessary" id="toc-why-is-summation-notation-necessary" class="nav-link" data-scroll-target="#why-is-summation-notation-necessary">“Why is summation notation necessary?”</a></li>
-  </ul></li>
+  <li><a href="#conceptual-questions-students-may-ask" id="toc-conceptual-questions-students-may-ask" class="nav-link" data-scroll-target="#conceptual-questions-students-may-ask">Conceptual questions students may ask</a></li>
   <li><a href="#computation-issues-to-watch-for" id="toc-computation-issues-to-watch-for" class="nav-link" data-scroll-target="#computation-issues-to-watch-for">Computation issues to watch for</a></li>
   </ul></li>
   <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">22. Practice Questions</a>
@@ -633,12 +626,16 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="brackets-and-absolute-value">Brackets and absolute value</h2>
 <p>Parentheses and square brackets group operations.</p>
 <p>Absolute-value brackets indicate distance from zero:</p>
-<p>[ |4| = 4 ]</p>
-<p>[ |-39| = 39 ]</p>
+<p><span class="math display">\[
+|4| = 4
+\]</span></p>
+<p><span class="math display">\[
+|-39| = 39
+\]</span></p>
 </section>
 <section id="inequalities" class="level2">
 <h2 class="anchored" data-anchor-id="inequalities">Inequalities</h2>
-<p>Know the meaning of (&gt;), (&lt;), and ().</p>
+<p>Know the meaning of <span class="math inline">\(&gt;\)</span>, <span class="math inline">\(&lt;\)</span>, and <span class="math inline">\(\leq\)</span>.</p>
 </section>
 <section id="fractions" class="level2">
 <h2 class="anchored" data-anchor-id="fractions">Fractions</h2>
@@ -646,82 +643,124 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="negative-numbers" class="level2">
 <h2 class="anchored" data-anchor-id="negative-numbers">Negative numbers</h2>
-<p>[ (-a)(b) = -ab ]</p>
-<p>[ (-a)(-b) = ab ]</p>
+<p><span class="math display">\[
+(-a)(b) = -ab
+\]</span></p>
+<p><span class="math display">\[
+(-a)(-b) = ab
+\]</span></p>
 </section>
 <section id="basic-equations" class="level2">
 <h2 class="anchored" data-anchor-id="basic-equations">Basic equations</h2>
 <p>For example:</p>
-<p>[ 15x + 10 = 40 ]</p>
+<p><span class="math display">\[
+15x + 10 = 40
+\]</span></p>
 <p>Subtract 10 from both sides:</p>
-<p>[ 15x = 30 ]</p>
+<p><span class="math display">\[
+15x = 30
+\]</span></p>
 <p>Then divide by 15:</p>
-<p>[ x = 2 ]</p>
+<p><span class="math display">\[
+x = 2
+\]</span></p>
 </section>
 <section id="exponents-and-square-roots" class="level2">
 <h2 class="anchored" data-anchor-id="exponents-and-square-roots">Exponents and square roots</h2>
-<p>[ 3^2 = 9 ]</p>
-<p>[ = 3 ]</p>
-<p>[ 3^4 = 81 ]</p>
+<p><span class="math display">\[
+3^2 = 9
+\]</span></p>
+<p><span class="math display">\[
+\sqrt{9} = 3
+\]</span></p>
+<p><span class="math display">\[
+3^4 = 81
+\]</span></p>
 </section>
 </section>
 <section id="summation-notation" class="level1">
 <h1>12. Summation Notation</h1>
-<p>The Greek letter sigma, (), means <strong>sum</strong> or <strong>add together</strong>.</p>
+<p>The Greek letter sigma, <span class="math inline">\(\Sigma\)</span>, means <strong>sum</strong> or <strong>add together</strong>.</p>
 <p>If</p>
-<p>[ X = {1,5,10} ]</p>
+<p><span class="math display">\[
+X = \{1,5,10\}
+\]</span></p>
 <p>then</p>
-<p>[ X = 1 + 5 + 10 = 16 ]</p>
+<p><span class="math display">\[
+\sum X = 1 + 5 + 10 = 16
+\]</span></p>
 <p>More complete notation looks like:</p>
-<p>[ _{i=1}^{n} X_i ]</p>
-<p>This means: add the values of (X_i), beginning with the first indexed value and ending with the (n)th value.</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} X_i
+\]</span></p>
+<p>This means: add the values of <span class="math inline">\(X_i\)</span>, beginning with the first indexed value and ending with the <span class="math inline">\(n\)</span>th value.</p>
 <section id="indices-matter" class="level2">
 <h2 class="anchored" data-anchor-id="indices-matter">Indices matter</h2>
 <p>If</p>
-<p>[ X = {4,8,6,3,5,6,4,2} ]</p>
+<p><span class="math display">\[
+X = \{4,8,6,3,5,6,4,2\}
+\]</span></p>
 <p>then</p>
-<p>[ _{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22 ]</p>
+<p><span class="math display">\[
+\sum_{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22
+\]</span></p>
 <p>Only values with indices 2 through 5 are included.</p>
 </section>
 <section id="summing-products" class="level2">
 <h2 class="anchored" data-anchor-id="summing-products">Summing products</h2>
 <p>If two variables are paired,</p>
-<p>[ XY ]</p>
-<p>means multiply (X_i) and (Y_i) within each row and then add the resulting products.</p>
+<p><span class="math display">\[
+\sum XY
+\]</span></p>
+<p>means multiply <span class="math inline">\(X_i\)</span> and <span class="math inline">\(Y_i\)</span> within each row and then add the resulting products.</p>
 <p>It does <strong>not</strong> mean</p>
-<p>[ (X)(Y) ]</p>
+<p><span class="math display">\[
+(\sum X)(\sum Y)
+\]</span></p>
 <p>unless that is explicitly written.</p>
 </section>
 <section id="squaring-a-sum-is-not-the-same-as-summing-squares" class="level2">
 <h2 class="anchored" data-anchor-id="squaring-a-sum-is-not-the-same-as-summing-squares">Squaring a sum is not the same as summing squares</h2>
 <p>These expressions are different:</p>
-<p>[ (X)^2 ]</p>
+<p><span class="math display">\[
+\left(\sum X\right)^2
+\]</span></p>
 <p>and</p>
-<p>[ X^2 ]</p>
-<p>For example, if (X={1,2,3}):</p>
-<p>[ (X)^2 = (1+2+3)^2 = 36 ]</p>
+<p><span class="math display">\[
+\sum X^2
+\]</span></p>
+<p>For example, if <span class="math inline">\(X=\{1,2,3\}\)</span>:</p>
+<p><span class="math display">\[
+\left(\sum X\right)^2 = (1+2+3)^2 = 36
+\]</span></p>
 <p>but</p>
-<p>[ X^2 = 1<sup>2+2</sup>2+3^2 = 14 ]</p>
+<p><span class="math display">\[
+\sum X^2 = 1^2+2^2+3^2 = 14
+\]</span></p>
 <p>This distinction becomes extremely important later in formulas for variance and other statistics.</p>
 </section>
 <section id="parentheses-prevent-ambiguity" class="level2">
 <h2 class="anchored" data-anchor-id="parentheses-prevent-ambiguity">Parentheses prevent ambiguity</h2>
 <p>Compare:</p>
-<p>[ (X_i + 2) ]</p>
+<p><span class="math display">\[
+\sum(X_i + 2)
+\]</span></p>
 <p>with</p>
-<p>[ (X_i)+2 ]</p>
+<p><span class="math display">\[
+\left(\sum X_i\right)+2
+\]</span></p>
 <p>They are not equivalent.</p>
 </section>
 </section>
 <section id="worked-summation-example" class="level1">
 <h1>13. Worked Summation Example</h1>
-<p>The tutorial uses paired values for (X) and (Y):</p>
+<p>The tutorial uses paired values for <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: right;">(i)</th>
-<th style="text-align: right;">(X)</th>
-<th style="text-align: right;">(Y)</th>
+<th style="text-align: right;"><span class="math inline">\(i\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(Y\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -768,17 +807,29 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Then:</p>
-<p>[ _{i=1}^{8} Y_i = 6+6+7+3+5+4+1+3 = 35 ]</p>
+<p><span class="math display">\[
+\sum_{i=1}^{8} Y_i = 6+6+7+3+5+4+1+3 = 35
+\]</span></p>
 <p>For a restricted sum:</p>
-<p>[ _{i=1}^{4} X_i^2 = 4<sup>2+8</sup>2+6<sup>2+3</sup>2 = 125 ]</p>
+<p><span class="math display">\[
+\sum_{i=1}^{4} X_i^2 = 4^2+8^2+6^2+3^2 = 125
+\]</span></p>
 <p>For a squared sum:</p>
-<p>[ (_{i=2}<sup>{7}Y_i)</sup>2 = (6+7+3+5+4+1)^2 = 26^2 = 676 ]</p>
+<p><span class="math display">\[
+\left(\sum_{i=2}^{7}Y_i\right)^2 = (6+7+3+5+4+1)^2 = 26^2 = 676
+\]</span></p>
 <p>For paired products:</p>
-<p>[ _{i=6}^{8}X_iY_i = (6)+(4)+(2) = 34 ]</p>
+<p><span class="math display">\[
+\sum_{i=6}^{8}X_iY_i = (6\times 4)+(4\times 1)+(2\times 3) = 34
+\]</span></p>
 <p>The tutorial also demonstrates two useful summation rules:</p>
-<p>[ (X+Y)=X+Y ]</p>
+<p><span class="math display">\[
+\sum(X+Y)=\sum X+\sum Y
+\]</span></p>
 <p>and</p>
-<p>[ (cX)=cX ]</p>
+<p><span class="math display">\[
+\sum(cX)=c\sum X
+\]</span></p>
 <p>If a constant is added to each score, the constant is added once for <strong>each included observation</strong>.</p>
 </section>
 <section id="frequency-tables" class="level1">
@@ -795,7 +846,7 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td>(f)</td>
+<td><span class="math inline">\(f\)</span></td>
 <td>Frequency</td>
 </tr>
 <tr class="even">
@@ -822,19 +873,23 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <section id="frequency" class="level2">
 <h2 class="anchored" data-anchor-id="frequency">Frequency</h2>
-<p>The <strong>frequency</strong> (f) is the number of observations with a particular value.</p>
+<p>The <strong>frequency</strong> <span class="math inline">\(f\)</span> is the number of observations with a particular value.</p>
 </section>
 <section id="proportion-relative-frequency" class="level2">
 <h2 class="anchored" data-anchor-id="proportion-relative-frequency">Proportion / relative frequency</h2>
-<p>[ = ]</p>
+<p><span class="math display">\[
+\text{Proportion}=\frac{f}{n}
+\]</span></p>
 </section>
 <section id="percentage-frequency" class="level2">
 <h2 class="anchored" data-anchor-id="percentage-frequency">Percentage frequency</h2>
-<p>[ = ]</p>
+<p><span class="math display">\[
+\text{Percentage}= \frac{f}{n}\times 100
+\]</span></p>
 </section>
 <section id="cumulative-frequency" class="level2">
 <h2 class="anchored" data-anchor-id="cumulative-frequency">Cumulative frequency</h2>
-<p>Cumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal (n).</p>
+<p>Cumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal <span class="math inline">\(n\)</span>.</p>
 </section>
 <section id="cumulative-relative-frequency" class="level2">
 <h2 class="anchored" data-anchor-id="cumulative-relative-frequency">Cumulative relative frequency</h2>
@@ -846,23 +901,31 @@ ul.task-list li input[type="checkbox"] {
 <section id="internal-checks" class="level3">
 <h3 class="anchored" data-anchor-id="internal-checks">Internal checks</h3>
 <p>A correctly completed frequency table should satisfy:</p>
-<p>[ f=n ]</p>
-<p>[ =1.00 ]</p>
-<p>[ %=100% ]</p>
-<p>and the last cumulative entries should be (CF=n), (CRF=1.00), and (C%=100%).</p>
+<p><span class="math display">\[
+\sum f=n
+\]</span></p>
+<p><span class="math display">\[
+\sum \text{Prop.}=1.00
+\]</span></p>
+<p><span class="math display">\[
+\sum \%=100\%
+\]</span></p>
+<p>and the last cumulative entries should be <span class="math inline">\(CF=n\)</span>, <span class="math inline">\(CRF=1.00\)</span>, and <span class="math inline">\(C\%=100\%\)</span>.</p>
 </section>
 </section>
 </section>
 <section id="ungrouped-frequency-table-example" class="level1">
 <h1>15. Ungrouped Frequency Table Example</h1>
 <p>The tutorial uses the following 20 scores:</p>
-<p>[ 6,7,4,5,5,6,6,5,9,3,3,5,2,2,1,4,7,8,8,4 ]</p>
+<p><span class="math display">\[
+6,7,4,5,5,6,6,5,9,3,3,5,2,2,1,4,7,8,8,4
+\]</span></p>
 <p>An ungrouped frequency table is:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th style="text-align: right;">(X)</th>
-<th style="text-align: right;">(f)</th>
+<th style="text-align: right;"><span class="math inline">\(X\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(f\)</span></th>
 <th style="text-align: right;">Proportion</th>
 <th style="text-align: right;">%</th>
 <th style="text-align: right;">CF</th>
@@ -945,7 +1008,9 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p>Checks:</p>
-<p>[ f=20, =1.00, %=100% ]</p>
+<p><span class="math display">\[
+\sum f=20, \qquad \sum \text{Proportion}=1.00, \qquad \sum \%=100\%
+\]</span></p>
 </section>
 <section id="histograms" class="level1">
 <h1>16. Histograms</h1>
@@ -973,7 +1038,7 @@ ul.task-list li input[type="checkbox"] {
 <thead>
 <tr class="header">
 <th>Score interval</th>
-<th style="text-align: right;">(f)</th>
+<th style="text-align: right;"><span class="math inline">\(f\)</span></th>
 <th style="text-align: right;">Proportion</th>
 <th style="text-align: right;">%</th>
 <th style="text-align: right;">CF</th>
@@ -1148,7 +1213,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td><strong>Summation notation</strong></td>
-<td>Mathematical notation using () to represent addition across indexed observations.</td>
+<td>Mathematical notation using <span class="math inline">\(\Sigma\)</span> to represent addition across indexed observations.</td>
 </tr>
 <tr class="odd">
 <td><strong>Frequency</strong></td>
@@ -1191,8 +1256,8 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="correlation-shows-that-one-variable-causes-the-other.">“Correlation shows that one variable causes the other.”</h2>
 <p>No.&nbsp;Correlation shows a relationship, not cause.</p>
 </section>
-<section id="x2-and-x2-mean-the-same-thing." class="level2">
-<h2 class="anchored" data-anchor-id="x2-and-x2-mean-the-same-thing.">“(X^2) and ((X)^2) mean the same thing.”</h2>
+<section id="sum-x2-and-sum-x2-mean-the-same-thing." class="level2">
+<h2 class="anchored" data-anchor-id="sum-x2-and-sum-x2-mean-the-same-thing.">“<span class="math inline">\(\sum X^2\)</span> and <span class="math inline">\((\sum X)^2\)</span> mean the same thing.”</h2>
 <p>No.&nbsp;One squares each score before summing; the other sums first and then squares.</p>
 </section>
 <section id="the-number-after-sigma-is-always-added-once." class="level2">
@@ -1231,8 +1296,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Students often make mistakes by:</p>
 <ul>
 <li>ignoring the lower and upper index of a summation;</li>
-<li>confusing (X^2) with ((X)^2);</li>
-<li>multiplying (X) and (Y) when the expression actually requires (XY);</li>
+<li>confusing <span class="math inline">\(\sum X^2\)</span> with <span class="math inline">\((\sum X)^2\)</span>;</li>
+<li>multiplying <span class="math inline">\(\sum X\)</span> and <span class="math inline">\(\sum Y\)</span> when the expression actually requires <span class="math inline">\(\sum XY\)</span>;</li>
 <li>forgetting that a constant inside a summation is applied to every included score;</li>
 <li>skipping parentheses;</li>
 <li>calculating cumulative frequencies incorrectly;</li>
@@ -1262,26 +1327,32 @@ ul.task-list li input[type="checkbox"] {
 <section id="summation-practice" class="level2">
 <h2 class="anchored" data-anchor-id="summation-practice">Summation Practice</h2>
 <p>Let</p>
-<p>[ X={2,4,6,8} ]</p>
+<p><span class="math display">\[
+X=\{2,4,6,8\}
+\]</span></p>
 <p>and</p>
-<p>[ Y={5,3,7,1} ]</p>
+<p><span class="math display">\[
+Y=\{5,3,7,1\}
+\]</span></p>
 <p>Calculate:</p>
 <ol type="1">
-<li>(X)</li>
-<li>(Y)</li>
-<li>((X+Y))</li>
-<li>(XY)</li>
-<li>(X^2)</li>
-<li>((X)^2)</li>
-<li>(_{i=2}^{4}X_i)</li>
-<li>(_{i=1}^{3}(X_i+2))</li>
+<li><span class="math inline">\(\sum X\)</span></li>
+<li><span class="math inline">\(\sum Y\)</span></li>
+<li><span class="math inline">\(\sum(X+Y)\)</span></li>
+<li><span class="math inline">\(\sum XY\)</span></li>
+<li><span class="math inline">\(\sum X^2\)</span></li>
+<li><span class="math inline">\((\sum X)^2\)</span></li>
+<li><span class="math inline">\(\sum_{i=2}^{4}X_i\)</span></li>
+<li><span class="math inline">\(\sum_{i=1}^{3}(X_i+2)\)</span></li>
 </ol>
 </section>
 <section id="frequency-table-practice" class="level2">
 <h2 class="anchored" data-anchor-id="frequency-table-practice">Frequency Table Practice</h2>
 <p>For the scores</p>
-<p>[ 2,3,3,4,4,4,5,6,6,7 ]</p>
-<p>construct a table containing (X), (f), relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram.</p>
+<p><span class="math display">\[
+2,3,3,4,4,4,5,6,6,7
+\]</span></p>
+<p>construct a table containing <span class="math inline">\(X\)</span>, <span class="math inline">\(f\)</span>, relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram.</p>
 </section>
 <section id="research-design-practice" class="level2">
 <h2 class="anchored" data-anchor-id="research-design-practice">Research Design Practice</h2>
@@ -1306,7 +1377,7 @@ ul.task-list li input[type="checkbox"] {
 <li>why experimental, quasi-experimental, and correlational designs support different kinds of conclusions;</li>
 <li>why sampling error and representativeness matter;</li>
 <li>how to interpret basic summation notation;</li>
-<li>how to distinguish (X^2) from ((X)^2);</li>
+<li>how to distinguish <span class="math inline">\(\sum X^2\)</span> from <span class="math inline">\((\sum X)^2\)</span>;</li>
 <li>how to calculate frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency;</li>
 <li>how to read a histogram critically.</li>
 </ul>
