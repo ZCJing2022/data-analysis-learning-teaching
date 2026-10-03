@@ -296,86 +296,373 @@
   {
     "objectID": "study-guides/week04-standard-scores.html",
     "href": "study-guides/week04-standard-scores.html",
-    "title": "Week 04 — Standard Scores",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
     "section": "",
-    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
+    "text": "Week 4 moves from descriptive statistics toward the foundations of inferential statistics.\nThe central question is:\n\nHow can probability help us describe what outcomes are likely, unlikely, typical, or unusual?\n\nThe two supplied editions of Privitera organize this material differently.\n\nThe 2018 second edition combines introductory probability with the normal distribution, the standard normal distribution, z scores, the unit normal table, and the use of z scores to locate probabilities and cutoff scores.\nThe 2024 fourth edition expands probability itself much more extensively. It covers relative frequency, mutually exclusive, independent, complementary, and conditional outcomes, Bayes’s theorem, probability distributions, expected value, and the variance and standard deviation of probability distributions, including the binomial distribution.\n\nThis Study Guide therefore treats the two editions as complementary rather than pretending that they have the same Chapter 5 structure.\nThe broad conceptual sequence is:\nProbability\n↓\nRelative frequency and relationships among outcomes\n↓\nProbability distributions and expected value\n↓\nNormal distributions\n↓\nStandardization with z scores\n↓\nUsing areas under the normal curve to locate probabilities and cutoff scores"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#overview",
-    "href": "study-guides/week04-standard-scores.html#overview",
-    "title": "Week 04 — Standard Scores",
-    "section": "",
-    "text": "To be developed from the supplied lecture notes, tutorials, exercises, and readings."
+    "objectID": "study-guides/week04-standard-scores.html#what-is-probability",
+    "href": "study-guides/week04-standard-scores.html#what-is-probability",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "1. What Is Probability?",
+    "text": "1. What Is Probability?\nProbability describes the likelihood that an outcome will occur.\nIn the simplest case:\n\\[\np(x)=\\frac{f(x)}{\\text{sample space}},\n\\]\nwhere:\n\n(p(x)) = probability of outcome (x);\n(f(x)) = frequency of outcome (x);\nsample space = total number of possible outcomes.\n\nBoth editions emphasize that probability is useful when outcomes can vary from one observation to the next (Privitera, 2018, 2024).\n\nExample: one fair coin\nThe sample space is:\n\\[\n\\{H,T\\}.\n\\]\nTherefore:\n\\[\np(H)=\\frac{1}{2}=0.50.\n\\]"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#learning-objectives",
-    "href": "study-guides/week04-standard-scores.html#learning-objectives",
-    "title": "Week 04 — Standard Scores",
-    "section": "Learning Objectives",
-    "text": "Learning Objectives\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#random-events-and-fixed-events",
+    "href": "study-guides/week04-standard-scores.html#random-events-and-fixed-events",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "2. Random Events and Fixed Events",
+    "text": "2. Random Events and Fixed Events\nA random event is one for which the observed outcome can vary.\nExamples:\n\nflipping a coin;\nselecting a person from a population;\nwhether a flight is delayed;\nwhether a participant responds correctly.\n\nA fixed event is one for which the outcome does not vary.\nProbability is useful for predicting random events because their outcomes are uncertain before observation (Privitera, 2018, 2024)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#key-concepts",
-    "href": "study-guides/week04-standard-scores.html#key-concepts",
-    "title": "Week 04 — Standard Scores",
-    "section": "Key Concepts",
-    "text": "Key Concepts\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#the-sample-space",
+    "href": "study-guides/week04-standard-scores.html#the-sample-space",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "3. The Sample Space",
+    "text": "3. The Sample Space\nThe sample space is the complete set of possible outcomes.\nFor one coin:\n\\[\nS=\\{H,T\\}.\n\\]\nFor two fair coins:\n\\[\nS=\\{HH,HT,TH,TT\\}.\n\\]\nThus:\n\\[\n|S|=4.\n\\]\nThe probability of two heads is:\n\\[\np(HH)=\\frac{1}{4}=0.25.\n\\]\nA common mistake is to count only the outcomes of interest rather than all possible outcomes."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#how-the-concepts-fit-together",
-    "href": "study-guides/week04-standard-scores.html#how-the-concepts-fit-together",
-    "title": "Week 04 — Standard Scores",
-    "section": "How the Concepts Fit Together",
-    "text": "How the Concepts Fit Together\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#basic-rules-of-probability",
+    "href": "study-guides/week04-standard-scores.html#basic-rules-of-probability",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "4. Basic Rules of Probability",
+    "text": "4. Basic Rules of Probability\nA valid probability must satisfy:\n\\[\n0\\le p\\le1.\n\\]\nProbability can be expressed as:\n\na fraction;\na decimal;\na percentage;\na proportion.\n\nExamples:\n\\[\n\\frac{1}{2}=0.50=50\\%.\n\\]\nA probability cannot be negative and cannot exceed 1 (Privitera, 2018, 2024)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#important-terms",
-    "href": "study-guides/week04-standard-scores.html#important-terms",
-    "title": "Week 04 — Standard Scores",
-    "section": "Important Terms",
-    "text": "Important Terms\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nTo be added"
+    "objectID": "study-guides/week04-standard-scores.html#probability-and-relative-frequency",
+    "href": "study-guides/week04-standard-scores.html#probability-and-relative-frequency",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "5. Probability and Relative Frequency",
+    "text": "5. Probability and Relative Frequency\nThe 2024 edition makes the connection especially explicit:\n\nA relative frequency is the probability of an outcome’s occurrence when frequencies are distributed across all possible outcomes (Privitera, 2024).\n\nFor two fair coins:\n\n\n\nOutcome\n(f(x))\n(p(x))\n\n\n\n\nHH\n1\n.25\n\n\nHT or TH\n2\n.50\n\n\nTT\n1\n.25\n\n\n\nThe frequencies sum to the sample space:\n\\[\n1+2+1=4.\n\\]\nThe probabilities sum to:\n\\[\n0.25+0.50+0.25=1.00.\n\\]\nThis connection links Week 4 directly back to the frequency distributions introduced earlier in the course."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#worked-examples",
-    "href": "study-guides/week04-standard-scores.html#worked-examples",
-    "title": "Week 04 — Standard Scores",
-    "section": "Worked Examples",
-    "text": "Worked Examples\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#mutually-exclusive-outcomes",
+    "href": "study-guides/week04-standard-scores.html#mutually-exclusive-outcomes",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "6. Mutually Exclusive Outcomes",
+    "text": "6. Mutually Exclusive Outcomes\nTwo outcomes are mutually exclusive when they cannot occur together.\nFor one coin flip, heads and tails are mutually exclusive.\nTherefore:\n\\[\np(H\\cap T)=0.\n\\]\nIf two outcomes are mutually exclusive, the probability of either one occurring is found with the additive rule:\n\\[\np(A\\cup B)=p(A)+p(B).\n\\]\nThis rule applies only when the outcomes cannot overlap (Privitera, 2024)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#common-misunderstandings",
-    "href": "study-guides/week04-standard-scores.html#common-misunderstandings",
-    "title": "Week 04 — Standard Scores",
-    "section": "Common Misunderstandings",
-    "text": "Common Misunderstandings\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#independent-outcomes",
+    "href": "study-guides/week04-standard-scores.html#independent-outcomes",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "7. Independent Outcomes",
+    "text": "7. Independent Outcomes\nTwo outcomes are independent when the occurrence of one does not change the probability of the other.\nFor two independent outcomes:\n\\[\np(A\\cap B)=p(A)p(B).\n\\]\nExample:\nIf:\n\\[\np(A)=0.80\n\\]\nand:\n\\[\np(B)=0.80,\n\\]\nthen:\n\\[\np(A\\cap B)=0.80(0.80)=0.64.\n\\]\nThe 2024 text uses this logic to show how repeated independent selections combine multiplicatively."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#tutorial-preparation",
-    "href": "study-guides/week04-standard-scores.html#tutorial-preparation",
-    "title": "Week 04 — Standard Scores",
-    "section": "Tutorial Preparation",
-    "text": "Tutorial Preparation\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#complementary-outcomes",
+    "href": "study-guides/week04-standard-scores.html#complementary-outcomes",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "8. Complementary Outcomes",
+    "text": "8. Complementary Outcomes\nTwo outcomes are complementary when together they exhaust all possible outcomes.\nThus:\n\\[\np(A)+p(B)=1.\n\\]\nTherefore:\n\\[\np(A)=1-p(B).\n\\]\nExamples include:\n\npass / fail;\nwin / lose, assuming no tie;\nheads / tails.\n\nComplementary probabilities are often useful when it is easier to calculate the probability of the opposite outcome."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-questions",
-    "href": "study-guides/week04-standard-scores.html#practice-questions",
-    "title": "Week 04 — Standard Scores",
-    "section": "Practice Questions",
-    "text": "Practice Questions\n\nConceptual Questions\nTo be added.\n\n\nApplied Questions\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#conditional-outcomes",
+    "href": "study-guides/week04-standard-scores.html#conditional-outcomes",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "9. Conditional Outcomes",
+    "text": "9. Conditional Outcomes\nTwo outcomes are conditional when the probability of one outcome depends on another outcome.\nConditional probability is written:\n\\[\np(A\\mid B),\n\\]\nread as:\n\nthe probability of (A), given that (B) occurred.\n\nThe basic conditional-probability formula is:\n\\[\np(A\\mid B)\n=\n\\frac{p(A\\cap B)}{p(B)}.\n\\]\nThe key conceptual change is the sample space.\nOnce we condition on (B), we no longer consider all cases—only the cases for which (B) is true (Privitera, 2024)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#what-you-should-be-able-to-explain",
-    "href": "study-guides/week04-standard-scores.html#what-you-should-be-able-to-explain",
-    "title": "Week 04 — Standard Scores",
-    "section": "What You Should Be Able to Explain",
-    "text": "What You Should Be Able to Explain\nTo be added."
+    "objectID": "study-guides/week04-standard-scores.html#worked-conditional-probability-example",
+    "href": "study-guides/week04-standard-scores.html#worked-conditional-probability-example",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "10. Worked Conditional-Probability Example",
+    "text": "10. Worked Conditional-Probability Example\nThe 2024 edition uses a hypothetical table of 200 mothers classified by hospital type and insurance status.\nFor women giving birth in public hospitals:\n\n130 gave birth in public hospitals;\n80 of those were uninsured.\n\nTherefore:\n\\[\np(\\text{Uninsured}\\mid \\text{Public})\n=\n\\frac{80}{130}\n\\approx0.62.\n\\]\nThis differs from:\n\\[\np(\\text{Uninsured}\\cap \\text{Public})\n=\n\\frac{80}{200}\n=\n0.40.\n\\]\nThe first is conditional because the sample space has been restricted to the public-hospital group."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#reading",
-    "href": "study-guides/week04-standard-scores.html#reading",
-    "title": "Week 04 — Standard Scores",
-    "section": "Reading",
-    "text": "Reading\nPrivitera (2018), Chapter 5"
+    "objectID": "study-guides/week04-standard-scores.html#bayess-theorem",
+    "href": "study-guides/week04-standard-scores.html#bayess-theorem",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "11. Bayes’s Theorem",
+    "text": "11. Bayes’s Theorem\nThe 2024 edition extends conditional probability with Bayes’s theorem:\n\\[\np(A\\mid B)\n=\n\\frac{p(B\\mid A)p(A)}{p(B)}.\n\\]\nBayes’s theorem relates:\n\na conditional probability;\nthe reverse conditional probability;\nthe marginal probability of (A);\nthe marginal probability of (B).\n\nAt this stage, the main goal is conceptual:\n\nBayes’s theorem updates the probability of one outcome after taking another observed condition into account.\n\nThis becomes especially important later in statistical inference (Privitera, 2024)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#random-variables",
+    "href": "study-guides/week04-standard-scores.html#random-variables",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "12. Random Variables",
+    "text": "12. Random Variables\nA random variable represents the possible numerical outcomes of a random process.\nExamples:\n\nnumber of errors on a test;\nnumber of symptoms;\nnumber of items remembered;\nnumber of successful trials.\n\nA random variable is not a single observed value. It represents the set of possible outcomes that could occur (Privitera, 2024)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-distributions",
+    "href": "study-guides/week04-standard-scores.html#probability-distributions",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "13. Probability Distributions",
+    "text": "13. Probability Distributions\nA probability distribution lists the possible outcomes of a random variable and the probability of each outcome.\nA valid probability distribution satisfies:\n\\[\n0\\le p(x)\\le1\n\\]\nfor every outcome, and:\n\\[\n\\sum p(x)=1.\n\\]\nExample:\n\n\n\n(x)\n1\n2\n3\n4\n5\n\n\n\n\n(p(x))\n.250\n.350\n.175\n.125\n.100\n\n\n\nCheck:\n\\[\n.250+.350+.175+.125+.100=1.00.\n\\]"
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#expected-value",
+    "href": "study-guides/week04-standard-scores.html#expected-value",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "14. Expected Value",
+    "text": "14. Expected Value\nThe expected value is the mean of a probability distribution.\nIt is:\n\\[\n\\mu=\\sum xp(x).\n\\]\nFor each possible outcome:\n\nmultiply the outcome value by its probability;\nsum the products.\n\nThe expected value is sometimes called the long-term mean because it describes the average outcome expected across a very large number of repetitions (Privitera, 2024)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#expected-value-example",
+    "href": "study-guides/week04-standard-scores.html#expected-value-example",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "15. Expected Value Example",
+    "text": "15. Expected Value Example\nSuppose the probabilities of forgetting 0, 1, 2, or 3 items are:\n\n\n\nItems forgotten\nProbability\n\n\n\n\n0\n.24\n\n\n1\n.16\n\n\n2\n.40\n\n\n3\n.20\n\n\n\nThen:\n\\[\n\\mu\n=\n0(.24)+1(.16)+2(.40)+3(.20).\n\\]\nSo:\n\\[\n\\mu=1.56.\n\\]\nThe interpretation is not that a person can literally forget 1.56 items.\nIt means that across many repetitions, the long-term average would approach 1.56 items (Privitera, 2024)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#variance-of-a-probability-distribution",
+    "href": "study-guides/week04-standard-scores.html#variance-of-a-probability-distribution",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "16. Variance of a Probability Distribution",
+    "text": "16. Variance of a Probability Distribution\nThe 2024 edition extends Week 3’s variance idea to probability distributions.\nThe definitional formula is:\n\\[\n\\sigma^2\n=\n\\sum (x-\\mu)^2p(x).\n\\]\nThis is a probability-weighted version of squared deviation from the mean.\nThe standard deviation is:\n\\[\n\\sigma\n=\n\\sqrt{\\sigma^2}.\n\\]\nThus probability distributions also have:\n\na center;\na spread."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#binomial-probability-distributions",
+    "href": "study-guides/week04-standard-scores.html#binomial-probability-distributions",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "17. Binomial Probability Distributions",
+    "text": "17. Binomial Probability Distributions\nA binomial distribution applies when the random variable has two possible outcomes.\nExamples:\n\nsuccess / failure;\nyes / no;\nremembered / forgotten;\nheads / tails.\n\nIf:\n\n(n) = number of trials;\n(p) = probability of the outcome of interest;\n(q=1-p),\n\nthen:\n\\[\n\\mu=np,\n\\]\n\\[\n\\sigma^2=npq,\n\\]\nand:\n\\[\n\\sigma=\\sqrt{npq}.\n\\]\nThe 2024 edition uses these formulas as shortcuts for two-outcome probability distributions."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#why-the-normal-distribution-matters",
+    "href": "study-guides/week04-standard-scores.html#why-the-normal-distribution-matters",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "18. Why the Normal Distribution Matters",
+    "text": "18. Why the Normal Distribution Matters\nThe 2018 edition connects probability directly to the normal distribution.\nMany behavioral variables are treated as approximately normal because:\n\nmost observations cluster near the center;\nrelatively few observations occur at the extremes.\n\nThis allows probability to be represented as area under a smooth curve (Privitera, 2018).\nThe normal distribution is also called:\n\nGaussian;\nbell-shaped;\nsymmetrical."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#eight-characteristics-of-the-normal-distribution",
+    "href": "study-guides/week04-standard-scores.html#eight-characteristics-of-the-normal-distribution",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "19. Eight Characteristics of the Normal Distribution",
+    "text": "19. Eight Characteristics of the Normal Distribution\nThe 2018 edition identifies eight characteristics.\n\nThe normal distribution is mathematically defined.\nIt is theoretical.\nMean, median, and mode are located together at the 50th percentile.\nIt is symmetrical.\nThe mean can take any value.\nThe standard deviation can take any positive value.\nTotal area under the curve equals 1.00.\nThe tails are asymptotic.\n\nThese characteristics explain why the normal curve is useful for probability calculations (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#symmetry",
+    "href": "study-guides/week04-standard-scores.html#symmetry",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "20. Symmetry",
+    "text": "20. Symmetry\nIn a normal distribution:\n\\[\nM=Md=Mo.\n\\]\nHalf the area lies below the mean:\n\\[\n0.50,\n\\]\nand half lies above:\n\\[\n0.50.\n\\]\nBecause the curve is symmetrical, equal distances above and below the mean correspond to equal areas.\nThis symmetry greatly simplifies probability calculations."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#area-under-the-curve",
+    "href": "study-guides/week04-standard-scores.html#area-under-the-curve",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "21. Area Under the Curve",
+    "text": "21. Area Under the Curve\nFor a normal distribution:\n\\[\n\\text{total area}=1.00.\n\\]\nThus area corresponds directly to probability.\nFor example:\n\\[\n0.50\n\\]\nof the area lies on either side of the mean.\nThe 2018 text connects this to the empirical rule introduced earlier:\n\nabout 68% within 1 SD;\nabout 95% within 2 SD;\nabout 99.7% within 3 SD."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#asymptotic-tails",
+    "href": "study-guides/week04-standard-scores.html#asymptotic-tails",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "22. Asymptotic Tails",
+    "text": "22. Asymptotic Tails\nThe tails of a normal curve approach the horizontal axis but never touch it.\nThis means that:\n\nextremely unusual scores remain theoretically possible;\nprobability becomes very small in the tails;\nthe curve extends indefinitely in both directions."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#the-statistical-norm",
+    "href": "study-guides/week04-standard-scores.html#the-statistical-norm",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "23. The Statistical Norm",
+    "text": "23. The Statistical Norm\nThe 2018 edition introduces the idea of the statistical norm.\nApproximately 95% of normally distributed scores lie within:\n\\[\n\\pm2SD\n\\]\nof the mean.\nScores farther than roughly 2 SD from the mean are statistically less common.\nThis is a statistical definition of unusualness, not a judgment about whether a person or behavior is socially, clinically, or morally “normal” (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#why-standardize",
+    "href": "study-guides/week04-standard-scores.html#why-standardize",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "24. Why Standardize?",
+    "text": "24. Why Standardize?\nNormal distributions can have different means and standard deviations.\nFor example:\n\nExam A: (M=70, SD=5)\nExam B: (M=80, SD=10)\n\nA raw score of 85 does not have the same relative meaning in both distributions.\nStandardization solves this problem by expressing raw scores in standard deviation units."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#the-standard-normal-distribution",
+    "href": "study-guides/week04-standard-scores.html#the-standard-normal-distribution",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "25. The Standard Normal Distribution",
+    "text": "25. The Standard Normal Distribution\nThe standard normal distribution has:\n\\[\n\\mu=0\n\\]\nand:\n\\[\n\\sigma=1.\n\\]\nScores on the horizontal axis are expressed as z scores.\nA z score tells us how many standard deviations a score lies above or below the mean (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#the-z-transformation",
+    "href": "study-guides/week04-standard-scores.html#the-z-transformation",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "26. The z Transformation",
+    "text": "26. The z Transformation\nFor a population:\n\\[\nz=\\frac{x-\\mu}{\\sigma}.\n\\]\nFor a sample:\n\\[\nz=\\frac{x-M}{SD}.\n\\]\nInterpretation:\n\n(z=0): at the mean;\n(z=+1): one SD above the mean;\n(z=-1): one SD below the mean;\n(z=+2): two SD above the mean.\n\nThe sign indicates direction; the magnitude indicates distance."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#worked-z-score-example",
+    "href": "study-guides/week04-standard-scores.html#worked-z-score-example",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "27. Worked z-Score Example",
+    "text": "27. Worked z-Score Example\nSuppose:\n\\[\nM=12,\\quad SD=2,\\quad x=14.\n\\]\nThen:\n\\[\nz\n=\n\\frac{14-12}{2}\n=\n1.00.\n\\]\nSo a raw score of 14 is:\n\none standard deviation above the mean.\n\nThis is the central meaning of a z score (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#z-scores-preserve-relative-position",
+    "href": "study-guides/week04-standard-scores.html#z-scores-preserve-relative-position",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "28. z Scores Preserve Relative Position",
+    "text": "28. z Scores Preserve Relative Position\nSuppose two people have different raw scores in different distributions.\nA z score allows us to compare how unusual each score is relative to its own distribution.\nThis is why standard scores are useful when:\n\nvariables use different measurement units;\ndifferent tests have different means and standard deviations;\nresearchers want a common scale."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#what-the-z-table-represents",
+    "href": "study-guides/week04-standard-scores.html#what-the-z-table-represents",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "29. What the z Table Represents",
+    "text": "29. What the z Table Represents\nThe 2018 edition introduces the unit normal table, or z table.\nThe table links z scores to areas under the standard normal curve.\nIn the text’s table:\n\nColumn A lists z scores;\nColumn B lists area between the mean and z;\nColumn C lists area from z toward the tail.\n\nBecause the normal curve is symmetric, areas for positive and negative z scores mirror one another."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#two-steps-for-locating-a-probability",
+    "href": "study-guides/week04-standard-scores.html#two-steps-for-locating-a-probability",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "30. Two Steps for Locating a Probability",
+    "text": "30. Two Steps for Locating a Probability\nTo locate the probability of a raw score in a normal distribution:\n\nStep 1\nConvert the raw score to a z score.\n\n\nStep 2\nUse the z table to find the relevant area.\nThis general strategy applies whether the question asks for a probability:\n\nabove a score;\nbelow a score;\nbetween two scores (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-above-a-score",
+    "href": "study-guides/week04-standard-scores.html#probability-above-a-score",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "31. Probability Above a Score",
+    "text": "31. Probability Above a Score\nSuppose:\n\\[\nM=8,\\quad SD=2,\\quad x=12.\n\\]\nThen:\n\\[\nz=\\frac{12-8}{2}=2.\n\\]\nThe tail area beyond:\n\\[\nz=2.00\n\\]\nis approximately:\n\\[\np=.0228.\n\\]\nSo the probability of a score greater than 12 is about 2.28% (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-below-a-score",
+    "href": "study-guides/week04-standard-scores.html#probability-below-a-score",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "32. Probability Below a Score",
+    "text": "32. Probability Below a Score\nSuppose a raw score converts to:\n\\[\nz=0.50.\n\\]\nThe area between the mean and (z=0.50) is:\n\\[\n0.1915.\n\\]\nBecause 0.5000 lies below the mean:\n\\[\np(X&lt;x)\n=\n0.5000+0.1915\n=\n0.6915.\n\\]\nThe diagram on page 29 of the 2018 chapter visually shows this logic: the shaded region includes the entire lower half of the curve plus the area between the mean and (z=.50)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-in-a-tail-below-the-mean",
+    "href": "study-guides/week04-standard-scores.html#probability-in-a-tail-below-the-mean",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "33. Probability in a Tail Below the Mean",
+    "text": "33. Probability in a Tail Below the Mean\nSuppose:\n\\[\nz=-0.92.\n\\]\nBy symmetry, use the same tail area as:\n\\[\nz=+0.92.\n\\]\nThe 2018 example gives:\n\\[\np=.1788.\n\\]\nThe negative sign identifies which side of the mean the score lies on; it does not imply a negative probability."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-between-two-scores",
+    "href": "study-guides/week04-standard-scores.html#probability-between-two-scores",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "34. Probability Between Two Scores",
+    "text": "34. Probability Between Two Scores\nSuppose one score is:\n\\[\nz=-1\n\\]\nand the other is:\n\\[\nz=+1.\n\\]\nThe area between the mean and (z=1) is:\n\\[\n0.3413.\n\\]\nBy symmetry:\n\\[\n0.3413+0.3413=0.6826.\n\\]\nThus approximately 68.26% of scores lie between (z=-1) and (z=+1).\nThis matches the familiar empirical-rule approximation."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#from-percentile-to-z-score",
+    "href": "study-guides/week04-standard-scores.html#from-percentile-to-z-score",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "35. From Percentile to z Score",
+    "text": "35. From Percentile to z Score\nSometimes the probability is known and the raw cutoff is unknown.\nFor example:\n\nWhat raw score defines the top 10%?\n\nThe procedure reverses the earlier steps.\n\nStep 1\nUse the z table to identify the z score for the target tail probability.\n\n\nStep 2\nConvert the z score back into a raw score."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#solving-for-a-raw-score",
+    "href": "study-guides/week04-standard-scores.html#solving-for-a-raw-score",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "36. Solving for a Raw Score",
+    "text": "36. Solving for a Raw Score\nStarting with:\n\\[\nz=\\frac{x-M}{SD},\n\\]\nsolve for (x):\n\\[\nx=M+z(SD).\n\\]\nIf:\n\\[\nM=100,\\quad SD=15,\\quad z=1.28,\n\\]\nthen:\n\\[\nx\n=\n100+1.28(15)\n=\n119.2.\n\\]\nThus approximately 119.2 is the cutoff for the top 10% in that distribution (Privitera, 2018)."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#bottom-tail-cutoffs",
+    "href": "study-guides/week04-standard-scores.html#bottom-tail-cutoffs",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "37. Bottom-Tail Cutoffs",
+    "text": "37. Bottom-Tail Cutoffs\nFor a bottom-tail cutoff, the z score is negative.\nIf the bottom 25% corresponds approximately to:\n\\[\nz=-0.675,\n\\]\nand:\n\\[\nM=100,\\quad SD=15,\n\\]\nthen:\n\\[\nx\n=\n100+(-0.675)(15)\n=\n89.875.\n\\]\nRounded:\n\\[\nx\\approx89.88.\n\\]\nThe sign of z tells us whether the cutoff lies above or below the mean."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#a-major-difference-between-the-2018-and-2024-editions",
+    "href": "study-guides/week04-standard-scores.html#a-major-difference-between-the-2018-and-2024-editions",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "38. A Major Difference Between the 2018 and 2024 Editions",
+    "text": "38. A Major Difference Between the 2018 and 2024 Editions\nThe two supplied Chapter 5 readings are not simply revised versions of the same chapter structure.\n\n2018 Chapter 5\nEmphasizes:\n\nsimple probability;\nnormal distributions;\nstandard normal distribution;\nz scores;\nunit normal table;\nlocating probabilities;\nlocating cutoff scores.\n\n\n\n2024 Chapter 5\nExpands probability into:\n\nrelative frequency;\nmultiple-outcome relationships;\nconditional probability;\nBayes’s theorem;\nprobability distributions;\nexpected value;\nvariance of probability distributions;\nbinomial distributions.\n\nThe 2024 edition moves normal distributions and standard-score material elsewhere in the book’s organization.\nFor this Study Guide, both are retained because both were supplied as Week 4 readings."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#conceptual-bridge-to-inferential-statistics",
+    "href": "study-guides/week04-standard-scores.html#conceptual-bridge-to-inferential-statistics",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "39. Conceptual Bridge to Inferential Statistics",
+    "text": "39. Conceptual Bridge to Inferential Statistics\nThese topics connect directly to later inferential statistics.\nProbability allows us to ask:\n\nHow likely is an outcome?\n\nProbability distributions allow us to ask:\n\nHow likely is each possible value?\n\nStandardization allows us to ask:\n\nHow unusual is this score relative to its distribution?\n\nNormal-curve areas allow us to ask:\n\nWhat proportion of scores should fall beyond this point?\n\nLater hypothesis tests build on exactly this logic."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#key-terms",
+    "href": "study-guides/week04-standard-scores.html#key-terms",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "40. Key Terms",
+    "text": "40. Key Terms\n\n\n\n\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nProbability\nLikelihood that an outcome occurs.\n\n\nRandom event\nEvent whose outcome can vary.\n\n\nFixed event\nEvent whose outcome does not vary.\n\n\nSample space\nComplete set of possible outcomes.\n\n\nRelative frequency\nProportion of observations in a category; equivalent to probability in a probability distribution.\n\n\nMutually exclusive\nOutcomes that cannot occur together.\n\n\nIndependent\nOne outcome does not affect the probability of another.\n\n\nComplementary\nOutcomes whose probabilities sum to 1.\n\n\nConditional probability\nProbability of an outcome given that another outcome occurred.\n\n\nBayes’s theorem\nFormula relating conditional and marginal probabilities.\n\n\nRandom variable\nVariable representing possible numerical outcomes of a random process.\n\n\nProbability distribution\nProbabilities associated with all possible outcomes of a random variable.\n\n\nExpected value\nMean or long-term average of a probability distribution.\n\n\nBinomial distribution\nProbability distribution for a variable with two possible outcomes.\n\n\nNormal distribution\nSymmetric bell-shaped theoretical distribution.\n\n\nStandard normal distribution\nNormal distribution with mean 0 and SD 1.\n\n\nz score\nNumber of standard deviations a score lies above or below the mean.\n\n\nz transformation\nFormula converting a raw score to a standard score.\n\n\nUnit normal table\nTable linking z scores to areas/probabilities under the standard normal curve.\n\n\nAsymptotic\nApproaching an axis indefinitely without touching it.\n\n\nStatistical norm\nIn the 2018 text, scores within about 2 SD of the mean in a normal distribution."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#probability-misunderstandings",
+    "href": "study-guides/week04-standard-scores.html#probability-misunderstandings",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "41. Probability Misunderstandings",
+    "text": "41. Probability Misunderstandings\n\n“If there are two possible outcomes, each must have probability .50.”\nNo. Two outcomes can have unequal probabilities.\n\n\n“A probability can be negative.”\nNo.\n\n\n“If two outcomes cannot both occur, they are independent.”\nNo. Mutually exclusive and independent mean different things.\n\n\n“Conditional probability uses the same denominator as ordinary probability.”\nNot necessarily. Conditioning changes the sample space.\n\n\n“Expected value is what must happen next.”\nNo. It is a long-term average, not a prediction of the next single observation."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#normal-distribution-misunderstandings",
+    "href": "study-guides/week04-standard-scores.html#normal-distribution-misunderstandings",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "42. Normal-Distribution Misunderstandings",
+    "text": "42. Normal-Distribution Misunderstandings\n\n“Normal means socially or clinically normal.”\nNo. Here, normal refers to a mathematical distribution.\n\n\n“All real data are exactly normal.”\nNo. The normal distribution is theoretical; empirical data may approximate it.\n\n\n“A z score of −2 means a negative raw score.”\nNo. It means the score is two standard deviations below the mean.\n\n\n“A negative z score means negative probability.”\nNo. Probabilities remain between 0 and 1.\n\n\n“A higher raw score always means better relative performance.”\nNot across different distributions. Relative standing depends on the mean and standard deviation."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-simple-probability",
+    "href": "study-guides/week04-standard-scores.html#practice-simple-probability",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "43. Practice: Simple Probability",
+    "text": "43. Practice: Simple Probability\nA bag contains:\n\n4 red balls;\n3 blue balls;\n3 green balls.\n\nCalculate:\n\n(p())\n(p())\n(p()), assuming colors are mutually exclusive categories\n(p())"
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-relationships-between-outcomes",
+    "href": "study-guides/week04-standard-scores.html#practice-relationships-between-outcomes",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "44. Practice: Relationships Between Outcomes",
+    "text": "44. Practice: Relationships Between Outcomes\nIdentify each relationship:\n\nHeads and tails on a single coin flip.\nHeads on the first and second flip of a fair coin.\nPass and fail when no other result is possible.\nPassing an exam given that a student attended a preparatory course.\n\nUse:\n\nmutually exclusive;\nindependent;\ncomplementary;\nconditional."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-expected-value",
+    "href": "study-guides/week04-standard-scores.html#practice-expected-value",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "45. Practice: Expected Value",
+    "text": "45. Practice: Expected Value\nSuppose:\n\n\n\n(x)\n0\n1\n2\n\n\n\n\n(p(x))\n.20\n.50\n.30\n\n\n\nCalculate:\n\\[\n\\mu=\\sum xp(x).\n\\]\nThen explain why the expected value does not need to be an observed value."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-z-scores",
+    "href": "study-guides/week04-standard-scores.html#practice-z-scores",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "46. Practice: z Scores",
+    "text": "46. Practice: z Scores\nSuppose:\n\\[\nM=50,\\quad SD=10.\n\\]\nCalculate the z score for:\n\n(x=50)\n(x=60)\n(x=35)\n(x=70)\n\nThen interpret each in words."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-raw-scores-from-z-scores",
+    "href": "study-guides/week04-standard-scores.html#practice-raw-scores-from-z-scores",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "47. Practice: Raw Scores From z Scores",
+    "text": "47. Practice: Raw Scores From z Scores\nSuppose:\n\\[\nM=70,\\quad SD=8.\n\\]\nFind the raw score associated with:\n\n(z=0)\n(z=+1)\n(z=-1.5)\n(z=+2)\n\nUse:\n\\[\nx=M+z(SD).\n\\]"
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#practice-areas-under-the-curve",
+    "href": "study-guides/week04-standard-scores.html#practice-areas-under-the-curve",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "48. Practice: Areas Under the Curve",
+    "text": "48. Practice: Areas Under the Curve\nWithout calculating exact values first, decide whether each probability should be:\n\nless than .50;\nequal to .50;\ngreater than .50.\n\n\n(p(z&gt;1.00))\n(p(z&lt;0))\n(p(z&lt;1.00))\n(p(-1&lt;z&lt;1))\n\nThen use a z table if one is available."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#conceptual-self-check",
+    "href": "study-guides/week04-standard-scores.html#conceptual-self-check",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "49. Conceptual Self-Check",
+    "text": "49. Conceptual Self-Check\nBefore moving on, you should be able to explain:\n\nwhat probability measures;\nwhy the sample space matters;\nwhy probabilities range from 0 to 1;\nhow relative frequency connects to probability;\nhow mutually exclusive and independent outcomes differ;\nhow conditional probability changes the sample space;\nwhat Bayes’s theorem does conceptually;\nwhat a probability distribution represents;\nwhat expected value means;\nwhy a normal distribution is useful for probability;\nwhy the normal distribution is theoretical;\nwhat symmetry implies;\nwhy area under the curve corresponds to probability;\nwhat a z score measures;\nwhy standardization is useful;\nhow to convert between raw scores and z scores;\nhow the z table links standard scores to probabilities;\nhow to find a cutoff score from a desired percentile."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#readings",
+    "href": "study-guides/week04-standard-scores.html#readings",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "50. Readings",
+    "text": "50. Readings\n\nRequired readings supplied for Week 4\n\nPrivitera, G. J. (2018), Chapter 5: Probability, Normal Distributions, and z Scores.\nPrivitera, G. J. (2024), Chapter 5: Probability.\n\nAt present, no lecture notes, tutorial, worksheet, or exercise materials have been supplied for Week 4. This guide should therefore be treated as a reading-based version that can be revised once additional course materials become available."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#references",
+    "href": "study-guides/week04-standard-scores.html#references",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "51. References",
+    "text": "51. References\nPrivitera, G. J. (2018). Essential statistics for the behavioral sciences (2nd ed.). SAGE.\nPrivitera, G. J. (2024). Statistics for the behavioral sciences (4th ed.). SAGE."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#week-4-takeaway",
+    "href": "study-guides/week04-standard-scores.html#week-4-takeaway",
+    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "section": "52. Week 4 Takeaway",
+    "text": "52. Week 4 Takeaway\nProbability provides the bridge from describing observed data to reasoning about what is likely or unlikely.\nThe core logic is:\n\nProbability quantifies uncertainty.\n\nThe 2024 reading develops that logic through outcome relationships, conditional probability, probability distributions, expected value, and binomial models.\nThe 2018 reading connects the same logic to the normal distribution and shows how standard scores translate raw observations into a common scale.\nThe most important conceptual move is this:\n\nA raw score becomes much more informative when we know where it falls relative to a distribution.\n\nThat idea—especially through z scores and probability—will become central to inferential statistics in later weeks."
   },
   {
     "objectID": "study-guides/week02-data-types-visualization.html",

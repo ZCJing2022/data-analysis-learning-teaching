@@ -1,55 +1,1333 @@
 ---
-title: "Week 04 — Standard Scores"
+title: "Week 04 — Probability, Normal Distributions, and Standard Scores"
+toc-depth: 2
 ---
 
-## Overview
+# Overview
 
-*To be developed from the supplied lecture notes, tutorials, exercises, and readings.*
+Week 4 moves from descriptive statistics toward the foundations of inferential statistics.
 
-## Learning Objectives
+The central question is:
 
-*To be added.*
+> **How can probability help us describe what outcomes are likely, unlikely, typical, or unusual?**
 
-## Key Concepts
+The two supplied editions of Privitera organize this material differently.
 
-*To be added.*
+- The **2018 second edition** combines introductory probability with the **normal distribution**, the **standard normal distribution**, **z scores**, the **unit normal table**, and the use of z scores to locate probabilities and cutoff scores.
+- The **2024 fourth edition** expands probability itself much more extensively. It covers **relative frequency**, **mutually exclusive, independent, complementary, and conditional outcomes**, **Bayes's theorem**, **probability distributions**, **expected value**, and the **variance and standard deviation of probability distributions**, including the **binomial distribution**.
 
-## How the Concepts Fit Together
+This Study Guide therefore treats the two editions as complementary rather than pretending that they have the same Chapter 5 structure.
 
-*To be added.*
+The broad conceptual sequence is:
 
-## Important Terms
+**Probability**
+
+↓  
+
+**Relative frequency and relationships among outcomes**
+
+↓  
+
+**Probability distributions and expected value**
+
+↓  
+
+**Normal distributions**
+
+↓  
+
+**Standardization with z scores**
+
+↓  
+
+**Using areas under the normal curve to locate probabilities and cutoff scores**
+
+---
+
+# Learning Objectives
+
+By the end of this week, you should be able to:
+
+1. Define probability and explain when probability is useful.
+2. Distinguish a **random event** from a **fixed event**.
+3. Define **sample space** and compute a simple probability.
+4. Explain the relationship between probability and relative frequency.
+5. Distinguish **mutually exclusive**, **independent**, **complementary**, and **conditional** outcomes.
+6. Apply the additive and multiplicative rules in appropriate situations.
+7. Interpret conditional probability notation such as \(p(A\mid B)\).
+8. Explain the logic of Bayes's theorem at an introductory level.
+9. Define a **random variable** and a **probability distribution**.
+10. Explain why probabilities in a probability distribution must sum to 1.
+11. Compute and interpret an **expected value**.
+12. Explain the variance and standard deviation of a probability distribution.
+13. Explain the basic logic of a **binomial distribution**.
+14. Identify the main characteristics of a normal distribution.
+15. Explain the relationship between area under the normal curve and probability.
+16. Define the **standard normal distribution**.
+17. Compute and interpret a **z score**.
+18. Use a unit normal table conceptually to locate areas above, below, or between scores.
+19. Work backward from a probability or percentile to a raw-score cutoff.
+20. Explain how standardization allows scores from different distributions to be compared.
+
+---
+
+# Part I — Foundations of Probability
+
+## 1. What Is Probability?
+
+Probability describes the **likelihood that an outcome will occur**.
+
+In the simplest case:
+
+$$
+p(x)=\frac{f(x)}{\text{sample space}},
+$$
+
+where:
+
+- \(p(x)\) = probability of outcome \(x\);
+- \(f(x)\) = frequency of outcome \(x\);
+- sample space = total number of possible outcomes.
+
+Both editions emphasize that probability is useful when outcomes can vary from one observation to the next (Privitera, 2018, 2024).
+
+### Example: one fair coin
+
+The sample space is:
+
+$$
+\{H,T\}.
+$$
+
+Therefore:
+
+$$
+p(H)=\frac{1}{2}=0.50.
+$$
+
+---
+
+## 2. Random Events and Fixed Events
+
+A **random event** is one for which the observed outcome can vary.
+
+Examples:
+
+- flipping a coin;
+- selecting a person from a population;
+- whether a flight is delayed;
+- whether a participant responds correctly.
+
+A **fixed event** is one for which the outcome does not vary.
+
+Probability is useful for predicting random events because their outcomes are uncertain before observation (Privitera, 2018, 2024).
+
+---
+
+## 3. The Sample Space
+
+The **sample space** is the complete set of possible outcomes.
+
+For one coin:
+
+$$
+S=\{H,T\}.
+$$
+
+For two fair coins:
+
+$$
+S=\{HH,HT,TH,TT\}.
+$$
+
+Thus:
+
+$$
+|S|=4.
+$$
+
+The probability of two heads is:
+
+$$
+p(HH)=\frac{1}{4}=0.25.
+$$
+
+A common mistake is to count only the outcomes of interest rather than all possible outcomes.
+
+---
+
+## 4. Basic Rules of Probability
+
+A valid probability must satisfy:
+
+$$
+0\le p\le1.
+$$
+
+Probability can be expressed as:
+
+- a fraction;
+- a decimal;
+- a percentage;
+- a proportion.
+
+Examples:
+
+$$
+\frac{1}{2}=0.50=50\%.
+$$
+
+A probability cannot be negative and cannot exceed 1 (Privitera, 2018, 2024).
+
+---
+
+## 5. Probability and Relative Frequency
+
+The 2024 edition makes the connection especially explicit:
+
+> A relative frequency is the probability of an outcome's occurrence when frequencies are distributed across all possible outcomes (Privitera, 2024).
+
+For two fair coins:
+
+| Outcome | \(f(x)\) | \(p(x)\) |
+|---|---:|---:|
+| HH | 1 | .25 |
+| HT or TH | 2 | .50 |
+| TT | 1 | .25 |
+
+The frequencies sum to the sample space:
+
+$$
+1+2+1=4.
+$$
+
+The probabilities sum to:
+
+$$
+0.25+0.50+0.25=1.00.
+$$
+
+This connection links Week 4 directly back to the frequency distributions introduced earlier in the course.
+
+---
+
+# Part II — Relationships Among Outcomes
+
+## 6. Mutually Exclusive Outcomes
+
+Two outcomes are **mutually exclusive** when they cannot occur together.
+
+For one coin flip, heads and tails are mutually exclusive.
+
+Therefore:
+
+$$
+p(H\cap T)=0.
+$$
+
+If two outcomes are mutually exclusive, the probability of either one occurring is found with the additive rule:
+
+$$
+p(A\cup B)=p(A)+p(B).
+$$
+
+This rule applies only when the outcomes cannot overlap (Privitera, 2024).
+
+---
+
+## 7. Independent Outcomes
+
+Two outcomes are **independent** when the occurrence of one does not change the probability of the other.
+
+For two independent outcomes:
+
+$$
+p(A\cap B)=p(A)p(B).
+$$
+
+Example:
+
+If:
+
+$$
+p(A)=0.80
+$$
+
+and:
+
+$$
+p(B)=0.80,
+$$
+
+then:
+
+$$
+p(A\cap B)=0.80(0.80)=0.64.
+$$
+
+The 2024 text uses this logic to show how repeated independent selections combine multiplicatively.
+
+---
+
+## 8. Complementary Outcomes
+
+Two outcomes are **complementary** when together they exhaust all possible outcomes.
+
+Thus:
+
+$$
+p(A)+p(B)=1.
+$$
+
+Therefore:
+
+$$
+p(A)=1-p(B).
+$$
+
+Examples include:
+
+- pass / fail;
+- win / lose, assuming no tie;
+- heads / tails.
+
+Complementary probabilities are often useful when it is easier to calculate the probability of the opposite outcome.
+
+---
+
+## 9. Conditional Outcomes
+
+Two outcomes are **conditional** when the probability of one outcome depends on another outcome.
+
+Conditional probability is written:
+
+$$
+p(A\mid B),
+$$
+
+read as:
+
+> the probability of \(A\), **given that** \(B\) occurred.
+
+The basic conditional-probability formula is:
+
+$$
+p(A\mid B)
+=
+\frac{p(A\cap B)}{p(B)}.
+$$
+
+The key conceptual change is the **sample space**.
+
+Once we condition on \(B\), we no longer consider all cases—only the cases for which \(B\) is true (Privitera, 2024).
+
+---
+
+## 10. Worked Conditional-Probability Example
+
+The 2024 edition uses a hypothetical table of 200 mothers classified by hospital type and insurance status.
+
+For women giving birth in public hospitals:
+
+- 130 gave birth in public hospitals;
+- 80 of those were uninsured.
+
+Therefore:
+
+$$
+p(\text{Uninsured}\mid \text{Public})
+=
+\frac{80}{130}
+\approx0.62.
+$$
+
+This differs from:
+
+$$
+p(\text{Uninsured}\cap \text{Public})
+=
+\frac{80}{200}
+=
+0.40.
+$$
+
+The first is conditional because the sample space has been restricted to the public-hospital group.
+
+---
+
+## 11. Bayes's Theorem
+
+The 2024 edition extends conditional probability with **Bayes's theorem**:
+
+$$
+p(A\mid B)
+=
+\frac{p(B\mid A)p(A)}{p(B)}.
+$$
+
+Bayes's theorem relates:
+
+- a conditional probability;
+- the reverse conditional probability;
+- the marginal probability of \(A\);
+- the marginal probability of \(B\).
+
+At this stage, the main goal is conceptual:
+
+> Bayes's theorem updates the probability of one outcome after taking another observed condition into account.
+
+This becomes especially important later in statistical inference (Privitera, 2024).
+
+---
+
+# Part III — Probability Distributions and Expected Value
+
+## 12. Random Variables
+
+A **random variable** represents the possible numerical outcomes of a random process.
+
+Examples:
+
+- number of errors on a test;
+- number of symptoms;
+- number of items remembered;
+- number of successful trials.
+
+A random variable is not a single observed value. It represents the set of possible outcomes that could occur (Privitera, 2024).
+
+---
+
+## 13. Probability Distributions
+
+A **probability distribution** lists the possible outcomes of a random variable and the probability of each outcome.
+
+A valid probability distribution satisfies:
+
+$$
+0\le p(x)\le1
+$$
+
+for every outcome, and:
+
+$$
+\sum p(x)=1.
+$$
+
+Example:
+
+| \(x\) | 1 | 2 | 3 | 4 | 5 |
+|---:|---:|---:|---:|---:|---:|
+| \(p(x)\) | .250 | .350 | .175 | .125 | .100 |
+
+Check:
+
+$$
+.250+.350+.175+.125+.100=1.00.
+$$
+
+---
+
+## 14. Expected Value
+
+The **expected value** is the mean of a probability distribution.
+
+It is:
+
+$$
+\mu=\sum xp(x).
+$$
+
+For each possible outcome:
+
+1. multiply the outcome value by its probability;
+2. sum the products.
+
+The expected value is sometimes called the **long-term mean** because it describes the average outcome expected across a very large number of repetitions (Privitera, 2024).
+
+---
+
+## 15. Expected Value Example
+
+Suppose the probabilities of forgetting 0, 1, 2, or 3 items are:
+
+| Items forgotten | Probability |
+|---:|---:|
+| 0 | .24 |
+| 1 | .16 |
+| 2 | .40 |
+| 3 | .20 |
+
+Then:
+
+$$
+\mu
+=
+0(.24)+1(.16)+2(.40)+3(.20).
+$$
+
+So:
+
+$$
+\mu=1.56.
+$$
+
+The interpretation is not that a person can literally forget 1.56 items.
+
+It means that across many repetitions, the long-term average would approach 1.56 items (Privitera, 2024).
+
+---
+
+## 16. Variance of a Probability Distribution
+
+The 2024 edition extends Week 3's variance idea to probability distributions.
+
+The definitional formula is:
+
+$$
+\sigma^2
+=
+\sum (x-\mu)^2p(x).
+$$
+
+This is a probability-weighted version of squared deviation from the mean.
+
+The standard deviation is:
+
+$$
+\sigma
+=
+\sqrt{\sigma^2}.
+$$
+
+Thus probability distributions also have:
+
+- a center;
+- a spread.
+
+---
+
+## 17. Binomial Probability Distributions
+
+A **binomial distribution** applies when the random variable has two possible outcomes.
+
+Examples:
+
+- success / failure;
+- yes / no;
+- remembered / forgotten;
+- heads / tails.
+
+If:
+
+- \(n\) = number of trials;
+- \(p\) = probability of the outcome of interest;
+- \(q=1-p\),
+
+then:
+
+$$
+\mu=np,
+$$
+
+$$
+\sigma^2=npq,
+$$
+
+and:
+
+$$
+\sigma=\sqrt{npq}.
+$$
+
+The 2024 edition uses these formulas as shortcuts for two-outcome probability distributions.
+
+---
+
+# Part IV — Normal Distributions
+
+## 18. Why the Normal Distribution Matters
+
+The 2018 edition connects probability directly to the normal distribution.
+
+Many behavioral variables are treated as approximately normal because:
+
+- most observations cluster near the center;
+- relatively few observations occur at the extremes.
+
+This allows probability to be represented as **area under a smooth curve** (Privitera, 2018).
+
+The normal distribution is also called:
+
+- Gaussian;
+- bell-shaped;
+- symmetrical.
+
+---
+
+## 19. Eight Characteristics of the Normal Distribution
+
+The 2018 edition identifies eight characteristics.
+
+1. The normal distribution is mathematically defined.
+2. It is theoretical.
+3. Mean, median, and mode are located together at the 50th percentile.
+4. It is symmetrical.
+5. The mean can take any value.
+6. The standard deviation can take any positive value.
+7. Total area under the curve equals 1.00.
+8. The tails are asymptotic.
+
+These characteristics explain why the normal curve is useful for probability calculations (Privitera, 2018).
+
+---
+
+## 20. Symmetry
+
+In a normal distribution:
+
+$$
+M=Md=Mo.
+$$
+
+Half the area lies below the mean:
+
+$$
+0.50,
+$$
+
+and half lies above:
+
+$$
+0.50.
+$$
+
+Because the curve is symmetrical, equal distances above and below the mean correspond to equal areas.
+
+This symmetry greatly simplifies probability calculations.
+
+---
+
+## 21. Area Under the Curve
+
+For a normal distribution:
+
+$$
+\text{total area}=1.00.
+$$
+
+Thus area corresponds directly to probability.
+
+For example:
+
+$$
+0.50
+$$
+
+of the area lies on either side of the mean.
+
+The 2018 text connects this to the empirical rule introduced earlier:
+
+- about 68% within 1 SD;
+- about 95% within 2 SD;
+- about 99.7% within 3 SD.
+
+---
+
+## 22. Asymptotic Tails
+
+The tails of a normal curve approach the horizontal axis but never touch it.
+
+This means that:
+
+- extremely unusual scores remain theoretically possible;
+- probability becomes very small in the tails;
+- the curve extends indefinitely in both directions.
+
+---
+
+## 23. The Statistical Norm
+
+The 2018 edition introduces the idea of the **statistical norm**.
+
+Approximately 95% of normally distributed scores lie within:
+
+$$
+\pm2SD
+$$
+
+of the mean.
+
+Scores farther than roughly 2 SD from the mean are statistically less common.
+
+This is a statistical definition of unusualness, not a judgment about whether a person or behavior is socially, clinically, or morally "normal" (Privitera, 2018).
+
+---
+
+# Part V — Standard Normal Distribution and z Scores
+
+## 24. Why Standardize?
+
+Normal distributions can have different means and standard deviations.
+
+For example:
+
+- Exam A: \(M=70,\ SD=5\)
+- Exam B: \(M=80,\ SD=10\)
+
+A raw score of 85 does not have the same relative meaning in both distributions.
+
+Standardization solves this problem by expressing raw scores in **standard deviation units**.
+
+---
+
+## 25. The Standard Normal Distribution
+
+The **standard normal distribution** has:
+
+$$
+\mu=0
+$$
+
+and:
+
+$$
+\sigma=1.
+$$
+
+Scores on the horizontal axis are expressed as **z scores**.
+
+A z score tells us how many standard deviations a score lies above or below the mean (Privitera, 2018).
+
+---
+
+## 26. The z Transformation
+
+For a population:
+
+$$
+z=\frac{x-\mu}{\sigma}.
+$$
+
+For a sample:
+
+$$
+z=\frac{x-M}{SD}.
+$$
+
+Interpretation:
+
+- \(z=0\): at the mean;
+- \(z=+1\): one SD above the mean;
+- \(z=-1\): one SD below the mean;
+- \(z=+2\): two SD above the mean.
+
+The sign indicates direction; the magnitude indicates distance.
+
+---
+
+## 27. Worked z-Score Example
+
+Suppose:
+
+$$
+M=12,\quad SD=2,\quad x=14.
+$$
+
+Then:
+
+$$
+z
+=
+\frac{14-12}{2}
+=
+1.00.
+$$
+
+So a raw score of 14 is:
+
+> one standard deviation above the mean.
+
+This is the central meaning of a z score (Privitera, 2018).
+
+---
+
+## 28. z Scores Preserve Relative Position
+
+Suppose two people have different raw scores in different distributions.
+
+A z score allows us to compare how unusual each score is **relative to its own distribution**.
+
+This is why standard scores are useful when:
+
+- variables use different measurement units;
+- different tests have different means and standard deviations;
+- researchers want a common scale.
+
+---
+
+# Part VI — Using the Unit Normal Table
+
+## 29. What the z Table Represents
+
+The 2018 edition introduces the **unit normal table**, or **z table**.
+
+The table links z scores to areas under the standard normal curve.
+
+In the text's table:
+
+- Column A lists z scores;
+- Column B lists area between the mean and z;
+- Column C lists area from z toward the tail.
+
+Because the normal curve is symmetric, areas for positive and negative z scores mirror one another.
+
+---
+
+## 30. Two Steps for Locating a Probability
+
+To locate the probability of a raw score in a normal distribution:
+
+### Step 1
+
+Convert the raw score to a z score.
+
+### Step 2
+
+Use the z table to find the relevant area.
+
+This general strategy applies whether the question asks for a probability:
+
+- above a score;
+- below a score;
+- between two scores (Privitera, 2018).
+
+---
+
+## 31. Probability Above a Score
+
+Suppose:
+
+$$
+M=8,\quad SD=2,\quad x=12.
+$$
+
+Then:
+
+$$
+z=\frac{12-8}{2}=2.
+$$
+
+The tail area beyond:
+
+$$
+z=2.00
+$$
+
+is approximately:
+
+$$
+p=.0228.
+$$
+
+So the probability of a score greater than 12 is about 2.28% (Privitera, 2018).
+
+---
+
+## 32. Probability Below a Score
+
+Suppose a raw score converts to:
+
+$$
+z=0.50.
+$$
+
+The area between the mean and \(z=0.50\) is:
+
+$$
+0.1915.
+$$
+
+Because 0.5000 lies below the mean:
+
+$$
+p(X<x)
+=
+0.5000+0.1915
+=
+0.6915.
+$$
+
+The diagram on page 29 of the 2018 chapter visually shows this logic: the shaded region includes the entire lower half of the curve plus the area between the mean and \(z=.50\).
+
+---
+
+## 33. Probability in a Tail Below the Mean
+
+Suppose:
+
+$$
+z=-0.92.
+$$
+
+By symmetry, use the same tail area as:
+
+$$
+z=+0.92.
+$$
+
+The 2018 example gives:
+
+$$
+p=.1788.
+$$
+
+The negative sign identifies which side of the mean the score lies on; it does not imply a negative probability.
+
+---
+
+## 34. Probability Between Two Scores
+
+Suppose one score is:
+
+$$
+z=-1
+$$
+
+and the other is:
+
+$$
+z=+1.
+$$
+
+The area between the mean and \(z=1\) is:
+
+$$
+0.3413.
+$$
+
+By symmetry:
+
+$$
+0.3413+0.3413=0.6826.
+$$
+
+Thus approximately 68.26% of scores lie between \(z=-1\) and \(z=+1\).
+
+This matches the familiar empirical-rule approximation.
+
+---
+
+# Part VII — Working Backward From Probability to Scores
+
+## 35. From Percentile to z Score
+
+Sometimes the probability is known and the raw cutoff is unknown.
+
+For example:
+
+> What raw score defines the top 10%?
+
+The procedure reverses the earlier steps.
+
+### Step 1
+
+Use the z table to identify the z score for the target tail probability.
+
+### Step 2
+
+Convert the z score back into a raw score.
+
+---
+
+## 36. Solving for a Raw Score
+
+Starting with:
+
+$$
+z=\frac{x-M}{SD},
+$$
+
+solve for \(x\):
+
+$$
+x=M+z(SD).
+$$
+
+If:
+
+$$
+M=100,\quad SD=15,\quad z=1.28,
+$$
+
+then:
+
+$$
+x
+=
+100+1.28(15)
+=
+119.2.
+$$
+
+Thus approximately 119.2 is the cutoff for the top 10% in that distribution (Privitera, 2018).
+
+---
+
+## 37. Bottom-Tail Cutoffs
+
+For a bottom-tail cutoff, the z score is negative.
+
+If the bottom 25% corresponds approximately to:
+
+$$
+z=-0.675,
+$$
+
+and:
+
+$$
+M=100,\quad SD=15,
+$$
+
+then:
+
+$$
+x
+=
+100+(-0.675)(15)
+=
+89.875.
+$$
+
+Rounded:
+
+$$
+x\approx89.88.
+$$
+
+The sign of z tells us whether the cutoff lies above or below the mean.
+
+---
+
+# Part VIII — How the Two Editions Fit Together
+
+## 38. A Major Difference Between the 2018 and 2024 Editions
+
+The two supplied Chapter 5 readings are not simply revised versions of the same chapter structure.
+
+### 2018 Chapter 5
+
+Emphasizes:
+
+- simple probability;
+- normal distributions;
+- standard normal distribution;
+- z scores;
+- unit normal table;
+- locating probabilities;
+- locating cutoff scores.
+
+### 2024 Chapter 5
+
+Expands probability into:
+
+- relative frequency;
+- multiple-outcome relationships;
+- conditional probability;
+- Bayes's theorem;
+- probability distributions;
+- expected value;
+- variance of probability distributions;
+- binomial distributions.
+
+The 2024 edition moves normal distributions and standard-score material elsewhere in the book's organization.
+
+For this Study Guide, both are retained because both were supplied as Week 4 readings.
+
+---
+
+## 39. Conceptual Bridge to Inferential Statistics
+
+These topics connect directly to later inferential statistics.
+
+Probability allows us to ask:
+
+> How likely is an outcome?
+
+Probability distributions allow us to ask:
+
+> How likely is each possible value?
+
+Standardization allows us to ask:
+
+> How unusual is this score relative to its distribution?
+
+Normal-curve areas allow us to ask:
+
+> What proportion of scores should fall beyond this point?
+
+Later hypothesis tests build on exactly this logic.
+
+---
+
+# Part IX — Important Terms
+
+## 40. Key Terms
 
 | Term | Plain-language explanation |
 |---|---|
-| *To be added* | |
+| **Probability** | Likelihood that an outcome occurs. |
+| **Random event** | Event whose outcome can vary. |
+| **Fixed event** | Event whose outcome does not vary. |
+| **Sample space** | Complete set of possible outcomes. |
+| **Relative frequency** | Proportion of observations in a category; equivalent to probability in a probability distribution. |
+| **Mutually exclusive** | Outcomes that cannot occur together. |
+| **Independent** | One outcome does not affect the probability of another. |
+| **Complementary** | Outcomes whose probabilities sum to 1. |
+| **Conditional probability** | Probability of an outcome given that another outcome occurred. |
+| **Bayes's theorem** | Formula relating conditional and marginal probabilities. |
+| **Random variable** | Variable representing possible numerical outcomes of a random process. |
+| **Probability distribution** | Probabilities associated with all possible outcomes of a random variable. |
+| **Expected value** | Mean or long-term average of a probability distribution. |
+| **Binomial distribution** | Probability distribution for a variable with two possible outcomes. |
+| **Normal distribution** | Symmetric bell-shaped theoretical distribution. |
+| **Standard normal distribution** | Normal distribution with mean 0 and SD 1. |
+| **z score** | Number of standard deviations a score lies above or below the mean. |
+| **z transformation** | Formula converting a raw score to a standard score. |
+| **Unit normal table** | Table linking z scores to areas/probabilities under the standard normal curve. |
+| **Asymptotic** | Approaching an axis indefinitely without touching it. |
+| **Statistical norm** | In the 2018 text, scores within about 2 SD of the mean in a normal distribution. |
 
-## Worked Examples
+---
 
-*To be added.*
+# Part X — Common Misunderstandings
 
-## Common Misunderstandings
+## 41. Probability Misunderstandings
 
-*To be added.*
+### "If there are two possible outcomes, each must have probability .50."
 
-## Tutorial Preparation
+No. Two outcomes can have unequal probabilities.
 
-*To be added.*
+### "A probability can be negative."
 
-## Practice Questions
+No.
 
-### Conceptual Questions
+### "If two outcomes cannot both occur, they are independent."
 
-*To be added.*
+No. Mutually exclusive and independent mean different things.
 
-### Applied Questions
+### "Conditional probability uses the same denominator as ordinary probability."
 
-*To be added.*
+Not necessarily. Conditioning changes the sample space.
 
-## What You Should Be Able to Explain
+### "Expected value is what must happen next."
 
-*To be added.*
+No. It is a long-term average, not a prediction of the next single observation.
 
-## Reading
+---
 
-Privitera (2018), Chapter 5
+## 42. Normal-Distribution Misunderstandings
+
+### "Normal means socially or clinically normal."
+
+No. Here, normal refers to a mathematical distribution.
+
+### "All real data are exactly normal."
+
+No. The normal distribution is theoretical; empirical data may approximate it.
+
+### "A z score of −2 means a negative raw score."
+
+No. It means the score is two standard deviations below the mean.
+
+### "A negative z score means negative probability."
+
+No. Probabilities remain between 0 and 1.
+
+### "A higher raw score always means better relative performance."
+
+Not across different distributions. Relative standing depends on the mean and standard deviation.
+
+---
+
+# Part XI — Practice and Review
+
+## 43. Practice: Simple Probability
+
+A bag contains:
+
+- 4 red balls;
+- 3 blue balls;
+- 3 green balls.
+
+Calculate:
+
+1. \(p(\text{red})\)
+2. \(p(\text{blue})\)
+3. \(p(\text{red or blue})\), assuming colors are mutually exclusive categories
+4. \(p(\text{not green})\)
+
+---
+
+## 44. Practice: Relationships Between Outcomes
+
+Identify each relationship:
+
+1. Heads and tails on a single coin flip.
+2. Heads on the first and second flip of a fair coin.
+3. Pass and fail when no other result is possible.
+4. Passing an exam given that a student attended a preparatory course.
+
+Use:
+
+- mutually exclusive;
+- independent;
+- complementary;
+- conditional.
+
+---
+
+## 45. Practice: Expected Value
+
+Suppose:
+
+| \(x\) | 0 | 1 | 2 |
+|---:|---:|---:|---:|
+| \(p(x)\) | .20 | .50 | .30 |
+
+Calculate:
+
+$$
+\mu=\sum xp(x).
+$$
+
+Then explain why the expected value does not need to be an observed value.
+
+---
+
+## 46. Practice: z Scores
+
+Suppose:
+
+$$
+M=50,\quad SD=10.
+$$
+
+Calculate the z score for:
+
+1. \(x=50\)
+2. \(x=60\)
+3. \(x=35\)
+4. \(x=70\)
+
+Then interpret each in words.
+
+---
+
+## 47. Practice: Raw Scores From z Scores
+
+Suppose:
+
+$$
+M=70,\quad SD=8.
+$$
+
+Find the raw score associated with:
+
+1. \(z=0\)
+2. \(z=+1\)
+3. \(z=-1.5\)
+4. \(z=+2\)
+
+Use:
+
+$$
+x=M+z(SD).
+$$
+
+---
+
+## 48. Practice: Areas Under the Curve
+
+Without calculating exact values first, decide whether each probability should be:
+
+- less than .50;
+- equal to .50;
+- greater than .50.
+
+1. \(p(z>1.00)\)
+2. \(p(z<0)\)
+3. \(p(z<1.00)\)
+4. \(p(-1<z<1)\)
+
+Then use a z table if one is available.
+
+---
+
+# Part XII — What You Should Be Able to Explain
+
+## 49. Conceptual Self-Check
+
+Before moving on, you should be able to explain:
+
+- what probability measures;
+- why the sample space matters;
+- why probabilities range from 0 to 1;
+- how relative frequency connects to probability;
+- how mutually exclusive and independent outcomes differ;
+- how conditional probability changes the sample space;
+- what Bayes's theorem does conceptually;
+- what a probability distribution represents;
+- what expected value means;
+- why a normal distribution is useful for probability;
+- why the normal distribution is theoretical;
+- what symmetry implies;
+- why area under the curve corresponds to probability;
+- what a z score measures;
+- why standardization is useful;
+- how to convert between raw scores and z scores;
+- how the z table links standard scores to probabilities;
+- how to find a cutoff score from a desired percentile.
+
+---
+
+# Part XIII — Readings and References
+
+## 50. Readings
+
+### Required readings supplied for Week 4
+
+- Privitera, G. J. (2018), Chapter 5: *Probability, Normal Distributions, and z Scores*.
+- Privitera, G. J. (2024), Chapter 5: *Probability*.
+
+At present, no lecture notes, tutorial, worksheet, or exercise materials have been supplied for Week 4. This guide should therefore be treated as a **reading-based version** that can be revised once additional course materials become available.
+
+---
+
+## 51. References
+
+Privitera, G. J. (2018). *Essential statistics for the behavioral sciences* (2nd ed.). SAGE.
+
+Privitera, G. J. (2024). *Statistics for the behavioral sciences* (4th ed.). SAGE.
+
+---
+
+# Part XIV — Week 4 Takeaway
+
+## 52. Week 4 Takeaway
+
+Probability provides the bridge from describing observed data to reasoning about what is **likely** or **unlikely**.
+
+The core logic is:
+
+> **Probability quantifies uncertainty.**
+
+The 2024 reading develops that logic through outcome relationships, conditional probability, probability distributions, expected value, and binomial models.
+
+The 2018 reading connects the same logic to the normal distribution and shows how standard scores translate raw observations into a common scale.
+
+The most important conceptual move is this:
+
+> A raw score becomes much more informative when we know where it falls **relative to a distribution**.
+
+That idea—especially through z scores and probability—will become central to inferential statistics in later weeks.
