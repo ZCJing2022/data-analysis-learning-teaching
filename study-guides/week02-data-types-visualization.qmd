@@ -1,0 +1,55 @@
+---
+title: "Week 02 — Data Types and Visualization"
+---
+
+## Overview
+
+*To be developed from the supplied lecture notes, tutorials, exercises, and readings.*
+
+## Learning Objectives
+
+*To be added.*
+
+## Key Concepts
+
+*To be added.*
+
+## How the Concepts Fit Together
+
+*To be added.*
+
+## Important Terms
+
+| Term | Plain-language explanation |
+|---|---|
+| *To be added* | |
+
+## Worked Examples
+
+*To be added.*
+
+## Common Misunderstandings
+
+*To be added.*
+
+## Tutorial Preparation
+
+*To be added.*
+
+## Practice Questions
+
+### Conceptual Questions
+
+*To be added.*
+
+### Applied Questions
+
+*To be added.*
+
+## What You Should Be Able to Explain
+
+*To be added.*
+
+## Reading
+
+Privitera (2018), Chapters 2 and 3

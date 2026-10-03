@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Data Analysis: Learning & Teaching"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: syllabus.qmd
+        text: Syllabus
+      - href: study-guides/index.qmd
+        text: Study Guides
+      - href: assignments/index.qmd
+        text: Assignments
+      - href: resources/index.qmd
+        text: Resources
+  page-footer:
+    center: "Data Analysis: Learning & Teaching"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    smooth-scroll: true
+
+execute:
+  freeze: auto

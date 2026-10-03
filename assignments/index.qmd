@@ -1,0 +1,8 @@
+---
+title: "Assignments"
+---
+
+The course includes two assignments. Detailed instructions can be added when the assignment sheets are available.
+
+- [Assignment 1](assignment01.qmd) — 10%, due October 9, 2026
+- [Assignment 2](assignment02.qmd) — 15%, due November 27, 2026

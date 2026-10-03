@@ -1,0 +1,20 @@
+---
+title: "Data Analysis: Learning & Teaching"
+---
+
+## About this repository
+
+This repository supports learning and teaching introductory data analysis in psychology. It is designed as a structured resource for reviewing statistical concepts, preparing tutorials, and connecting lectures, readings, exercises, and assignments.
+
+The course emphasizes conceptual understanding: not simply how to perform a statistical procedure, but how to recognize when a method is appropriate, what assumptions it makes, and how results should be interpreted.
+
+## Repository contents
+
+- **Syllabus** — an abbreviated overview of the course topics, readings, assignments, and schedule.
+- **Study Guides** — one guide for each major course subject.
+- **Assignments** — assignment information and preparation materials.
+- **Resources** — required and supplementary references.
+
+## Study Guide workflow
+
+Each Study Guide will be developed from the materials supplied for that week, including lecture notes, tutorials, exercises, and readings. These source materials will remain the primary basis for the guide.

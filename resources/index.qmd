@@ -1,0 +1,12 @@
+---
+title: "Resources"
+---
+
+## Required Text
+
+Privitera, G. (2018). *Essential Statistics for the Behavioral Sciences* (2nd ed.). Sage Publishing.
+
+## Supplementary Resources
+
+- Lane, D. M. et al. (n.d.). *OnlineStatBook*. A free online statistics resource with interactive applets and videos.
+- Gravetter, F. G., Wallnau, L. B., Forzano, L. B., & Witnauer, J. E. (2021). *Essentials of Statistics for the Behavioral Sciences* (10th ed.). Cengage.

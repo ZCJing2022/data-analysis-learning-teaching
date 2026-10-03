@@ -1,0 +1,51 @@
+---
+title: "Abbreviated Syllabus"
+---
+
+## Course Description
+
+Understanding statistics is vitally important for work in Psychology. Data analytic techniques form the bedrock for many avenues of scientific research, and understanding their theory implies knowing when a particular approach is appropriate and, more critically, when it is not.
+
+In *Introduction to Data Analysis in Psychology*, students gain a foundation for conducting research, interpreting results, and understanding more complex statistical models used in psychology.
+
+## Required Text
+
+Privitera, G. (2018). *Essential Statistics for the Behavioral Sciences* (2nd ed.). Sage Publishing.
+
+The course focuses on conceptual understanding over computation. Active participation, tutorial work, exercises, worksheets, assignments, and exams are used to support cumulative learning.
+
+## Course Evaluation
+
+| Component | Weight |
+|---|---:|
+| Assignment 1 | 10% |
+| Midterm Exam | 30% |
+| Assignment 2 | 15% |
+| Final Exam | 35% |
+| Tutorial Citizenship | 10% |
+
+## Tentative Course Schedule
+
+| Date | Topic | Reading | Tutorial |
+|---|---|---|:---:|
+| 2026-09-14 | Course Introduction and Basic Concepts | Chapter 1 | Yes |
+| 2026-09-21 | Data Types and Visualization | Chapters 2 and 3 | Yes |
+| 2026-09-28 | Measures of Central Tendency and Variability | Chapter 4 | Yes |
+| 2026-10-05 | Standard Scores | Chapter 5 | Yes |
+| 2026-10-09 | Assignment 1 Due (10%) | — | — |
+| 2026-10-12 | Thanksgiving — No Class/Labs | — | No |
+| 2026-10-19 | Probability and the Central Limit Theorem | Chapter 6 | Yes |
+| 2026-10-26 | Hypothesis Testing | Chapter 7 | Yes |
+| 2026-11-02 | Midterm (30%) | — | No |
+| 2026-11-09 | t-tests: One-Sample Tests; Independent Measures | Chapters 8 and 9 | Yes |
+| 2026-11-16 | t-tests: Dependent Measures and ANOVA | Chapters 10 and 11 | Yes |
+| 2026-11-23 | Introduction to Correlation | Chapter 13 | Yes |
+| 2026-11-27 | Assignment 2 Due (15%) | — | — |
+| 2026-11-30 | Introduction to Regression | Chapter 13 | Yes |
+| 2026-12-07 | Categorical Data Analysis / Course Wrap-Up | Chapter 14 | Yes |
+| 2026-12-09 to 2026-12-20 | Final Exam (35%; cumulative) | — | No |
+
+## Supplementary Resources
+
+- Lane, D. M. et al. (n.d.). *OnlineStatBook*. Free online resource with interactive applets and videos.
+- Gravetter, F. G., Wallnau, L. B., Forzano, L. B., & Witnauer, J. E. (2021). *Essentials of Statistics for the Behavioral Sciences* (10th ed.). Cengage.

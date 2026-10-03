@@ -1,0 +1,17 @@
+---
+title: "Study Guides"
+---
+
+The Study Guides are organized by major course subject. Each guide will be developed from the lecture notes, tutorials, exercises, and readings supplied for that subject.
+
+1. [Week 01 — Course Introduction and Basic Concepts](week01-basic-concepts.qmd)
+2. [Week 02 — Data Types and Visualization](week02-data-types-visualization.qmd)
+3. [Week 03 — Measures of Central Tendency and Variability](week03-central-tendency-variability.qmd)
+4. [Week 04 — Standard Scores](week04-standard-scores.qmd)
+5. [Week 05 — Probability and the Central Limit Theorem](week05-probability-clt.qmd)
+6. [Week 06 — Hypothesis Testing](week06-hypothesis-testing.qmd)
+7. [Week 07 — t-tests: One-Sample and Independent Measures](week07-t-tests-independent.qmd)
+8. [Week 08 — t-tests: Dependent Measures and ANOVA](week08-t-tests-dependent-anova.qmd)
+9. [Week 09 — Introduction to Correlation](week09-correlation.qmd)
+10. [Week 10 — Introduction to Regression](week10-regression.qmd)
+11. [Week 11 — Categorical Data Analysis / Course Wrap-Up](week11-categorical-data.qmd)
