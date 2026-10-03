@@ -4,3 +4,4 @@ _site/
 **/*.quarto_ipynb
 /.quarto/
 downloads/
+*.baiduyun.uploading.cfg
