@@ -35,10 +35,10 @@ Assignment 1 must be completed independently. Generative AI may not be used to p
 1. Translate each expression into words before calculating.
 2. Identify exactly what is inside the summation sign.
 3. Follow BEDMAS/PEDMAS.
-4. Keep (x_i) and (y_i) paired by their common index.
-5. Distinguish ((\sum X)^2) from (\sum X^2): one sums first and then squares; the other squares each observation first and then sums.
-6. For (\sum(x_i-y_i)) or (\sum(x_iy_i)), work row by row before adding.
-7. For ((\sum x_i)(\sum y_i)), calculate the two sums separately and multiply only at the end.
+4. Keep $x_i$ and $y_i$ paired by their common index.
+5. Distinguish $(\sum X)^2$ from $\sum X^2$: one sums first and then squares; the other squares each observation first and then sums.
+6. For $\sum(x_i-y_i)$ or $\sum(x_iy_i)$, work row by row before adding.
+7. For $(\sum x_i)(\sum y_i)$, calculate the two sums separately and multiply only at the end.
 8. A constant inside a summation is applied once for every included observation.
 
 # Question 2 — Adding a Constant to Every Score
@@ -48,11 +48,11 @@ Assignment 1 must be completed independently. Generative AI may not be used to p
 - [Week 03 §15 — How the Mean Changes](../study-guides/week03-central-tendency-variability.qmd#how-the-mean-changes)
 - [Week 03 §33 — What Happens When Scores Are Transformed?](../study-guides/week03-central-tendency-variability.qmd#what-happens-when-scores-are-transformed)
 
-Represent the transformation as (Y_i=X_i+c). Consider the mean and standard deviation separately.
+Represent the transformation as $Y_i=X_i+c$. Consider the mean and standard deviation separately.
 
 For the mean, ask what adding the same constant to every observation does to the average.
 
-For the standard deviation, compare the deviation (X_i-M_X) with ((X_i+c)-(M_X+c)). Use that comparison to explain what happens to the spread.
+For the standard deviation, compare the deviation $X_i-M_X$ with $(X_i+c)-(M_X+c)$. Use that comparison to explain what happens to the spread.
 
 # Question 3 — Research Design and Causation
 
@@ -112,7 +112,7 @@ Classify **film rating** and **year** separately. Ask whether each variable conv
 - [Week 02 §12 — Ungrouped Frequency Distributions](../study-guides/week02-data-types-visualization.qmd#ungrouped-frequency-distributions)
 - [Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values](../study-guides/week02-data-types-visualization.qmd#frequency-proportion-percentage-and-cumulative-values)
 
-Sum each rating column across all years, then add the four rating totals to obtain the overall (n). Check the result by confirming that summing the yearly totals gives the same grand total.
+Sum each rating column across all years, then add the four rating totals to obtain the overall $n$. Check the result by confirming that summing the yearly totals gives the same grand total.
 
 ## 8c — Percentages
 
@@ -120,17 +120,17 @@ Review [Week 02 §13](../study-guides/week02-data-types-visualization.qmd#freque
 
 For each rating, calculate
 
-[
+$
 p=\frac{f}{n}
-]
+$
 
 and then
 
-[
+$
 \%=p\times100.
-]
+$
 
-The four percentages should total approximately (100%), allowing for rounding.
+The four percentages should total approximately $100\%$, allowing for rounding.
 
 ## 8d — Visualization
 
@@ -175,11 +175,11 @@ Keep the two groups separate throughout the calculations.
 
 For each group, calculate
 
-[
+$
 M=\frac{\sum X}{n}.
-]
+$
 
-Show the sum and (n), then divide.
+Show the sum and $n$, then divide.
 
 ## 9b — Range
 
@@ -187,9 +187,9 @@ Review [Week 03 §22 — The Range](../study-guides/week03-central-tendency-vari
 
 For each group:
 
-[
+$
 \text{Range}=X_{\max}-X_{\min}.
-]
+$
 
 ## 9c — Standard deviation
 
@@ -202,9 +202,9 @@ For each group:
 For each group:
 
 1. Calculate the mean.
-2. Calculate each deviation (X_i-M).
+2. Calculate each deviation $X_i-M$.
 3. Square the deviations.
-4. Sum the squared deviations to obtain (SS).
+4. Sum the squared deviations to obtain $SS$.
 5. Apply the sample or population variance formula required by the course.
 6. Take the square root of the variance.
 
@@ -227,7 +227,7 @@ Sort each group first. For the median, locate the middle position and apply the 
 - [Week 03 §5 — The Course's Interpolated Median Formula](../study-guides/week03-central-tendency-variability.qmd#the-courses-interpolated-median-formula)
 - [Week 03 §23 — Interquartile Range](../study-guides/week03-central-tendency-variability.qmd#interquartile-range)
 
-Use the **course's percentile procedure** rather than substituting a different software convention. Order the data, use cumulative frequency to locate the 75th percentile, and apply the course interpolation procedure when required. The 75th percentile is (Q_3).
+Use the **course's percentile procedure** rather than substituting a different software convention. Order the data, use cumulative frequency to locate the 75th percentile, and apply the course interpolation procedure when required. The 75th percentile is $Q_3$.
 
 ## 9f — Compare the groups
 
@@ -245,8 +245,8 @@ Then decide whether those descriptive summaries are consistent with the stated p
 Before submitting, verify that you have:
 
 - shown enough work for the calculations to be followed;
-- kept paired (x_i) and (y_i) values aligned in Question 1;
-- distinguished ((\sum X)^2) from (\sum X^2);
+- kept paired $x_i$ and $y_i$ values aligned in Question 1;
+- distinguished $(\sum X)^2$ from $\sum X^2$;
 - justified measurement scales from their properties;
 - labeled graphs clearly;
 - used the course's percentile convention;
