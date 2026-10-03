@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -130,37 +159,67 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
-    <ul>
-      <li><a href="#study-guides" class="nav-link" data-scroll-target="#study-guides">Study Guides</a></li>
-      <li><a href="#question-1-summation-notation" class="nav-link" data-scroll-target="#question-1-summation-notation">Question 1 — Summation Notation</a></li>
-      <li><a href="#question-2-adding-a-constant" class="nav-link" data-scroll-target="#question-2-adding-a-constant">Question 2 — Adding a Constant</a></li>
-      <li><a href="#question-3-research-design" class="nav-link" data-scroll-target="#question-3-research-design">Question 3 — Research Design</a></li>
-      <li><a href="#questions-4-6-scales" class="nav-link" data-scroll-target="#questions-4-6-scales">Questions 4–6 — Measurement Scales</a></li>
-      <li><a href="#question-7-shape" class="nav-link" data-scroll-target="#question-7-shape">Question 7 — Distribution Shape</a></li>
-      <li><a href="#question-8-movie-ratings" class="nav-link" data-scroll-target="#question-8-movie-ratings">Question 8 — Movie Ratings</a>
-        <ul>
-          <li><a href="#question-8a-measurement-scales" class="nav-link" data-scroll-target="#question-8a-measurement-scales">8a — Measurement scales</a></li>
-          <li><a href="#question-8b-total-frequencies" class="nav-link" data-scroll-target="#question-8b-total-frequencies">8b — Total frequencies</a></li>
-          <li><a href="#question-8c-percentages" class="nav-link" data-scroll-target="#question-8c-percentages">8c — Percentages</a></li>
-          <li><a href="#question-8d-visualization" class="nav-link" data-scroll-target="#question-8d-visualization">8d — Visualization</a></li>
-          <li><a href="#question-8e-describe-the-graph" class="nav-link" data-scroll-target="#question-8e-describe-the-graph">8e — Describe the graph</a></li>
-          <li><a href="#question-8f-most-popular-rating" class="nav-link" data-scroll-target="#question-8f-most-popular-rating">8f — Most popular rating</a></li>
-          <li><a href="#question-8g-evaluate-the-claim" class="nav-link" data-scroll-target="#question-8g-evaluate-the-claim">8g — Evaluate the claim</a></li>
-        </ul>
-      </li>
-      <li><a href="#question-9-groups" class="nav-link" data-scroll-target="#question-9-groups">Question 9 — Comparing Groups</a>
-        <ul>
-          <li><a href="#question-9a-mean" class="nav-link" data-scroll-target="#question-9a-mean">9a — Mean</a></li>
-          <li><a href="#question-9b-range" class="nav-link" data-scroll-target="#question-9b-range">9b — Range</a></li>
-          <li><a href="#question-9c-standard-deviation" class="nav-link" data-scroll-target="#question-9c-standard-deviation">9c — Standard deviation</a></li>
-          <li><a href="#question-9d-median-and-mode" class="nav-link" data-scroll-target="#question-9d-median-and-mode">9d — Median and mode</a></li>
-          <li><a href="#question-9e-75th-percentile" class="nav-link" data-scroll-target="#question-9e-75th-percentile">9e — 75th percentile</a></li>
-          <li><a href="#question-9f-compare-the-groups" class="nav-link" data-scroll-target="#question-9f-compare-the-groups">9f — Compare the groups</a></li>
-        </ul>
-      </li>
-      <li><a href="#final-self-check" class="nav-link" data-scroll-target="#final-self-check">Final Self-Check</a></li>
-    </ul>
-  </nav>
+   
+  <ul class="collapse">
+  <li><a href="#original-submission-requirements" id="toc-original-submission-requirements" class="nav-link active" data-scroll-target="#original-submission-requirements">Original submission requirements</a></li>
+  <li><a href="#study-guides-used-in-assignment-1" id="toc-study-guides-used-in-assignment-1" class="nav-link" data-scroll-target="#study-guides-used-in-assignment-1">Study Guides used in Assignment 1</a></li>
+  <li><a href="#question-1-summation-notation" id="toc-question-1-summation-notation" class="nav-link" data-scroll-target="#question-1-summation-notation">Question 1 — Summation Notation</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do" id="toc-what-this-question-is-asking-you-to-do" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it" id="toc-how-to-approach-it" class="nav-link" data-scroll-target="#how-to-approach-it">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-2-adding-a-constant-to-every-score" id="toc-question-2-adding-a-constant-to-every-score" class="nav-link" data-scroll-target="#question-2-adding-a-constant-to-every-score">Question 2 — Adding a Constant to Every Score</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-1" id="toc-what-this-question-is-asking-you-to-do-1" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-1">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-1" id="toc-how-to-approach-it-1" class="nav-link" data-scroll-target="#how-to-approach-it-1">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-3-research-design-and-causation" id="toc-question-3-research-design-and-causation" class="nav-link" data-scroll-target="#question-3-research-design-and-causation">Question 3 — Research Design and Causation</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-2" id="toc-what-this-question-is-asking-you-to-do-2" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-2">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-2" id="toc-how-to-approach-it-2" class="nav-link" data-scroll-target="#how-to-approach-it-2">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-4-scales-of-measurement" id="toc-question-4-scales-of-measurement" class="nav-link" data-scroll-target="#question-4-scales-of-measurement">Question 4 — Scales of Measurement</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-3" id="toc-what-this-question-is-asking-you-to-do-3" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-3">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-3" id="toc-how-to-approach-it-3" class="nav-link" data-scroll-target="#how-to-approach-it-3">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-5-two-measurement-scales" id="toc-question-5-two-measurement-scales" class="nav-link" data-scroll-target="#question-5-two-measurement-scales">Question 5 — Two Measurement Scales</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-4" id="toc-what-this-question-is-asking-you-to-do-4" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-4">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-4" id="toc-how-to-approach-it-4" class="nav-link" data-scroll-target="#how-to-approach-it-4">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-6-income-categories" id="toc-question-6-income-categories" class="nav-link" data-scroll-target="#question-6-income-categories">Question 6 — Income Categories</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-5" id="toc-what-this-question-is-asking-you-to-do-5" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-5">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-5" id="toc-how-to-approach-it-5" class="nav-link" data-scroll-target="#how-to-approach-it-5">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-7-distribution-shape" id="toc-question-7-distribution-shape" class="nav-link" data-scroll-target="#question-7-distribution-shape">Question 7 — Distribution Shape</a>
+  <ul class="collapse">
+  <li><a href="#what-this-question-is-asking-you-to-do-6" id="toc-what-this-question-is-asking-you-to-do-6" class="nav-link" data-scroll-target="#what-this-question-is-asking-you-to-do-6">What this question is asking you to do</a></li>
+  <li><a href="#how-to-approach-it-6" id="toc-how-to-approach-it-6" class="nav-link" data-scroll-target="#how-to-approach-it-6">How to approach it</a></li>
+  </ul></li>
+  <li><a href="#question-8-movie-ratings" id="toc-question-8-movie-ratings" class="nav-link" data-scroll-target="#question-8-movie-ratings">Question 8 — Movie Ratings</a>
+  <ul class="collapse">
+  <li><a href="#a-measurement-scales" id="toc-a-measurement-scales" class="nav-link" data-scroll-target="#a-measurement-scales">8a — Measurement scales</a></li>
+  <li><a href="#b-total-frequencies" id="toc-b-total-frequencies" class="nav-link" data-scroll-target="#b-total-frequencies">8b — Total frequencies</a></li>
+  <li><a href="#c-percentages" id="toc-c-percentages" class="nav-link" data-scroll-target="#c-percentages">8c — Percentages</a></li>
+  <li><a href="#d-visualization" id="toc-d-visualization" class="nav-link" data-scroll-target="#d-visualization">8d — Visualization</a></li>
+  <li><a href="#e-describe-the-visualization" id="toc-e-describe-the-visualization" class="nav-link" data-scroll-target="#e-describe-the-visualization">8e — Describe the visualization</a></li>
+  <li><a href="#f-most-popular-rating" id="toc-f-most-popular-rating" class="nav-link" data-scroll-target="#f-most-popular-rating">8f — Most popular rating</a></li>
+  <li><a href="#g-evaluate-the-citizens-claim" id="toc-g-evaluate-the-citizens-claim" class="nav-link" data-scroll-target="#g-evaluate-the-citizens-claim">8g — Evaluate the citizen’s claim</a></li>
+  </ul></li>
+  <li><a href="#question-9-distracted-vs.-not-distracted-groups" id="toc-question-9-distracted-vs.-not-distracted-groups" class="nav-link" data-scroll-target="#question-9-distracted-vs.-not-distracted-groups">Question 9 — Distracted vs.&nbsp;Not-Distracted Groups</a>
+  <ul class="collapse">
+  <li><a href="#a-mean" id="toc-a-mean" class="nav-link" data-scroll-target="#a-mean">9a — Mean</a></li>
+  <li><a href="#b-range" id="toc-b-range" class="nav-link" data-scroll-target="#b-range">9b — Range</a></li>
+  <li><a href="#c-standard-deviation" id="toc-c-standard-deviation" class="nav-link" data-scroll-target="#c-standard-deviation">9c — Standard deviation</a></li>
+  <li><a href="#d-median-and-mode" id="toc-d-median-and-mode" class="nav-link" data-scroll-target="#d-median-and-mode">9d — Median and mode</a></li>
+  <li><a href="#e-75th-percentile" id="toc-e-75th-percentile" class="nav-link" data-scroll-target="#e-75th-percentile">9e — 75th percentile</a></li>
+  <li><a href="#f-compare-the-two-groups" id="toc-f-compare-the-two-groups" class="nav-link" data-scroll-target="#f-compare-the-two-groups">9f — Compare the two groups</a></li>
+  </ul></li>
+  <li><a href="#final-self-check" id="toc-final-self-check" class="nav-link" data-scroll-target="#final-self-check">Final Self-Check</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -169,74 +228,281 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title">
 <h1 class="title">Assignment 1 — Guide and Preparation</h1>
 </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
 </header>
+
 
 <p><strong>Weight:</strong> 10%<br>
 <strong>Due:</strong> October 9, 2026, 11:59 PM</p>
-
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container"><i class="callout-icon"></i></div>
-<div class="callout-title-container flex-fill">How to use this page</div>
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>How to use this page
+</div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This guide identifies the concepts and Study Guide sections relevant to each Assignment 1 question. It does <strong>not</strong> provide the assignment answers.</p>
-<p>Assignment 1 must be completed independently. Generative AI may not be used to produce content submitted for credit. Review the linked course material, then complete the calculations and explanations yourself.</p>
+<p>This page reproduces the <strong>original Assignment 1 questions</strong> and then explains, for each one:</p>
+<ol type="1">
+<li><strong>what the question is asking you to do;</strong></li>
+<li><strong>how to approach it step by step;</strong></li>
+<li><strong>which Study Guide sections to consult.</strong></li>
+</ol>
+<p>It is a preparation guide, <strong>not an answer key</strong>. Assignment 1 must be completed independently, and generative AI may not be used to produce content submitted for credit.</p>
 </div>
 </div>
-
-<section id="study-guides" class="level2">
-<h2 class="anchored" data-anchor-id="study-guides">Study Guides</h2>
+<section id="original-submission-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="original-submission-requirements">Original submission requirements</h2>
+<p>Your final submission must be uploaded to Canvas by <strong>11:59 PM on October 9</strong>. Name the file:</p>
+<p><strong>PSYC210-A1_LASTNAME_FIRSTINITIAL</strong></p>
+<p>Submit a <strong>single PDF file</strong>. Write your name, the name of your TA, and your tutorial section (e.g., D102) in the document. Show your work where appropriate and briefly answer each question.</p>
+</section>
+<section id="study-guides-used-in-assignment-1" class="level2">
+<h2 class="anchored" data-anchor-id="study-guides-used-in-assignment-1">Study Guides used in Assignment 1</h2>
 <ul>
 <li><a href="../study-guides/week01-basic-concepts.html">Week 01 — Course Introduction and Basic Concepts</a></li>
 <li><a href="../study-guides/week02-data-types-visualization.html">Week 02 — Data Types, Frequency Distributions, and Visualization</a></li>
 <li><a href="../study-guides/week03-central-tendency-variability.html">Week 03 — Central Tendency, Shape, and Variability</a></li>
 </ul>
 </section>
-
 <section id="question-1-summation-notation" class="level1">
 <h1>Question 1 — Summation Notation</h1>
-<p><strong>Review</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>1. (/6)</strong> Given</p>
+<p><span class="math display">\[
+x_i=\{16,14,6,11,19,18,17,6\}
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+y_i=\{14,-4,14,9,15,14,2,14\},
+\]</span></p>
+<p>calculate:</p>
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td>a. <span class="math inline">\(\sum(x_i)\)</span></td>
+<td>b. <span class="math inline">\(\sum(y_i)\)</span></td>
+<td>c.&nbsp;<span class="math inline">\([\sum(x_i)]^2\)</span></td>
+</tr>
+<tr class="even">
+<td>d.&nbsp;<span class="math inline">\([\sum(y_i)]^2\)</span></td>
+<td>e. <span class="math inline">\(\sum(x_i-y_i)\)</span></td>
+<td>f.&nbsp;<span class="math inline">\(\sum(x_iy_i)\)</span></td>
+</tr>
+<tr class="odd">
+<td>g. <span class="math inline">\(\sum(x_i)^2\)</span></td>
+<td>h. <span class="math inline">\(\sum(y_i)^2\)</span></td>
+<td>i. <span class="math inline">\([\sum(x_i-y_i)]^2\)</span></td>
+</tr>
+<tr class="even">
+<td>j. <span class="math inline">\((\sum x_i)(\sum y_i)\)</span></td>
+<td>k. <span class="math inline">\(\sum(x_i+3)^2\)</span></td>
+<td>l. <span class="math inline">\(\sum(y_i/2^2)\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do">What this question is asking you to do</h2>
+<p>This question tests whether you can <strong>read summation notation correctly</strong> and apply the operations in the correct order. The main challenge is not arithmetic; it is deciding <strong>what is done first</strong>.</p>
+<p>Several expressions look very similar but mean different things. For example:</p>
+<ul>
+<li><span class="math inline">\([\sum(x_i)]^2\)</span> means <strong>sum first, then square the total</strong>.</li>
+<li><span class="math inline">\(\sum(x_i)^2\)</span> means <strong>square each <span class="math inline">\(x_i\)</span> value first, then sum</strong>.</li>
+<li><span class="math inline">\(\sum(x_i-y_i)\)</span> means <strong>subtract within each paired row, then sum</strong>.</li>
+<li><span class="math inline">\((\sum x_i)(\sum y_i)\)</span> means <strong>find two separate sums, then multiply them</strong>.</li>
+</ul>
+</section>
+<section id="how-to-approach-it" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it">How to approach it</h2>
+<ol type="1">
+<li>Write the two vectors in parallel so that each <span class="math inline">\(x_i\)</span> stays paired with the corresponding <span class="math inline">\(y_i\)</span>.</li>
+<li>For each subquestion, translate the notation into words before calculating.</li>
+<li>Use BEDMAS/PEDMAS:
+<ul>
+<li>brackets/parentheses;</li>
+<li>exponents;</li>
+<li>multiplication/division;</li>
+<li>addition/subtraction.</li>
+</ul></li>
+<li>For a and b, simply add the values in the requested vector.</li>
+<li>For c and d, calculate the sum first and square only after the summation is complete.</li>
+<li>For e, calculate each paired difference <span class="math inline">\(x_i-y_i\)</span>, then add the differences.</li>
+<li>For f, calculate each paired product <span class="math inline">\(x_iy_i\)</span>, then add the products.</li>
+<li>For g and h, square each individual value first, then sum the squared values.</li>
+<li>For i, calculate the paired differences, sum those differences, then square the final sum.</li>
+<li>For j, calculate <span class="math inline">\(\sum x_i\)</span> and <span class="math inline">\(\sum y_i\)</span> separately, then multiply the two totals.</li>
+<li>For k, add 3 to each <span class="math inline">\(x_i\)</span>, square each transformed value, then sum.</li>
+<li>For l, pay close attention to the denominator: evaluate <span class="math inline">\(2^2\)</span> according to order of operations, apply the division to each <span class="math inline">\(y_i\)</span>, and then sum.</li>
+</ol>
+<section id="study-guide-sections" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections">Study Guide sections</h3>
 <ul>
 <li><a href="../study-guides/week01-basic-concepts.html#fundamental-mathematics">Week 01 §11 — Fundamental Mathematics</a></li>
 <li><a href="../study-guides/week01-basic-concepts.html#summation-notation">Week 01 §12 — Summation Notation</a></li>
 <li><a href="../study-guides/week01-basic-concepts.html#worked-summation-example">Week 01 §13 — Worked Summation Example</a></li>
 <li><a href="../study-guides/week02-data-types-visualization.html#review-summation-notation">Week 02 §1 — Review: Summation Notation</a></li>
 </ul>
-<p><strong>Method</strong></p>
-<ol>
-<li>Translate each expression into words before calculating.</li>
-<li>Identify exactly what is inside the summation sign.</li>
-<li>Follow BEDMAS/PEDMAS.</li>
-<li>Keep <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span> paired by their common index.</li>
-<li>Distinguish <span class="math inline">\((\sum X)^2\)</span> from <span class="math inline">\(\sum X^2\)</span>: one sums first and then squares; the other squares each observation first and then sums.</li>
-<li>For <span class="math inline">\(\sum(x_i-y_i)\)</span> or <span class="math inline">\(\sum(x_iy_i)\)</span>, work row by row before adding.</li>
-<li>For <span class="math inline">\((\sum x_i)(\sum y_i)\)</span>, calculate the two sums separately and multiply only at the end.</li>
-<li>A constant inside a summation is applied once for every included observation.</li>
-</ol>
 </section>
-
-<section id="question-2-adding-a-constant" class="level1">
+</section>
+</section>
+<section id="question-2-adding-a-constant-to-every-score" class="level1">
 <h1>Question 2 — Adding a Constant to Every Score</h1>
-<p><strong>Review</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>2. (/2)</strong> If an instructor adds a constant bonus of 5 points to every student’s exam score in a class, what happens to the class <strong>mean</strong> and what happens to the class <strong>standard deviation</strong>? Briefly explain why the standard deviation behaves the way it does.</p>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-1" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-1">What this question is asking you to do</h2>
+<p>You need to explain how adding the <strong>same constant to every score</strong> affects:</p>
+<ol type="1">
+<li>the center of the distribution, represented by the mean; and</li>
+<li>the spread of the distribution, represented by the standard deviation.</li>
+</ol>
+<p>The explanation matters. You should not only state what happens; you should show that you understand <strong>why</strong>.</p>
+</section>
+<section id="how-to-approach-it-1" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-1">How to approach it</h2>
+<p>Represent the transformed score as:</p>
+<p><span class="math display">\[
+Y_i=X_i+5.
+\]</span></p>
+<p>Then consider the two statistics separately.</p>
+<p>For the mean, ask: if every score is shifted upward by exactly the same amount, what happens to the average?</p>
+<p>For standard deviation, remember that it is based on distances from the mean. Compare:</p>
+<p><span class="math display">\[
+X_i-M_X
+\]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+(X_i+5)-(M_X+5).
+\]</span></p>
+<p>Simplify the second expression and use that result to explain whether the distances from the mean change.</p>
+<section id="study-guide-sections-1" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-1">Study Guide sections</h3>
 <ul>
 <li><a href="../study-guides/week03-central-tendency-variability.html#how-the-mean-changes">Week 03 §15 — How the Mean Changes</a></li>
 <li><a href="../study-guides/week03-central-tendency-variability.html#what-happens-when-scores-are-transformed">Week 03 §33 — What Happens When Scores Are Transformed?</a></li>
 </ul>
-<p>Represent the transformation as <span class="math inline">\(Y_i=X_i+c\)</span>. Consider the mean and standard deviation separately. For the mean, ask what adding the same constant to every observation does to the average. For the standard deviation, compare <span class="math inline">\(X_i-M_X\)</span> with <span class="math inline">\((X_i+c)-(M_X+c)\)</span> and use that comparison to explain what happens to spread.</p>
 </section>
-
-<section id="question-3-research-design" class="level1">
+</section>
+</section>
+<section id="question-3-research-design-and-causation" class="level1">
 <h1>Question 3 — Research Design and Causation</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>3. (/1)</strong> What fundamental design feature distinguishes a <strong>true experimental design</strong> from a <strong>correlational or quasi-experimental design</strong>, and why does this distinction allow researchers to make cause-and-effect claims?</p>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-2" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-2">What this question is asking you to do</h2>
+<p>This is a conceptual question about <strong>causal inference</strong>. You need to identify the design feature or combination of features that makes a true experiment different from designs in which variables are merely observed or participants are not randomly assigned.</p>
+<p>Then you need to explain why that difference matters for cause-and-effect reasoning.</p>
+</section>
+<section id="how-to-approach-it-2" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-2">How to approach it</h2>
+<p>Compare the three designs by asking:</p>
+<ul>
+<li>Is an independent variable manipulated?</li>
+<li>Are participants randomly assigned to conditions?</li>
+<li>Is there a comparison or control condition?</li>
+<li>Could pre-existing differences between participants explain the result?</li>
+</ul>
+<p>A strong answer connects the design feature to the logic of ruling out alternative explanations. Do not stop at saying “experiments can show causation.” Explain <strong>how the design helps isolate the effect of the independent variable</strong>.</p>
+<section id="study-guide-sections-2" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-2">Study Guide sections</h3>
 <ul>
 <li><a href="../study-guides/week01-basic-concepts.html#three-basic-research-designs">Week 01 §9 — Three Basic Research Designs</a></li>
 <li><a href="../study-guides/week01-basic-concepts.html#tutorial-preparation">Week 01 §21 — Tutorial Preparation</a></li>
 </ul>
-<p>Compare experimental, quasi-experimental, and correlational designs by asking whether there is manipulation, random assignment, and a comparison/control condition. Identify what distinguishes a true experiment, then explain how those features reduce competing explanations. Do not stop at saying that experiments allow causal conclusions; explain why.</p>
 </section>
-
-<section id="questions-4-6-scales" class="level1">
-<h1>Questions 4–6 — Scales of Measurement</h1>
+</section>
+</section>
+<section id="question-4-scales-of-measurement" class="level1">
+<h1>Question 4 — Scales of Measurement</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>4. (/4)</strong> A clinical psychologist evaluates participants entering a treatment program. Identify the scale of measurement used for each of the following variables and briefly justify your answer:</p>
+<ol type="a">
+<li>Reaction time in milliseconds to detect an emotional stimulus probe<br>
+</li>
+<li>Total score on the Beck Depression Inventory (ranging from 0 to 63)<br>
+</li>
+<li>Primary psychiatric diagnosis (e.g., Major Depressive Disorder, Generalized Anxiety Disorder, PTSD)<br>
+</li>
+<li>Intake symptom severity rating assessed as Mild, Moderate, or Severe</li>
+</ol>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-3" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-3">What this question is asking you to do</h2>
+<p>For each variable, you must do two things:</p>
+<ol type="1">
+<li>identify its measurement scale: <strong>nominal, ordinal, interval, or ratio</strong>;</li>
+<li>briefly justify that classification from the properties of the variable.</li>
+</ol>
+<p>Do not classify a variable simply because it contains numbers. Ask what those numbers actually mean.</p>
+</section>
+<section id="how-to-approach-it-3" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-3">How to approach it</h2>
+<p>For each variable, work through this decision sequence:</p>
+<ol type="1">
+<li>Are the values merely different categories?</li>
+<li>Can those categories be placed in a meaningful order?</li>
+<li>If the variable is numerical, do equal numerical differences represent equal differences in the measured quantity?</li>
+<li>Does zero represent a genuine absence of the measured quantity?</li>
+</ol>
+<p>Use those properties in your justification. A good justification is usually one sentence explaining the key feature that determines the scale.</p>
+<section id="study-guide-sections-3" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-3">Study Guide sections</h3>
 <ul>
 <li><a href="../study-guides/week02-data-types-visualization.html#the-four-scales-of-measurement">Week 02 §4 — The Four Scales of Measurement</a></li>
 <li><a href="../study-guides/week02-data-types-visualization.html#nominal-variables">Week 02 §5 — Nominal Variables</a></li>
@@ -244,84 +510,710 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="../study-guides/week02-data-types-visualization.html#interval-variables">Week 02 §7 — Interval Variables</a></li>
 <li><a href="../study-guides/week02-data-types-visualization.html#important-terms">Week 02 §32 — Important Terms</a></li>
 </ul>
-<p>For each variable, ask whether the values are only labels, whether they can be ordered, whether equal numerical differences are meaningful, and whether zero represents a genuine absence of the measured quantity.</p>
-<p><strong>Question 4:</strong> apply those criteria separately to every variable and justify the classification from the properties of the measurement.</p>
-<p><strong>Question 5:</strong> classify reaction time and handedness independently.</p>
-<p><strong>Question 6:</strong> classify the variable as it was recorded: the survey records ordered income ranges, not exact income values.</p>
 </section>
-
-<section id="question-7-shape" class="level1">
+</section>
+</section>
+<section id="question-5-two-measurement-scales" class="level1">
+<h1>Question 5 — Two Measurement Scales</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>5. (/1)</strong> In a cognitive psychology experiment, participants completed a visual search task where reaction time was measured in milliseconds. This variable was measured on a(n) ______ scale. Participants were also asked to report their dominant hand as “Left-handed” or “Right-handed”, which was measured on a(n) ______ scale.</p>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-4" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-4">What this question is asking you to do</h2>
+<p>This question asks you to classify <strong>two different variables</strong> using the four scales of measurement.</p>
+</section>
+<section id="how-to-approach-it-4" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-4">How to approach it</h2>
+<p>Treat the variables separately.</p>
+<p>For reaction time, ask whether the values have equal units and whether zero has a meaningful interpretation.</p>
+<p>For handedness, ask whether the categories have any inherent order or whether they simply identify different groups.</p>
+<section id="study-guide-sections-4" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-4">Study Guide sections</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-four-scales-of-measurement">Week 02 §4 — The Four Scales of Measurement</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#nominal-variables">Week 02 §5 — Nominal Variables</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#important-terms">Week 02 §32 — Important Terms</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="question-6-income-categories" class="level1">
+<h1>Question 6 — Income Categories</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>6. (/1)</strong> A survey on financial stress asks participants to indicate their annual household income using the categories: Under $30,000, $30,000–$59,999, $60,000–$89,999, $90,000 or more. This variable was measured on a(n) ______ measurement scale.</p>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-5" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-5">What this question is asking you to do</h2>
+<p>You need to classify the <strong>recorded variable</strong>, not the underlying concept of income in the abstract.</p>
+</section>
+<section id="how-to-approach-it-5" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-5">How to approach it</h2>
+<p>Notice that the survey does not record each person’s exact income. Instead, it places respondents into categories.</p>
+<p>Ask:</p>
+<ul>
+<li>Do the categories have a meaningful order?</li>
+<li>Do the recorded category labels provide exact, equal numerical distances between respondents?</li>
+<li>Would arithmetic using category labels preserve the information actually collected?</li>
+</ul>
+<p>Use those questions to identify the scale.</p>
+<section id="study-guide-sections-5" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-5">Study Guide sections</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-four-scales-of-measurement">Week 02 §4 — The Four Scales of Measurement</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#ordinal-variables">Week 02 §6 — Ordinal Variables</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#common-misunderstandings">Week 02 §33 — Common Misunderstandings</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="question-7-distribution-shape" class="level1">
 <h1>Question 7 — Distribution Shape</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>7. (/1)</strong> In a survey measuring weekly video gaming hours among university students, the distribution showed a few people with zero, a large cluster of people in the lowest category (1–2 hours), a moderate amount in the middle (3–5 hours), and only a couple of individuals reporting extreme hours at the very top. In terms of shape, this is an example of a ______ distribution. Draw and label a rough sketch of what this data might look like.</p>
+</div>
+</div>
+<section id="what-this-question-is-asking-you-to-do-6" class="level2">
+<h2 class="anchored" data-anchor-id="what-this-question-is-asking-you-to-do-6">What this question is asking you to do</h2>
+<p>You need to:</p>
+<ol type="1">
+<li>identify the overall shape of the distribution from the verbal description; and</li>
+<li>draw a rough graph showing that shape.</li>
+</ol>
+</section>
+<section id="how-to-approach-it-6" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-approach-it-6">How to approach it</h2>
+<p>Translate the description into a frequency pattern:</p>
+<ol type="1">
+<li>Locate where most observations are concentrated.</li>
+<li>Locate the few extreme observations.</li>
+<li>Decide which side has the longer, thinner tail.</li>
+<li>Remember that skew is named for the <strong>direction of the tail</strong>, not the side containing most observations.</li>
+<li>Draw a simple sketch:
+<ul>
+<li>horizontal axis = weekly gaming hours;</li>
+<li>vertical axis = frequency;</li>
+<li>show the large cluster and the sparse extreme values.</li>
+</ul></li>
+</ol>
+<section id="study-guide-sections-6" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-sections-6">Study Guide sections</h3>
 <ul>
 <li><a href="../study-guides/week02-data-types-visualization.html#ungrouped-frequency-distributions">Week 02 §12 — Ungrouped Frequency Distributions</a></li>
 <li><a href="../study-guides/week02-data-types-visualization.html#frequency-polygons">Week 02 §23 — Frequency Polygons</a></li>
 <li><a href="../study-guides/week03-central-tendency-variability.html#distribution-shape-and-skewness">Week 03 §18 — Distribution Shape and Skewness</a></li>
 <li><a href="../study-guides/week03-central-tendency-variability.html#other-distribution-shapes">Week 03 §20 — Other Distribution Shapes</a></li>
 </ul>
-<p>Identify where most observations are concentrated and where the few extreme observations occur. The direction of the long tail determines the direction of skew. Your sketch should show the variable on the horizontal axis and frequency on the vertical axis.</p>
 </section>
-
+</section>
+</section>
 <section id="question-8-movie-ratings" class="level1">
 <h1>Question 8 — Movie Ratings</h1>
-
-<h2 id="question-8a-measurement-scales" class="anchored">8a — Measurement scales</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#the-four-scales-of-measurement">Week 02 §4</a>. Classify film rating and year separately by asking what information each variable preserves.</p>
-
-<h2 id="question-8b-total-frequencies" class="anchored">8b — Total frequencies</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#ungrouped-frequency-distributions">Week 02 §12</a> and <a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13</a>. Sum each rating column across all years, then add the rating totals to obtain the overall <span class="math inline">\(n\)</span>. Check the result by also summing the yearly totals.</p>
-
-<h2 id="question-8c-percentages" class="anchored">8c — Percentages</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13</a>. For each category, calculate <span class="math inline">\(p=f/n\)</span> and then percentage = <span class="math inline">\(p\times100\)</span>. The percentages should total approximately 100%.</p>
-
-<h2 id="question-8d-visualization" class="anchored">8d — Visualization</h2>
-<p>Review Week 02 graphing sections and <a href="../study-guides/week02-data-types-visualization.html#practice-questions">Week 02 §35 — Practice Questions</a>. Identify whether film rating is categorical or continuous, choose the appropriate graph, and label both axes.</p>
-
-<h2 id="question-8e-describe-the-graph" class="anchored">8e — Describe the graph</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#graphs-can-clarifyand-mislead">Week 02 §25 — Graphs Can Clarify—and Mislead</a>. Describe the relative heights of the categories. Because this is categorical data, do not automatically impose continuous-distribution language such as positive or negative skew.</p>
-
-<h2 id="question-8f-most-popular-rating" class="anchored">8f — Most popular rating</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#the-mode">Week 02 §29 — The Mode</a> and <a href="../study-guides/week03-central-tendency-variability.html#the-mode">Week 03 §2 — The Mode</a>. Compare the totals from 8b; the largest frequency identifies the modal category.</p>
-
-<h2 id="question-8g-evaluate-the-claim" class="anchored">8g — Evaluate the claim</h2>
-<p>Use the frequency and percentage ideas from <a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13</a> together with the mode. Translate the citizen's statement into something the table can test and base the conclusion only on the supplied fictional data.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>8. (/8 overall)</strong> The National Association of Theatre Owners (NATO) keeps track of the movie-going public, tallying the kinds of movies people go to see, where they see them, and how much money they spend on such outings. Suppose you attend a city council meeting and a citizen claims that only R-rated films are being shown these days. You are intrigued and visit NATO’s website to see if you can find any numbers to corroborate that claim. You find the following <strong>fictional</strong> table showing the number of movies released by year for each rating:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Year</th>
+<th style="text-align: right;">G</th>
+<th style="text-align: right;">PG</th>
+<th style="text-align: right;">PG13</th>
+<th style="text-align: right;">R</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2025</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2024</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2023</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2022</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2021</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2020</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2019</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2018</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2017</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2016</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2015</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2014</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2013</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2012</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li><strong>(/1)</strong> What scale of measurement do the variables “film rating” and “Year” use?<br>
+</li>
+<li><strong>(/1)</strong> Find the total number of films for each rating and the total number of films included in the sample for the data depicted in the table.<br>
+</li>
+<li><strong>(/1)</strong> Find the percentage of films for each rating.<br>
+</li>
+<li><strong>(/2)</strong> Using an appropriate visualization, graph the counts of films shown by rating.<br>
+</li>
+<li><strong>(/1)</strong> How would you describe the shape of this visualization? Briefly explain your answer.<br>
+</li>
+<li><strong>(/1)</strong> What is the most popular type of film rating shown over this time span? How many were there?<br>
+</li>
+<li><strong>(/1)</strong> Does the data seem to support the argument being made by the citizen?</li>
+</ol>
+</div>
+</div>
+<section id="a-measurement-scales" class="level2">
+<h2 class="anchored" data-anchor-id="a-measurement-scales">8a — Measurement scales</h2>
+<section id="what-you-need-to-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do">What you need to do</h3>
+<p>Classify <strong>film rating</strong> and <strong>Year</strong> separately.</p>
 </section>
-
-<section id="question-9-groups" class="level1">
-<h1>Question 9 — Distracted vs. Not-Distracted Groups</h1>
-<p>Keep the two groups separate throughout the calculations.</p>
-
-<h2 id="question-9a-mean" class="anchored">9a — Mean</h2>
-<p>Review <a href="../study-guides/week02-data-types-visualization.html#the-mean">Week 02 §27 — The Mean</a> and <a href="../study-guides/week03-central-tendency-variability.html#why-do-we-need-measures-of-center">Week 03 §1</a>. For each group, calculate <span class="math inline">\(M=\sum X/n\)</span>. Show the sum and <span class="math inline">\(n\)</span>, then divide.</p>
-
-<h2 id="question-9b-range" class="anchored">9b — Range</h2>
-<p>Review <a href="../study-guides/week03-central-tendency-variability.html#the-range">Week 03 §22 — The Range</a>. For each group, calculate <span class="math inline">\(X_{max}-X_{min}\)</span>.</p>
-
-<h2 id="question-9c-standard-deviation" class="anchored">9c — Standard deviation</h2>
-<p>Review <a href="../study-guides/week03-central-tendency-variability.html#from-deviation-to-variance">Week 03 §24 — From Deviation to Variance</a>, <a href="../study-guides/week03-central-tendency-variability.html#important-terms">§39 — Important Terms</a>, and <a href="../study-guides/week03-central-tendency-variability.html#practice-questions">§42 — Practice Questions</a>. For each group: calculate the mean, deviations, squared deviations, and SS; apply the course's sample or population variance formula; then take the square root. Check the distinction between <span class="math inline">\(N\)</span> and <span class="math inline">\(n-1\)</span>.</p>
-
-<h2 id="question-9d-median-and-mode" class="anchored">9d — Median and mode</h2>
-<p>Review <a href="../study-guides/week03-central-tendency-variability.html#the-mode">Week 03 §2 — The Mode</a>, <a href="../study-guides/week03-central-tendency-variability.html#the-median">§3 — The Median</a>, and <a href="../study-guides/week03-central-tendency-variability.html#median-with-an-even-number-of-scores">§4 — Median With an Even Number of Scores</a>. Sort each group first. Locate the middle position for the median, and count frequencies for the mode.</p>
-
-<h2 id="question-9e-75th-percentile" class="anchored">9e — 75th percentile</h2>
-<p>Review <a href="../study-guides/week03-central-tendency-variability.html#the-courses-interpolated-median-formula">Week 03 §5 — The Course's Interpolated Median Formula</a> and <a href="../study-guides/week03-central-tendency-variability.html#interquartile-range">§23 — Interquartile Range</a>. Use the course's percentile procedure rather than substituting a different software convention. The 75th percentile is <span class="math inline">\(Q_3\)</span>.</p>
-
-<h2 id="question-9f-compare-the-groups" class="anchored">9f — Compare the groups</h2>
-<p>Review <a href="../study-guides/week03-central-tendency-variability.html#what-should-be-reported-together">Week 03 §36 — What Should Be Reported Together?</a> and <a href="../study-guides/week03-central-tendency-variability.html#how-the-concepts-fit-together">§38 — How the Concepts Fit Together</a>. Compare mean, median, mode where useful, range, standard deviation, 75th percentile, and obvious distributional differences. Decide whether the descriptive summaries are consistent with the stated prediction. Do not call a difference statistically significant unless an inferential test has actually been conducted.</p>
-</section>
-
-<section id="final-self-check" class="level1">
-<h1>Final Self-Check</h1>
+<section id="how-to-do-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it">How to do it</h3>
+<p>For each variable, ask whether it represents:</p>
 <ul>
-<li>Show enough work for calculations to be followed.</li>
-<li>Keep paired <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span> values aligned in Question 1.</li>
-<li>Distinguish <span class="math inline">\((\sum X)^2\)</span> from <span class="math inline">\(\sum X^2\)</span>.</li>
-<li>Justify measurement scales from their properties.</li>
-<li>Label graphs clearly.</li>
-<li>Use the course's percentile convention.</li>
-<li>Distinguish sample from population variance where required.</li>
-<li>Interpret Question 9 using both center and spread.</li>
+<li>categories only;</li>
+<li>ordered categories;</li>
+<li>equal intervals;</li>
+<li>a meaningful zero.</li>
+</ul>
+<p>Do not assume that a variable is ratio simply because it is represented by numbers.</p>
+</section>
+<section id="study-guide" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-four-scales-of-measurement">Week 02 §4 — The Four Scales of Measurement</a></li>
 </ul>
 </section>
+</section>
+<section id="b-total-frequencies" class="level2">
+<h2 class="anchored" data-anchor-id="b-total-frequencies">8b — Total frequencies</h2>
+<section id="what-you-need-to-do-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-1">What you need to do</h3>
+<p>Find:</p>
+<ol type="1">
+<li>the total number of G films;</li>
+<li>the total number of PG films;</li>
+<li>the total number of PG13 films;</li>
+<li>the total number of R films;</li>
+<li>the grand total of all films.</li>
+</ol>
+</section>
+<section id="how-to-do-it-1" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-1">How to do it</h3>
+<p>Add each rating column down the table. Then add the four column totals together.</p>
+<p>Use a second check: sum each year’s row total and confirm that the resulting grand total matches the total obtained from the columns.</p>
+</section>
+<section id="study-guide-1" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-1">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#ungrouped-frequency-distributions">Week 02 §12 — Ungrouped Frequency Distributions</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values</a></li>
+</ul>
+</section>
+</section>
+<section id="c-percentages" class="level2">
+<h2 class="anchored" data-anchor-id="c-percentages">8c — Percentages</h2>
+<section id="what-you-need-to-do-2" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-2">What you need to do</h3>
+<p>Convert each rating’s frequency into a percentage of all films.</p>
+</section>
+<section id="how-to-do-it-2" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-2">How to do it</h3>
+<p>For each rating:</p>
+<p><span class="math display">\[
+p=\frac{f}{n}
+\]</span></p>
+<p>and then:</p>
+<p><span class="math display">\[
+\%=p\times100.
+\]</span></p>
+<p>Check that the four percentages sum to approximately 100%, allowing for rounding.</p>
+</section>
+<section id="study-guide-2" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-2">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values</a></li>
+</ul>
+</section>
+</section>
+<section id="d-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="d-visualization">8d — Visualization</h2>
+<section id="what-you-need-to-do-3" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-3">What you need to do</h3>
+<p>Graph the <strong>counts of films by rating</strong> using a graph appropriate for the variable.</p>
+</section>
+<section id="how-to-do-it-3" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-3">How to do it</h3>
+<ol type="1">
+<li>Identify the measurement type of film rating.</li>
+<li>Choose a graph appropriate for categorical/discrete data.</li>
+<li>Put film-rating categories on the horizontal axis.</li>
+<li>Put frequency/count on the vertical axis.</li>
+<li>Use the totals calculated in 8b as the plotted values.</li>
+<li>Label both axes and give the graph a clear title.</li>
+</ol>
+</section>
+<section id="study-guide-3" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-3">Study Guide</h3>
+<ul>
+<li>Week 02 graphing sections on bar charts, histograms, and frequency polygons</li>
+<li><a href="../study-guides/week02-data-types-visualization.html#practice-questions">Week 02 §35 — Practice Questions</a>, especially <strong>Graph Choice</strong></li>
+</ul>
+</section>
+</section>
+<section id="e-describe-the-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="e-describe-the-visualization">8e — Describe the visualization</h2>
+<section id="what-you-need-to-do-4" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-4">What you need to do</h3>
+<p>Describe the pattern visible in the graph and briefly justify your description.</p>
+</section>
+<section id="how-to-do-it-4" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-4">How to do it</h3>
+<p>Compare the heights of the category bars. Ask whether one category dominates, whether categories are relatively balanced, or whether there is another obvious pattern.</p>
+<p>Be cautious about applying terminology such as positive or negative skew to a categorical graph, because skewness is most naturally used for ordered quantitative distributions.</p>
+</section>
+<section id="study-guide-4" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-4">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#graphs-can-clarifyand-mislead">Week 02 §25 — Graphs Can Clarify—and Mislead</a></li>
+</ul>
+</section>
+</section>
+<section id="f-most-popular-rating" class="level2">
+<h2 class="anchored" data-anchor-id="f-most-popular-rating">8f — Most popular rating</h2>
+<section id="what-you-need-to-do-5" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-5">What you need to do</h3>
+<p>Identify the film-rating category with the highest total frequency and report its count.</p>
+</section>
+<section id="how-to-do-it-5" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-5">How to do it</h3>
+<p>Compare the four totals from 8b. The category with the highest frequency is the <strong>mode</strong> or modal category.</p>
+</section>
+<section id="study-guide-5" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-5">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-mode">Week 02 §29 — The Mode</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#the-mode">Week 03 §2 — The Mode</a></li>
+</ul>
+</section>
+</section>
+<section id="g-evaluate-the-citizens-claim" class="level2">
+<h2 class="anchored" data-anchor-id="g-evaluate-the-citizens-claim">8g — Evaluate the citizen’s claim</h2>
+<section id="what-you-need-to-do-6" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-6">What you need to do</h3>
+<p>Use the data to decide whether the citizen’s statement is supported.</p>
+</section>
+<section id="how-to-do-it-6" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-6">How to do it</h3>
+<p>Translate the claim into something testable using the table. Compare:</p>
+<ul>
+<li>the R-rated count;</li>
+<li>the R-rated percentage;</li>
+<li>the counts and percentages of the other categories;</li>
+<li>the modal category.</li>
+</ul>
+<p>Base the conclusion only on the fictional dataset provided. Do not make a broader claim about real movie releases.</p>
+</section>
+<section id="study-guide-6" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-6">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#frequency-proportion-percentage-and-cumulative-values">Week 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values</a></li>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-mode">Week 02 §29 — The Mode</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="question-9-distracted-vs.-not-distracted-groups" class="level1">
+<h1>Question 9 — Distracted vs.&nbsp;Not-Distracted Groups</h1>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Original question
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>9. (/8 overall)</strong> Syndulla and Wren (20XX) examined memory recall accuracy in children in two conditions. They theorized that reading is a complex memory task that requires children to associate meaning with what is initially a series of abstract squiggly lines and that heightened levels of distraction might impact their ability to make such associations.</p>
+<p>The authors put one group of children in a high-stimulus environment (the <strong>“distracted”</strong> group) and compared their memory scores with a group who were presented the information without distraction (the <strong>“no distraction”</strong> group).</p>
+<p>These groups were matched on various demographic variables and memory was tested using the Associate Memory (AM) test. A series of 15 black-and-white line drawings were presented, and the children were told a word to associate with each drawing. Later, the same symbols were presented and the children were asked to remember the word associated with each one. AM scores can range from 0 to 15.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Distracted</th>
+<th style="text-align: right;">Not Distracted</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">13</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li><strong>(/1)</strong> What were the average scores on the AM test for each group?<br>
+</li>
+<li><strong>(/1)</strong> Calculate the range of the AM scores for each group.<br>
+</li>
+<li><strong>(/1)</strong> Calculate the standard deviation of the AM test scores for each group.<br>
+</li>
+<li><strong>(/2)</strong> Calculate the median and mode for the scores in each group.<br>
+</li>
+<li><strong>(/2)</strong> Calculate the 75th percentile for the AM test scores for each group.<br>
+</li>
+<li><strong>(/1)</strong> What information could you use to discuss differences in AM test scores across the two groups? Is there support for a prediction that children who are distracted have lower scores compared to those presented the test in a neutral environment?</li>
+</ol>
+</div>
+</div>
+<section id="a-mean" class="level2">
+<h2 class="anchored" data-anchor-id="a-mean">9a — Mean</h2>
+<section id="what-you-need-to-do-7" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-7">What you need to do</h3>
+<p>Calculate the average AM score separately for the distracted and not-distracted groups.</p>
+</section>
+<section id="how-to-do-it-7" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-7">How to do it</h3>
+<p>For each group:</p>
+<p><span class="math display">\[
+M=\frac{\sum X}{n}.
+\]</span></p>
+<ol type="1">
+<li>Add all scores in that group.</li>
+<li>Count the number of observations.</li>
+<li>Divide the sum by <span class="math inline">\(n\)</span>.</li>
+<li>Keep the two groups separate throughout the calculation.</li>
+</ol>
+</section>
+<section id="study-guide-7" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-7">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week02-data-types-visualization.html#the-mean">Week 02 §27 — The Mean</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#why-do-we-need-measures-of-center">Week 03 §1 — Why Do We Need Measures of Center?</a></li>
+</ul>
+</section>
+</section>
+<section id="b-range" class="level2">
+<h2 class="anchored" data-anchor-id="b-range">9b — Range</h2>
+<section id="what-you-need-to-do-8" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-8">What you need to do</h3>
+<p>Calculate the range of scores separately for each group.</p>
+</section>
+<section id="how-to-do-it-8" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-8">How to do it</h3>
+<p>For each group:</p>
+<ol type="1">
+<li>identify the maximum score;</li>
+<li>identify the minimum score;</li>
+<li>calculate:</li>
+</ol>
+<p><span class="math display">\[
+\text{Range}=X_{\max}-X_{\min}.
+\]</span></p>
+</section>
+<section id="study-guide-8" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-8">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week03-central-tendency-variability.html#the-range">Week 03 §22 — The Range</a></li>
+</ul>
+</section>
+</section>
+<section id="c-standard-deviation" class="level2">
+<h2 class="anchored" data-anchor-id="c-standard-deviation">9c — Standard deviation</h2>
+<section id="what-you-need-to-do-9" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-9">What you need to do</h3>
+<p>Calculate the standard deviation separately for each group.</p>
+</section>
+<section id="how-to-do-it-9" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-9">How to do it</h3>
+<p>For each group:</p>
+<ol type="1">
+<li>calculate the mean;</li>
+<li>calculate each deviation <span class="math inline">\(X_i-M\)</span>;</li>
+<li>square each deviation;</li>
+<li>add the squared deviations to obtain <span class="math inline">\(SS\)</span>;</li>
+<li>determine whether the course expects the sample or population variance formula for this dataset;</li>
+<li>divide by the appropriate denominator;</li>
+<li>take the square root of the variance to obtain the standard deviation.</li>
+</ol>
+<p>Show enough intermediate work that the calculation can be followed.</p>
+</section>
+<section id="study-guide-9" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-9">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week03-central-tendency-variability.html#from-deviation-to-variance">Week 03 §24 — From Deviation to Variance</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#important-terms">Week 03 §39 — Important Terms</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#practice-questions">Week 03 §42 — Practice Questions</a></li>
+</ul>
+</section>
+</section>
+<section id="d-median-and-mode" class="level2">
+<h2 class="anchored" data-anchor-id="d-median-and-mode">9d — Median and mode</h2>
+<section id="what-you-need-to-do-10" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-10">What you need to do</h3>
+<p>Find both the median and the mode for each group.</p>
+</section>
+<section id="how-to-do-it-10" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-10">How to do it</h3>
+<p>For each group, first sort the scores from smallest to largest.</p>
+<p>For the <strong>median</strong>:</p>
+<ol type="1">
+<li>identify the middle position;</li>
+<li>apply the appropriate procedure for the number of observations;</li>
+<li>follow the course convention where interpolation is required.</li>
+</ol>
+<p>For the <strong>mode</strong>:</p>
+<ol type="1">
+<li>count how often each score appears;</li>
+<li>identify the most frequent score or scores;</li>
+<li>note whether the distribution is unimodal, bimodal, multimodal, or nonmodal if relevant.</li>
+</ol>
+</section>
+<section id="study-guide-10" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-10">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week03-central-tendency-variability.html#the-mode">Week 03 §2 — The Mode</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#the-median">Week 03 §3 — The Median</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#median-with-an-even-number-of-scores">Week 03 §4 — Median With an Even Number of Scores</a></li>
+</ul>
+</section>
+</section>
+<section id="e-75th-percentile" class="level2">
+<h2 class="anchored" data-anchor-id="e-75th-percentile">9e — 75th percentile</h2>
+<section id="what-you-need-to-do-11" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-11">What you need to do</h3>
+<p>Find the score corresponding to the 75th percentile separately for each group.</p>
+</section>
+<section id="how-to-do-it-11" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-11">How to do it</h3>
+<ol type="1">
+<li>Order the scores.</li>
+<li>Use cumulative frequency to locate the point containing 75% of observations.</li>
+<li>Apply the <strong>course’s percentile/interpolation procedure</strong>, not a different software default.</li>
+<li>Remember that the 75th percentile is the third quartile, <span class="math inline">\(Q_3\)</span>.</li>
+</ol>
+</section>
+<section id="study-guide-11" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-11">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week03-central-tendency-variability.html#the-courses-interpolated-median-formula">Week 03 §5 — The Course’s Interpolated Median Formula</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#interquartile-range">Week 03 §23 — Interquartile Range</a></li>
+</ul>
+</section>
+</section>
+<section id="f-compare-the-two-groups" class="level2">
+<h2 class="anchored" data-anchor-id="f-compare-the-two-groups">9f — Compare the two groups</h2>
+<section id="what-you-need-to-do-12" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-need-to-do-12">What you need to do</h3>
+<p>Use the descriptive statistics you have already calculated to discuss how the two groups differ and whether the pattern is consistent with the prediction about distraction.</p>
+</section>
+<section id="how-to-do-it-12" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-do-it-12">How to do it</h3>
+<p>Bring together the results from 9a–9e. Compare:</p>
+<ul>
+<li>mean;</li>
+<li>median;</li>
+<li>mode where informative;</li>
+<li>range;</li>
+<li>standard deviation;</li>
+<li>75th percentile;</li>
+<li>any visible differences in the distributions.</li>
+</ul>
+<p>Then ask whether these descriptive summaries consistently point in the direction predicted by the study.</p>
+<p>Keep the conclusion at the correct level: this assignment provides <strong>descriptive statistics</strong>. Do not claim statistical significance unless an inferential statistical test has actually been conducted.</p>
+</section>
+<section id="study-guide-12" class="level3">
+<h3 class="anchored" data-anchor-id="study-guide-12">Study Guide</h3>
+<ul>
+<li><a href="../study-guides/week03-central-tendency-variability.html#what-should-be-reported-together">Week 03 §36 — What Should Be Reported Together?</a></li>
+<li><a href="../study-guides/week03-central-tendency-variability.html#how-the-concepts-fit-together">Week 03 §38 — How the Concepts Fit Together</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="final-self-check" class="level1">
+<h1>Final Self-Check</h1>
+<p>Before submitting, verify that you have:</p>
+<ul>
+<li>answered every part of every question;</li>
+<li>shown enough work for calculations to be followed;</li>
+<li>kept paired <span class="math inline">\(x_i\)</span> and <span class="math inline">\(y_i\)</span> values aligned in Question 1;</li>
+<li>distinguished <span class="math inline">\([\sum(x_i)]^2\)</span> from <span class="math inline">\(\sum(x_i)^2\)</span>;</li>
+<li>justified measurement scales from their properties;</li>
+<li>labeled graphs clearly;</li>
+<li>used the course’s percentile convention;</li>
+<li>used the correct variance denominator required by the course;</li>
+<li>interpreted Question 9 using both center and spread;</li>
+<li>kept descriptive conclusions separate from claims of statistical significance.</li>
+</ul>
+
+
+</section>
+
 </main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {

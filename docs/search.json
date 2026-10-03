@@ -835,7 +835,7 @@
   {
     "objectID": "assignments/assignment01.html",
     "href": "assignments/assignment01.html",
-    "title": "Assignment 1",
+    "title": "Assignment 1 — Guide and Preparation",
     "section": "",
     "text": "Weight: 10%\nDue: October 9, 2026, 11:59 PM"
   },
@@ -1909,5 +1909,236 @@
     "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Reading",
     "text": "Reading\nPrivitera (2018), Chapter 14"
+  },
+  {
+    "objectID": "assignments/assignment01.html#study-guides",
+    "href": "assignments/assignment01.html#study-guides",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "Study Guides",
+    "text": "Study Guides\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types, Frequency Distributions, and Visualization\nWeek 03 — Central Tendency, Shape, and Variability"
+  },
+  {
+    "objectID": "assignments/assignment01.html#a-measurement-scales",
+    "href": "assignments/assignment01.html#a-measurement-scales",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8a — Measurement scales",
+    "text": "8a — Measurement scales\n\nWhat you need to do\nClassify film rating and Year separately.\n\n\nHow to do it\nFor each variable, ask whether it represents:\n\ncategories only;\nordered categories;\nequal intervals;\na meaningful zero.\n\nDo not assume that a variable is ratio simply because it is represented by numbers.\n\n\nStudy Guide\n\nWeek 02 §4 — The Four Scales of Measurement"
+  },
+  {
+    "objectID": "assignments/assignment01.html#b-total-frequencies",
+    "href": "assignments/assignment01.html#b-total-frequencies",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8b — Total frequencies",
+    "text": "8b — Total frequencies\n\nWhat you need to do\nFind:\n\nthe total number of G films;\nthe total number of PG films;\nthe total number of PG13 films;\nthe total number of R films;\nthe grand total of all films.\n\n\n\nHow to do it\nAdd each rating column down the table. Then add the four column totals together.\nUse a second check: sum each year’s row total and confirm that the resulting grand total matches the total obtained from the columns.\n\n\nStudy Guide\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
+  },
+  {
+    "objectID": "assignments/assignment01.html#c-percentages",
+    "href": "assignments/assignment01.html#c-percentages",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8c — Percentages",
+    "text": "8c — Percentages\n\nWhat you need to do\nConvert each rating’s frequency into a percentage of all films.\n\n\nHow to do it\nFor each rating:\n\\[\np=\\frac{f}{n}\n\\]\nand then:\n\\[\n\\%=p\\times100.\n\\]\nCheck that the four percentages sum to approximately 100%, allowing for rounding.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
+  },
+  {
+    "objectID": "assignments/assignment01.html#d-visualization",
+    "href": "assignments/assignment01.html#d-visualization",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8d — Visualization",
+    "text": "8d — Visualization\n\nWhat you need to do\nGraph the counts of films by rating using a graph appropriate for the variable.\n\n\nHow to do it\n\nIdentify the measurement type of film rating.\nChoose a graph appropriate for categorical/discrete data.\nPut film-rating categories on the horizontal axis.\nPut frequency/count on the vertical axis.\nUse the totals calculated in 8b as the plotted values.\nLabel both axes and give the graph a clear title.\n\n\n\nStudy Guide\n\nWeek 02 graphing sections on bar charts, histograms, and frequency polygons\nWeek 02 §35 — Practice Questions, especially Graph Choice"
+  },
+  {
+    "objectID": "assignments/assignment01.html#e-describe-the-graph",
+    "href": "assignments/assignment01.html#e-describe-the-graph",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8e — Describe the graph",
+    "text": "8e — Describe the graph\nReview Week 02 §25 — Graphs Can Clarify—and Mislead.\nDescribe the relative heights of the categories. Because the display is categorical, do not automatically apply continuous-distribution terms such as positive or negative skew."
+  },
+  {
+    "objectID": "assignments/assignment01.html#f-most-popular-rating",
+    "href": "assignments/assignment01.html#f-most-popular-rating",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8f — Most popular rating",
+    "text": "8f — Most popular rating\n\nWhat you need to do\nIdentify the film-rating category with the highest total frequency and report its count.\n\n\nHow to do it\nCompare the four totals from 8b. The category with the highest frequency is the mode or modal category.\n\n\nStudy Guide\n\nWeek 02 §29 — The Mode\nWeek 03 §2 — The Mode"
+  },
+  {
+    "objectID": "assignments/assignment01.html#g-evaluate-the-claim",
+    "href": "assignments/assignment01.html#g-evaluate-the-claim",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8g — Evaluate the claim",
+    "text": "8g — Evaluate the claim\nUse the frequency and percentage ideas in Week 02 §13 together with the mode.\nTranslate the citizen’s statement into something the table can test. Compare the relevant count and percentage with the other categories and the total. Base the conclusion only on the supplied fictional data."
+  },
+  {
+    "objectID": "assignments/assignment01.html#a-mean",
+    "href": "assignments/assignment01.html#a-mean",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9a — Mean",
+    "text": "9a — Mean\n\nWhat you need to do\nCalculate the average AM score separately for the distracted and not-distracted groups.\n\n\nHow to do it\nFor each group:\n\\[\nM=\\frac{\\sum X}{n}.\n\\]\n\nAdd all scores in that group.\nCount the number of observations.\nDivide the sum by \\(n\\).\nKeep the two groups separate throughout the calculation.\n\n\n\nStudy Guide\n\nWeek 02 §27 — The Mean\nWeek 03 §1 — Why Do We Need Measures of Center?"
+  },
+  {
+    "objectID": "assignments/assignment01.html#b-range",
+    "href": "assignments/assignment01.html#b-range",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9b — Range",
+    "text": "9b — Range\n\nWhat you need to do\nCalculate the range of scores separately for each group.\n\n\nHow to do it\nFor each group:\n\nidentify the maximum score;\nidentify the minimum score;\ncalculate:\n\n\\[\n\\text{Range}=X_{\\max}-X_{\\min}.\n\\]\n\n\nStudy Guide\n\nWeek 03 §22 — The Range"
+  },
+  {
+    "objectID": "assignments/assignment01.html#c-standard-deviation",
+    "href": "assignments/assignment01.html#c-standard-deviation",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9c — Standard deviation",
+    "text": "9c — Standard deviation\n\nWhat you need to do\nCalculate the standard deviation separately for each group.\n\n\nHow to do it\nFor each group:\n\ncalculate the mean;\ncalculate each deviation \\(X_i-M\\);\nsquare each deviation;\nadd the squared deviations to obtain \\(SS\\);\ndetermine whether the course expects the sample or population variance formula for this dataset;\ndivide by the appropriate denominator;\ntake the square root of the variance to obtain the standard deviation.\n\nShow enough intermediate work that the calculation can be followed.\n\n\nStudy Guide\n\nWeek 03 §24 — From Deviation to Variance\nWeek 03 §39 — Important Terms\nWeek 03 §42 — Practice Questions"
+  },
+  {
+    "objectID": "assignments/assignment01.html#d-median-and-mode",
+    "href": "assignments/assignment01.html#d-median-and-mode",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9d — Median and mode",
+    "text": "9d — Median and mode\n\nWhat you need to do\nFind both the median and the mode for each group.\n\n\nHow to do it\nFor each group, first sort the scores from smallest to largest.\nFor the median:\n\nidentify the middle position;\napply the appropriate procedure for the number of observations;\nfollow the course convention where interpolation is required.\n\nFor the mode:\n\ncount how often each score appears;\nidentify the most frequent score or scores;\nnote whether the distribution is unimodal, bimodal, multimodal, or nonmodal if relevant.\n\n\n\nStudy Guide\n\nWeek 03 §2 — The Mode\nWeek 03 §3 — The Median\nWeek 03 §4 — Median With an Even Number of Scores"
+  },
+  {
+    "objectID": "assignments/assignment01.html#e-75th-percentile",
+    "href": "assignments/assignment01.html#e-75th-percentile",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9e — 75th percentile",
+    "text": "9e — 75th percentile\n\nWhat you need to do\nFind the score corresponding to the 75th percentile separately for each group.\n\n\nHow to do it\n\nOrder the scores.\nUse cumulative frequency to locate the point containing 75% of observations.\nApply the course’s percentile/interpolation procedure, not a different software default.\nRemember that the 75th percentile is the third quartile, \\(Q_3\\).\n\n\n\nStudy Guide\n\nWeek 03 §5 — The Course’s Interpolated Median Formula\nWeek 03 §23 — Interquartile Range"
+  },
+  {
+    "objectID": "assignments/assignment01.html#f-compare-the-groups",
+    "href": "assignments/assignment01.html#f-compare-the-groups",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9f — Compare the groups",
+    "text": "9f — Compare the groups\nReview\n\nWeek 03 §36 — What Should Be Reported Together?\nWeek 03 §38 — How the Concepts Fit Together\n\nThis is an interpretation question. Compare the groups using the descriptive statistics already calculated: mean, median, mode where informative, range, standard deviation, 75th percentile, and any obvious distributional differences.\nThen decide whether those descriptive summaries are consistent with the stated prediction. Do not describe the difference as statistically significant unless an inferential test has actually been conducted."
+  },
+  {
+    "objectID": "assignments/assignment01.html#original-submission-requirements",
+    "href": "assignments/assignment01.html#original-submission-requirements",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "Original submission requirements",
+    "text": "Original submission requirements\nYour final submission must be uploaded to Canvas by 11:59 PM on October 9. Name the file:\nPSYC210-A1_LASTNAME_FIRSTINITIAL\nSubmit a single PDF file. Write your name, the name of your TA, and your tutorial section (e.g., D102) in the document. Show your work where appropriate and briefly answer each question."
+  },
+  {
+    "objectID": "assignments/assignment01.html#study-guides-used-in-assignment-1",
+    "href": "assignments/assignment01.html#study-guides-used-in-assignment-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "Study Guides used in Assignment 1",
+    "text": "Study Guides used in Assignment 1\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types, Frequency Distributions, and Visualization\nWeek 03 — Central Tendency, Shape, and Variability"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis question tests whether you can read summation notation correctly and apply the operations in the correct order. The main challenge is not arithmetic; it is deciding what is done first.\nSeveral expressions look very similar but mean different things. For example:\n\n\\([\\sum(x_i)]^2\\) means sum first, then square the total.\n\\(\\sum(x_i)^2\\) means square each \\(x_i\\) value first, then sum.\n\\(\\sum(x_i-y_i)\\) means subtract within each paired row, then sum.\n\\((\\sum x_i)(\\sum y_i)\\) means find two separate sums, then multiply them."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it",
+    "href": "assignments/assignment01.html#how-to-approach-it",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\n\nWrite the two vectors in parallel so that each \\(x_i\\) stays paired with the corresponding \\(y_i\\).\nFor each subquestion, translate the notation into words before calculating.\nUse BEDMAS/PEDMAS:\n\nbrackets/parentheses;\nexponents;\nmultiplication/division;\naddition/subtraction.\n\nFor a and b, simply add the values in the requested vector.\nFor c and d, calculate the sum first and square only after the summation is complete.\nFor e, calculate each paired difference \\(x_i-y_i\\), then add the differences.\nFor f, calculate each paired product \\(x_iy_i\\), then add the products.\nFor g and h, square each individual value first, then sum the squared values.\nFor i, calculate the paired differences, sum those differences, then square the final sum.\nFor j, calculate \\(\\sum x_i\\) and \\(\\sum y_i\\) separately, then multiply the two totals.\nFor k, add 3 to each \\(x_i\\), square each transformed value, then sum.\nFor l, pay close attention to the denominator: evaluate \\(2^2\\) according to order of operations, apply the division to each \\(y_i\\), and then sum.\n\n\nStudy Guide sections\n\nWeek 01 §11 — Fundamental Mathematics\nWeek 01 §12 — Summation Notation\nWeek 01 §13 — Worked Summation Example\nWeek 02 §1 — Review: Summation Notation"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to explain how adding the same constant to every score affects:\n\nthe center of the distribution, represented by the mean; and\nthe spread of the distribution, represented by the standard deviation.\n\nThe explanation matters. You should not only state what happens; you should show that you understand why."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-1",
+    "href": "assignments/assignment01.html#how-to-approach-it-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nRepresent the transformed score as:\n\\[\nY_i=X_i+5.\n\\]\nThen consider the two statistics separately.\nFor the mean, ask: if every score is shifted upward by exactly the same amount, what happens to the average?\nFor standard deviation, remember that it is based on distances from the mean. Compare:\n\\[\nX_i-M_X\n\\]\nwith\n\\[\n(X_i+5)-(M_X+5).\n\\]\nSimplify the second expression and use that result to explain whether the distances from the mean change.\n\nStudy Guide sections\n\nWeek 03 §15 — How the Mean Changes\nWeek 03 §33 — What Happens When Scores Are Transformed?"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis is a conceptual question about causal inference. You need to identify the design feature or combination of features that makes a true experiment different from designs in which variables are merely observed or participants are not randomly assigned.\nThen you need to explain why that difference matters for cause-and-effect reasoning."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-2",
+    "href": "assignments/assignment01.html#how-to-approach-it-2",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nCompare the three designs by asking:\n\nIs an independent variable manipulated?\nAre participants randomly assigned to conditions?\nIs there a comparison or control condition?\nCould pre-existing differences between participants explain the result?\n\nA strong answer connects the design feature to the logic of ruling out alternative explanations. Do not stop at saying “experiments can show causation.” Explain how the design helps isolate the effect of the independent variable.\n\nStudy Guide sections\n\nWeek 01 §9 — Three Basic Research Designs\nWeek 01 §21 — Tutorial Preparation"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nFor each variable, you must do two things:\n\nidentify its measurement scale: nominal, ordinal, interval, or ratio;\nbriefly justify that classification from the properties of the variable.\n\nDo not classify a variable simply because it contains numbers. Ask what those numbers actually mean."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-3",
+    "href": "assignments/assignment01.html#how-to-approach-it-3",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nFor each variable, work through this decision sequence:\n\nAre the values merely different categories?\nCan those categories be placed in a meaningful order?\nIf the variable is numerical, do equal numerical differences represent equal differences in the measured quantity?\nDoes zero represent a genuine absence of the measured quantity?\n\nUse those properties in your justification. A good justification is usually one sentence explaining the key feature that determines the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §6 — Ordinal Variables\nWeek 02 §7 — Interval Variables\nWeek 02 §32 — Important Terms"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis question asks you to classify two different variables using the four scales of measurement."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-4",
+    "href": "assignments/assignment01.html#how-to-approach-it-4",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nTreat the variables separately.\nFor reaction time, ask whether the values have equal units and whether zero has a meaningful interpretation.\nFor handedness, ask whether the categories have any inherent order or whether they simply identify different groups.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §32 — Important Terms"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to classify the recorded variable, not the underlying concept of income in the abstract."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-5",
+    "href": "assignments/assignment01.html#how-to-approach-it-5",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nNotice that the survey does not record each person’s exact income. Instead, it places respondents into categories.\nAsk:\n\nDo the categories have a meaningful order?\nDo the recorded category labels provide exact, equal numerical distances between respondents?\nWould arithmetic using category labels preserve the information actually collected?\n\nUse those questions to identify the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §6 — Ordinal Variables\nWeek 02 §33 — Common Misunderstandings"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to:\n\nidentify the overall shape of the distribution from the verbal description; and\ndraw a rough graph showing that shape."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-6",
+    "href": "assignments/assignment01.html#how-to-approach-it-6",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nTranslate the description into a frequency pattern:\n\nLocate where most observations are concentrated.\nLocate the few extreme observations.\nDecide which side has the longer, thinner tail.\nRemember that skew is named for the direction of the tail, not the side containing most observations.\nDraw a simple sketch:\n\nhorizontal axis = weekly gaming hours;\nvertical axis = frequency;\nshow the large cluster and the sparse extreme values.\n\n\n\nStudy Guide sections\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §23 — Frequency Polygons\nWeek 03 §18 — Distribution Shape and Skewness\nWeek 03 §20 — Other Distribution Shapes"
+  },
+  {
+    "objectID": "assignments/assignment01.html#e-describe-the-visualization",
+    "href": "assignments/assignment01.html#e-describe-the-visualization",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8e — Describe the visualization",
+    "text": "8e — Describe the visualization\n\nWhat you need to do\nDescribe the pattern visible in the graph and briefly justify your description.\n\n\nHow to do it\nCompare the heights of the category bars. Ask whether one category dominates, whether categories are relatively balanced, or whether there is another obvious pattern.\nBe cautious about applying terminology such as positive or negative skew to a categorical graph, because skewness is most naturally used for ordered quantitative distributions.\n\n\nStudy Guide\n\nWeek 02 §25 — Graphs Can Clarify—and Mislead"
+  },
+  {
+    "objectID": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
+    "href": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8g — Evaluate the citizen’s claim",
+    "text": "8g — Evaluate the citizen’s claim\n\nWhat you need to do\nUse the data to decide whether the citizen’s statement is supported.\n\n\nHow to do it\nTranslate the claim into something testable using the table. Compare:\n\nthe R-rated count;\nthe R-rated percentage;\nthe counts and percentages of the other categories;\nthe modal category.\n\nBase the conclusion only on the fictional dataset provided. Do not make a broader claim about real movie releases.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values\nWeek 02 §29 — The Mode"
+  },
+  {
+    "objectID": "assignments/assignment01.html#f-compare-the-two-groups",
+    "href": "assignments/assignment01.html#f-compare-the-two-groups",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9f — Compare the two groups",
+    "text": "9f — Compare the two groups\n\nWhat you need to do\nUse the descriptive statistics you have already calculated to discuss how the two groups differ and whether the pattern is consistent with the prediction about distraction.\n\n\nHow to do it\nBring together the results from 9a–9e. Compare:\n\nmean;\nmedian;\nmode where informative;\nrange;\nstandard deviation;\n75th percentile;\nany visible differences in the distributions.\n\nThen ask whether these descriptive summaries consistently point in the direction predicted by the study.\nKeep the conclusion at the correct level: this assignment provides descriptive statistics. Do not claim statistical significance unless an inferential statistical test has actually been conducted.\n\n\nStudy Guide\n\nWeek 03 §36 — What Should Be Reported Together?\nWeek 03 §38 — How the Concepts Fit Together"
   }
 ]
