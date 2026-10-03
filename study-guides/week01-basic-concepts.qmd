@@ -4,52 +4,897 @@ title: "Week 01 — Course Introduction and Basic Concepts"
 
 ## Overview
 
-*To be developed from the supplied lecture notes, tutorials, exercises, and readings.*
+Week 1 introduces the logic of data analysis in psychology. The central idea is that statistics is not simply a collection of formulas. It is a way to connect **questions, theories, measurements, data, and evidence-based conclusions**.
+
+The lecture begins with the goals of science and then moves through the basic research process: identify something that needs explaining, decide how to measure it, formulate a research hypothesis, collect data, and analyze those data descriptively or inferentially. It also introduces the distinction between populations and samples, basic research designs, and several mathematical tools—especially summation notation—that will be used throughout the course.
+
+The tutorials and practice materials reinforce these ideas through hands-on work with summation notation and the basic organization of data into frequency tables and histograms.
 
 ## Learning Objectives
 
-*To be added.*
+By the end of this week, you should be able to:
 
-## Key Concepts
+1. Explain why statistics is important for psychological research.
+2. Distinguish **descriptive statistics** from **inferential statistics**.
+3. Distinguish a **population** from a **sample**, and a **parameter** from a **statistic**.
+4. Explain what a variable is and distinguish independent, dependent, and extraneous/confounding variables.
+5. Explain the difference between a **research hypothesis** and a **statistical hypothesis**.
+6. Distinguish **experimental**, **quasi-experimental**, and **correlational/observational** research designs.
+7. Explain why representativeness and sampling error matter when generalizing from a sample to a population.
+8. Use basic mathematical notation correctly, including order of operations, exponents, roots, inequalities, and summation notation.
+9. Read and construct basic frequency tables using frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency.
+10. Explain what a histogram shows and how grouped and ungrouped histograms summarize distributions.
 
-*To be added.*
+# 1. Why Learn Data Analysis?
 
-## How the Concepts Fit Together
+Statistics is introduced in this course as a tool for making sense of observations. In psychology, good questions and good research designs are not enough by themselves. Researchers also need appropriate methods for summarizing and interpreting the data they collect.
 
-*To be added.*
+A statistical procedure can help researchers:
 
-## Important Terms
+- organize observations;
+- summarize patterns;
+- compare groups;
+- examine relationships;
+- evaluate whether an observed pattern is consistent with a research hypothesis;
+- communicate evidence clearly.
+
+The lecture emphasizes that statistics should help us move beyond intuition or “common sense.” Common sense can be incomplete, biased, or misleading. Statistical reasoning gives us a systematic way to evaluate claims.
+
+At the same time, statistics does not automatically produce truth. Numbers, graphs, and analyses always appear in a context. Choices about what to measure, whom to sample, what comparison to make, and how to display results all affect the story that the analysis tells.
+
+### Key idea
+
+> Statistics is not just calculation. It is part of the broader process of asking questions, collecting evidence, evaluating claims, and communicating conclusions.
+
+# 2. The Goals of Science
+
+The lecture frames science as a search for regularities in the world.
+
+Scientists may try to:
+
+- **describe** what happens;
+- identify reliable **co-occurrences or laws**;
+- search for **causes**;
+- develop **theories** that explain observed regularities.
+
+A useful scientific theory must be **falsifiable**. This means that there must be some possible observation that could count against it.
+
+Theories help researchers organize existing knowledge, predict new findings, and guide future research. Statistics enters this process by helping researchers determine whether patterns observed in data provide reasonable support for a proposed explanation.
+
+# 3. From a Question to Data
+
+A research project usually begins with something that needs explaining.
+
+A researcher might:
+
+1. observe something in the world;
+2. read previous research;
+3. talk with colleagues;
+4. formulate a question;
+5. decide what needs to be measured;
+6. collect data;
+7. analyze the data;
+8. evaluate whether the evidence supports the original expectation.
+
+The important transition is from an abstract idea to something measurable.
+
+## Operational definitions
+
+Psychological concepts are often abstract. Anxiety, memory, stress, motivation, intelligence, and attention are not directly visible in the same way as height or weight.
+
+Researchers therefore need to **operationally define** variables.
+
+An operational definition states exactly how a concept will be observed or measured.
+
+For example:
+
+- “anxiety” might be measured using a questionnaire score;
+- “memory” might be measured as the number of words correctly recalled;
+- “autonomic arousal” might be measured using heart rate or blood pressure.
+
+Operational definitions connect theoretical ideas to observable data.
+
+# 4. Variables
+
+A **variable** is something that can take more than one value across people, objects, times, or conditions.
+
+In a statistical analysis, variables can play different roles.
+
+| Variable role | Meaning |
+|---|---|
+| **Independent variable (IV)** | A variable that is manipulated or used as a predictor. |
+| **Dependent variable (DV)** | A variable that is measured as the outcome or response. |
+| **Extraneous/confounding variable** | Another variable that may influence the outcome and complicate interpretation. |
+
+### Example: Pet therapy
+
+The lecture uses the question of whether interaction with a dog might calm the autonomic nervous system of children with ADHD.
+
+Possible variables include:
+
+- **type of interaction**: interaction with an adult vs. interaction with a dog;
+- **blood pressure**;
+- **heart rate**.
+
+The general analytical question is whether the measured outcome differs depending on the condition.
+
+# 5. Research Hypotheses and Statistical Hypotheses
+
+A **research hypothesis** is a plain-language statement about what a researcher expects to observe.
+
+Examples from the lecture include:
+
+- Extroversion is related to school achievement.
+- Using mnemonics to study will affect exam performance.
+- Watching television while performing a task will affect reaction time.
+- Interacting with a dog will have a calming effect on the autonomic nervous system of children with ADHD.
+
+These statements concern substantive psychological expectations.
+
+A **statistical hypothesis** translates an expectation into a mathematical statement about population parameters.
+
+This distinction matters because a statistical comparison only makes sense if it matches the research question and the way the variables were actually measured.
+
+### Important caution
+
+A statistically correct calculation can still answer the wrong research question if the variables, measures, or comparison do not match the original hypothesis.
+
+# 6. Descriptive and Inferential Statistics
+
+## Descriptive statistics
+
+**Descriptive statistics** summarize and organize data.
+
+They answer questions such as:
+
+- What values occurred?
+- How frequently did they occur?
+- What is a typical score?
+- How spread out are the scores?
+- What does the distribution look like?
+
+Descriptive statistics can be presented as numbers, tables, graphs, percentages, frequencies, and averages.
+
+## Inferential statistics
+
+**Inferential statistics** use data from a sample to make a reasoned statement about a larger population.
+
+The logic is:
+
+**Population → Sample → Data → Statistical analysis → Inference about the population**
+
+This is a conceptual leap because researchers usually observe only the sample, while their scientific question concerns the larger population.
+
+# 7. Populations, Samples, Parameters, and Statistics
+
+These four terms belong together.
+
+| Term | Meaning |
+|---|---|
+| **Population** | The complete set of people, objects, or events of interest. |
+| **Sample** | A subset of the population that is actually observed. |
+| **Parameter** | A value that describes a population. |
+| **Statistic** | A value that describes a sample. |
+
+For example, suppose the population is all students enrolled in an introductory statistics course. A researcher might study 80 students.
+
+- The **population** is all relevant students.
+- The **sample** is the 80 students studied.
+- The true population mean anxiety score is a **parameter**.
+- The mean anxiety score calculated from the 80 students is a **statistic**.
+
+Inferential statistics use sample statistics to learn about unknown population parameters.
+
+# 8. Representativeness and Sampling Error
+
+A sample does not automatically represent its population.
+
+Two questions should always be asked:
+
+1. **Is the sample representative of the population we care about?**
+2. **Could chance have produced an unusual sample?**
+
+This second issue is closely related to **sampling error**.
+
+Sampling error refers to the fact that different samples drawn from the same population will not be identical. Even if a sampling procedure is reasonable, a particular sample may differ from the population simply because of chance.
+
+This is one of the central reasons inferential statistics is necessary.
+
+### TA teaching point
+
+Students often assume that “random sample” means “perfectly representative sample.” It does not. Random sampling reduces systematic bias, but random variation still exists.
+
+# 9. Three Basic Research Designs
+
+## Experimental design
+
+A true experiment is designed to support a cause-and-effect conclusion.
+
+The lecture emphasizes three important features:
+
+1. **Manipulation** — the researcher creates different conditions.
+2. **Randomization** — participants are randomly allocated to conditions.
+3. **Comparison/control** — outcomes are compared across conditions.
+
+### Example
+
+To study whether watching television affects reaction time:
+
+- participants could be randomly assigned to a **TV** condition or a **no-TV** condition;
+- the researcher manipulates whether television is present;
+- reaction time is measured in both groups.
+
+Random assignment is important because it helps distribute other participant characteristics across conditions.
+
+## Quasi-experimental design
+
+A quasi-experiment resembles an experiment but lacks one or more elements needed for a true experiment.
+
+This often happens because:
+
+- the independent variable cannot be manipulated;
+- participants cannot be randomly assigned;
+- a comparison/control group is missing.
+
+Many psychological variables are preexisting and cannot ethically or practically be randomized.
+
+## Correlational or observational design
+
+In a correlational design, researchers measure two or more variables without manipulating them.
+
+The purpose is to determine whether variables are related.
+
+For example:
+
+- computer use and exercise;
+- extroversion and school achievement;
+- income and life satisfaction.
+
+A correlational design can demonstrate a relationship, but it cannot by itself establish causation.
+
+### Comparison
+
+| Design | Manipulation? | Random assignment? | Can support causal conclusions? |
+|---|---:|---:|---:|
+| Experimental | Yes | Yes | Yes, if appropriately conducted |
+| Quasi-experimental | Often no / incomplete | Often no | More limited |
+| Correlational | No | No | No |
+
+# 10. Statistical Results Need Context
+
+The lecture makes an important cautionary point: statistics can be numerically accurate and still create a misleading impression.
+
+Graphs are especially sensitive to choices such as:
+
+- where the vertical axis begins;
+- the range of values displayed;
+- the time period selected;
+- the scale of an axis;
+- which observations are included or excluded.
+
+Two graphs based on the same underlying phenomenon can create very different visual impressions.
+
+### Questions to ask when reading a graph
+
+- What are the axes?
+- Where does each axis begin?
+- What range is shown?
+- Is the scale consistent?
+- What time period or cases were selected?
+- Does the visual size of a difference match its numerical size?
+
+The broader lesson is that statistics should be interpreted, not merely accepted.
+
+# 11. Fundamental Mathematics
+
+The course does not require advanced mathematics, but it assumes comfort with several basic mathematical tools.
+
+## Order of operations
+
+Use **PEDMAS/BEDMAS**:
+
+1. Parentheses / Brackets
+2. Exponents
+3. Division / Multiplication
+4. Addition / Subtraction
+
+Changing the order can produce completely different results.
+
+## Brackets and absolute value
+
+Parentheses and square brackets group operations.
+
+Absolute-value brackets indicate distance from zero:
+
+\[
+|4| = 4
+\]
+
+\[
+|-39| = 39
+\]
+
+## Inequalities
+
+Know the meaning of \(>\), \(<\), and \(\leq\).
+
+## Fractions
+
+You should be able to add and subtract fractions, find common denominators, and convert fractions to decimals.
+
+## Negative numbers
+
+\[
+(-a)(b) = -ab
+\]
+
+\[
+(-a)(-b) = ab
+\]
+
+## Basic equations
+
+For example:
+
+\[
+15x + 10 = 40
+\]
+
+Subtract 10 from both sides:
+
+\[
+15x = 30
+\]
+
+Then divide by 15:
+
+\[
+x = 2
+\]
+
+## Exponents and square roots
+
+\[
+3^2 = 9
+\]
+
+\[
+\sqrt{9} = 3
+\]
+
+\[
+3^4 = 81
+\]
+
+# 12. Summation Notation
+
+The Greek letter sigma, \(\Sigma\), means **sum** or **add together**.
+
+If
+
+\[
+X = \{1,5,10\}
+\]
+
+then
+
+\[
+\sum X = 1 + 5 + 10 = 16
+\]
+
+More complete notation looks like:
+
+\[
+\sum_{i=1}^{n} X_i
+\]
+
+This means: add the values of \(X_i\), beginning with the first indexed value and ending with the \(n\)th value.
+
+## Indices matter
+
+If
+
+\[
+X = \{4,8,6,3,5,6,4,2\}
+\]
+
+then
+
+\[
+\sum_{i=2}^{5} X_i = 8 + 6 + 3 + 5 = 22
+\]
+
+Only values with indices 2 through 5 are included.
+
+## Summing products
+
+If two variables are paired,
+
+\[
+\sum XY
+\]
+
+means multiply \(X_i\) and \(Y_i\) within each row and then add the resulting products.
+
+It does **not** mean
+
+\[
+(\sum X)(\sum Y)
+\]
+
+unless that is explicitly written.
+
+## Squaring a sum is not the same as summing squares
+
+These expressions are different:
+
+\[
+\left(\sum X\right)^2
+\]
+
+and
+
+\[
+\sum X^2
+\]
+
+For example, if \(X=\{1,2,3\}\):
+
+\[
+\left(\sum X\right)^2 = (1+2+3)^2 = 36
+\]
+
+but
+
+\[
+\sum X^2 = 1^2+2^2+3^2 = 14
+\]
+
+This distinction becomes extremely important later in formulas for variance and other statistics.
+
+## Parentheses prevent ambiguity
+
+Compare:
+
+\[
+\sum(X_i + 2)
+\]
+
+with
+
+\[
+\left(\sum X_i\right)+2
+\]
+
+They are not equivalent.
+
+# 13. Worked Summation Example
+
+The tutorial uses paired values for \(X\) and \(Y\):
+
+| \(i\) | \(X\) | \(Y\) |
+|---:|---:|---:|
+| 1 | 4 | 6 |
+| 2 | 8 | 6 |
+| 3 | 6 | 7 |
+| 4 | 3 | 3 |
+| 5 | 5 | 5 |
+| 6 | 6 | 4 |
+| 7 | 4 | 1 |
+| 8 | 2 | 3 |
+
+Then:
+
+\[
+\sum_{i=1}^{8} Y_i = 6+6+7+3+5+4+1+3 = 35
+\]
+
+For a restricted sum:
+
+\[
+\sum_{i=1}^{4} X_i^2 = 4^2+8^2+6^2+3^2 = 125
+\]
+
+For a squared sum:
+
+\[
+\left(\sum_{i=2}^{7}Y_i\right)^2 = (6+7+3+5+4+1)^2 = 26^2 = 676
+\]
+
+For paired products:
+
+\[
+\sum_{i=6}^{8}X_iY_i = (6\times 4)+(4\times 1)+(2\times 3) = 34
+\]
+
+The tutorial also demonstrates two useful summation rules:
+
+\[
+\sum(X+Y)=\sum X+\sum Y
+\]
+
+and
+
+\[
+\sum(cX)=c\sum X
+\]
+
+If a constant is added to each score, the constant is added once for **each included observation**.
+
+# 14. Frequency Tables
+
+The Week 1 practice materials also introduce the basic structure of a frequency table.
+
+A frequency table organizes a set of scores by showing how often each score—or each range of scores—occurs.
+
+Common columns include:
+
+| Symbol | Meaning |
+|---|---|
+| \(f\) | Frequency |
+| Prop. or RF | Proportion / relative frequency |
+| % or F% | Percentage frequency |
+| CF | Cumulative frequency |
+| CRF | Cumulative relative frequency |
+| C% | Cumulative percentage |
+
+## Frequency
+
+The **frequency** \(f\) is the number of observations with a particular value.
+
+## Proportion / relative frequency
+
+\[
+\text{Proportion}=\frac{f}{n}
+\]
+
+## Percentage frequency
+
+\[
+\text{Percentage}= \frac{f}{n}\times 100
+\]
+
+## Cumulative frequency
+
+Cumulative frequency is the running total of frequencies as scores increase. The final cumulative frequency should equal \(n\).
+
+## Cumulative relative frequency
+
+This is the running total of proportions. The final value should equal 1.00.
+
+## Cumulative percentage
+
+The final cumulative percentage should equal 100%.
+
+### Internal checks
+
+A correctly completed frequency table should satisfy:
+
+\[
+\sum f=n
+\]
+
+\[
+\sum \text{Prop.}=1.00
+\]
+
+\[
+\sum \%=100\%
+\]
+
+and the last cumulative entries should be \(CF=n\), \(CRF=1.00\), and \(C\%=100\%\).
+
+# 15. Ungrouped Frequency Table Example
+
+The tutorial uses the following 20 scores:
+
+\[
+6,7,4,5,5,6,6,5,9,3,3,5,2,2,1,4,7,8,8,4
+\]
+
+An ungrouped frequency table is:
+
+| \(X\) | \(f\) | Proportion | % | CF | CRF |
+|---:|---:|---:|---:|---:|---:|
+| 1 | 1 | .05 | 5% | 1 | 5% |
+| 2 | 2 | .10 | 10% | 3 | 15% |
+| 3 | 2 | .10 | 10% | 5 | 25% |
+| 4 | 3 | .15 | 15% | 8 | 40% |
+| 5 | 4 | .20 | 20% | 12 | 60% |
+| 6 | 3 | .15 | 15% | 15 | 75% |
+| 7 | 2 | .10 | 10% | 17 | 85% |
+| 8 | 2 | .10 | 10% | 19 | 95% |
+| 9 | 1 | .05 | 5% | 20 | 100% |
+
+Checks:
+
+\[
+\sum f=20, \qquad \sum \text{Proportion}=1.00, \qquad \sum \%=100\%
+\]
+
+# 16. Histograms
+
+A histogram is a graphical display of the distribution of quantitative scores.
+
+The horizontal axis shows score values or score intervals. The vertical axis shows frequency.
+
+For the ungrouped Week 1 example, each observed score value from 1 to 9 is treated as its own bin. The histogram therefore shows quickly that the most frequent score is 5 and that frequencies are lower toward the ends of the observed range.
+
+### Important distinction
+
+A histogram represents **frequency across numeric intervals or values**. Adjacent bars normally touch because the scale is quantitative and ordered.
+
+# 17. Grouped Frequency Tables and Histograms
+
+When many possible scores exist, individual values can be grouped into intervals or **bins**.
+
+The Week 1 tutorial groups the same 20 scores into five bins of width 2:
+
+- 0–1
+- 2–3
+- 4–5
+- 6–7
+- 8–9
+
+The grouped table is:
+
+| Score interval | \(f\) | Proportion | % | CF | CRF |
+|---|---:|---:|---:|---:|---:|
+| 0–1 | 1 | .05 | 5% | 1 | 5% |
+| 2–3 | 4 | .20 | 20% | 5 | 25% |
+| 4–5 | 7 | .35 | 35% | 12 | 60% |
+| 6–7 | 5 | .25 | 25% | 17 | 85% |
+| 8–9 | 3 | .15 | 15% | 20 | 100% |
+
+Grouping reduces detail but can make the overall distribution easier to see.
+
+### Trade-off
+
+- **Narrow bins** preserve detail.
+- **Wide bins** simplify the distribution.
+- Different binning choices can change the appearance of a histogram.
+
+This reinforces the larger Week 1 lesson: data displays involve analytical choices.
+
+# 18. How the Concepts Fit Together
+
+The Week 1 material can be understood as one connected chain:
+
+**Theory or question**
+
+↓
+
+**Research hypothesis**
+
+↓
+
+**Operational definition of variables**
+
+↓
+
+**Research design**
+
+↓
+
+**Population and sample**
+
+↓
+
+**Data collection**
+
+↓
+
+**Descriptive statistics**
+
+↓
+
+**Inferential statistics**
+
+↓
+
+**Conclusion about the research question**
+
+Mathematical notation and frequency tables are not separate topics. They are tools that allow researchers to express and summarize the data generated by this process.
+
+# 19. Important Terms
 
 | Term | Plain-language explanation |
 |---|---|
-| *To be added* | |
+| **Statistics** | Methods for collecting, summarizing, analyzing, interpreting, and presenting numerical observations. |
+| **Data** | A set of observations or measurements. |
+| **Variable** | A characteristic that can take more than one value. |
+| **Operational definition** | A precise statement of how a variable is measured or observed. |
+| **Research hypothesis** | A substantive expectation about what a study may find. |
+| **Statistical hypothesis** | A mathematical statement about population parameters. |
+| **Descriptive statistics** | Methods for organizing and summarizing observed data. |
+| **Inferential statistics** | Methods for using sample data to reason about a population. |
+| **Population** | The complete set of cases of interest. |
+| **Sample** | A subset of the population that is observed. |
+| **Parameter** | A numerical characteristic of a population. |
+| **Statistic** | A numerical characteristic of a sample. |
+| **Sampling error** | Difference between a sample and population that can occur because of chance sampling variation. |
+| **Independent variable** | A manipulated or predictor variable. |
+| **Dependent variable** | A measured outcome or response variable. |
+| **Confounding variable** | Another variable that may influence the outcome and complicate interpretation. |
+| **Experiment** | A design using manipulation, randomization, and comparison/control. |
+| **Quasi-experiment** | An experiment-like design missing some element of experimental control. |
+| **Correlational design** | A design measuring relationships among variables without manipulation. |
+| **Summation notation** | Mathematical notation using \(\Sigma\) to represent addition across indexed observations. |
+| **Frequency** | Number of observations having a value or falling within a class. |
+| **Relative frequency** | Frequency divided by the total number of observations. |
+| **Cumulative frequency** | Running total of frequencies. |
+| **Histogram** | Graph showing the frequency distribution of quantitative scores. |
 
-## Worked Examples
+# 20. Common Misunderstandings
 
-*To be added.*
+## “Statistics proves that something is true.”
 
-## Common Misunderstandings
+No. Statistical analysis helps quantify evidence and uncertainty. Conclusions remain dependent on the study design, measurement quality, sample, assumptions, and context.
 
-*To be added.*
+## “A sample is basically the same thing as a population.”
 
-## Tutorial Preparation
+No. A sample is only a subset. Inferential statistics is needed precisely because we usually do not observe the whole population.
 
-*To be added.*
+## “A statistic and a parameter are interchangeable.”
 
-## Practice Questions
+No. **Statistic → sample; parameter → population.**
 
-### Conceptual Questions
+## “Random assignment and random sampling are the same.”
 
-*To be added.*
+No. **Random sampling** concerns how people are selected from a population. **Random assignment** concerns how selected participants are placed into experimental conditions.
 
-### Applied Questions
+## “Correlation shows that one variable causes the other.”
 
-*To be added.*
+No. Correlation shows a relationship, not cause.
 
-## What You Should Be Able to Explain
+## “\(\sum X^2\) and \((\sum X)^2\) mean the same thing.”
 
-*To be added.*
+No. One squares each score before summing; the other sums first and then squares.
 
-## Reading
+## “The number after sigma is always added once.”
 
-Privitera (2018), Chapter 1
+Not necessarily. If a constant is inside the summation, it is applied once for each indexed observation.
+
+## “A histogram is an objective picture of the data.”
+
+The data are objective observations, but the display still depends on choices such as bin width, axis range, and grouping.
+
+# 21. Tutorial Preparation
+
+A TA should be ready to help students with both the **conceptual language** and the **notation**.
+
+## Conceptual questions students may ask
+
+### “Why do we need statistics if we can just look at the data?”
+
+Raw data often contain too many individual observations to interpret easily. Descriptive statistics organize the observations; inferential statistics help researchers reason beyond the observed sample.
+
+### “Why can experiments show causation but correlations cannot?”
+
+A properly conducted experiment uses manipulation, random assignment, and comparison/control. These design features help rule out competing explanations. A correlation only observes how variables co-vary.
+
+### “Why do we care so much about populations if we only collect samples?”
+
+Psychological research usually aims to understand a broader group or process, not only the particular participants who happened to take part.
+
+### “Why is summation notation necessary?”
+
+Statistical formulas often apply the same arithmetic operation to many observations. Summation notation provides a compact and precise way to express this.
+
+## Computation issues to watch for
+
+Students often make mistakes by:
+
+- ignoring the lower and upper index of a summation;
+- confusing \(\sum X^2\) with \((\sum X)^2\);
+- multiplying \(\sum X\) and \(\sum Y\) when the expression actually requires \(\sum XY\);
+- forgetting that a constant inside a summation is applied to every included score;
+- skipping parentheses;
+- calculating cumulative frequencies incorrectly;
+- forgetting that proportions must sum to 1.00;
+- forgetting that percentages must sum to 100%;
+- drawing histogram bars with heights that do not match the frequency table.
+
+# 22. Practice Questions
+
+## Conceptual Questions
+
+1. Explain in your own words why statistics is useful in psychology.
+2. What is the difference between descriptive and inferential statistics?
+3. Give an example of a psychological population and a sample drawn from it.
+4. Explain the difference between a population parameter and a sample statistic.
+5. Why does sampling error matter?
+6. Give an operational definition for “academic stress.”
+7. What three elements characterize a true experiment in this course?
+8. Why can a correlational study not establish causation?
+9. Explain the difference between a research hypothesis and a statistical hypothesis.
+10. Why can two graphs based on the same data create different impressions?
+
+## Summation Practice
+
+Let
+
+\[
+X=\{2,4,6,8\}
+\]
+
+and
+
+\[
+Y=\{5,3,7,1\}
+\]
+
+Calculate:
+
+1. \(\sum X\)
+2. \(\sum Y\)
+3. \(\sum(X+Y)\)
+4. \(\sum XY\)
+5. \(\sum X^2\)
+6. \((\sum X)^2\)
+7. \(\sum_{i=2}^{4}X_i\)
+8. \(\sum_{i=1}^{3}(X_i+2)\)
+
+## Frequency Table Practice
+
+For the scores
+
+\[
+2,3,3,4,4,4,5,6,6,7
+\]
+
+construct a table containing \(X\), \(f\), relative frequency, percentage frequency, cumulative frequency, and cumulative relative frequency. Then draw a histogram.
+
+## Research Design Practice
+
+For each example, identify whether the design is experimental, quasi-experimental, or correlational.
+
+1. Participants are randomly assigned to study with music or without music, then take the same memory test.
+2. Researchers compare stress scores of first-year and fourth-year university students.
+3. Researchers measure weekly exercise and depressive symptoms in the same participants.
+4. A researcher introduces a mindfulness program in one class but has no comparison class.
+
+# 23. What You Should Be Able to Explain
+
+Before moving on, you should be able to explain—without relying on memorized definitions:
+
+- why statistics is part of scientific reasoning;
+- how a research question becomes measurable data;
+- how operational definitions connect concepts to observations;
+- how population, sample, parameter, and statistic relate to one another;
+- why descriptive and inferential statistics answer different kinds of questions;
+- why experimental, quasi-experimental, and correlational designs support different kinds of conclusions;
+- why sampling error and representativeness matter;
+- how to interpret basic summation notation;
+- how to distinguish \(\sum X^2\) from \((\sum X)^2\);
+- how to calculate frequency, proportion, percentage, cumulative frequency, and cumulative relative frequency;
+- how to read a histogram critically.
+
+# 24. Readings and Practice
+
+## Required reading
+
+- Privitera, G. J. (2018). *Essential Statistics for the Behavioral Sciences* (2nd ed.), Chapter 1.
+- The 2024 edition of Privitera Chapter 1 covers the same core foundations with updated organization and examples.
+
+## Lecture and tutorial materials
+
+- Lecture 1: Introduction to Data Analysis.
+- Lecture 1 Worksheet.
+- Tutorial: Summation Operator.
+- Tutorial: Frequency Tables and Histograms.
+- Frequency Table Practice.
+
+## Suggested practice from the lecture
+
+The lecture recommends completing the Lecture 1 worksheet, attempting Learning Check 1 and Learning Check 2, reviewing the basic mathematics appendix, and completing selected end-of-chapter Chapter 1 problems.
+
+# 25. Week 1 Takeaway
+
+The most important lesson this week is not a formula.
+
+It is a way of thinking:
+
+> Start with a question, define what you mean, decide how to observe it, collect evidence, summarize what you observed, and be cautious when using a sample to say something about a larger population.
+
+The mathematical notation and frequency-table skills introduced this week are tools that support that broader reasoning process.
