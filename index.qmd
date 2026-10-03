@@ -10,10 +10,10 @@ The course emphasizes conceptual understanding: not simply how to perform a stat
 
 ## Repository contents
 
-- **Syllabus** — an abbreviated overview of the course topics, readings, assignments, and schedule.
-- **Study Guides** — one guide for each major course subject.
-- **Assignments** — assignment information and preparation materials.
-- **Resources** — required and supplementary references.
+- [**Syllabus**](syllabus.qmd) — an abbreviated overview of the course topics, readings, assignments, and schedule.
+- [**Study Guides**](study-guides/index.qmd) — one guide for each major course subject.
+- [**Assignments**](assignments/index.qmd) — assignment information and preparation materials.
+- [**Resources**](resources/index.qmd) — required and supplementary references.
 
 ## Study Guide workflow
 
