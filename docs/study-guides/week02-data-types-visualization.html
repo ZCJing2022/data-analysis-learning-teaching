@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 02 — Data Types and Visualization – Data Analysis: Learning &amp; Teaching</title>
+<title>Week 02 — Data Types, Frequency Distributions, and Visualization – Data Analysis: Learning &amp; Teaching</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -130,22 +159,67 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts</a></li>
-  <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">How the Concepts Fit Together</a></li>
-  <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">Important Terms</a></li>
-  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples">Worked Examples</a></li>
-  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">Common Misunderstandings</a></li>
-  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">Tutorial Preparation</a></li>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a>
+  <li><a href="#review-summation-notation" id="toc-review-summation-notation" class="nav-link" data-scroll-target="#review-summation-notation">1. Review: Summation Notation</a></li>
+  <li><a href="#three-useful-summation-rules" id="toc-three-useful-summation-rules" class="nav-link" data-scroll-target="#three-useful-summation-rules">2. Three Useful Summation Rules</a></li>
+  <li><a href="#variables-and-why-their-type-matters" id="toc-variables-and-why-their-type-matters" class="nav-link" data-scroll-target="#variables-and-why-their-type-matters">3. Variables and Why Their Type Matters</a></li>
+  <li><a href="#the-four-scales-of-measurement" id="toc-the-four-scales-of-measurement" class="nav-link" data-scroll-target="#the-four-scales-of-measurement">4. The Four Scales of Measurement</a></li>
+  <li><a href="#nominal-variables" id="toc-nominal-variables" class="nav-link" data-scroll-target="#nominal-variables">5. Nominal Variables</a></li>
+  <li><a href="#ordinal-variables" id="toc-ordinal-variables" class="nav-link" data-scroll-target="#ordinal-variables">6. Ordinal Variables</a></li>
+  <li><a href="#interval-variables" id="toc-interval-variables" class="nav-link" data-scroll-target="#interval-variables">7. Interval Variables</a></li>
+  <li><a href="#ratio-variables" id="toc-ratio-variables" class="nav-link" data-scroll-target="#ratio-variables">8. Ratio Variables</a></li>
+  <li><a href="#categorical-discrete-continuous-qualitative-and-quantitative" id="toc-categorical-discrete-continuous-qualitative-and-quantitative" class="nav-link" data-scroll-target="#categorical-discrete-continuous-qualitative-and-quantitative">9. Categorical, Discrete, Continuous, Qualitative, and Quantitative</a></li>
+  <li><a href="#a-source-tension-likert-like-and-rating-scales" id="toc-a-source-tension-likert-like-and-rating-scales" class="nav-link" data-scroll-target="#a-source-tension-likert-like-and-rating-scales">10. A Source Tension: Likert-Like and Rating Scales</a></li>
+  <li><a href="#why-summarize-data" id="toc-why-summarize-data" class="nav-link" data-scroll-target="#why-summarize-data">11. Why Summarize Data?</a></li>
+  <li><a href="#ungrouped-frequency-distributions" id="toc-ungrouped-frequency-distributions" class="nav-link" data-scroll-target="#ungrouped-frequency-distributions">12. Ungrouped Frequency Distributions</a></li>
+  <li><a href="#frequency-proportion-percentage-and-cumulative-values" id="toc-frequency-proportion-percentage-and-cumulative-values" class="nav-link" data-scroll-target="#frequency-proportion-percentage-and-cumulative-values">13. Frequency, Proportion, Percentage, and Cumulative Values</a>
   <ul class="collapse">
-  <li><a href="#conceptual-questions" id="toc-conceptual-questions" class="nav-link" data-scroll-target="#conceptual-questions">Conceptual Questions</a></li>
-  <li><a href="#applied-questions" id="toc-applied-questions" class="nav-link" data-scroll-target="#applied-questions">Applied Questions</a></li>
+  <li><a href="#frequency" id="toc-frequency" class="nav-link" data-scroll-target="#frequency">Frequency</a></li>
+  <li><a href="#proportion-relative-frequency" id="toc-proportion-relative-frequency" class="nav-link" data-scroll-target="#proportion-relative-frequency">Proportion / relative frequency</a></li>
+  <li><a href="#percentage" id="toc-percentage" class="nav-link" data-scroll-target="#percentage">Percentage</a></li>
+  <li><a href="#cumulative-frequency" id="toc-cumulative-frequency" class="nav-link" data-scroll-target="#cumulative-frequency">Cumulative frequency</a></li>
+  <li><a href="#cumulative-relative-frequency-cumulative-percentage" id="toc-cumulative-relative-frequency-cumulative-percentage" class="nav-link" data-scroll-target="#cumulative-relative-frequency-cumulative-percentage">Cumulative relative frequency / cumulative percentage</a></li>
   </ul></li>
-  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">What You Should Be Able to Explain</a></li>
-  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  <li><a href="#worked-frequency-table-example" id="toc-worked-frequency-table-example" class="nav-link" data-scroll-target="#worked-frequency-table-example">14. Worked Frequency Table Example</a></li>
+  <li><a href="#percentile-rank" id="toc-percentile-rank" class="nav-link" data-scroll-target="#percentile-rank">15. Percentile Rank</a></li>
+  <li><a href="#grouped-frequency-distributions" id="toc-grouped-frequency-distributions" class="nav-link" data-scroll-target="#grouped-frequency-distributions">16. Grouped Frequency Distributions</a></li>
+  <li><a href="#choosing-a-bin-width" id="toc-choosing-a-bin-width" class="nav-link" data-scroll-target="#choosing-a-bin-width">17. Choosing a Bin Width</a></li>
+  <li><a href="#lower-limits-upper-limits-and-real-limits" id="toc-lower-limits-upper-limits-and-real-limits" class="nav-link" data-scroll-target="#lower-limits-upper-limits-and-real-limits">18. Lower Limits, Upper Limits, and Real Limits</a></li>
+  <li><a href="#worked-example-sat-type-scores" id="toc-worked-example-sat-type-scores" class="nav-link" data-scroll-target="#worked-example-sat-type-scores">19. Worked Example: SAT-Type Scores</a></li>
+  <li><a href="#visualizing-frequency-distributions" id="toc-visualizing-frequency-distributions" class="nav-link" data-scroll-target="#visualizing-frequency-distributions">20. Visualizing Frequency Distributions</a></li>
+  <li><a href="#bar-charts" id="toc-bar-charts" class="nav-link" data-scroll-target="#bar-charts">21. Bar Charts</a></li>
+  <li><a href="#histograms" id="toc-histograms" class="nav-link" data-scroll-target="#histograms">22. Histograms</a></li>
+  <li><a href="#frequency-polygons" id="toc-frequency-polygons" class="nav-link" data-scroll-target="#frequency-polygons">23. Frequency Polygons</a></li>
+  <li><a href="#what-grouping-changes" id="toc-what-grouping-changes" class="nav-link" data-scroll-target="#what-grouping-changes">24. What Grouping Changes</a></li>
+  <li><a href="#graphs-can-clarifyand-mislead" id="toc-graphs-can-clarifyand-mislead" class="nav-link" data-scroll-target="#graphs-can-clarifyand-mislead">25. Graphs Can Clarify—and Mislead</a></li>
+  <li><a href="#central-tendency-a-second-way-to-summarize-data" id="toc-central-tendency-a-second-way-to-summarize-data" class="nav-link" data-scroll-target="#central-tendency-a-second-way-to-summarize-data">26. Central Tendency: A Second Way to Summarize Data</a></li>
+  <li><a href="#the-mean" id="toc-the-mean" class="nav-link" data-scroll-target="#the-mean">27. The Mean</a></li>
+  <li><a href="#the-median" id="toc-the-median" class="nav-link" data-scroll-target="#the-median">28. The Median</a></li>
+  <li><a href="#the-mode" id="toc-the-mode" class="nav-link" data-scroll-target="#the-mode">29. The Mode</a></li>
+  <li><a href="#choosing-mean-median-or-mode" id="toc-choosing-mean-median-or-mode" class="nav-link" data-scroll-target="#choosing-mean-median-or-mode">30. Choosing Mean, Median, or Mode</a></li>
+  <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">31. How the Concepts Fit Together</a></li>
+  <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">32. Important Terms</a></li>
+  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">33. Common Misunderstandings</a></li>
+  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">34. Tutorial Preparation</a></li>
+  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">35. Practice Questions</a>
+  <ul class="collapse">
+  <li><a href="#measurement-scales" id="toc-measurement-scales" class="nav-link" data-scroll-target="#measurement-scales">Measurement Scales</a></li>
+  <li><a href="#frequency-tables" id="toc-frequency-tables" class="nav-link" data-scroll-target="#frequency-tables">Frequency Tables</a></li>
+  <li><a href="#grouping" id="toc-grouping" class="nav-link" data-scroll-target="#grouping">Grouping</a></li>
+  <li><a href="#graph-choice" id="toc-graph-choice" class="nav-link" data-scroll-target="#graph-choice">Graph Choice</a></li>
+  <li><a href="#central-tendency" id="toc-central-tendency" class="nav-link" data-scroll-target="#central-tendency">Central Tendency</a></li>
+  </ul></li>
+  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">36. What You Should Be Able to Explain</a></li>
+  <li><a href="#readings-and-practice" id="toc-readings-and-practice" class="nav-link" data-scroll-target="#readings-and-practice">37. Readings and Practice</a>
+  <ul class="collapse">
+  <li><a href="#required-readings" id="toc-required-readings" class="nav-link" data-scroll-target="#required-readings">Required readings</a></li>
+  <li><a href="#additional-supplied-readings" id="toc-additional-supplied-readings" class="nav-link" data-scroll-target="#additional-supplied-readings">Additional supplied readings</a></li>
+  <li><a href="#lecture-and-tutorial-materials" id="toc-lecture-and-tutorial-materials" class="nav-link" data-scroll-target="#lecture-and-tutorial-materials">Lecture and tutorial materials</a></li>
+  </ul></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">38. References</a></li>
+  <li><a href="#week-2-takeaway" id="toc-week-2-takeaway" class="nav-link" data-scroll-target="#week-2-takeaway">39. Week 2 Takeaway</a></li>
   </ul>
 </nav>
     </div>
@@ -154,7 +228,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 02 — Data Types and Visualization</h1>
+<h1 class="title">Week 02 — Data Types, Frequency Distributions, and Visualization</h1>
 </div>
 
 
@@ -173,23 +247,891 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><em>To be developed from the supplied lecture notes, tutorials, exercises, and readings.</em></p>
+<p>Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:</p>
+<blockquote class="blockquote">
+<p>Once data have been collected, how should we represent them so that their structure can be understood accurately?</p>
+</blockquote>
+<p>The week begins by reviewing summation notation and then turns to <strong>types of variables</strong>, <strong>scales of measurement</strong>, <strong>frequency distributions</strong>, <strong>grouped and ungrouped data</strong>, and <strong>graphical displays</strong>. The assigned readings also introduce <strong>central tendency</strong>—the mean, median, and mode—as another way to summarize a distribution with a single representative value.</p>
+<p>The lecture emphasizes that numerical codes do not automatically determine what mathematical operations are meaningful. The appropriate analysis depends on what the variable actually represents (Sigal, 2026). Privitera (2018, 2024) develops the same general principle through scales of measurement, frequency distributions, and central tendency.</p>
+<hr>
 </section>
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p><em>To be added.</em></p>
+<p>By the end of this week, you should be able to:</p>
+<ol type="1">
+<li>Distinguish <strong>categorical/discrete</strong> variables from <strong>continuous/quantitative</strong> variables.</li>
+<li>Define and recognize the four scales of measurement: <strong>nominal, ordinal, interval, and ratio</strong>.</li>
+<li>Explain what information is—and is not—contained in each scale of measurement.</li>
+<li>Explain why numerical coding does not necessarily make a variable quantitative.</li>
+<li>Construct an <strong>ungrouped frequency distribution</strong>.</li>
+<li>Calculate <strong>frequency</strong>, <strong>proportion/relative frequency</strong>, <strong>percentage</strong>, <strong>cumulative frequency</strong>, and <strong>cumulative relative frequency/percentage</strong>.</li>
+<li>Explain when grouped frequency distributions are useful.</li>
+<li>Calculate a reasonable <strong>class interval/bin width</strong>, and identify lower and upper limits.</li>
+<li>Distinguish <strong>apparent limits</strong> from <strong>real limits</strong>.</li>
+<li>Choose an appropriate graph for a variable: <strong>bar chart</strong>, <strong>histogram</strong>, or <strong>frequency polygon</strong>.</li>
+<li>Explain how graphical design choices can create misleading impressions.</li>
+<li>Use summation notation correctly when constants, products, and multiple variables are involved.</li>
+<li>Define <strong>mean, median, and mode</strong> and explain how the appropriate measure of central tendency depends on the data and distribution.</li>
+<li>Identify a documented disagreement in the Week 2 materials concerning how Likert-like/rating-scale data should be treated.</li>
+</ol>
+<hr>
 </section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts</h2>
-<p><em>To be added.</em></p>
+<section id="review-summation-notation" class="level1">
+<h1>1. Review: Summation Notation</h1>
+<p>Week 2 begins by reinforcing a mathematical skill introduced in Week 1: sigma notation.</p>
+<p>The full notation</p>
+<p><span class="math display">\[
+\sum_{i=1}^{n} X_i
+\]</span></p>
+<p>means:</p>
+<blockquote class="blockquote">
+<p>Add the values of variable (X), beginning with the value indexed (i=1) and ending with the value indexed (i=n).</p>
+</blockquote>
+<p>The tutorial stresses that the <strong>order of the observations matters when the summation limits refer to specific indices</strong>. If</p>
+<p><span class="math display">\[
+X=\{2,6,4,8,1,7\},
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+\sum_{i=3}^{5}X_i = 4+8+1=13.
+\]</span></p>
+<p>Reordering the scores before applying the index would change the problem and produce the wrong answer (PSYC 210 Teaching Team, 2026a).</p>
+<section id="sigma-and-order-of-operations" class="level3">
+<h3 class="anchored" data-anchor-id="sigma-and-order-of-operations">Sigma and order of operations</h3>
+<p>Summation notation interacts with BEDMAS/PEDMAS. Parentheses are therefore essential.</p>
+<p>Compare:</p>
+<p><span class="math display">\[
+\sum X_i + 2
+\]</span></p>
+<p>with</p>
+<p><span class="math display">\[
+\sum(X_i+2).
+\]</span></p>
+<p>The first expression means “sum the (X) values, then add 2.” The second means “add 2 to every included (X) value, then sum.”</p>
+<p>Likewise,</p>
+<p><span class="math display">\[
+\left(\sum X_i\right)^2
+\]</span></p>
+<p>is different from</p>
+<p><span class="math display">\[
+\sum X_i^2.
+\]</span></p>
+<p>The lecture again emphasizes using parentheses to eliminate ambiguity (Sigal, 2026).</p>
+<hr>
 </section>
-<section id="how-the-concepts-fit-together" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-concepts-fit-together">How the Concepts Fit Together</h2>
-<p><em>To be added.</em></p>
 </section>
-<section id="important-terms" class="level2">
-<h2 class="anchored" data-anchor-id="important-terms">Important Terms</h2>
+<section id="three-useful-summation-rules" class="level1">
+<h1>2. Three Useful Summation Rules</h1>
+<p>The Week 2 applied-practice worksheet reinforces three rules.</p>
+<section id="rule-1-sum-of-combined-variables" class="level3">
+<h3 class="anchored" data-anchor-id="rule-1-sum-of-combined-variables">Rule 1: Sum of combined variables</h3>
+<p><span class="math display">\[
+\sum(X+Y)=\sum X+\sum Y
+\]</span></p>
+<p>provided the same indexed observations are included.</p>
+</section>
+<section id="rule-2-a-multiplicative-constant-can-be-factored-out" class="level3">
+<h3 class="anchored" data-anchor-id="rule-2-a-multiplicative-constant-can-be-factored-out">Rule 2: A multiplicative constant can be factored out</h3>
+<p><span class="math display">\[
+\sum(cX)=c\sum X.
+\]</span></p>
+<p>For example:</p>
+<p><span class="math display">\[
+\sum_{i=3}^{6}6Y_i
+=
+6\sum_{i=3}^{6}Y_i.
+\]</span></p>
+</section>
+<section id="rule-3-a-constant-added-inside-the-summation-is-repeated" class="level3">
+<h3 class="anchored" data-anchor-id="rule-3-a-constant-added-inside-the-summation-is-repeated">Rule 3: A constant added inside the summation is repeated</h3>
+<p>If there are (k) observations being summed,</p>
+<p><span class="math display">\[
+\sum(X_i+c)=\sum X_i+kc.
+\]</span></p>
+<p>This rule is especially easy to misuse. The constant is added <strong>once for each observation included in the summation</strong>, not once overall.</p>
+<p>The worksheet key applies these rules to paired (X) and (Y) data and also practices products such as (XY), squared sums, and combined expressions (PSYC 210 Teaching Team, 2026a).</p>
+<hr>
+</section>
+</section>
+<section id="variables-and-why-their-type-matters" class="level1">
+<h1>3. Variables and Why Their Type Matters</h1>
+<p>A variable can take more than one value. But different variables carry different kinds of information.</p>
+<p>The lecture makes a key point:</p>
+<blockquote class="blockquote">
+<p>The way data are analyzed depends on the variables and on what the numerical values actually represent (Sigal, 2026).</p>
+</blockquote>
+<p>A number can function as:</p>
+<ul>
+<li>a <strong>label</strong>;</li>
+<li>a <strong>rank</strong>;</li>
+<li>a measurement with <strong>equal units</strong>;</li>
+<li>a measurement with equal units and a <strong>meaningful zero</strong>.</li>
+</ul>
+<p>The number itself does not tell you which of these applies. You must know how the variable was defined and measured.</p>
+<p>For example, coding:</p>
+<ul>
+<li>Rock = 1</li>
+<li>Pop = 2</li>
+<li>Country = 3</li>
+<li>Other = 4</li>
+</ul>
+<p>does <strong>not</strong> mean Country is three times Rock. The numbers are labels, not quantities.</p>
+<p>This is why scale of measurement matters.</p>
+<hr>
+</section>
+<section id="the-four-scales-of-measurement" class="level1">
+<h1>4. The Four Scales of Measurement</h1>
+<p>The four scales are often remembered as <strong>NOIR</strong>:</p>
+<ol type="1">
+<li><strong>N</strong>ominal</li>
+<li><strong>O</strong>rdinal</li>
+<li><strong>I</strong>nterval</li>
+<li><strong>R</strong>atio</li>
+</ol>
+<p>Privitera (2018, 2024) describes these scales in terms of the kinds of numerical information they preserve. The lecture presents the same sequence as increasingly informative forms of measurement (Sigal, 2026).</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scale</th>
+<th>What it tells us</th>
+<th style="text-align: right;">Equal intervals?</th>
+<th style="text-align: right;">True zero?</th>
+<th>Typical example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nominal</td>
+<td>Identity/category</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">No</td>
+<td>Browser preference</td>
+</tr>
+<tr class="even">
+<td>Ordinal</td>
+<td>Rank/order</td>
+<td style="text-align: right;">No</td>
+<td style="text-align: right;">No</td>
+<td>Letter grade, finishing place</td>
+</tr>
+<tr class="odd">
+<td>Interval</td>
+<td>Order + equal differences</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">No</td>
+<td>Celsius temperature</td>
+</tr>
+<tr class="even">
+<td>Ratio</td>
+<td>Order + equal differences + meaningful ratios</td>
+<td style="text-align: right;">Yes</td>
+<td style="text-align: right;">Yes</td>
+<td>Height, reaction time</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="nominal-variables" class="level1">
+<h1>5. Nominal Variables</h1>
+<p>A <strong>nominal</strong> variable separates observations into mutually exclusive categories.</p>
+<p>The numbers assigned to categories are simply codes.</p>
+<p>Examples include:</p>
+<ul>
+<li>preferred browser;</li>
+<li>music genre;</li>
+<li>type of animal;</li>
+<li>political affiliation.</li>
+</ul>
+<p>If browser is coded as:</p>
+<ul>
+<li>Firefox = 1</li>
+<li>Safari = 2</li>
+<li>Chrome = 3</li>
+</ul>
+<p>then 3 is not “more browser” than 1. The code identifies the category and nothing more.</p>
+<section id="what-can-we-meaningfully-do" class="level3">
+<h3 class="anchored" data-anchor-id="what-can-we-meaningfully-do">What can we meaningfully do?</h3>
+<p>We can count how many observations fall into each category.</p>
+<p>We can therefore report:</p>
+<ul>
+<li>frequencies;</li>
+<li>proportions;</li>
+<li>percentages;</li>
+<li>the mode.</li>
+</ul>
+<p>We cannot interpret arithmetic differences or ratios between category codes.</p>
+</section>
+<section id="important-point" class="level3">
+<h3 class="anchored" data-anchor-id="important-point">Important point</h3>
+<p>A nominal variable <strong>can be represented numerically without becoming quantitative</strong>. Coding is a data-management choice, not a change in the meaning of the variable (Privitera, 2018, 2024; Sigal, 2026).</p>
+<hr>
+</section>
+</section>
+<section id="ordinal-variables" class="level1">
+<h1>6. Ordinal Variables</h1>
+<p>An <strong>ordinal</strong> variable contains ordered categories.</p>
+<p>Examples include:</p>
+<ul>
+<li>finishing place in a race;</li>
+<li>class rank;</li>
+<li>military rank;</li>
+<li>letter grades;</li>
+<li>ordered response categories.</li>
+</ul>
+<p>If:</p>
+<ul>
+<li>1 = Gold</li>
+<li>2 = Silver</li>
+<li>3 = Bronze</li>
+</ul>
+<p>then Gold is ranked above Bronze, but the numerical difference between 1 and 3 does not tell us how much better Gold is.</p>
+<p>Ordinal measurement gives us:</p>
+<blockquote class="blockquote">
+<p><strong>order without known equal distance between ranks.</strong></p>
+</blockquote>
+<p>This is why the median is often a meaningful measure of central tendency for ordinal data (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="interval-variables" class="level1">
+<h1>7. Interval Variables</h1>
+<p>An <strong>interval</strong> variable has ordered values with equal intervals between adjacent units.</p>
+<p>The standard example in the Week 2 lecture is Celsius temperature.</p>
+<p>The difference between:</p>
+<ul>
+<li>(2^C) and (3^C)</li>
+</ul>
+<p>represents the same amount of temperature change as the difference between:</p>
+<ul>
+<li>(-1^C) and (0^C).</li>
+</ul>
+<p>However, Celsius temperature does <strong>not</strong> have a true zero. (0^C) does not mean “no temperature.”</p>
+<p>Therefore, ratio statements are not meaningful:</p>
+<blockquote class="blockquote">
+<p>(10^C) is <strong>not</strong> twice as hot as (5^C).</p>
+</blockquote>
+<p>Interval variables support meaningful statements about <strong>differences</strong>, but not arbitrary ratio statements (Privitera, 2018, 2024; Sigal, 2026).</p>
+<hr>
+</section>
+<section id="ratio-variables" class="level1">
+<h1>8. Ratio Variables</h1>
+<p>A <strong>ratio</strong> variable has all the properties of an interval variable plus a <strong>true or meaningful zero</strong>.</p>
+<p>Examples include:</p>
+<ul>
+<li>height;</li>
+<li>weight;</li>
+<li>reaction time;</li>
+<li>duration;</li>
+<li>distance;</li>
+<li>temperature measured in Kelvin.</li>
+</ul>
+<p>If height is measured in metres, (0) metres represents the absence of height. Therefore, meaningful ratio comparisons are possible.</p>
+<p>For example:</p>
+<p><span class="math display">\[
+1.50 / 0.75 = 2.
+\]</span></p>
+<p>Thus 1.50 metres is twice 0.75 metres.</p>
+<p>Ratio measurement is generally the most informative of the four scales because order, differences, and ratios can all be interpreted meaningfully (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="categorical-discrete-continuous-qualitative-and-quantitative" class="level1">
+<h1>9. Categorical, Discrete, Continuous, Qualitative, and Quantitative</h1>
+<p>The Week 2 lecture broadly contrasts <strong>categorical/discrete</strong> variables with <strong>continuous/quantitative</strong> variables (Sigal, 2026).</p>
+<p>Privitera (2018, 2024) makes two separate distinctions:</p>
+<section id="discrete-vs.-continuous" class="level3">
+<h3 class="anchored" data-anchor-id="discrete-vs.-continuous">Discrete vs.&nbsp;continuous</h3>
+<ul>
+<li><strong>Discrete variables</strong> consist of separate values or categories.</li>
+<li><strong>Continuous variables</strong> can in principle take values anywhere along a continuum.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li>number of siblings → discrete;</li>
+<li>reaction time → continuous.</li>
+</ul>
+</section>
+<section id="qualitative-vs.-quantitative" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-vs.-quantitative">Qualitative vs.&nbsp;quantitative</h3>
+<ul>
+<li><strong>Qualitative variables</strong> differ by category or class.</li>
+<li><strong>Quantitative variables</strong> differ by amount.</li>
+</ul>
+<p>These classifications overlap but are not identical.</p>
+<p>For example:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Discrete/continuous</th>
+<th>Qualitative/quantitative</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Browser preference</td>
+<td>Discrete</td>
+<td>Qualitative</td>
+</tr>
+<tr class="even">
+<td>Number of siblings</td>
+<td>Discrete</td>
+<td>Quantitative</td>
+</tr>
+<tr class="odd">
+<td>Height</td>
+<td>Continuous</td>
+<td>Quantitative</td>
+</tr>
+<tr class="even">
+<td>Letter grade</td>
+<td>Discrete</td>
+<td>Qualitative/ordered</td>
+</tr>
+</tbody>
+</table>
+<p>This distinction is useful because “discrete” does not automatically mean “qualitative.”</p>
+<hr>
+</section>
+</section>
+<section id="a-source-tension-likert-like-and-rating-scales" class="level1">
+<h1>10. A Source Tension: Likert-Like and Rating Scales</h1>
+<p>The Week 2 materials contain a genuine disagreement that should not be hidden.</p>
+<section id="lecture-framing" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-framing">Lecture framing</h3>
+<p>The lecture treats Likert-like items critically. It questions whether the psychological distance between adjacent response categories is equal and warns against automatically treating such responses as interval measurements (Sigal, 2026).</p>
+</section>
+<section id="privitera-framing" class="level3">
+<h3 class="anchored" data-anchor-id="privitera-framing">Privitera framing</h3>
+<p>Privitera (2024) explicitly describes rating scales as controversial. The text notes that, under strict measurement rules, individual rating-scale responses may be better viewed as ordinal. However, many behavioral researchers pragmatically treat rating-scale values as interval when equal spacing is assumed, especially for statistical analysis (Privitera, 2024).</p>
+</section>
+<section id="what-should-you-learn-from-this" class="level3">
+<h3 class="anchored" data-anchor-id="what-should-you-learn-from-this">What should you learn from this?</h3>
+<p>Do <strong>not</strong> memorize “Likert = interval” as an unquestionable rule.</p>
+<p>Instead ask:</p>
+<ol type="1">
+<li>Is this a single ordered response item or a multi-item scale score?</li>
+<li>What assumptions are being made about equal distances between response options?</li>
+<li>What convention is the instructor using for this course?</li>
+<li>Does the planned statistical analysis require stronger measurement assumptions?</li>
+</ol>
+<p>For this course, follow the instructor’s stated conventions on assessed work, but understand that the status of rating-scale data is methodologically debated.</p>
+<hr>
+</section>
+</section>
+<section id="why-summarize-data" class="level1">
+<h1>11. Why Summarize Data?</h1>
+<p>A raw data set can be technically complete and still be difficult to understand.</p>
+<p>Suppose the scores are:</p>
+<p><span class="math display">\[
+27,82,32,57,50,61,55,88,57,60.
+\]</span></p>
+<p>Even with only 10 observations, it takes effort to see:</p>
+<ul>
+<li>how often each score occurs;</li>
+<li>whether values cluster in particular regions;</li>
+<li>whether any values are unusual;</li>
+<li>what percentage lies below a threshold.</li>
+</ul>
+<p>A <strong>frequency distribution</strong> reorganizes the same observations into a form that makes their pattern easier to interpret (Privitera, 2018, 2024; Sigal, 2026).</p>
+<p>A frequency distribution can be displayed as:</p>
+<ul>
+<li>a table;</li>
+<li>a bar chart;</li>
+<li>a histogram;</li>
+<li>a frequency polygon.</li>
+</ul>
+<hr>
+</section>
+<section id="ungrouped-frequency-distributions" class="level1">
+<h1>12. Ungrouped Frequency Distributions</h1>
+<p>An <strong>ungrouped frequency distribution</strong> lists individual values or categories and the frequency of each one.</p>
+<p>A basic table has two columns:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>(X)</th>
+<th style="text-align: right;">(f)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>value/category</td>
+<td style="text-align: right;">number of occurrences</td>
+</tr>
+</tbody>
+</table>
+<p>The first consistency check is:</p>
+<p><span class="math display">\[
+\sum f = n.
+\]</span></p>
+<p>If the sample contains 10 observations, the frequencies must sum to 10.</p>
+<p>Ungrouped distributions are especially useful when:</p>
+<ul>
+<li>the variable is categorical;</li>
+<li>there are only a small number of distinct values;</li>
+<li>retaining the exact observed values is useful.</li>
+</ul>
+<p>Privitera (2018, 2024) specifically contrasts this with grouped distributions: <strong>ungrouped data preserve individual scores/categories; grouped data combine scores into intervals.</strong></p>
+<hr>
+</section>
+<section id="frequency-proportion-percentage-and-cumulative-values" class="level1">
+<h1>13. Frequency, Proportion, Percentage, and Cumulative Values</h1>
+<p>A full frequency table can include several related summaries.</p>
+<section id="frequency" class="level2">
+<h2 class="anchored" data-anchor-id="frequency">Frequency</h2>
+<p>Frequency (f) is the number of observations at a value or in an interval.</p>
+</section>
+<section id="proportion-relative-frequency" class="level2">
+<h2 class="anchored" data-anchor-id="proportion-relative-frequency">Proportion / relative frequency</h2>
+<p><span class="math display">\[
+p=\frac{f}{n}.
+\]</span></p>
+<p>The proportions should sum to approximately:</p>
+<p><span class="math display">\[
+\sum p=1.00.
+\]</span></p>
+</section>
+<section id="percentage" class="level2">
+<h2 class="anchored" data-anchor-id="percentage">Percentage</h2>
+<p><span class="math display">\[
+\%=p\times100.
+\]</span></p>
+<p>Percentages should sum to approximately:</p>
+<p><span class="math display">\[
+100\%.
+\]</span></p>
+</section>
+<section id="cumulative-frequency" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative-frequency">Cumulative frequency</h2>
+<p>Cumulative frequency is the running total of frequencies.</p>
+<p>For an ascending table, it answers:</p>
+<blockquote class="blockquote">
+<p>How many observations scored this value <strong>or less</strong>?</p>
+</blockquote>
+<p>The final cumulative frequency should equal (n).</p>
+</section>
+<section id="cumulative-relative-frequency-cumulative-percentage" class="level2">
+<h2 class="anchored" data-anchor-id="cumulative-relative-frequency-cumulative-percentage">Cumulative relative frequency / cumulative percentage</h2>
+<p>A cumulative relative frequency is the running total of proportions.</p>
+<p>A cumulative percentage is the running total of percentages.</p>
+<p>The final values should be approximately:</p>
+<p><span class="math display">\[
+1.00
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+100\%.
+\]</span></p>
+<p>respectively (Privitera, 2018, 2024; Sigal, 2026).</p>
+<hr>
+</section>
+</section>
+<section id="worked-frequency-table-example" class="level1">
+<h1>14. Worked Frequency Table Example</h1>
+<p>The lecture uses:</p>
+<p><span class="math display">\[
+X=\{1,4,1,2,4,2,4\},
+\]</span></p>
+<p>so (n=7).</p>
+<p>The resulting table is:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">(X)</th>
+<th style="text-align: right;">(f)</th>
+<th style="text-align: right;">(p)</th>
+<th style="text-align: right;">%</th>
+<th style="text-align: right;">CF</th>
+<th style="text-align: right;">Cumulative proportion</th>
+<th style="text-align: right;">Cumulative %</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">.2857</td>
+<td style="text-align: right;">28.57</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">.2857</td>
+<td style="text-align: right;">28.57</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">.2857</td>
+<td style="text-align: right;">28.57</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">.5714</td>
+<td style="text-align: right;">57.14</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">.5714</td>
+<td style="text-align: right;">57.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">.4286</td>
+<td style="text-align: right;">42.86</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1.0000</td>
+<td style="text-align: right;">100.00</td>
+</tr>
+</tbody>
+</table>
+<p>Internal checks:</p>
+<p><span class="math display">\[
+2+2+0+3=7=n,
+\]</span></p>
+<p>and the final cumulative values are:</p>
+<ul>
+<li>CF = 7;</li>
+<li>cumulative proportion = 1.00;</li>
+<li>cumulative percentage = 100%.</li>
+</ul>
+<p>This example shows why a score with frequency zero may still appear in the table: retaining the full sequence makes the structure of the scale clear (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="percentile-rank" class="level1">
+<h1>15. Percentile Rank</h1>
+<p>Cumulative percentages can be interpreted as percentile ranks.</p>
+<p>A <strong>percentile rank</strong> tells us what percentage of scores fall at or below a specified score under the convention used in the Week 2 materials.</p>
+<p>For example, the lecture uses a table of dreams recalled by 50 children. At (X=2), the cumulative frequency is 30:</p>
+<p><span class="math display">\[
+\frac{30}{50}\times100=60\%.
+\]</span></p>
+<p>Thus a score of 2 corresponds to the 60th percentile in that table (PSYC 210 Teaching Team, 2026b).</p>
+<p>Privitera (2018, 2024) distinguishes:</p>
+<ul>
+<li><strong>percentile point</strong> → the score value;</li>
+<li><strong>percentile rank</strong> → the percentage associated with its position in the distribution.</li>
+</ul>
+<hr>
+</section>
+<section id="grouped-frequency-distributions" class="level1">
+<h1>16. Grouped Frequency Distributions</h1>
+<p>When there are many possible values, listing every score can become unwieldy.</p>
+<p>A <strong>grouped frequency distribution</strong> combines scores into class intervals or <strong>bins</strong> of equal width (Privitera, 2018, 2024; Sigal, 2026).</p>
+<p>Grouping helps us see the overall structure more clearly, but it creates a trade-off:</p>
+<blockquote class="blockquote">
+<p><strong>Grouping simplifies the data, but exact individual values are no longer recoverable from the grouped table.</strong></p>
+</blockquote>
+<p>This is an important form of information loss.</p>
+<hr>
+</section>
+<section id="choosing-a-bin-width" class="level1">
+<h1>17. Choosing a Bin Width</h1>
+<p>The lecture uses a practical heuristic of beginning with approximately 10 bins and then adjusting to a meaningful width (Sigal, 2026).</p>
+<p>A rough calculation is:</p>
+<p><span class="math display">\[
+\text{bin width}
+=
+\frac{\text{maximum}-\text{minimum}}
+{\text{number of bins}}.
+\]</span></p>
+<p>For example, if:</p>
+<ul>
+<li>maximum = 85;</li>
+<li>minimum = 29;</li>
+<li>desired bins = 10,</li>
+</ul>
+<p>then:</p>
+<p><span class="math display">\[
+\frac{85-29}{10}
+=
+\frac{56}{10}
+=
+5.6.
+\]</span></p>
+<p>The lecture simplifies this to a meaningful bin width for the exercise.</p>
+<p>Privitera (2018, 2024) presents a closely related but somewhat more formal method using the <strong>real range</strong>, defined for whole-number scores as one more than the observed difference between maximum and minimum, and recommends roughly 5–20 intervals.</p>
+<section id="practical-lesson" class="level3">
+<h3 class="anchored" data-anchor-id="practical-lesson">Practical lesson</h3>
+<p>There is no unique magical bin width. The goal is a display that is:</p>
+<ul>
+<li>understandable;</li>
+<li>consistent;</li>
+<li>non-overlapping;</li>
+<li>detailed enough to preserve important structure;</li>
+<li>simple enough to reveal the distribution.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="lower-limits-upper-limits-and-real-limits" class="level1">
+<h1>18. Lower Limits, Upper Limits, and Real Limits</h1>
+<p>Each class interval has a lower and upper limit.</p>
+<p>If the interval width is 5, possible apparent intervals are:</p>
+<ul>
+<li>25–29</li>
+<li>30–34</li>
+<li>35–39</li>
+<li>…</li>
+</ul>
+<p>For whole-number data, the apparent width of 25–29 seems to be:</p>
+<p><span class="math display">\[
+29-25=4.
+\]</span></p>
+<p>But the <strong>real limits</strong> extend half a measurement unit beyond the apparent limits:</p>
+<p><span class="math display">\[
+24.5 \text{ to } 29.5.
+\]</span></p>
+<p>The real width is therefore:</p>
+<p><span class="math display">\[
+29.5-24.5=5.
+\]</span></p>
+<p>This distinction matters when constructing continuous histograms because adjacent intervals meet at real boundaries without gaps (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="worked-example-sat-type-scores" class="level1">
+<h1>19. Worked Example: SAT-Type Scores</h1>
+<p>The Lecture 2 worksheet uses data modeled closely on Katz et al.&nbsp;(1990). Participants answered SAT-type questions without seeing the passage on which the questions were based.</p>
+<p>The no-passage scores range from 34 to 57. Students are asked to:</p>
+<ol type="1">
+<li>construct an ungrouped frequency table;</li>
+<li>calculate cumulative frequency and cumulative relative frequency;</li>
+<li>convert the data to a grouped frequency table;</li>
+<li>draw a histogram;</li>
+<li>compare these scores with a second group that read the passage (Sigal, 2026).</li>
+</ol>
+<p>The answer key shows that the no-passage sample has (n=28), while the passage group has (n=17). The passage-group scores are generally higher, but the worksheet deliberately separates this <strong>descriptive observation</strong> from the later question of whether a difference is statistically significant.</p>
+<p>That distinction is essential:</p>
+<blockquote class="blockquote">
+<p>A graph or frequency table can show an apparent difference. Inferential statistics are needed to evaluate whether the evidence supports a broader population-level conclusion.</p>
+</blockquote>
+<hr>
+</section>
+<section id="visualizing-frequency-distributions" class="level1">
+<h1>20. Visualizing Frequency Distributions</h1>
+<p>The lecture emphasizes three basic graphical displays:</p>
+<ol type="1">
+<li><strong>Bar charts</strong></li>
+<li><strong>Histograms</strong></li>
+<li><strong>Frequency polygons</strong></li>
+</ol>
+<p>The correct choice depends on the type of variable and on what the display is intended to communicate (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="bar-charts" class="level1">
+<h1>21. Bar Charts</h1>
+<p>A bar chart is typically used for discrete or categorical data.</p>
+<section id="key-visual-feature" class="level3">
+<h3 class="anchored" data-anchor-id="key-visual-feature">Key visual feature</h3>
+<blockquote class="blockquote">
+<p>The bars do <strong>not</strong> touch.</p>
+</blockquote>
+<p>The gaps remind us that the categories are distinct rather than positions along a continuous measurement scale.</p>
+<p>For nominal data, categories may often be reordered without changing their meaning.</p>
+<p>For ordinal data, the order should usually be preserved because the rank itself is meaningful.</p>
+<hr>
+</section>
+</section>
+<section id="histograms" class="level1">
+<h1>22. Histograms</h1>
+<p>A histogram is used for quantitative continuous data.</p>
+<section id="key-visual-feature-1" class="level3">
+<h3 class="anchored" data-anchor-id="key-visual-feature-1">Key visual feature</h3>
+<blockquote class="blockquote">
+<p>Adjacent bars <strong>touch</strong>.</p>
+</blockquote>
+<p>The touching bars communicate that values lie along a continuum.</p>
+<p>Privitera (2018, 2024) gives three core rules:</p>
+<ol type="1">
+<li>bar height represents the frequency in each interval;</li>
+<li>bar bases correspond to interval boundaries;</li>
+<li>adjacent bars touch because the variable is continuous.</li>
+</ol>
+<p>Histograms are therefore fundamentally different from bar charts, even though both use rectangular bars.</p>
+<hr>
+</section>
+</section>
+<section id="frequency-polygons" class="level1">
+<h1>23. Frequency Polygons</h1>
+<p>A frequency polygon represents a distribution using points connected by lines rather than bars.</p>
+<p>It conveys the same basic information as a histogram but can make the overall shape of a distribution particularly easy to see.</p>
+<p>Frequency polygons are appropriate for continuous quantitative data (Privitera, 2018; Sigal, 2026).</p>
+<hr>
+</section>
+<section id="what-grouping-changes" class="level1">
+<h1>24. What Grouping Changes</h1>
+<p>The lecture explicitly contrasts grouped and ungrouped displays:</p>
+<ul>
+<li><strong>Ungrouped distributions</strong> retain all distinct observed values.</li>
+<li><strong>Grouped distributions</strong> summarize observations into intervals.</li>
+<li>Once grouped, the exact original observations are no longer recoverable from the display (Sigal, 2026).</li>
+</ul>
+<p>This is not an error. It is the cost of summarization.</p>
+<p>The analyst therefore has to decide how much detail to preserve.</p>
+<hr>
+</section>
+<section id="graphs-can-clarifyand-mislead" class="level1">
+<h1>25. Graphs Can Clarify—and Mislead</h1>
+<p>A graph is not automatically neutral simply because it is based on real numbers.</p>
+<p>The Week 2 lecture demonstrates how changing the vertical-axis range can make a small difference between groups appear dramatic or modest.</p>
+<p>A responsible graph should therefore:</p>
+<ul>
+<li>have clearly labeled axes;</li>
+<li>use an appropriate scale;</li>
+<li>make truncation explicit;</li>
+<li>use clear titles and captions;</li>
+<li>include an informative legend when needed;</li>
+<li>avoid visual emphasis that exceeds what the data support (Sigal, 2026).</li>
+</ul>
+<p>The larger lesson is the same as Week 1:</p>
+<blockquote class="blockquote">
+<p>A statistically correct number can still be communicated in a misleading way.</p>
+</blockquote>
+<hr>
+</section>
+<section id="central-tendency-a-second-way-to-summarize-data" class="level1">
+<h1>26. Central Tendency: A Second Way to Summarize Data</h1>
+<p>The assigned Chapter 3 readings extend the logic of summarization.</p>
+<p>A frequency distribution summarizes <strong>how scores are distributed</strong>.</p>
+<p>A measure of central tendency reduces the distribution to a single value near its center (Privitera, 2018, 2024).</p>
+<p>The three main measures are:</p>
+<ul>
+<li><strong>mean</strong>;</li>
+<li><strong>median</strong>;</li>
+<li><strong>mode</strong>.</li>
+</ul>
+<p>These measures are not interchangeable. Each answers a slightly different question.</p>
+<hr>
+</section>
+<section id="the-mean" class="level1">
+<h1>27. The Mean</h1>
+<p>The arithmetic mean is:</p>
+<p><span class="math display">\[
+M=\frac{\sum X}{n}
+\]</span></p>
+<p>for a sample, or</p>
+<p><span class="math display">\[
+\mu=\frac{\sum X}{N}
+\]</span></p>
+<p>for a population.</p>
+<p>The calculation is the same; the notation changes because one value describes a sample and the other a population (Privitera, 2018, 2024).</p>
+<p>The mean is often described as the <strong>balance point</strong> of a distribution.</p>
+<section id="important-characteristic" class="level3">
+<h3 class="anchored" data-anchor-id="important-characteristic">Important characteristic</h3>
+<p>Because every observation contributes to the mean, unusual or extreme scores can shift it substantially.</p>
+<p>The mean is typically most informative for approximately symmetrical distributions of interval- or ratio-scale data (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+</section>
+<section id="the-median" class="level1">
+<h1>28. The Median</h1>
+<p>The median is the middle score after scores are ordered.</p>
+<p>Its position is:</p>
+<p><span class="math display">\[
+\frac{n+1}{2}.
+\]</span></p>
+<p>For an odd number of observations, the median is the single middle score.</p>
+<p>For an even number of observations, average the two middle scores.</p>
+<p>The median is resistant to extreme values. Privitera (2018, 2024) therefore recommends it particularly for:</p>
+<ul>
+<li>skewed distributions;</li>
+<li>ordinal data;</li>
+<li>distributions containing important outliers.</li>
+</ul>
+<p>The median also corresponds to the 50th percentile.</p>
+<hr>
+</section>
+<section id="the-mode" class="level1">
+<h1>29. The Mode</h1>
+<p>The mode is the value or category occurring most frequently.</p>
+<p>A distribution can be:</p>
+<ul>
+<li>unimodal;</li>
+<li>bimodal;</li>
+<li>multimodal;</li>
+<li>nonmodal.</li>
+</ul>
+<p>The mode has an important advantage:</p>
+<blockquote class="blockquote">
+<p>It can be used with nominal data, for which a mean or median may not be meaningful.</p>
+</blockquote>
+<p>For example, the most common preferred browser is meaningful; the “average browser code” is not.</p>
+<hr>
+</section>
+<section id="choosing-mean-median-or-mode" class="level1">
+<h1>30. Choosing Mean, Median, or Mode</h1>
+<p>The readings summarize the choice as follows (Privitera, 2018, 2024):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Measure</th>
+<th>Often appropriate when…</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Mean</strong></td>
+<td>Data are interval/ratio and reasonably symmetrical</td>
+</tr>
+<tr class="even">
+<td><strong>Median</strong></td>
+<td>Data are ordinal or skewed; outliers matter</td>
+</tr>
+<tr class="odd">
+<td><strong>Mode</strong></td>
+<td>Data are nominal or the most frequent category/value is substantively important</td>
+</tr>
+</tbody>
+</table>
+<p>These are guiding principles rather than mechanical rules. The appropriate summary depends on the research question, measurement scale, and shape of the distribution.</p>
+<hr>
+</section>
+<section id="how-the-concepts-fit-together" class="level1">
+<h1>31. How the Concepts Fit Together</h1>
+<p>Week 2 can be understood as one sequence:</p>
+<p><strong>What kind of variable do I have?</strong></p>
+<p>↓</p>
+<p><strong>What does the measurement scale allow me to say?</strong></p>
+<p>↓</p>
+<p><strong>Should I preserve individual scores or group them?</strong></p>
+<p>↓</p>
+<p><strong>What frequency summaries are useful?</strong></p>
+<p>↓</p>
+<p><strong>What graph is appropriate?</strong></p>
+<p>↓</p>
+<p><strong>Would a measure of central tendency add useful information?</strong></p>
+<p>↓</p>
+<p><strong>Does the display accurately communicate the evidence?</strong></p>
+<p>The scale of measurement affects what mathematical summaries are meaningful. The frequency distribution shows the structure of the data. Graphs make that structure visible. Measures of central tendency compress it further into representative values.</p>
+<hr>
+</section>
+<section id="important-terms" class="level1">
+<h1>32. Important Terms</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Term</th>
@@ -198,42 +1140,332 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>To be added</em></td>
-<td></td>
+<td><strong>Nominal scale</strong></td>
+<td>Categories identified by names or labels, without meaningful order.</td>
+</tr>
+<tr class="even">
+<td><strong>Ordinal scale</strong></td>
+<td>Ordered categories without known equal distances between categories.</td>
+</tr>
+<tr class="odd">
+<td><strong>Interval scale</strong></td>
+<td>Ordered numeric scale with equal intervals but no true zero.</td>
+</tr>
+<tr class="even">
+<td><strong>Ratio scale</strong></td>
+<td>Interval-like scale with a meaningful zero, permitting ratio comparisons.</td>
+</tr>
+<tr class="odd">
+<td><strong>Discrete variable</strong></td>
+<td>Variable consisting of separate values or categories.</td>
+</tr>
+<tr class="even">
+<td><strong>Continuous variable</strong></td>
+<td>Variable measured along a continuum.</td>
+</tr>
+<tr class="odd">
+<td><strong>Qualitative variable</strong></td>
+<td>Variable that differs by category or class.</td>
+</tr>
+<tr class="even">
+<td><strong>Quantitative variable</strong></td>
+<td>Variable that differs by amount.</td>
+</tr>
+<tr class="odd">
+<td><strong>Frequency</strong></td>
+<td>Number of times a value/category occurs.</td>
+</tr>
+<tr class="even">
+<td><strong>Relative frequency</strong></td>
+<td>Frequency divided by total (n).</td>
+</tr>
+<tr class="odd">
+<td><strong>Percentage</strong></td>
+<td>Relative frequency multiplied by 100.</td>
+</tr>
+<tr class="even">
+<td><strong>Cumulative frequency</strong></td>
+<td>Running total of frequencies.</td>
+</tr>
+<tr class="odd">
+<td><strong>Cumulative percentage</strong></td>
+<td>Running total of percentages.</td>
+</tr>
+<tr class="even">
+<td><strong>Percentile rank</strong></td>
+<td>Percentage of observations at or below a specified position under the course convention.</td>
+</tr>
+<tr class="odd">
+<td><strong>Ungrouped distribution</strong></td>
+<td>Frequency table listing distinct scores/categories individually.</td>
+</tr>
+<tr class="even">
+<td><strong>Grouped distribution</strong></td>
+<td>Frequency table combining scores into class intervals.</td>
+</tr>
+<tr class="odd">
+<td><strong>Bin/class interval</strong></td>
+<td>Range of values grouped together.</td>
+</tr>
+<tr class="even">
+<td><strong>Lower/upper limit</strong></td>
+<td>Lowest/highest apparent value assigned to an interval.</td>
+</tr>
+<tr class="odd">
+<td><strong>Real limits</strong></td>
+<td>Boundaries that extend halfway to adjacent measurable values.</td>
+</tr>
+<tr class="even">
+<td><strong>Bar chart</strong></td>
+<td>Graph for discrete/categorical data using separated bars.</td>
+</tr>
+<tr class="odd">
+<td><strong>Histogram</strong></td>
+<td>Graph for continuous quantitative data using touching bars.</td>
+</tr>
+<tr class="even">
+<td><strong>Frequency polygon</strong></td>
+<td>Line-based graph connecting frequencies across quantitative intervals.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mean</strong></td>
+<td>Sum of scores divided by number of scores.</td>
+</tr>
+<tr class="even">
+<td><strong>Median</strong></td>
+<td>Middle ordered score.</td>
+</tr>
+<tr class="odd">
+<td><strong>Mode</strong></td>
+<td>Most frequently occurring value/category.</td>
 </tr>
 </tbody>
 </table>
+<hr>
 </section>
-<section id="worked-examples" class="level2">
-<h2 class="anchored" data-anchor-id="worked-examples">Worked Examples</h2>
-<p><em>To be added.</em></p>
+<section id="common-misunderstandings" class="level1">
+<h1>33. Common Misunderstandings</h1>
+<section id="if-categories-are-coded-with-numbers-they-become-quantitative." class="level3">
+<h3 class="anchored" data-anchor-id="if-categories-are-coded-with-numbers-they-become-quantitative.">“If categories are coded with numbers, they become quantitative.”</h3>
+<p>No.&nbsp;The meaning of the numbers depends on the measurement process. Nominal codes remain labels.</p>
 </section>
-<section id="common-misunderstandings" class="level2">
-<h2 class="anchored" data-anchor-id="common-misunderstandings">Common Misunderstandings</h2>
-<p><em>To be added.</em></p>
+<section id="ordinal-numbers-tell-me-how-far-apart-categories-are." class="level3">
+<h3 class="anchored" data-anchor-id="ordinal-numbers-tell-me-how-far-apart-categories-are.">“Ordinal numbers tell me how far apart categories are.”</h3>
+<p>No.&nbsp;Ordinal data provide order, not equal distance.</p>
 </section>
-<section id="tutorial-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-preparation">Tutorial Preparation</h2>
-<p><em>To be added.</em></p>
+<section id="zero-always-means-none." class="level3">
+<h3 class="anchored" data-anchor-id="zero-always-means-none.">“Zero always means none.”</h3>
+<p>No.&nbsp;A true zero is a property of ratio scales. (0^C) is not an absence of temperature.</p>
 </section>
-<section id="practice-questions" class="level2">
-<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
-<section id="conceptual-questions" class="level3">
-<h3 class="anchored" data-anchor-id="conceptual-questions">Conceptual Questions</h3>
-<p><em>To be added.</em></p>
+<section id="grouped-frequency-distributions-are-more-accurate." class="level3">
+<h3 class="anchored" data-anchor-id="grouped-frequency-distributions-are-more-accurate.">“Grouped frequency distributions are more accurate.”</h3>
+<p>They are often clearer, but they are <strong>less precise</strong> because individual values are hidden within intervals.</p>
 </section>
-<section id="applied-questions" class="level3">
-<h3 class="anchored" data-anchor-id="applied-questions">Applied Questions</h3>
-<p><em>To be added.</em></p>
+<section id="all-frequency-tables-should-omit-zero-frequency-values." class="level3">
+<h3 class="anchored" data-anchor-id="all-frequency-tables-should-omit-zero-frequency-values.">“All frequency tables should omit zero-frequency values.”</h3>
+<p>Not necessarily. Including missing internal values can make the scale and cumulative pattern clearer.</p>
+</section>
+<section id="bar-charts-and-histograms-are-the-same-thing." class="level3">
+<h3 class="anchored" data-anchor-id="bar-charts-and-histograms-are-the-same-thing.">“Bar charts and histograms are the same thing.”</h3>
+<p>No.&nbsp;The gaps between bars in a bar chart communicate discrete categories; touching histogram bars represent continuity.</p>
+</section>
+<section id="a-graph-cannot-mislead-if-all-the-numbers-are-correct." class="level3">
+<h3 class="anchored" data-anchor-id="a-graph-cannot-mislead-if-all-the-numbers-are-correct.">“A graph cannot mislead if all the numbers are correct.”</h3>
+<p>False. Axis limits, scales, binning, and graphical emphasis can substantially change the viewer’s impression.</p>
+</section>
+<section id="the-mean-is-always-the-best-description-of-the-center." class="level3">
+<h3 class="anchored" data-anchor-id="the-mean-is-always-the-best-description-of-the-center.">“The mean is always the best description of the center.”</h3>
+<p>No.&nbsp;Outliers and skew can make the median more representative; nominal data often require the mode.</p>
+</section>
+<section id="likert-like-scales-are-obviously-interval." class="level3">
+<h3 class="anchored" data-anchor-id="likert-like-scales-are-obviously-interval.">“Likert-like scales are obviously interval.”</h3>
+<p>The Week 2 sources do not agree on this. The lecture is strongly critical of that assumption, while Privitera (2024) explains why many behavioral researchers pragmatically treat rating scales as interval. Know the course convention and the methodological issue.</p>
+<hr>
 </section>
 </section>
-<section id="what-you-should-be-able-to-explain" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-should-be-able-to-explain">What You Should Be Able to Explain</h2>
-<p><em>To be added.</em></p>
+<section id="tutorial-preparation" class="level1">
+<h1>34. Tutorial Preparation</h1>
+<p>A TA should be ready to move repeatedly between <strong>conceptual interpretation</strong> and <strong>calculation</strong>.</p>
+<section id="questions-students-may-ask" class="level3">
+<h3 class="anchored" data-anchor-id="questions-students-may-ask">Questions students may ask</h3>
+<section id="why-is-grade-ordinal-but-height-ratio" class="level4">
+<h4 class="anchored" data-anchor-id="why-is-grade-ordinal-but-height-ratio">“Why is grade ordinal but height ratio?”</h4>
+<p>Grade categories have order but unequal or undefined distances between adjacent grades. Height has equal units and a meaningful zero.</p>
 </section>
-<section id="reading" class="level2">
-<h2 class="anchored" data-anchor-id="reading">Reading</h2>
-<p>Privitera (2018), Chapters 2 and 3</p>
+<section id="why-include-a-score-with-zero-frequency" class="level4">
+<h4 class="anchored" data-anchor-id="why-include-a-score-with-zero-frequency">“Why include a score with zero frequency?”</h4>
+<p>Because a frequency table often represents the structure of a scale, not merely the values observed. Omitting internal values can obscure gaps.</p>
+</section>
+<section id="how-do-i-know-whether-to-group-data" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-i-know-whether-to-group-data">“How do I know whether to group data?”</h4>
+<p>Grouping becomes useful when many distinct values make an ungrouped table hard to read. But grouping sacrifices exact detail.</p>
+</section>
+<section id="why-do-histogram-bars-touch" class="level4">
+<h4 class="anchored" data-anchor-id="why-do-histogram-bars-touch">“Why do histogram bars touch?”</h4>
+<p>Because the variable is treated as continuous, and adjacent intervals meet at their real boundaries.</p>
+</section>
+<section id="how-do-i-know-which-direction-to-calculate-cumulative-frequency" class="level4">
+<h4 class="anchored" data-anchor-id="how-do-i-know-which-direction-to-calculate-cumulative-frequency">“How do I know which direction to calculate cumulative frequency?”</h4>
+<p>It depends on the question. Bottom-up cumulative summaries naturally answer “at or below” questions; top-down summaries answer “at or above” questions (Privitera, 2018, 2024).</p>
+</section>
+<section id="which-measure-of-central-tendency-should-i-use" class="level4">
+<h4 class="anchored" data-anchor-id="which-measure-of-central-tendency-should-i-use">“Which measure of central tendency should I use?”</h4>
+<p>Ask about both the measurement scale and the distribution:</p>
+<ul>
+<li>nominal → mode;</li>
+<li>ordinal or strongly skewed → median is often useful;</li>
+<li>interval/ratio and roughly symmetrical → mean is often useful.</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="practice-questions" class="level1">
+<h1>35. Practice Questions</h1>
+<section id="measurement-scales" class="level2">
+<h2 class="anchored" data-anchor-id="measurement-scales">Measurement Scales</h2>
+<ol type="1">
+<li>Preferred web browser: nominal, ordinal, interval, or ratio?</li>
+<li>Finishing position in a marathon: nominal, ordinal, interval, or ratio?</li>
+<li>Celsius temperature: nominal, ordinal, interval, or ratio?</li>
+<li>Reaction time in milliseconds: nominal, ordinal, interval, or ratio?</li>
+<li>Explain why coding categories 1, 2, 3, and 4 does not automatically justify calculating their mean.</li>
+</ol>
+</section>
+<section id="frequency-tables" class="level2">
+<h2 class="anchored" data-anchor-id="frequency-tables">Frequency Tables</h2>
+<p>For:</p>
+<p><span class="math display">\[
+X=\{2,4,4,5,5,5,7,8,8,9\},
+\]</span></p>
+<p>construct a table containing:</p>
+<ul>
+<li>(X);</li>
+<li>(f);</li>
+<li>(p);</li>
+<li>percentage;</li>
+<li>cumulative frequency;</li>
+<li>cumulative percentage.</li>
+</ul>
+<p>Check that:</p>
+<p><span class="math display">\[
+\sum f=n,
+\]</span></p>
+<p><span class="math display">\[
+\sum p=1,
+\]</span></p>
+<p>and percentages sum to 100%.</p>
+</section>
+<section id="grouping" class="level2">
+<h2 class="anchored" data-anchor-id="grouping">Grouping</h2>
+<p>For scores ranging from 12 to 92:</p>
+<ol type="1">
+<li>Calculate the observed range.</li>
+<li>Estimate a bin width for approximately 10 bins.</li>
+<li>Propose a set of non-overlapping class intervals.</li>
+<li>Explain what information is lost after grouping.</li>
+</ol>
+</section>
+<section id="graph-choice" class="level2">
+<h2 class="anchored" data-anchor-id="graph-choice">Graph Choice</h2>
+<p>Choose the most appropriate basic display and explain why:</p>
+<ol type="1">
+<li>favorite music genre;</li>
+<li>course letter grade;</li>
+<li>reaction time;</li>
+<li>age in years measured continuously;</li>
+<li>number of children in a household.</li>
+</ol>
+</section>
+<section id="central-tendency" class="level2">
+<h2 class="anchored" data-anchor-id="central-tendency">Central Tendency</h2>
+<p>For:</p>
+<p><span class="math display">\[
+2,3,4,5,6,6,100
+\]</span></p>
+<p>calculate:</p>
+<ol type="1">
+<li>mean;</li>
+<li>median;</li>
+<li>mode.</li>
+</ol>
+<p>Then explain which value is most representative and why.</p>
+<hr>
+</section>
+</section>
+<section id="what-you-should-be-able-to-explain" class="level1">
+<h1>36. What You Should Be Able to Explain</h1>
+<p>Before moving on, you should be able to explain in your own words:</p>
+<ul>
+<li>why the scale of measurement matters;</li>
+<li>what information each of NOIR preserves;</li>
+<li>why numeric coding is not the same as quantitative measurement;</li>
+<li>why nominal and ordinal data are different;</li>
+<li>why interval and ratio data are different;</li>
+<li>why a true zero matters;</li>
+<li>how to calculate all major columns of a frequency table;</li>
+<li>why cumulative values are useful;</li>
+<li>when grouped data are preferable to ungrouped data;</li>
+<li>what is lost when data are grouped;</li>
+<li>why apparent and real limits differ;</li>
+<li>why bar-chart bars are separated while histogram bars touch;</li>
+<li>how graphical scaling can mislead;</li>
+<li>why the mean, median, and mode summarize different aspects of a distribution;</li>
+<li>why the Week 2 sources disagree about rating-scale/Likert-like measurement.</li>
+</ul>
+<hr>
+</section>
+<section id="readings-and-practice" class="level1">
+<h1>37. Readings and Practice</h1>
+<section id="required-readings" class="level2">
+<h2 class="anchored" data-anchor-id="required-readings">Required readings</h2>
+<ul>
+<li>Privitera, G. J. (2018), Chapter 2: <em>Summarizing Data: Frequency Distributions in Tables and Graphs</em>.</li>
+<li>Privitera, G. J. (2018), Chapter 3: <em>Summarizing Data: Central Tendency</em>.</li>
+</ul>
+</section>
+<section id="additional-supplied-readings" class="level2">
+<h2 class="anchored" data-anchor-id="additional-supplied-readings">Additional supplied readings</h2>
+<ul>
+<li>Privitera, G. J. (2024), Chapter 2: <em>Summarizing Data: Frequency Distributions in Tables and Graphs</em>.</li>
+<li>Privitera, G. J. (2024), Chapter 3: <em>Summarizing Data: Central Tendency</em>.</li>
+</ul>
+</section>
+<section id="lecture-and-tutorial-materials" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-and-tutorial-materials">Lecture and tutorial materials</h2>
+<ul>
+<li>Lecture 2: <em>Data Types and Visualization</em>.</li>
+<li>Lecture 2 Worksheet and key.</li>
+<li><em>Scales of Measurement and Frequency Distributions</em> tutorial.</li>
+<li><em>Applied Practice: Summation Operator</em> worksheet and key.</li>
+<li>Frequency Table Practice exercises.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>38. References</h1>
+<p>Katz, I. R., Lautenschlager, G. J., Blackburn, A. B., &amp; Harris, F. H. (1990). Answering reading comprehension items without passages on the SAT. <em>Psychological Science, 1</em>(2), 122–127.</p>
+<p>Privitera, G. J. (2018). <em>Essential statistics for the behavioral sciences</em> (2nd ed.). SAGE.</p>
+<p>Privitera, G. J. (2024). <em>Statistics for the behavioral sciences</em> (4th ed.). SAGE.</p>
+<p>PSYC 210 Teaching Team. (2026a). <em>Applied practice: Summation operator—Worksheet 2</em> [Tutorial worksheet and answer key]. Simon Fraser University.</p>
+<p>PSYC 210 Teaching Team. (2026b). <em>Scales of measurement and frequency distributions</em> [Tutorial slides]. Simon Fraser University.</p>
+<p>Sigal, M. (2026, September 21). <em>PSYC 210: Introduction to data analysis—Lecture 2: Data types and visualization</em> [Lecture slides]. Simon Fraser University.</p>
+<p>Tufte, E. R. (2001). <em>The visual display of quantitative information</em> (2nd ed.). Graphics Press.</p>
+<hr>
+</section>
+<section id="week-2-takeaway" class="level1">
+<h1>39. Week 2 Takeaway</h1>
+<p>Week 2 is fundamentally about <strong>matching the summary to the data</strong>.</p>
+<p>Before calculating anything, ask:</p>
+<blockquote class="blockquote">
+<p>What kind of variable is this, and what do its values actually mean?</p>
+</blockquote>
+<p>Then ask:</p>
+<blockquote class="blockquote">
+<p>What representation—table, grouped distribution, graph, mean, median, or mode—preserves the information I need without implying more than the data support?</p>
+</blockquote>
+<p>That habit is more important than memorizing any single formula.</p>
 
 
 </section>
