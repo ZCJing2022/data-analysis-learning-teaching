@@ -974,57 +974,71 @@ Use PEDMAS/BEDMAS carefully. Parentheses and exponents are completed before mult
 
 ### Variable notation
 
-A variable is often written as \(X\). Individual observations are written as \(x_i\), where \(i\) is an index.
+A variable is often written as $X$. Individual observations are written as $x_i$, where $i$ is an index.
 
 For example, if:
 
-\[
+
+$$
 X=\{101,99,87,114,105,92,110,83\},
-\]
+$$
+
 
 then:
 
-\[
+
+$$
 x_4=114.
-\]
+$$
+
 
 ### Summation notation
 
 The symbol:
 
-\[
+
+$$
 \sum
-\]
+$$
+
 
 means “add.”
 
 For:
 
-\[
-\sum_{i=1}^{N}x_i,
-\]
 
-start with observation 1 and continue through observation \(N\).
+$$
+\sum_{i=1}^{N}x_i,
+$$
+
+
+start with observation 1 and continue through observation $N$.
 
 A restricted sum such as:
 
-\[
+
+$$
 \sum_{i=4}^{7}x_i
-\]
+$$
+
 
 includes only observations 4, 5, 6, and 7.
 
 The most important distinction is:
 
-\[
+
+$$
 \left(\sum x_i\right)^2
-\]
+$$
+
 
 versus:
 
-\[
+
+$$
 \sum x_i^2.
-\]
+$$
+
 
 The first means **sum first, then square**. The second means **square each observation first, then sum**.
 
@@ -1038,18 +1052,20 @@ There is no special Week 1 formula block beyond the notation that will reappear 
 
 Given:
 
-\[
+
+$$
 x_i=\{5,8,4,7,6\},
-\]
+$$
+
 
 calculate:
 
-a. \(\sum x_i\)  
-b. \(\sum x_i^2\)  
-c. \([\sum x_i]^2\)  
-d. \(\sum(x_i+2)\)  
-e. \(\sum_{i=2}^{4}x_i\)  
-f. \(\sum_{i=2}^{4}(2x_i)\)
+a. $\sum x_i$  
+b. $\sum x_i^2$  
+c. $[\sum x_i]^2$  
+d. $\sum(x_i+2)$  
+e. $\sum_{i=2}^{4}x_i$  
+f. $\sum_{i=2}^{4}(2x_i)$
 
 ### Question 2 — Design logic (/3)
 
@@ -1077,35 +1093,37 @@ b. What is the sample?
 
 Using:
 
-\[
-X=\{12,9,15,11,8,14\},
-\]
 
-a. What is \(x_3\)?  
-b. What is \(\sum_{i=2}^{5}x_i\)?
+$$
+X=\{12,9,15,11,8,14\},
+$$
+
+
+a. What is $x_3$?  
+b. What is $\sum_{i=2}^{5}x_i$?
 
 ### Question 6 — Order of operations (/2)
 
 Evaluate:
 
-a. \(4+3(5-2)^2\)  
-b. \((4+3)(5-2)^2\)
+a. $4+3(5-2)^2$  
+b. $(4+3)(5-2)^2$
 
 ## Answers
 
 ### Question 1
 
-a. \(\sum x_i=5+8+4+7+6=30\)
+a. $\sum x_i=5+8+4+7+6=30$
 
-b. \(\sum x_i^2=25+64+16+49+36=190\)
+b. $\sum x_i^2=25+64+16+49+36=190$
 
-c. \([\sum x_i]^2=30^2=900\)
+c. $[\sum x_i]^2=30^2=900$
 
-d. \(\sum(x_i+2)=7+10+6+9+8=40\)
+d. $\sum(x_i+2)=7+10+6+9+8=40$
 
-e. \(\sum_{i=2}^{4}x_i=8+4+7=19\)
+e. $\sum_{i=2}^{4}x_i=8+4+7=19$
 
-f. \(\sum_{i=2}^{4}(2x_i)=16+8+14=38\)
+f. $\sum_{i=2}^{4}(2x_i)=16+8+14=38$
 
 ### Question 2
 
@@ -1125,13 +1143,13 @@ b. The 400 surveyed first-year students.
 
 ### Question 5
 
-a. \(x_3=15\).  
-b. \(9+15+11+8=43\).
+a. $x_3=15$.  
+b. $9+15+11+8=43$.
 
 ### Question 6
 
-a. \(4+3(3^2)=4+27=31\).  
-b. \(7(3^2)=7(9)=63\).
+a. $4+3(3^2)=4+27=31$.  
+b. $7(3^2)=7(9)=63$.
 
 ## Midterm Self-Check
 
@@ -1141,6 +1159,6 @@ You are ready for Week 1 material if you can explain, without notes:
 - experimental vs. quasi-experimental vs. correlational design;
 - descriptive vs. inferential statistics;
 - population vs. sample;
-- what \(x_i\) means;
+- what $x_i$ means;
 - what the limits on a summation sign mean;
-- why \((\sum x)^2\) and \(\sum x^2\) are different.
+- why $(\sum x)^2$ and $\sum x^2$ are different.

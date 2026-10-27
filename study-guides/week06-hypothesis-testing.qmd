@@ -29,7 +29,7 @@ The main conceptual sequence is:
 
 ↓  
 
-**Decision criterion (\(\alpha\))**
+**Decision criterion ($\alpha$)**
 
 ↓  
 
@@ -68,17 +68,17 @@ By the end of this week, you should be able to:
 7. Identify critical values for common one- and two-tailed z tests.
 8. Distinguish one-tailed from two-tailed tests.
 9. Explain Type I and Type II errors.
-10. Define statistical power as \(1-\beta\).
+10. Define statistical power as $1-\beta$.
 11. Explain how effect size, sample size, population variability, alpha, and number of tails affect statistical significance or power.
-12. Compute the one-sample z statistic when \(\mu\) and \(\sigma\) are known.
-13. Use critical values or a p value to make a decision about \(H_0\).
-14. Use the preferred wording **reject \(H_0\)** or **fail to reject \(H_0\)**.
+12. Compute the one-sample z statistic when $\mu$ and $\sigma$ are known.
+13. Use critical values or a p value to make a decision about $H_0$.
+14. Use the preferred wording **reject $H_0$** or **fail to reject $H_0$**.
 15. Explain why failing to reject the null does not prove that the null is true.
 16. State the requirements and assumptions of the one-sample z test used in this course.
-17. Compute and interpret Cohen's \(d\) for a one-sample z test.
+17. Compute and interpret Cohen's $d$ for a one-sample z test.
 18. Distinguish statistical significance from effect size.
 19. Define a confidence interval using repeated-sampling logic.
-20. Compute a 95% confidence interval for a population mean when \(\sigma\) is known.
+20. Compute a 95% confidence interval for a population mean when $\sigma$ is known.
 21. Explain what determines confidence-interval width.
 22. Explain why a larger sample can produce significance for the same observed mean difference.
 23. Explain why one-tailed tests can have greater power but require strong directional justification.
@@ -204,7 +204,7 @@ The hypotheses concern **population parameters**, not merely the observed sample
 
 The null hypothesis provides the reference distribution.
 
-We assume \(H_0\) is true long enough to ask:
+We assume $H_0$ is true long enough to ask:
 
 > If this null model were correct, how likely would our sample result be?
 
@@ -338,7 +338,7 @@ SE
 \approx3.65.
 $$
 
-For a two-tailed test at \(\alpha=.05\):
+For a two-tailed test at $\alpha=.05$:
 
 $$
 z_{\text{crit}}=\pm1.96.
@@ -370,10 +370,10 @@ Sample means beyond these cutoffs fall in the critical regions (Sigal, 2026).
 
 Hypothesis testing can produce correct or incorrect decisions.
 
-| Truth | Fail to reject \(H_0\) | Reject \(H_0\) |
+| Truth | Fail to reject $H_0$ | Reject $H_0$ |
 |---|---|---|
-| \(H_0\) true | Correct decision | Type I error |
-| \(H_0\) false | Type II error | Correct decision |
+| $H_0$ true | Correct decision | Type I error |
+| $H_0$ false | Type II error | Correct decision |
 
 ### Type I error
 
@@ -444,13 +444,13 @@ The lecture and textbooks identify several factors.
 Power tends to increase when:
 
 - the true effect is larger;
-- sample size \(n\) is larger;
+- sample size $n$ is larger;
 - population variability is smaller;
 - standard error is smaller;
 - the rejection region is larger;
 - the test uses a justified one-tailed alternative rather than splitting alpha across two tails.
 
-At the same time, increasing \(\alpha\) increases the risk of Type I error, so power cannot be increased without considering tradeoffs (Sigal, 2026; Privitera, 2018, 2024).
+At the same time, increasing $\alpha$ increases the risk of Type I error, so power cannot be increased without considering tradeoffs (Sigal, 2026; Privitera, 2018, 2024).
 
 ---
 
@@ -475,9 +475,9 @@ $$
 
 This formula makes the relationships visible.
 
-A larger numerator increases \(|z|\).
+A larger numerator increases $|z|$.
 
-A smaller denominator also increases \(|z|\).
+A smaller denominator also increases $|z|$.
 
 ---
 
@@ -497,7 +497,7 @@ $$
 \bar X=63.
 $$
 
-### If \(n=25\)
+### If $n=25$
 
 $$
 SE
@@ -517,15 +517,15 @@ z
 1.50.
 $$
 
-At \(\alpha=.05\), two-tailed:
+At $\alpha=.05$, two-tailed:
 
 $$
 |1.50|<1.96.
 $$
 
-So we **fail to reject \(H_0\)**.
+So we **fail to reject $H_0$**.
 
-### If \(n=100\)
+### If $n=100$
 
 $$
 SE
@@ -551,7 +551,7 @@ $$
 |3.00|>1.96,
 $$
 
-so we **reject \(H_0\)**.
+so we **reject $H_0$**.
 
 The sample mean and raw difference are unchanged.
 
@@ -567,8 +567,8 @@ The larger sample produces a smaller standard error and greater power. fileci
 
 The lecture specifies that we must know:
 
-- the population mean \(\mu\);
-- the population standard deviation \(\sigma\);
+- the population mean $\mu$;
+- the population standard deviation $\sigma$;
 - an observed score or sample mean to compare with those population parameters (Sigal, 2026).
 
 Privitera similarly defines the one-sample z test as a test of a single population mean when population variance is known (Privitera, 2018, 2024).
@@ -657,7 +657,7 @@ $$
 3.42>1.96,
 $$
 
-for a two-tailed test at \(\alpha=.05\), the observed mean falls beyond the upper critical value.
+for a two-tailed test at $\alpha=.05$, the observed mean falls beyond the upper critical value.
 
 The lecture therefore rejects the null hypothesis and concludes that the treatment affected reaction time (Sigal, 2026).
 
@@ -671,7 +671,7 @@ Privitera defines it as the probability of obtaining a sample outcome as extreme
 
 The important structure is:
 
-> **Assume \(H_0\), then evaluate how unusual the observed result is.**
+> **Assume $H_0$, then evaluate how unusual the observed result is.**
 
 A p value is **not** the probability that the null hypothesis itself is true.
 
@@ -681,8 +681,8 @@ A p value is **not** the probability that the null hypothesis itself is true.
 
 The preferred decisions are:
 
-- **reject \(H_0\)**;
-- **fail to reject \(H_0\)**.
+- **reject $H_0$**;
+- **fail to reject $H_0$**.
 
 Do not say:
 
@@ -774,8 +774,8 @@ Privitera also notes the possibility of a **Type III error** for one-tailed test
 
 The worksheet compares:
 
-- one-tailed test with \(\alpha=.01\);
-- two-tailed test with \(\alpha=.05\).
+- one-tailed test with $\alpha=.01$;
+- two-tailed test with $\alpha=.05$.
 
 The key points are:
 
@@ -882,7 +882,7 @@ The 2024 Privitera edition makes the broader point that researchers should repor
 
 ---
 
-## 27. Cohen's \(d\) for the One-Sample z Test
+## 27. Cohen's $d$ for the One-Sample z Test
 
 For a one-sample z test:
 
@@ -902,10 +902,10 @@ $$
 
 The difference is crucial:
 
-- \(z\) uses **standard error**;
-- \(d\) uses the **population standard deviation**.
+- $z$ uses **standard error**;
+- $d$ uses the **population standard deviation**.
 
-As a result, \(d\) is not mechanically inflated by sample size in the same way the test statistic is.
+As a result, $d$ is not mechanically inflated by sample size in the same way the test statistic is.
 
 ---
 
@@ -976,7 +976,7 @@ It is not the claim that, after one interval has been computed, there is a 95% p
 
 ## 31. Confidence Interval Formula for the z Setting
 
-For a population mean with known \(\sigma\):
+For a population mean with known $\sigma$:
 
 $$
 CI
@@ -1195,7 +1195,7 @@ $$
 n\ge36.
 $$
 
-The worksheet also emphasizes that SE cannot exceed the population SD: when \(n=1\), SE equals \(\sigma\); for larger \(n\), SE is smaller. fileciteturn11file0L13-L19
+The worksheet also emphasizes that SE cannot exceed the population SD: when $n=1$, SE equals $\sigma$; for larger $n$, SE is smaller. fileciteturn11file0L13-L19
 
 ---
 
@@ -1299,7 +1299,7 @@ The study may have had low power.
 
 ### "Increasing n changes Cohen's d."
 
-For the simple one-sample formula used here, no. The sample size affects standard error and the z statistic, not the standardized mean difference \(d=(\bar X-\mu)/\sigma\).
+For the simple one-sample formula used here, no. The sample size affects standard error and the z statistic, not the standardized mean difference $d=(\bar X-\mu)/\sigma$.
 
 ### "A smaller alpha always makes a test better."
 
@@ -1329,7 +1329,7 @@ It defines the Type I error rate tolerated by the decision rule under the null m
 
 ### "What is a critical region?"
 
-A range of test-statistic values considered sufficiently unlikely under \(H_0\) to trigger rejection.
+A range of test-statistic values considered sufficiently unlikely under $H_0$ to trigger rejection.
 
 ### "What is the difference between alpha and p?"
 
@@ -1345,7 +1345,7 @@ $$
 SE=\frac{\sigma}{\sqrt n}.
 $$
 
-As \(n\) increases, SE decreases, so the same mean difference becomes larger in standard-error units.
+As $n$ increases, SE decreases, so the same mean difference becomes larger in standard-error units.
 
 ### "Why report effect size?"
 
@@ -1355,7 +1355,7 @@ Because significance answers whether the data conflict with the null model, wher
 
 ## 42. Practice: Hypotheses
 
-For each research question, write \(H_0\) and \(H_1\).
+For each research question, write $H_0$ and $H_1$.
 
 1. A treatment may change reaction time in either direction.
 2. A training program is predicted to increase scores.
@@ -1411,7 +1411,7 @@ d
 \frac{\bar X-\mu}{\sigma}.
 $$
 
-Then compare the information supplied by \(d\) with the information supplied by the hypothesis test.
+Then compare the information supplied by $d$ with the information supplied by the hypothesis test.
 
 ---
 
@@ -1451,13 +1451,13 @@ falls inside the interval.
 Before moving on, you should be able to explain:
 
 - how Week 6 builds on sampling distributions;
-- what \(H_0\) and \(H_1\) represent;
+- what $H_0$ and $H_1$ represent;
 - why inference begins from a null model;
 - the sequence of a hypothesis test;
 - what alpha controls;
 - what critical values define;
 - Type I vs. Type II errors;
-- why power is \(1-\beta\);
+- why power is $1-\beta$;
 - how sample size changes standard error and power;
 - how to calculate a one-sample z statistic;
 - why the same mean difference can be significant for one sample size and nonsignificant for another;
@@ -1465,7 +1465,7 @@ Before moving on, you should be able to explain:
 - why p values are conditional on the null model;
 - reject vs. fail to reject language;
 - statistical significance vs. effect size;
-- what Cohen's \(d\) measures;
+- what Cohen's $d$ measures;
 - repeated-sampling interpretation of a confidence interval;
 - what controls CI width;
 - why good interpretation uses more than a p value.
@@ -1541,7 +1541,7 @@ That broader perspective is the foundation for the inferential methods that foll
 
 # Part VI — Midterm Review Guide
 
-The official Lecture 6 midterm guide identifies five conceptual areas: **null hypothesis significance testing, Type I and Type II error, effect size, confidence intervals, and statistical power**. Computationally, you should be able to calculate **\(Z_{obt}\), effect size, confidence intervals, and p values**.
+The official Lecture 6 midterm guide identifies five conceptual areas: **null hypothesis significance testing, Type I and Type II error, effect size, confidence intervals, and statistical power**. Computationally, you should be able to calculate **$Z_{obt}$, effect size, confidence intervals, and p values**.
 
 ## The Big Picture
 
@@ -1557,13 +1557,17 @@ The course organizes NHST around four core steps.
 
 A nondirectional example:
 
-\[
-H_0:\mu=100
-\]
 
-\[
+$$
+H_0:\mu=100
+$$
+
+
+
+$$
 H_1:\mu\ne100.
-\]
+$$
+
 
 The null states the baseline/no-difference population value. The alternative states the substantive claim that the population mean differs.
 
@@ -1571,42 +1575,49 @@ The pair must cover all possible population-mean values.
 
 ## Step 2 — Set the Decision Rule
 
-The decision is built from the **null distribution**: the sampling distribution expected if \(H_0\) is true.
+The decision is built from the **null distribution**: the sampling distribution expected if $H_0$ is true.
 
 For a two-tailed test with:
 
-\[
+
+$$
 \alpha=.05,
-\]
+$$
+
 
 split alpha:
 
-\[
+
+$$
 \frac{.05}{2}=.025
-\]
+$$
+
 
 in each tail.
 
 The corresponding critical values are:
 
-\[
+
+$$
 Z_{crit}=\pm1.96.
-\]
+$$
+
 
 Decision rule:
 
-- if \(|Z_{obt}|\ge1.96\), reject \(H_0\);
-- if \(|Z_{obt}|<1.96\), fail to reject \(H_0\).
+- if $|Z_{obt}|\ge1.96$, reject $H_0$;
+- if $|Z_{obt}|<1.96$, fail to reject $H_0$.
 
 ## Step 3 — Collect the Sample
 
-The sample supplies the observed statistic, especially \(\bar{x}\), that will be compared with the null distribution.
+The sample supplies the observed statistic, especially $\bar{x}$, that will be compared with the null distribution.
 
-## Step 4 — Calculate \(Z_{obt}\) and Decide
+## Step 4 — Calculate $Z_{obt}$ and Decide
 
 For a sample mean:
 
-\[
+
+$$
 Z_{obt}
 =
 \frac{\bar{x}-\mu}
@@ -1615,9 +1626,10 @@ Z_{obt}
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}.
-\]
+$$
 
-Then compare \(Z_{obt}\) with \(Z_{crit}\).
+
+Then compare $Z_{obt}$ with $Z_{crit}$.
 
 The p value gives the probability, under the null model, of obtaining the observed result or something more extreme.
 
@@ -1627,47 +1639,59 @@ For a two-tailed test, a one-tail area from the z table is doubled.
 
 The guide uses:
 
-\[
+
+$$
 \mu=100,\quad \sigma=15,\quad n=50,\quad \bar{x}=105.
-\]
+$$
+
 
 The standard error is approximately:
 
-\[
+
+$$
 \sigma_{\bar{x}}
 =
 \frac{15}{\sqrt{50}}
 \approx2.12.
-\]
+$$
+
 
 Then:
 
-\[
+
+$$
 Z_{obt}
 =
 \frac{105-100}{2.12}
 \approx2.36.
-\]
+$$
+
 
 Because:
 
-\[
-2.36>1.96,
-\]
 
-reject \(H_0\).
+$$
+2.36>1.96,
+$$
+
+
+reject $H_0$.
 
 The z-table one-tail area is .0091, so for the two-tailed test:
 
-\[
+
+$$
 p=2(.0091)=.0182.
-\]
+$$
+
 
 Because:
 
-\[
+
+$$
 p<.05,
-\]
+$$
+
 
 the result is statistically significant.
 
@@ -1675,26 +1699,30 @@ the result is statistically significant.
 
 The course formula is:
 
-\[
+
+$$
 ES
 =
 \frac{\bar{x}-\mu}{\sigma}.
-\]
+$$
+
 
 Notice the denominator:
 
-- \(Z_{obt}\) uses **standard error**;
+- $Z_{obt}$ uses **standard error**;
 - effect size uses the **population SD**.
 
 For the IQ example:
 
-\[
+
+$$
 ES
 =
 \frac{105-100}{15}
 =
 0.333.
-\]
+$$
+
 
 The course benchmarks are:
 
@@ -1708,23 +1736,28 @@ This example is important because it shows that a statistically significant resu
 
 The official formula is:
 
-\[
+
+$$
 CI
 =
 \bar{x}
 \pm
 Z_{crit}\sigma_{\bar{x}}.
-\]
+$$
+
 
 For a 95% CI:
 
-\[
+
+$$
 Z_{crit}=1.96.
-\]
+$$
+
 
 Using the IQ example:
 
-\[
+
+$$
 CI
 =
 105
@@ -1732,24 +1765,27 @@ CI
 1.96(2.12)
 \approx
 105\pm4.15
-\]
+$$
+
 
 so:
 
-\[
-CI\approx[101.85,109.15].
-\]
 
-The null value 100 lies outside this interval, consistent with rejecting \(H_0\).
+$$
+CI\approx[101.85,109.15].
+$$
+
+
+The null value 100 lies outside this interval, consistent with rejecting $H_0$.
 
 The correct interpretation of “95%” is based on repeated sampling: if the procedure were repeated across all possible samples, about 95% of those intervals would contain the population mean.
 
 ## Type I and Type II Errors
 
-| Reality | Fail to reject \(H_0\) | Reject \(H_0\) |
+| Reality | Fail to reject $H_0$ | Reject $H_0$ |
 |---|---|---|
-| \(H_0\) true | Correct, probability \(1-\alpha\) | Type I error, probability \(\alpha\) |
-| \(H_0\) false | Type II error, probability \(\beta\) | Correct, probability \(1-\beta\) |
+| $H_0$ true | Correct, probability $1-\alpha$ | Type I error, probability $\alpha$ |
+| $H_0$ false | Type II error, probability $\beta$ | Correct, probability $1-\beta$ |
 
 ### Type I error
 
@@ -1763,24 +1799,27 @@ Fail to reject a null hypothesis that is actually false.
 
 Power is:
 
-\[
+
+$$
 1-\beta.
-\]
+$$
+
 
 It is the probability of correctly rejecting a false null hypothesis.
 
 The guide emphasizes:
 
-- as \(n\) increases, power increases;
-- as \(\alpha\) increases, power increases;
-- as \(\sigma\) increases, power decreases;
+- as $n$ increases, power increases;
+- as $\alpha$ increases, power increases;
+- as $\sigma$ increases, power decreases;
 - as effect size increases, power increases.
 
 ## Formula-Sheet Connection
 
 Week 6 directly uses:
 
-\[
+
+$$
 Z
 =
 \frac{\bar{x}-\mu}{\sigma_{\bar{x}}},
@@ -1788,21 +1827,26 @@ Z
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}
-\]
+$$
 
-\[
+
+
+$$
 \text{Effect Size}
 =
 \frac{\bar{x}-\mu}{\sigma}
-\]
+$$
 
-\[
+
+
+$$
 CI(Z)
 =
 \bar{x}
 \pm
 Z_{crit}\sigma_{\bar{x}}.
-\]
+$$
+
 
 ## Assignment-Style Practice
 
@@ -1810,36 +1854,42 @@ Z_{crit}\sigma_{\bar{x}}.
 
 A population has:
 
-\[
+
+$$
 \mu=80,\qquad \sigma=12.
-\]
+$$
+
 
 A researcher tests whether a training program changes scores in either direction.
 
-a. State \(H_0\).  
-b. State \(H_1\).  
+a. State $H_0$.  
+b. State $H_1$.  
 c. Is the test one-tailed or two-tailed?  
-d. At \(\alpha=.05\), what are the critical z values?
+d. At $\alpha=.05$, what are the critical z values?
 
 ### Question 2 — Complete one-sample z test (/6)
 
 For the same population, a sample of:
 
-\[
+
+$$
 n=36
-\]
+$$
+
 
 has:
 
-\[
+
+$$
 \bar{x}=84.
-\]
+$$
+
 
 a. Calculate the standard error.  
-b. Calculate \(Z_{obt}\).  
-c. Make the decision at \(\alpha=.05\), two-tailed.  
+b. Calculate $Z_{obt}$.  
+c. Make the decision at $\alpha=.05$, two-tailed.  
 d. Is the result statistically significant?  
-e. If the one-tail area beyond \(|z|=2.00\) is .0228, calculate the two-tailed p value.  
+e. If the one-tail area beyond $|z|=2.00$ is .0228, calculate the two-tailed p value.  
 f. State the result in plain English.
 
 ### Question 3 — Effect size (/3)
@@ -1855,7 +1905,7 @@ c. Explain why effect size answers a different question from statistical signifi
 Using Question 2:
 
 a. Calculate the 95% CI.  
-b. Does the null value \(\mu=80\) fall inside the CI?  
+b. Does the null value $\mu=80$ fall inside the CI?  
 c. Is that consistent with the NHST decision?  
 d. State the repeated-sampling interpretation of a 95% CI.
 
@@ -1863,10 +1913,10 @@ d. State the repeated-sampling interpretation of a 95% CI.
 
 For each situation, identify the outcome.
 
-a. \(H_0\) is true and the researcher rejects it.  
-b. \(H_0\) is false and the researcher fails to reject it.  
-c. \(H_0\) is true and the researcher fails to reject it.  
-d. \(H_0\) is false and the researcher rejects it.
+a. $H_0$ is true and the researcher rejects it.  
+b. $H_0$ is false and the researcher fails to reject it.  
+c. $H_0$ is true and the researcher fails to reject it.  
+d. $H_0$ is false and the researcher rejects it.
 
 ### Question 6 — Power (/4)
 
@@ -1883,60 +1933,74 @@ d. effect size increases.
 
 a.
 
-\[
+
+$$
 H_0:\mu=80.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 H_1:\mu\ne80.
-\]
+$$
+
 
 c. Two-tailed.  
 d.
 
-\[
+
+$$
 Z_{crit}=\pm1.96.
-\]
+$$
+
 
 ### Question 2
 
 a.
 
-\[
+
+$$
 SE
 =
 \frac{12}{\sqrt{36}}
 =
 2.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 Z_{obt}
 =
 \frac{84-80}{2}
 =
 2.00.
-\]
+$$
+
 
 c. Because:
 
-\[
+
+$$
 |2.00|>1.96,
-\]
+$$
 
-reject \(H_0\).
 
-d. Yes, statistically significant at \(\alpha=.05\).
+reject $H_0$.
+
+d. Yes, statistically significant at $\alpha=.05$.
 
 e.
 
-\[
+
+$$
 p=2(.0228)=.0456.
-\]
+$$
+
 
 f. The sample mean is sufficiently unlikely under the null model to reject the hypothesis that the population mean remains 80; the training program is associated with a statistically significant difference.
 
@@ -1944,13 +2008,15 @@ f. The sample mean is sufficiently unlikely under the null model to reject the h
 
 a.
 
-\[
+
+$$
 ES
 =
 \frac{84-80}{12}
 =
 0.333.
-\]
+$$
+
 
 b. Small effect using the course benchmarks.  
 c. Significance evaluates how incompatible the data are with the null model; effect size describes how large the standardized mean difference is.
@@ -1959,7 +2025,8 @@ c. Significance evaluates how incompatible the data are with the null model; eff
 
 a.
 
-\[
+
+$$
 CI
 =
 84
@@ -1967,24 +2034,27 @@ CI
 1.96(2)
 =
 84\pm3.92.
-\]
+$$
+
 
 Therefore:
 
-\[
+
+$$
 CI=[80.08,87.92].
-\]
+$$
+
 
 b. No.  
-c. Yes. The corresponding two-tailed test rejects \(H_0\).  
+c. Yes. The corresponding two-tailed test rejects $H_0$.  
 d. Across repeated sampling, about 95% of intervals constructed with this procedure would contain the population mean.
 
 ### Question 5
 
 a. Type I error.  
 b. Type II error.  
-c. Correct decision, probability \(1-\alpha\).  
-d. Correct rejection; this contributes to power, \(1-\beta\).
+c. Correct decision, probability $1-\alpha$.  
+d. Correct rejection; this contributes to power, $1-\beta$.
 
 ### Question 6
 
@@ -1998,9 +2068,9 @@ d. Increases.
 You should be able to explain and calculate:
 
 - the four-step NHST logic;
-- \(H_0\) vs. \(H_1\);
-- \(\alpha\) and critical regions;
-- \(Z_{obt}\) and \(Z_{crit}\);
+- $H_0$ vs. $H_1$;
+- $\alpha$ and critical regions;
+- $Z_{obt}$ and $Z_{crit}$;
 - p values;
 - reject vs. fail to reject;
 - Type I vs. Type II error;

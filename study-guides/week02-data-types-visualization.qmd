@@ -50,7 +50,7 @@ $$
 
 means:
 
-> Add the values of variable \(X\), beginning with the value indexed \(i=1\) and ending with the value indexed \(i=n\).
+> Add the values of variable $X$, beginning with the value indexed $i=1$ and ending with the value indexed $i=n$.
 
 The tutorial stresses that the **order of the observations matters when the summation limits refer to specific indices**. If
 
@@ -82,7 +82,7 @@ $$
 \sum(X_i+2).
 $$
 
-The first expression means “sum the \(X\) values, then add 2.” The second means “add 2 to every included \(X\) value, then sum.”
+The first expression means “sum the $X$ values, then add 2.” The second means “add 2 to every included $X$ value, then sum.”
 
 Likewise,
 
@@ -128,7 +128,7 @@ $$
 
 #### Rule 3: A constant added inside the summation is repeated
 
-If there are \(k\) observations being summed,
+If there are $k$ observations being summed,
 
 $$
 \sum(X_i+c)=\sum X_i+kc.
@@ -136,7 +136,7 @@ $$
 
 This rule is especially easy to misuse. The constant is added **once for each observation included in the summation**, not once overall.
 
-The worksheet key applies these rules to paired \(X\) and \(Y\) data and also practices products such as \(\sum XY\), squared sums, and combined expressions (PSYC 210 Teaching Team, 2026a).
+The worksheet key applies these rules to paired $X$ and $Y$ data and also practices products such as $\sum XY$, squared sums, and combined expressions (PSYC 210 Teaching Team, 2026a).
 
 ---
 
@@ -268,17 +268,17 @@ The standard example in the Week 2 lecture is Celsius temperature.
 
 The difference between:
 
-- \(2^\circ C\) and \(3^\circ C\)
+- $2^\circ C$ and $3^\circ C$
 
 represents the same amount of temperature change as the difference between:
 
-- \(-1^\circ C\) and \(0^\circ C\).
+- $-1^\circ C$ and $0^\circ C$.
 
-However, Celsius temperature does **not** have a true zero. \(0^\circ C\) does not mean “no temperature.”
+However, Celsius temperature does **not** have a true zero. $0^\circ C$ does not mean “no temperature.”
 
 Therefore, ratio statements are not meaningful:
 
-> \(10^\circ C\) is **not** twice as hot as \(5^\circ C\).
+> $10^\circ C$ is **not** twice as hot as $5^\circ C$.
 
 Interval variables support meaningful statements about **differences**, but not arbitrary ratio statements (Privitera, 2018, 2024; Sigal, 2026).
 
@@ -297,7 +297,7 @@ Examples include:
 - distance;
 - temperature measured in Kelvin.
 
-If height is measured in metres, \(0\) metres represents the absence of height. Therefore, meaningful ratio comparisons are possible.
+If height is measured in metres, $0$ metres represents the absence of height. Therefore, meaningful ratio comparisons are possible.
 
 For example:
 
@@ -410,7 +410,7 @@ An **ungrouped frequency distribution** lists individual values or categories an
 
 A basic table has two columns:
 
-| \(X\) | \(f\) |
+| $X$ | $f$ |
 |---|---:|
 | value/category | number of occurrences |
 
@@ -438,7 +438,7 @@ A full frequency table can include several related summaries.
 
 ### Frequency
 
-Frequency \(f\) is the number of observations at a value or in an interval.
+Frequency $f$ is the number of observations at a value or in an interval.
 
 ### Proportion / relative frequency
 
@@ -472,7 +472,7 @@ For an ascending table, it answers:
 
 > How many observations scored this value **or less**?
 
-The final cumulative frequency should equal \(n\).
+The final cumulative frequency should equal $n$.
 
 ### Cumulative relative frequency / cumulative percentage
 
@@ -504,11 +504,11 @@ $$
 X=\{1,4,1,2,4,2,4\},
 $$
 
-so \(n=7\).
+so $n=7$.
 
 The resulting table is:
 
-| \(X\) | \(f\) | \(p\) | % | CF | Cumulative proportion | Cumulative % |
+| $X$ | $f$ | $p$ | % | CF | Cumulative proportion | Cumulative % |
 |---:|---:|---:|---:|---:|---:|---:|
 | 1 | 2 | .2857 | 28.57 | 2 | .2857 | 28.57 |
 | 2 | 2 | .2857 | 28.57 | 4 | .5714 | 57.14 |
@@ -537,7 +537,7 @@ Cumulative percentages can be interpreted as percentile ranks.
 
 A **percentile rank** tells us what percentage of scores fall at or below a specified score under the convention used in the Week 2 materials.
 
-For example, the lecture uses a table of dreams recalled by 50 children. At \(X=2\), the cumulative frequency is 30:
+For example, the lecture uses a table of dreams recalled by 50 children. At $X=2$, the cumulative frequency is 30:
 
 $$
 \frac{30}{50}\times100=60\%.
@@ -656,7 +656,7 @@ The no-passage scores range from 34 to 57. Students are asked to:
 4. draw a histogram;
 5. compare these scores with a second group that read the passage (Sigal, 2026).
 
-The answer key shows that the no-passage sample has \(n=28\), while the passage group has \(n=17\). The passage-group scores are generally higher, but the worksheet deliberately separates this **descriptive observation** from the later question of whether a difference is statistically significant.
+The answer key shows that the no-passage sample has $n=28$, while the passage group has $n=17$. The passage-group scores are generally higher, but the worksheet deliberately separates this **descriptive observation** from the later question of whether a difference is statistically significant.
 
 That distinction is essential:
 
@@ -911,7 +911,7 @@ The scale of measurement affects what mathematical summaries are meaningful. The
 | **Qualitative variable** | Variable that differs by category or class. |
 | **Quantitative variable** | Variable that differs by amount. |
 | **Frequency** | Number of times a value/category occurs. |
-| **Relative frequency** | Frequency divided by total \(n\). |
+| **Relative frequency** | Frequency divided by total $n$. |
 | **Percentage** | Relative frequency multiplied by 100. |
 | **Cumulative frequency** | Running total of frequencies. |
 | **Cumulative percentage** | Running total of percentages. |
@@ -942,7 +942,7 @@ No. Ordinal data provide order, not equal distance.
 
 #### “Zero always means none.”
 
-No. A true zero is a property of ratio scales. \(0^\circ C\) is not an absence of temperature.
+No. A true zero is a property of ratio scales. $0^\circ C$ is not an absence of temperature.
 
 #### “Grouped frequency distributions are more accurate.”
 
@@ -1026,9 +1026,9 @@ $$
 
 construct a table containing:
 
-- \(X\);
-- \(f\);
-- \(p\);
+- $X$;
+- $f$;
+- $p$;
 - percentage;
 - cumulative frequency;
 - cumulative percentage.
@@ -1227,9 +1227,9 @@ A frequency distribution compresses raw observations into an organized table.
 
 The key columns are:
 
-- \(f\): frequency;
-- proportion: \(f/N\);
-- percentage: \((f/N)\times100\);
+- $f$: frequency;
+- proportion: $f/N$;
+- percentage: $(f/N)\times100$;
 - CF: cumulative frequency;
 - cumulative percentage or cumulative relative frequency.
 
@@ -1237,7 +1237,7 @@ Think of cumulative frequency as:
 
 > “How many observations are at this value **or less**?”
 
-The final cumulative frequency must equal \(N\), and the final cumulative percentage must equal 100%.
+The final cumulative frequency must equal $N$, and the final cumulative percentage must equal 100%.
 
 ## Apparent and Real Limits
 
@@ -1255,12 +1255,14 @@ When the range is large, scores can be combined into class intervals.
 
 The official formula sheet gives:
 
-\[
+
+$$
 \text{Bin Width}
 =
 \frac{\text{Maximum}-\text{Minimum}}
 {\text{Number of Bins}}.
-\]
+$$
+
 
 The course guide recommends aiming for roughly 10 bins and then choosing a convenient meaningful width.
 
@@ -1288,11 +1290,13 @@ Good visualizations should also use clear labels, appropriate scales, and avoid 
 
 For Week 2, the main official formula is:
 
-\[
+
+$$
 \text{Bin Width}
 =
 \frac{\max-\min}{\#\text{ of bins}}.
-\]
+$$
+
 
 You should also be able to calculate proportions and percentages even though these are simple arithmetic rather than a separate boxed formula.
 
@@ -1311,13 +1315,15 @@ d. Reaction time measured in milliseconds
 
 Twenty students report the number of cups of coffee they drank yesterday:
 
-\[
+
+$$
 0,1,2,1,3,2,0,2,1,4,2,3,1,2,0,1,3,2,1,2.
-\]
+$$
 
-Complete a frequency table for \(X=0,1,2,3,4\) containing:
 
-- \(f\)
+Complete a frequency table for $X=0,1,2,3,4$ containing:
+
+- $f$
 - proportion
 - percentage
 - CF
@@ -1363,7 +1369,7 @@ d. Ratio — equal units and 0 ms represents no elapsed reaction time.
 
 ### Question 2
 
-| \(X\) | \(f\) | Proportion | % | CF | Cumulative % |
+| $X$ | $f$ | Proportion | % | CF | Cumulative % |
 |---:|---:|---:|---:|---:|---:|
 | 0 | 3 | .15 | 15% | 3 | 15% |
 | 1 | 6 | .30 | 30% | 9 | 45% |
@@ -1373,9 +1379,11 @@ d. Ratio — equal units and 0 ms represents no elapsed reaction time.
 
 Checks:
 
-\[
+
+$$
 \sum f=20,\qquad \sum\text{Proportion}=1.00,\qquad \sum\%=100\%.
-\]
+$$
+
 
 ### Question 3
 
@@ -1386,9 +1394,11 @@ b. 95%.
 
 a.
 
-\[
+
+$$
 \frac{87-12}{10}=7.5.
-\]
+$$
+
 
 b. A convenient width of about 8 is reasonable.
 
@@ -1409,7 +1419,7 @@ You should be able to:
 
 - classify variables using NOIR;
 - distinguish categorical from continuous measurement;
-- calculate \(f\), proportion, percentage, CF, and cumulative percentage;
+- calculate $f$, proportion, percentage, CF, and cumulative percentage;
 - identify apparent and real limits;
 - calculate a bin width;
 - choose among bar charts, histograms, and frequency polygons;

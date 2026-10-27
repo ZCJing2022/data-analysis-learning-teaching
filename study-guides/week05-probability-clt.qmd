@@ -116,10 +116,10 @@ $$
 
 where:
 
-- \(A\) is the event of interest;
-- \(S\) is the sample space;
-- \(\#(A)\) is the number of ways \(A\) can occur;
-- \(\#(S)\) is the number of possible outcomes.
+- $A$ is the event of interest;
+- $S$ is the sample space;
+- $\#(A)$ is the number of ways $A$ can occur;
+- $\#(S)$ is the number of possible outcomes.
 
 Examples include:
 
@@ -409,7 +409,7 @@ Very small samples produce highly variable means.
 
 As sample size increases, the sample means tend to cluster more closely around 100.
 
-The lecture's series from \(n=1\), \(2\), \(10\), \(25\), to \(1000\) visually demonstrates the increasing stability of the mean (Sigal, 2026).
+The lecture's series from $n=1$, $2$, $10$, $25$, to $1000$ visually demonstrates the increasing stability of the mean (Sigal, 2026).
 
 ---
 
@@ -432,7 +432,7 @@ This distinction is essential:
 
 The lecture defines a sampling distribution as:
 
-> the distribution of a sample statistic for all possible random samples of a particular size \(n\) that can be obtained from a population (Sigal, 2026).
+> the distribution of a sample statistic for all possible random samples of a particular size $n$ that can be obtained from a population (Sigal, 2026).
 
 The statistic might be:
 
@@ -448,7 +448,7 @@ Week 5 focuses primarily on the **sample mean**.
 
 Imagine repeatedly:
 
-1. drawing a random sample of size \(n\);
+1. drawing a random sample of size $n$;
 2. calculating its mean;
 3. recording that mean;
 4. repeating the procedure many times.
@@ -483,7 +483,7 @@ Privitera likewise states that the sample mean equals the population mean **on a
 
 The lecture states the Central Limit Theorem in terms of the sampling distribution of sample means.
 
-For a population with mean \(\mu\) and standard deviation \(\sigma\), the sampling distribution of means for samples of size \(n\) has:
+For a population with mean $\mu$ and standard deviation $\sigma$, the sampling distribution of means for samples of size $n$ has:
 
 ### Center
 
@@ -507,7 +507,7 @@ The sampling distribution becomes approximately normal as sample size increases 
 
 ---
 
-## 21. Center: The Sampling Distribution Is Centered on \(\mu\)
+## 21. Center: The Sampling Distribution Is Centered on $\mu$
 
 The first important property is:
 
@@ -517,7 +517,7 @@ $$
 
 This means the sample mean is unbiased.
 
-Individual sample means can lie above or below \(\mu\), but across repeated random samples they center on the true population mean.
+Individual sample means can lie above or below $\mu$, but across repeated random samples they center on the true population mean.
 
 ---
 
@@ -547,7 +547,7 @@ $$
 \sqrt{n}\ge1,
 $$
 
-the standard error cannot exceed \(\sigma\) when \(n\ge1\).
+the standard error cannot exceed $\sigma$ when $n\ge1$.
 
 Thus sample means fluctuate less than individual raw scores (Sigal, 2026).
 
@@ -575,7 +575,7 @@ The 2024 Privitera text adds a useful qualification: normality of a sampling dis
 
 For this course, the practical focus remains:
 
-> As \(n\) increases, the sampling distribution of the mean becomes narrower and increasingly normal under the CLT framework.
+> As $n$ increases, the sampling distribution of the mean becomes narrower and increasingly normal under the CLT framework.
 
 ---
 
@@ -619,7 +619,7 @@ $$
 \sigma=10.
 $$
 
-### If \(n=1\)
+### If $n=1$
 
 $$
 SE
@@ -629,7 +629,7 @@ SE
 10.
 $$
 
-### If \(n=2\)
+### If $n=2$
 
 $$
 SE
@@ -639,7 +639,7 @@ SE
 7.07.
 $$
 
-### If \(n=8\)
+### If $n=8$
 
 $$
 SE
@@ -659,7 +659,7 @@ $$
 
 ## 28. Effect of Population Variability
 
-Holding \(n\) constant:
+Holding $n$ constant:
 
 $$
 SE
@@ -669,8 +669,8 @@ $$
 
 Therefore:
 
-- larger \(\sigma\) → larger SE;
-- smaller \(\sigma\) → smaller SE.
+- larger $\sigma$ → larger SE;
+- smaller $\sigma$ → smaller SE.
 
 A more variable population produces less precise sample-mean estimates.
 
@@ -680,7 +680,7 @@ A more variable population produces less precise sample-mean estimates.
 
 The lecture interprets standard error as an indicator of how accurately a sample statistic represents a population parameter.
 
-Smaller SE means sample means cluster more tightly around \(\mu\).
+Smaller SE means sample means cluster more tightly around $\mu$.
 
 Larger SE means greater sampling variability.
 
@@ -714,11 +714,11 @@ As sample size increases, standard error decreases.
 
 The worksheet key gives:
 
-| Sample size | Probability that \(124\le\bar X\le132\) |
+| Sample size | Probability that $124\le\bar X\le132$ |
 |---:|---:|
-| \(n=9\) | .5468 |
-| \(n=25\) | .7888 |
-| \(n=100\) | .9876 |
+| $n=9$ | .5468 |
+| $n=25$ | .7888 |
+| $n=100$ | .9876 |
 
 The important pattern is:
 
@@ -740,13 +740,13 @@ $$
 SE=\frac{16}{\sqrt n}.
 $$
 
-As \(n\) grows, the sampling distribution becomes narrower around 128.
+As $n$ grows, the sampling distribution becomes narrower around 128.
 
 Therefore the fixed interval 124–132 contains a larger fraction of possible sample means.
 
 ---
 
-## 32. Fixed \(n\), Changing Population SD
+## 32. Fixed $n$, Changing Population SD
 
 The worksheet next fixes:
 
@@ -760,7 +760,7 @@ $$
 96\le\bar X\le104.
 $$
 
-### If \(\sigma=16\)
+### If $\sigma=16$
 
 $$
 SE
@@ -782,7 +782,7 @@ $$
 \approx68.2\%.
 $$
 
-### If \(\sigma=8\)
+### If $\sigma=8$
 
 $$
 SE=2.
@@ -800,7 +800,7 @@ $$
 \approx95.4\%.
 $$
 
-### If \(\sigma=4\)
+### If $\sigma=4$
 
 $$
 SE=1.
@@ -860,7 +860,7 @@ This is the Week 5 extension of Week 4's z-score logic (Sigal, 2026).
 
 ---
 
-## 34. If \(n=1\)
+## 34. If $n=1$
 
 When:
 
@@ -914,7 +914,7 @@ $$
 \bar X=83.
 $$
 
-### \(n=4\)
+### $n=4$
 
 $$
 SE=\frac{12}{2}=6
@@ -926,7 +926,7 @@ $$
 z=\frac{83-80}{6}=0.50.
 $$
 
-### \(n=16\)
+### $n=16$
 
 $$
 SE=\frac{12}{4}=3
@@ -938,7 +938,7 @@ $$
 z=\frac{3}{3}=1.00.
 $$
 
-### \(n=36\)
+### $n=36$
 
 $$
 SE=\frac{12}{6}=2
@@ -958,11 +958,11 @@ But as sample size grows, that same deviation becomes more unusual.
 
 ## 36. Why Sample Size Changes the z Score
 
-A difference of 3 points from \(\mu\) is not equally surprising for all sample sizes.
+A difference of 3 points from $\mu$ is not equally surprising for all sample sizes.
 
 Larger samples have smaller standard error.
 
-Therefore a 3-point departure represents more standard-error units when \(n\) is large.
+Therefore a 3-point departure represents more standard-error units when $n$ is large.
 
 This is one of the deepest conceptual points in Week 5:
 
@@ -1094,7 +1094,7 @@ Very high and very low observations tend to offset one another.
 
 Therefore means are more stable than individual observations.
 
-Increasing \(n\) strengthens this stabilizing effect.
+Increasing $n$ strengthens this stabilizing effect.
 
 This is why:
 
@@ -1104,7 +1104,7 @@ $$
 \sigma
 $$
 
-for \(n>1\).
+for $n>1$.
 
 ---
 
@@ -1157,7 +1157,7 @@ $$
 SE=\frac{\sigma}{\sqrt n}
 $$
 
-and increasing \(n\) decreases sampling variability.
+and increasing $n$ decreases sampling variability.
 
 ---
 
@@ -1204,7 +1204,7 @@ The sample mean equals the population mean **on average across random samples**.
 
 ---
 
-## 51. "If a sample mean is far from \(\mu\), the sample must be wrong."
+## 51. "If a sample mean is far from $\mu$, the sample must be wrong."
 
 No.
 
@@ -1246,7 +1246,7 @@ $$
 
 Larger samples average out more random fluctuation.
 
-### "Why is the sampling distribution centered at \(\mu\)?"
+### "Why is the sampling distribution centered at $\mu$?"
 
 Because the sample mean is an unbiased estimator of the population mean.
 
@@ -1254,9 +1254,9 @@ Because the sample mean is an unbiased estimator of the population mean.
 
 That is the CLT: repeated sample means are more regular than the individual raw values from which they are calculated.
 
-### "Why does the same \(\bar X\) have a larger z score for a bigger n?"
+### "Why does the same $\bar X$ have a larger z score for a bigger n?"
 
-Because a larger sample has a smaller SE, so the same raw difference from \(\mu\) is more unusual in standard-error units.
+Because a larger sample has a smaller SE, so the same raw difference from $\mu$ is more unusual in standard-error units.
 
 ---
 
@@ -1284,7 +1284,7 @@ $$
 
 For each sample:
 
-1. calculate \(\bar X-\mu\);
+1. calculate $\bar X-\mu$;
 2. identify the direction of the sampling error;
 3. explain why none of these values alone proves a flawed sampling process.
 
@@ -1300,10 +1300,10 @@ $$
 
 Calculate SE for:
 
-1. \(n=1\)
-2. \(n=4\)
-3. \(n=25\)
-4. \(n=100\)
+1. $n=1$
+2. $n=4$
+3. $n=25$
+4. $n=100$
 
 Describe the pattern.
 
@@ -1353,11 +1353,11 @@ $$
 
 Compare the z scores when:
 
-1. \(n=4\)
-2. \(n=16\)
-3. \(n=36\)
+1. $n=4$
+2. $n=16$
+3. $n=36$
 
-Explain why the z score changes even though \(\bar X\) does not.
+Explain why the z score changes even though $\bar X$ does not.
 
 ---
 
@@ -1367,9 +1367,9 @@ Suppose a population is strongly positively skewed.
 
 For repeated random samples:
 
-1. where is the sampling distribution of \(\bar X\) centered?
-2. what happens to its standard error as \(n\) increases?
-3. what happens to its shape as \(n\) increases?
+1. where is the sampling distribution of $\bar X$ centered?
+2. what happens to its standard error as $n$ increases?
+3. what happens to its shape as $n$ increases?
 4. does the population distribution itself become normal?
 
 ---
@@ -1388,11 +1388,11 @@ Before moving on, you should be able to explain:
 - why larger samples are more stable on average;
 - what a sampling distribution is;
 - what the sampling distribution of the mean contains;
-- why \(\mu_{\bar X}=\mu\);
+- why $\mu_{\bar X}=\mu$;
 - the three Week 5 features of the CLT;
 - what standard error measures;
-- why \(SE=\sigma/\sqrt n\);
-- how \(n\) and \(\sigma\) affect SE;
+- why $SE=\sigma/\sqrt n$;
+- how $n$ and $\sigma$ affect SE;
 - why sample means fluctuate less than individual scores;
 - how to standardize a sample mean;
 - how z for a sample mean differs from z for an individual score;
@@ -1495,13 +1495,15 @@ The key reasoning chain is:
 
 ## Basic Probability
 
-For an event \(A\):
+For an event $A$:
 
-\[
+
+$$
 P(A)
 =
 \frac{\#(A)}{\#(S)}.
-\]
+$$
+
 
 ### Independent events
 
@@ -1519,21 +1521,25 @@ Example: drawing cards without replacement.
 
 For mutually exclusive events:
 
-\[
+
+$$
 P(A\cup B)
 =
 P(A)+P(B).
-\]
+$$
+
 
 ### AND rule
 
 For independent events:
 
-\[
+
+$$
 P(A\cap B)
 =
 P(A)\times P(B).
-\]
+$$
+
 
 ### Law of Large Numbers
 
@@ -1566,36 +1572,42 @@ For the course review, the CLT supports three key ideas for sufficiently large s
 1. sample means form an approximately normal distribution;
 2. the center of that distribution equals the population mean:
 
-\[
+
+$$
 \mu_{\bar{x}}=\mu;
-\]
+$$
+
 
 3. its standard deviation is:
 
-\[
+
+$$
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}.
-\]
+$$
+
 
 This standard deviation is called the **standard error**.
 
 ## Standard Error
 
-\[
+
+$$
 SE
 =
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}.
-\]
+$$
+
 
 The sample size appears in the denominator.
 
 Therefore:
 
-- larger \(n\) → smaller SE;
-- smaller \(n\) → larger SE.
+- larger $n$ → smaller SE;
+- smaller $n$ → larger SE.
 
 This is one of the most important relationships for the midterm.
 
@@ -1603,19 +1615,23 @@ This is one of the most important relationships for the midterm.
 
 For a sample mean:
 
-\[
+
+$$
 Z
 =
 \frac{\bar{x}-\mu}{\sigma_{\bar{x}}}
-\]
+$$
+
 
 where:
 
-\[
+
+$$
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}.
-\]
+$$
+
 
 This asks:
 
@@ -1627,21 +1643,28 @@ Do not use the population SD directly in the denominator when standardizing a sa
 
 Week 5 uses:
 
-\[
+
+$$
 P(A)=\frac{\#(A)}{\#(S)}
-\]
+$$
 
-\[
+
+
+$$
 P(A\cap B)=P(A)\times P(B)
-\]
+$$
 
-\[
+
+
+$$
 P(A\cup B)=P(A)+P(B)
-\]
+$$
+
 
 and:
 
-\[
+
+$$
 Z
 =
 \frac{\bar{x}-\mu}{\sigma_{\bar{x}}},
@@ -1649,7 +1672,8 @@ Z
 \sigma_{\bar{x}}
 =
 \frac{\sigma}{\sqrt{n}}.
-\]
+$$
+
 
 ## Assignment-Style Practice
 
@@ -1657,9 +1681,9 @@ Z
 
 A fair six-sided die is rolled once.
 
-a. What is \(P(\text{rolling a 5})\)?  
-b. What is \(P(\text{rolling a 1 or 2})\)?  
-c. If two independent dice are rolled, what is \(P(\text{both are 6})\)?  
+a. What is $P(\text{rolling a 5})$?  
+b. What is $P(\text{rolling a 1 or 2})$?  
+c. If two independent dice are rolled, what is $P(\text{both are 6})$?  
 d. Are the two dice rolls independent or dependent?
 
 ### Question 2 — Gambler's Fallacy (/2)
@@ -1673,29 +1697,35 @@ b. What is the probability of Tails on the next independent flip?
 
 A population has:
 
-\[
+
+$$
 \sigma=30.
-\]
+$$
+
 
 Calculate the standard error for:
 
-a. \(n=9\)  
-b. \(n=36\)  
+a. $n=9$  
+b. $n=36$  
 c. Explain the effect of increasing sample size.
 
 ### Question 4 — Sampling distribution (/3)
 
 A population has:
 
-\[
+
+$$
 \mu=100,\qquad \sigma=15,
-\]
+$$
+
 
 and samples of:
 
-\[
+
+$$
 n=25
-\]
+$$
+
 
 are repeatedly drawn.
 
@@ -1707,14 +1737,16 @@ c. In plain English, what does the standard error describe?
 
 Using the population in Question 4, suppose one sample has:
 
-\[
+
+$$
 \bar{x}=106.
-\]
+$$
+
 
 a. Calculate the z score for this sample mean.  
-b. Using the standard normal table, the upper-tail area beyond \(z=2.00\) is .0228. What is \(P(\bar{x}\ge106)\)?  
+b. Using the standard normal table, the upper-tail area beyond $z=2.00$ is .0228. What is $P(\bar{x}\ge106)$?  
 c. Is 106 relatively common or relatively unusual for samples of size 25 from this population?  
-d. Would the same raw difference of 6 points look more or less unusual if \(n\) were larger? Explain.
+d. Would the same raw difference of 6 points look more or less unusual if $n$ were larger? Explain.
 
 ### Question 6 — Sampling error (/2)
 
@@ -1729,47 +1761,57 @@ b. What concept explains ordinary sample-to-sample variation?
 
 a.
 
-\[
+
+$$
 P(5)=\frac16\approx0.167.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 P(1\text{ or }2)=\frac16+\frac16=\frac13\approx0.333.
-\]
+$$
+
 
 c.
 
-\[
+
+$$
 P(6\text{ and }6)
 =
 \frac16\left(\frac16\right)
 =
 \frac1{36}
 \approx0.0278.
-\]
+$$
+
 
 d. Independent.
 
 ### Question 2
 
 a. Gambler's Fallacy.  
-b. \(0.50\).
+b. $0.50$.
 
 ### Question 3
 
 a.
 
-\[
+
+$$
 SE=\frac{30}{\sqrt9}=10.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 SE=\frac{30}{\sqrt{36}}=5.
-\]
+$$
+
 
 c. Larger sample size decreases standard error.
 
@@ -1777,15 +1819,19 @@ c. Larger sample size decreases standard error.
 
 a.
 
-\[
+
+$$
 \mu_{\bar{x}}=100.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 SE=\frac{15}{5}=3.
-\]
+$$
+
 
 c. It describes the standard deviation of the sampling distribution—the typical amount sample means vary around the population mean.
 
@@ -1793,23 +1839,27 @@ c. It describes the standard deviation of the sampling distribution—the typica
 
 a.
 
-\[
+
+$$
 z
 =
 \frac{106-100}{3}
 =
 2.00.
-\]
+$$
+
 
 b.
 
-\[
+
+$$
 P(\bar{x}\ge106)=0.0228.
-\]
+$$
+
 
 c. Relatively unusual: only about 2.28% of sample means would be at least this high under the stated population model.
 
-d. More unusual. A larger \(n\) reduces SE, making the same 6-point difference larger in standard-error units.
+d. More unusual. A larger $n$ reduces SE, making the same 6-point difference larger in standard-error units.
 
 ### Question 6
 
@@ -1826,5 +1876,5 @@ You should be able to explain:
 - why samples vary;
 - what a sampling distribution represents;
 - the three CLT features emphasized in the course;
-- why standard error shrinks as \(n\) increases;
-- why a z score for a sample mean uses SE rather than \(\sigma\).
+- why standard error shrinks as $n$ increases;
+- why a z score for a sample mean uses SE rather than $\sigma$.

@@ -44,7 +44,7 @@ By the end of this week, you should be able to:
 12. Calculate and interpret the range and interquartile range.
 13. Explain **deviation**, **sum of squares (SS)**, **variance**, and **standard deviation**.
 14. Distinguish population variance from sample variance.
-15. Explain why sample variance uses \(n-1\) rather than \(n\).
+15. Explain why sample variance uses $n-1$ rather than $n$.
 16. Explain degrees of freedom in the context of sample variance.
 17. Predict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.
 18. Choose useful measures of center and spread for variables in a real dataset.
@@ -207,17 +207,17 @@ $$
 
 where:
 
-- \(LL\) = lower real limit of the interval containing the median;
-- \(W\) = interval width;
-- \(n\) = sample size;
-- \(cf\) = cumulative frequency below the median interval;
-- \(f\) = frequency in the median interval.
+- $LL$ = lower real limit of the interval containing the median;
+- $W$ = interval width;
+- $n$ = sample size;
+- $cf$ = cumulative frequency below the median interval;
+- $f$ = frequency in the median interval.
 
 The procedure is:
 
 1. create a cumulative frequency table in **descending order**;
 2. identify the row containing the 50th percentile;
-3. find \(LL\) and \(W\);
+3. find $LL$ and $W$;
 4. use the cumulative frequency in the row below;
 5. use the frequency in the highlighted row;
 6. substitute into the formula (Sigal, 2026).
@@ -236,7 +236,7 @@ $$
 
 The cumulative table is:
 
-| Score | \(f\) | \(cf\) | \(cf\%\) |
+| Score | $f$ | $cf$ | $cf\%$ |
 |---:|---:|---:|---:|
 | 5 | 1 | 10 | 100 |
 | 4 | 5 | 9 | 90 |
@@ -248,11 +248,11 @@ The 50th percentile lies in the row for score 4.
 
 Therefore:
 
-- \(LL=3.5\)
-- \(W=1\)
-- \(n=10\)
-- \(cf=4\)
-- \(f=5\)
+- $LL=3.5$
+- $W=1$
+- $n=10$
+- $cf=4$
+- $f=5$
 
 Substitute:
 
@@ -284,9 +284,9 @@ This value is an **interpolated estimate within the median interval**, not the o
 
 There is an important methodological point here.
 
-For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when \(n\) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).
+For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when $n$ is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).
 
-The supplemental median handout makes this intention explicit. It states that the quick \((n+1)/2\) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).
+The supplemental median handout makes this intention explicit. It states that the quick $(n+1)/2$ rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).
 
 ### For this course
 
@@ -300,7 +300,7 @@ Do not silently substitute the simpler textbook convention when the problem is c
 
 ## 8. Percentiles Beyond the Median
 
-The \(0.5\) in the median formula is not arbitrary.
+The $0.5$ in the median formula is not arbitrary.
 
 It represents the desired percentile:
 
@@ -331,7 +331,7 @@ For grouped data, interval width does not have to equal 1.
 
 The lecture example is:
 
-| Interval | \(f\) | \(cf\) | \(cf\%\) |
+| Interval | $f$ | $cf$ | $cf\%$ |
 |---|---:|---:|---:|
 | 12–15 | 3 | 8 | 100 |
 | 8–11 | 1 | 5 | 62.5 |
@@ -340,11 +340,11 @@ The lecture example is:
 
 For the median interval 4–7:
 
-- \(LL=3.5\)
-- \(W=7.5-3.5=4\)
-- \(n=8\)
-- \(cf=1\)
-- \(f=3\)
+- $LL=3.5$
+- $W=7.5-3.5=4$
+- $n=8$
+- $cf=1$
+- $f=3$
 
 Then:
 
@@ -359,7 +359,7 @@ Md
 7.5.
 $$
 
-The same formula works because \(W\) explicitly represents the real width of the interval (Sigal, 2026).
+The same formula works because $W$ explicitly represents the real width of the interval (Sigal, 2026).
 
 ---
 
@@ -371,11 +371,11 @@ The median falls in the **24–26** interval.
 
 The handout identifies:
 
-- \(LL=23.5\)
-- \(W=3\)
-- \(n=30\)
-- \(cf=14\)
-- \(f=5\)
+- $LL=23.5$
+- $W=3$
+- $n=30$
+- $cf=14$
+- $f=5$
 
 Then:
 
@@ -394,7 +394,7 @@ $$
 Md=24.1.
 $$
 
-The handout contrasts this with the quick \((n+1)/2\) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).
+The handout contrasts this with the quick $(n+1)/2$ method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).
 
 ---
 
@@ -410,7 +410,7 @@ $$
 \frac{\sum x_i}{n}.
 $$
 
-The lecture notes that APA-style reporting commonly uses \(M\) for a sample mean, while \(\mu\) is used for a population mean (Sigal, 2026).
+The lecture notes that APA-style reporting commonly uses $M$ for a sample mean, while $\mu$ is used for a population mean (Sigal, 2026).
 
 For:
 
@@ -436,8 +436,8 @@ Conceptually, the mean is a **balance point** based on magnitudes.
 
 The lecture distinguishes:
 
-- sample mean: \(\bar{x}\) or \(M\);
-- population mean: \(\mu\).
+- sample mean: $\bar{x}$ or $M$;
+- population mean: $\mu$.
 
 The calculation itself is structurally the same:
 
@@ -461,8 +461,8 @@ A simple average of group means is only correct when the groups contribute equal
 
 Suppose:
 
-- Group 1: \(\bar{x}_1=6,\ n_1=20\)
-- Group 2: \(\bar{x}_2=15,\ n_2=3\)
+- Group 1: $\bar{x}_1=6,\ n_1=20$
+- Group 2: $\bar{x}_2=15,\ n_2=3$
 
 It would be wrong to calculate:
 
@@ -531,7 +531,7 @@ $$
 
 The lecture example gives:
 
-| Group | Mean | \(n\) |
+| Group | Mean | $n$ |
 |---|---:|---:|
 | Drivers | 1 | 7 |
 | Bus | 6 | 20 |
@@ -564,7 +564,7 @@ Changing one observation changes the mean because the total sum changes.
 
 ### Add a constant to every score
 
-If every observation increases by \(c\),
+If every observation increases by $c$,
 
 $$
 M_{\text{new}}=M_{\text{old}}+c.
@@ -572,7 +572,7 @@ $$
 
 ### Multiply every score by a constant
 
-If every observation is multiplied by \(c\),
+If every observation is multiplied by $c$,
 
 $$
 M_{\text{new}}=cM_{\text{old}}.
@@ -811,9 +811,9 @@ $$
 
 where:
 
-- \(Q_1\) = 25th percentile;
-- \(Q_2\) = median / 50th percentile;
-- \(Q_3\) = 75th percentile.
+- $Q_1$ = 25th percentile;
+- $Q_2$ = median / 50th percentile;
+- $Q_3$ = 75th percentile.
 
 Because the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024).
 
@@ -887,7 +887,7 @@ Because each deviation is squared:
 
 - negative signs disappear;
 - larger deviations contribute more;
-- \(SS\ge0\).
+- $SS\ge0$.
 
 If every observation is identical, every deviation is zero, and:
 
@@ -1031,11 +1031,11 @@ $$
 
 ---
 
-## 29. Why Does Sample Variance Use \(n-1\)?
+## 29. Why Does Sample Variance Use $n-1$?
 
 This is one of the most important conceptual ideas in Week 3.
 
-If we calculate sample variance using \(n\), it tends to underestimate the population variance.
+If we calculate sample variance using $n$, it tends to underestimate the population variance.
 
 Dividing by:
 
@@ -1047,7 +1047,7 @@ makes the sample variance a better estimator of population variance on average (
 
 Privitera describes this as an **unbiased estimator**:
 
-> Across repeated random samples, variance calculated with \(n-1\) equals the population variance on average.
+> Across repeated random samples, variance calculated with $n-1$ equals the population variance on average.
 
 This correction is often associated with **Bessel's correction**.
 
@@ -1341,7 +1341,7 @@ Week 3 can be understood as a sequence:
 
 ↓  
 
-**Use \(N\) or \(n-1\)**
+**Use $N$ or $n-1$**
 
 ↓  
 
@@ -1365,13 +1365,13 @@ This is the transition from simply organizing data to describing the mathematica
 | **Variability** | Degree to which scores are dispersed or spread. |
 | **Range** | Maximum minus minimum. |
 | **Quartile** | Boundary dividing a distribution into four parts. |
-| **Interquartile range (IQR)** | \(Q_3-Q_1\); spread of the middle 50%. |
+| **Interquartile range (IQR)** | $Q_3-Q_1$; spread of the middle 50%. |
 | **Deviation** | Difference between a score and the mean. |
 | **Sum of squares (SS)** | Sum of squared deviations from the mean. |
-| **Population variance** | \(SS/N\). |
-| **Sample variance** | \(SS/(n-1)\). |
+| **Population variance** | $SS/N$. |
+| **Sample variance** | $SS/(n-1)$. |
 | **Standard deviation** | Square root of variance; spread in original units. |
-| **Degrees of freedom** | Number of independently free scores used in estimating sample variance; \(n-1\). |
+| **Degrees of freedom** | Number of independently free scores used in estimating sample variance; $n-1$. |
 | **Unbiased estimator** | Statistic that equals the target population parameter on average across repeated samples. |
 | **Real limit** | Boundary extending halfway between adjacent measurable values. |
 
@@ -1409,11 +1409,11 @@ No. Variability cannot be negative.
 
 ### "Sample and population variance use the same denominator."
 
-No. Population variance divides by \(N\); sample variance divides by \(n-1\).
+No. Population variance divides by $N$; sample variance divides by $n-1$.
 
-### "Using \(n-1\) is just a strange convention."
+### "Using $n-1$ is just a strange convention."
 
-No. It corrects the systematic downward bias that occurs when sample variance is calculated with \(n\), and it corresponds to the degrees of freedom available after estimating the mean.
+No. It corrects the systematic downward bias that occurs when sample variance is calculated with $n$, and it corresponds to the degrees of freedom available after estimating the mean.
 
 ### "If I add 10 to every score, standard deviation increases by 10."
 
@@ -1457,9 +1457,9 @@ Because signed deviations sum to zero. Squaring prevents cancellation and produc
 
 Because variance is in squared units. The square root produces standard deviation in the original units.
 
-### "Why \(n-1\)?"
+### "Why $n-1$?"
 
-Because estimating the sample mean consumes one degree of freedom, and dividing by \(n-1\) corrects the average downward bias in sample variance.
+Because estimating the sample mean consumes one degree of freedom, and dividing by $n-1$ corrects the average downward bias in sample variance.
 
 ### "Why does adding a constant not change SD?"
 
@@ -1488,8 +1488,8 @@ calculate:
 
 Two groups have:
 
-- Group A: \(M=8,\ n=10\)
-- Group B: \(M=14,\ n=30\)
+- Group A: $M=8,\ n=10$
+- Group B: $M=14,\ n=30$
 
 Calculate the combined mean.
 
@@ -1556,7 +1556,7 @@ Before moving on, you should be able to explain:
 - what SS represents;
 - why variance squares deviations;
 - why standard deviation is more directly interpretable than variance;
-- why sample variance uses \(n-1\);
+- why sample variance uses $n-1$;
 - what degrees of freedom mean;
 - how linear transformations affect mean, variance, and standard deviation.
 
@@ -1672,7 +1672,8 @@ The mean is therefore more sensitive than the median to extreme values and skewn
 
 The official formula sheet provides:
 
-\[
+
+$$
 Md
 =
 LL
@@ -1681,11 +1682,13 @@ W
 \left[
 \frac{0.50(n)-cf_{\text{below}}}{f}
 \right].
-\]
+$$
+
 
 The general percentile formula is:
 
-\[
+
+$$
 P_x
 =
 LL
@@ -1694,15 +1697,16 @@ W
 \left[
 \frac{P_x(n)-cf_{\text{below}}}{f}
 \right].
-\]
+$$
+
 
 Know what each symbol means:
 
-- \(LL\): lower real limit of the target interval;
-- \(W\): interval width;
-- \(n\): total sample size;
-- \(cf_{\text{below}}\): cumulative frequency below the target interval;
-- \(f\): frequency within the target interval.
+- $LL$: lower real limit of the target interval;
+- $W$: interval width;
+- $n$: total sample size;
+- $cf_{\text{below}}$: cumulative frequency below the target interval;
+- $f$: frequency within the target interval.
 
 For this course, frequency tables used for these calculations are arranged **in descending order**, so the cumulative frequency below the target row represents smaller scores.
 
@@ -1710,20 +1714,24 @@ For this course, frequency tables used for these calculations are arranged **in 
 
 The mean is:
 
-\[
+
+$$
 \bar{x}
 =
 \frac{\sum x_i}{n}.
-\]
+$$
+
 
 When combining groups of unequal size, use the combined mean:
 
-\[
+
+$$
 \bar{x}_C
 =
 \frac{n_1\bar{x}_1+n_2\bar{x}_2+\cdots+n_k\bar{x}_k}
 {n_1+n_2+\cdots+n_k}.
-\]
+$$
+
 
 Do not simply average group means unless the group sizes are equal.
 
@@ -1731,59 +1739,69 @@ Do not simply average group means unless the group sizes are equal.
 
 ### Range
 
-\[
+
+$$
 \text{Range}
 =
 \max-\min.
-\]
+$$
+
 
 ### Interquartile range
 
-\[
+
+$$
 IQR=P_{75}-P_{25}.
-\]
+$$
+
 
 ### Sum of squares
 
-\[
+
+$$
 SS=\sum(x-\bar{x})^2.
-\]
+$$
+
 
 The unsquared deviations sum to zero, so the deviations are squared before averaging.
 
 ### Sample variance
 
-\[
+
+$$
 s^2
 =
 \frac{\sum(x-\bar{x})^2}{n-1}.
-\]
+$$
 
-The denominator \(n-1\) is the degrees of freedom.
+
+The denominator $n-1$ is the degrees of freedom.
 
 ### Sample standard deviation
 
-\[
+
+$$
 s
 =
 \sqrt{s^2}.
-\]
+$$
+
 
 Standard deviation returns variability to the original measurement units.
 
 ## Transformations
 
-If a constant \(C\) is added to every score:
+If a constant $C$ is added to every score:
 
-- mean increases by \(C\);
+- mean increases by $C$;
 - variance is unchanged;
 - SD is unchanged.
 
-If every score is multiplied by \(C\):
+If every score is multiplied by $C$:
 
-- mean is multiplied by \(C\);
-- SD is multiplied by \(|C|\);
-- variance is multiplied by \(C^2\).
+- mean is multiplied by $C$;
+- SD is multiplied by $|C|$;
+- variance is multiplied by $C^2$.
 
 ## Shape and Skewness
 
@@ -1797,15 +1815,19 @@ The tail points in the direction of the skew.
 
 For meaningful positive skew:
 
-\[
+
+$$
 \text{mean}>\text{median}.
-\]
+$$
+
 
 For meaningful negative skew:
 
-\[
+
+$$
 \text{mean}<\text{median}.
-\]
+$$
+
 
 Because the median is less affected by extreme values, it is often the better center for a skewed distribution.
 
@@ -1813,43 +1835,57 @@ Because the median is less affected by extreme values, it is often the better ce
 
 Week 3 uses several of the official formulas:
 
-\[
+
+$$
 Md
 =
 LL+W\left[\frac{0.5(n)-cf}{f}\right]
-\]
+$$
 
-\[
+
+
+$$
 P_x
 =
 LL+W\left[\frac{P_x(n)-cf}{f}\right]
-\]
+$$
 
-\[
+
+
+$$
 \bar{x}=\frac{\sum x_i}{n}
-\]
+$$
 
-\[
+
+
+$$
 \bar{x}_C
 =
 \frac{\sum n_i\bar{x}_i}{\sum n_i}
-\]
+$$
 
-\[
+
+
+$$
 \text{Range}=\max-\min
-\]
+$$
 
-\[
+
+
+$$
 IQR=P_{75}-P_{25}
-\]
+$$
 
-\[
+
+
+$$
 s
 =
 \sqrt{
 \frac{\sum(x_i-\bar{x})^2}{n-1}
 }.
-\]
+$$
+
 
 ## Assignment-Style Practice
 
@@ -1857,9 +1893,11 @@ s
 
 For:
 
-\[
+
+$$
 X=\{5,8,3,2,7\},
-\]
+$$
+
 
 calculate:
 
@@ -1871,8 +1909,8 @@ e. sample standard deviation
 
 ### Question 2 — Weighted mean (/2)
 
-Group A has \(n=20\) and \(\bar{x}=72\).  
-Group B has \(n=30\) and \(\bar{x}=78\).
+Group A has $n=20$ and $\bar{x}=72$.  
+Group B has $n=30$ and $\bar{x}=78$.
 
 a. Calculate the combined mean.  
 b. Explain why simply averaging 72 and 78 would be inappropriate.
@@ -1881,9 +1919,11 @@ b. Explain why simply averaging 72 and 78 would be inappropriate.
 
 A class has:
 
-\[
+
+$$
 \bar{x}=64,\qquad s=8,\qquad s^2=64.
-\]
+$$
+
 
 a. Every score receives 5 bonus points. Find the new mean, SD, and variance.  
 b. Every original score is instead multiplied by 2. Find the new mean, SD, and variance.
@@ -1898,11 +1938,13 @@ c. Which measure of center is usually more resistant to the extreme scores?
 
 ### Question 5 — Grouped median (/4)
 
-A descending grouped frequency table has \(n=40\). The median falls in the interval 100–109, where:
+A descending grouped frequency table has $n=40$. The median falls in the interval 100–109, where:
 
-\[
+
+$$
 LL=99.5,\quad W=10,\quad f=14,\quad cf_{\text{below}}=10.
-\]
+$$
+
 
 Calculate the interpolated median.
 
@@ -1910,62 +1952,79 @@ Calculate the interpolated median.
 
 Using the same grouped example, suppose:
 
-\[
+
+$$
 P_{75}=115.50,\qquad P_{25}=99.50.
-\]
+$$
+
 
 a. Calculate the IQR.  
-b. What portion of the distribution lies between \(P_{25}\) and \(P_{75}\)?
+b. What portion of the distribution lies between $P_{25}$ and $P_{75}$?
 
 ## Answers
 
 ### Question 1
 
-\[
+
+$$
 \bar{x}
 =
 \frac{5+8+3+2+7}{5}
 =
 5.
-\]
+$$
 
-Ordered scores: \(2,3,5,7,8\), so:
 
-\[
+Ordered scores: $2,3,5,7,8$, so:
+
+
+$$
 Md=5.
-\]
+$$
 
-\[
+
+
+$$
 \text{Range}=8-2=6.
-\]
+$$
+
 
 Squared deviations from 5:
 
-\[
+
+$$
 0,9,4,9,4.
-\]
+$$
+
 
 Thus:
 
-\[
-SS=26.
-\]
 
-\[
+$$
+SS=26.
+$$
+
+
+
+$$
 s^2
 =
 \frac{26}{4}
 =
 6.5.
-\]
+$$
 
-\[
+
+
+$$
 s=\sqrt{6.5}\approx2.55.
-\]
+$$
+
 
 ### Question 2
 
-\[
+
+$$
 \bar{x}_C
 =
 \frac{20(72)+30(78)}{50}
@@ -1973,7 +2032,8 @@ s=\sqrt{6.5}\approx2.55.
 \frac{3780}{50}
 =
 75.6.
-\]
+$$
+
 
 The groups have unequal sample sizes, so the larger group must receive more weight.
 
@@ -1981,15 +2041,19 @@ The groups have unequal sample sizes, so the larger group must receive more weig
 
 a. Add 5:
 
-\[
+
+$$
 \bar{x}_{new}=69,\qquad s_{new}=8,\qquad s^2_{new}=64.
-\]
+$$
+
 
 b. Multiply by 2:
 
-\[
+
+$$
 \bar{x}_{new}=128,\qquad s_{new}=16,\qquad s^2_{new}=256.
-\]
+$$
+
 
 ### Question 4
 
@@ -1999,7 +2063,8 @@ c. Median.
 
 ### Question 5
 
-\[
+
+$$
 Md
 =
 99.5
@@ -2008,21 +2073,26 @@ Md
 \left[
 \frac{20-10}{14}
 \right]
-\]
+$$
 
-\[
+
+
+$$
 =
 99.5+10(0.7143)
 \approx106.64.
-\]
+$$
+
 
 ### Question 6
 
 a.
 
-\[
+
+$$
 IQR=115.50-99.50=16.00.
-\]
+$$
+
 
 b. The middle 50% of the distribution.
 
@@ -2032,7 +2102,7 @@ You should be able to explain:
 
 - mode vs. median vs. mean;
 - why the mean is more sensitive to outliers;
-- why sample variance uses \(n-1\);
+- why sample variance uses $n-1$;
 - why deviations are squared;
 - variance vs. standard deviation;
 - how adding or multiplying a constant changes mean/SD/variance;

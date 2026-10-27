@@ -191,7 +191,7 @@ window.Quarto = {
   <li><a href="#sampling-distribution-of-the-mean" id="toc-sampling-distribution-of-the-mean" class="nav-link" data-scroll-target="#sampling-distribution-of-the-mean">18. Sampling Distribution of the Mean</a></li>
   <li><a href="#the-mean-of-means" id="toc-the-mean-of-means" class="nav-link" data-scroll-target="#the-mean-of-means">19. The “Mean of Means”</a></li>
   <li><a href="#the-three-features-used-in-lecture" id="toc-the-three-features-used-in-lecture" class="nav-link" data-scroll-target="#the-three-features-used-in-lecture">20. The Three Features Used in Lecture</a></li>
-  <li><a href="#center-the-sampling-distribution-is-centered-on" id="toc-center-the-sampling-distribution-is-centered-on" class="nav-link" data-scroll-target="#center-the-sampling-distribution-is-centered-on">21. Center: The Sampling Distribution Is Centered on ()</a></li>
+  <li><a href="#center-the-sampling-distribution-is-centered-on-mu" id="toc-center-the-sampling-distribution-is-centered-on-mu" class="nav-link" data-scroll-target="#center-the-sampling-distribution-is-centered-on-mu">21. Center: The Sampling Distribution Is Centered on <span class="math inline">\(\mu\)</span></a></li>
   <li><a href="#width-sample-means-vary-less-than-raw-scores" id="toc-width-sample-means-vary-less-than-raw-scores" class="nav-link" data-scroll-target="#width-sample-means-vary-less-than-raw-scores">22. Width: Sample Means Vary Less Than Raw Scores</a></li>
   <li><a href="#shape-why-sampling-distributions-become-more-normal" id="toc-shape-why-sampling-distributions-become-more-normal" class="nav-link" data-scroll-target="#shape-why-sampling-distributions-become-more-normal">23. Shape: Why Sampling Distributions Become More Normal</a></li>
   <li><a href="#a-nuance-about-the-clt" id="toc-a-nuance-about-the-clt" class="nav-link" data-scroll-target="#a-nuance-about-the-clt">24. A Nuance About the CLT</a></li>
@@ -205,9 +205,9 @@ window.Quarto = {
   <li><a href="#precision-and-standard-error" id="toc-precision-and-standard-error" class="nav-link" data-scroll-target="#precision-and-standard-error">29. Precision and Standard Error</a></li>
   <li><a href="#population-mean-128-sd-16" id="toc-population-mean-128-sd-16" class="nav-link" data-scroll-target="#population-mean-128-sd-16">30. Population Mean 128, SD 16</a></li>
   <li><a href="#why-does-the-probability-increase" id="toc-why-does-the-probability-increase" class="nav-link" data-scroll-target="#why-does-the-probability-increase">31. Why Does the Probability Increase?</a></li>
-  <li><a href="#fixed-n-changing-population-sd" id="toc-fixed-n-changing-population-sd" class="nav-link" data-scroll-target="#fixed-n-changing-population-sd">32. Fixed (n), Changing Population SD</a></li>
+  <li><a href="#fixed-n-changing-population-sd" id="toc-fixed-n-changing-population-sd" class="nav-link" data-scroll-target="#fixed-n-changing-population-sd">32. Fixed <span class="math inline">\(n\)</span>, Changing Population SD</a></li>
   <li><a href="#revisiting-z" id="toc-revisiting-z" class="nav-link" data-scroll-target="#revisiting-z">33. Revisiting z</a></li>
-  <li><a href="#if-n1-1" id="toc-if-n1-1" class="nav-link" data-scroll-target="#if-n1-1">34. If (n=1)</a></li>
+  <li><a href="#if-n1-1" id="toc-if-n1-1" class="nav-link" data-scroll-target="#if-n1-1">34. If <span class="math inline">\(n=1\)</span></a></li>
   <li><a href="#same-mean-different-sample-sizes" id="toc-same-mean-different-sample-sizes" class="nav-link" data-scroll-target="#same-mean-different-sample-sizes">35. Same Mean, Different Sample Sizes</a></li>
   <li><a href="#why-sample-size-changes-the-z-score" id="toc-why-sample-size-changes-the-z-score" class="nav-link" data-scroll-target="#why-sample-size-changes-the-z-score">36. Why Sample Size Changes the z Score</a></li>
   <li><a href="#from-z-to-probability" id="toc-from-z-to-probability" class="nav-link" data-scroll-target="#from-z-to-probability">37. From z to Probability</a></li>
@@ -227,7 +227,7 @@ window.Quarto = {
   <li><a href="#standard-deviation-and-standard-error-are-the-same." id="toc-standard-deviation-and-standard-error-are-the-same." class="nav-link" data-scroll-target="#standard-deviation-and-standard-error-are-the-same.">48. “Standard deviation and standard error are the same.”</a></li>
   <li><a href="#the-clt-says-the-original-population-becomes-normal." id="toc-the-clt-says-the-original-population-becomes-normal." class="nav-link" data-scroll-target="#the-clt-says-the-original-population-becomes-normal.">49. “The CLT says the original population becomes normal.”</a></li>
   <li><a href="#the-mean-of-every-sample-equals-the-population-mean." id="toc-the-mean-of-every-sample-equals-the-population-mean." class="nav-link" data-scroll-target="#the-mean-of-every-sample-equals-the-population-mean.">50. “The mean of every sample equals the population mean.”</a></li>
-  <li><a href="#if-a-sample-mean-is-far-from-the-sample-must-be-wrong." id="toc-if-a-sample-mean-is-far-from-the-sample-must-be-wrong." class="nav-link" data-scroll-target="#if-a-sample-mean-is-far-from-the-sample-must-be-wrong.">51. “If a sample mean is far from (), the sample must be wrong.”</a></li>
+  <li><a href="#if-a-sample-mean-is-far-from-mu-the-sample-must-be-wrong." id="toc-if-a-sample-mean-is-far-from-mu-the-sample-must-be-wrong." class="nav-link" data-scroll-target="#if-a-sample-mean-is-far-from-mu-the-sample-must-be-wrong.">51. “If a sample mean is far from <span class="math inline">\(\mu\)</span>, the sample must be wrong.”</a></li>
   <li><a href="#the-law-of-large-numbers-means-a-streak-must-reverse-soon." id="toc-the-law-of-large-numbers-means-a-streak-must-reverse-soon." class="nav-link" data-scroll-target="#the-law-of-large-numbers-means-a-streak-must-reverse-soon.">52. “The law of large numbers means a streak must reverse soon.”</a></li>
   <li><a href="#questions-a-ta-should-be-ready-to-answer" id="toc-questions-a-ta-should-be-ready-to-answer" class="nav-link" data-scroll-target="#questions-a-ta-should-be-ready-to-answer">53. Questions a TA Should Be Ready to Answer</a></li>
   <li><a href="#basic-probability-1" id="toc-basic-probability-1" class="nav-link" data-scroll-target="#basic-probability-1">54. Basic Probability</a></li>
@@ -370,10 +370,10 @@ P(A)
 \]</span></p>
 <p>where:</p>
 <ul>
-<li>(A) is the event of interest;</li>
-<li>(S) is the sample space;</li>
-<li>(#(A)) is the number of ways (A) can occur;</li>
-<li>(#(S)) is the number of possible outcomes.</li>
+<li><span class="math inline">\(A\)</span> is the event of interest;</li>
+<li><span class="math inline">\(S\)</span> is the sample space;</li>
+<li><span class="math inline">\(\#(A)\)</span> is the number of ways <span class="math inline">\(A\)</span> can occur;</li>
+<li><span class="math inline">\(\#(S)\)</span> is the number of possible outcomes.</li>
 </ul>
 <p>Examples include:</p>
 <ul>
@@ -603,7 +603,7 @@ z
 \]</span></p>
 <p>Very small samples produce highly variable means.</p>
 <p>As sample size increases, the sample means tend to cluster more closely around 100.</p>
-<p>The lecture’s series from (n=1), (2), (10), (25), to (1000) visually demonstrates the increasing stability of the mean (Sigal, 2026).</p>
+<p>The lecture’s series from <span class="math inline">\(n=1\)</span>, <span class="math inline">\(2\)</span>, <span class="math inline">\(10\)</span>, <span class="math inline">\(25\)</span>, to <span class="math inline">\(1000\)</span> visually demonstrates the increasing stability of the mean (Sigal, 2026).</p>
 <hr>
 </section>
 <section id="one-sample-is-not-a-sampling-distribution" class="level2">
@@ -624,7 +624,7 @@ z
 <h2 class="anchored" data-anchor-id="definition-of-a-sampling-distribution">17. Definition of a Sampling Distribution</h2>
 <p>The lecture defines a sampling distribution as:</p>
 <blockquote class="blockquote">
-<p>the distribution of a sample statistic for all possible random samples of a particular size (n) that can be obtained from a population (Sigal, 2026).</p>
+<p>the distribution of a sample statistic for all possible random samples of a particular size <span class="math inline">\(n\)</span> that can be obtained from a population (Sigal, 2026).</p>
 </blockquote>
 <p>The statistic might be:</p>
 <ul>
@@ -639,7 +639,7 @@ z
 <h2 class="anchored" data-anchor-id="sampling-distribution-of-the-mean">18. Sampling Distribution of the Mean</h2>
 <p>Imagine repeatedly:</p>
 <ol type="1">
-<li>drawing a random sample of size (n);</li>
+<li>drawing a random sample of size <span class="math inline">\(n\)</span>;</li>
 <li>calculating its mean;</li>
 <li>recording that mean;</li>
 <li>repeating the procedure many times.</li>
@@ -667,7 +667,7 @@ z
 <section id="the-three-features-used-in-lecture" class="level2">
 <h2 class="anchored" data-anchor-id="the-three-features-used-in-lecture">20. The Three Features Used in Lecture</h2>
 <p>The lecture states the Central Limit Theorem in terms of the sampling distribution of sample means.</p>
-<p>For a population with mean () and standard deviation (), the sampling distribution of means for samples of size (n) has:</p>
+<p>For a population with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, the sampling distribution of means for samples of size <span class="math inline">\(n\)</span> has:</p>
 <section id="center" class="level3">
 <h3 class="anchored" data-anchor-id="center">Center</h3>
 <p><span class="math display">\[
@@ -690,14 +690,14 @@ z
 <hr>
 </section>
 </section>
-<section id="center-the-sampling-distribution-is-centered-on" class="level2">
-<h2 class="anchored" data-anchor-id="center-the-sampling-distribution-is-centered-on">21. Center: The Sampling Distribution Is Centered on ()</h2>
+<section id="center-the-sampling-distribution-is-centered-on-mu" class="level2">
+<h2 class="anchored" data-anchor-id="center-the-sampling-distribution-is-centered-on-mu">21. Center: The Sampling Distribution Is Centered on <span class="math inline">\(\mu\)</span></h2>
 <p>The first important property is:</p>
 <p><span class="math display">\[
 \mu_{\bar X}=\mu.
 \]</span></p>
 <p>This means the sample mean is unbiased.</p>
-<p>Individual sample means can lie above or below (), but across repeated random samples they center on the true population mean.</p>
+<p>Individual sample means can lie above or below <span class="math inline">\(\mu\)</span>, but across repeated random samples they center on the true population mean.</p>
 <hr>
 </section>
 <section id="width-sample-means-vary-less-than-raw-scores" class="level2">
@@ -719,7 +719,7 @@ SE_{\bar X}
 <p><span class="math display">\[
 \sqrt{n}\ge1,
 \]</span></p>
-<p>the standard error cannot exceed () when (n).</p>
+<p>the standard error cannot exceed <span class="math inline">\(\sigma\)</span> when <span class="math inline">\(n\ge1\)</span>.</p>
 <p>Thus sample means fluctuate less than individual raw scores (Sigal, 2026).</p>
 <hr>
 </section>
@@ -738,7 +738,7 @@ SE_{\bar X}
 <p>The 2024 Privitera text adds a useful qualification: normality of a sampling distribution can also be understood in terms of the number of samples or replications represented in the sampling distribution, not only the size of each sample (Privitera, 2024).</p>
 <p>For this course, the practical focus remains:</p>
 <blockquote class="blockquote">
-<p>As (n) increases, the sampling distribution of the mean becomes narrower and increasingly normal under the CLT framework.</p>
+<p>As <span class="math inline">\(n\)</span> increases, the sampling distribution of the mean becomes narrower and increasingly normal under the CLT framework.</p>
 </blockquote>
 <hr>
 </section>
@@ -777,7 +777,7 @@ SE_{\bar X}
 \sigma=10.
 \]</span></p>
 <section id="if-n1" class="level3">
-<h3 class="anchored" data-anchor-id="if-n1">If (n=1)</h3>
+<h3 class="anchored" data-anchor-id="if-n1">If <span class="math inline">\(n=1\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -787,7 +787,7 @@ SE
 \]</span></p>
 </section>
 <section id="if-n2" class="level3">
-<h3 class="anchored" data-anchor-id="if-n2">If (n=2)</h3>
+<h3 class="anchored" data-anchor-id="if-n2">If <span class="math inline">\(n=2\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -797,7 +797,7 @@ SE
 \]</span></p>
 </section>
 <section id="if-n8" class="level3">
-<h3 class="anchored" data-anchor-id="if-n8">If (n=8)</h3>
+<h3 class="anchored" data-anchor-id="if-n8">If <span class="math inline">\(n=8\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -814,7 +814,7 @@ SE\downarrow.
 </section>
 <section id="effect-of-population-variability" class="level2">
 <h2 class="anchored" data-anchor-id="effect-of-population-variability">28. Effect of Population Variability</h2>
-<p>Holding (n) constant:</p>
+<p>Holding <span class="math inline">\(n\)</span> constant:</p>
 <p><span class="math display">\[
 SE
 =
@@ -822,8 +822,8 @@ SE
 \]</span></p>
 <p>Therefore:</p>
 <ul>
-<li>larger () → larger SE;</li>
-<li>smaller () → smaller SE.</li>
+<li>larger <span class="math inline">\(\sigma\)</span> → larger SE;</li>
+<li>smaller <span class="math inline">\(\sigma\)</span> → smaller SE.</li>
 </ul>
 <p>A more variable population produces less precise sample-mean estimates.</p>
 <hr>
@@ -831,7 +831,7 @@ SE
 <section id="precision-and-standard-error" class="level2">
 <h2 class="anchored" data-anchor-id="precision-and-standard-error">29. Precision and Standard Error</h2>
 <p>The lecture interprets standard error as an indicator of how accurately a sample statistic represents a population parameter.</p>
-<p>Smaller SE means sample means cluster more tightly around ().</p>
+<p>Smaller SE means sample means cluster more tightly around <span class="math inline">\(\mu\)</span>.</p>
 <p>Larger SE means greater sampling variability.</p>
 <p>Thus:</p>
 <blockquote class="blockquote">
@@ -859,20 +859,20 @@ SE
 <thead>
 <tr class="header">
 <th style="text-align: right;">Sample size</th>
-<th style="text-align: right;">Probability that (124X)</th>
+<th style="text-align: right;">Probability that <span class="math inline">\(124\le\bar X\le132\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">(n=9)</td>
+<td style="text-align: right;"><span class="math inline">\(n=9\)</span></td>
 <td style="text-align: right;">.5468</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">(n=25)</td>
+<td style="text-align: right;"><span class="math inline">\(n=25\)</span></td>
 <td style="text-align: right;">.7888</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">(n=100)</td>
+<td style="text-align: right;"><span class="math inline">\(n=100\)</span></td>
 <td style="text-align: right;">.9876</td>
 </tr>
 </tbody>
@@ -893,12 +893,12 @@ SE
 <p><span class="math display">\[
 SE=\frac{16}{\sqrt n}.
 \]</span></p>
-<p>As (n) grows, the sampling distribution becomes narrower around 128.</p>
+<p>As <span class="math inline">\(n\)</span> grows, the sampling distribution becomes narrower around 128.</p>
 <p>Therefore the fixed interval 124–132 contains a larger fraction of possible sample means.</p>
 <hr>
 </section>
 <section id="fixed-n-changing-population-sd" class="level2">
-<h2 class="anchored" data-anchor-id="fixed-n-changing-population-sd">32. Fixed (n), Changing Population SD</h2>
+<h2 class="anchored" data-anchor-id="fixed-n-changing-population-sd">32. Fixed <span class="math inline">\(n\)</span>, Changing Population SD</h2>
 <p>The worksheet next fixes:</p>
 <p><span class="math display">\[
 n=16,\quad \mu=100
@@ -907,8 +907,8 @@ n=16,\quad \mu=100
 <p><span class="math display">\[
 96\le\bar X\le104.
 \]</span></p>
-<section id="if" class="level3">
-<h3 class="anchored" data-anchor-id="if">If ()</h3>
+<section id="if-sigma16" class="level3">
+<h3 class="anchored" data-anchor-id="if-sigma16">If <span class="math inline">\(\sigma=16\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -925,8 +925,8 @@ z=-1,\quad z=+1.
 \approx68.2\%.
 \]</span></p>
 </section>
-<section id="if-1" class="level3">
-<h3 class="anchored" data-anchor-id="if-1">If ()</h3>
+<section id="if-sigma8" class="level3">
+<h3 class="anchored" data-anchor-id="if-sigma8">If <span class="math inline">\(\sigma=8\)</span></h3>
 <p><span class="math display">\[
 SE=2.
 \]</span></p>
@@ -939,8 +939,8 @@ z=-2,\quad z=+2.
 \approx95.4\%.
 \]</span></p>
 </section>
-<section id="if-2" class="level3">
-<h3 class="anchored" data-anchor-id="if-2">If ()</h3>
+<section id="if-sigma4" class="level3">
+<h3 class="anchored" data-anchor-id="if-sigma4">If <span class="math inline">\(\sigma=4\)</span></h3>
 <p><span class="math display">\[
 SE=1.
 \]</span></p>
@@ -986,7 +986,7 @@ z
 <hr>
 </section>
 <section id="if-n1-1" class="level2">
-<h2 class="anchored" data-anchor-id="if-n1-1">34. If (n=1)</h2>
+<h2 class="anchored" data-anchor-id="if-n1-1">34. If <span class="math inline">\(n=1\)</span></h2>
 <p>When:</p>
 <p><span class="math display">\[
 n=1,
@@ -1025,7 +1025,7 @@ z
 \bar X=83.
 \]</span></p>
 <section id="n4" class="level3">
-<h3 class="anchored" data-anchor-id="n4">(n=4)</h3>
+<h3 class="anchored" data-anchor-id="n4"><span class="math inline">\(n=4\)</span></h3>
 <p><span class="math display">\[
 SE=\frac{12}{2}=6
 \]</span></p>
@@ -1035,7 +1035,7 @@ z=\frac{83-80}{6}=0.50.
 \]</span></p>
 </section>
 <section id="n16" class="level3">
-<h3 class="anchored" data-anchor-id="n16">(n=16)</h3>
+<h3 class="anchored" data-anchor-id="n16"><span class="math inline">\(n=16\)</span></h3>
 <p><span class="math display">\[
 SE=\frac{12}{4}=3
 \]</span></p>
@@ -1045,7 +1045,7 @@ z=\frac{3}{3}=1.00.
 \]</span></p>
 </section>
 <section id="n36" class="level3">
-<h3 class="anchored" data-anchor-id="n36">(n=36)</h3>
+<h3 class="anchored" data-anchor-id="n36"><span class="math inline">\(n=36\)</span></h3>
 <p><span class="math display">\[
 SE=\frac{12}{6}=2
 \]</span></p>
@@ -1060,9 +1060,9 @@ z=\frac{3}{2}=1.50.
 </section>
 <section id="why-sample-size-changes-the-z-score" class="level2">
 <h2 class="anchored" data-anchor-id="why-sample-size-changes-the-z-score">36. Why Sample Size Changes the z Score</h2>
-<p>A difference of 3 points from () is not equally surprising for all sample sizes.</p>
+<p>A difference of 3 points from <span class="math inline">\(\mu\)</span> is not equally surprising for all sample sizes.</p>
 <p>Larger samples have smaller standard error.</p>
-<p>Therefore a 3-point departure represents more standard-error units when (n) is large.</p>
+<p>Therefore a 3-point departure represents more standard-error units when <span class="math inline">\(n\)</span> is large.</p>
 <p>This is one of the deepest conceptual points in Week 5:</p>
 <blockquote class="blockquote">
 <p><strong>The unusualness of a sample mean depends not only on how far it is from the population mean, but also on how much sampling variability we expect.</strong></p>
@@ -1166,14 +1166,14 @@ n&gt;1.
 <p>A sample mean averages multiple observations.</p>
 <p>Very high and very low observations tend to offset one another.</p>
 <p>Therefore means are more stable than individual observations.</p>
-<p>Increasing (n) strengthens this stabilizing effect.</p>
+<p>Increasing <span class="math inline">\(n\)</span> strengthens this stabilizing effect.</p>
 <p>This is why:</p>
 <p><span class="math display">\[
 \frac{\sigma}{\sqrt n}
 &lt;
 \sigma
 \]</span></p>
-<p>for (n&gt;1).</p>
+<p>for <span class="math inline">\(n&gt;1\)</span>.</p>
 <hr>
 </section>
 <section id="privitera-2018" class="level2">
@@ -1217,7 +1217,7 @@ n&gt;1.
 <p><span class="math display">\[
 SE=\frac{\sigma}{\sqrt n}
 \]</span></p>
-<p>and increasing (n) decreases sampling variability.</p>
+<p>and increasing <span class="math inline">\(n\)</span> decreases sampling variability.</p>
 <hr>
 </section>
 <section id="a-larger-sample-always-gives-the-correct-population-mean." class="level2">
@@ -1254,8 +1254,8 @@ SE=\frac{\sigma}{\sqrt n}
 <p>The sample mean equals the population mean <strong>on average across random samples</strong>.</p>
 <hr>
 </section>
-<section id="if-a-sample-mean-is-far-from-the-sample-must-be-wrong." class="level2">
-<h2 class="anchored" data-anchor-id="if-a-sample-mean-is-far-from-the-sample-must-be-wrong.">51. “If a sample mean is far from (), the sample must be wrong.”</h2>
+<section id="if-a-sample-mean-is-far-from-mu-the-sample-must-be-wrong." class="level2">
+<h2 class="anchored" data-anchor-id="if-a-sample-mean-is-far-from-mu-the-sample-must-be-wrong.">51. “If a sample mean is far from <span class="math inline">\(\mu\)</span>, the sample must be wrong.”</h2>
 <p>No.</p>
 <p>Rare samples can occur.</p>
 <p>Probability measures how surprising the sample is under the assumed model; it does not by itself identify the cause.</p>
@@ -1287,17 +1287,17 @@ SE=\frac{\sigma}{\sqrt n}.
 \]</span></p>
 <p>Larger samples average out more random fluctuation.</p>
 </section>
-<section id="why-is-the-sampling-distribution-centered-at" class="level3">
-<h3 class="anchored" data-anchor-id="why-is-the-sampling-distribution-centered-at">“Why is the sampling distribution centered at ()?”</h3>
+<section id="why-is-the-sampling-distribution-centered-at-mu" class="level3">
+<h3 class="anchored" data-anchor-id="why-is-the-sampling-distribution-centered-at-mu">“Why is the sampling distribution centered at <span class="math inline">\(\mu\)</span>?”</h3>
 <p>Because the sample mean is an unbiased estimator of the population mean.</p>
 </section>
 <section id="why-can-skewed-data-produce-an-approximately-normal-sampling-distribution" class="level3">
 <h3 class="anchored" data-anchor-id="why-can-skewed-data-produce-an-approximately-normal-sampling-distribution">“Why can skewed data produce an approximately normal sampling distribution?”</h3>
 <p>That is the CLT: repeated sample means are more regular than the individual raw values from which they are calculated.</p>
 </section>
-<section id="why-does-the-same-x-have-a-larger-z-score-for-a-bigger-n" class="level3">
-<h3 class="anchored" data-anchor-id="why-does-the-same-x-have-a-larger-z-score-for-a-bigger-n">“Why does the same (X) have a larger z score for a bigger n?”</h3>
-<p>Because a larger sample has a smaller SE, so the same raw difference from () is more unusual in standard-error units.</p>
+<section id="why-does-the-same-bar-x-have-a-larger-z-score-for-a-bigger-n" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-the-same-bar-x-have-a-larger-z-score-for-a-bigger-n">“Why does the same <span class="math inline">\(\bar X\)</span> have a larger z score for a bigger n?”</h3>
+<p>Because a larger sample has a smaller SE, so the same raw difference from <span class="math inline">\(\mu\)</span> is more unusual in standard-error units.</p>
 <hr>
 </section>
 </section>
@@ -1322,7 +1322,7 @@ SE=\frac{\sigma}{\sqrt n}.
 \]</span></p>
 <p>For each sample:</p>
 <ol type="1">
-<li>calculate (X-);</li>
+<li>calculate <span class="math inline">\(\bar X-\mu\)</span>;</li>
 <li>identify the direction of the sampling error;</li>
 <li>explain why none of these values alone proves a flawed sampling process.</li>
 </ol>
@@ -1336,10 +1336,10 @@ SE=\frac{\sigma}{\sqrt n}.
 \]</span></p>
 <p>Calculate SE for:</p>
 <ol type="1">
-<li>(n=1)</li>
-<li>(n=4)</li>
-<li>(n=25)</li>
-<li>(n=100)</li>
+<li><span class="math inline">\(n=1\)</span></li>
+<li><span class="math inline">\(n=4\)</span></li>
+<li><span class="math inline">\(n=25\)</span></li>
+<li><span class="math inline">\(n=100\)</span></li>
 </ol>
 <p>Describe the pattern.</p>
 <hr>
@@ -1376,11 +1376,11 @@ z=\frac{\bar X-\mu}{SE}.
 \]</span></p>
 <p>Compare the z scores when:</p>
 <ol type="1">
-<li>(n=4)</li>
-<li>(n=16)</li>
-<li>(n=36)</li>
+<li><span class="math inline">\(n=4\)</span></li>
+<li><span class="math inline">\(n=16\)</span></li>
+<li><span class="math inline">\(n=36\)</span></li>
 </ol>
-<p>Explain why the z score changes even though (X) does not.</p>
+<p>Explain why the z score changes even though <span class="math inline">\(\bar X\)</span> does not.</p>
 <hr>
 </section>
 <section id="clt-concept-check" class="level2">
@@ -1388,9 +1388,9 @@ z=\frac{\bar X-\mu}{SE}.
 <p>Suppose a population is strongly positively skewed.</p>
 <p>For repeated random samples:</p>
 <ol type="1">
-<li>where is the sampling distribution of (X) centered?</li>
-<li>what happens to its standard error as (n) increases?</li>
-<li>what happens to its shape as (n) increases?</li>
+<li>where is the sampling distribution of <span class="math inline">\(\bar X\)</span> centered?</li>
+<li>what happens to its standard error as <span class="math inline">\(n\)</span> increases?</li>
+<li>what happens to its shape as <span class="math inline">\(n\)</span> increases?</li>
 <li>does the population distribution itself become normal?</li>
 </ol>
 <hr>
@@ -1409,11 +1409,11 @@ z=\frac{\bar X-\mu}{SE}.
 <li>why larger samples are more stable on average;</li>
 <li>what a sampling distribution is;</li>
 <li>what the sampling distribution of the mean contains;</li>
-<li>why (_{X}=);</li>
+<li>why <span class="math inline">\(\mu_{\bar X}=\mu\)</span>;</li>
 <li>the three Week 5 features of the CLT;</li>
 <li>what standard error measures;</li>
-<li>why (SE=/n);</li>
-<li>how (n) and () affect SE;</li>
+<li>why <span class="math inline">\(SE=\sigma/\sqrt n\)</span>;</li>
+<li>how <span class="math inline">\(n\)</span> and <span class="math inline">\(\sigma\)</span> affect SE;</li>
 <li>why sample means fluctuate less than individual scores;</li>
 <li>how to standardize a sample mean;</li>
 <li>how z for a sample mean differs from z for an individual score;</li>
@@ -1499,8 +1499,12 @@ z
 </section>
 <section id="basic-probability-2" class="level2">
 <h2 class="anchored" data-anchor-id="basic-probability-2">Basic Probability</h2>
-<p>For an event (A):</p>
-<p>[ P(A) = . ]</p>
+<p>For an event <span class="math inline">\(A\)</span>:</p>
+<p><span class="math display">\[
+P(A)
+=
+\frac{\#(A)}{\#(S)}.
+\]</span></p>
 <section id="independent-events-1" class="level3">
 <h3 class="anchored" data-anchor-id="independent-events-1">Independent events</h3>
 <p>One event does not change the probability of the other.</p>
@@ -1514,12 +1518,20 @@ z
 <section id="or-rule" class="level3">
 <h3 class="anchored" data-anchor-id="or-rule">OR rule</h3>
 <p>For mutually exclusive events:</p>
-<p>[ P(AB) = P(A)+P(B). ]</p>
+<p><span class="math display">\[
+P(A\cup B)
+=
+P(A)+P(B).
+\]</span></p>
 </section>
 <section id="and-rule" class="level3">
 <h3 class="anchored" data-anchor-id="and-rule">AND rule</h3>
 <p>For independent events:</p>
-<p>[ P(AB) = P(A)P(B). ]</p>
+<p><span class="math display">\[
+P(A\cap B)
+=
+P(A)\times P(B).
+\]</span></p>
 </section>
 <section id="law-of-large-numbers" class="level3">
 <h3 class="anchored" data-anchor-id="law-of-large-numbers">Law of Large Numbers</h3>
@@ -1549,30 +1561,50 @@ z
 <li>sample means form an approximately normal distribution;</li>
 <li>the center of that distribution equals the population mean:</li>
 </ol>
-<p>[ _{{x}}=; ]</p>
+<p><span class="math display">\[
+\mu_{\bar{x}}=\mu;
+\]</span></p>
 <ol start="3" type="1">
 <li>its standard deviation is:</li>
 </ol>
-<p>[ _{{x}} = . ]</p>
+<p><span class="math display">\[
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]</span></p>
 <p>This standard deviation is called the <strong>standard error</strong>.</p>
 </section>
 <section id="standard-error-1" class="level2">
 <h2 class="anchored" data-anchor-id="standard-error-1">Standard Error</h2>
-<p>[ SE = _{{x}} = . ]</p>
+<p><span class="math display">\[
+SE
+=
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]</span></p>
 <p>The sample size appears in the denominator.</p>
 <p>Therefore:</p>
 <ul>
-<li>larger (n) → smaller SE;</li>
-<li>smaller (n) → larger SE.</li>
+<li>larger <span class="math inline">\(n\)</span> → smaller SE;</li>
+<li>smaller <span class="math inline">\(n\)</span> → larger SE.</li>
 </ul>
 <p>This is one of the most important relationships for the midterm.</p>
 </section>
 <section id="z-score-for-a-sample-mean" class="level2">
 <h2 class="anchored" data-anchor-id="z-score-for-a-sample-mean">z Score for a Sample Mean</h2>
 <p>For a sample mean:</p>
-<p>[ Z = ]</p>
+<p><span class="math display">\[
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}
+\]</span></p>
 <p>where:</p>
-<p>[ _{{x}} = . ]</p>
+<p><span class="math display">\[
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]</span></p>
 <p>This asks:</p>
 <blockquote class="blockquote">
 <p>How many <strong>standard errors</strong> is the observed sample mean from the population mean?</p>
@@ -1582,11 +1614,25 @@ z
 <section id="formula-sheet-connection" class="level2">
 <h2 class="anchored" data-anchor-id="formula-sheet-connection">Formula-Sheet Connection</h2>
 <p>Week 5 uses:</p>
-<p>[ P(A)= ]</p>
-<p>[ P(AB)=P(A)P(B) ]</p>
-<p>[ P(AB)=P(A)+P(B) ]</p>
+<p><span class="math display">\[
+P(A)=\frac{\#(A)}{\#(S)}
+\]</span></p>
+<p><span class="math display">\[
+P(A\cap B)=P(A)\times P(B)
+\]</span></p>
+<p><span class="math display">\[
+P(A\cup B)=P(A)+P(B)
+\]</span></p>
 <p>and:</p>
-<p>[ Z = , _{{x}} = . ]</p>
+<p><span class="math display">\[
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}},
+\qquad
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]</span></p>
 </section>
 <section id="assignment-style-practice" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-style-practice">Assignment-Style Practice</h2>
@@ -1594,11 +1640,11 @@ z
 <h3 class="anchored" data-anchor-id="question-1-basic-probability-4">Question 1 — Basic probability (/4)</h3>
 <p>A fair six-sided die is rolled once.</p>
 <ol type="a">
-<li>What is (P())?<br>
+<li>What is <span class="math inline">\(P(\text{rolling a 5})\)</span>?<br>
 </li>
-<li>What is (P())?<br>
+<li>What is <span class="math inline">\(P(\text{rolling a 1 or 2})\)</span>?<br>
 </li>
-<li>If two independent dice are rolled, what is (P())?<br>
+<li>If two independent dice are rolled, what is <span class="math inline">\(P(\text{both are 6})\)</span>?<br>
 </li>
 <li>Are the two dice rolls independent or dependent?</li>
 </ol>
@@ -1615,12 +1661,14 @@ z
 <section id="question-3-standard-error-3" class="level3">
 <h3 class="anchored" data-anchor-id="question-3-standard-error-3">Question 3 — Standard error (/3)</h3>
 <p>A population has:</p>
-<p>[ . ]</p>
+<p><span class="math display">\[
+\sigma=30.
+\]</span></p>
 <p>Calculate the standard error for:</p>
 <ol type="a">
-<li>(n=9)<br>
+<li><span class="math inline">\(n=9\)</span><br>
 </li>
-<li>(n=36)<br>
+<li><span class="math inline">\(n=36\)</span><br>
 </li>
 <li>Explain the effect of increasing sample size.</li>
 </ol>
@@ -1628,9 +1676,13 @@ z
 <section id="question-4-sampling-distribution-3" class="level3">
 <h3 class="anchored" data-anchor-id="question-4-sampling-distribution-3">Question 4 — Sampling distribution (/3)</h3>
 <p>A population has:</p>
-<p>[ ,, ]</p>
+<p><span class="math display">\[
+\mu=100,\qquad \sigma=15,
+\]</span></p>
 <p>and samples of:</p>
-<p>[ n=25 ]</p>
+<p><span class="math display">\[
+n=25
+\]</span></p>
 <p>are repeatedly drawn.</p>
 <ol type="a">
 <li>What is the mean of the sampling distribution?<br>
@@ -1643,15 +1695,17 @@ z
 <section id="question-5-z-for-a-sample-mean-4" class="level3">
 <h3 class="anchored" data-anchor-id="question-5-z-for-a-sample-mean-4">Question 5 — z for a sample mean (/4)</h3>
 <p>Using the population in Question 4, suppose one sample has:</p>
-<p>[ {x}=106. ]</p>
+<p><span class="math display">\[
+\bar{x}=106.
+\]</span></p>
 <ol type="a">
 <li>Calculate the z score for this sample mean.<br>
 </li>
-<li>Using the standard normal table, the upper-tail area beyond (z=2.00) is .0228. What is (P({x}))?<br>
+<li>Using the standard normal table, the upper-tail area beyond <span class="math inline">\(z=2.00\)</span> is .0228. What is <span class="math inline">\(P(\bar{x}\ge106)\)</span>?<br>
 </li>
 <li>Is 106 relatively common or relatively unusual for samples of size 25 from this population?<br>
 </li>
-<li>Would the same raw difference of 6 points look more or less unusual if (n) were larger? Explain.</li>
+<li>Would the same raw difference of 6 points look more or less unusual if <span class="math inline">\(n\)</span> were larger? Explain.</li>
 </ol>
 </section>
 <section id="question-6-sampling-error-2" class="level3">
@@ -1671,15 +1725,26 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ P(5)=. ]</p>
+<p><span class="math display">\[
+P(5)=\frac16\approx0.167.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ P(12)=+=. ]</p>
+<p><span class="math display">\[
+P(1\text{ or }2)=\frac16+\frac16=\frac13\approx0.333.
+\]</span></p>
 <ol start="3" type="a">
 <li></li>
 </ol>
-<p>[ P(66) = () = . ]</p>
+<p><span class="math display">\[
+P(6\text{ and }6)
+=
+\frac16\left(\frac16\right)
+=
+\frac1{36}
+\approx0.0278.
+\]</span></p>
 <ol start="4" type="a">
 <li>Independent.</li>
 </ol>
@@ -1689,7 +1754,7 @@ z
 <ol type="a">
 <li>Gambler’s Fallacy.<br>
 </li>
-<li>(0.50).</li>
+<li><span class="math inline">\(0.50\)</span>.</li>
 </ol>
 </section>
 <section id="question-3" class="level3">
@@ -1697,11 +1762,15 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ SE==10. ]</p>
+<p><span class="math display">\[
+SE=\frac{30}{\sqrt9}=10.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ SE==5. ]</p>
+<p><span class="math display">\[
+SE=\frac{30}{\sqrt{36}}=5.
+\]</span></p>
 <ol start="3" type="a">
 <li>Larger sample size decreases standard error.</li>
 </ol>
@@ -1711,11 +1780,15 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ _{{x}}=100. ]</p>
+<p><span class="math display">\[
+\mu_{\bar{x}}=100.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ SE==3. ]</p>
+<p><span class="math display">\[
+SE=\frac{15}{5}=3.
+\]</span></p>
 <ol start="3" type="a">
 <li>It describes the standard deviation of the sampling distribution—the typical amount sample means vary around the population mean.</li>
 </ol>
@@ -1725,14 +1798,22 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ z = = 2.00. ]</p>
+<p><span class="math display">\[
+z
+=
+\frac{106-100}{3}
+=
+2.00.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ P({x})=0.0228. ]</p>
+<p><span class="math display">\[
+P(\bar{x}\ge106)=0.0228.
+\]</span></p>
 <ol start="3" type="a">
 <li><p>Relatively unusual: only about 2.28% of sample means would be at least this high under the stated population model.</p></li>
-<li><p>More unusual. A larger (n) reduces SE, making the same 6-point difference larger in standard-error units.</p></li>
+<li><p>More unusual. A larger <span class="math inline">\(n\)</span> reduces SE, making the same 6-point difference larger in standard-error units.</p></li>
 </ol>
 </section>
 <section id="question-6" class="level3">
@@ -1754,8 +1835,8 @@ z
 <li>why samples vary;</li>
 <li>what a sampling distribution represents;</li>
 <li>the three CLT features emphasized in the course;</li>
-<li>why standard error shrinks as (n) increases;</li>
-<li>why a z score for a sample mean uses SE rather than ().</li>
+<li>why standard error shrinks as <span class="math inline">\(n\)</span> increases;</li>
+<li>why a z score for a sample mean uses SE rather than <span class="math inline">\(\sigma\)</span>.</li>
 </ul>
 
 

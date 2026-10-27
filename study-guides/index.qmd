@@ -4,6 +4,8 @@ title: "Study Guides"
 
 The Study Guides are organized by major course subject. Each guide will be developed from the lecture notes, tutorials, exercises, and readings supplied for that subject.
 
+**Midterm preparation:** [Integrated Midterm Review — Weeks 1–6](midterm-review.qmd)
+
 1. [Week 01 — Course Introduction and Basic Concepts](week01-basic-concepts.qmd)
 2. [Week 02 — Data Types and Visualization](week02-data-types-visualization.qmd)
 3. [Week 03 — Measures of Central Tendency and Variability](week03-central-tendency-variability.qmd)

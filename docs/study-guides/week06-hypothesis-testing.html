@@ -200,7 +200,7 @@ window.Quarto = {
   <li><a href="#part-iv-beyond-significance-effect-size-and-confidence-intervals" id="toc-part-iv-beyond-significance-effect-size-and-confidence-intervals" class="nav-link" data-scroll-target="#part-iv-beyond-significance-effect-size-and-confidence-intervals">Part IV — Beyond Significance: Effect Size and Confidence Intervals</a>
   <ul class="collapse">
   <li><a href="#why-statistical-significance-is-not-enough" id="toc-why-statistical-significance-is-not-enough" class="nav-link" data-scroll-target="#why-statistical-significance-is-not-enough">26. Why Statistical Significance Is Not Enough</a></li>
-  <li><a href="#cohens-d-for-the-one-sample-z-test" id="toc-cohens-d-for-the-one-sample-z-test" class="nav-link" data-scroll-target="#cohens-d-for-the-one-sample-z-test">27. Cohen’s (d) for the One-Sample z Test</a></li>
+  <li><a href="#cohens-d-for-the-one-sample-z-test" id="toc-cohens-d-for-the-one-sample-z-test" class="nav-link" data-scroll-target="#cohens-d-for-the-one-sample-z-test">27. Cohen’s <span class="math inline">\(d\)</span> for the One-Sample z Test</a></li>
   <li><a href="#reaction-time-effect-size" id="toc-reaction-time-effect-size" class="nav-link" data-scroll-target="#reaction-time-effect-size">28. Reaction-Time Effect Size</a></li>
   <li><a href="#significance-vs.-effect-size" id="toc-significance-vs.-effect-size" class="nav-link" data-scroll-target="#significance-vs.-effect-size">29. Significance vs.&nbsp;Effect Size</a></li>
   <li><a href="#confidence-intervals" id="toc-confidence-intervals" class="nav-link" data-scroll-target="#confidence-intervals">30. Confidence Intervals</a></li>
@@ -233,7 +233,7 @@ window.Quarto = {
   <li><a href="#step-1-state-statistical-hypotheses" id="toc-step-1-state-statistical-hypotheses" class="nav-link" data-scroll-target="#step-1-state-statistical-hypotheses">Step 1 — State Statistical Hypotheses</a></li>
   <li><a href="#step-2-set-the-decision-rule" id="toc-step-2-set-the-decision-rule" class="nav-link" data-scroll-target="#step-2-set-the-decision-rule">Step 2 — Set the Decision Rule</a></li>
   <li><a href="#step-3-collect-the-sample" id="toc-step-3-collect-the-sample" class="nav-link" data-scroll-target="#step-3-collect-the-sample">Step 3 — Collect the Sample</a></li>
-  <li><a href="#step-4-calculate-z_obt-and-decide" id="toc-step-4-calculate-z_obt-and-decide" class="nav-link" data-scroll-target="#step-4-calculate-z_obt-and-decide">Step 4 — Calculate (Z_{obt}) and Decide</a></li>
+  <li><a href="#step-4-calculate-z_obt-and-decide" id="toc-step-4-calculate-z_obt-and-decide" class="nav-link" data-scroll-target="#step-4-calculate-z_obt-and-decide">Step 4 — Calculate <span class="math inline">\(Z_{obt}\)</span> and Decide</a></li>
   <li><a href="#example-from-the-core-guide" id="toc-example-from-the-core-guide" class="nav-link" data-scroll-target="#example-from-the-core-guide">Example From the Core Guide</a></li>
   <li><a href="#effect-size-1" id="toc-effect-size-1" class="nav-link" data-scroll-target="#effect-size-1">Effect Size</a></li>
   <li><a href="#confidence-intervals-1" id="toc-confidence-intervals-1" class="nav-link" data-scroll-target="#confidence-intervals-1">Confidence Intervals</a></li>
@@ -287,7 +287,7 @@ window.Quarto = {
 <p>↓</p>
 <p><strong>Sampling distribution under the null</strong></p>
 <p>↓</p>
-<p><strong>Decision criterion (())</strong></p>
+<p><strong>Decision criterion (<span class="math inline">\(\alpha\)</span>)</strong></p>
 <p>↓</p>
 <p><strong>Observed sample mean / test statistic</strong></p>
 <p>↓</p>
@@ -316,17 +316,17 @@ window.Quarto = {
 <li>Identify critical values for common one- and two-tailed z tests.</li>
 <li>Distinguish one-tailed from two-tailed tests.</li>
 <li>Explain Type I and Type II errors.</li>
-<li>Define statistical power as (1-).</li>
+<li>Define statistical power as <span class="math inline">\(1-\beta\)</span>.</li>
 <li>Explain how effect size, sample size, population variability, alpha, and number of tails affect statistical significance or power.</li>
-<li>Compute the one-sample z statistic when () and () are known.</li>
-<li>Use critical values or a p value to make a decision about (H_0).</li>
-<li>Use the preferred wording <strong>reject (H_0)</strong> or <strong>fail to reject (H_0)</strong>.</li>
+<li>Compute the one-sample z statistic when <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> are known.</li>
+<li>Use critical values or a p value to make a decision about <span class="math inline">\(H_0\)</span>.</li>
+<li>Use the preferred wording <strong>reject <span class="math inline">\(H_0\)</span></strong> or <strong>fail to reject <span class="math inline">\(H_0\)</span></strong>.</li>
 <li>Explain why failing to reject the null does not prove that the null is true.</li>
 <li>State the requirements and assumptions of the one-sample z test used in this course.</li>
-<li>Compute and interpret Cohen’s (d) for a one-sample z test.</li>
+<li>Compute and interpret Cohen’s <span class="math inline">\(d\)</span> for a one-sample z test.</li>
 <li>Distinguish statistical significance from effect size.</li>
 <li>Define a confidence interval using repeated-sampling logic.</li>
-<li>Compute a 95% confidence interval for a population mean when () is known.</li>
+<li>Compute a 95% confidence interval for a population mean when <span class="math inline">\(\sigma\)</span> is known.</li>
 <li>Explain what determines confidence-interval width.</li>
 <li>Explain why a larger sample can produce significance for the same observed mean difference.</li>
 <li>Explain why one-tailed tests can have greater power but require strong directional justification.</li>
@@ -423,7 +423,7 @@ H_1:\mu&lt;262.
 <section id="why-begin-with-the-null" class="level2">
 <h2 class="anchored" data-anchor-id="why-begin-with-the-null">4. Why Begin With the Null?</h2>
 <p>The null hypothesis provides the reference distribution.</p>
-<p>We assume (H_0) is true long enough to ask:</p>
+<p>We assume <span class="math inline">\(H_0\)</span> is true long enough to ask:</p>
 <blockquote class="blockquote">
 <p>If this null model were correct, how likely would our sample result be?</p>
 </blockquote>
@@ -526,7 +526,7 @@ SE
 \frac{20}{\sqrt{30}}
 \approx3.65.
 \]</span></p>
-<p>For a two-tailed test at ():</p>
+<p>For a two-tailed test at <span class="math inline">\(\alpha=.05\)</span>:</p>
 <p><span class="math display">\[
 z_{\text{crit}}=\pm1.96.
 \]</span></p>
@@ -554,18 +554,18 @@ z_{\text{crit}}=\pm1.96.
 <thead>
 <tr class="header">
 <th>Truth</th>
-<th>Fail to reject (H_0)</th>
-<th>Reject (H_0)</th>
+<th>Fail to reject <span class="math inline">\(H_0\)</span></th>
+<th>Reject <span class="math inline">\(H_0\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>(H_0) true</td>
+<td><span class="math inline">\(H_0\)</span> true</td>
 <td>Correct decision</td>
 <td>Type I error</td>
 </tr>
 <tr class="even">
-<td>(H_0) false</td>
+<td><span class="math inline">\(H_0\)</span> false</td>
 <td>Type II error</td>
 <td>Correct decision</td>
 </tr>
@@ -626,13 +626,13 @@ z_{\text{crit}}=\pm1.96.
 <p>Power tends to increase when:</p>
 <ul>
 <li>the true effect is larger;</li>
-<li>sample size (n) is larger;</li>
+<li>sample size <span class="math inline">\(n\)</span> is larger;</li>
 <li>population variability is smaller;</li>
 <li>standard error is smaller;</li>
 <li>the rejection region is larger;</li>
 <li>the test uses a justified one-tailed alternative rather than splitting alpha across two tails.</li>
 </ul>
-<p>At the same time, increasing () increases the risk of Type I error, so power cannot be increased without considering tradeoffs (Sigal, 2026; Privitera, 2018, 2024).</p>
+<p>At the same time, increasing <span class="math inline">\(\alpha\)</span> increases the risk of Type I error, so power cannot be increased without considering tradeoffs (Sigal, 2026; Privitera, 2018, 2024).</p>
 <hr>
 </section>
 <section id="what-drives-statistical-significance" class="level2">
@@ -653,8 +653,8 @@ z
 {\sigma/\sqrt n}.
 \]</span></p>
 <p>This formula makes the relationships visible.</p>
-<p>A larger numerator increases (|z|).</p>
-<p>A smaller denominator also increases (|z|).</p>
+<p>A larger numerator increases <span class="math inline">\(|z|\)</span>.</p>
+<p>A smaller denominator also increases <span class="math inline">\(|z|\)</span>.</p>
 <hr>
 </section>
 <section id="sample-size-and-the-same-observed-effect" class="level2">
@@ -669,7 +669,7 @@ z
 \bar X=63.
 \]</span></p>
 <section id="if-n25" class="level3">
-<h3 class="anchored" data-anchor-id="if-n25">If (n=25)</h3>
+<h3 class="anchored" data-anchor-id="if-n25">If <span class="math inline">\(n=25\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -685,14 +685,14 @@ z
 =
 1.50.
 \]</span></p>
-<p>At (), two-tailed:</p>
+<p>At <span class="math inline">\(\alpha=.05\)</span>, two-tailed:</p>
 <p><span class="math display">\[
 |1.50|&lt;1.96.
 \]</span></p>
-<p>So we <strong>fail to reject (H_0)</strong>.</p>
+<p>So we <strong>fail to reject <span class="math inline">\(H_0\)</span></strong>.</p>
 </section>
 <section id="if-n100" class="level3">
-<h3 class="anchored" data-anchor-id="if-n100">If (n=100)</h3>
+<h3 class="anchored" data-anchor-id="if-n100">If <span class="math inline">\(n=100\)</span></h3>
 <p><span class="math display">\[
 SE
 =
@@ -712,7 +712,7 @@ z
 <p><span class="math display">\[
 |3.00|&gt;1.96,
 \]</span></p>
-<p>so we <strong>reject (H_0)</strong>.</p>
+<p>so we <strong>reject <span class="math inline">\(H_0\)</span></strong>.</p>
 <p>The sample mean and raw difference are unchanged.</p>
 <p>Only sample size changes.</p>
 <p>The larger sample produces a smaller standard error and greater power. fileciteturn11file0L35-L45</p>
@@ -726,8 +726,8 @@ z
 <h2 class="anchored" data-anchor-id="when-is-the-one-sample-z-test-used">16. When Is the One-Sample z Test Used?</h2>
 <p>The lecture specifies that we must know:</p>
 <ul>
-<li>the population mean ();</li>
-<li>the population standard deviation ();</li>
+<li>the population mean <span class="math inline">\(\mu\)</span>;</li>
+<li>the population standard deviation <span class="math inline">\(\sigma\)</span>;</li>
 <li>an observed score or sample mean to compare with those population parameters (Sigal, 2026).</li>
 </ul>
 <p>Privitera similarly defines the one-sample z test as a test of a single population mean when population variance is known (Privitera, 2018, 2024).</p>
@@ -797,7 +797,7 @@ z
 <p><span class="math display">\[
 3.42&gt;1.96,
 \]</span></p>
-<p>for a two-tailed test at (), the observed mean falls beyond the upper critical value.</p>
+<p>for a two-tailed test at <span class="math inline">\(\alpha=.05\)</span>, the observed mean falls beyond the upper critical value.</p>
 <p>The lecture therefore rejects the null hypothesis and concludes that the treatment affected reaction time (Sigal, 2026).</p>
 <hr>
 </section>
@@ -807,7 +807,7 @@ z
 <p>Privitera defines it as the probability of obtaining a sample outcome as extreme as the observed outcome, given that the null hypothesis is true (Privitera, 2018, 2024).</p>
 <p>The important structure is:</p>
 <blockquote class="blockquote">
-<p><strong>Assume (H_0), then evaluate how unusual the observed result is.</strong></p>
+<p><strong>Assume <span class="math inline">\(H_0\)</span>, then evaluate how unusual the observed result is.</strong></p>
 </blockquote>
 <p>A p value is <strong>not</strong> the probability that the null hypothesis itself is true.</p>
 <hr>
@@ -816,8 +816,8 @@ z
 <h2 class="anchored" data-anchor-id="decision-language">21. Decision Language</h2>
 <p>The preferred decisions are:</p>
 <ul>
-<li><strong>reject (H_0)</strong>;</li>
-<li><strong>fail to reject (H_0)</strong>.</li>
+<li><strong>reject <span class="math inline">\(H_0\)</span></strong>;</li>
+<li><strong>fail to reject <span class="math inline">\(H_0\)</span></strong>.</li>
 </ul>
 <p>Do not say:</p>
 <blockquote class="blockquote">
@@ -887,8 +887,8 @@ H_1:\mu&lt;\mu_0.
 <h2 class="anchored" data-anchor-id="worksheet-logic-check-one-tailed-vs.-two-tailed">24. Worksheet Logic Check: One-Tailed vs.&nbsp;Two-Tailed</h2>
 <p>The worksheet compares:</p>
 <ul>
-<li>one-tailed test with ();</li>
-<li>two-tailed test with ().</li>
+<li>one-tailed test with <span class="math inline">\(\alpha=.01\)</span>;</li>
+<li>two-tailed test with <span class="math inline">\(\alpha=.05\)</span>.</li>
 </ul>
 <p>The key points are:</p>
 <ul>
@@ -972,7 +972,7 @@ z
 <hr>
 </section>
 <section id="cohens-d-for-the-one-sample-z-test" class="level2">
-<h2 class="anchored" data-anchor-id="cohens-d-for-the-one-sample-z-test">27. Cohen’s (d) for the One-Sample z Test</h2>
+<h2 class="anchored" data-anchor-id="cohens-d-for-the-one-sample-z-test">27. Cohen’s <span class="math inline">\(d\)</span> for the One-Sample z Test</h2>
 <p>For a one-sample z test:</p>
 <p><span class="math display">\[
 d
@@ -987,10 +987,10 @@ z
 \]</span></p>
 <p>The difference is crucial:</p>
 <ul>
-<li>(z) uses <strong>standard error</strong>;</li>
-<li>(d) uses the <strong>population standard deviation</strong>.</li>
+<li><span class="math inline">\(z\)</span> uses <strong>standard error</strong>;</li>
+<li><span class="math inline">\(d\)</span> uses the <strong>population standard deviation</strong>.</li>
 </ul>
-<p>As a result, (d) is not mechanically inflated by sample size in the same way the test statistic is.</p>
+<p>As a result, <span class="math inline">\(d\)</span> is not mechanically inflated by sample size in the same way the test statistic is.</p>
 <hr>
 </section>
 <section id="reaction-time-effect-size" class="level2">
@@ -1055,7 +1055,7 @@ d
 </section>
 <section id="confidence-interval-formula-for-the-z-setting" class="level2">
 <h2 class="anchored" data-anchor-id="confidence-interval-formula-for-the-z-setting">31. Confidence Interval Formula for the z Setting</h2>
-<p>For a population mean with known ():</p>
+<p>For a population mean with known <span class="math inline">\(\sigma\)</span>:</p>
 <p><span class="math display">\[
 CI
 =
@@ -1225,7 +1225,7 @@ SE\le5,
 <p><span class="math display">\[
 n\ge36.
 \]</span></p>
-<p>The worksheet also emphasizes that SE cannot exceed the population SD: when (n=1), SE equals (); for larger (n), SE is smaller. fileciteturn11file0L13-L19</p>
+<p>The worksheet also emphasizes that SE cannot exceed the population SD: when <span class="math inline">\(n=1\)</span>, SE equals <span class="math inline">\(\sigma\)</span>; for larger <span class="math inline">\(n\)</span>, SE is smaller. fileciteturn11file0L13-L19</p>
 <hr>
 </section>
 <section id="worksheet-review-middle-95" class="level2">
@@ -1305,7 +1305,7 @@ z
 </section>
 <section id="increasing-n-changes-cohens-d." class="level3">
 <h3 class="anchored" data-anchor-id="increasing-n-changes-cohens-d.">“Increasing n changes Cohen’s d.”</h3>
-<p>For the simple one-sample formula used here, no. The sample size affects standard error and the z statistic, not the standardized mean difference (d=(X-)/).</p>
+<p>For the simple one-sample formula used here, no. The sample size affects standard error and the z statistic, not the standardized mean difference <span class="math inline">\(d=(\bar X-\mu)/\sigma\)</span>.</p>
 </section>
 <section id="a-smaller-alpha-always-makes-a-test-better." class="level3">
 <h3 class="anchored" data-anchor-id="a-smaller-alpha-always-makes-a-test-better.">“A smaller alpha always makes a test better.”</h3>
@@ -1332,7 +1332,7 @@ z
 </section>
 <section id="what-is-a-critical-region" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-a-critical-region">“What is a critical region?”</h3>
-<p>A range of test-statistic values considered sufficiently unlikely under (H_0) to trigger rejection.</p>
+<p>A range of test-statistic values considered sufficiently unlikely under <span class="math inline">\(H_0\)</span> to trigger rejection.</p>
 </section>
 <section id="what-is-the-difference-between-alpha-and-p" class="level3">
 <h3 class="anchored" data-anchor-id="what-is-the-difference-between-alpha-and-p">“What is the difference between alpha and p?”</h3>
@@ -1345,7 +1345,7 @@ z
 <p><span class="math display">\[
 SE=\frac{\sigma}{\sqrt n}.
 \]</span></p>
-<p>As (n) increases, SE decreases, so the same mean difference becomes larger in standard-error units.</p>
+<p>As <span class="math inline">\(n\)</span> increases, SE decreases, so the same mean difference becomes larger in standard-error units.</p>
 </section>
 <section id="why-report-effect-size" class="level3">
 <h3 class="anchored" data-anchor-id="why-report-effect-size">“Why report effect size?”</h3>
@@ -1355,7 +1355,7 @@ SE=\frac{\sigma}{\sqrt n}.
 </section>
 <section id="practice-hypotheses" class="level2">
 <h2 class="anchored" data-anchor-id="practice-hypotheses">42. Practice: Hypotheses</h2>
-<p>For each research question, write (H_0) and (H_1).</p>
+<p>For each research question, write <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_1\)</span>.</p>
 <ol type="1">
 <li>A treatment may change reaction time in either direction.</li>
 <li>A training program is predicted to increase scores.</li>
@@ -1400,7 +1400,7 @@ d
 =
 \frac{\bar X-\mu}{\sigma}.
 \]</span></p>
-<p>Then compare the information supplied by (d) with the information supplied by the hypothesis test.</p>
+<p>Then compare the information supplied by <span class="math inline">\(d\)</span> with the information supplied by the hypothesis test.</p>
 <hr>
 </section>
 <section id="practice-confidence-interval" class="level2">
@@ -1432,13 +1432,13 @@ CI_{95}
 <p>Before moving on, you should be able to explain:</p>
 <ul>
 <li>how Week 6 builds on sampling distributions;</li>
-<li>what (H_0) and (H_1) represent;</li>
+<li>what <span class="math inline">\(H_0\)</span> and <span class="math inline">\(H_1\)</span> represent;</li>
 <li>why inference begins from a null model;</li>
 <li>the sequence of a hypothesis test;</li>
 <li>what alpha controls;</li>
 <li>what critical values define;</li>
 <li>Type I vs.&nbsp;Type II errors;</li>
-<li>why power is (1-);</li>
+<li>why power is <span class="math inline">\(1-\beta\)</span>;</li>
 <li>how sample size changes standard error and power;</li>
 <li>how to calculate a one-sample z statistic;</li>
 <li>why the same mean difference can be significant for one sample size and nonsignificant for another;</li>
@@ -1446,7 +1446,7 @@ CI_{95}
 <li>why p values are conditional on the null model;</li>
 <li>reject vs.&nbsp;fail to reject language;</li>
 <li>statistical significance vs.&nbsp;effect size;</li>
-<li>what Cohen’s (d) measures;</li>
+<li>what Cohen’s <span class="math inline">\(d\)</span> measures;</li>
 <li>repeated-sampling interpretation of a confidence interval;</li>
 <li>what controls CI width;</li>
 <li>why good interpretation uses more than a p value.</li>
@@ -1515,7 +1515,7 @@ z
 </section>
 <section id="part-vi-midterm-review-guide" class="level1">
 <h1>Part VI — Midterm Review Guide</h1>
-<p>The official Lecture 6 midterm guide identifies five conceptual areas: <strong>null hypothesis significance testing, Type I and Type II error, effect size, confidence intervals, and statistical power</strong>. Computationally, you should be able to calculate <strong>(Z_{obt}), effect size, confidence intervals, and p values</strong>.</p>
+<p>The official Lecture 6 midterm guide identifies five conceptual areas: <strong>null hypothesis significance testing, Type I and Type II error, effect size, confidence intervals, and statistical power</strong>. Computationally, you should be able to calculate <strong><span class="math inline">\(Z_{obt}\)</span>, effect size, confidence intervals, and p values</strong>.</p>
 <section id="the-big-picture" class="level2">
 <h2 class="anchored" data-anchor-id="the-big-picture">The Big Picture</h2>
 <p>Week 6 takes the sampling distribution from Week 5 and turns it into a formal decision framework.</p>
@@ -1528,67 +1528,114 @@ z
 <section id="step-1-state-statistical-hypotheses" class="level2">
 <h2 class="anchored" data-anchor-id="step-1-state-statistical-hypotheses">Step 1 — State Statistical Hypotheses</h2>
 <p>A nondirectional example:</p>
-<p>[ H_0: ]</p>
-<p>[ H_1:. ]</p>
+<p><span class="math display">\[
+H_0:\mu=100
+\]</span></p>
+<p><span class="math display">\[
+H_1:\mu\ne100.
+\]</span></p>
 <p>The null states the baseline/no-difference population value. The alternative states the substantive claim that the population mean differs.</p>
 <p>The pair must cover all possible population-mean values.</p>
 </section>
 <section id="step-2-set-the-decision-rule" class="level2">
 <h2 class="anchored" data-anchor-id="step-2-set-the-decision-rule">Step 2 — Set the Decision Rule</h2>
-<p>The decision is built from the <strong>null distribution</strong>: the sampling distribution expected if (H_0) is true.</p>
+<p>The decision is built from the <strong>null distribution</strong>: the sampling distribution expected if <span class="math inline">\(H_0\)</span> is true.</p>
 <p>For a two-tailed test with:</p>
-<p>[ , ]</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
 <p>split alpha:</p>
-<p>[ =.025 ]</p>
+<p><span class="math display">\[
+\frac{.05}{2}=.025
+\]</span></p>
 <p>in each tail.</p>
 <p>The corresponding critical values are:</p>
-<p>[ Z_{crit}=. ]</p>
+<p><span class="math display">\[
+Z_{crit}=\pm1.96.
+\]</span></p>
 <p>Decision rule:</p>
 <ul>
-<li>if (|Z_{obt}|), reject (H_0);</li>
-<li>if (|Z_{obt}|&lt;1.96), fail to reject (H_0).</li>
+<li>if <span class="math inline">\(|Z_{obt}|\ge1.96\)</span>, reject <span class="math inline">\(H_0\)</span>;</li>
+<li>if <span class="math inline">\(|Z_{obt}|&lt;1.96\)</span>, fail to reject <span class="math inline">\(H_0\)</span>.</li>
 </ul>
 </section>
 <section id="step-3-collect-the-sample" class="level2">
 <h2 class="anchored" data-anchor-id="step-3-collect-the-sample">Step 3 — Collect the Sample</h2>
-<p>The sample supplies the observed statistic, especially ({x}), that will be compared with the null distribution.</p>
+<p>The sample supplies the observed statistic, especially <span class="math inline">\(\bar{x}\)</span>, that will be compared with the null distribution.</p>
 </section>
 <section id="step-4-calculate-z_obt-and-decide" class="level2">
-<h2 class="anchored" data-anchor-id="step-4-calculate-z_obt-and-decide">Step 4 — Calculate (Z_{obt}) and Decide</h2>
+<h2 class="anchored" data-anchor-id="step-4-calculate-z_obt-and-decide">Step 4 — Calculate <span class="math inline">\(Z_{obt}\)</span> and Decide</h2>
 <p>For a sample mean:</p>
-<p>[ Z_{obt} = {<em>{{x}}}, </em>{{x}} = . ]</p>
-<p>Then compare (Z_{obt}) with (Z_{crit}).</p>
+<p><span class="math display">\[
+Z_{obt}
+=
+\frac{\bar{x}-\mu}
+{\sigma_{\bar{x}}},
+\qquad
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]</span></p>
+<p>Then compare <span class="math inline">\(Z_{obt}\)</span> with <span class="math inline">\(Z_{crit}\)</span>.</p>
 <p>The p value gives the probability, under the null model, of obtaining the observed result or something more extreme.</p>
 <p>For a two-tailed test, a one-tail area from the z table is doubled.</p>
 </section>
 <section id="example-from-the-core-guide" class="level2">
 <h2 class="anchored" data-anchor-id="example-from-the-core-guide">Example From the Core Guide</h2>
 <p>The guide uses:</p>
-<p>[ ,,n=50,{x}=105. ]</p>
+<p><span class="math display">\[
+\mu=100,\quad \sigma=15,\quad n=50,\quad \bar{x}=105.
+\]</span></p>
 <p>The standard error is approximately:</p>
-<p>[ _{{x}} = . ]</p>
+<p><span class="math display">\[
+\sigma_{\bar{x}}
+=
+\frac{15}{\sqrt{50}}
+\approx2.12.
+\]</span></p>
 <p>Then:</p>
-<p>[ Z_{obt} = . ]</p>
+<p><span class="math display">\[
+Z_{obt}
+=
+\frac{105-100}{2.12}
+\approx2.36.
+\]</span></p>
 <p>Because:</p>
-<p>[ 2.36&gt;1.96, ]</p>
-<p>reject (H_0).</p>
+<p><span class="math display">\[
+2.36&gt;1.96,
+\]</span></p>
+<p>reject <span class="math inline">\(H_0\)</span>.</p>
 <p>The z-table one-tail area is .0091, so for the two-tailed test:</p>
-<p>[ p=2(.0091)=.0182. ]</p>
+<p><span class="math display">\[
+p=2(.0091)=.0182.
+\]</span></p>
 <p>Because:</p>
-<p>[ p&lt;.05, ]</p>
+<p><span class="math display">\[
+p&lt;.05,
+\]</span></p>
 <p>the result is statistically significant.</p>
 </section>
 <section id="effect-size-1" class="level2">
 <h2 class="anchored" data-anchor-id="effect-size-1">Effect Size</h2>
 <p>The course formula is:</p>
-<p>[ ES = . ]</p>
+<p><span class="math display">\[
+ES
+=
+\frac{\bar{x}-\mu}{\sigma}.
+\]</span></p>
 <p>Notice the denominator:</p>
 <ul>
-<li>(Z_{obt}) uses <strong>standard error</strong>;</li>
+<li><span class="math inline">\(Z_{obt}\)</span> uses <strong>standard error</strong>;</li>
 <li>effect size uses the <strong>population SD</strong>.</li>
 </ul>
 <p>For the IQ example:</p>
-<p>[ ES = = 0.333. ]</p>
+<p><span class="math display">\[
+ES
+=
+\frac{105-100}{15}
+=
+0.333.
+\]</span></p>
 <p>The course benchmarks are:</p>
 <ul>
 <li>.20–.30: small;</li>
@@ -1600,14 +1647,32 @@ z
 <section id="confidence-intervals-1" class="level2">
 <h2 class="anchored" data-anchor-id="confidence-intervals-1">Confidence Intervals</h2>
 <p>The official formula is:</p>
-<p>[ CI = {x} Z_{crit}_{{x}}. ]</p>
+<p><span class="math display">\[
+CI
+=
+\bar{x}
+\pm
+Z_{crit}\sigma_{\bar{x}}.
+\]</span></p>
 <p>For a 95% CI:</p>
-<p>[ Z_{crit}=1.96. ]</p>
+<p><span class="math display">\[
+Z_{crit}=1.96.
+\]</span></p>
 <p>Using the IQ example:</p>
-<p>[ CI = 105 (2.12) ]</p>
+<p><span class="math display">\[
+CI
+=
+105
+\pm
+1.96(2.12)
+\approx
+105\pm4.15
+\]</span></p>
 <p>so:</p>
-<p>[ CI. ]</p>
-<p>The null value 100 lies outside this interval, consistent with rejecting (H_0).</p>
+<p><span class="math display">\[
+CI\approx[101.85,109.15].
+\]</span></p>
+<p>The null value 100 lies outside this interval, consistent with rejecting <span class="math inline">\(H_0\)</span>.</p>
 <p>The correct interpretation of “95%” is based on repeated sampling: if the procedure were repeated across all possible samples, about 95% of those intervals would contain the population mean.</p>
 </section>
 <section id="type-i-and-type-ii-errors-1" class="level2">
@@ -1621,20 +1686,20 @@ z
 <thead>
 <tr class="header">
 <th>Reality</th>
-<th>Fail to reject (H_0)</th>
-<th>Reject (H_0)</th>
+<th>Fail to reject <span class="math inline">\(H_0\)</span></th>
+<th>Reject <span class="math inline">\(H_0\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>(H_0) true</td>
-<td>Correct, probability (1-)</td>
-<td>Type I error, probability ()</td>
+<td><span class="math inline">\(H_0\)</span> true</td>
+<td>Correct, probability <span class="math inline">\(1-\alpha\)</span></td>
+<td>Type I error, probability <span class="math inline">\(\alpha\)</span></td>
 </tr>
 <tr class="even">
-<td>(H_0) false</td>
-<td>Type II error, probability ()</td>
-<td>Correct, probability (1-)</td>
+<td><span class="math inline">\(H_0\)</span> false</td>
+<td>Type II error, probability <span class="math inline">\(\beta\)</span></td>
+<td>Correct, probability <span class="math inline">\(1-\beta\)</span></td>
 </tr>
 </tbody>
 </table>
@@ -1650,56 +1715,82 @@ z
 <section id="statistical-power" class="level2">
 <h2 class="anchored" data-anchor-id="statistical-power">Statistical Power</h2>
 <p>Power is:</p>
-<p>[ 1-. ]</p>
+<p><span class="math display">\[
+1-\beta.
+\]</span></p>
 <p>It is the probability of correctly rejecting a false null hypothesis.</p>
 <p>The guide emphasizes:</p>
 <ul>
-<li>as (n) increases, power increases;</li>
-<li>as () increases, power increases;</li>
-<li>as () increases, power decreases;</li>
+<li>as <span class="math inline">\(n\)</span> increases, power increases;</li>
+<li>as <span class="math inline">\(\alpha\)</span> increases, power increases;</li>
+<li>as <span class="math inline">\(\sigma\)</span> increases, power decreases;</li>
 <li>as effect size increases, power increases.</li>
 </ul>
 </section>
 <section id="formula-sheet-connection" class="level2">
 <h2 class="anchored" data-anchor-id="formula-sheet-connection">Formula-Sheet Connection</h2>
 <p>Week 6 directly uses:</p>
-<p>[ Z = , _{{x}} = ]</p>
-<p>[ = ]</p>
-<p>[ CI(Z) = {x} Z_{crit}_{{x}}. ]</p>
+<p><span class="math display">\[
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}},
+\qquad
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}
+\]</span></p>
+<p><span class="math display">\[
+\text{Effect Size}
+=
+\frac{\bar{x}-\mu}{\sigma}
+\]</span></p>
+<p><span class="math display">\[
+CI(Z)
+=
+\bar{x}
+\pm
+Z_{crit}\sigma_{\bar{x}}.
+\]</span></p>
 </section>
 <section id="assignment-style-practice" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-style-practice">Assignment-Style Practice</h2>
 <section id="question-1-setting-up-nhst-4" class="level3">
 <h3 class="anchored" data-anchor-id="question-1-setting-up-nhst-4">Question 1 — Setting up NHST (/4)</h3>
 <p>A population has:</p>
-<p>[ ,. ]</p>
+<p><span class="math display">\[
+\mu=80,\qquad \sigma=12.
+\]</span></p>
 <p>A researcher tests whether a training program changes scores in either direction.</p>
 <ol type="a">
-<li>State (H_0).<br>
+<li>State <span class="math inline">\(H_0\)</span>.<br>
 </li>
-<li>State (H_1).<br>
+<li>State <span class="math inline">\(H_1\)</span>.<br>
 </li>
 <li>Is the test one-tailed or two-tailed?<br>
 </li>
-<li>At (), what are the critical z values?</li>
+<li>At <span class="math inline">\(\alpha=.05\)</span>, what are the critical z values?</li>
 </ol>
 </section>
 <section id="question-2-complete-one-sample-z-test-6" class="level3">
 <h3 class="anchored" data-anchor-id="question-2-complete-one-sample-z-test-6">Question 2 — Complete one-sample z test (/6)</h3>
 <p>For the same population, a sample of:</p>
-<p>[ n=36 ]</p>
+<p><span class="math display">\[
+n=36
+\]</span></p>
 <p>has:</p>
-<p>[ {x}=84. ]</p>
+<p><span class="math display">\[
+\bar{x}=84.
+\]</span></p>
 <ol type="a">
 <li>Calculate the standard error.<br>
 </li>
-<li>Calculate (Z_{obt}).<br>
+<li>Calculate <span class="math inline">\(Z_{obt}\)</span>.<br>
 </li>
-<li>Make the decision at (), two-tailed.<br>
+<li>Make the decision at <span class="math inline">\(\alpha=.05\)</span>, two-tailed.<br>
 </li>
 <li>Is the result statistically significant?<br>
 </li>
-<li>If the one-tail area beyond (|z|=2.00) is .0228, calculate the two-tailed p value.<br>
+<li>If the one-tail area beyond <span class="math inline">\(|z|=2.00\)</span> is .0228, calculate the two-tailed p value.<br>
 </li>
 <li>State the result in plain English.</li>
 </ol>
@@ -1721,7 +1812,7 @@ z
 <ol type="a">
 <li>Calculate the 95% CI.<br>
 </li>
-<li>Does the null value () fall inside the CI?<br>
+<li>Does the null value <span class="math inline">\(\mu=80\)</span> fall inside the CI?<br>
 </li>
 <li>Is that consistent with the NHST decision?<br>
 </li>
@@ -1732,13 +1823,13 @@ z
 <h3 class="anchored" data-anchor-id="question-5-errors-4">Question 5 — Errors (/4)</h3>
 <p>For each situation, identify the outcome.</p>
 <ol type="a">
-<li>(H_0) is true and the researcher rejects it.<br>
+<li><span class="math inline">\(H_0\)</span> is true and the researcher rejects it.<br>
 </li>
-<li>(H_0) is false and the researcher fails to reject it.<br>
+<li><span class="math inline">\(H_0\)</span> is false and the researcher fails to reject it.<br>
 </li>
-<li>(H_0) is true and the researcher fails to reject it.<br>
+<li><span class="math inline">\(H_0\)</span> is true and the researcher fails to reject it.<br>
 </li>
-<li>(H_0) is false and the researcher rejects it.</li>
+<li><span class="math inline">\(H_0\)</span> is false and the researcher rejects it.</li>
 </ol>
 </section>
 <section id="question-6-power-4" class="level3">
@@ -1762,38 +1853,60 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ H_0:. ]</p>
+<p><span class="math display">\[
+H_0:\mu=80.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ H_1:. ]</p>
+<p><span class="math display">\[
+H_1:\mu\ne80.
+\]</span></p>
 <ol start="3" type="a">
 <li>Two-tailed.<br>
 </li>
 <li></li>
 </ol>
-<p>[ Z_{crit}=. ]</p>
+<p><span class="math display">\[
+Z_{crit}=\pm1.96.
+\]</span></p>
 </section>
 <section id="question-2" class="level3">
 <h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
 <ol type="a">
 <li></li>
 </ol>
-<p>[ SE = = 2. ]</p>
+<p><span class="math display">\[
+SE
+=
+\frac{12}{\sqrt{36}}
+=
+2.
+\]</span></p>
 <ol start="2" type="a">
 <li></li>
 </ol>
-<p>[ Z_{obt} = = 2.00. ]</p>
+<p><span class="math display">\[
+Z_{obt}
+=
+\frac{84-80}{2}
+=
+2.00.
+\]</span></p>
 <ol start="3" type="a">
 <li>Because:</li>
 </ol>
-<p>[ |2.00|&gt;1.96, ]</p>
-<p>reject (H_0).</p>
+<p><span class="math display">\[
+|2.00|&gt;1.96,
+\]</span></p>
+<p>reject <span class="math inline">\(H_0\)</span>.</p>
 <ol start="4" type="a">
-<li><p>Yes, statistically significant at ().</p></li>
+<li><p>Yes, statistically significant at <span class="math inline">\(\alpha=.05\)</span>.</p></li>
 <li></li>
 </ol>
-<p>[ p=2(.0228)=.0456. ]</p>
+<p><span class="math display">\[
+p=2(.0228)=.0456.
+\]</span></p>
 <ol start="6" type="a">
 <li>The sample mean is sufficiently unlikely under the null model to reject the hypothesis that the population mean remains 80; the training program is associated with a statistically significant difference.</li>
 </ol>
@@ -1803,7 +1916,13 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ ES = = 0.333. ]</p>
+<p><span class="math display">\[
+ES
+=
+\frac{84-80}{12}
+=
+0.333.
+\]</span></p>
 <ol start="2" type="a">
 <li>Small effect using the course benchmarks.<br>
 </li>
@@ -1815,13 +1934,23 @@ z
 <ol type="a">
 <li></li>
 </ol>
-<p>[ CI = 84 (2) = 84. ]</p>
+<p><span class="math display">\[
+CI
+=
+84
+\pm
+1.96(2)
+=
+84\pm3.92.
+\]</span></p>
 <p>Therefore:</p>
-<p>[ CI=[80.08,87.92]. ]</p>
+<p><span class="math display">\[
+CI=[80.08,87.92].
+\]</span></p>
 <ol start="2" type="a">
 <li>No.<br>
 </li>
-<li>Yes. The corresponding two-tailed test rejects (H_0).<br>
+<li>Yes. The corresponding two-tailed test rejects <span class="math inline">\(H_0\)</span>.<br>
 </li>
 <li>Across repeated sampling, about 95% of intervals constructed with this procedure would contain the population mean.</li>
 </ol>
@@ -1833,9 +1962,9 @@ z
 </li>
 <li>Type II error.<br>
 </li>
-<li>Correct decision, probability (1-).<br>
+<li>Correct decision, probability <span class="math inline">\(1-\alpha\)</span>.<br>
 </li>
-<li>Correct rejection; this contributes to power, (1-).</li>
+<li>Correct rejection; this contributes to power, <span class="math inline">\(1-\beta\)</span>.</li>
 </ol>
 </section>
 <section id="question-6" class="level3">
@@ -1856,9 +1985,9 @@ z
 <p>You should be able to explain and calculate:</p>
 <ul>
 <li>the four-step NHST logic;</li>
-<li>(H_0) vs.&nbsp;(H_1);</li>
-<li>() and critical regions;</li>
-<li>(Z_{obt}) and (Z_{crit});</li>
+<li><span class="math inline">\(H_0\)</span> vs.&nbsp;<span class="math inline">\(H_1\)</span>;</li>
+<li><span class="math inline">\(\alpha\)</span> and critical regions;</li>
+<li><span class="math inline">\(Z_{obt}\)</span> and <span class="math inline">\(Z_{crit}\)</span>;</li>
 <li>p values;</li>
 <li>reject vs.&nbsp;fail to reject;</li>
 <li>Type I vs.&nbsp;Type II error;</li>

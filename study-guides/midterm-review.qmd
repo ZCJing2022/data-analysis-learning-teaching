@@ -1,0 +1,964 @@
+---
+title: "Midterm Review — Weeks 1–6"
+toc-depth: 2
+toc-location: body
+toc-title: "Midterm Review Contents"
+toc-expand: true
+body-classes: midterm-review-page
+---
+
+# Overview
+
+This page is a **single integrated review map for the PSYC 210 midterm**. It is designed to help you see how the first six weeks fit together as one sequence of statistical reasoning.
+
+It does **not** replace the six weekly Study Guides. Instead, it answers a different question:
+
+> **What do I need to connect across Weeks 1–6 in order to prepare efficiently for the midterm?**
+
+The official Midterm Core Concept Guide is itself a focused review rather than a complete list of all testable material. Students are still responsible for the relevant lecture and reading material.
+
+The exam includes both **conceptual questions** and **computational questions**, so this page is organized around both kinds of thinking.
+
+---
+
+# Part I — The Midterm as One Connected Story
+
+## 1. The Six-Week Logic
+
+The first six weeks can be understood as one progression:
+
+**Week 1 — How scientific questions become data**
+
+↓  
+
+**Week 2 — How variables are measured, organized, and displayed**
+
+↓  
+
+**Week 3 — How distributions are summarized**
+
+↓  
+
+**Week 4 — How one score is located relative to a population**
+
+↓  
+
+**Week 5 — How sample means vary from sample to sample**
+
+↓  
+
+**Week 6 — How sample evidence is used to test a population claim**
+
+That progression matters because later topics depend directly on earlier ones.
+
+For example:
+
+- you cannot interpret a z score without understanding the mean and standard deviation;
+- you cannot understand standard error without understanding variability;
+- you cannot understand hypothesis testing without understanding the sampling distribution;
+- you cannot interpret statistical significance responsibly without understanding effect size and confidence intervals.
+
+---
+
+## 2. The Three Questions Behind the Midterm
+
+Almost every problem on the midterm can be reduced to one of three questions:
+
+### Question A — What kind of data or design is this?
+
+This draws mainly from Weeks 1–2.
+
+Examples:
+
+- experimental, quasi-experimental, or correlational?
+- nominal, ordinal, interval, or ratio?
+- categorical or continuous?
+- bar chart or histogram?
+
+### Question B — What does this distribution look like?
+
+This draws mainly from Weeks 2–4.
+
+Examples:
+
+- what is the mean, median, mode, variance, or SD?
+- is the distribution skewed?
+- how far is a score from the mean?
+- what probability corresponds to a z score?
+
+### Question C — What can we infer from this sample?
+
+This draws mainly from Weeks 5–6.
+
+Examples:
+
+- what is the standard error?
+- how unusual is a sample mean?
+- should we reject $H_0$?
+- what is the p value?
+- what is the effect size?
+- what does the confidence interval tell us?
+- what affects power?
+
+---
+
+# Part II — Week-by-Week Exam Map
+
+## 3. Week 1 — Scientific Reasoning and Statistical Language
+
+### Know conceptually
+
+- goals of science;
+- theories, variables, and hypotheses;
+- experimental vs. quasi-experimental vs. correlational designs;
+- descriptive vs. inferential statistics;
+- populations vs. samples.
+
+### Be able to compute
+
+- order of operations;
+- indexed-variable notation;
+- summation notation.
+
+### High-yield distinction
+
+> **Descriptive statistics stay with the observed data. Inferential statistics generalize from a sample to a population.**
+
+### Common trap
+
+
+$$
+\left(\sum x\right)^2
+$$
+
+
+is not the same as:
+
+
+$$
+\sum x^2.
+$$
+
+
+---
+
+## 4. Week 2 — Measurement, Frequency, and Visualization
+
+### Know conceptually
+
+- categorical vs. continuous variables;
+- NOIR scales;
+- frequency distributions;
+- grouped frequency distributions;
+- appropriate graph selection.
+
+### Be able to compute
+
+- frequency;
+- proportion;
+- percentage;
+- cumulative frequency;
+- cumulative percentage;
+- bin width.
+
+### High-yield distinction
+
+| Scale | Main information |
+|---|---|
+| Nominal | category |
+| Ordinal | category + order |
+| Interval | equal units, arbitrary zero |
+| Ratio | equal units, meaningful zero |
+
+### Common trap
+
+Bar charts are for categorical variables and bars do not touch. Histograms are for continuous variables and bars touch.
+
+---
+
+## 5. Week 3 — Center, Spread, and Shape
+
+### Know conceptually
+
+- mode, median, mean;
+- range, IQR, variance, SD;
+- skewness;
+- kurtosis conceptually;
+- sample statistic vs. population parameter.
+
+### Be able to compute
+
+- mean;
+- weighted mean;
+- interpolated median/percentiles;
+- variance;
+- SD.
+
+### High-yield relationship
+
+A positively skewed distribution usually has:
+
+
+$$
+\text{mean}>\text{median}.
+$$
+
+
+A negatively skewed distribution usually has:
+
+
+$$
+\text{mean}<\text{median}.
+$$
+
+
+### Common trap
+
+For this course, grouped/tied percentile problems use the instructor's interpolation formula, not the simple “middle observation” shortcut.
+
+---
+
+## 6. Week 4 — z Scores and the Normal Distribution
+
+### Know conceptually
+
+- properties of the normal distribution;
+- probability as area;
+- meaning of a z score;
+- use of the z table.
+
+### Be able to compute
+
+
+$$
+Z=\frac{X-\mu}{\sigma}.
+$$
+
+
+### High-yield interpretation
+
+A z score tells you:
+
+> **how many population standard deviations a score lies above or below the mean.**
+
+### Common trap
+
+A negative z score means “below the mean,” not “bad,” and probabilities themselves are never negative.
+
+---
+
+## 7. Week 5 — Sampling Distributions and the CLT
+
+### Know conceptually
+
+- basic probability;
+- AND, OR, and conditional probability;
+- independent vs. dependent events;
+- Law of Large Numbers;
+- Gambler's Fallacy;
+- sampling error;
+- sampling distributions;
+- CLT.
+
+### Be able to compute
+
+
+$$
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt n}
+$$
+
+
+and:
+
+
+$$
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}.
+$$
+
+
+### High-yield relationship
+
+As:
+
+
+$$
+n\uparrow,
+$$
+
+
+then:
+
+
+$$
+SE\downarrow.
+$$
+
+
+So the same raw mean difference becomes more unusual when the sample is larger.
+
+### Common trap
+
+For an individual score, divide by $\sigma$. For a **sample mean**, divide by the **standard error**.
+
+---
+
+## 8. Week 6 — Hypothesis Testing and Interpretation
+
+### Know conceptually
+
+- NHST;
+- $H_0$ and $H_1$;
+- alpha;
+- critical values;
+- Type I and Type II errors;
+- statistical power;
+- effect size;
+- confidence intervals.
+
+### Be able to compute
+
+
+$$
+Z_{obt}
+=
+\frac{\bar{x}-\mu}
+{\sigma/\sqrt n}
+$$
+
+
+
+$$
+ES
+=
+\frac{\bar{x}-\mu}{\sigma}
+$$
+
+
+
+$$
+CI
+=
+\bar{x}
+\pm
+Z_{crit}\left(\frac{\sigma}{\sqrt n}\right).
+$$
+
+
+### High-yield decision language
+
+Use:
+
+- **reject $H_0$**;
+- **fail to reject $H_0$**.
+
+Do not say that the null hypothesis has been proven true.
+
+### Common trap
+
+Statistical significance and effect size answer different questions.
+
+---
+
+# Part III — Formula Map
+
+## 9. Which Formula Belongs to Which Task?
+
+| Task | Formula | Week |
+|---|---|---:|
+| Bin width | $\frac{\max-\min}{\#\text{ bins}}$ | 2 |
+| Mean | $\bar{x}=\frac{\sum x_i}{n}$ | 3 |
+| Combined mean | $\bar{x}_C=\frac{\sum n_i\bar{x}_i}{\sum n_i}$ | 3 |
+| Range | $\max-\min$ | 3 |
+| IQR | $P_{75}-P_{25}$ | 3 |
+| Sample SD | $s=\sqrt{\frac{\sum(x-\bar{x})^2}{n-1}}$ | 3 |
+| Raw-score z | $Z=\frac{X-\mu}{\sigma}$ | 4 |
+| Basic probability | $P(A)=\frac{\#A}{\#S}$ | 5 |
+| Independent AND | $P(A\cap B)=P(A)P(B)$ | 5 |
+| Mutually exclusive OR | $P(A\cup B)=P(A)+P(B)$ | 5 |
+| Standard error | $\sigma_{\bar{x}}=\frac{\sigma}{\sqrt n}$ | 5 |
+| Sample-mean z | $Z=\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}$ | 5–6 |
+| Effect size | $ES=\frac{\bar{x}-\mu}{\sigma}$ | 6 |
+| Confidence interval | $CI=\bar{x}\pm Z_{crit}\sigma_{\bar{x}}$ | 6 |
+
+The most important exam skill is not memorizing isolated equations. It is recognizing **which quantity the denominator should represent**.
+
+---
+
+## 10. Three Denominators That Students Commonly Mix Up
+
+### Raw-score z
+
+
+$$
+Z=\frac{X-\mu}{\sigma}
+$$
+
+
+Denominator: **population SD**.
+
+### Sample-mean z
+
+
+$$
+Z=\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}
+$$
+
+
+Denominator: **standard error**.
+
+### Effect size
+
+
+$$
+ES=\frac{\bar{x}-\mu}{\sigma}
+$$
+
+
+Denominator: **population SD**, not standard error.
+
+This distinction is extremely high yield.
+
+---
+
+# Part IV — Cross-Week Connections
+
+## 11. Mean, SD, z, and Probability
+
+Week 3 gives you the mean and SD.
+
+Week 4 turns those into a standardized distance:
+
+
+$$
+Z=\frac{X-\mu}{\sigma}.
+$$
+
+
+Then the z table turns that standardized distance into probability.
+
+So:
+
+**center + spread → z → probability**
+
+---
+
+## 12. SD vs. Standard Error
+
+Standard deviation describes spread among **individual scores**.
+
+Standard error describes spread among **sample means**.
+
+
+$$
+SE
+=
+\frac{\sigma}{\sqrt n}.
+$$
+
+
+As $n$ increases, sample means cluster more tightly around the population mean.
+
+So:
+
+**SD describes people/scores; SE describes sample means.**
+
+---
+
+## 13. Sampling Distribution to Hypothesis Testing
+
+Week 5 asks:
+
+> What sample means would we expect if the population mean were $\mu$?
+
+Week 6 asks:
+
+> Is our observed sample mean too unusual under that expectation?
+
+That is why the hypothesis-test statistic is:
+
+
+$$
+Z_{obt}
+=
+\frac{\bar{x}-\mu}
+{SE}.
+$$
+
+
+---
+
+## 14. Significance, Effect Size, and Confidence Intervals
+
+These should be read together.
+
+### Significance
+
+> Is the observed result sufficiently unusual under $H_0$?
+
+### Effect size
+
+> How large is the standardized mean difference?
+
+### Confidence interval
+
+> What range of population values is compatible with the estimate under the course procedure?
+
+A statistically significant result can still have a small effect size.
+
+---
+
+## 15. Sample Size Connects Weeks 5 and 6
+
+Because:
+
+
+$$
+SE=\frac{\sigma}{\sqrt n},
+$$
+
+
+larger samples reduce SE.
+
+This makes the same raw mean difference produce a larger absolute z statistic.
+
+Therefore:
+
+
+$$
+n\uparrow
+\Rightarrow
+SE\downarrow
+\Rightarrow
+|Z|\uparrow
+\Rightarrow
+\text{power}\uparrow.
+$$
+
+
+This is one of the most important cross-week relationships on the midterm.
+
+---
+
+# Part V — Fast Decision Rules
+
+## 16. If You See This, Think This
+
+| If the question mentions... | Think... |
+|---|---|
+| categories or ranks | measurement scale |
+| “or less” | cumulative frequency |
+| middle / typical score | central tendency |
+| spread / variability | range, IQR, variance, SD |
+| long tail | skewness |
+| score relative to population | raw-score z |
+| all possible sample means | sampling distribution |
+| variability of sample means | standard error |
+| sample mean vs. known $\mu$ | sample-mean z |
+| “unlikely if $H_0$ is true” | NHST / p value |
+| reject a true $H_0$ | Type I error |
+| fail to reject a false $H_0$ | Type II error |
+| detect a real effect | power |
+| magnitude of effect | effect size |
+| plausible range around estimate | confidence interval |
+
+---
+
+## 17. Midterm Mistakes to Avoid
+
+- averaging group means when group sizes differ;
+- using $n$ instead of $n-1$ for sample variance;
+- confusing positive skew with “more high scores” rather than a tail toward high values;
+- using $\sigma$ instead of SE for a sample-mean z;
+- interpreting a p value as the probability that $H_0$ is true;
+- saying “accept $H_0$” instead of “fail to reject $H_0$”;
+- interpreting statistical significance as effect size;
+- thinking a larger sample changes the raw effect size itself;
+- forgetting to double a one-tail z-table area for a two-tailed p value.
+
+---
+
+# Part VI — Integrated Practice
+
+## 18. Practice Problem 1 — Measurement to Description
+
+A psychologist records weekly exercise time in minutes for 25 students.
+
+a. What scale of measurement is exercise time in minutes?  
+b. Should a bar chart or histogram be used?  
+c. If the distribution has a long right tail, what is the direction of skew?  
+d. Which measure of center is more resistant to the extreme high values: mean or median?
+
+### Answer
+
+a. Ratio.  
+b. Histogram.  
+c. Positive skew.  
+d. Median.
+
+---
+
+## 19. Practice Problem 2 — From Raw Scores to z
+
+A population has:
+
+
+$$
+\mu=70,\qquad \sigma=8.
+$$
+
+
+A student scores:
+
+
+$$
+X=82.
+$$
+
+
+a. Calculate the z score.  
+b. Interpret it.
+
+### Answer
+
+
+$$
+Z
+=
+\frac{82-70}{8}
+=
+1.50.
+$$
+
+
+The score is 1.5 population SDs above the mean.
+
+---
+
+## 20. Practice Problem 3 — From Population to Sampling Distribution
+
+A population has:
+
+
+$$
+\mu=100,\qquad \sigma=20.
+$$
+
+
+A researcher takes samples of:
+
+
+$$
+n=25.
+$$
+
+
+a. What is the mean of the sampling distribution?  
+b. What is the standard error?  
+c. If one sample has $\bar{x}=108$, calculate its z score.
+
+### Answer
+
+a.
+
+
+$$
+\mu_{\bar{x}}=100.
+$$
+
+
+b.
+
+
+$$
+SE
+=
+\frac{20}{\sqrt{25}}
+=
+4.
+$$
+
+
+c.
+
+
+$$
+Z
+=
+\frac{108-100}{4}
+=
+2.00.
+$$
+
+
+---
+
+## 21. Practice Problem 4 — Full NHST Chain
+
+Using the values from Problem 3, conduct a two-tailed test at:
+
+
+$$
+\alpha=.05.
+$$
+
+
+Use:
+
+
+$$
+Z_{crit}=\pm1.96.
+$$
+
+
+a. State $H_0$.  
+b. State $H_1$.  
+c. Make the decision.  
+d. If the one-tail area beyond $z=2.00$ is .0228, calculate the two-tailed p value.
+
+### Answer
+
+a.
+
+
+$$
+H_0:\mu=100.
+$$
+
+
+b.
+
+
+$$
+H_1:\mu\ne100.
+$$
+
+
+c. Since:
+
+
+$$
+|2.00|>1.96,
+$$
+
+
+reject $H_0$.
+
+d.
+
+
+$$
+p=2(.0228)=.0456.
+$$
+
+
+---
+
+## 22. Practice Problem 5 — Significance vs. Effect Size
+
+Using:
+
+
+$$
+\bar{x}=108,\quad \mu=100,\quad \sigma=20,
+$$
+
+
+calculate the effect size.
+
+### Answer
+
+
+$$
+ES
+=
+\frac{108-100}{20}
+=
+0.40.
+$$
+
+
+The result can be statistically significant while the standardized effect is still modest.
+
+---
+
+## 23. Practice Problem 6 — Confidence Interval
+
+Using:
+
+
+$$
+\bar{x}=108,\quad SE=4,
+$$
+
+
+calculate the 95% CI.
+
+### Answer
+
+
+$$
+CI
+=
+108
+\pm
+1.96(4)
+$$
+
+
+
+$$
+=
+108
+\pm
+7.84.
+$$
+
+
+Therefore:
+
+
+$$
+CI=[100.16,\ 115.84].
+$$
+
+
+The null value 100 is just outside the interval, consistent with rejecting $H_0$ at the corresponding two-tailed .05 level.
+
+---
+
+## 24. Practice Problem 7 — Power Reasoning
+
+For each change, state whether power generally increases or decreases.
+
+a. $n$ increases  
+b. $\sigma$ increases  
+c. effect size increases  
+d. $\alpha$ increases
+
+### Answer
+
+a. Increases.  
+b. Decreases.  
+c. Increases.  
+d. Increases.
+
+---
+
+# Part VII — Final Exam Checklist
+
+## 25. Conceptual Checklist
+
+Before the exam, you should be able to explain without notes:
+
+- population vs. sample;
+- descriptive vs. inferential statistics;
+- experimental vs. quasi-experimental vs. correlational designs;
+- NOIR;
+- bar chart vs. histogram;
+- mean vs. median vs. mode;
+- variance vs. SD;
+- positive vs. negative skew;
+- normal-distribution properties;
+- z-score interpretation;
+- sampling error;
+- sampling distribution;
+- standard error;
+- CLT;
+- $H_0$ vs. $H_1$;
+- alpha and critical regions;
+- p value;
+- Type I vs. Type II error;
+- power;
+- effect size;
+- confidence interval.
+
+---
+
+## 26. Computational Checklist
+
+You should be able to calculate:
+
+- summations;
+- frequencies, proportions, and percentages;
+- cumulative frequencies;
+- bin width;
+- mean;
+- weighted mean;
+- interpolated median/percentiles;
+- range;
+- IQR;
+- sample variance and SD;
+- raw-score z;
+- basic AND/OR probability;
+- standard error;
+- z for a sample mean;
+- p value from a z-table tail area;
+- effect size;
+- 95% CI.
+
+---
+
+## 27. Recommended Exam Workflow
+
+The official guide recommends managing time carefully because the exam includes both multiple-choice and multi-part short-answer questions.
+
+A practical sequence is:
+
+1. read the entire question before calculating;
+2. identify the variable/statistic being asked about;
+3. write down the relevant known values;
+4. choose the correct formula;
+5. calculate carefully;
+6. interpret the result in words;
+7. check whether the answer is plausible.
+
+For hypothesis-testing problems, a compact checklist is:
+
+**Hypotheses → alpha/tails → SE → $Z_{obt}$ → critical value/p → decision → interpretation**
+
+---
+
+# Part VIII — Where to Go for More Detail
+
+## 28. Weekly Study Guides
+
+Use the weekly Study Guides when you need a fuller explanation or additional worked examples:
+
+- [Week 1 — Course Introduction and Basic Concepts](week01-basic-concepts.qmd)
+- [Week 2 — Data Types and Visualization](week02-data-types-visualization.qmd)
+- [Week 3 — Central Tendency, Shape, and Variability](week03-central-tendency-variability.qmd)
+- [Week 4 — Standard Scores, Normal Distributions, and Probability](week04-standard-scores.qmd)
+- [Week 5 — Probability and the Central Limit Theorem](week05-probability-clt.qmd)
+- [Week 6 — Hypothesis Testing](week06-hypothesis-testing.qmd)
+
+Each weekly guide contains its own **Part VI — Midterm Review Guide**, which provides more week-specific practice and worked answers.
+
+---
+
+# Midterm Takeaway
+
+The midterm is not six disconnected topics.
+
+It is one chain:
+
+**research design → measurement → description → standardization → sampling → inference**
+
+If you understand that chain, the formulas become easier to choose because each formula answers a different question.
+
+The most important habit is therefore:
+
+> **Identify what statistical object you are working with before calculating anything.**
+
+Is it:
+
+- a raw score?
+- a sample mean?
+- a distribution?
+- a probability?
+- a population claim?
+
+Once that is clear, the correct method usually follows.

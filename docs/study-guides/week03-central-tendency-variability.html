@@ -199,7 +199,7 @@ window.Quarto = {
   <li><a href="#population-variance" id="toc-population-variance" class="nav-link" data-scroll-target="#population-variance">26. Population Variance</a></li>
   <li><a href="#standard-deviation-for-a-population" id="toc-standard-deviation-for-a-population" class="nav-link" data-scroll-target="#standard-deviation-for-a-population">27. Standard Deviation for a Population</a></li>
   <li><a href="#sample-variance" id="toc-sample-variance" class="nav-link" data-scroll-target="#sample-variance">28. Sample Variance</a></li>
-  <li><a href="#why-does-sample-variance-use-n-1" id="toc-why-does-sample-variance-use-n-1" class="nav-link" data-scroll-target="#why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use (n-1)?</a></li>
+  <li><a href="#why-does-sample-variance-use-n-1" id="toc-why-does-sample-variance-use-n-1" class="nav-link" data-scroll-target="#why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use <span class="math inline">\(n-1\)</span>?</a></li>
   <li><a href="#degrees-of-freedom" id="toc-degrees-of-freedom" class="nav-link" data-scroll-target="#degrees-of-freedom">30. Degrees of Freedom</a></li>
   <li><a href="#standard-deviation" id="toc-standard-deviation" class="nav-link" data-scroll-target="#standard-deviation">31. Standard Deviation</a></li>
   <li><a href="#variance-vs.-standard-deviation" id="toc-variance-vs.-standard-deviation" class="nav-link" data-scroll-target="#variance-vs.-standard-deviation">32. Variance vs.&nbsp;Standard Deviation</a></li>
@@ -245,9 +245,6 @@ window.Quarto = {
   <li><a href="#formula-sheet-connection" id="toc-formula-sheet-connection" class="nav-link" data-scroll-target="#formula-sheet-connection">Formula-Sheet Connection</a></li>
   <li><a href="#assignment-style-practice" id="toc-assignment-style-practice" class="nav-link" data-scroll-target="#assignment-style-practice">Assignment-Style Practice</a></li>
   <li><a href="#answers" id="toc-answers" class="nav-link" data-scroll-target="#answers">Answers</a></li>
-  </ul></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">[</a>
-  <ul class="collapse">
   <li><a href="#midterm-self-check" id="toc-midterm-self-check" class="nav-link" data-scroll-target="#midterm-self-check">Midterm Self-Check</a></li>
   </ul></li>
   </ul>
@@ -314,7 +311,7 @@ window.Quarto = {
 <li>Calculate and interpret the range and interquartile range.</li>
 <li>Explain <strong>deviation</strong>, <strong>sum of squares (SS)</strong>, <strong>variance</strong>, and <strong>standard deviation</strong>.</li>
 <li>Distinguish population variance from sample variance.</li>
-<li>Explain why sample variance uses (n-1) rather than (n).</li>
+<li>Explain why sample variance uses <span class="math inline">\(n-1\)</span> rather than <span class="math inline">\(n\)</span>.</li>
 <li>Explain degrees of freedom in the context of sample variance.</li>
 <li>Predict how adding/subtracting a constant or multiplying/dividing by a constant affects the mean, variance, and standard deviation.</li>
 <li>Choose useful measures of center and spread for variables in a real dataset.</li>
@@ -457,17 +454,17 @@ Md = LL + W\left[\frac{0.5n-cf}{f}\right].
 \]</span></p>
 <p>where:</p>
 <ul>
-<li>(LL) = lower real limit of the interval containing the median;</li>
-<li>(W) = interval width;</li>
-<li>(n) = sample size;</li>
-<li>(cf) = cumulative frequency below the median interval;</li>
-<li>(f) = frequency in the median interval.</li>
+<li><span class="math inline">\(LL\)</span> = lower real limit of the interval containing the median;</li>
+<li><span class="math inline">\(W\)</span> = interval width;</li>
+<li><span class="math inline">\(n\)</span> = sample size;</li>
+<li><span class="math inline">\(cf\)</span> = cumulative frequency below the median interval;</li>
+<li><span class="math inline">\(f\)</span> = frequency in the median interval.</li>
 </ul>
 <p>The procedure is:</p>
 <ol type="1">
 <li>create a cumulative frequency table in <strong>descending order</strong>;</li>
 <li>identify the row containing the 50th percentile;</li>
-<li>find (LL) and (W);</li>
+<li>find <span class="math inline">\(LL\)</span> and <span class="math inline">\(W\)</span>;</li>
 <li>use the cumulative frequency in the row below;</li>
 <li>use the frequency in the highlighted row;</li>
 <li>substitute into the formula (Sigal, 2026).</li>
@@ -486,9 +483,9 @@ X=\{1,2,2,3,4,4,4,4,4,5\}.
 <thead>
 <tr class="header">
 <th style="text-align: right;">Score</th>
-<th style="text-align: right;">(f)</th>
-<th style="text-align: right;">(cf)</th>
-<th style="text-align: right;">(cf%)</th>
+<th style="text-align: right;"><span class="math inline">\(f\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(cf\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(cf\%\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -527,11 +524,11 @@ X=\{1,2,2,3,4,4,4,4,4,5\}.
 <p>The 50th percentile lies in the row for score 4.</p>
 <p>Therefore:</p>
 <ul>
-<li>(LL=3.5)</li>
-<li>(W=1)</li>
-<li>(n=10)</li>
-<li>(cf=4)</li>
-<li>(f=5)</li>
+<li><span class="math inline">\(LL=3.5\)</span></li>
+<li><span class="math inline">\(W=1\)</span></li>
+<li><span class="math inline">\(n=10\)</span></li>
+<li><span class="math inline">\(cf=4\)</span></li>
+<li><span class="math inline">\(f=5\)</span></li>
 </ul>
 <p>Substitute:</p>
 <p><span class="math display">\[
@@ -557,8 +554,8 @@ Md
 <section id="a-course-specific-median-convention" class="level2">
 <h2 class="anchored" data-anchor-id="a-course-specific-median-convention">7. A Course-Specific Median Convention</h2>
 <p>There is an important methodological point here.</p>
-<p>For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when (n) is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).</p>
-<p>The supplemental median handout makes this intention explicit. It states that the quick ((n+1)/2) rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).</p>
+<p>For simple ungrouped raw data, many statistics texts define the median as the middle observed score, or the average of the two middle observed scores when <span class="math inline">\(n\)</span> is even. The Week 3 lecture deliberately goes beyond that quick rule and uses interpolation based on cumulative frequency—even when scores are tied—because the instructor wants students to conceptualize percentiles as positions within score intervals (Sigal, 2026).</p>
+<p>The supplemental median handout makes this intention explicit. It states that the quick <span class="math inline">\((n+1)/2\)</span> rule can be misleading for binned data with many ties and demonstrates a grouped age example in which the median is estimated as 24.1 rather than simply reporting the category 24–26 (PSYC 210 Teaching Team, 2026a).</p>
 <section id="for-this-course" class="level3">
 <h3 class="anchored" data-anchor-id="for-this-course">For this course</h3>
 <p>When solving course problems that ask for the formula-based median:</p>
@@ -571,7 +568,7 @@ Md
 </section>
 <section id="percentiles-beyond-the-median" class="level2">
 <h2 class="anchored" data-anchor-id="percentiles-beyond-the-median">8. Percentiles Beyond the Median</h2>
-<p>The (0.5) in the median formula is not arbitrary.</p>
+<p>The <span class="math inline">\(0.5\)</span> in the median formula is not arbitrary.</p>
 <p>It represents the desired percentile:</p>
 <p><span class="math display">\[
 P_{50}.
@@ -597,9 +594,9 @@ W\left[
 <thead>
 <tr class="header">
 <th>Interval</th>
-<th style="text-align: right;">(f)</th>
-<th style="text-align: right;">(cf)</th>
-<th style="text-align: right;">(cf%)</th>
+<th style="text-align: right;"><span class="math inline">\(f\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(cf\)</span></th>
+<th style="text-align: right;"><span class="math inline">\(cf\%\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -631,11 +628,11 @@ W\left[
 </table>
 <p>For the median interval 4–7:</p>
 <ul>
-<li>(LL=3.5)</li>
-<li>(W=7.5-3.5=4)</li>
-<li>(n=8)</li>
-<li>(cf=1)</li>
-<li>(f=3)</li>
+<li><span class="math inline">\(LL=3.5\)</span></li>
+<li><span class="math inline">\(W=7.5-3.5=4\)</span></li>
+<li><span class="math inline">\(n=8\)</span></li>
+<li><span class="math inline">\(cf=1\)</span></li>
+<li><span class="math inline">\(f=3\)</span></li>
 </ul>
 <p>Then:</p>
 <p><span class="math display">\[
@@ -648,7 +645,7 @@ Md
 =
 7.5.
 \]</span></p>
-<p>The same formula works because (W) explicitly represents the real width of the interval (Sigal, 2026).</p>
+<p>The same formula works because <span class="math inline">\(W\)</span> explicitly represents the real width of the interval (Sigal, 2026).</p>
 <hr>
 </section>
 <section id="supplemental-median-example" class="level2">
@@ -657,11 +654,11 @@ Md
 <p>The median falls in the <strong>24–26</strong> interval.</p>
 <p>The handout identifies:</p>
 <ul>
-<li>(LL=23.5)</li>
-<li>(W=3)</li>
-<li>(n=30)</li>
-<li>(cf=14)</li>
-<li>(f=5)</li>
+<li><span class="math inline">\(LL=23.5\)</span></li>
+<li><span class="math inline">\(W=3\)</span></li>
+<li><span class="math inline">\(n=30\)</span></li>
+<li><span class="math inline">\(cf=14\)</span></li>
+<li><span class="math inline">\(f=5\)</span></li>
 </ul>
 <p>Then:</p>
 <p><span class="math display">\[
@@ -676,7 +673,7 @@ Md
 <p><span class="math display">\[
 Md=24.1.
 \]</span></p>
-<p>The handout contrasts this with the quick ((n+1)/2) method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).</p>
+<p>The handout contrasts this with the quick <span class="math inline">\((n+1)/2\)</span> method and explains why the interpolated formula is preferred for this binned example (PSYC 210 Teaching Team, 2026a).</p>
 <hr>
 </section>
 <section id="the-mean" class="level2">
@@ -688,7 +685,7 @@ Md=24.1.
 =
 \frac{\sum x_i}{n}.
 \]</span></p>
-<p>The lecture notes that APA-style reporting commonly uses (M) for a sample mean, while () is used for a population mean (Sigal, 2026).</p>
+<p>The lecture notes that APA-style reporting commonly uses <span class="math inline">\(M\)</span> for a sample mean, while <span class="math inline">\(\mu\)</span> is used for a population mean (Sigal, 2026).</p>
 <p>For:</p>
 <p><span class="math display">\[
 X=\{3,7,4,6\},
@@ -709,8 +706,8 @@ X=\{3,7,4,6\},
 <h2 class="anchored" data-anchor-id="sample-and-population-mean-notation">12. Sample and Population Mean Notation</h2>
 <p>The lecture distinguishes:</p>
 <ul>
-<li>sample mean: ({x}) or (M);</li>
-<li>population mean: ().</li>
+<li>sample mean: <span class="math inline">\(\bar{x}\)</span> or <span class="math inline">\(M\)</span>;</li>
+<li>population mean: <span class="math inline">\(\mu\)</span>.</li>
 </ul>
 <p>The calculation itself is structurally the same:</p>
 <p><span class="math display">\[
@@ -728,8 +725,8 @@ M=\frac{\sum X}{n},
 <p>A simple average of group means is only correct when the groups contribute equal weight.</p>
 <p>Suppose:</p>
 <ul>
-<li>Group 1: ({x}_1=6,&nbsp;n_1=20)</li>
-<li>Group 2: ({x}_2=15,&nbsp;n_2=3)</li>
+<li>Group 1: <span class="math inline">\(\bar{x}_1=6,\ n_1=20\)</span></li>
+<li>Group 2: <span class="math inline">\(\bar{x}_2=15,\ n_2=3\)</span></li>
 </ul>
 <p>It would be wrong to calculate:</p>
 <p><span class="math display">\[
@@ -786,7 +783,7 @@ n_1+n_2+\cdots+n_k
 <tr class="header">
 <th>Group</th>
 <th style="text-align: right;">Mean</th>
-<th style="text-align: right;">(n)</th>
+<th style="text-align: right;"><span class="math inline">\(n\)</span></th>
 </tr>
 </thead>
 <tbody>
@@ -830,14 +827,14 @@ n_1+n_2+\cdots+n_k
 </section>
 <section id="add-a-constant-to-every-score" class="level3">
 <h3 class="anchored" data-anchor-id="add-a-constant-to-every-score">Add a constant to every score</h3>
-<p>If every observation increases by (c),</p>
+<p>If every observation increases by <span class="math inline">\(c\)</span>,</p>
 <p><span class="math display">\[
 M_{\text{new}}=M_{\text{old}}+c.
 \]</span></p>
 </section>
 <section id="multiply-every-score-by-a-constant" class="level3">
 <h3 class="anchored" data-anchor-id="multiply-every-score-by-a-constant">Multiply every score by a constant</h3>
-<p>If every observation is multiplied by (c),</p>
+<p>If every observation is multiplied by <span class="math inline">\(c\)</span>,</p>
 <p><span class="math display">\[
 M_{\text{new}}=cM_{\text{old}}.
 \]</span></p>
@@ -1061,9 +1058,9 @@ IQR=Q_3-Q_1.
 \]</span></p>
 <p>where:</p>
 <ul>
-<li>(Q_1) = 25th percentile;</li>
-<li>(Q_2) = median / 50th percentile;</li>
-<li>(Q_3) = 75th percentile.</li>
+<li><span class="math inline">\(Q_1\)</span> = 25th percentile;</li>
+<li><span class="math inline">\(Q_2\)</span> = median / 50th percentile;</li>
+<li><span class="math inline">\(Q_3\)</span> = 75th percentile.</li>
 </ul>
 <p>Because the top and bottom 25% are excluded, the IQR is less sensitive to extreme scores than the full range (Privitera, 2018, 2024).</p>
 <hr>
@@ -1117,7 +1114,7 @@ SS
 <ul>
 <li>negative signs disappear;</li>
 <li>larger deviations contribute more;</li>
-<li>(SS).</li>
+<li><span class="math inline">\(SS\ge0\)</span>.</li>
 </ul>
 <p>If every observation is identical, every deviation is zero, and:</p>
 <p><span class="math display">\[
@@ -1229,9 +1226,9 @@ s
 <hr>
 </section>
 <section id="why-does-sample-variance-use-n-1" class="level2">
-<h2 class="anchored" data-anchor-id="why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use (n-1)?</h2>
+<h2 class="anchored" data-anchor-id="why-does-sample-variance-use-n-1">29. Why Does Sample Variance Use <span class="math inline">\(n-1\)</span>?</h2>
 <p>This is one of the most important conceptual ideas in Week 3.</p>
-<p>If we calculate sample variance using (n), it tends to underestimate the population variance.</p>
+<p>If we calculate sample variance using <span class="math inline">\(n\)</span>, it tends to underestimate the population variance.</p>
 <p>Dividing by:</p>
 <p><span class="math display">\[
 n-1
@@ -1239,7 +1236,7 @@ n-1
 <p>makes the sample variance a better estimator of population variance on average (Privitera, 2018, 2024; Sigal, 2026).</p>
 <p>Privitera describes this as an <strong>unbiased estimator</strong>:</p>
 <blockquote class="blockquote">
-<p>Across repeated random samples, variance calculated with (n-1) equals the population variance on average.</p>
+<p>Across repeated random samples, variance calculated with <span class="math inline">\(n-1\)</span> equals the population variance on average.</p>
 </blockquote>
 <p>This correction is often associated with <strong>Bessel’s correction</strong>.</p>
 <hr>
@@ -1524,7 +1521,7 @@ M\pm SD.
 <p>↓</p>
 <p><strong>Sample or population?</strong></p>
 <p>↓</p>
-<p><strong>Use (N) or (n-1)</strong></p>
+<p><strong>Use <span class="math inline">\(N\)</span> or <span class="math inline">\(n-1\)</span></strong></p>
 <p>↓</p>
 <p><strong>Interpret center and spread together</strong></p>
 <p>This is the transition from simply organizing data to describing the mathematical structure of a distribution.</p>
@@ -1586,7 +1583,7 @@ M\pm SD.
 </tr>
 <tr class="odd">
 <td><strong>Interquartile range (IQR)</strong></td>
-<td>(Q_3-Q_1); spread of the middle 50%.</td>
+<td><span class="math inline">\(Q_3-Q_1\)</span>; spread of the middle 50%.</td>
 </tr>
 <tr class="even">
 <td><strong>Deviation</strong></td>
@@ -1598,11 +1595,11 @@ M\pm SD.
 </tr>
 <tr class="even">
 <td><strong>Population variance</strong></td>
-<td>(SS/N).</td>
+<td><span class="math inline">\(SS/N\)</span>.</td>
 </tr>
 <tr class="odd">
 <td><strong>Sample variance</strong></td>
-<td>(SS/(n-1)).</td>
+<td><span class="math inline">\(SS/(n-1)\)</span>.</td>
 </tr>
 <tr class="even">
 <td><strong>Standard deviation</strong></td>
@@ -1610,7 +1607,7 @@ M\pm SD.
 </tr>
 <tr class="odd">
 <td><strong>Degrees of freedom</strong></td>
-<td>Number of independently free scores used in estimating sample variance; (n-1).</td>
+<td>Number of independently free scores used in estimating sample variance; <span class="math inline">\(n-1\)</span>.</td>
 </tr>
 <tr class="even">
 <td><strong>Unbiased estimator</strong></td>
@@ -1656,11 +1653,11 @@ M\pm SD.
 </section>
 <section id="sample-and-population-variance-use-the-same-denominator." class="level3">
 <h3 class="anchored" data-anchor-id="sample-and-population-variance-use-the-same-denominator.">“Sample and population variance use the same denominator.”</h3>
-<p>No.&nbsp;Population variance divides by (N); sample variance divides by (n-1).</p>
+<p>No.&nbsp;Population variance divides by <span class="math inline">\(N\)</span>; sample variance divides by <span class="math inline">\(n-1\)</span>.</p>
 </section>
 <section id="using-n-1-is-just-a-strange-convention." class="level3">
-<h3 class="anchored" data-anchor-id="using-n-1-is-just-a-strange-convention.">“Using (n-1) is just a strange convention.”</h3>
-<p>No.&nbsp;It corrects the systematic downward bias that occurs when sample variance is calculated with (n), and it corresponds to the degrees of freedom available after estimating the mean.</p>
+<h3 class="anchored" data-anchor-id="using-n-1-is-just-a-strange-convention.">“Using <span class="math inline">\(n-1\)</span> is just a strange convention.”</h3>
+<p>No.&nbsp;It corrects the systematic downward bias that occurs when sample variance is calculated with <span class="math inline">\(n\)</span>, and it corresponds to the degrees of freedom available after estimating the mean.</p>
 </section>
 <section id="if-i-add-10-to-every-score-standard-deviation-increases-by-10." class="level3">
 <h3 class="anchored" data-anchor-id="if-i-add-10-to-every-score-standard-deviation-increases-by-10.">“If I add 10 to every score, standard deviation increases by 10.”</h3>
@@ -1703,8 +1700,8 @@ M\pm SD.
 <p>Because variance is in squared units. The square root produces standard deviation in the original units.</p>
 </section>
 <section id="why-n-1" class="level3">
-<h3 class="anchored" data-anchor-id="why-n-1">“Why (n-1)?”</h3>
-<p>Because estimating the sample mean consumes one degree of freedom, and dividing by (n-1) corrects the average downward bias in sample variance.</p>
+<h3 class="anchored" data-anchor-id="why-n-1">“Why <span class="math inline">\(n-1\)</span>?”</h3>
+<p>Because estimating the sample mean consumes one degree of freedom, and dividing by <span class="math inline">\(n-1\)</span> corrects the average downward bias in sample variance.</p>
 </section>
 <section id="why-does-adding-a-constant-not-change-sd" class="level3">
 <h3 class="anchored" data-anchor-id="why-does-adding-a-constant-not-change-sd">“Why does adding a constant not change SD?”</h3>
@@ -1733,8 +1730,8 @@ X=\{2,3,4,4,5,7,20\},
 <h2 class="anchored" data-anchor-id="weighted-mean">Weighted Mean</h2>
 <p>Two groups have:</p>
 <ul>
-<li>Group A: (M=8,&nbsp;n=10)</li>
-<li>Group B: (M=14,&nbsp;n=30)</li>
+<li>Group A: <span class="math inline">\(M=8,\ n=10\)</span></li>
+<li>Group B: <span class="math inline">\(M=14,\ n=30\)</span></li>
 </ul>
 <p>Calculate the combined mean.</p>
 </section>
@@ -1798,7 +1795,7 @@ M=10,\quad s=4,\quad s^2=16.
 <li>what SS represents;</li>
 <li>why variance squares deviations;</li>
 <li>why standard deviation is more directly interpretable than variance;</li>
-<li>why sample variance uses (n-1);</li>
+<li>why sample variance uses <span class="math inline">\(n-1\)</span>;</li>
 <li>what degrees of freedom mean;</li>
 <li>how linear transformations affect mean, variance, and standard deviation.</li>
 </ul>
@@ -1903,66 +1900,109 @@ M=10,\quad s=4,\quad s^2=16.
 <section id="median-and-percentile-interpolation" class="level2">
 <h2 class="anchored" data-anchor-id="median-and-percentile-interpolation">Median and Percentile Interpolation</h2>
 <p>The official formula sheet provides:</p>
-<p>[ Md = LL + W . ]</p>
+<p><span class="math display">\[
+Md
+=
+LL
++
+W
+\left[
+\frac{0.50(n)-cf_{\text{below}}}{f}
+\right].
+\]</span></p>
 <p>The general percentile formula is:</p>
-<p>[ P_x = LL + W . ]</p>
+<p><span class="math display">\[
+P_x
+=
+LL
++
+W
+\left[
+\frac{P_x(n)-cf_{\text{below}}}{f}
+\right].
+\]</span></p>
 <p>Know what each symbol means:</p>
 <ul>
-<li>(LL): lower real limit of the target interval;</li>
-<li>(W): interval width;</li>
-<li>(n): total sample size;</li>
-<li>(cf_{}): cumulative frequency below the target interval;</li>
-<li>(f): frequency within the target interval.</li>
+<li><span class="math inline">\(LL\)</span>: lower real limit of the target interval;</li>
+<li><span class="math inline">\(W\)</span>: interval width;</li>
+<li><span class="math inline">\(n\)</span>: total sample size;</li>
+<li><span class="math inline">\(cf_{\text{below}}\)</span>: cumulative frequency below the target interval;</li>
+<li><span class="math inline">\(f\)</span>: frequency within the target interval.</li>
 </ul>
 <p>For this course, frequency tables used for these calculations are arranged <strong>in descending order</strong>, so the cumulative frequency below the target row represents smaller scores.</p>
 </section>
 <section id="mean-and-weighted-mean" class="level2">
 <h2 class="anchored" data-anchor-id="mean-and-weighted-mean">Mean and Weighted Mean</h2>
 <p>The mean is:</p>
-<p>[ {x} = . ]</p>
+<p><span class="math display">\[
+\bar{x}
+=
+\frac{\sum x_i}{n}.
+\]</span></p>
 <p>When combining groups of unequal size, use the combined mean:</p>
-<p>[ {x}_C = {n_1+n_2++n_k}. ]</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{n_1\bar{x}_1+n_2\bar{x}_2+\cdots+n_k\bar{x}_k}
+{n_1+n_2+\cdots+n_k}.
+\]</span></p>
 <p>Do not simply average group means unless the group sizes are equal.</p>
 </section>
 <section id="variability-1" class="level2">
 <h2 class="anchored" data-anchor-id="variability-1">Variability</h2>
 <section id="range" class="level3">
 <h3 class="anchored" data-anchor-id="range">Range</h3>
-<p>[ = -. ]</p>
+<p><span class="math display">\[
+\text{Range}
+=
+\max-\min.
+\]</span></p>
 </section>
 <section id="interquartile-range-1" class="level3">
 <h3 class="anchored" data-anchor-id="interquartile-range-1">Interquartile range</h3>
-<p>[ IQR=P_{75}-P_{25}. ]</p>
+<p><span class="math display">\[
+IQR=P_{75}-P_{25}.
+\]</span></p>
 </section>
 <section id="sum-of-squares-1" class="level3">
 <h3 class="anchored" data-anchor-id="sum-of-squares-1">Sum of squares</h3>
-<p>[ SS=(x-{x})^2. ]</p>
+<p><span class="math display">\[
+SS=\sum(x-\bar{x})^2.
+\]</span></p>
 <p>The unsquared deviations sum to zero, so the deviations are squared before averaging.</p>
 </section>
 <section id="sample-variance-1" class="level3">
 <h3 class="anchored" data-anchor-id="sample-variance-1">Sample variance</h3>
-<p>[ s^2 = . ]</p>
-<p>The denominator (n-1) is the degrees of freedom.</p>
+<p><span class="math display">\[
+s^2
+=
+\frac{\sum(x-\bar{x})^2}{n-1}.
+\]</span></p>
+<p>The denominator <span class="math inline">\(n-1\)</span> is the degrees of freedom.</p>
 </section>
 <section id="sample-standard-deviation" class="level3">
 <h3 class="anchored" data-anchor-id="sample-standard-deviation">Sample standard deviation</h3>
-<p>[ s = . ]</p>
+<p><span class="math display">\[
+s
+=
+\sqrt{s^2}.
+\]</span></p>
 <p>Standard deviation returns variability to the original measurement units.</p>
 </section>
 </section>
 <section id="transformations-1" class="level2">
 <h2 class="anchored" data-anchor-id="transformations-1">Transformations</h2>
-<p>If a constant (C) is added to every score:</p>
+<p>If a constant <span class="math inline">\(C\)</span> is added to every score:</p>
 <ul>
-<li>mean increases by (C);</li>
+<li>mean increases by <span class="math inline">\(C\)</span>;</li>
 <li>variance is unchanged;</li>
 <li>SD is unchanged.</li>
 </ul>
-<p>If every score is multiplied by (C):</p>
+<p>If every score is multiplied by <span class="math inline">\(C\)</span>:</p>
 <ul>
-<li>mean is multiplied by (C);</li>
-<li>SD is multiplied by (|C|);</li>
-<li>variance is multiplied by (C^2).</li>
+<li>mean is multiplied by <span class="math inline">\(C\)</span>;</li>
+<li>SD is multiplied by <span class="math inline">\(|C|\)</span>;</li>
+<li>variance is multiplied by <span class="math inline">\(C^2\)</span>.</li>
 </ul>
 </section>
 <section id="shape-and-skewness" class="level2">
@@ -1972,28 +2012,58 @@ M=10,\quad s=4,\quad s^2=16.
 <p>A <strong>negatively skewed</strong> distribution has a long tail toward lower values.</p>
 <p>The tail points in the direction of the skew.</p>
 <p>For meaningful positive skew:</p>
-<p>[ &gt;. ]</p>
+<p><span class="math display">\[
+\text{mean}&gt;\text{median}.
+\]</span></p>
 <p>For meaningful negative skew:</p>
-<p>[ &lt;. ]</p>
+<p><span class="math display">\[
+\text{mean}&lt;\text{median}.
+\]</span></p>
 <p>Because the median is less affected by extreme values, it is often the better center for a skewed distribution.</p>
 </section>
 <section id="formula-sheet-connection" class="level2">
 <h2 class="anchored" data-anchor-id="formula-sheet-connection">Formula-Sheet Connection</h2>
 <p>Week 3 uses several of the official formulas:</p>
-<p>[ Md = LL+W]</p>
-<p>[ P_x = LL+W]</p>
-<p>[ {x}= ]</p>
-<p>[ {x}_C = ]</p>
-<p>[ =- ]</p>
-<p>[ IQR=P_{75}-P_{25} ]</p>
-<p>[ s = . ]</p>
+<p><span class="math display">\[
+Md
+=
+LL+W\left[\frac{0.5(n)-cf}{f}\right]
+\]</span></p>
+<p><span class="math display">\[
+P_x
+=
+LL+W\left[\frac{P_x(n)-cf}{f}\right]
+\]</span></p>
+<p><span class="math display">\[
+\bar{x}=\frac{\sum x_i}{n}
+\]</span></p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{\sum n_i\bar{x}_i}{\sum n_i}
+\]</span></p>
+<p><span class="math display">\[
+\text{Range}=\max-\min
+\]</span></p>
+<p><span class="math display">\[
+IQR=P_{75}-P_{25}
+\]</span></p>
+<p><span class="math display">\[
+s
+=
+\sqrt{
+\frac{\sum(x_i-\bar{x})^2}{n-1}
+}.
+\]</span></p>
 </section>
 <section id="assignment-style-practice" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-style-practice">Assignment-Style Practice</h2>
 <section id="question-1-center-and-spread-5" class="level3">
 <h3 class="anchored" data-anchor-id="question-1-center-and-spread-5">Question 1 — Center and spread (/5)</h3>
 <p>For:</p>
-<p>[ X={5,8,3,2,7}, ]</p>
+<p><span class="math display">\[
+X=\{5,8,3,2,7\},
+\]</span></p>
 <p>calculate:</p>
 <ol type="a">
 <li>mean<br>
@@ -2009,8 +2079,8 @@ M=10,\quad s=4,\quad s^2=16.
 </section>
 <section id="question-2-weighted-mean-2" class="level3">
 <h3 class="anchored" data-anchor-id="question-2-weighted-mean-2">Question 2 — Weighted mean (/2)</h3>
-<p>Group A has (n=20) and ({x}=72).<br>
-Group B has (n=30) and ({x}=78).</p>
+<p>Group A has <span class="math inline">\(n=20\)</span> and <span class="math inline">\(\bar{x}=72\)</span>.<br>
+Group B has <span class="math inline">\(n=30\)</span> and <span class="math inline">\(\bar{x}=78\)</span>.</p>
 <ol type="a">
 <li>Calculate the combined mean.<br>
 </li>
@@ -2020,7 +2090,9 @@ Group B has (n=30) and ({x}=78).</p>
 <section id="question-3-transformations-4" class="level3">
 <h3 class="anchored" data-anchor-id="question-3-transformations-4">Question 3 — Transformations (/4)</h3>
 <p>A class has:</p>
-<p>[ {x}=64,s=8,s^2=64. ]</p>
+<p><span class="math display">\[
+\bar{x}=64,\qquad s=8,\qquad s^2=64.
+\]</span></p>
 <ol type="a">
 <li>Every score receives 5 bonus points. Find the new mean, SD, and variance.<br>
 </li>
@@ -2040,18 +2112,22 @@ Group B has (n=30) and ({x}=78).</p>
 </section>
 <section id="question-5-grouped-median-4" class="level3">
 <h3 class="anchored" data-anchor-id="question-5-grouped-median-4">Question 5 — Grouped median (/4)</h3>
-<p>A descending grouped frequency table has (n=40). The median falls in the interval 100–109, where:</p>
-<p>[ LL=99.5,W=10,f=14,cf_{}=10. ]</p>
+<p>A descending grouped frequency table has <span class="math inline">\(n=40\)</span>. The median falls in the interval 100–109, where:</p>
+<p><span class="math display">\[
+LL=99.5,\quad W=10,\quad f=14,\quad cf_{\text{below}}=10.
+\]</span></p>
 <p>Calculate the interpolated median.</p>
 </section>
 <section id="question-6-iqr-3" class="level3">
 <h3 class="anchored" data-anchor-id="question-6-iqr-3">Question 6 — IQR (/3)</h3>
 <p>Using the same grouped example, suppose:</p>
-<p>[ P_{75}=115.50,P_{25}=99.50. ]</p>
+<p><span class="math display">\[
+P_{75}=115.50,\qquad P_{25}=99.50.
+\]</span></p>
 <ol type="a">
 <li>Calculate the IQR.<br>
 </li>
-<li>What portion of the distribution lies between (P_{25}) and (P_{75})?</li>
+<li>What portion of the distribution lies between <span class="math inline">\(P_{25}\)</span> and <span class="math inline">\(P_{75}\)</span>?</li>
 </ol>
 </section>
 </section>
@@ -2059,20 +2135,50 @@ Group B has (n=30) and ({x}=78).</p>
 <h2 class="anchored" data-anchor-id="answers">Answers</h2>
 <section id="question-1" class="level3">
 <h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
-<p>[ {x} = = 5. ]</p>
-<p>Ordered scores: (2,3,5,7,8), so:</p>
-<p>[ Md=5. ]</p>
-<p>[ =8-2=6. ]</p>
+<p><span class="math display">\[
+\bar{x}
+=
+\frac{5+8+3+2+7}{5}
+=
+5.
+\]</span></p>
+<p>Ordered scores: <span class="math inline">\(2,3,5,7,8\)</span>, so:</p>
+<p><span class="math display">\[
+Md=5.
+\]</span></p>
+<p><span class="math display">\[
+\text{Range}=8-2=6.
+\]</span></p>
 <p>Squared deviations from 5:</p>
-<p>[ 0,9,4,9,4. ]</p>
+<p><span class="math display">\[
+0,9,4,9,4.
+\]</span></p>
 <p>Thus:</p>
-<p>[ SS=26. ]</p>
-<p>[ s^2 = = 6.5. ]</p>
-<p>[ s=. ]</p>
+<p><span class="math display">\[
+SS=26.
+\]</span></p>
+<p><span class="math display">\[
+s^2
+=
+\frac{26}{4}
+=
+6.5.
+\]</span></p>
+<p><span class="math display">\[
+s=\sqrt{6.5}\approx2.55.
+\]</span></p>
 </section>
 <section id="question-2" class="level3">
 <h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
-<p>[ {x}_C = = = 75.6. ]</p>
+<p><span class="math display">\[
+\bar{x}_C
+=
+\frac{20(72)+30(78)}{50}
+=
+\frac{3780}{50}
+=
+75.6.
+\]</span></p>
 <p>The groups have unequal sample sizes, so the larger group must receive more weight.</p>
 </section>
 <section id="question-3" class="level3">
@@ -2080,11 +2186,15 @@ Group B has (n=30) and ({x}=78).</p>
 <ol type="a">
 <li>Add 5:</li>
 </ol>
-<p>[ {x}<em>{new}=69,s</em>{new}=8,s^2_{new}=64. ]</p>
+<p><span class="math display">\[
+\bar{x}_{new}=69,\qquad s_{new}=8,\qquad s^2_{new}=64.
+\]</span></p>
 <ol start="2" type="a">
 <li>Multiply by 2:</li>
 </ol>
-<p>[ {x}<em>{new}=128,s</em>{new}=16,s^2_{new}=256. ]</p>
+<p><span class="math display">\[
+\bar{x}_{new}=128,\qquad s_{new}=16,\qquad s^2_{new}=256.
+\]</span></p>
 </section>
 <section id="question-4" class="level3">
 <h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
@@ -2098,22 +2208,34 @@ Group B has (n=30) and ({x}=78).</p>
 </section>
 <section id="question-5" class="level3">
 <h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
-<p>[ Md = 99.5 + 10 ]</p>
+<p><span class="math display">\[
+Md
+=
+99.5
++
+10
+\left[
+\frac{20-10}{14}
+\right]
+\]</span></p>
+<p><span class="math display">\[
+=
+99.5+10(0.7143)
+\approx106.64.
+\]</span></p>
 </section>
-</section>
-</section>
-<section id="section" class="level1">
-<h1>[</h1>
-<p>99.5+10(0.7143) . ]</p>
 <section id="question-6" class="level3">
 <h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
 <ol type="a">
 <li></li>
 </ol>
-<p>[ IQR=115.50-99.50=16.00. ]</p>
+<p><span class="math display">\[
+IQR=115.50-99.50=16.00.
+\]</span></p>
 <ol start="2" type="a">
 <li>The middle 50% of the distribution.</li>
 </ol>
+</section>
 </section>
 <section id="midterm-self-check" class="level2">
 <h2 class="anchored" data-anchor-id="midterm-self-check">Midterm Self-Check</h2>
@@ -2121,7 +2243,7 @@ Group B has (n=30) and ({x}=78).</p>
 <ul>
 <li>mode vs.&nbsp;median vs.&nbsp;mean;</li>
 <li>why the mean is more sensitive to outliers;</li>
-<li>why sample variance uses (n-1);</li>
+<li>why sample variance uses <span class="math inline">\(n-1\)</span>;</li>
 <li>why deviations are squared;</li>
 <li>variance vs.&nbsp;standard deviation;</li>
 <li>how adding or multiplying a constant changes mean/SD/variance;</li>

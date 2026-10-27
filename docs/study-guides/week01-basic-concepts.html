@@ -1450,27 +1450,41 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 </section>
 <section id="variable-notation" class="level3">
 <h3 class="anchored" data-anchor-id="variable-notation">Variable notation</h3>
-<p>A variable is often written as (X). Individual observations are written as (x_i), where (i) is an index.</p>
+<p>A variable is often written as <span class="math inline">\(X\)</span>. Individual observations are written as <span class="math inline">\(x_i\)</span>, where <span class="math inline">\(i\)</span> is an index.</p>
 <p>For example, if:</p>
-<p>[ X={101,99,87,114,105,92,110,83}, ]</p>
+<p><span class="math display">\[
+X=\{101,99,87,114,105,92,110,83\},
+\]</span></p>
 <p>then:</p>
-<p>[ x_4=114. ]</p>
+<p><span class="math display">\[
+x_4=114.
+\]</span></p>
 </section>
 <section id="summation-notation-1" class="level3">
 <h3 class="anchored" data-anchor-id="summation-notation-1">Summation notation</h3>
 <p>The symbol:</p>
-<p>[ ]</p>
+<p><span class="math display">\[
+\sum
+\]</span></p>
 <p>means “add.”</p>
 <p>For:</p>
-<p>[ _{i=1}^{N}x_i, ]</p>
-<p>start with observation 1 and continue through observation (N).</p>
+<p><span class="math display">\[
+\sum_{i=1}^{N}x_i,
+\]</span></p>
+<p>start with observation 1 and continue through observation <span class="math inline">\(N\)</span>.</p>
 <p>A restricted sum such as:</p>
-<p>[ _{i=4}^{7}x_i ]</p>
+<p><span class="math display">\[
+\sum_{i=4}^{7}x_i
+\]</span></p>
 <p>includes only observations 4, 5, 6, and 7.</p>
 <p>The most important distinction is:</p>
-<p>[ (x_i)^2 ]</p>
+<p><span class="math display">\[
+\left(\sum x_i\right)^2
+\]</span></p>
 <p>versus:</p>
-<p>[ x_i^2. ]</p>
+<p><span class="math display">\[
+\sum x_i^2.
+\]</span></p>
 <p>The first means <strong>sum first, then square</strong>. The second means <strong>square each observation first, then sum</strong>.</p>
 </section>
 </section>
@@ -1483,20 +1497,22 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 <section id="question-1-summation-notation-6" class="level3">
 <h3 class="anchored" data-anchor-id="question-1-summation-notation-6">Question 1 — Summation notation (/6)</h3>
 <p>Given:</p>
-<p>[ x_i={5,8,4,7,6}, ]</p>
+<p><span class="math display">\[
+x_i=\{5,8,4,7,6\},
+\]</span></p>
 <p>calculate:</p>
 <ol type="a">
-<li>(x_i)<br>
+<li><span class="math inline">\(\sum x_i\)</span><br>
 </li>
-<li>(x_i^2)<br>
+<li><span class="math inline">\(\sum x_i^2\)</span><br>
 </li>
-<li>([x_i]^2)<br>
+<li><span class="math inline">\([\sum x_i]^2\)</span><br>
 </li>
-<li>((x_i+2))<br>
+<li><span class="math inline">\(\sum(x_i+2)\)</span><br>
 </li>
-<li>(_{i=2}^{4}x_i)<br>
+<li><span class="math inline">\(\sum_{i=2}^{4}x_i\)</span><br>
 </li>
-<li>(_{i=2}^{4}(2x_i))</li>
+<li><span class="math inline">\(\sum_{i=2}^{4}(2x_i)\)</span></li>
 </ol>
 </section>
 <section id="question-2-design-logic-3" class="level3">
@@ -1531,20 +1547,22 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 <section id="question-5-variable-notation-2" class="level3">
 <h3 class="anchored" data-anchor-id="question-5-variable-notation-2">Question 5 — Variable notation (/2)</h3>
 <p>Using:</p>
-<p>[ X={12,9,15,11,8,14}, ]</p>
+<p><span class="math display">\[
+X=\{12,9,15,11,8,14\},
+\]</span></p>
 <ol type="a">
-<li>What is (x_3)?<br>
+<li>What is <span class="math inline">\(x_3\)</span>?<br>
 </li>
-<li>What is (_{i=2}^{5}x_i)?</li>
+<li>What is <span class="math inline">\(\sum_{i=2}^{5}x_i\)</span>?</li>
 </ol>
 </section>
 <section id="question-6-order-of-operations-2" class="level3">
 <h3 class="anchored" data-anchor-id="question-6-order-of-operations-2">Question 6 — Order of operations (/2)</h3>
 <p>Evaluate:</p>
 <ol type="a">
-<li>(4+3(5-2)^2)<br>
+<li><span class="math inline">\(4+3(5-2)^2\)</span><br>
 </li>
-<li>((4+3)(5-2)^2)</li>
+<li><span class="math inline">\((4+3)(5-2)^2\)</span></li>
 </ol>
 </section>
 </section>
@@ -1553,12 +1571,12 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 <section id="question-1" class="level3">
 <h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
 <ol type="a">
-<li><p>(x_i=5+8+4+7+6=30)</p></li>
-<li><p>(x_i^2=25+64+16+49+36=190)</p></li>
-<li><p>([x_i]<sup>2=30</sup>2=900)</p></li>
-<li><p>((x_i+2)=7+10+6+9+8=40)</p></li>
-<li><p>(_{i=2}^{4}x_i=8+4+7=19)</p></li>
-<li><p>(_{i=2}^{4}(2x_i)=16+8+14=38)</p></li>
+<li><p><span class="math inline">\(\sum x_i=5+8+4+7+6=30\)</span></p></li>
+<li><p><span class="math inline">\(\sum x_i^2=25+64+16+49+36=190\)</span></p></li>
+<li><p><span class="math inline">\([\sum x_i]^2=30^2=900\)</span></p></li>
+<li><p><span class="math inline">\(\sum(x_i+2)=7+10+6+9+8=40\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{i=2}^{4}x_i=8+4+7=19\)</span></p></li>
+<li><p><span class="math inline">\(\sum_{i=2}^{4}(2x_i)=16+8+14=38\)</span></p></li>
 </ol>
 </section>
 <section id="question-2" class="level3">
@@ -1590,17 +1608,17 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 <section id="question-5" class="level3">
 <h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
 <ol type="a">
-<li>(x_3=15).<br>
+<li><span class="math inline">\(x_3=15\)</span>.<br>
 </li>
-<li>(9+15+11+8=43).</li>
+<li><span class="math inline">\(9+15+11+8=43\)</span>.</li>
 </ol>
 </section>
 <section id="question-6" class="level3">
 <h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
 <ol type="a">
-<li>(4+3(3^2)=4+27=31).<br>
+<li><span class="math inline">\(4+3(3^2)=4+27=31\)</span>.<br>
 </li>
-<li>(7(3^2)=7(9)=63).</li>
+<li><span class="math inline">\(7(3^2)=7(9)=63\)</span>.</li>
 </ol>
 </section>
 </section>
@@ -1612,9 +1630,9 @@ If it generalizes beyond the sample to a population, it is inferential.</p>
 <li>experimental vs.&nbsp;quasi-experimental vs.&nbsp;correlational design;</li>
 <li>descriptive vs.&nbsp;inferential statistics;</li>
 <li>population vs.&nbsp;sample;</li>
-<li>what (x_i) means;</li>
+<li>what <span class="math inline">\(x_i\)</span> means;</li>
 <li>what the limits on a summation sign mean;</li>
-<li>why ((x)^2) and (x^2) are different.</li>
+<li>why <span class="math inline">\((\sum x)^2\)</span> and <span class="math inline">\(\sum x^2\)</span> are different.</li>
 </ul>
 
 
