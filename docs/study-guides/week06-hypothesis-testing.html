@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 06 — Hypothesis Testing – Data Analysis: Learning &amp; Teaching</title>
+<title>Week 06 — Hypothesis Testing, Significance, Effect Size, and Power – Data Analysis: Learning &amp; Teaching</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -75,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -131,22 +160,90 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
-  <ul>
+  <ul class="collapse">
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
-  <li><a href="#key-concepts" id="toc-key-concepts" class="nav-link" data-scroll-target="#key-concepts">Key Concepts</a></li>
-  <li><a href="#how-the-concepts-fit-together" id="toc-how-the-concepts-fit-together" class="nav-link" data-scroll-target="#how-the-concepts-fit-together">How the Concepts Fit Together</a></li>
-  <li><a href="#important-terms" id="toc-important-terms" class="nav-link" data-scroll-target="#important-terms">Important Terms</a></li>
-  <li><a href="#worked-examples" id="toc-worked-examples" class="nav-link" data-scroll-target="#worked-examples">Worked Examples</a></li>
-  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">Common Misunderstandings</a></li>
-  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">Tutorial Preparation</a></li>
-  <li><a href="#practice-questions" id="toc-practice-questions" class="nav-link" data-scroll-target="#practice-questions">Practice Questions</a>
+  <li><a href="#part-i-from-sampling-distributions-to-hypothesis-testing" id="toc-part-i-from-sampling-distributions-to-hypothesis-testing" class="nav-link" data-scroll-target="#part-i-from-sampling-distributions-to-hypothesis-testing">Part I — From Sampling Distributions to Hypothesis Testing</a>
   <ul class="collapse">
-  <li><a href="#conceptual-questions" id="toc-conceptual-questions" class="nav-link" data-scroll-target="#conceptual-questions">Conceptual Questions</a></li>
-  <li><a href="#applied-questions" id="toc-applied-questions" class="nav-link" data-scroll-target="#applied-questions">Applied Questions</a></li>
+  <li><a href="#review-individual-score-vs.-sample-mean" id="toc-review-individual-score-vs.-sample-mean" class="nav-link" data-scroll-target="#review-individual-score-vs.-sample-mean">1. Review: Individual Score vs.&nbsp;Sample Mean</a></li>
+  <li><a href="#the-big-idea-of-hypothesis-testing" id="toc-the-big-idea-of-hypothesis-testing" class="nav-link" data-scroll-target="#the-big-idea-of-hypothesis-testing">2. The Big Idea of Hypothesis Testing</a></li>
+  <li><a href="#the-null-and-alternative-hypotheses" id="toc-the-null-and-alternative-hypotheses" class="nav-link" data-scroll-target="#the-null-and-alternative-hypotheses">3. The Null and Alternative Hypotheses</a></li>
+  <li><a href="#why-begin-with-the-null" id="toc-why-begin-with-the-null" class="nav-link" data-scroll-target="#why-begin-with-the-null">4. Why Begin With the Null?</a></li>
+  <li><a href="#the-steps-of-hypothesis-testing" id="toc-the-steps-of-hypothesis-testing" class="nav-link" data-scroll-target="#the-steps-of-hypothesis-testing">5. The Steps of Hypothesis Testing</a></li>
+  <li><a href="#hypothesis-testing-as-a-sampling-distribution-problem" id="toc-hypothesis-testing-as-a-sampling-distribution-problem" class="nav-link" data-scroll-target="#hypothesis-testing-as-a-sampling-distribution-problem">6. Hypothesis Testing as a Sampling-Distribution Problem</a></li>
   </ul></li>
-  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">What You Should Be Able to Explain</a></li>
-  <li><a href="#reading" id="toc-reading" class="nav-link" data-scroll-target="#reading">Reading</a></li>
+  <li><a href="#part-ii-decision-criteria-errors-and-power" id="toc-part-ii-decision-criteria-errors-and-power" class="nav-link" data-scroll-target="#part-ii-decision-criteria-errors-and-power">Part II — Decision Criteria, Errors, and Power</a>
+  <ul class="collapse">
+  <li><a href="#the-alpha-level" id="toc-the-alpha-level" class="nav-link" data-scroll-target="#the-alpha-level">7. The Alpha Level</a></li>
+  <li><a href="#critical-values-and-rejection-regions" id="toc-critical-values-and-rejection-regions" class="nav-link" data-scroll-target="#critical-values-and-rejection-regions">8. Critical Values and Rejection Regions</a></li>
+  <li><a href="#translating-critical-z-values-back-to-raw-units" id="toc-translating-critical-z-values-back-to-raw-units" class="nav-link" data-scroll-target="#translating-critical-z-values-back-to-raw-units">9. Translating Critical z Values Back to Raw Units</a></li>
+  <li><a href="#type-i-and-type-ii-errors" id="toc-type-i-and-type-ii-errors" class="nav-link" data-scroll-target="#type-i-and-type-ii-errors">10. Type I and Type II Errors</a></li>
+  <li><a href="#false-positives-and-false-negatives" id="toc-false-positives-and-false-negatives" class="nav-link" data-scroll-target="#false-positives-and-false-negatives">11. False Positives and False Negatives</a></li>
+  <li><a href="#power" id="toc-power" class="nav-link" data-scroll-target="#power">12. Power</a></li>
+  <li><a href="#what-increases-power" id="toc-what-increases-power" class="nav-link" data-scroll-target="#what-increases-power">13. What Increases Power?</a></li>
+  <li><a href="#what-drives-statistical-significance" id="toc-what-drives-statistical-significance" class="nav-link" data-scroll-target="#what-drives-statistical-significance">14. What Drives Statistical Significance?</a></li>
+  <li><a href="#sample-size-and-the-same-observed-effect" id="toc-sample-size-and-the-same-observed-effect" class="nav-link" data-scroll-target="#sample-size-and-the-same-observed-effect">15. Sample Size and the Same Observed Effect</a></li>
+  </ul></li>
+  <li><a href="#part-iii-the-one-sample-z-test" id="toc-part-iii-the-one-sample-z-test" class="nav-link" data-scroll-target="#part-iii-the-one-sample-z-test">Part III — The One-Sample z Test</a>
+  <ul class="collapse">
+  <li><a href="#when-is-the-one-sample-z-test-used" id="toc-when-is-the-one-sample-z-test-used" class="nav-link" data-scroll-target="#when-is-the-one-sample-z-test-used">16. When Is the One-Sample z Test Used?</a></li>
+  <li><a href="#requirements-and-assumptions" id="toc-requirements-and-assumptions" class="nav-link" data-scroll-target="#requirements-and-assumptions">17. Requirements and Assumptions</a></li>
+  <li><a href="#the-z-test-statistic" id="toc-the-z-test-statistic" class="nav-link" data-scroll-target="#the-z-test-statistic">18. The z Test Statistic</a></li>
+  <li><a href="#worked-reaction-time-example" id="toc-worked-reaction-time-example" class="nav-link" data-scroll-target="#worked-reaction-time-example">19. Worked Reaction-Time Example</a></li>
+  <li><a href="#the-p-value" id="toc-the-p-value" class="nav-link" data-scroll-target="#the-p-value">20. The p Value</a></li>
+  <li><a href="#decision-language" id="toc-decision-language" class="nav-link" data-scroll-target="#decision-language">21. Decision Language</a></li>
+  <li><a href="#one-tailed-and-two-tailed-tests" id="toc-one-tailed-and-two-tailed-tests" class="nav-link" data-scroll-target="#one-tailed-and-two-tailed-tests">22. One-Tailed and Two-Tailed Tests</a></li>
+  <li><a href="#why-directionality-matters" id="toc-why-directionality-matters" class="nav-link" data-scroll-target="#why-directionality-matters">23. Why Directionality Matters</a></li>
+  <li><a href="#worksheet-logic-check-one-tailed-vs.-two-tailed" id="toc-worksheet-logic-check-one-tailed-vs.-two-tailed" class="nav-link" data-scroll-target="#worksheet-logic-check-one-tailed-vs.-two-tailed">24. Worksheet Logic Check: One-Tailed vs.&nbsp;Two-Tailed</a></li>
+  <li><a href="#worked-maze-example" id="toc-worked-maze-example" class="nav-link" data-scroll-target="#worked-maze-example">25. Worked Maze Example</a></li>
+  </ul></li>
+  <li><a href="#part-iv-beyond-significance-effect-size-and-confidence-intervals" id="toc-part-iv-beyond-significance-effect-size-and-confidence-intervals" class="nav-link" data-scroll-target="#part-iv-beyond-significance-effect-size-and-confidence-intervals">Part IV — Beyond Significance: Effect Size and Confidence Intervals</a>
+  <ul class="collapse">
+  <li><a href="#why-statistical-significance-is-not-enough" id="toc-why-statistical-significance-is-not-enough" class="nav-link" data-scroll-target="#why-statistical-significance-is-not-enough">26. Why Statistical Significance Is Not Enough</a></li>
+  <li><a href="#cohens-d-for-the-one-sample-z-test" id="toc-cohens-d-for-the-one-sample-z-test" class="nav-link" data-scroll-target="#cohens-d-for-the-one-sample-z-test">27. Cohen’s (d) for the One-Sample z Test</a></li>
+  <li><a href="#reaction-time-effect-size" id="toc-reaction-time-effect-size" class="nav-link" data-scroll-target="#reaction-time-effect-size">28. Reaction-Time Effect Size</a></li>
+  <li><a href="#significance-vs.-effect-size" id="toc-significance-vs.-effect-size" class="nav-link" data-scroll-target="#significance-vs.-effect-size">29. Significance vs.&nbsp;Effect Size</a></li>
+  <li><a href="#confidence-intervals" id="toc-confidence-intervals" class="nav-link" data-scroll-target="#confidence-intervals">30. Confidence Intervals</a></li>
+  <li><a href="#confidence-interval-formula-for-the-z-setting" id="toc-confidence-interval-formula-for-the-z-setting" class="nav-link" data-scroll-target="#confidence-interval-formula-for-the-z-setting">31. Confidence Interval Formula for the z Setting</a></li>
+  <li><a href="#reaction-time-confidence-interval" id="toc-reaction-time-confidence-interval" class="nav-link" data-scroll-target="#reaction-time-confidence-interval">32. Reaction-Time Confidence Interval</a></li>
+  <li><a href="#what-determines-ci-width" id="toc-what-determines-ci-width" class="nav-link" data-scroll-target="#what-determines-ci-width">33. What Determines CI Width?</a></li>
+  <li><a href="#relationship-between-confidence-intervals-and-hypothesis-tests" id="toc-relationship-between-confidence-intervals-and-hypothesis-tests" class="nav-link" data-scroll-target="#relationship-between-confidence-intervals-and-hypothesis-tests">34. Relationship Between Confidence Intervals and Hypothesis Tests</a></li>
+  <li><a href="#an-ensemble-of-evidence" id="toc-an-ensemble-of-evidence" class="nav-link" data-scroll-target="#an-ensemble-of-evidence">35. An Ensemble of Evidence</a></li>
+  </ul></li>
+  <li><a href="#part-v-integration-review-and-practice" id="toc-part-v-integration-review-and-practice" class="nav-link" data-scroll-target="#part-v-integration-review-and-practice">Part V — Integration, Review, and Practice</a>
+  <ul class="collapse">
+  <li><a href="#the-phantoms-checklist" id="toc-the-phantoms-checklist" class="nav-link" data-scroll-target="#the-phantoms-checklist">36. The PHANTOMS Checklist</a></li>
+  <li><a href="#worksheet-review-standard-error-targets" id="toc-worksheet-review-standard-error-targets" class="nav-link" data-scroll-target="#worksheet-review-standard-error-targets">37. Worksheet Review: Standard Error Targets</a></li>
+  <li><a href="#worksheet-review-middle-95" id="toc-worksheet-review-middle-95" class="nav-link" data-scroll-target="#worksheet-review-middle-95">38. Worksheet Review: Middle 95%</a></li>
+  <li><a href="#worksheet-review-power-and-distance-between-distributions" id="toc-worksheet-review-power-and-distance-between-distributions" class="nav-link" data-scroll-target="#worksheet-review-power-and-distance-between-distributions">39. Worksheet Review: Power and Distance Between Distributions</a></li>
+  <li><a href="#common-misunderstandings" id="toc-common-misunderstandings" class="nav-link" data-scroll-target="#common-misunderstandings">40. Common Misunderstandings</a></li>
+  <li><a href="#tutorial-preparation" id="toc-tutorial-preparation" class="nav-link" data-scroll-target="#tutorial-preparation">41. Tutorial Preparation</a></li>
+  <li><a href="#practice-hypotheses" id="toc-practice-hypotheses" class="nav-link" data-scroll-target="#practice-hypotheses">42. Practice: Hypotheses</a></li>
+  <li><a href="#practice-one-sample-z-test" id="toc-practice-one-sample-z-test" class="nav-link" data-scroll-target="#practice-one-sample-z-test">43. Practice: One-Sample z Test</a></li>
+  <li><a href="#practice-effect-size" id="toc-practice-effect-size" class="nav-link" data-scroll-target="#practice-effect-size">44. Practice: Effect Size</a></li>
+  <li><a href="#practice-confidence-interval" id="toc-practice-confidence-interval" class="nav-link" data-scroll-target="#practice-confidence-interval">45. Practice: Confidence Interval</a></li>
+  <li><a href="#what-you-should-be-able-to-explain" id="toc-what-you-should-be-able-to-explain" class="nav-link" data-scroll-target="#what-you-should-be-able-to-explain">46. What You Should Be Able to Explain</a></li>
+  <li><a href="#readings-and-course-materials" id="toc-readings-and-course-materials" class="nav-link" data-scroll-target="#readings-and-course-materials">47. Readings and Course Materials</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">48. References</a></li>
+  <li><a href="#week-6-takeaway" id="toc-week-6-takeaway" class="nav-link" data-scroll-target="#week-6-takeaway">49. Week 6 Takeaway</a></li>
+  </ul></li>
+  <li><a href="#part-vi-midterm-review-guide" id="toc-part-vi-midterm-review-guide" class="nav-link" data-scroll-target="#part-vi-midterm-review-guide">Part VI — Midterm Review Guide</a>
+  <ul class="collapse">
+  <li><a href="#the-big-picture" id="toc-the-big-picture" class="nav-link" data-scroll-target="#the-big-picture">The Big Picture</a></li>
+  <li><a href="#step-1-state-statistical-hypotheses" id="toc-step-1-state-statistical-hypotheses" class="nav-link" data-scroll-target="#step-1-state-statistical-hypotheses">Step 1 — State Statistical Hypotheses</a></li>
+  <li><a href="#step-2-set-the-decision-rule" id="toc-step-2-set-the-decision-rule" class="nav-link" data-scroll-target="#step-2-set-the-decision-rule">Step 2 — Set the Decision Rule</a></li>
+  <li><a href="#step-3-collect-the-sample" id="toc-step-3-collect-the-sample" class="nav-link" data-scroll-target="#step-3-collect-the-sample">Step 3 — Collect the Sample</a></li>
+  <li><a href="#step-4-calculate-z_obt-and-decide" id="toc-step-4-calculate-z_obt-and-decide" class="nav-link" data-scroll-target="#step-4-calculate-z_obt-and-decide">Step 4 — Calculate (Z_{obt}) and Decide</a></li>
+  <li><a href="#example-from-the-core-guide" id="toc-example-from-the-core-guide" class="nav-link" data-scroll-target="#example-from-the-core-guide">Example From the Core Guide</a></li>
+  <li><a href="#effect-size-1" id="toc-effect-size-1" class="nav-link" data-scroll-target="#effect-size-1">Effect Size</a></li>
+  <li><a href="#confidence-intervals-1" id="toc-confidence-intervals-1" class="nav-link" data-scroll-target="#confidence-intervals-1">Confidence Intervals</a></li>
+  <li><a href="#type-i-and-type-ii-errors-1" id="toc-type-i-and-type-ii-errors-1" class="nav-link" data-scroll-target="#type-i-and-type-ii-errors-1">Type I and Type II Errors</a></li>
+  <li><a href="#statistical-power" id="toc-statistical-power" class="nav-link" data-scroll-target="#statistical-power">Statistical Power</a></li>
+  <li><a href="#formula-sheet-connection" id="toc-formula-sheet-connection" class="nav-link" data-scroll-target="#formula-sheet-connection">Formula-Sheet Connection</a></li>
+  <li><a href="#assignment-style-practice" id="toc-assignment-style-practice" class="nav-link" data-scroll-target="#assignment-style-practice">Assignment-Style Practice</a></li>
+  <li><a href="#answers" id="toc-answers" class="nav-link" data-scroll-target="#answers">Answers</a></li>
+  <li><a href="#midterm-self-check" id="toc-midterm-self-check" class="nav-link" data-scroll-target="#midterm-self-check">Midterm Self-Check</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -155,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 06 — Hypothesis Testing</h1>
+<h1 class="title">Week 06 — Hypothesis Testing, Significance, Effect Size, and Power</h1>
 </div>
 
 
@@ -172,71 +269,1606 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p><em>To be developed from the supplied lecture notes, tutorials, exercises, and readings.</em></p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>Week 6 turns the probability framework from Week 5 into a formal decision-making procedure.</p>
+<p>In Week 5, the course asked:</p>
+<blockquote class="blockquote">
+<p><strong>How unusual is a sample mean if it came from a particular population?</strong></p>
+</blockquote>
+<p>Week 6 now asks:</p>
+<blockquote class="blockquote">
+<p><strong>Is the observed sample mean unusual enough that we should doubt the population model we started with?</strong></p>
+</blockquote>
+<p>That is the basic logic of <strong>hypothesis testing</strong>.</p>
+<p>The lecture frames hypothesis testing as a way to use sample data to evaluate claims about population parameters. If a treatment has no effect, sample means should behave as expected under the original population model. If the treatment changes the population, the observed sample mean may fall far enough from the null expectation to be considered unlikely under that model (Sigal, 2026).</p>
+<p>The main conceptual sequence is:</p>
+<p><strong>Null model</strong></p>
+<p>↓</p>
+<p><strong>Sampling distribution under the null</strong></p>
+<p>↓</p>
+<p><strong>Decision criterion (())</strong></p>
+<p>↓</p>
+<p><strong>Observed sample mean / test statistic</strong></p>
+<p>↓</p>
+<p><strong>p value and decision</strong></p>
+<p>↓</p>
+<p><strong>Errors and power</strong></p>
+<p>↓</p>
+<p><strong>Effect size and confidence intervals</strong></p>
+<p>A central principle of Week 6 is:</p>
+<blockquote class="blockquote">
+<p><strong>Statistical significance is only one part of interpretation.</strong></p>
+</blockquote>
+<p>The lecture ends by emphasizing an ensemble of evidence: p values, effect sizes, confidence intervals, context, and graphical displays should be considered together rather than treating a p value as the entire result (Sigal, 2026).</p>
+<hr>
 </section>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p><em>To be added.</em></p>
+<section id="learning-objectives" class="level1">
+<h1>Learning Objectives</h1>
+<p>By the end of this week, you should be able to:</p>
+<ol type="1">
+<li>Explain how Week 6 builds directly on sampling distributions and standard error.</li>
+<li>Define hypothesis testing in terms of population parameters and sample statistics.</li>
+<li>State the null hypothesis and alternative hypothesis in words and symbols.</li>
+<li>Explain why hypothesis tests begin by assuming the null hypothesis is true.</li>
+<li>Describe the main steps of hypothesis testing used in the lecture.</li>
+<li>Define the alpha level and explain how it determines rejection regions.</li>
+<li>Identify critical values for common one- and two-tailed z tests.</li>
+<li>Distinguish one-tailed from two-tailed tests.</li>
+<li>Explain Type I and Type II errors.</li>
+<li>Define statistical power as (1-).</li>
+<li>Explain how effect size, sample size, population variability, alpha, and number of tails affect statistical significance or power.</li>
+<li>Compute the one-sample z statistic when () and () are known.</li>
+<li>Use critical values or a p value to make a decision about (H_0).</li>
+<li>Use the preferred wording <strong>reject (H_0)</strong> or <strong>fail to reject (H_0)</strong>.</li>
+<li>Explain why failing to reject the null does not prove that the null is true.</li>
+<li>State the requirements and assumptions of the one-sample z test used in this course.</li>
+<li>Compute and interpret Cohen’s (d) for a one-sample z test.</li>
+<li>Distinguish statistical significance from effect size.</li>
+<li>Define a confidence interval using repeated-sampling logic.</li>
+<li>Compute a 95% confidence interval for a population mean when () is known.</li>
+<li>Explain what determines confidence-interval width.</li>
+<li>Explain why a larger sample can produce significance for the same observed mean difference.</li>
+<li>Explain why one-tailed tests can have greater power but require strong directional justification.</li>
+<li>Interpret the Week 6 worksheet examples involving critical regions, sample size, and power.</li>
+</ol>
+<hr>
 </section>
-<section id="key-concepts" class="level2">
-<h2 class="anchored" data-anchor-id="key-concepts">Key Concepts</h2>
-<p><em>To be added.</em></p>
+<section id="part-i-from-sampling-distributions-to-hypothesis-testing" class="level1">
+<h1>Part I — From Sampling Distributions to Hypothesis Testing</h1>
+<section id="review-individual-score-vs.-sample-mean" class="level2">
+<h2 class="anchored" data-anchor-id="review-individual-score-vs.-sample-mean">1. Review: Individual Score vs.&nbsp;Sample Mean</h2>
+<p>Suppose a population has:</p>
+<p><span class="math display">\[
+\mu=200,\quad \sigma=25.
+\]</span></p>
+<p>For an individual score:</p>
+<p><span class="math display">\[
+X=205,
+\]</span></p>
+<p>the z score is:</p>
+<p><span class="math display">\[
+z
+=
+\frac{205-200}{25}
+=
+0.20.
+\]</span></p>
+<p>But if:</p>
+<p><span class="math display">\[
+\bar X=205
+\]</span></p>
+<p>for a sample of:</p>
+<p><span class="math display">\[
+n=100,
+\]</span></p>
+<p>then:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{25}{\sqrt{100}}
+=
+2.5,
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+z
+=
+\frac{205-200}{2.5}
+=
+2.00.
+\]</span></p>
+<p>The raw difference is the same—5 points—but the sample mean is much more unusual because sample means fluctuate less than individual scores (Sigal, 2026).</p>
+<hr>
 </section>
-<section id="how-the-concepts-fit-together" class="level2">
-<h2 class="anchored" data-anchor-id="how-the-concepts-fit-together">How the Concepts Fit Together</h2>
-<p><em>To be added.</em></p>
+<section id="the-big-idea-of-hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-idea-of-hypothesis-testing">2. The Big Idea of Hypothesis Testing</h2>
+<p>The lecture defines hypothesis tests as procedures that use sample data to evaluate hypotheses about population parameters (Sigal, 2026).</p>
+<p>The reasoning is:</p>
+<ul>
+<li>If the null model is correct, sample means should usually fall near the null population mean.</li>
+<li>If the observed sample mean falls far enough away, it becomes difficult to explain as ordinary sampling error.</li>
+<li>We then have evidence against the null model.</li>
+</ul>
+<p>Hypothesis testing therefore formalizes the question:</p>
+<blockquote class="blockquote">
+<p><strong>How compatible are the observed data with the null model?</strong></p>
+</blockquote>
+<hr>
 </section>
-<section id="important-terms" class="level2">
-<h2 class="anchored" data-anchor-id="important-terms">Important Terms</h2>
+<section id="the-null-and-alternative-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="the-null-and-alternative-hypotheses">3. The Null and Alternative Hypotheses</h2>
+<p>The <strong>null hypothesis</strong> states that the population parameter remains at the null value.</p>
+<p>Example:</p>
+<p><span class="math display">\[
+H_0:\mu=262.
+\]</span></p>
+<p>The lecture describes this as the claim that the treatment did not change the population.</p>
+<p>The <strong>alternative hypothesis</strong> states the competing possibility.</p>
+<p>For a nondirectional test:</p>
+<p><span class="math display">\[
+H_1:\mu\ne262.
+\]</span></p>
+<p>For a directional test:</p>
+<p><span class="math display">\[
+H_1:\mu&gt;262
+\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[
+H_1:\mu&lt;262.
+\]</span></p>
+<p>The hypotheses concern <strong>population parameters</strong>, not merely the observed sample mean (Sigal, 2026; Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="why-begin-with-the-null" class="level2">
+<h2 class="anchored" data-anchor-id="why-begin-with-the-null">4. Why Begin With the Null?</h2>
+<p>The null hypothesis provides the reference distribution.</p>
+<p>We assume (H_0) is true long enough to ask:</p>
+<blockquote class="blockquote">
+<p>If this null model were correct, how likely would our sample result be?</p>
+</blockquote>
+<p>The textbooks use a courtroom analogy: the null is treated as the starting assumption, and the burden is on the data to provide sufficient evidence against it (Privitera, 2018, 2024).</p>
+<p>This does <strong>not</strong> mean the null is believed to be literally true.</p>
+<p>It means it is the model against which the observed sample is evaluated.</p>
+<hr>
+</section>
+<section id="the-steps-of-hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="the-steps-of-hypothesis-testing">5. The Steps of Hypothesis Testing</h2>
+<p>The lecture presents the process as:</p>
+<ol type="1">
+<li>Specify the hypotheses.</li>
+<li>Specify the decision criteria.</li>
+<li>Collect data.</li>
+<li>Calculate the appropriate statistical test.</li>
+<li>Make a decision and interpret it (Sigal, 2026).</li>
+</ol>
+<p>Privitera organizes the core inferential logic into four formal steps:</p>
+<ol type="1">
+<li>State the hypotheses.</li>
+<li>Set the criteria for a decision.</li>
+<li>Compute the test statistic.</li>
+<li>Make a decision (Privitera, 2018, 2024).</li>
+</ol>
+<p>These are compatible frameworks. The lecture simply makes the data-collection stage explicit.</p>
+<hr>
+</section>
+<section id="hypothesis-testing-as-a-sampling-distribution-problem" class="level2">
+<h2 class="anchored" data-anchor-id="hypothesis-testing-as-a-sampling-distribution-problem">6. Hypothesis Testing as a Sampling-Distribution Problem</h2>
+<p>The logic of Week 6 depends on Week 5.</p>
+<p>If the null is true, the sampling distribution of the mean is centered at the null value:</p>
+<p><span class="math display">\[
+\mu_{\bar X}=\mu_0.
+\]</span></p>
+<p>Its standard error is:</p>
+<p><span class="math display">\[
+SE_{\bar X}
+=
+\frac{\sigma}{\sqrt n}.
+\]</span></p>
+<p>Hypothesis testing asks where the observed sample mean falls in this null sampling distribution.</p>
+<hr>
+</section>
+</section>
+<section id="part-ii-decision-criteria-errors-and-power" class="level1">
+<h1>Part II — Decision Criteria, Errors, and Power</h1>
+<section id="the-alpha-level" class="level2">
+<h2 class="anchored" data-anchor-id="the-alpha-level">7. The Alpha Level</h2>
+<p>The lecture introduces the alpha level:</p>
+<p><span class="math display">\[
+\alpha.
+\]</span></p>
+<p>A common convention is:</p>
+<p><span class="math display">\[
+\alpha=.05.
+\]</span></p>
+<p>Alpha defines outcomes that are sufficiently unlikely under the null model to fall in a <strong>rejection region</strong> (Sigal, 2026).</p>
+<p>For a two-tailed z test at:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>the critical values are:</p>
+<p><span class="math display">\[
+z=\pm1.96.
+\]</span></p>
+<p>The middle 95% corresponds to values that are not in the rejection regions.</p>
+<hr>
+</section>
+<section id="critical-values-and-rejection-regions" class="level2">
+<h2 class="anchored" data-anchor-id="critical-values-and-rejection-regions">8. Critical Values and Rejection Regions</h2>
+<p>A <strong>critical value</strong> marks the boundary of a rejection region.</p>
+<p>For a two-tailed z test with:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>the two rejection regions each contain:</p>
+<p><span class="math display">\[
+\frac{.05}{2}
+=
+.025.
+\]</span></p>
+<p>So:</p>
+<p><span class="math display">\[
+z_{\text{crit}}=\pm1.96.
+\]</span></p>
+<p>An obtained test statistic beyond one of these values falls in a rejection region.</p>
+<hr>
+</section>
+<section id="translating-critical-z-values-back-to-raw-units" class="level2">
+<h2 class="anchored" data-anchor-id="translating-critical-z-values-back-to-raw-units">9. Translating Critical z Values Back to Raw Units</h2>
+<p>Suppose:</p>
+<p><span class="math display">\[
+\mu=262,\quad \sigma=20,\quad n=30.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{20}{\sqrt{30}}
+\approx3.65.
+\]</span></p>
+<p>For a two-tailed test at ():</p>
+<p><span class="math display">\[
+z_{\text{crit}}=\pm1.96.
+\]</span></p>
+<p>Convert these boundaries back to sample-mean units:</p>
+<p><span class="math display">\[
+\bar X_{\text{upper}}
+=
+262+1.96(3.65)
+\approx269.2,
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+\bar X_{\text{lower}}
+=
+262-1.96(3.65)
+\approx254.8.
+\]</span></p>
+<p>Sample means beyond these cutoffs fall in the critical regions (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="type-i-and-type-ii-errors" class="level2">
+<h2 class="anchored" data-anchor-id="type-i-and-type-ii-errors">10. Type I and Type II Errors</h2>
+<p>Hypothesis testing can produce correct or incorrect decisions.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>Term</th>
-<th>Plain-language explanation</th>
+<th>Truth</th>
+<th>Fail to reject (H_0)</th>
+<th>Reject (H_0)</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>To be added</em></td>
-<td></td>
+<td>(H_0) true</td>
+<td>Correct decision</td>
+<td>Type I error</td>
+</tr>
+<tr class="even">
+<td>(H_0) false</td>
+<td>Type II error</td>
+<td>Correct decision</td>
 </tr>
 </tbody>
 </table>
+<section id="type-i-error" class="level3">
+<h3 class="anchored" data-anchor-id="type-i-error">Type I error</h3>
+<p>Rejecting a true null hypothesis.</p>
+<p>Its probability is controlled by:</p>
+<p><span class="math display">\[
+\alpha.
+\]</span></p>
 </section>
-<section id="worked-examples" class="level2">
-<h2 class="anchored" data-anchor-id="worked-examples">Worked Examples</h2>
-<p><em>To be added.</em></p>
+<section id="type-ii-error" class="level3">
+<h3 class="anchored" data-anchor-id="type-ii-error">Type II error</h3>
+<p>Failing to reject a false null hypothesis.</p>
+<p>Its probability is:</p>
+<p><span class="math display">\[
+\beta.
+\]</span></p>
+<p>(Privitera, 2018, 2024; Sigal, 2026)</p>
+<hr>
+</section>
+</section>
+<section id="false-positives-and-false-negatives" class="level2">
+<h2 class="anchored" data-anchor-id="false-positives-and-false-negatives">11. False Positives and False Negatives</h2>
+<p>The lecture uses <em>The Boy Who Cried Wolf</em> to make the error types intuitive.</p>
+<section id="type-i-error-1" class="level3">
+<h3 class="anchored" data-anchor-id="type-i-error-1">Type I error</h3>
+<p>Concluding there is an effect when there is not one.</p>
+<p>A <strong>false positive</strong>.</p>
+</section>
+<section id="type-ii-error-1" class="level3">
+<h3 class="anchored" data-anchor-id="type-ii-error-1">Type II error</h3>
+<p>Failing to detect an effect that is actually present.</p>
+<p>A <strong>false negative</strong>.</p>
+<p>The analogy is memorable, but the statistical definitions should remain primary.</p>
+<hr>
+</section>
+</section>
+<section id="power" class="level2">
+<h2 class="anchored" data-anchor-id="power">12. Power</h2>
+<p><strong>Power</strong> is the probability of correctly rejecting a false null hypothesis.</p>
+<p>It is:</p>
+<p><span class="math display">\[
+1-\beta.
+\]</span></p>
+<p>Conceptually:</p>
+<blockquote class="blockquote">
+<p>Power is the probability that the study will detect an effect when the effect is genuinely present.</p>
+</blockquote>
+<p>Privitera notes that .80 is a common planning target for power in behavioral research (Privitera, 2024).</p>
+<hr>
+</section>
+<section id="what-increases-power" class="level2">
+<h2 class="anchored" data-anchor-id="what-increases-power">13. What Increases Power?</h2>
+<p>The lecture and textbooks identify several factors.</p>
+<p>Power tends to increase when:</p>
+<ul>
+<li>the true effect is larger;</li>
+<li>sample size (n) is larger;</li>
+<li>population variability is smaller;</li>
+<li>standard error is smaller;</li>
+<li>the rejection region is larger;</li>
+<li>the test uses a justified one-tailed alternative rather than splitting alpha across two tails.</li>
+</ul>
+<p>At the same time, increasing () increases the risk of Type I error, so power cannot be increased without considering tradeoffs (Sigal, 2026; Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="what-drives-statistical-significance" class="level2">
+<h2 class="anchored" data-anchor-id="what-drives-statistical-significance">14. What Drives Statistical Significance?</h2>
+<p>The lecture summarizes several influences on a test statistic and significance:</p>
+<ul>
+<li>magnitude of the mean difference;</li>
+<li>population standard deviation;</li>
+<li>sample size;</li>
+<li>chosen alpha;</li>
+<li>number of tails (Sigal, 2026).</li>
+</ul>
+<p>For the one-sample z test:</p>
+<p><span class="math display">\[
+z
+=
+\frac{\bar X-\mu_0}
+{\sigma/\sqrt n}.
+\]</span></p>
+<p>This formula makes the relationships visible.</p>
+<p>A larger numerator increases (|z|).</p>
+<p>A smaller denominator also increases (|z|).</p>
+<hr>
+</section>
+<section id="sample-size-and-the-same-observed-effect" class="level2">
+<h2 class="anchored" data-anchor-id="sample-size-and-the-same-observed-effect">15. Sample Size and the Same Observed Effect</h2>
+<p>The Week 6 worksheet provides a particularly important example.</p>
+<p>Population:</p>
+<p><span class="math display">\[
+\mu=60,\quad \sigma=10.
+\]</span></p>
+<p>Observed sample mean:</p>
+<p><span class="math display">\[
+\bar X=63.
+\]</span></p>
+<section id="if-n25" class="level3">
+<h3 class="anchored" data-anchor-id="if-n25">If (n=25)</h3>
+<p><span class="math display">\[
+SE
+=
+\frac{10}{5}
+=
+2.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+z
+=
+\frac{63-60}{2}
+=
+1.50.
+\]</span></p>
+<p>At (), two-tailed:</p>
+<p><span class="math display">\[
+|1.50|&lt;1.96.
+\]</span></p>
+<p>So we <strong>fail to reject (H_0)</strong>.</p>
+</section>
+<section id="if-n100" class="level3">
+<h3 class="anchored" data-anchor-id="if-n100">If (n=100)</h3>
+<p><span class="math display">\[
+SE
+=
+\frac{10}{10}
+=
+1.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+z
+=
+\frac{63-60}{1}
+=
+3.00.
+\]</span></p>
+<p>Now:</p>
+<p><span class="math display">\[
+|3.00|&gt;1.96,
+\]</span></p>
+<p>so we <strong>reject (H_0)</strong>.</p>
+<p>The sample mean and raw difference are unchanged.</p>
+<p>Only sample size changes.</p>
+<p>The larger sample produces a smaller standard error and greater power. fileciteturn11file0L35-L45</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="part-iii-the-one-sample-z-test" class="level1">
+<h1>Part III — The One-Sample z Test</h1>
+<section id="when-is-the-one-sample-z-test-used" class="level2">
+<h2 class="anchored" data-anchor-id="when-is-the-one-sample-z-test-used">16. When Is the One-Sample z Test Used?</h2>
+<p>The lecture specifies that we must know:</p>
+<ul>
+<li>the population mean ();</li>
+<li>the population standard deviation ();</li>
+<li>an observed score or sample mean to compare with those population parameters (Sigal, 2026).</li>
+</ul>
+<p>Privitera similarly defines the one-sample z test as a test of a single population mean when population variance is known (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="requirements-and-assumptions" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-and-assumptions">17. Requirements and Assumptions</h2>
+<p>The lecture lists:</p>
+<ul>
+<li>random sampling / independent observations;</li>
+<li>population standard deviation is known and is treated as unchanged by the treatment;</li>
+<li>the sampling distribution is normal (Sigal, 2026).</li>
+</ul>
+<p>In practice, the normality of the sampling distribution may be supported by a normal population or by the Central Limit Theorem under appropriate conditions.</p>
+<hr>
+</section>
+<section id="the-z-test-statistic" class="level2">
+<h2 class="anchored" data-anchor-id="the-z-test-statistic">18. The z Test Statistic</h2>
+<p>For a sample mean:</p>
+<p><span class="math display">\[
+z
+=
+\frac{\bar X-\mu_0}
+{SE_{\bar X}}
+\]</span></p>
+<p>where:</p>
+<p><span class="math display">\[
+SE_{\bar X}
+=
+\frac{\sigma}{\sqrt n}.
+\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+z
+=
+\frac{\bar X-\mu_0}
+{\sigma/\sqrt n}.
+\]</span></p>
+<p>The statistic tells us how many standard errors the observed sample mean lies above or below the null mean.</p>
+<hr>
+</section>
+<section id="worked-reaction-time-example" class="level2">
+<h2 class="anchored" data-anchor-id="worked-reaction-time-example">19. Worked Reaction-Time Example</h2>
+<p>The lecture uses:</p>
+<p><span class="math display">\[
+\mu_0=262,\quad \sigma=20,\quad n=30,
+\]</span></p>
+<p>with observed sample mean approximately:</p>
+<p><span class="math display">\[
+\bar X=274.5.
+\]</span></p>
+<p>First:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{20}{\sqrt{30}}
+\approx3.65.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+z
+=
+\frac{274.5-262}{3.65}
+\approx3.42.
+\]</span></p>
+<p>Because:</p>
+<p><span class="math display">\[
+3.42&gt;1.96,
+\]</span></p>
+<p>for a two-tailed test at (), the observed mean falls beyond the upper critical value.</p>
+<p>The lecture therefore rejects the null hypothesis and concludes that the treatment affected reaction time (Sigal, 2026).</p>
+<hr>
+</section>
+<section id="the-p-value" class="level2">
+<h2 class="anchored" data-anchor-id="the-p-value">20. The p Value</h2>
+<p>A p value is interpreted under the null model.</p>
+<p>Privitera defines it as the probability of obtaining a sample outcome as extreme as the observed outcome, given that the null hypothesis is true (Privitera, 2018, 2024).</p>
+<p>The important structure is:</p>
+<blockquote class="blockquote">
+<p><strong>Assume (H_0), then evaluate how unusual the observed result is.</strong></p>
+</blockquote>
+<p>A p value is <strong>not</strong> the probability that the null hypothesis itself is true.</p>
+<hr>
+</section>
+<section id="decision-language" class="level2">
+<h2 class="anchored" data-anchor-id="decision-language">21. Decision Language</h2>
+<p>The preferred decisions are:</p>
+<ul>
+<li><strong>reject (H_0)</strong>;</li>
+<li><strong>fail to reject (H_0)</strong>.</li>
+</ul>
+<p>Do not say:</p>
+<blockquote class="blockquote">
+<p>“We proved the null is true.”</p>
+</blockquote>
+<p>Failing to reject means:</p>
+<blockquote class="blockquote">
+<p>The data did not provide sufficient evidence against the null model under the chosen decision rule.</p>
+</blockquote>
+<p>The 2024 Privitera edition explicitly emphasizes this wording and warns that a failure to reject does not prove the null hypothesis (Privitera, 2024).</p>
+<hr>
+</section>
+<section id="one-tailed-and-two-tailed-tests" class="level2">
+<h2 class="anchored" data-anchor-id="one-tailed-and-two-tailed-tests">22. One-Tailed and Two-Tailed Tests</h2>
+<section id="two-tailed-test" class="level3">
+<h3 class="anchored" data-anchor-id="two-tailed-test">Two-tailed test</h3>
+<p>Used for a nondirectional alternative:</p>
+<p><span class="math display">\[
+H_1:\mu\ne\mu_0.
+\]</span></p>
+<p>At:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>the critical values are:</p>
+<p><span class="math display">\[
+\pm1.96.
+\]</span></p>
+</section>
+<section id="one-tailed-test" class="level3">
+<h3 class="anchored" data-anchor-id="one-tailed-test">One-tailed test</h3>
+<p>Used for a directional alternative such as:</p>
+<p><span class="math display">\[
+H_1:\mu&gt;\mu_0
+\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[
+H_1:\mu&lt;\mu_0.
+\]</span></p>
+<p>At:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>the critical value is approximately:</p>
+<p><span class="math display">\[
+1.645
+\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[
+-1.645
+\]</span></p>
+<p>depending on direction.</p>
+<p>(Sigal, 2026; Privitera, 2018, 2024)</p>
+<hr>
+</section>
+</section>
+<section id="why-directionality-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-directionality-matters">23. Why Directionality Matters</h2>
+<p>For a two-tailed test, alpha is divided between both tails.</p>
+<p>For a one-tailed test, all alpha is placed in one tail.</p>
+<p>That makes the critical threshold less extreme in the predicted direction and can increase power.</p>
+<p>But a one-tailed test requires a defensible directional hypothesis established before examining the results.</p>
+<p>Privitera also notes the possibility of a <strong>Type III error</strong> for one-tailed tests when the effect occurs in the opposite direction from the rejection region (Privitera, 2018, 2024).</p>
+<hr>
+</section>
+<section id="worksheet-logic-check-one-tailed-vs.-two-tailed" class="level2">
+<h2 class="anchored" data-anchor-id="worksheet-logic-check-one-tailed-vs.-two-tailed">24. Worksheet Logic Check: One-Tailed vs.&nbsp;Two-Tailed</h2>
+<p>The worksheet compares:</p>
+<ul>
+<li>one-tailed test with ();</li>
+<li>two-tailed test with ().</li>
+</ul>
+<p>The key points are:</p>
+<ul>
+<li>a two-tailed .05 test places .025 in each tail;</li>
+<li>a one-tailed .01 test places .01 in one tail.</li>
+</ul>
+<p>If a result is extreme enough to fall in the most extreme 1% of the relevant tail, then it is necessarily also within the most extreme 2.5% of that same tail.</p>
+<p>Therefore, under the same direction and the same data, the claimed combination of decisions in the worksheet cannot both be correct. fileciteturn11file0L28-L34</p>
+<hr>
+</section>
+<section id="worked-maze-example" class="level2">
+<h2 class="anchored" data-anchor-id="worked-maze-example">25. Worked Maze Example</h2>
+<p>The lecture asks whether a cold medicine changes maze-completion time.</p>
+<p>Population:</p>
+<p><span class="math display">\[
+\mu=200,\quad \sigma=10.
+\]</span></p>
+<p>Sample:</p>
+<p><span class="math display">\[
+n=4,\quad \bar X=195.
+\]</span></p>
+<p>Hypotheses:</p>
+<p><span class="math display">\[
+H_0:\mu=200
+\]</span></p>
+<p><span class="math display">\[
+H_1:\mu\ne200.
+\]</span></p>
+<p>At:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>two-tailed:</p>
+<p><span class="math display">\[
+z_{\text{crit}}=\pm1.96.
+\]</span></p>
+<p>Compute:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{10}{\sqrt4}
+=
+5.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+z
+=
+\frac{195-200}{5}
+=
+-1.
+\]</span></p>
+<p>Because:</p>
+<p><span class="math display">\[
+-1
+\]</span></p>
+<p>is not beyond:</p>
+<p><span class="math display">\[
+-1.96,
+\]</span></p>
+<p>we fail to reject the null hypothesis (Sigal, 2026).</p>
+<hr>
+</section>
+</section>
+<section id="part-iv-beyond-significance-effect-size-and-confidence-intervals" class="level1">
+<h1>Part IV — Beyond Significance: Effect Size and Confidence Intervals</h1>
+<section id="why-statistical-significance-is-not-enough" class="level2">
+<h2 class="anchored" data-anchor-id="why-statistical-significance-is-not-enough">26. Why Statistical Significance Is Not Enough</h2>
+<p>With a large enough sample, even a small effect can become statistically significant.</p>
+<p>Therefore significance does not answer:</p>
+<blockquote class="blockquote">
+<p><strong>How large or important is the effect?</strong></p>
+</blockquote>
+<p>The lecture explicitly introduces effect size for this reason (Sigal, 2026).</p>
+<p>The 2024 Privitera edition makes the broader point that researchers should report not only whether an effect exists, but also:</p>
+<ul>
+<li>its size;</li>
+<li>where it is likely to be located;</li>
+<li>how likely the study is to detect it (Privitera, 2024).</li>
+</ul>
+<hr>
+</section>
+<section id="cohens-d-for-the-one-sample-z-test" class="level2">
+<h2 class="anchored" data-anchor-id="cohens-d-for-the-one-sample-z-test">27. Cohen’s (d) for the One-Sample z Test</h2>
+<p>For a one-sample z test:</p>
+<p><span class="math display">\[
+d
+=
+\frac{\bar X-\mu_0}{\sigma}.
+\]</span></p>
+<p>Compare this with the z statistic:</p>
+<p><span class="math display">\[
+z
+=
+\frac{\bar X-\mu_0}{\sigma/\sqrt n}.
+\]</span></p>
+<p>The difference is crucial:</p>
+<ul>
+<li>(z) uses <strong>standard error</strong>;</li>
+<li>(d) uses the <strong>population standard deviation</strong>.</li>
+</ul>
+<p>As a result, (d) is not mechanically inflated by sample size in the same way the test statistic is.</p>
+<hr>
+</section>
+<section id="reaction-time-effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-time-effect-size">28. Reaction-Time Effect Size</h2>
+<p>For the lecture example:</p>
+<p><span class="math display">\[
+\bar X=274.5,\quad \mu_0=262,\quad \sigma=20.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+d
+=
+\frac{274.5-262}{20}
+=
+0.625.
+\]</span></p>
+<p>Interpretation:</p>
+<blockquote class="blockquote">
+<p>The observed mean differs from the null population mean by approximately 0.625 population standard deviations.</p>
+</blockquote>
+<p>The lecture uses common heuristic benchmarks:</p>
+<ul>
+<li>around 0.2–0.3 → small;</li>
+<li>around 0.5 → medium;</li>
+<li>around 0.8 or above → large (Sigal, 2026).</li>
+</ul>
+<p>These are rough conventions, not universal definitions of practical importance.</p>
+<hr>
+</section>
+<section id="significance-vs.-effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="significance-vs.-effect-size">29. Significance vs.&nbsp;Effect Size</h2>
+<p>These answer different questions.</p>
+<section id="hypothesis-test" class="level3">
+<h3 class="anchored" data-anchor-id="hypothesis-test">Hypothesis test</h3>
+<blockquote class="blockquote">
+<p>Is the observed result sufficiently inconsistent with the null model?</p>
+</blockquote>
+</section>
+<section id="effect-size" class="level3">
+<h3 class="anchored" data-anchor-id="effect-size">Effect size</h3>
+<blockquote class="blockquote">
+<p>How large is the observed difference on a standardized substantive scale?</p>
+</blockquote>
+<p>A result can be:</p>
+<ul>
+<li>statistically significant but small;</li>
+<li>not statistically significant but potentially meaningful in a low-powered study.</li>
+</ul>
+<p>This is why results should not be interpreted from p values alone.</p>
+<hr>
+</section>
+</section>
+<section id="confidence-intervals" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals">30. Confidence Intervals</h2>
+<p>The lecture defines a 95% confidence interval using repeated sampling:</p>
+<blockquote class="blockquote">
+<p>If repeated samples were taken and a 95% CI were computed for each sample, approximately 95% of those intervals would contain the population parameter (Sigal, 2026).</p>
+</blockquote>
+<p>This is a property of the <strong>procedure</strong>.</p>
+<p>It is not the claim that, after one interval has been computed, there is a 95% probability that a fixed population parameter moves in or out of that particular interval.</p>
+<hr>
+</section>
+<section id="confidence-interval-formula-for-the-z-setting" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-interval-formula-for-the-z-setting">31. Confidence Interval Formula for the z Setting</h2>
+<p>For a population mean with known ():</p>
+<p><span class="math display">\[
+CI
+=
+\bar X
+\pm
+z_{\text{crit}}SE.
+\]</span></p>
+<p>For a 95% CI:</p>
+<p><span class="math display">\[
+z_{\text{crit}}=1.96.
+\]</span></p>
+<p>So:</p>
+<p><span class="math display">\[
+CI_{95}
+=
+\bar X
+\pm
+1.96
+\left(
+\frac{\sigma}{\sqrt n}
+\right).
+\]</span></p>
+<hr>
+</section>
+<section id="reaction-time-confidence-interval" class="level2">
+<h2 class="anchored" data-anchor-id="reaction-time-confidence-interval">32. Reaction-Time Confidence Interval</h2>
+<p>Using:</p>
+<p><span class="math display">\[
+\bar X=274.5,
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+SE\approx3.65,
+\]</span></p>
+<p>the lecture calculates:</p>
+<p><span class="math display">\[
+CI_{95}
+=
+274.5
+\pm
+1.96(3.65).
+\]</span></p>
+<p>Margin of error:</p>
+<p><span class="math display">\[
+1.96(3.65)
+\approx7.15.
+\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+CI_{95}
+\approx
+[267.35,\ 281.65].
+\]</span></p>
+<p>(Sigal, 2026)</p>
+<hr>
+</section>
+<section id="what-determines-ci-width" class="level2">
+<h2 class="anchored" data-anchor-id="what-determines-ci-width">33. What Determines CI Width?</h2>
+<p>The lecture identifies three main influences:</p>
+<section id="sample-size" class="level3">
+<h3 class="anchored" data-anchor-id="sample-size">Sample size</h3>
+<p>As:</p>
+<p><span class="math display">\[
+n\uparrow,
+\]</span></p>
+<p>standard error decreases, so the CI becomes narrower.</p>
+</section>
+<section id="population-variability" class="level3">
+<h3 class="anchored" data-anchor-id="population-variability">Population variability</h3>
+<p>As:</p>
+<p><span class="math display">\[
+\sigma\downarrow,
+\]</span></p>
+<p>standard error decreases, so the CI becomes narrower.</p>
+</section>
+<section id="confidence-level" class="level3">
+<h3 class="anchored" data-anchor-id="confidence-level">Confidence level</h3>
+<p>Greater confidence requires a more extreme critical value, producing a wider interval.</p>
+<p>Thus a 99% CI is wider than a 95% CI for the same data.</p>
+<hr>
+</section>
+</section>
+<section id="relationship-between-confidence-intervals-and-hypothesis-tests" class="level2">
+<h2 class="anchored" data-anchor-id="relationship-between-confidence-intervals-and-hypothesis-tests">34. Relationship Between Confidence Intervals and Hypothesis Tests</h2>
+<p>For a two-tailed test at:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>the corresponding interval is a 95% CI.</p>
+<p>When the null value is outside the corresponding confidence interval, the result is inconsistent with the null at that significance level.</p>
+<p>Privitera (2024) explicitly connects the confidence interval and hypothesis-testing decision in this way.</p>
+<hr>
+</section>
+<section id="an-ensemble-of-evidence" class="level2">
+<h2 class="anchored" data-anchor-id="an-ensemble-of-evidence">35. An Ensemble of Evidence</h2>
+<p>The lecture’s final message is that p values should not stand alone.</p>
+<p>Interpretation is more informative when it combines:</p>
+<ul>
+<li>statistical significance;</li>
+<li>effect size;</li>
+<li>confidence intervals;</li>
+<li>power;</li>
+<li>descriptive statistics;</li>
+<li>graphical displays;</li>
+<li>substantive context (Sigal, 2026).</li>
+</ul>
+<p>This is an important conceptual safeguard against reducing data analysis to a binary “significant / not significant” decision.</p>
+<hr>
+</section>
+</section>
+<section id="part-v-integration-review-and-practice" class="level1">
+<h1>Part V — Integration, Review, and Practice</h1>
+<section id="the-phantoms-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="the-phantoms-checklist">36. The PHANTOMS Checklist</h2>
+<p>The lecture provides the mnemonic <strong>PHANTOMS</strong> as a workflow:</p>
+<ul>
+<li><strong>P</strong>arameter</li>
+<li><strong>H</strong>ypotheses</li>
+<li><strong>A</strong>ssumptions</li>
+<li><strong>N</strong>ame the test</li>
+<li><strong>T</strong>est statistic</li>
+<li><strong>O</strong>btain p value</li>
+<li><strong>M</strong>ake decision</li>
+<li><strong>S</strong>tate conclusion in context</li>
+</ul>
+<p>(Sigal, 2026)</p>
+<p>This is a useful checklist for tutorial work because it prevents students from jumping directly to arithmetic before identifying the inferential structure of the problem.</p>
+<hr>
+</section>
+<section id="worksheet-review-standard-error-targets" class="level2">
+<h2 class="anchored" data-anchor-id="worksheet-review-standard-error-targets">37. Worksheet Review: Standard Error Targets</h2>
+<p>The worksheet asks how large a sample is needed when:</p>
+<p><span class="math display">\[
+\sigma=30.
+\]</span></p>
+<p>Because:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{30}{\sqrt n},
+\]</span></p>
+<p>to have:</p>
+<p><span class="math display">\[
+SE\le10,
+\]</span></p>
+<p>we need:</p>
+<p><span class="math display">\[
+\frac{30}{\sqrt n}\le10
+\]</span></p>
+<p>so:</p>
+<p><span class="math display">\[
+\sqrt n\ge3
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+n\ge9.
+\]</span></p>
+<p>For:</p>
+<p><span class="math display">\[
+SE\le5,
+\]</span></p>
+<p>we need:</p>
+<p><span class="math display">\[
+\sqrt n\ge6
+\]</span></p>
+<p>and therefore:</p>
+<p><span class="math display">\[
+n\ge36.
+\]</span></p>
+<p>The worksheet also emphasizes that SE cannot exceed the population SD: when (n=1), SE equals (); for larger (n), SE is smaller. fileciteturn11file0L13-L19</p>
+<hr>
+</section>
+<section id="worksheet-review-middle-95" class="level2">
+<h2 class="anchored" data-anchor-id="worksheet-review-middle-95">38. Worksheet Review: Middle 95%</h2>
+<p>Population:</p>
+<p><span class="math display">\[
+\mu=100,\quad \sigma=20,\quad n=25.
+\]</span></p>
+<p>Then:</p>
+<p><span class="math display">\[
+SE
+=
+\frac{20}{5}
+=
+4.
+\]</span></p>
+<p>For the middle 95%:</p>
+<p><span class="math display">\[
+z=\pm1.96.
+\]</span></p>
+<p>Convert to sample-mean units:</p>
+<p><span class="math display">\[
+100\pm1.96(4).
+\]</span></p>
+<p>Thus:</p>
+<p><span class="math display">\[
+100\pm7.84
+\]</span></p>
+<p>or:</p>
+<p><span class="math display">\[
+[92.16,\ 107.84].
+\]</span></p>
+<p>A sample mean of 106 gives:</p>
+<p><span class="math display">\[
+z
+=
+\frac{106-100}{4}
+=
+1.50.
+\]</span></p>
+<p>Therefore 106 is not in the extreme 5% of the sampling distribution. fileciteturn11file0L20-L27</p>
+<hr>
+</section>
+<section id="worksheet-review-power-and-distance-between-distributions" class="level2">
+<h2 class="anchored" data-anchor-id="worksheet-review-power-and-distance-between-distributions">39. Worksheet Review: Power and Distance Between Distributions</h2>
+<p>The worksheet asks:</p>
+<blockquote class="blockquote">
+<p>What happens to power as the treatment distribution moves farther from the null distribution?</p>
+</blockquote>
+<p>Power increases. fileciteturn11file0L51-L54</p>
+<p>Why?</p>
+<p>Greater separation corresponds to a larger effect.</p>
+<p>A larger effect produces less overlap between null and treatment distributions and makes it easier for a sample statistic to fall in the rejection region.</p>
+<hr>
 </section>
 <section id="common-misunderstandings" class="level2">
-<h2 class="anchored" data-anchor-id="common-misunderstandings">Common Misunderstandings</h2>
-<p><em>To be added.</em></p>
+<h2 class="anchored" data-anchor-id="common-misunderstandings">40. Common Misunderstandings</h2>
+<section id="fail-to-reject-means-the-null-is-true." class="level3">
+<h3 class="anchored" data-anchor-id="fail-to-reject-means-the-null-is-true.">“Fail to reject means the null is true.”</h3>
+<p>No.</p>
+<p>It means the data did not provide sufficient evidence to reject it.</p>
+</section>
+<section id="p-.03-means-there-is-a-3-probability-that-the-null-is-true." class="level3">
+<h3 class="anchored" data-anchor-id="p-.03-means-there-is-a-3-probability-that-the-null-is-true.">“p = .03 means there is a 3% probability that the null is true.”</h3>
+<p>No.</p>
+<p>The p value is calculated <strong>assuming the null model</strong>.</p>
+</section>
+<section id="a-significant-result-must-be-important." class="level3">
+<h3 class="anchored" data-anchor-id="a-significant-result-must-be-important.">“A significant result must be important.”</h3>
+<p>No.</p>
+<p>Statistical significance and practical importance are different.</p>
+</section>
+<section id="a-nonsignificant-result-means-there-is-no-effect." class="level3">
+<h3 class="anchored" data-anchor-id="a-nonsignificant-result-means-there-is-no-effect.">“A nonsignificant result means there is no effect.”</h3>
+<p>Not necessarily.</p>
+<p>The study may have had low power.</p>
+</section>
+<section id="increasing-n-changes-cohens-d." class="level3">
+<h3 class="anchored" data-anchor-id="increasing-n-changes-cohens-d.">“Increasing n changes Cohen’s d.”</h3>
+<p>For the simple one-sample formula used here, no. The sample size affects standard error and the z statistic, not the standardized mean difference (d=(X-)/).</p>
+</section>
+<section id="a-smaller-alpha-always-makes-a-test-better." class="level3">
+<h3 class="anchored" data-anchor-id="a-smaller-alpha-always-makes-a-test-better.">“A smaller alpha always makes a test better.”</h3>
+<p>No.</p>
+<p>A smaller alpha reduces Type I error risk but also makes rejection harder and can reduce power.</p>
+</section>
+<section id="a-one-tailed-test-is-always-preferable-because-it-has-more-power." class="level3">
+<h3 class="anchored" data-anchor-id="a-one-tailed-test-is-always-preferable-because-it-has-more-power.">“A one-tailed test is always preferable because it has more power.”</h3>
+<p>No.</p>
+<p>It is appropriate only when the directional prediction is substantively justified in advance.</p>
+<hr>
+</section>
 </section>
 <section id="tutorial-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="tutorial-preparation">Tutorial Preparation</h2>
-<p><em>To be added.</em></p>
+<h2 class="anchored" data-anchor-id="tutorial-preparation">41. Tutorial Preparation</h2>
+<p>A TA should be ready to answer:</p>
+<section id="why-do-we-assume-the-null-is-true" class="level3">
+<h3 class="anchored" data-anchor-id="why-do-we-assume-the-null-is-true">“Why do we assume the null is true?”</h3>
+<p>Because the null provides the reference distribution needed to judge how unusual the observed statistic is.</p>
 </section>
-<section id="practice-questions" class="level2">
-<h2 class="anchored" data-anchor-id="practice-questions">Practice Questions</h2>
-<section id="conceptual-questions" class="level3">
-<h3 class="anchored" data-anchor-id="conceptual-questions">Conceptual Questions</h3>
-<p><em>To be added.</em></p>
+<section id="what-exactly-does-alpha-mean" class="level3">
+<h3 class="anchored" data-anchor-id="what-exactly-does-alpha-mean">“What exactly does alpha mean?”</h3>
+<p>It defines the Type I error rate tolerated by the decision rule under the null model.</p>
 </section>
-<section id="applied-questions" class="level3">
-<h3 class="anchored" data-anchor-id="applied-questions">Applied Questions</h3>
-<p><em>To be added.</em></p>
+<section id="what-is-a-critical-region" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-a-critical-region">“What is a critical region?”</h3>
+<p>A range of test-statistic values considered sufficiently unlikely under (H_0) to trigger rejection.</p>
 </section>
+<section id="what-is-the-difference-between-alpha-and-p" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-the-difference-between-alpha-and-p">“What is the difference between alpha and p?”</h3>
+<p>Alpha is chosen before seeing the data.</p>
+<p>The p value is calculated from the observed data under the null model.</p>
+</section>
+<section id="why-does-increasing-n-make-significance-easier" class="level3">
+<h3 class="anchored" data-anchor-id="why-does-increasing-n-make-significance-easier">“Why does increasing n make significance easier?”</h3>
+<p>Because:</p>
+<p><span class="math display">\[
+SE=\frac{\sigma}{\sqrt n}.
+\]</span></p>
+<p>As (n) increases, SE decreases, so the same mean difference becomes larger in standard-error units.</p>
+</section>
+<section id="why-report-effect-size" class="level3">
+<h3 class="anchored" data-anchor-id="why-report-effect-size">“Why report effect size?”</h3>
+<p>Because significance answers whether the data conflict with the null model, whereas effect size describes how large the observed effect is.</p>
+<hr>
+</section>
+</section>
+<section id="practice-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="practice-hypotheses">42. Practice: Hypotheses</h2>
+<p>For each research question, write (H_0) and (H_1).</p>
+<ol type="1">
+<li>A treatment may change reaction time in either direction.</li>
+<li>A training program is predicted to increase scores.</li>
+<li>A sedative is predicted to reduce activity.</li>
+</ol>
+<p>Identify whether each test should be one- or two-tailed under the course framework.</p>
+<hr>
+</section>
+<section id="practice-one-sample-z-test" class="level2">
+<h2 class="anchored" data-anchor-id="practice-one-sample-z-test">43. Practice: One-Sample z Test</h2>
+<p>Suppose:</p>
+<p><span class="math display">\[
+\mu=50,\quad \sigma=10,\quad n=25,
+\]</span></p>
+<p>and:</p>
+<p><span class="math display">\[
+\bar X=54.
+\]</span></p>
+<p>At:</p>
+<p><span class="math display">\[
+\alpha=.05,
+\]</span></p>
+<p>two-tailed:</p>
+<ol type="1">
+<li>calculate SE;</li>
+<li>calculate z;</li>
+<li>identify the critical values;</li>
+<li>make the decision;</li>
+<li>state the conclusion in context.</li>
+</ol>
+<hr>
+</section>
+<section id="practice-effect-size" class="level2">
+<h2 class="anchored" data-anchor-id="practice-effect-size">44. Practice: Effect Size</h2>
+<p>Using the same example:</p>
+<p><span class="math display">\[
+\bar X=54,\quad \mu=50,\quad \sigma=10,
+\]</span></p>
+<p>calculate:</p>
+<p><span class="math display">\[
+d
+=
+\frac{\bar X-\mu}{\sigma}.
+\]</span></p>
+<p>Then compare the information supplied by (d) with the information supplied by the hypothesis test.</p>
+<hr>
+</section>
+<section id="practice-confidence-interval" class="level2">
+<h2 class="anchored" data-anchor-id="practice-confidence-interval">45. Practice: Confidence Interval</h2>
+<p>For:</p>
+<p><span class="math display">\[
+\bar X=54,\quad \sigma=10,\quad n=25,
+\]</span></p>
+<p>calculate:</p>
+<p><span class="math display">\[
+CI_{95}
+=
+\bar X
+\pm
+1.96
+\left(
+\frac{\sigma}{\sqrt n}
+\right).
+\]</span></p>
+<p>Then ask whether the null value:</p>
+<p><span class="math display">\[
+\mu_0=50
+\]</span></p>
+<p>falls inside the interval.</p>
+<hr>
 </section>
 <section id="what-you-should-be-able-to-explain" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-should-be-able-to-explain">What You Should Be Able to Explain</h2>
-<p><em>To be added.</em></p>
+<h2 class="anchored" data-anchor-id="what-you-should-be-able-to-explain">46. What You Should Be Able to Explain</h2>
+<p>Before moving on, you should be able to explain:</p>
+<ul>
+<li>how Week 6 builds on sampling distributions;</li>
+<li>what (H_0) and (H_1) represent;</li>
+<li>why inference begins from a null model;</li>
+<li>the sequence of a hypothesis test;</li>
+<li>what alpha controls;</li>
+<li>what critical values define;</li>
+<li>Type I vs.&nbsp;Type II errors;</li>
+<li>why power is (1-);</li>
+<li>how sample size changes standard error and power;</li>
+<li>how to calculate a one-sample z statistic;</li>
+<li>why the same mean difference can be significant for one sample size and nonsignificant for another;</li>
+<li>one-tailed vs.&nbsp;two-tailed testing;</li>
+<li>why p values are conditional on the null model;</li>
+<li>reject vs.&nbsp;fail to reject language;</li>
+<li>statistical significance vs.&nbsp;effect size;</li>
+<li>what Cohen’s (d) measures;</li>
+<li>repeated-sampling interpretation of a confidence interval;</li>
+<li>what controls CI width;</li>
+<li>why good interpretation uses more than a p value.</li>
+</ul>
+<hr>
 </section>
-<section id="reading" class="level2">
-<h2 class="anchored" data-anchor-id="reading">Reading</h2>
-<p>Privitera (2018), Chapter 7</p>
+<section id="readings-and-course-materials" class="level2">
+<h2 class="anchored" data-anchor-id="readings-and-course-materials">47. Readings and Course Materials</h2>
+<section id="lecture-and-worksheet" class="level3">
+<h3 class="anchored" data-anchor-id="lecture-and-worksheet">Lecture and worksheet</h3>
+<ul>
+<li>Sigal, M. (2026, October 26). <em>PSYC 210: Introduction to data analysis—Lecture 6: Hypothesis testing</em> [Lecture slides]. Simon Fraser University.</li>
+<li>Sigal, M. (2026). <em>PSYC 210 Lecture 6 worksheet</em> [Course worksheet]. Simon Fraser University.</li>
+<li>Sigal, M. (2026). <em>PSYC 210 Lecture 6 worksheet key</em> [Answer key]. Simon Fraser University.</li>
+</ul>
+</section>
+<section id="required-and-supporting-readings" class="level3">
+<h3 class="anchored" data-anchor-id="required-and-supporting-readings">Required and supporting readings</h3>
+<ul>
+<li>Privitera, G. J. (2018), Chapter 7: <em>Hypothesis Testing: Significance, Effect Size, and Power</em>.</li>
+<li>Privitera, G. J. (2024), Chapter 8: <em>Hypothesis Testing: Significance, Effect Size, Estimation, and Power</em>.</li>
+</ul>
+<p>The lecture identifies Chapter 7 as the immediate reading framework and assigns practice problems 14, 15, 20, 31, 32, and 34 (Sigal, 2026).</p>
+<p>The 2024 edition expands the same core framework by treating significance, effect size, estimation, and power as complementary ways to describe an effect.</p>
+<hr>
+</section>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">48. References</h2>
+<p>Privitera, G. J. (2018). <em>Essential statistics for the behavioral sciences</em> (2nd ed.). SAGE.</p>
+<p>Privitera, G. J. (2024). <em>Statistics for the behavioral sciences</em> (4th ed.). SAGE.</p>
+<p>Sigal, M. (2026, October 26). <em>PSYC 210: Introduction to data analysis—Lecture 6: Hypothesis testing</em> [Lecture slides]. Simon Fraser University.</p>
+<p>Sigal, M. (2026). <em>PSYC 210 Lecture 6 worksheet</em> [Course worksheet]. Simon Fraser University.</p>
+<p>Sigal, M. (2026). <em>PSYC 210 Lecture 6 worksheet key</em> [Answer key]. Simon Fraser University.</p>
+<hr>
+</section>
+<section id="week-6-takeaway" class="level2">
+<h2 class="anchored" data-anchor-id="week-6-takeaway">49. Week 6 Takeaway</h2>
+<p>Week 6 converts probability into a decision framework.</p>
+<p>The central test statistic is:</p>
+<p><span class="math display">\[
+z
+=
+\frac{\bar X-\mu_0}
+{\sigma/\sqrt n}.
+\]</span></p>
+<p>This compares:</p>
+<blockquote class="blockquote">
+<p><strong>what we observed</strong></p>
+</blockquote>
+<p>with</p>
+<blockquote class="blockquote">
+<p><strong>what the null model predicts, measured relative to expected sampling variability.</strong></p>
+</blockquote>
+<p>But Week 6 also makes clear that inference should not stop at statistical significance.</p>
+<p>A stronger interpretation asks:</p>
+<ul>
+<li>Is the effect statistically detectable?</li>
+<li>How large is it?</li>
+<li>How precisely is it estimated?</li>
+<li>How much power did the study have?</li>
+<li>Does the result matter in context?</li>
+</ul>
+<p>That broader perspective is the foundation for the inferential methods that follow.</p>
+</section>
+</section>
+<section id="part-vi-midterm-review-guide" class="level1">
+<h1>Part VI — Midterm Review Guide</h1>
+<p>The official Lecture 6 midterm guide identifies five conceptual areas: <strong>null hypothesis significance testing, Type I and Type II error, effect size, confidence intervals, and statistical power</strong>. Computationally, you should be able to calculate <strong>(Z_{obt}), effect size, confidence intervals, and p values</strong>.</p>
+<section id="the-big-picture" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-picture">The Big Picture</h2>
+<p>Week 6 takes the sampling distribution from Week 5 and turns it into a formal decision framework.</p>
+<p>The central question is:</p>
+<blockquote class="blockquote">
+<p><strong>If the null hypothesis were true, how unusual would our observed sample mean be?</strong></p>
+</blockquote>
+<p>The course organizes NHST around four core steps.</p>
+</section>
+<section id="step-1-state-statistical-hypotheses" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-state-statistical-hypotheses">Step 1 — State Statistical Hypotheses</h2>
+<p>A nondirectional example:</p>
+<p>[ H_0: ]</p>
+<p>[ H_1:. ]</p>
+<p>The null states the baseline/no-difference population value. The alternative states the substantive claim that the population mean differs.</p>
+<p>The pair must cover all possible population-mean values.</p>
+</section>
+<section id="step-2-set-the-decision-rule" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-set-the-decision-rule">Step 2 — Set the Decision Rule</h2>
+<p>The decision is built from the <strong>null distribution</strong>: the sampling distribution expected if (H_0) is true.</p>
+<p>For a two-tailed test with:</p>
+<p>[ , ]</p>
+<p>split alpha:</p>
+<p>[ =.025 ]</p>
+<p>in each tail.</p>
+<p>The corresponding critical values are:</p>
+<p>[ Z_{crit}=. ]</p>
+<p>Decision rule:</p>
+<ul>
+<li>if (|Z_{obt}|), reject (H_0);</li>
+<li>if (|Z_{obt}|&lt;1.96), fail to reject (H_0).</li>
+</ul>
+</section>
+<section id="step-3-collect-the-sample" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-collect-the-sample">Step 3 — Collect the Sample</h2>
+<p>The sample supplies the observed statistic, especially ({x}), that will be compared with the null distribution.</p>
+</section>
+<section id="step-4-calculate-z_obt-and-decide" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-calculate-z_obt-and-decide">Step 4 — Calculate (Z_{obt}) and Decide</h2>
+<p>For a sample mean:</p>
+<p>[ Z_{obt} = {<em>{{x}}}, </em>{{x}} = . ]</p>
+<p>Then compare (Z_{obt}) with (Z_{crit}).</p>
+<p>The p value gives the probability, under the null model, of obtaining the observed result or something more extreme.</p>
+<p>For a two-tailed test, a one-tail area from the z table is doubled.</p>
+</section>
+<section id="example-from-the-core-guide" class="level2">
+<h2 class="anchored" data-anchor-id="example-from-the-core-guide">Example From the Core Guide</h2>
+<p>The guide uses:</p>
+<p>[ ,,n=50,{x}=105. ]</p>
+<p>The standard error is approximately:</p>
+<p>[ _{{x}} = . ]</p>
+<p>Then:</p>
+<p>[ Z_{obt} = . ]</p>
+<p>Because:</p>
+<p>[ 2.36&gt;1.96, ]</p>
+<p>reject (H_0).</p>
+<p>The z-table one-tail area is .0091, so for the two-tailed test:</p>
+<p>[ p=2(.0091)=.0182. ]</p>
+<p>Because:</p>
+<p>[ p&lt;.05, ]</p>
+<p>the result is statistically significant.</p>
+</section>
+<section id="effect-size-1" class="level2">
+<h2 class="anchored" data-anchor-id="effect-size-1">Effect Size</h2>
+<p>The course formula is:</p>
+<p>[ ES = . ]</p>
+<p>Notice the denominator:</p>
+<ul>
+<li>(Z_{obt}) uses <strong>standard error</strong>;</li>
+<li>effect size uses the <strong>population SD</strong>.</li>
+</ul>
+<p>For the IQ example:</p>
+<p>[ ES = = 0.333. ]</p>
+<p>The course benchmarks are:</p>
+<ul>
+<li>.20–.30: small;</li>
+<li>around .50: medium;</li>
+<li>.80 or greater: large.</li>
+</ul>
+<p>This example is important because it shows that a statistically significant result can still have a small effect size.</p>
+</section>
+<section id="confidence-intervals-1" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals-1">Confidence Intervals</h2>
+<p>The official formula is:</p>
+<p>[ CI = {x} Z_{crit}_{{x}}. ]</p>
+<p>For a 95% CI:</p>
+<p>[ Z_{crit}=1.96. ]</p>
+<p>Using the IQ example:</p>
+<p>[ CI = 105 (2.12) ]</p>
+<p>so:</p>
+<p>[ CI. ]</p>
+<p>The null value 100 lies outside this interval, consistent with rejecting (H_0).</p>
+<p>The correct interpretation of “95%” is based on repeated sampling: if the procedure were repeated across all possible samples, about 95% of those intervals would contain the population mean.</p>
+</section>
+<section id="type-i-and-type-ii-errors-1" class="level2">
+<h2 class="anchored" data-anchor-id="type-i-and-type-ii-errors-1">Type I and Type II Errors</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reality</th>
+<th>Fail to reject (H_0)</th>
+<th>Reject (H_0)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(H_0) true</td>
+<td>Correct, probability (1-)</td>
+<td>Type I error, probability ()</td>
+</tr>
+<tr class="even">
+<td>(H_0) false</td>
+<td>Type II error, probability ()</td>
+<td>Correct, probability (1-)</td>
+</tr>
+</tbody>
+</table>
+<section id="type-i-error-2" class="level3">
+<h3 class="anchored" data-anchor-id="type-i-error-2">Type I error</h3>
+<p>Reject a null hypothesis that is actually true.</p>
+</section>
+<section id="type-ii-error-2" class="level3">
+<h3 class="anchored" data-anchor-id="type-ii-error-2">Type II error</h3>
+<p>Fail to reject a null hypothesis that is actually false.</p>
+</section>
+</section>
+<section id="statistical-power" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-power">Statistical Power</h2>
+<p>Power is:</p>
+<p>[ 1-. ]</p>
+<p>It is the probability of correctly rejecting a false null hypothesis.</p>
+<p>The guide emphasizes:</p>
+<ul>
+<li>as (n) increases, power increases;</li>
+<li>as () increases, power increases;</li>
+<li>as () increases, power decreases;</li>
+<li>as effect size increases, power increases.</li>
+</ul>
+</section>
+<section id="formula-sheet-connection" class="level2">
+<h2 class="anchored" data-anchor-id="formula-sheet-connection">Formula-Sheet Connection</h2>
+<p>Week 6 directly uses:</p>
+<p>[ Z = , _{{x}} = ]</p>
+<p>[ = ]</p>
+<p>[ CI(Z) = {x} Z_{crit}_{{x}}. ]</p>
+</section>
+<section id="assignment-style-practice" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-style-practice">Assignment-Style Practice</h2>
+<section id="question-1-setting-up-nhst-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-setting-up-nhst-4">Question 1 — Setting up NHST (/4)</h3>
+<p>A population has:</p>
+<p>[ ,. ]</p>
+<p>A researcher tests whether a training program changes scores in either direction.</p>
+<ol type="a">
+<li>State (H_0).<br>
+</li>
+<li>State (H_1).<br>
+</li>
+<li>Is the test one-tailed or two-tailed?<br>
+</li>
+<li>At (), what are the critical z values?</li>
+</ol>
+</section>
+<section id="question-2-complete-one-sample-z-test-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-2-complete-one-sample-z-test-6">Question 2 — Complete one-sample z test (/6)</h3>
+<p>For the same population, a sample of:</p>
+<p>[ n=36 ]</p>
+<p>has:</p>
+<p>[ {x}=84. ]</p>
+<ol type="a">
+<li>Calculate the standard error.<br>
+</li>
+<li>Calculate (Z_{obt}).<br>
+</li>
+<li>Make the decision at (), two-tailed.<br>
+</li>
+<li>Is the result statistically significant?<br>
+</li>
+<li>If the one-tail area beyond (|z|=2.00) is .0228, calculate the two-tailed p value.<br>
+</li>
+<li>State the result in plain English.</li>
+</ol>
+</section>
+<section id="question-3-effect-size-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3-effect-size-3">Question 3 — Effect size (/3)</h3>
+<p>Using Question 2:</p>
+<ol type="a">
+<li>Calculate the effect size.<br>
+</li>
+<li>Classify it using the course benchmarks.<br>
+</li>
+<li>Explain why effect size answers a different question from statistical significance.</li>
+</ol>
+</section>
+<section id="question-4-confidence-interval-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-confidence-interval-4">Question 4 — Confidence interval (/4)</h3>
+<p>Using Question 2:</p>
+<ol type="a">
+<li>Calculate the 95% CI.<br>
+</li>
+<li>Does the null value () fall inside the CI?<br>
+</li>
+<li>Is that consistent with the NHST decision?<br>
+</li>
+<li>State the repeated-sampling interpretation of a 95% CI.</li>
+</ol>
+</section>
+<section id="question-5-errors-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-5-errors-4">Question 5 — Errors (/4)</h3>
+<p>For each situation, identify the outcome.</p>
+<ol type="a">
+<li>(H_0) is true and the researcher rejects it.<br>
+</li>
+<li>(H_0) is false and the researcher fails to reject it.<br>
+</li>
+<li>(H_0) is true and the researcher fails to reject it.<br>
+</li>
+<li>(H_0) is false and the researcher rejects it.</li>
+</ol>
+</section>
+<section id="question-6-power-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-6-power-4">Question 6 — Power (/4)</h3>
+<p>State whether power increases or decreases when:</p>
+<ol type="a">
+<li>sample size increases;<br>
+</li>
+<li>alpha increases;<br>
+</li>
+<li>population standard deviation increases;<br>
+</li>
+<li>effect size increases.</li>
+</ol>
+</section>
+</section>
+<section id="answers" class="level2">
+<h2 class="anchored" data-anchor-id="answers">Answers</h2>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>[ H_0:. ]</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>[ H_1:. ]</p>
+<ol start="3" type="a">
+<li>Two-tailed.<br>
+</li>
+<li></li>
+</ol>
+<p>[ Z_{crit}=. ]</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>[ SE = = 2. ]</p>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p>[ Z_{obt} = = 2.00. ]</p>
+<ol start="3" type="a">
+<li>Because:</li>
+</ol>
+<p>[ |2.00|&gt;1.96, ]</p>
+<p>reject (H_0).</p>
+<ol start="4" type="a">
+<li><p>Yes, statistically significant at ().</p></li>
+<li></li>
+</ol>
+<p>[ p=2(.0228)=.0456. ]</p>
+<ol start="6" type="a">
+<li>The sample mean is sufficiently unlikely under the null model to reject the hypothesis that the population mean remains 80; the training program is associated with a statistically significant difference.</li>
+</ol>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>[ ES = = 0.333. ]</p>
+<ol start="2" type="a">
+<li>Small effect using the course benchmarks.<br>
+</li>
+<li>Significance evaluates how incompatible the data are with the null model; effect size describes how large the standardized mean difference is.</li>
+</ol>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>[ CI = 84 (2) = 84. ]</p>
+<p>Therefore:</p>
+<p>[ CI=[80.08,87.92]. ]</p>
+<ol start="2" type="a">
+<li>No.<br>
+</li>
+<li>Yes. The corresponding two-tailed test rejects (H_0).<br>
+</li>
+<li>Across repeated sampling, about 95% of intervals constructed with this procedure would contain the population mean.</li>
+</ol>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<ol type="a">
+<li>Type I error.<br>
+</li>
+<li>Type II error.<br>
+</li>
+<li>Correct decision, probability (1-).<br>
+</li>
+<li>Correct rejection; this contributes to power, (1-).</li>
+</ol>
+</section>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<ol type="a">
+<li>Increases.<br>
+</li>
+<li>Increases.<br>
+</li>
+<li>Decreases.<br>
+</li>
+<li>Increases.</li>
+</ol>
+</section>
+</section>
+<section id="midterm-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="midterm-self-check">Midterm Self-Check</h2>
+<p>You should be able to explain and calculate:</p>
+<ul>
+<li>the four-step NHST logic;</li>
+<li>(H_0) vs.&nbsp;(H_1);</li>
+<li>() and critical regions;</li>
+<li>(Z_{obt}) and (Z_{crit});</li>
+<li>p values;</li>
+<li>reject vs.&nbsp;fail to reject;</li>
+<li>Type I vs.&nbsp;Type II error;</li>
+<li>effect size;</li>
+<li>95% confidence intervals;</li>
+<li>statistical power and the factors that affect it.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

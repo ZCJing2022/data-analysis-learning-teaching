@@ -76,7 +76,7 @@ By the end of this week, you should be able to:
 
 ---
 
-# Part I — Review: Variability and Degrees of Freedom
+# Part I — From Variability to Standard Scores
 
 ## 1. Population Variance and Standard Deviation
 
@@ -245,8 +245,6 @@ $$
 
 ---
 
-# Part II — Why Standard Scores?
-
 ## 5. The Problem With Raw Scores
 
 A raw score in isolation is difficult to interpret.
@@ -342,8 +340,6 @@ $$
 The raw score is identical, but the relative standing is not.
 
 ---
-
-# Part III — z Scores
 
 ## 8. What Is a z Score?
 
@@ -513,7 +509,7 @@ Examples from the lecture include:
 
 ---
 
-# Part IV — The Normal Distribution
+# Part II — Normal Distributions and the z Table
 
 ## 14. What Is a Normal Distribution?
 
@@ -564,8 +560,6 @@ Real data may approximate the curve rather than match it perfectly.
 The 2018 textbook makes the same point: behavioral data rarely fit the mathematical normal distribution exactly; the normal model is useful when the data are approximately normal (Privitera, 2018).
 
 ---
-
-# Part V — The Standard Normal Distribution
 
 ## 18. What Is the Standard Normal Distribution?
 
@@ -625,8 +619,6 @@ Thus:
 This links distribution geometry directly to probability.
 
 ---
-
-# Part VI — The z Table
 
 ## 21. What the z Table Tells Us
 
@@ -713,7 +705,7 @@ This visual step helps prevent table-lookup mistakes.
 
 ---
 
-# Part VII — Probability Problems With z Scores
+# Part III — Probabilities, Percentiles, and Score Conversion
 
 ## 25. Basic Procedure
 
@@ -875,8 +867,6 @@ This matches the Week 4 worksheet answer key (Sigal, 2026).
 
 ---
 
-# Part VIII — Percentiles and Reverse Lookup
-
 ## 30. From Percentile to z Score
 
 The lecture notes that the z table can be used in reverse.
@@ -973,8 +963,6 @@ This problem reinforces algebraic manipulation of standardized-score formulas (S
 
 ---
 
-# Part IX — Converting Between Metrics
-
 ## 33. Why Standardization Helps Comparison
 
 Converting to z removes the original units.
@@ -1059,7 +1047,7 @@ These are all examples of changing the scale while preserving relative position 
 
 ---
 
-# Part X — Standardizing Does Not Normalize
+# Part IV — Standardization in Practice
 
 ## 37. A Crucial Distinction
 
@@ -1124,8 +1112,6 @@ The lecture explicitly states:
 > This data has not been "normalized" (Sigal, 2026).
 
 ---
-
-# Part XI — Worked Worksheet Review
 
 ## 39. Distribution Shape
 
@@ -1243,7 +1229,7 @@ These are the worksheet-key answers (Sigal, 2026).
 
 ---
 
-# Part XII — Common Misunderstandings
+# Part V — Review, Practice, and Takeaways
 
 ## 42. Common Errors With z Scores
 
@@ -1277,8 +1263,6 @@ No. \(z=0\) means the raw score equals the mean.
 
 ---
 
-# Part XIII — Tutorial Preparation
-
 ## 43. Questions a TA Should Be Ready to Answer
 
 ### "Why bother converting to z?"
@@ -1310,8 +1294,6 @@ Because most z-table mistakes come from choosing the wrong area.
 Because standardization is a linear transformation.
 
 ---
-
-# Part XIV — Practice Questions
 
 ## 44. Basic z Scores
 
@@ -1398,8 +1380,6 @@ After converting every score to z:
 
 ---
 
-# Part XV — What You Should Be Able to Explain
-
 ## 49. Conceptual Self-Check
 
 Before moving on, you should be able to explain:
@@ -1422,8 +1402,6 @@ Before moving on, you should be able to explain:
 
 ---
 
-# Part XVI — Readings and Course Materials
-
 ## 50. Lecture and Worksheet
 
 - Sigal, M. (2026, October 5). *PSYC 210: Introduction to data analysis—Lecture 4: Standard scores* [Lecture slides]. Simon Fraser University.
@@ -1445,8 +1423,6 @@ The 2018 edition aligns closely with the lecture's focus on normal distributions
 
 ---
 
-# Part XVII — References
-
 ## 52. References
 
 Privitera, G. J. (2018). *Essential statistics for the behavioral sciences* (2nd ed.). SAGE.
@@ -1460,8 +1436,6 @@ Sigal, M. (2026). *PSYC 210 Lecture 4 worksheet* [Course worksheet]. Simon Frase
 Sigal, M. (2026). *PSYC 210 Lecture 4 worksheet key* [Answer key]. Simon Fraser University.
 
 ---
-
-# Part XVIII — Week 4 Takeaway
 
 ## 53. Week 4 Takeaway
 
@@ -1491,3 +1465,316 @@ Most importantly:
 > **Standardizing a distribution changes its location and scale, but not its shape.**
 
 That distinction becomes essential as the course moves into probability, sampling distributions, and inferential statistics.
+
+
+# Part VI — Midterm Review Guide
+
+The official Lecture 4 midterm guide identifies four core topics: **the normal distribution and its properties, probability under the normal curve, z scores, and use of the z table**. Computationally, you should be able to calculate z scores and use table areas to obtain probabilities.
+
+## The Big Picture
+
+Week 4 creates a bridge:
+
+**raw score → z score → location on a normal distribution → probability**
+
+A z score is useful because it replaces the original measurement unit with a common unit:
+
+> **number of population standard deviations from the population mean**
+
+## The Normal Distribution
+
+For the midterm, know these properties:
+
+- bell-shaped;
+- symmetrical around \(\mu\);
+- asymptotic;
+- unimodal;
+- total area = 1.00;
+- inflection points at \(\mu\pm1\sigma\);
+- approximately 68% within \(\pm1\sigma\);
+- approximately 95% within \(\pm2\sigma\).
+
+The normal distribution is a **probability distribution**. Area under the curve corresponds to probability.
+
+Because it is symmetrical:
+
+\[
+P(X<\mu)=0.50
+\]
+
+and:
+
+\[
+P(X>\mu)=0.50.
+\]
+
+## Thinking of SD as a Unit
+
+Suppose:
+
+\[
+\mu=100,\qquad \sigma=15.
+\]
+
+Then:
+
+- 85 is one SD below the mean;
+- 115 is one SD above the mean;
+- 70 is two SD below;
+- 130 is two SD above.
+
+This “SD as a unit” idea is the easiest way to understand z scores.
+
+## z Scores
+
+The official formula is:
+
+\[
+Z=\frac{X-\mu}{\sigma}.
+\]
+
+Interpret the sign first:
+
+- \(Z>0\): above the mean;
+- \(Z<0\): below the mean;
+- \(Z=0\): exactly at the mean.
+
+Then interpret the magnitude:
+
+- \(|Z|=1\): one SD from the mean;
+- \(|Z|=2\): two SDs from the mean.
+
+Example:
+
+\[
+Z
+=
+\frac{79-100}{15}
+=
+-1.40.
+\]
+
+So a score of 79 lies 1.4 SDs below the population mean.
+
+## Using the z Table
+
+Once you have a z score, the table provides geometric areas under the standard normal curve.
+
+The course table distinguishes:
+
+- area between the mean and \(z\);
+- area beyond \(z\) in the tail.
+
+Because the normal distribution is symmetrical, tables need only list positive z magnitudes. A negative z uses the same areas reflected across the mean.
+
+### A reliable exam procedure
+
+1. Draw a normal curve.
+2. Mark \(z=0\).
+3. Mark the relevant z score.
+4. Shade the requested region.
+5. Decide whether you need the middle area, tail area, or a sum/difference of areas.
+6. Only then use the table.
+
+## Formula-Sheet Connection
+
+The Week 4 formula is:
+
+\[
+Z=\frac{X-\mu}{\sigma}.
+\]
+
+The z table supplied with the exam is then used to translate the standardized location into an area/probability.
+
+## Assignment-Style Practice
+
+### Question 1 — z-score calculations (/4)
+
+Suppose IQ scores are normally distributed with:
+
+\[
+\mu=100,\qquad \sigma=15.
+\]
+
+Calculate and interpret the z score for:
+
+a. \(X=115\)  
+b. \(X=70\)  
+c. \(X=108\)  
+d. \(X=100\)
+
+### Question 2 — Probability from a z score (/2)
+
+For a standard normal distribution:
+
+a. Approximately what proportion lies **below** \(z=+1.00\)?  
+b. Approximately what proportion lies **above** \(z=+1.00\)?
+
+Use the z table values:
+
+- mean-to-\(z=1.00\) area = .3413
+- tail beyond \(z=1.00\) = .1587
+
+### Question 3 — Negative z (/2)
+
+Using the same table values, find:
+
+a. \(P(Z<-1.00)\)  
+b. \(P(Z<+1.00)\)
+
+Explain why the two probabilities are different even though \(|z|=1\) in both cases.
+
+### Question 4 — Between two scores (/3)
+
+A population has:
+
+\[
+\mu=195,\qquad \sigma=30.
+\]
+
+Find the approximate probability that a randomly selected score lies between 165 and 225.
+
+### Question 5 — Reverse conversion (/2)
+
+A distribution has:
+
+\[
+\mu=50,\qquad \sigma=12.
+\]
+
+Find the raw score corresponding to:
+
+a. \(z=+1.5\)  
+b. \(z=-2.0\)
+
+### Question 6 — Conceptual normal curve (/3)
+
+Answer briefly.
+
+a. Why can a probability never be negative?  
+b. Why does the z table not need separate rows for negative z scores?  
+c. What does the total area under a normal curve equal?
+
+## Answers
+
+### Question 1
+
+a.
+
+\[
+z=\frac{115-100}{15}=+1.00.
+\]
+
+One SD above the mean.
+
+b.
+
+\[
+z=\frac{70-100}{15}=-2.00.
+\]
+
+Two SDs below the mean.
+
+c.
+
+\[
+z=\frac{108-100}{15}\approx+0.53.
+\]
+
+About 0.53 SD above the mean.
+
+d.
+
+\[
+z=0.
+\]
+
+The score equals the mean.
+
+### Question 2
+
+a.
+
+\[
+0.5000+0.3413=0.8413.
+\]
+
+b.
+
+\[
+0.1587.
+\]
+
+### Question 3
+
+a.
+
+\[
+P(Z<-1.00)=0.1587.
+\]
+
+b.
+
+\[
+P(Z<+1.00)=0.8413.
+\]
+
+The magnitude gives distance from the mean, but the sign tells us which side of the mean the cutoff lies on.
+
+### Question 4
+
+\[
+z_{165}=\frac{165-195}{30}=-1
+\]
+
+and:
+
+\[
+z_{225}=\frac{225-195}{30}=+1.
+\]
+
+The area between \(-1\) and \(+1\) is approximately:
+
+\[
+0.6826
+\]
+
+or about 68%.
+
+### Question 5
+
+Use:
+
+\[
+X=\mu+z\sigma.
+\]
+
+a.
+
+\[
+X=50+1.5(12)=68.
+\]
+
+b.
+
+\[
+X=50-2(12)=26.
+\]
+
+### Question 6
+
+a. Probability is a proportion and must lie between 0 and 1.  
+b. The standard normal distribution is symmetrical, so negative and positive z scores of equal magnitude have mirrored areas.  
+c. 1.00.
+
+## Midterm Self-Check
+
+You should be able to:
+
+- list the major properties of the normal distribution;
+- explain area as probability;
+- calculate and interpret z;
+- distinguish the sign from the magnitude of z;
+- draw a quick normal-curve sketch before using the table;
+- find tail, cumulative, and between-score probabilities;
+- convert a z score back to a raw score.

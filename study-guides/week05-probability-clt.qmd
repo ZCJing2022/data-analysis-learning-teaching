@@ -1,55 +1,1830 @@
 ---
-title: "Week 05 — Probability and the Central Limit Theorem"
+title: "Week 05 — Probability, Sampling Distributions, and the Central Limit Theorem"
+toc-depth: 2
 ---
 
-## Overview
+# Overview
 
-*To be developed from the supplied lecture notes, tutorials, exercises, and readings.*
+Week 5 is the major transition from **descriptive statistics** to the foundations of **inferential statistics**.
 
-## Learning Objectives
+In Week 4, the course used z scores and the normal distribution to ask:
 
-*To be added.*
+> **How unusual is an individual score relative to a population distribution?**
 
-## Key Concepts
+Week 5 extends exactly the same logic to a new question:
 
-*To be added.*
+> **How unusual is a sample mean relative to the population it came from?**
 
-## How the Concepts Fit Together
+The lecture begins with basic probability and then returns to the research process. Researchers usually want to make statements about populations, but they almost never observe whole populations. Instead, they collect samples and use sample statistics to estimate population parameters. Because different random samples produce different results, this introduces **sampling error** (Sigal, 2026).
 
-*To be added.*
+The key conceptual sequence is:
 
-## Important Terms
+**Probability**
 
-| Term | Plain-language explanation |
-|---|---|
-| *To be added* | |
+↓  
 
-## Worked Examples
+**Samples vary**
 
-*To be added.*
+↓  
 
-## Common Misunderstandings
+**Sampling error**
 
-*To be added.*
+↓  
 
-## Tutorial Preparation
+**Sampling distributions**
 
-*To be added.*
+↓  
 
-## Practice Questions
+**Central Limit Theorem**
 
-### Conceptual Questions
+↓  
 
-*To be added.*
+**Standard error**
 
-### Applied Questions
+↓  
 
-*To be added.*
+**z for sample means**
 
-## What You Should Be Able to Explain
+↓  
 
-*To be added.*
+**Probability of obtaining a sample mean**
 
-## Reading
+This is the theoretical bridge to hypothesis testing in Week 6.
 
-Privitera (2018), Chapter 6
+---
+
+# Learning Objectives
+
+By the end of this week, you should be able to:
+
+1. Define basic probability using a sample space.
+2. Distinguish independent from dependent events.
+3. Apply the simplified "and" and "or" rules used in lecture to appropriate events.
+4. Explain the law of large numbers.
+5. Explain the gambler's fallacy and why it does not follow from the law of large numbers.
+6. Distinguish a population parameter from a sample statistic.
+7. Define sampling error.
+8. Explain why different random samples from the same population produce different statistics.
+9. Explain why larger samples tend to be more representative of a population on average.
+10. Define a sampling distribution.
+11. Define the sampling distribution of the mean.
+12. Explain why the mean of the sampling distribution equals the population mean.
+13. State the Central Limit Theorem in the form used in this course.
+14. Explain what happens to the shape of a sampling distribution as sample size increases.
+15. Define the standard error of the mean.
+16. Compute standard error when population standard deviation and sample size are known.
+17. Explain the relationship among population standard deviation, sample size, and standard error.
+18. Explain why sample means fluctuate less than individual scores.
+19. Distinguish standard deviation from standard error.
+20. Use the z transformation for a sample mean.
+21. Explain why the same sample mean can be more or less unusual depending on sample size.
+22. Calculate probabilities for sample means using the standard normal distribution.
+23. Interpret the Week 5 worksheet examples involving sample size and population standard deviation.
+24. Explain how Week 5 provides the foundation for hypothesis testing.
+
+---
+
+# Part I — Probability Foundations
+
+## 1. Why Probability Matters
+
+The lecture places probability directly inside the research process.
+
+Researchers:
+
+1. select a topic;
+2. operationalize concepts;
+3. gather data;
+4. summarize the data;
+5. then ask what the observed results imply beyond the particular observations collected.
+
+The next step is therefore to make statements about **probability** (Sigal, 2026).
+
+Probability underlies inferential statistics because inference asks how plausible an observed result would be under specified assumptions.
+
+---
+
+## 2. Basic Probability
+
+The lecture writes basic probability as:
+
+$$
+P(A)
+=
+\frac{\#(A)}{\#(S)},
+$$
+
+where:
+
+- \(A\) is the event of interest;
+- \(S\) is the sample space;
+- \(\#(A)\) is the number of ways \(A\) can occur;
+- \(\#(S)\) is the number of possible outcomes.
+
+Examples include:
+
+- getting heads on one fair coin flip;
+- drawing the Ace of Spades;
+- drawing any diamond from a standard deck (Sigal, 2026).
+
+---
+
+## 3. Independent and Dependent Events
+
+The lecture distinguishes two situations.
+
+### Independent events
+
+One event does not change the probability of another.
+
+Example:
+
+> Draw a card, replace it, and draw again.
+
+Because the first draw is replaced, the second draw begins from the same deck composition.
+
+### Dependent events
+
+One event changes the probability of another.
+
+Example:
+
+> Draw two cards without replacement.
+
+After the first card is removed, the second draw comes from a changed sample space (Sigal, 2026).
+
+---
+
+## 4. The "And" Rule
+
+For independent events, the lecture uses:
+
+$$
+P(A\cap B)
+=
+P(A)\times P(B).
+$$
+
+For example, rolling two fair dice and obtaining a particular result on each die requires multiplying the relevant probabilities.
+
+### Important scope condition
+
+The simple multiplication rule above applies when the events are **independent**.
+
+For dependent events, the second probability must reflect the changed condition:
+
+$$
+P(A\cap B)
+=
+P(A)P(B\mid A).
+$$
+
+This distinction is consistent with the lecture's preceding contrast between independent and dependent events.
+
+---
+
+## 5. The "Or" Rule
+
+For mutually exclusive outcomes, the lecture uses:
+
+$$
+P(A\cup B)
+=
+P(A)+P(B).
+$$
+
+Example:
+
+> On one die roll, what is the probability of rolling a 6 **or** a 1?
+
+Because a single roll cannot be both 6 and 1:
+
+$$
+P(6\text{ or }1)
+=
+\frac16+\frac16
+=
+\frac26
+=
+\frac13.
+$$
+
+---
+
+## 6. "And" vs. "Or"
+
+The lecture contrasts:
+
+- one die: roll a 6;
+- one die: roll a 6 **or** 1;
+- two dice: roll a 6 **and** 1.
+
+The language matters.
+
+A useful heuristic is:
+
+- **or** → often add;
+- **and** → often multiply;
+
+but only after checking whether the relevant events are mutually exclusive, independent, or conditional.
+
+---
+
+## 7. The Law of Large Numbers
+
+The lecture illustrates the law of large numbers with repeated coin tosses.
+
+Observed proportions may fluctuate greatly with only a few trials:
+
+- 4 tosses → 1 head → .25;
+- 100 tosses → 64 heads → .64;
+- 1,000 tosses → 582 heads → .582;
+- 10,000 tosses → 4,989 heads → .499.
+
+The point is not that a short run must look balanced.
+
+The point is:
+
+> **Across sufficiently many independent trials, observed relative frequencies tend to stabilize around their underlying probabilities** (Sigal, 2026).
+
+---
+
+## 8. The Gambler's Fallacy
+
+The lecture immediately warns against misinterpreting long-run regularity.
+
+The **gambler's fallacy** is the belief that an outcome becomes more or less likely merely because of a recent sequence of similar outcomes.
+
+For independent trials, previous outcomes do not change the probability of the next outcome.
+
+If a fair coin has produced five heads in a row:
+
+$$
+P(H\text{ on next flip})=0.50.
+$$
+
+The law of large numbers concerns **long-run aggregate behavior**, not a force that makes the next trial "correct" a recent streak.
+
+---
+
+## 9. Rare Events Still Occur
+
+The lecture uses an XKCD example to make a related point: an event with a very small probability can still occur.
+
+A rare event is not an impossible event.
+
+This distinction becomes important later when inferential statistics asks how surprising an observed result is under a model.
+
+---
+
+# Part II — From Populations to Samples
+
+## 10. Week 4 vs. Week 5
+
+Week 4 asked about the probability of an **individual score**.
+
+If population mean and standard deviation are known:
+
+$$
+z
+=
+\frac{X-\mu}{\sigma}.
+$$
+
+Week 5 asks:
+
+> What if the quantity we observe is not a single score, but a **sample mean**?
+
+This shift from scores to statistics is the central move in Week 5 (Sigal, 2026).
+
+---
+
+## 11. Population, Sample, and Sampling
+
+A **population** is the full group of interest.
+
+A **sample** is a subset drawn from that population.
+
+**Sampling** is the process by which observations are selected.
+
+Suppose verbal IQ is defined in a population with:
+
+$$
+\mu=100
+$$
+
+and:
+
+$$
+\sigma=15.
+$$
+
+Different random samples from that population will produce different:
+
+- sample means;
+- sample standard deviations.
+
+They will not generally reproduce the population parameters exactly (Sigal, 2026).
+
+---
+
+## 12. Parameters vs. Statistics
+
+A **parameter** describes a population.
+
+Examples:
+
+$$
+\mu,\quad \sigma.
+$$
+
+A **statistic** describes a sample.
+
+Examples:
+
+$$
+\bar{x},\quad s.
+$$
+
+In the lecture simulation, the population is fixed at:
+
+$$
+\mu=100,\quad \sigma=15,
+$$
+
+yet sample means vary considerably across small samples.
+
+This is not a contradiction.
+
+It is the expected consequence of random sampling.
+
+---
+
+## 13. Sampling Error
+
+The lecture defines the mismatch between a sample statistic and its population parameter as **sampling error** (Sigal, 2026).
+
+For example:
+
+$$
+\bar{x}-\mu
+$$
+
+can differ from zero simply because the sample contains only some members of the population.
+
+Sampling error does not automatically imply:
+
+- a mistake;
+- poor measurement;
+- biased conduct;
+- bad statistics.
+
+It can arise purely by chance.
+
+---
+
+## 14. Why Larger Samples Help
+
+The lecture states:
+
+> The larger the sample, the more representative it is, on average, of the population it was drawn from (Sigal, 2026).
+
+This is a probabilistic statement, not a guarantee.
+
+A larger sample can still be biased if the sampling process is systematically unrepresentative.
+
+But under appropriate random sampling, increasing sample size reduces chance fluctuation in estimates such as the sample mean.
+
+---
+
+## 15. Small Samples Fluctuate More
+
+The lecture compares repeated samples of different sizes from a population with:
+
+$$
+\mu=100,\quad \sigma=15.
+$$
+
+Very small samples produce highly variable means.
+
+As sample size increases, the sample means tend to cluster more closely around 100.
+
+The lecture's series from \(n=1\), \(2\), \(10\), \(25\), to \(1000\) visually demonstrates the increasing stability of the mean (Sigal, 2026).
+
+---
+
+## 16. One Sample Is Not a Sampling Distribution
+
+A single sample produces one sample mean.
+
+A **sampling distribution** requires thinking across repeated possible samples.
+
+This distinction is essential:
+
+- distribution of **scores** → individual observations;
+- sampling distribution of the **mean** → means calculated from many samples.
+
+---
+
+# Part III — Sampling Distributions and the Central Limit Theorem
+
+## 17. Definition of a Sampling Distribution
+
+The lecture defines a sampling distribution as:
+
+> the distribution of a sample statistic for all possible random samples of a particular size \(n\) that can be obtained from a population (Sigal, 2026).
+
+The statistic might be:
+
+- a mean;
+- a variance;
+- another sample statistic.
+
+Week 5 focuses primarily on the **sample mean**.
+
+---
+
+## 18. Sampling Distribution of the Mean
+
+Imagine repeatedly:
+
+1. drawing a random sample of size \(n\);
+2. calculating its mean;
+3. recording that mean;
+4. repeating the procedure many times.
+
+The distribution of those recorded means is the:
+
+> **sampling distribution of the mean**.
+
+The lecture illustrates this with repeated samples from a population whose mean is 100 and standard deviation is 15.
+
+---
+
+## 19. The "Mean of Means"
+
+If we collect many random samples and average their sample means, that average approaches the population mean.
+
+This is why the sample mean is described as an **unbiased estimator** of the population mean.
+
+Formally:
+
+$$
+\mu_{\bar X}
+=
+\mu.
+$$
+
+Privitera likewise states that the sample mean equals the population mean **on average** across random samples (Privitera, 2018, 2024).
+
+---
+
+## 20. The Three Features Used in Lecture
+
+The lecture states the Central Limit Theorem in terms of the sampling distribution of sample means.
+
+For a population with mean \(\mu\) and standard deviation \(\sigma\), the sampling distribution of means for samples of size \(n\) has:
+
+### Center
+
+$$
+\mu_{\bar X}
+=
+\mu.
+$$
+
+### Width
+
+$$
+\sigma_{\bar X}
+=
+\frac{\sigma}{\sqrt{n}}.
+$$
+
+### Shape
+
+The sampling distribution becomes approximately normal as sample size increases (Sigal, 2026).
+
+---
+
+## 21. Center: The Sampling Distribution Is Centered on \(\mu\)
+
+The first important property is:
+
+$$
+\mu_{\bar X}=\mu.
+$$
+
+This means the sample mean is unbiased.
+
+Individual sample means can lie above or below \(\mu\), but across repeated random samples they center on the true population mean.
+
+---
+
+## 22. Width: Sample Means Vary Less Than Raw Scores
+
+The standard deviation of a sampling distribution of means is called the **standard error**.
+
+If the population standard deviation is:
+
+$$
+\sigma,
+$$
+
+then:
+
+$$
+SE_{\bar X}
+=
+\sigma_{\bar X}
+=
+\frac{\sigma}{\sqrt{n}}.
+$$
+
+Because:
+
+$$
+\sqrt{n}\ge1,
+$$
+
+the standard error cannot exceed \(\sigma\) when \(n\ge1\).
+
+Thus sample means fluctuate less than individual raw scores (Sigal, 2026).
+
+---
+
+## 23. Shape: Why Sampling Distributions Become More Normal
+
+The lecture shows strongly positively skewed samples followed by a sampling distribution of their means that is much more nearly normal.
+
+This is one of the most important conceptual visuals of Week 5.
+
+The individual observations can be non-normal.
+
+Yet the distribution of repeated sample means can become approximately normal.
+
+This is what allows normal-probability tools to be applied to sample means even when the original population is not perfectly normal, subject to the conditions underlying the CLT (Sigal, 2026).
+
+---
+
+## 24. A Nuance About the CLT
+
+The lecture emphasizes increasing sample size.
+
+The 2024 Privitera text adds a useful qualification: normality of a sampling distribution can also be understood in terms of the number of samples or replications represented in the sampling distribution, not only the size of each sample (Privitera, 2024).
+
+For this course, the practical focus remains:
+
+> As \(n\) increases, the sampling distribution of the mean becomes narrower and increasingly normal under the CLT framework.
+
+---
+
+# Part IV — Standard Error and the Probability of Sample Means
+
+## 25. What Is Standard Error?
+
+The lecture describes the **standard error** as the width of a sampling distribution (Sigal, 2026).
+
+For the mean:
+
+$$
+SE_{\bar X}
+=
+\frac{\sigma}{\sqrt{n}}.
+$$
+
+Privitera defines the standard error of the mean as the standard deviation of the sampling distribution of sample means (Privitera, 2018, 2024).
+
+---
+
+## 26. What Standard Error Measures
+
+Standard error describes the typical amount by which sample means fluctuate around the population mean across repeated random sampling.
+
+Conceptually:
+
+> **Standard deviation describes variability among individual scores.**
+
+> **Standard error describes variability among sample statistics.**
+
+These should not be confused.
+
+---
+
+## 27. Effect of Sample Size
+
+Suppose:
+
+$$
+\sigma=10.
+$$
+
+### If \(n=1\)
+
+$$
+SE
+=
+\frac{10}{\sqrt1}
+=
+10.
+$$
+
+### If \(n=2\)
+
+$$
+SE
+=
+\frac{10}{\sqrt2}
+\approx
+7.07.
+$$
+
+### If \(n=8\)
+
+$$
+SE
+=
+\frac{10}{\sqrt8}
+\approx
+3.54.
+$$
+
+As sample size increases:
+
+$$
+SE\downarrow.
+$$
+
+---
+
+## 28. Effect of Population Variability
+
+Holding \(n\) constant:
+
+$$
+SE
+=
+\frac{\sigma}{\sqrt n}.
+$$
+
+Therefore:
+
+- larger \(\sigma\) → larger SE;
+- smaller \(\sigma\) → smaller SE.
+
+A more variable population produces less precise sample-mean estimates.
+
+---
+
+## 29. Precision and Standard Error
+
+The lecture interprets standard error as an indicator of how accurately a sample statistic represents a population parameter.
+
+Smaller SE means sample means cluster more tightly around \(\mu\).
+
+Larger SE means greater sampling variability.
+
+Thus:
+
+> **Smaller standard error = greater precision of the sample mean as an estimator of the population mean.**
+
+---
+
+## 30. Population Mean 128, SD 16
+
+The Week 5 worksheet asks for the probability that the sample mean lies between:
+
+$$
+124
+$$
+
+and:
+
+$$
+132
+$$
+
+when:
+
+$$
+\mu=128,\quad \sigma=16.
+$$
+
+As sample size increases, standard error decreases.
+
+The worksheet key gives:
+
+| Sample size | Probability that \(124\le\bar X\le132\) |
+|---:|---:|
+| \(n=9\) | .5468 |
+| \(n=25\) | .7888 |
+| \(n=100\) | .9876 |
+
+The important pattern is:
+
+> **The same interval captures a larger proportion of sample means as sample size increases.**
+
+---
+
+## 31. Why Does the Probability Increase?
+
+The center remains:
+
+$$
+\mu_{\bar X}=128.
+$$
+
+But the width changes:
+
+$$
+SE=\frac{16}{\sqrt n}.
+$$
+
+As \(n\) grows, the sampling distribution becomes narrower around 128.
+
+Therefore the fixed interval 124–132 contains a larger fraction of possible sample means.
+
+---
+
+## 32. Fixed \(n\), Changing Population SD
+
+The worksheet next fixes:
+
+$$
+n=16,\quad \mu=100
+$$
+
+and asks about:
+
+$$
+96\le\bar X\le104.
+$$
+
+### If \(\sigma=16\)
+
+$$
+SE
+=
+\frac{16}{4}
+=
+4.
+$$
+
+The endpoints correspond to:
+
+$$
+z=-1,\quad z=+1.
+$$
+
+Probability:
+
+$$
+\approx68.2\%.
+$$
+
+### If \(\sigma=8\)
+
+$$
+SE=2.
+$$
+
+The endpoints correspond to:
+
+$$
+z=-2,\quad z=+2.
+$$
+
+Probability:
+
+$$
+\approx95.4\%.
+$$
+
+### If \(\sigma=4\)
+
+$$
+SE=1.
+$$
+
+The endpoints correspond to:
+
+$$
+z=-4,\quad z=+4.
+$$
+
+Probability:
+
+$$
+\approx99.9\%.
+$$
+
+The smaller the population standard deviation, the narrower the sampling distribution.
+
+---
+
+## 33. Revisiting z
+
+For an individual raw score:
+
+$$
+z
+=
+\frac{X-\mu}{\sigma}.
+$$
+
+For a sample mean:
+
+$$
+z
+=
+\frac{\bar X-\mu}{\sigma_{\bar X}}.
+$$
+
+Because:
+
+$$
+\sigma_{\bar X}
+=
+\frac{\sigma}{\sqrt n},
+$$
+
+we can write:
+
+$$
+z
+=
+\frac{\bar X-\mu}{\sigma/\sqrt n}.
+$$
+
+This is the Week 5 extension of Week 4's z-score logic (Sigal, 2026).
+
+---
+
+## 34. If \(n=1\)
+
+When:
+
+$$
+n=1,
+$$
+
+then:
+
+$$
+\sqrt n=1
+$$
+
+and:
+
+$$
+SE=\sigma.
+$$
+
+So:
+
+$$
+z
+=
+\frac{\bar X-\mu}{SE}
+$$
+
+reduces to:
+
+$$
+z
+=
+\frac{X-\mu}{\sigma}.
+$$
+
+This shows that the individual-score formula is a special case of the sample-mean formula.
+
+---
+
+## 35. Same Mean, Different Sample Sizes
+
+The lecture asks about a population with:
+
+$$
+\mu=80,\quad \sigma=12
+$$
+
+and a sample mean:
+
+$$
+\bar X=83.
+$$
+
+### \(n=4\)
+
+$$
+SE=\frac{12}{2}=6
+$$
+
+and:
+
+$$
+z=\frac{83-80}{6}=0.50.
+$$
+
+### \(n=16\)
+
+$$
+SE=\frac{12}{4}=3
+$$
+
+and:
+
+$$
+z=\frac{3}{3}=1.00.
+$$
+
+### \(n=36\)
+
+$$
+SE=\frac{12}{6}=2
+$$
+
+and:
+
+$$
+z=\frac{3}{2}=1.50.
+$$
+
+The sample mean is identical in all three cases.
+
+But as sample size grows, that same deviation becomes more unusual.
+
+---
+
+## 36. Why Sample Size Changes the z Score
+
+A difference of 3 points from \(\mu\) is not equally surprising for all sample sizes.
+
+Larger samples have smaller standard error.
+
+Therefore a 3-point departure represents more standard-error units when \(n\) is large.
+
+This is one of the deepest conceptual points in Week 5:
+
+> **The unusualness of a sample mean depends not only on how far it is from the population mean, but also on how much sampling variability we expect.**
+
+---
+
+## 37. From z to Probability
+
+Once a sample mean has been standardized:
+
+$$
+z
+=
+\frac{\bar X-\mu}{SE},
+$$
+
+we can use the standard normal table exactly as in Week 4.
+
+The new interpretation is:
+
+> We are no longer asking about the probability of an individual raw score.
+
+We are asking:
+
+> **How probable is a sample mean of this size, given a population model and sample size?**
+
+---
+
+## 38. This Is the Bridge to Hypothesis Testing
+
+The lecture explicitly identifies this result as the foundation for Week 6.
+
+If we can determine how likely a sample mean is under specified population parameters, we can ask whether an observed sample is sufficiently unusual to challenge a null model.
+
+That logic becomes formalized as **hypothesis testing** (Sigal, 2026).
+
+---
+
+## 39. The Seat-Belt Distribution
+
+The worksheet imagines students each observing 100 cars and counting seat-belt use.
+
+Across the class:
+
+$$
+M=44,\quad SD=7.
+$$
+
+Assuming the counts are normal, the center is 44 and the distribution can be sketched in SD units around this mean.
+
+---
+
+## 40. Is 62 Suspicious?
+
+One student reports:
+
+$$
+X=62.
+$$
+
+Using the z formula:
+
+$$
+z
+=
+\frac{62-44}{7}
+=
+\frac{18}{7}
+\approx
+2.57.
+$$
+
+The worksheet key describes this as a **very rare value** given the hypothetical class distribution.
+
+This does not prove fabrication.
+
+It means the observation is unusual enough to warrant scrutiny under the assumed model.
+
+---
+
+# Part V — Integration, Review, and Preparation
+
+## 41. Do Not Confuse These Two Distributions
+
+### Distribution of scores
+
+Contains individual observations:
+
+$$
+X_1,X_2,\ldots,X_n.
+$$
+
+Its standard deviation is:
+
+$$
+\sigma.
+$$
+
+### Sampling distribution of the mean
+
+Contains sample means:
+
+$$
+\bar X_1,\bar X_2,\ldots
+$$
+
+Its standard deviation is:
+
+$$
+SE_{\bar X}
+=
+\frac{\sigma}{\sqrt n}.
+$$
+
+The sampling distribution is narrower whenever:
+
+$$
+n>1.
+$$
+
+---
+
+## 42. Why Means Fluctuate Less Than Scores
+
+A sample mean averages multiple observations.
+
+Very high and very low observations tend to offset one another.
+
+Therefore means are more stable than individual observations.
+
+Increasing \(n\) strengthens this stabilizing effect.
+
+This is why:
+
+$$
+\frac{\sigma}{\sqrt n}
+<
+\sigma
+$$
+
+for \(n>1\).
+
+---
+
+## 43. Privitera 2018
+
+Privitera (2018), Chapter 6, focuses closely on the same Week 5 concepts:
+
+- sampling distributions;
+- sample mean as an unbiased estimator;
+- the Central Limit Theorem;
+- standard error of the mean;
+- factors affecting standard error;
+- z transformations for sample means.
+
+The chapter defines standard error as the standard deviation of the sampling distribution of sample means and explicitly relates it to sample size and population standard deviation.
+
+---
+
+## 44. Privitera 2024
+
+Privitera (2024), Chapter 7, extends the sampling-distribution framework to both:
+
+- the sample mean;
+- the sample variance.
+
+It also distinguishes theoretical and experimental sampling and gives a broader treatment of random sampling.
+
+For the present lecture, the most relevant portions are the sections on:
+
+- sample means;
+- CLT;
+- standard error;
+- z transformation for sample means.
+
+The lecture does not make the sampling distribution of sample variance a central Week 5 topic, so this guide does not allow that textbook extension to displace the lecture's main pedagogical sequence.
+
+---
+
+## 45. A Nuance About the Central Limit Theorem
+
+The lecture states that as sample size increases, the sampling distribution becomes approximately normal.
+
+Privitera (2024) adds that increasing the **number of repeated samples or replications** can also reveal the normal form of the sampling distribution even at a fixed sample size.
+
+This is a useful theoretical refinement.
+
+For this course's practical calculations, the key working relationship remains:
+
+$$
+SE=\frac{\sigma}{\sqrt n}
+$$
+
+and increasing \(n\) decreases sampling variability.
+
+---
+
+## 46. "A larger sample always gives the correct population mean."
+
+No.
+
+A larger sample reduces random sampling variability, but any particular sample can still differ from the population.
+
+---
+
+## 47. "Sampling error means somebody made a mistake."
+
+No.
+
+Sampling error is the natural difference between a sample statistic and the population parameter it estimates.
+
+---
+
+## 48. "Standard deviation and standard error are the same."
+
+No.
+
+- SD describes variability among observations.
+- SE describes variability among sample statistics across repeated samples.
+
+---
+
+## 49. "The CLT says the original population becomes normal."
+
+No.
+
+The CLT concerns the **sampling distribution of the statistic**, especially the sample mean.
+
+The original population can remain skewed.
+
+---
+
+## 50. "The mean of every sample equals the population mean."
+
+No.
+
+The sample mean equals the population mean **on average across random samples**.
+
+---
+
+## 51. "If a sample mean is far from \(\mu\), the sample must be wrong."
+
+No.
+
+Rare samples can occur.
+
+Probability measures how surprising the sample is under the assumed model; it does not by itself identify the cause.
+
+---
+
+## 52. "The law of large numbers means a streak must reverse soon."
+
+No.
+
+That is the gambler's fallacy.
+
+Long-run stabilization does not make independent future trials compensate for recent outcomes.
+
+---
+
+## 53. Questions a TA Should Be Ready to Answer
+
+### "What is the difference between a sample distribution and a sampling distribution?"
+
+A sample distribution contains individual data values from one sample.
+
+A sampling distribution contains values of a statistic calculated from many possible samples.
+
+### "What exactly is standard error?"
+
+The standard deviation of a sampling distribution.
+
+### "Why does SE get smaller when n gets larger?"
+
+Because:
+
+$$
+SE=\frac{\sigma}{\sqrt n}.
+$$
+
+Larger samples average out more random fluctuation.
+
+### "Why is the sampling distribution centered at \(\mu\)?"
+
+Because the sample mean is an unbiased estimator of the population mean.
+
+### "Why can skewed data produce an approximately normal sampling distribution?"
+
+That is the CLT: repeated sample means are more regular than the individual raw values from which they are calculated.
+
+### "Why does the same \(\bar X\) have a larger z score for a bigger n?"
+
+Because a larger sample has a smaller SE, so the same raw difference from \(\mu\) is more unusual in standard-error units.
+
+---
+
+## 54. Basic Probability
+
+1. What is the probability of rolling a 4 on one fair six-sided die?
+2. What is the probability of rolling a 4 or a 6?
+3. What is the probability of rolling a 4 on each of two independent dice?
+
+---
+
+## 55. Sampling Error
+
+A population has:
+
+$$
+\mu=50.
+$$
+
+Three random samples produce:
+
+$$
+\bar X=47,\quad 52,\quad 50.
+$$
+
+For each sample:
+
+1. calculate \(\bar X-\mu\);
+2. identify the direction of the sampling error;
+3. explain why none of these values alone proves a flawed sampling process.
+
+---
+
+## 56. Standard Error
+
+Suppose:
+
+$$
+\sigma=20.
+$$
+
+Calculate SE for:
+
+1. \(n=1\)
+2. \(n=4\)
+3. \(n=25\)
+4. \(n=100\)
+
+Describe the pattern.
+
+---
+
+## 57. z for a Sample Mean
+
+Suppose:
+
+$$
+\mu=100,\quad \sigma=20,\quad n=25.
+$$
+
+Find z for:
+
+$$
+\bar X=108.
+$$
+
+First calculate:
+
+$$
+SE=\frac{\sigma}{\sqrt n}.
+$$
+
+Then use:
+
+$$
+z=\frac{\bar X-\mu}{SE}.
+$$
+
+---
+
+## 58. Compare Sample Sizes
+
+Suppose:
+
+$$
+\mu=60,\quad \sigma=12,
+$$
+
+and:
+
+$$
+\bar X=66.
+$$
+
+Compare the z scores when:
+
+1. \(n=4\)
+2. \(n=16\)
+3. \(n=36\)
+
+Explain why the z score changes even though \(\bar X\) does not.
+
+---
+
+## 59. CLT Concept Check
+
+Suppose a population is strongly positively skewed.
+
+For repeated random samples:
+
+1. where is the sampling distribution of \(\bar X\) centered?
+2. what happens to its standard error as \(n\) increases?
+3. what happens to its shape as \(n\) increases?
+4. does the population distribution itself become normal?
+
+---
+
+## 60. Conceptual Self-Check
+
+Before moving on, you should be able to explain:
+
+- why probability is foundational to inference;
+- the difference between independent and dependent events;
+- the distinction between the law of large numbers and the gambler's fallacy;
+- parameter vs. statistic;
+- population vs. sample;
+- what sampling error means;
+- why different random samples produce different means;
+- why larger samples are more stable on average;
+- what a sampling distribution is;
+- what the sampling distribution of the mean contains;
+- why \(\mu_{\bar X}=\mu\);
+- the three Week 5 features of the CLT;
+- what standard error measures;
+- why \(SE=\sigma/\sqrt n\);
+- how \(n\) and \(\sigma\) affect SE;
+- why sample means fluctuate less than individual scores;
+- how to standardize a sample mean;
+- how z for a sample mean differs from z for an individual score;
+- why sample size affects the unusualness of a sample mean;
+- how these ideas lead to hypothesis testing.
+
+---
+
+## 61. Lecture, Worksheet, and Simulation
+
+- Sigal, M. (2026, October 19). *PSYC 210: Introduction to data analysis—Lecture 5: Probability and the CLT* [Lecture slides]. Simon Fraser University.
+- Sigal, M. (2026). *PSYC 210 Lecture 5 worksheet* [Course worksheet]. Simon Fraser University.
+- Sigal, M. (2026). *PSYC 210 Lecture 5 worksheet key* [Answer key]. Simon Fraser University.
+- Central Limit Theorem interactive simulation supplied in the lecture materials.
+
+The lecture also assigns practice problems 6, 8, 21, and 29 from the sampling-distribution chapter (Sigal, 2026).
+
+---
+
+## 62. Required and Supporting Readings
+
+- Privitera, G. J. (2018), Chapter 6: *Characteristics of the Sample Mean*.
+- Privitera, G. J. (2024), Chapter 7: *Probability and Sampling Distributions*.
+- Privitera, G. J. (2024), Chapter 6: *Probability, Normal Distributions, and z Scores*.
+
+The 2018 Chapter 6 and 2024 Chapter 7 provide the strongest direct support for the lecture's sampling-distribution and standard-error material.
+
+The 2024 Chapter 6 provides continuity with Week 4's normal-distribution and z-score material.
+
+---
+
+## 63. References
+
+Privitera, G. J. (2018). *Essential statistics for the behavioral sciences* (2nd ed.). SAGE.
+
+Privitera, G. J. (2024). *Statistics for the behavioral sciences* (4th ed.). SAGE.
+
+Sigal, M. (2026, October 19). *PSYC 210: Introduction to data analysis—Lecture 5: Probability and the CLT* [Lecture slides]. Simon Fraser University.
+
+Sigal, M. (2026). *PSYC 210 Lecture 5 worksheet* [Course worksheet]. Simon Fraser University.
+
+Sigal, M. (2026). *PSYC 210 Lecture 5 worksheet key* [Answer key]. Simon Fraser University.
+
+---
+
+## 64. Week 5 Takeaway
+
+Week 5 shifts the unit of reasoning from an **individual score** to a **sample statistic**.
+
+A single score is standardized using:
+
+$$
+z=\frac{X-\mu}{\sigma}.
+$$
+
+A sample mean is standardized using:
+
+$$
+z
+=
+\frac{\bar X-\mu}{\sigma/\sqrt n}.
+$$
+
+The denominator:
+
+$$
+\frac{\sigma}{\sqrt n}
+$$
+
+is the **standard error**.
+
+That one change captures the main idea of Week 5:
+
+> **Sample means have their own probability distribution.**
+
+The Central Limit Theorem tells us about its:
+
+- center;
+- width;
+- shape.
+
+Once we know those, we can ask:
+
+> **How probable is the sample mean we actually observed?**
+
+That is the direct conceptual doorway to hypothesis testing.
+
+
+# Part VI — Midterm Review Guide
+
+The official Lecture 5 midterm guide emphasizes **basic probability, sampling, sampling error, sampling distributions, and the Central Limit Theorem**. The main calculations are **z scores for sample means** and probabilities obtained from the z table.
+
+## The Big Picture
+
+Week 5 shifts the unit of analysis from an individual score to a **sample mean**.
+
+The key reasoning chain is:
+
+**population → many possible random samples → many possible sample means → sampling distribution → probability of the sample mean we actually observed**
+
+## Basic Probability
+
+For an event \(A\):
+
+\[
+P(A)
+=
+\frac{\#(A)}{\#(S)}.
+\]
+
+### Independent events
+
+One event does not change the probability of the other.
+
+Example: repeated coin flips.
+
+### Dependent events
+
+One event changes the probability of a later event.
+
+Example: drawing cards without replacement.
+
+### OR rule
+
+For mutually exclusive events:
+
+\[
+P(A\cup B)
+=
+P(A)+P(B).
+\]
+
+### AND rule
+
+For independent events:
+
+\[
+P(A\cap B)
+=
+P(A)\times P(B).
+\]
+
+### Law of Large Numbers
+
+As the number of random trials becomes large, the observed relative frequency tends to approach the theoretical probability.
+
+### Gambler's Fallacy
+
+Past independent random events do not make a particular future result “due.”
+
+## Sampling Error
+
+A single sample is only one of many possible samples that could have been drawn from the population.
+
+Different random samples will generally have different sample means.
+
+That natural sample-to-sample variation is **sampling error**.
+
+It does not automatically mean someone made a mistake.
+
+## Sampling Distribution
+
+Imagine every possible random sample of the same size being drawn from a population and a mean calculated for each sample.
+
+The distribution of all those possible sample means is the **sampling distribution of the mean**.
+
+## Central Limit Theorem
+
+For the course review, the CLT supports three key ideas for sufficiently large samples:
+
+1. sample means form an approximately normal distribution;
+2. the center of that distribution equals the population mean:
+
+\[
+\mu_{\bar{x}}=\mu;
+\]
+
+3. its standard deviation is:
+
+\[
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]
+
+This standard deviation is called the **standard error**.
+
+## Standard Error
+
+\[
+SE
+=
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]
+
+The sample size appears in the denominator.
+
+Therefore:
+
+- larger \(n\) → smaller SE;
+- smaller \(n\) → larger SE.
+
+This is one of the most important relationships for the midterm.
+
+## z Score for a Sample Mean
+
+For a sample mean:
+
+\[
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}}
+\]
+
+where:
+
+\[
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]
+
+This asks:
+
+> How many **standard errors** is the observed sample mean from the population mean?
+
+Do not use the population SD directly in the denominator when standardizing a sample mean.
+
+## Formula-Sheet Connection
+
+Week 5 uses:
+
+\[
+P(A)=\frac{\#(A)}{\#(S)}
+\]
+
+\[
+P(A\cap B)=P(A)\times P(B)
+\]
+
+\[
+P(A\cup B)=P(A)+P(B)
+\]
+
+and:
+
+\[
+Z
+=
+\frac{\bar{x}-\mu}{\sigma_{\bar{x}}},
+\qquad
+\sigma_{\bar{x}}
+=
+\frac{\sigma}{\sqrt{n}}.
+\]
+
+## Assignment-Style Practice
+
+### Question 1 — Basic probability (/4)
+
+A fair six-sided die is rolled once.
+
+a. What is \(P(\text{rolling a 5})\)?  
+b. What is \(P(\text{rolling a 1 or 2})\)?  
+c. If two independent dice are rolled, what is \(P(\text{both are 6})\)?  
+d. Are the two dice rolls independent or dependent?
+
+### Question 2 — Gambler's Fallacy (/2)
+
+A fair coin lands Heads five times in a row. A student says, “Tails is now more likely because the results need to balance out.”
+
+a. Name the mistaken belief.  
+b. What is the probability of Tails on the next independent flip?
+
+### Question 3 — Standard error (/3)
+
+A population has:
+
+\[
+\sigma=30.
+\]
+
+Calculate the standard error for:
+
+a. \(n=9\)  
+b. \(n=36\)  
+c. Explain the effect of increasing sample size.
+
+### Question 4 — Sampling distribution (/3)
+
+A population has:
+
+\[
+\mu=100,\qquad \sigma=15,
+\]
+
+and samples of:
+
+\[
+n=25
+\]
+
+are repeatedly drawn.
+
+a. What is the mean of the sampling distribution?  
+b. What is its standard error?  
+c. In plain English, what does the standard error describe?
+
+### Question 5 — z for a sample mean (/4)
+
+Using the population in Question 4, suppose one sample has:
+
+\[
+\bar{x}=106.
+\]
+
+a. Calculate the z score for this sample mean.  
+b. Using the standard normal table, the upper-tail area beyond \(z=2.00\) is .0228. What is \(P(\bar{x}\ge106)\)?  
+c. Is 106 relatively common or relatively unusual for samples of size 25 from this population?  
+d. Would the same raw difference of 6 points look more or less unusual if \(n\) were larger? Explain.
+
+### Question 6 — Sampling error (/2)
+
+Two random samples drawn from the same population produce means of 48.6 and 51.1.
+
+a. Does this difference automatically imply that one sample was collected incorrectly?  
+b. What concept explains ordinary sample-to-sample variation?
+
+## Answers
+
+### Question 1
+
+a.
+
+\[
+P(5)=\frac16\approx0.167.
+\]
+
+b.
+
+\[
+P(1\text{ or }2)=\frac16+\frac16=\frac13\approx0.333.
+\]
+
+c.
+
+\[
+P(6\text{ and }6)
+=
+\frac16\left(\frac16\right)
+=
+\frac1{36}
+\approx0.0278.
+\]
+
+d. Independent.
+
+### Question 2
+
+a. Gambler's Fallacy.  
+b. \(0.50\).
+
+### Question 3
+
+a.
+
+\[
+SE=\frac{30}{\sqrt9}=10.
+\]
+
+b.
+
+\[
+SE=\frac{30}{\sqrt{36}}=5.
+\]
+
+c. Larger sample size decreases standard error.
+
+### Question 4
+
+a.
+
+\[
+\mu_{\bar{x}}=100.
+\]
+
+b.
+
+\[
+SE=\frac{15}{5}=3.
+\]
+
+c. It describes the standard deviation of the sampling distribution—the typical amount sample means vary around the population mean.
+
+### Question 5
+
+a.
+
+\[
+z
+=
+\frac{106-100}{3}
+=
+2.00.
+\]
+
+b.
+
+\[
+P(\bar{x}\ge106)=0.0228.
+\]
+
+c. Relatively unusual: only about 2.28% of sample means would be at least this high under the stated population model.
+
+d. More unusual. A larger \(n\) reduces SE, making the same 6-point difference larger in standard-error units.
+
+### Question 6
+
+a. No.  
+b. Sampling error (sampling variability).
+
+## Midterm Self-Check
+
+You should be able to explain:
+
+- independent vs. dependent events;
+- AND vs. OR probability rules;
+- Law of Large Numbers vs. Gambler's Fallacy;
+- why samples vary;
+- what a sampling distribution represents;
+- the three CLT features emphasized in the course;
+- why standard error shrinks as \(n\) increases;
+- why a z score for a sample mean uses SE rather than \(\sigma\).

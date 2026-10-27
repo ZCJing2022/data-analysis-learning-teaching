@@ -3,7 +3,7 @@ title: "Week 02 — Data Types, Frequency Distributions, and Visualization"
 toc-depth: 2
 ---
 
-## Overview
+# Overview
 
 Week 2 develops the first major set of descriptive-statistical tools for organizing psychological data. The central question is simple:
 
@@ -15,7 +15,7 @@ The lecture emphasizes that numerical codes do not automatically determine what 
 
 ---
 
-## Learning Objectives
+# Learning Objectives
 
 By the end of this week, you should be able to:
 
@@ -36,7 +36,9 @@ By the end of this week, you should be able to:
 
 ---
 
-# 1. Review: Summation Notation
+# Part I — Mathematical Review and Variable Types
+
+## 1. Review: Summation Notation
 
 Week 2 begins by reinforcing a mathematical skill introduced in Week 1: sigma notation.
 
@@ -64,7 +66,7 @@ $$
 
 Reordering the scores before applying the index would change the problem and produce the wrong answer (PSYC 210 Teaching Team, 2026a).
 
-### Sigma and order of operations
+#### Sigma and order of operations
 
 Summation notation interacts with BEDMAS/PEDMAS. Parentheses are therefore essential.
 
@@ -98,11 +100,11 @@ The lecture again emphasizes using parentheses to eliminate ambiguity (Sigal, 20
 
 ---
 
-# 2. Three Useful Summation Rules
+## 2. Three Useful Summation Rules
 
 The Week 2 applied-practice worksheet reinforces three rules.
 
-### Rule 1: Sum of combined variables
+#### Rule 1: Sum of combined variables
 
 $$
 \sum(X+Y)=\sum X+\sum Y
@@ -110,7 +112,7 @@ $$
 
 provided the same indexed observations are included.
 
-### Rule 2: A multiplicative constant can be factored out
+#### Rule 2: A multiplicative constant can be factored out
 
 $$
 \sum(cX)=c\sum X.
@@ -124,7 +126,7 @@ $$
 6\sum_{i=3}^{6}Y_i.
 $$
 
-### Rule 3: A constant added inside the summation is repeated
+#### Rule 3: A constant added inside the summation is repeated
 
 If there are \(k\) observations being summed,
 
@@ -138,7 +140,7 @@ The worksheet key applies these rules to paired \(X\) and \(Y\) data and also pr
 
 ---
 
-# 3. Variables and Why Their Type Matters
+## 3. Variables and Why Their Type Matters
 
 A variable can take more than one value. But different variables carry different kinds of information.
 
@@ -168,7 +170,9 @@ This is why scale of measurement matters.
 
 ---
 
-# 4. The Four Scales of Measurement
+# Part II — Scales of Measurement
+
+## 4. The Four Scales of Measurement
 
 The four scales are often remembered as **NOIR**:
 
@@ -188,7 +192,7 @@ Privitera (2018, 2024) describes these scales in terms of the kinds of numerical
 
 ---
 
-# 5. Nominal Variables
+## 5. Nominal Variables
 
 A **nominal** variable separates observations into mutually exclusive categories.
 
@@ -209,7 +213,7 @@ If browser is coded as:
 
 then 3 is not “more browser” than 1. The code identifies the category and nothing more.
 
-### What can we meaningfully do?
+#### What can we meaningfully do?
 
 We can count how many observations fall into each category.
 
@@ -222,13 +226,13 @@ We can therefore report:
 
 We cannot interpret arithmetic differences or ratios between category codes.
 
-### Important point
+#### Important point
 
 A nominal variable **can be represented numerically without becoming quantitative**. Coding is a data-management choice, not a change in the meaning of the variable (Privitera, 2018, 2024; Sigal, 2026).
 
 ---
 
-# 6. Ordinal Variables
+## 6. Ordinal Variables
 
 An **ordinal** variable contains ordered categories.
 
@@ -256,7 +260,7 @@ This is why the median is often a meaningful measure of central tendency for ord
 
 ---
 
-# 7. Interval Variables
+## 7. Interval Variables
 
 An **interval** variable has ordered values with equal intervals between adjacent units.
 
@@ -280,7 +284,7 @@ Interval variables support meaningful statements about **differences**, but not 
 
 ---
 
-# 8. Ratio Variables
+## 8. Ratio Variables
 
 A **ratio** variable has all the properties of an interval variable plus a **true or meaningful zero**.
 
@@ -307,13 +311,13 @@ Ratio measurement is generally the most informative of the four scales because o
 
 ---
 
-# 9. Categorical, Discrete, Continuous, Qualitative, and Quantitative
+## 9. Categorical, Discrete, Continuous, Qualitative, and Quantitative
 
 The Week 2 lecture broadly contrasts **categorical/discrete** variables with **continuous/quantitative** variables (Sigal, 2026).
 
 Privitera (2018, 2024) makes two separate distinctions:
 
-### Discrete vs. continuous
+#### Discrete vs. continuous
 
 - **Discrete variables** consist of separate values or categories.
 - **Continuous variables** can in principle take values anywhere along a continuum.
@@ -323,7 +327,7 @@ Examples:
 - number of siblings → discrete;
 - reaction time → continuous.
 
-### Qualitative vs. quantitative
+#### Qualitative vs. quantitative
 
 - **Qualitative variables** differ by category or class.
 - **Quantitative variables** differ by amount.
@@ -343,19 +347,19 @@ This distinction is useful because “discrete” does not automatically mean �
 
 ---
 
-# 10. A Source Tension: Likert-Like and Rating Scales
+## 10. A Source Tension: Likert-Like and Rating Scales
 
 The Week 2 materials contain a genuine disagreement that should not be hidden.
 
-### Lecture framing
+#### Lecture framing
 
 The lecture treats Likert-like items critically. It questions whether the psychological distance between adjacent response categories is equal and warns against automatically treating such responses as interval measurements (Sigal, 2026).
 
-### Privitera framing
+#### Privitera framing
 
 Privitera (2024) explicitly describes rating scales as controversial. The text notes that, under strict measurement rules, individual rating-scale responses may be better viewed as ordinal. However, many behavioral researchers pragmatically treat rating-scale values as interval when equal spacing is assumed, especially for statistical analysis (Privitera, 2024).
 
-### What should you learn from this?
+#### What should you learn from this?
 
 Do **not** memorize “Likert = interval” as an unquestionable rule.
 
@@ -370,7 +374,9 @@ For this course, follow the instructor's stated conventions on assessed work, bu
 
 ---
 
-# 11. Why Summarize Data?
+# Part III — Frequency Distributions and Grouped Data
+
+## 11. Why Summarize Data?
 
 A raw data set can be technically complete and still be difficult to understand.
 
@@ -398,7 +404,7 @@ A frequency distribution can be displayed as:
 
 ---
 
-# 12. Ungrouped Frequency Distributions
+## 12. Ungrouped Frequency Distributions
 
 An **ungrouped frequency distribution** lists individual values or categories and the frequency of each one.
 
@@ -426,15 +432,15 @@ Privitera (2018, 2024) specifically contrasts this with grouped distributions: *
 
 ---
 
-# 13. Frequency, Proportion, Percentage, and Cumulative Values
+## 13. Frequency, Proportion, Percentage, and Cumulative Values
 
 A full frequency table can include several related summaries.
 
-## Frequency
+### Frequency
 
 Frequency \(f\) is the number of observations at a value or in an interval.
 
-## Proportion / relative frequency
+### Proportion / relative frequency
 
 $$
 p=\frac{f}{n}.
@@ -446,7 +452,7 @@ $$
 \sum p=1.00.
 $$
 
-## Percentage
+### Percentage
 
 $$
 \%=p\times100.
@@ -458,7 +464,7 @@ $$
 100\%.
 $$
 
-## Cumulative frequency
+### Cumulative frequency
 
 Cumulative frequency is the running total of frequencies.
 
@@ -468,7 +474,7 @@ For an ascending table, it answers:
 
 The final cumulative frequency should equal \(n\).
 
-## Cumulative relative frequency / cumulative percentage
+### Cumulative relative frequency / cumulative percentage
 
 A cumulative relative frequency is the running total of proportions.
 
@@ -490,7 +496,7 @@ respectively (Privitera, 2018, 2024; Sigal, 2026).
 
 ---
 
-# 14. Worked Frequency Table Example
+## 14. Worked Frequency Table Example
 
 The lecture uses:
 
@@ -525,7 +531,7 @@ This example shows why a score with frequency zero may still appear in the table
 
 ---
 
-# 15. Percentile Rank
+## 15. Percentile Rank
 
 Cumulative percentages can be interpreted as percentile ranks.
 
@@ -546,7 +552,7 @@ Privitera (2018, 2024) distinguishes:
 
 ---
 
-# 16. Grouped Frequency Distributions
+## 16. Grouped Frequency Distributions
 
 When there are many possible values, listing every score can become unwieldy.
 
@@ -560,7 +566,7 @@ This is an important form of information loss.
 
 ---
 
-# 17. Choosing a Bin Width
+## 17. Choosing a Bin Width
 
 The lecture uses a practical heuristic of beginning with approximately 10 bins and then adjusting to a meaningful width (Sigal, 2026).
 
@@ -593,7 +599,7 @@ The lecture simplifies this to a meaningful bin width for the exercise.
 
 Privitera (2018, 2024) presents a closely related but somewhat more formal method using the **real range**, defined for whole-number scores as one more than the observed difference between maximum and minimum, and recommends roughly 5–20 intervals.
 
-### Practical lesson
+#### Practical lesson
 
 There is no unique magical bin width. The goal is a display that is:
 
@@ -605,7 +611,7 @@ There is no unique magical bin width. The goal is a display that is:
 
 ---
 
-# 18. Lower Limits, Upper Limits, and Real Limits
+## 18. Lower Limits, Upper Limits, and Real Limits
 
 Each class interval has a lower and upper limit.
 
@@ -638,7 +644,7 @@ This distinction matters when constructing continuous histograms because adjacen
 
 ---
 
-# 19. Worked Example: SAT-Type Scores
+## 19. Worked Example: SAT-Type Scores
 
 The Lecture 2 worksheet uses data modeled closely on Katz et al. (1990). Participants answered SAT-type questions without seeing the passage on which the questions were based.
 
@@ -658,7 +664,9 @@ That distinction is essential:
 
 ---
 
-# 20. Visualizing Frequency Distributions
+# Part IV — Visualization and Central Tendency
+
+## 20. Visualizing Frequency Distributions
 
 The lecture emphasizes three basic graphical displays:
 
@@ -670,11 +678,11 @@ The correct choice depends on the type of variable and on what the display is in
 
 ---
 
-# 21. Bar Charts
+## 21. Bar Charts
 
 A bar chart is typically used for discrete or categorical data.
 
-### Key visual feature
+#### Key visual feature
 
 > The bars do **not** touch.
 
@@ -686,11 +694,11 @@ For ordinal data, the order should usually be preserved because the rank itself 
 
 ---
 
-# 22. Histograms
+## 22. Histograms
 
 A histogram is used for quantitative continuous data.
 
-### Key visual feature
+#### Key visual feature
 
 > Adjacent bars **touch**.
 
@@ -706,7 +714,7 @@ Histograms are therefore fundamentally different from bar charts, even though bo
 
 ---
 
-# 23. Frequency Polygons
+## 23. Frequency Polygons
 
 A frequency polygon represents a distribution using points connected by lines rather than bars.
 
@@ -716,7 +724,7 @@ Frequency polygons are appropriate for continuous quantitative data (Privitera, 
 
 ---
 
-# 24. What Grouping Changes
+## 24. What Grouping Changes
 
 The lecture explicitly contrasts grouped and ungrouped displays:
 
@@ -730,7 +738,7 @@ The analyst therefore has to decide how much detail to preserve.
 
 ---
 
-# 25. Graphs Can Clarify—and Mislead
+## 25. Graphs Can Clarify—and Mislead
 
 A graph is not automatically neutral simply because it is based on real numbers.
 
@@ -751,7 +759,7 @@ The larger lesson is the same as Week 1:
 
 ---
 
-# 26. Central Tendency: A Second Way to Summarize Data
+## 26. Central Tendency: A Second Way to Summarize Data
 
 The assigned Chapter 3 readings extend the logic of summarization.
 
@@ -769,7 +777,7 @@ These measures are not interchangeable. Each answers a slightly different questi
 
 ---
 
-# 27. The Mean
+## 27. The Mean
 
 The arithmetic mean is:
 
@@ -789,7 +797,7 @@ The calculation is the same; the notation changes because one value describes a 
 
 The mean is often described as the **balance point** of a distribution.
 
-### Important characteristic
+#### Important characteristic
 
 Because every observation contributes to the mean, unusual or extreme scores can shift it substantially.
 
@@ -797,7 +805,7 @@ The mean is typically most informative for approximately symmetrical distributio
 
 ---
 
-# 28. The Median
+## 28. The Median
 
 The median is the middle score after scores are ordered.
 
@@ -821,7 +829,7 @@ The median also corresponds to the 50th percentile.
 
 ---
 
-# 29. The Mode
+## 29. The Mode
 
 The mode is the value or category occurring most frequently.
 
@@ -840,7 +848,7 @@ For example, the most common preferred browser is meaningful; the “average bro
 
 ---
 
-# 30. Choosing Mean, Median, or Mode
+## 30. Choosing Mean, Median, or Mode
 
 The readings summarize the choice as follows (Privitera, 2018, 2024):
 
@@ -854,7 +862,9 @@ These are guiding principles rather than mechanical rules. The appropriate summa
 
 ---
 
-# 31. How the Concepts Fit Together
+# Part V — Integration, Review, and Practice
+
+## 31. How the Concepts Fit Together
 
 Week 2 can be understood as one sequence:
 
@@ -888,7 +898,7 @@ The scale of measurement affects what mathematical summaries are meaningful. The
 
 ---
 
-# 32. Important Terms
+## 32. Important Terms
 
 | Term | Plain-language explanation |
 |---|---|
@@ -920,73 +930,73 @@ The scale of measurement affects what mathematical summaries are meaningful. The
 
 ---
 
-# 33. Common Misunderstandings
+## 33. Common Misunderstandings
 
-### “If categories are coded with numbers, they become quantitative.”
+#### “If categories are coded with numbers, they become quantitative.”
 
 No. The meaning of the numbers depends on the measurement process. Nominal codes remain labels.
 
-### “Ordinal numbers tell me how far apart categories are.”
+#### “Ordinal numbers tell me how far apart categories are.”
 
 No. Ordinal data provide order, not equal distance.
 
-### “Zero always means none.”
+#### “Zero always means none.”
 
 No. A true zero is a property of ratio scales. \(0^\circ C\) is not an absence of temperature.
 
-### “Grouped frequency distributions are more accurate.”
+#### “Grouped frequency distributions are more accurate.”
 
 They are often clearer, but they are **less precise** because individual values are hidden within intervals.
 
-### “All frequency tables should omit zero-frequency values.”
+#### “All frequency tables should omit zero-frequency values.”
 
 Not necessarily. Including missing internal values can make the scale and cumulative pattern clearer.
 
-### “Bar charts and histograms are the same thing.”
+#### “Bar charts and histograms are the same thing.”
 
 No. The gaps between bars in a bar chart communicate discrete categories; touching histogram bars represent continuity.
 
-### “A graph cannot mislead if all the numbers are correct.”
+#### “A graph cannot mislead if all the numbers are correct.”
 
 False. Axis limits, scales, binning, and graphical emphasis can substantially change the viewer's impression.
 
-### “The mean is always the best description of the center.”
+#### “The mean is always the best description of the center.”
 
 No. Outliers and skew can make the median more representative; nominal data often require the mode.
 
-### “Likert-like scales are obviously interval.”
+#### “Likert-like scales are obviously interval.”
 
 The Week 2 sources do not agree on this. The lecture is strongly critical of that assumption, while Privitera (2024) explains why many behavioral researchers pragmatically treat rating scales as interval. Know the course convention and the methodological issue.
 
 ---
 
-# 34. Tutorial Preparation
+## 34. Tutorial Preparation
 
 A TA should be ready to move repeatedly between **conceptual interpretation** and **calculation**.
 
-### Questions students may ask
+#### Questions students may ask
 
-#### “Why is grade ordinal but height ratio?”
+##### “Why is grade ordinal but height ratio?”
 
 Grade categories have order but unequal or undefined distances between adjacent grades. Height has equal units and a meaningful zero.
 
-#### “Why include a score with zero frequency?”
+##### “Why include a score with zero frequency?”
 
 Because a frequency table often represents the structure of a scale, not merely the values observed. Omitting internal values can obscure gaps.
 
-#### “How do I know whether to group data?”
+##### “How do I know whether to group data?”
 
 Grouping becomes useful when many distinct values make an ungrouped table hard to read. But grouping sacrifices exact detail.
 
-#### “Why do histogram bars touch?”
+##### “Why do histogram bars touch?”
 
 Because the variable is treated as continuous, and adjacent intervals meet at their real boundaries.
 
-#### “How do I know which direction to calculate cumulative frequency?”
+##### “How do I know which direction to calculate cumulative frequency?”
 
 It depends on the question. Bottom-up cumulative summaries naturally answer “at or below” questions; top-down summaries answer “at or above” questions (Privitera, 2018, 2024).
 
-#### “Which measure of central tendency should I use?”
+##### “Which measure of central tendency should I use?”
 
 Ask about both the measurement scale and the distribution:
 
@@ -996,9 +1006,9 @@ Ask about both the measurement scale and the distribution:
 
 ---
 
-# 35. Practice Questions
+## 35. Practice Questions
 
-## Measurement Scales
+### Measurement Scales
 
 1. Preferred web browser: nominal, ordinal, interval, or ratio?
 2. Finishing position in a marathon: nominal, ordinal, interval, or ratio?
@@ -1006,7 +1016,7 @@ Ask about both the measurement scale and the distribution:
 4. Reaction time in milliseconds: nominal, ordinal, interval, or ratio?
 5. Explain why coding categories 1, 2, 3, and 4 does not automatically justify calculating their mean.
 
-## Frequency Tables
+### Frequency Tables
 
 For:
 
@@ -1035,7 +1045,7 @@ $$
 
 and percentages sum to 100%.
 
-## Grouping
+### Grouping
 
 For scores ranging from 12 to 92:
 
@@ -1044,7 +1054,7 @@ For scores ranging from 12 to 92:
 3. Propose a set of non-overlapping class intervals.
 4. Explain what information is lost after grouping.
 
-## Graph Choice
+### Graph Choice
 
 Choose the most appropriate basic display and explain why:
 
@@ -1054,7 +1064,7 @@ Choose the most appropriate basic display and explain why:
 4. age in years measured continuously;
 5. number of children in a household.
 
-## Central Tendency
+### Central Tendency
 
 For:
 
@@ -1072,7 +1082,7 @@ Then explain which value is most representative and why.
 
 ---
 
-# 36. What You Should Be Able to Explain
+## 36. What You Should Be Able to Explain
 
 Before moving on, you should be able to explain in your own words:
 
@@ -1094,19 +1104,19 @@ Before moving on, you should be able to explain in your own words:
 
 ---
 
-# 37. Readings and Practice
+## 37. Readings and Practice
 
-## Required readings
+### Required readings
 
 - Privitera, G. J. (2018), Chapter 2: *Summarizing Data: Frequency Distributions in Tables and Graphs*.
 - Privitera, G. J. (2018), Chapter 3: *Summarizing Data: Central Tendency*.
 
-## Additional supplied readings
+### Additional supplied readings
 
 - Privitera, G. J. (2024), Chapter 2: *Summarizing Data: Frequency Distributions in Tables and Graphs*.
 - Privitera, G. J. (2024), Chapter 3: *Summarizing Data: Central Tendency*.
 
-## Lecture and tutorial materials
+### Lecture and tutorial materials
 
 - Lecture 2: *Data Types and Visualization*.
 - Lecture 2 Worksheet and key.
@@ -1116,7 +1126,7 @@ Before moving on, you should be able to explain in your own words:
 
 ---
 
-# 38. References
+## 38. References
 
 Katz, I. R., Lautenschlager, G. J., Blackburn, A. B., & Harris, F. H. (1990). Answering reading comprehension items without passages on the SAT. *Psychological Science, 1*(2), 122–127.
 
@@ -1134,7 +1144,7 @@ Tufte, E. R. (2001). *The visual display of quantitative information* (2nd ed.).
 
 ---
 
-# 39. Week 2 Takeaway
+## 39. Week 2 Takeaway
 
 Week 2 is fundamentally about **matching the summary to the data**.
 
@@ -1147,3 +1157,260 @@ Then ask:
 > What representation—table, grouped distribution, graph, mean, median, or mode—preserves the information I need without implying more than the data support?
 
 That habit is more important than memorizing any single formula.
+
+
+# Part VI — Midterm Review Guide
+
+The official Lecture 2 midterm guide emphasizes **categorical versus continuous variables, the NOIR scales of measurement, frequency distributions, grouped frequency distributions, and graphical representations of data**. The main computations are **frequencies, proportions, percentages, cumulative frequencies, and cumulative percentages**.
+
+## The Big Picture
+
+Week 2 asks two linked questions:
+
+> **What kind of variable do I have?**  
+> **How should I summarize and display it?**
+
+The measurement scale determines what the values mean, and that helps determine which summaries and graphs are appropriate.
+
+## Variable Types and NOIR
+
+### Categorical vs. continuous
+
+**Categorical variables** represent qualitative categories or ordered categories.
+
+**Continuous variables** represent measured quantities using a defined unit.
+
+### Nominal
+
+Nominal values distinguish categories only.
+
+Examples:
+
+- psychiatric diagnosis;
+- dominant hand;
+- eye colour.
+
+There is no meaningful rank order.
+
+### Ordinal
+
+Ordinal values have a meaningful order, but the distance between adjacent categories is not guaranteed to be equal.
+
+Examples:
+
+- Mild, Moderate, Severe;
+- class rank;
+- letter grades.
+
+### Interval
+
+Interval variables have equal measurement units but an arbitrary zero point.
+
+Examples in the guide include Celsius temperature, standardized IQ scores, and calendar years.
+
+### Ratio
+
+Ratio variables have equal units and a meaningful zero indicating absence of the measured quantity.
+
+Examples include:
+
+- reaction time;
+- distance;
+- mass;
+- counts.
+
+A useful exam reminder is that the **same phenomenon can be measured on different scales depending on how it is operationalized**.
+
+## Frequency Distributions
+
+A frequency distribution compresses raw observations into an organized table.
+
+The key columns are:
+
+- \(f\): frequency;
+- proportion: \(f/N\);
+- percentage: \((f/N)\times100\);
+- CF: cumulative frequency;
+- cumulative percentage or cumulative relative frequency.
+
+Think of cumulative frequency as:
+
+> “How many observations are at this value **or less**?”
+
+The final cumulative frequency must equal \(N\), and the final cumulative percentage must equal 100%.
+
+## Apparent and Real Limits
+
+A displayed whole-number score such as 21 has:
+
+- apparent value = 21;
+- lower real limit = 20.5;
+- upper real limit = 21.5.
+
+This becomes important for grouped distributions and percentile calculations later.
+
+## Grouped Frequency Distributions
+
+When the range is large, scores can be combined into class intervals.
+
+The official formula sheet gives:
+
+\[
+\text{Bin Width}
+=
+\frac{\text{Maximum}-\text{Minimum}}
+{\text{Number of Bins}}.
+\]
+
+The course guide recommends aiming for roughly 10 bins and then choosing a convenient meaningful width.
+
+## Choosing the Correct Graph
+
+### Bar chart
+
+Use for categorical data.
+
+**Bars do not touch.**
+
+### Histogram
+
+Use for continuous data.
+
+**Bars touch.**
+
+### Frequency polygon
+
+Use for continuous data; plotted points are connected across class-interval midpoints.
+
+Good visualizations should also use clear labels, appropriate scales, and avoid unnecessary visual clutter or misleading truncation.
+
+## Formula-Sheet Connection
+
+For Week 2, the main official formula is:
+
+\[
+\text{Bin Width}
+=
+\frac{\max-\min}{\#\text{ of bins}}.
+\]
+
+You should also be able to calculate proportions and percentages even though these are simple arithmetic rather than a separate boxed formula.
+
+## Assignment-Style Practice
+
+### Question 1 — Measurement scales (/4)
+
+Identify the scale of measurement and briefly justify each answer.
+
+a. Primary therapy type: CBT, psychodynamic, humanistic, other  
+b. Pain rating: Mild, Moderate, Severe  
+c. Temperature measured in Celsius  
+d. Reaction time measured in milliseconds
+
+### Question 2 — Frequency table (/6)
+
+Twenty students report the number of cups of coffee they drank yesterday:
+
+\[
+0,1,2,1,3,2,0,2,1,4,2,3,1,2,0,1,3,2,1,2.
+\]
+
+Complete a frequency table for \(X=0,1,2,3,4\) containing:
+
+- \(f\)
+- proportion
+- percentage
+- CF
+- cumulative percentage
+
+### Question 3 — Cumulative interpretation (/2)
+
+Using Question 2:
+
+a. How many students drank **2 cups or fewer**?  
+b. What percentage drank **3 cups or fewer**?
+
+### Question 4 — Grouping (/2)
+
+A continuous variable ranges from 12 to 87. You want approximately 10 bins.
+
+a. Calculate the raw bin width.  
+b. Choose a convenient whole-number bin width.
+
+### Question 5 — Graph choice (/3)
+
+Choose the most appropriate graph and explain why.
+
+a. Primary psychiatric diagnosis  
+b. Reaction time in milliseconds  
+c. Frequency of test scores grouped into 10-point intervals
+
+### Question 6 — Ethical visualization (/2)
+
+Two bar charts display the same group means, 72 and 75. One y-axis starts at 0; the other starts at 70.
+
+a. Which graph visually exaggerates the difference?  
+b. Why?
+
+## Answers
+
+### Question 1
+
+a. Nominal — categories with no rank order.  
+b. Ordinal — categories have an order, but spacing is not a defined unit.  
+c. Interval — equal units, but 0°C is not the absence of temperature.  
+d. Ratio — equal units and 0 ms represents no elapsed reaction time.
+
+### Question 2
+
+| \(X\) | \(f\) | Proportion | % | CF | Cumulative % |
+|---:|---:|---:|---:|---:|---:|
+| 0 | 3 | .15 | 15% | 3 | 15% |
+| 1 | 6 | .30 | 30% | 9 | 45% |
+| 2 | 7 | .35 | 35% | 16 | 80% |
+| 3 | 3 | .15 | 15% | 19 | 95% |
+| 4 | 1 | .05 | 5% | 20 | 100% |
+
+Checks:
+
+\[
+\sum f=20,\qquad \sum\text{Proportion}=1.00,\qquad \sum\%=100\%.
+\]
+
+### Question 3
+
+a. 16 students.  
+b. 95%.
+
+### Question 4
+
+a.
+
+\[
+\frac{87-12}{10}=7.5.
+\]
+
+b. A convenient width of about 8 is reasonable.
+
+### Question 5
+
+a. Bar chart — diagnosis is categorical.  
+b. Histogram or frequency polygon — reaction time is continuous.  
+c. Histogram — grouped intervals represent a continuous variable.
+
+### Question 6
+
+a. The chart whose y-axis begins at 70.  
+b. Truncating the baseline makes a small numerical difference occupy a much larger visual distance.
+
+## Midterm Self-Check
+
+You should be able to:
+
+- classify variables using NOIR;
+- distinguish categorical from continuous measurement;
+- calculate \(f\), proportion, percentage, CF, and cumulative percentage;
+- identify apparent and real limits;
+- calculate a bin width;
+- choose among bar charts, histograms, and frequency polygons;
+- identify misleading visual scaling.

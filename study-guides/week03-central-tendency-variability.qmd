@@ -1626,3 +1626,415 @@ To describe data responsibly, consider:
 The mean and standard deviation will become especially important in later weeks, but the deeper lesson is broader:
 
 > Good statistical description requires understanding both **location** and **spread**.
+
+
+# Part VI — Midterm Review Guide
+
+The official Lecture 3 midterm guide focuses on what **central tendency, variability, and shape** communicate. Computationally, you should be able to calculate the **mean, weighted mean, median/percentiles, variance, and standard deviation**.
+
+## The Big Picture
+
+Week 3 turns a distribution into a small set of interpretable numbers.
+
+Think of three questions:
+
+> **Where is the distribution centered?**  
+> **How spread out are the scores?**  
+> **What is the shape of the distribution?**
+
+A compact description of a distribution usually combines all three.
+
+## Central Tendency
+
+### Mode
+
+The mode is the most frequently occurring value or category.
+
+It is especially useful for categorical variables.
+
+### Median
+
+The median is the 50th percentile.
+
+It divides the observations by **frequency**: half are below and half are above.
+
+Because it depends on rank rather than magnitude, it is relatively resistant to extreme values.
+
+### Mean
+
+The mean is the arithmetic average.
+
+It acts like a **balance point** because every score contributes according to its magnitude.
+
+The mean is therefore more sensitive than the median to extreme values and skewness.
+
+## Median and Percentile Interpolation
+
+The official formula sheet provides:
+
+\[
+Md
+=
+LL
++
+W
+\left[
+\frac{0.50(n)-cf_{\text{below}}}{f}
+\right].
+\]
+
+The general percentile formula is:
+
+\[
+P_x
+=
+LL
++
+W
+\left[
+\frac{P_x(n)-cf_{\text{below}}}{f}
+\right].
+\]
+
+Know what each symbol means:
+
+- \(LL\): lower real limit of the target interval;
+- \(W\): interval width;
+- \(n\): total sample size;
+- \(cf_{\text{below}}\): cumulative frequency below the target interval;
+- \(f\): frequency within the target interval.
+
+For this course, frequency tables used for these calculations are arranged **in descending order**, so the cumulative frequency below the target row represents smaller scores.
+
+## Mean and Weighted Mean
+
+The mean is:
+
+\[
+\bar{x}
+=
+\frac{\sum x_i}{n}.
+\]
+
+When combining groups of unequal size, use the combined mean:
+
+\[
+\bar{x}_C
+=
+\frac{n_1\bar{x}_1+n_2\bar{x}_2+\cdots+n_k\bar{x}_k}
+{n_1+n_2+\cdots+n_k}.
+\]
+
+Do not simply average group means unless the group sizes are equal.
+
+## Variability
+
+### Range
+
+\[
+\text{Range}
+=
+\max-\min.
+\]
+
+### Interquartile range
+
+\[
+IQR=P_{75}-P_{25}.
+\]
+
+### Sum of squares
+
+\[
+SS=\sum(x-\bar{x})^2.
+\]
+
+The unsquared deviations sum to zero, so the deviations are squared before averaging.
+
+### Sample variance
+
+\[
+s^2
+=
+\frac{\sum(x-\bar{x})^2}{n-1}.
+\]
+
+The denominator \(n-1\) is the degrees of freedom.
+
+### Sample standard deviation
+
+\[
+s
+=
+\sqrt{s^2}.
+\]
+
+Standard deviation returns variability to the original measurement units.
+
+## Transformations
+
+If a constant \(C\) is added to every score:
+
+- mean increases by \(C\);
+- variance is unchanged;
+- SD is unchanged.
+
+If every score is multiplied by \(C\):
+
+- mean is multiplied by \(C\);
+- SD is multiplied by \(|C|\);
+- variance is multiplied by \(C^2\).
+
+## Shape and Skewness
+
+A symmetrical distribution has no skew.
+
+A **positively skewed** distribution has a long tail toward higher values.
+
+A **negatively skewed** distribution has a long tail toward lower values.
+
+The tail points in the direction of the skew.
+
+For meaningful positive skew:
+
+\[
+\text{mean}>\text{median}.
+\]
+
+For meaningful negative skew:
+
+\[
+\text{mean}<\text{median}.
+\]
+
+Because the median is less affected by extreme values, it is often the better center for a skewed distribution.
+
+## Formula-Sheet Connection
+
+Week 3 uses several of the official formulas:
+
+\[
+Md
+=
+LL+W\left[\frac{0.5(n)-cf}{f}\right]
+\]
+
+\[
+P_x
+=
+LL+W\left[\frac{P_x(n)-cf}{f}\right]
+\]
+
+\[
+\bar{x}=\frac{\sum x_i}{n}
+\]
+
+\[
+\bar{x}_C
+=
+\frac{\sum n_i\bar{x}_i}{\sum n_i}
+\]
+
+\[
+\text{Range}=\max-\min
+\]
+
+\[
+IQR=P_{75}-P_{25}
+\]
+
+\[
+s
+=
+\sqrt{
+\frac{\sum(x_i-\bar{x})^2}{n-1}
+}.
+\]
+
+## Assignment-Style Practice
+
+### Question 1 — Center and spread (/5)
+
+For:
+
+\[
+X=\{5,8,3,2,7\},
+\]
+
+calculate:
+
+a. mean  
+b. median  
+c. range  
+d. sample variance  
+e. sample standard deviation
+
+### Question 2 — Weighted mean (/2)
+
+Group A has \(n=20\) and \(\bar{x}=72\).  
+Group B has \(n=30\) and \(\bar{x}=78\).
+
+a. Calculate the combined mean.  
+b. Explain why simply averaging 72 and 78 would be inappropriate.
+
+### Question 3 — Transformations (/4)
+
+A class has:
+
+\[
+\bar{x}=64,\qquad s=8,\qquad s^2=64.
+\]
+
+a. Every score receives 5 bonus points. Find the new mean, SD, and variance.  
+b. Every original score is instead multiplied by 2. Find the new mean, SD, and variance.
+
+### Question 4 — Skewness (/3)
+
+A distribution has a long tail toward high values and a few extreme high scores.
+
+a. What is the direction of skew?  
+b. Which is usually larger, the mean or median?  
+c. Which measure of center is usually more resistant to the extreme scores?
+
+### Question 5 — Grouped median (/4)
+
+A descending grouped frequency table has \(n=40\). The median falls in the interval 100–109, where:
+
+\[
+LL=99.5,\quad W=10,\quad f=14,\quad cf_{\text{below}}=10.
+\]
+
+Calculate the interpolated median.
+
+### Question 6 — IQR (/3)
+
+Using the same grouped example, suppose:
+
+\[
+P_{75}=115.50,\qquad P_{25}=99.50.
+\]
+
+a. Calculate the IQR.  
+b. What portion of the distribution lies between \(P_{25}\) and \(P_{75}\)?
+
+## Answers
+
+### Question 1
+
+\[
+\bar{x}
+=
+\frac{5+8+3+2+7}{5}
+=
+5.
+\]
+
+Ordered scores: \(2,3,5,7,8\), so:
+
+\[
+Md=5.
+\]
+
+\[
+\text{Range}=8-2=6.
+\]
+
+Squared deviations from 5:
+
+\[
+0,9,4,9,4.
+\]
+
+Thus:
+
+\[
+SS=26.
+\]
+
+\[
+s^2
+=
+\frac{26}{4}
+=
+6.5.
+\]
+
+\[
+s=\sqrt{6.5}\approx2.55.
+\]
+
+### Question 2
+
+\[
+\bar{x}_C
+=
+\frac{20(72)+30(78)}{50}
+=
+\frac{3780}{50}
+=
+75.6.
+\]
+
+The groups have unequal sample sizes, so the larger group must receive more weight.
+
+### Question 3
+
+a. Add 5:
+
+\[
+\bar{x}_{new}=69,\qquad s_{new}=8,\qquad s^2_{new}=64.
+\]
+
+b. Multiply by 2:
+
+\[
+\bar{x}_{new}=128,\qquad s_{new}=16,\qquad s^2_{new}=256.
+\]
+
+### Question 4
+
+a. Positive skew.  
+b. Mean is usually greater than median.  
+c. Median.
+
+### Question 5
+
+\[
+Md
+=
+99.5
++
+10
+\left[
+\frac{20-10}{14}
+\right]
+\]
+
+\[
+=
+99.5+10(0.7143)
+\approx106.64.
+\]
+
+### Question 6
+
+a.
+
+\[
+IQR=115.50-99.50=16.00.
+\]
+
+b. The middle 50% of the distribution.
+
+## Midterm Self-Check
+
+You should be able to explain:
+
+- mode vs. median vs. mean;
+- why the mean is more sensitive to outliers;
+- why sample variance uses \(n-1\);
+- why deviations are squared;
+- variance vs. standard deviation;
+- how adding or multiplying a constant changes mean/SD/variance;
+- how to identify positive and negative skew;
+- why the median is useful for skewed data.

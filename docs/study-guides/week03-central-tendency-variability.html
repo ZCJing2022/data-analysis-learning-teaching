@@ -233,6 +233,23 @@ window.Quarto = {
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">45. References</a></li>
   <li><a href="#week-3-takeaway" id="toc-week-3-takeaway" class="nav-link" data-scroll-target="#week-3-takeaway">46. Week 3 Takeaway</a></li>
   </ul></li>
+  <li><a href="#part-vi-midterm-review-guide" id="toc-part-vi-midterm-review-guide" class="nav-link" data-scroll-target="#part-vi-midterm-review-guide">Part VI — Midterm Review Guide</a>
+  <ul class="collapse">
+  <li><a href="#the-big-picture" id="toc-the-big-picture" class="nav-link" data-scroll-target="#the-big-picture">The Big Picture</a></li>
+  <li><a href="#central-tendency-1" id="toc-central-tendency-1" class="nav-link" data-scroll-target="#central-tendency-1">Central Tendency</a></li>
+  <li><a href="#median-and-percentile-interpolation" id="toc-median-and-percentile-interpolation" class="nav-link" data-scroll-target="#median-and-percentile-interpolation">Median and Percentile Interpolation</a></li>
+  <li><a href="#mean-and-weighted-mean" id="toc-mean-and-weighted-mean" class="nav-link" data-scroll-target="#mean-and-weighted-mean">Mean and Weighted Mean</a></li>
+  <li><a href="#variability-1" id="toc-variability-1" class="nav-link" data-scroll-target="#variability-1">Variability</a></li>
+  <li><a href="#transformations-1" id="toc-transformations-1" class="nav-link" data-scroll-target="#transformations-1">Transformations</a></li>
+  <li><a href="#shape-and-skewness" id="toc-shape-and-skewness" class="nav-link" data-scroll-target="#shape-and-skewness">Shape and Skewness</a></li>
+  <li><a href="#formula-sheet-connection" id="toc-formula-sheet-connection" class="nav-link" data-scroll-target="#formula-sheet-connection">Formula-Sheet Connection</a></li>
+  <li><a href="#assignment-style-practice" id="toc-assignment-style-practice" class="nav-link" data-scroll-target="#assignment-style-practice">Assignment-Style Practice</a></li>
+  <li><a href="#answers" id="toc-answers" class="nav-link" data-scroll-target="#answers">Answers</a></li>
+  </ul></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">[</a>
+  <ul class="collapse">
+  <li><a href="#midterm-self-check" id="toc-midterm-self-check" class="nav-link" data-scroll-target="#midterm-self-check">Midterm Self-Check</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1847,6 +1864,270 @@ M=10,\quad s=4,\quad s^2=16.
 <blockquote class="blockquote">
 <p>Good statistical description requires understanding both <strong>location</strong> and <strong>spread</strong>.</p>
 </blockquote>
+</section>
+</section>
+<section id="part-vi-midterm-review-guide" class="level1">
+<h1>Part VI — Midterm Review Guide</h1>
+<p>The official Lecture 3 midterm guide focuses on what <strong>central tendency, variability, and shape</strong> communicate. Computationally, you should be able to calculate the <strong>mean, weighted mean, median/percentiles, variance, and standard deviation</strong>.</p>
+<section id="the-big-picture" class="level2">
+<h2 class="anchored" data-anchor-id="the-big-picture">The Big Picture</h2>
+<p>Week 3 turns a distribution into a small set of interpretable numbers.</p>
+<p>Think of three questions:</p>
+<blockquote class="blockquote">
+<p><strong>Where is the distribution centered?</strong><br>
+<strong>How spread out are the scores?</strong><br>
+<strong>What is the shape of the distribution?</strong></p>
+</blockquote>
+<p>A compact description of a distribution usually combines all three.</p>
+</section>
+<section id="central-tendency-1" class="level2">
+<h2 class="anchored" data-anchor-id="central-tendency-1">Central Tendency</h2>
+<section id="mode-1" class="level3">
+<h3 class="anchored" data-anchor-id="mode-1">Mode</h3>
+<p>The mode is the most frequently occurring value or category.</p>
+<p>It is especially useful for categorical variables.</p>
+</section>
+<section id="median-1" class="level3">
+<h3 class="anchored" data-anchor-id="median-1">Median</h3>
+<p>The median is the 50th percentile.</p>
+<p>It divides the observations by <strong>frequency</strong>: half are below and half are above.</p>
+<p>Because it depends on rank rather than magnitude, it is relatively resistant to extreme values.</p>
+</section>
+<section id="mean-1" class="level3">
+<h3 class="anchored" data-anchor-id="mean-1">Mean</h3>
+<p>The mean is the arithmetic average.</p>
+<p>It acts like a <strong>balance point</strong> because every score contributes according to its magnitude.</p>
+<p>The mean is therefore more sensitive than the median to extreme values and skewness.</p>
+</section>
+</section>
+<section id="median-and-percentile-interpolation" class="level2">
+<h2 class="anchored" data-anchor-id="median-and-percentile-interpolation">Median and Percentile Interpolation</h2>
+<p>The official formula sheet provides:</p>
+<p>[ Md = LL + W . ]</p>
+<p>The general percentile formula is:</p>
+<p>[ P_x = LL + W . ]</p>
+<p>Know what each symbol means:</p>
+<ul>
+<li>(LL): lower real limit of the target interval;</li>
+<li>(W): interval width;</li>
+<li>(n): total sample size;</li>
+<li>(cf_{}): cumulative frequency below the target interval;</li>
+<li>(f): frequency within the target interval.</li>
+</ul>
+<p>For this course, frequency tables used for these calculations are arranged <strong>in descending order</strong>, so the cumulative frequency below the target row represents smaller scores.</p>
+</section>
+<section id="mean-and-weighted-mean" class="level2">
+<h2 class="anchored" data-anchor-id="mean-and-weighted-mean">Mean and Weighted Mean</h2>
+<p>The mean is:</p>
+<p>[ {x} = . ]</p>
+<p>When combining groups of unequal size, use the combined mean:</p>
+<p>[ {x}_C = {n_1+n_2++n_k}. ]</p>
+<p>Do not simply average group means unless the group sizes are equal.</p>
+</section>
+<section id="variability-1" class="level2">
+<h2 class="anchored" data-anchor-id="variability-1">Variability</h2>
+<section id="range" class="level3">
+<h3 class="anchored" data-anchor-id="range">Range</h3>
+<p>[ = -. ]</p>
+</section>
+<section id="interquartile-range-1" class="level3">
+<h3 class="anchored" data-anchor-id="interquartile-range-1">Interquartile range</h3>
+<p>[ IQR=P_{75}-P_{25}. ]</p>
+</section>
+<section id="sum-of-squares-1" class="level3">
+<h3 class="anchored" data-anchor-id="sum-of-squares-1">Sum of squares</h3>
+<p>[ SS=(x-{x})^2. ]</p>
+<p>The unsquared deviations sum to zero, so the deviations are squared before averaging.</p>
+</section>
+<section id="sample-variance-1" class="level3">
+<h3 class="anchored" data-anchor-id="sample-variance-1">Sample variance</h3>
+<p>[ s^2 = . ]</p>
+<p>The denominator (n-1) is the degrees of freedom.</p>
+</section>
+<section id="sample-standard-deviation" class="level3">
+<h3 class="anchored" data-anchor-id="sample-standard-deviation">Sample standard deviation</h3>
+<p>[ s = . ]</p>
+<p>Standard deviation returns variability to the original measurement units.</p>
+</section>
+</section>
+<section id="transformations-1" class="level2">
+<h2 class="anchored" data-anchor-id="transformations-1">Transformations</h2>
+<p>If a constant (C) is added to every score:</p>
+<ul>
+<li>mean increases by (C);</li>
+<li>variance is unchanged;</li>
+<li>SD is unchanged.</li>
+</ul>
+<p>If every score is multiplied by (C):</p>
+<ul>
+<li>mean is multiplied by (C);</li>
+<li>SD is multiplied by (|C|);</li>
+<li>variance is multiplied by (C^2).</li>
+</ul>
+</section>
+<section id="shape-and-skewness" class="level2">
+<h2 class="anchored" data-anchor-id="shape-and-skewness">Shape and Skewness</h2>
+<p>A symmetrical distribution has no skew.</p>
+<p>A <strong>positively skewed</strong> distribution has a long tail toward higher values.</p>
+<p>A <strong>negatively skewed</strong> distribution has a long tail toward lower values.</p>
+<p>The tail points in the direction of the skew.</p>
+<p>For meaningful positive skew:</p>
+<p>[ &gt;. ]</p>
+<p>For meaningful negative skew:</p>
+<p>[ &lt;. ]</p>
+<p>Because the median is less affected by extreme values, it is often the better center for a skewed distribution.</p>
+</section>
+<section id="formula-sheet-connection" class="level2">
+<h2 class="anchored" data-anchor-id="formula-sheet-connection">Formula-Sheet Connection</h2>
+<p>Week 3 uses several of the official formulas:</p>
+<p>[ Md = LL+W]</p>
+<p>[ P_x = LL+W]</p>
+<p>[ {x}= ]</p>
+<p>[ {x}_C = ]</p>
+<p>[ =- ]</p>
+<p>[ IQR=P_{75}-P_{25} ]</p>
+<p>[ s = . ]</p>
+</section>
+<section id="assignment-style-practice" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-style-practice">Assignment-Style Practice</h2>
+<section id="question-1-center-and-spread-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-center-and-spread-5">Question 1 — Center and spread (/5)</h3>
+<p>For:</p>
+<p>[ X={5,8,3,2,7}, ]</p>
+<p>calculate:</p>
+<ol type="a">
+<li>mean<br>
+</li>
+<li>median<br>
+</li>
+<li>range<br>
+</li>
+<li>sample variance<br>
+</li>
+<li>sample standard deviation</li>
+</ol>
+</section>
+<section id="question-2-weighted-mean-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2-weighted-mean-2">Question 2 — Weighted mean (/2)</h3>
+<p>Group A has (n=20) and ({x}=72).<br>
+Group B has (n=30) and ({x}=78).</p>
+<ol type="a">
+<li>Calculate the combined mean.<br>
+</li>
+<li>Explain why simply averaging 72 and 78 would be inappropriate.</li>
+</ol>
+</section>
+<section id="question-3-transformations-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-3-transformations-4">Question 3 — Transformations (/4)</h3>
+<p>A class has:</p>
+<p>[ {x}=64,s=8,s^2=64. ]</p>
+<ol type="a">
+<li>Every score receives 5 bonus points. Find the new mean, SD, and variance.<br>
+</li>
+<li>Every original score is instead multiplied by 2. Find the new mean, SD, and variance.</li>
+</ol>
+</section>
+<section id="question-4-skewness-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-4-skewness-3">Question 4 — Skewness (/3)</h3>
+<p>A distribution has a long tail toward high values and a few extreme high scores.</p>
+<ol type="a">
+<li>What is the direction of skew?<br>
+</li>
+<li>Which is usually larger, the mean or median?<br>
+</li>
+<li>Which measure of center is usually more resistant to the extreme scores?</li>
+</ol>
+</section>
+<section id="question-5-grouped-median-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-5-grouped-median-4">Question 5 — Grouped median (/4)</h3>
+<p>A descending grouped frequency table has (n=40). The median falls in the interval 100–109, where:</p>
+<p>[ LL=99.5,W=10,f=14,cf_{}=10. ]</p>
+<p>Calculate the interpolated median.</p>
+</section>
+<section id="question-6-iqr-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-6-iqr-3">Question 6 — IQR (/3)</h3>
+<p>Using the same grouped example, suppose:</p>
+<p>[ P_{75}=115.50,P_{25}=99.50. ]</p>
+<ol type="a">
+<li>Calculate the IQR.<br>
+</li>
+<li>What portion of the distribution lies between (P_{25}) and (P_{75})?</li>
+</ol>
+</section>
+</section>
+<section id="answers" class="level2">
+<h2 class="anchored" data-anchor-id="answers">Answers</h2>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p>[ {x} = = 5. ]</p>
+<p>Ordered scores: (2,3,5,7,8), so:</p>
+<p>[ Md=5. ]</p>
+<p>[ =8-2=6. ]</p>
+<p>Squared deviations from 5:</p>
+<p>[ 0,9,4,9,4. ]</p>
+<p>Thus:</p>
+<p>[ SS=26. ]</p>
+<p>[ s^2 = = 6.5. ]</p>
+<p>[ s=. ]</p>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p>[ {x}_C = = = 75.6. ]</p>
+<p>The groups have unequal sample sizes, so the larger group must receive more weight.</p>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<ol type="a">
+<li>Add 5:</li>
+</ol>
+<p>[ {x}<em>{new}=69,s</em>{new}=8,s^2_{new}=64. ]</p>
+<ol start="2" type="a">
+<li>Multiply by 2:</li>
+</ol>
+<p>[ {x}<em>{new}=128,s</em>{new}=16,s^2_{new}=256. ]</p>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<ol type="a">
+<li>Positive skew.<br>
+</li>
+<li>Mean is usually greater than median.<br>
+</li>
+<li>Median.</li>
+</ol>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p>[ Md = 99.5 + 10 ]</p>
+</section>
+</section>
+</section>
+<section id="section" class="level1">
+<h1>[</h1>
+<p>99.5+10(0.7143) . ]</p>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<ol type="a">
+<li></li>
+</ol>
+<p>[ IQR=115.50-99.50=16.00. ]</p>
+<ol start="2" type="a">
+<li>The middle 50% of the distribution.</li>
+</ol>
+</section>
+<section id="midterm-self-check" class="level2">
+<h2 class="anchored" data-anchor-id="midterm-self-check">Midterm Self-Check</h2>
+<p>You should be able to explain:</p>
+<ul>
+<li>mode vs.&nbsp;median vs.&nbsp;mean;</li>
+<li>why the mean is more sensitive to outliers;</li>
+<li>why sample variance uses (n-1);</li>
+<li>why deviations are squared;</li>
+<li>variance vs.&nbsp;standard deviation;</li>
+<li>how adding or multiplying a constant changes mean/SD/variance;</li>
+<li>how to identify positive and negative skew;</li>
+<li>why the median is useful for skewed data.</li>
+</ul>
 
 
 </section>
