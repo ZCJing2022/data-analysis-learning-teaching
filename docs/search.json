@@ -296,373 +296,380 @@
   {
     "objectID": "study-guides/week04-standard-scores.html",
     "href": "study-guides/week04-standard-scores.html",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
     "section": "",
-    "text": "Week 4 moves from descriptive statistics toward the foundations of inferential statistics.\nThe central question is:\n\nHow can probability help us describe what outcomes are likely, unlikely, typical, or unusual?\n\nThe two supplied editions of Privitera organize this material differently.\n\nThe 2018 second edition combines introductory probability with the normal distribution, the standard normal distribution, z scores, the unit normal table, and the use of z scores to locate probabilities and cutoff scores.\nThe 2024 fourth edition expands probability itself much more extensively. It covers relative frequency, mutually exclusive, independent, complementary, and conditional outcomes, Bayes’s theorem, probability distributions, expected value, and the variance and standard deviation of probability distributions, including the binomial distribution.\n\nThis Study Guide therefore treats the two editions as complementary rather than pretending that they have the same Chapter 5 structure.\nThe broad conceptual sequence is:\nProbability\n↓\nRelative frequency and relationships among outcomes\n↓\nProbability distributions and expected value\n↓\nNormal distributions\n↓\nStandardization with z scores\n↓\nUsing areas under the normal curve to locate probabilities and cutoff scores"
+    "text": "Week 4 builds directly on Week 3.\nLast week, you learned how to describe a distribution using:\n\nmeasures of central tendency;\nmeasures of shape;\nmeasures of variability.\n\nThis week asks the next question:\n\nHow can we describe where one particular score sits relative to the rest of a distribution?\n\nThe lecture introduces standard scores, especially z scores, as a way to combine information about the center and spread of a distribution into a single interpretable number. A z score tells us whether a raw score is above or below its mean and how many standard deviations away from the mean it lies (Sigal, 2026).\nThe lecture then connects z scores to the normal distribution and the standard normal distribution, where the mean is 0 and the standard deviation is 1. Once scores are standardized, the z table allows us to translate locations in the distribution into proportions and probabilities (Sigal, 2026; Privitera, 2018).\nThe lecture’s main intellectual sequence is therefore:\nCenter + spread\n↓\nStandard score\n↓\nz score\n↓\nStandard normal distribution\n↓\nz table\n↓\nProbability / percentile interpretation\nA crucial point from the lecture is that standardizing scores does not make a skewed distribution normal. Standardization changes the scale, not the shape (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#what-is-probability",
-    "href": "study-guides/week04-standard-scores.html#what-is-probability",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "1. What Is Probability?",
-    "text": "1. What Is Probability?\nProbability describes the likelihood that an outcome will occur.\nIn the simplest case:\n\\[\np(x)=\\frac{f(x)}{\\text{sample space}},\n\\]\nwhere:\n\n(p(x)) = probability of outcome (x);\n(f(x)) = frequency of outcome (x);\nsample space = total number of possible outcomes.\n\nBoth editions emphasize that probability is useful when outcomes can vary from one observation to the next (Privitera, 2018, 2024).\n\nExample: one fair coin\nThe sample space is:\n\\[\n\\{H,T\\}.\n\\]\nTherefore:\n\\[\np(H)=\\frac{1}{2}=0.50.\n\\]"
+    "objectID": "study-guides/week04-standard-scores.html#population-variance-and-standard-deviation",
+    "href": "study-guides/week04-standard-scores.html#population-variance-and-standard-deviation",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "1. Population Variance and Standard Deviation",
+    "text": "1. Population Variance and Standard Deviation\nThe lecture begins with a direct review of Week 3.\nFor a population:\n\\[\n\\sigma^2\n=\n\\frac{\\sum (x_i-\\mu)^2}{N}\n\\]\nand:\n\\[\n\\sigma\n=\n\\sqrt{\n\\frac{\\sum (x_i-\\mu)^2}{N}\n}.\n\\]\nThe lecture uses:\n\\[\nX=\\{1,0,6,1\\},\n\\]\nwith:\n\\[\n\\mu=2.\n\\]\nThen:\n\\[\nSS\n=\n(1-2)^2+(0-2)^2+(6-2)^2+(1-2)^2\n=\n22.\n\\]\nThus:\n\\[\n\\sigma^2\n=\n\\frac{22}{4}\n=\n5.5,\n\\]\nand:\n\\[\n\\sigma\n=\n\\sqrt{5.5}\n\\approx\n2.35\n\\]\n(Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#random-events-and-fixed-events",
-    "href": "study-guides/week04-standard-scores.html#random-events-and-fixed-events",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "2. Random Events and Fixed Events",
-    "text": "2. Random Events and Fixed Events\nA random event is one for which the observed outcome can vary.\nExamples:\n\nflipping a coin;\nselecting a person from a population;\nwhether a flight is delayed;\nwhether a participant responds correctly.\n\nA fixed event is one for which the outcome does not vary.\nProbability is useful for predicting random events because their outcomes are uncertain before observation (Privitera, 2018, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#sum-of-squares",
+    "href": "study-guides/week04-standard-scores.html#sum-of-squares",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "2. Sum of Squares",
+    "text": "2. Sum of Squares\nThe lecture explicitly names:\n\\[\n\\sum (x_i-\\mu)^2\n\\]\nand:\n\\[\n\\sum (x_i-\\bar{x})^2\n\\]\nas the sum of squares (SS).\nBecause deviations are squared:\n\nSS can never be negative;\nSS equals 0 only if every observation is identical.\n\nIf all observations are identical, there is no variation, so variance and standard deviation are also 0 (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#the-sample-space",
-    "href": "study-guides/week04-standard-scores.html#the-sample-space",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "3. The Sample Space",
-    "text": "3. The Sample Space\nThe sample space is the complete set of possible outcomes.\nFor one coin:\n\\[\nS=\\{H,T\\}.\n\\]\nFor two fair coins:\n\\[\nS=\\{HH,HT,TH,TT\\}.\n\\]\nThus:\n\\[\n|S|=4.\n\\]\nThe probability of two heads is:\n\\[\np(HH)=\\frac{1}{4}=0.25.\n\\]\nA common mistake is to count only the outcomes of interest rather than all possible outcomes."
+    "objectID": "study-guides/week04-standard-scores.html#sample-variance-and-standard-deviation",
+    "href": "study-guides/week04-standard-scores.html#sample-variance-and-standard-deviation",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "3. Sample Variance and Standard Deviation",
+    "text": "3. Sample Variance and Standard Deviation\nFor a sample:\n\\[\ns^2\n=\n\\frac{\\sum (x_i-\\bar{x})^2}{n-1}\n=\n\\frac{SS}{df}.\n\\]\nThe standard deviation is:\n\\[\ns\n=\n\\sqrt{\n\\frac{SS}{n-1}\n}.\n\\]\nUsing the same data:\n\\[\nSS=22,\\quad n=4,\n\\]\nso:\n\\[\ns^2\n=\n\\frac{22}{3}\n=\n7.33,\n\\]\nand:\n\\[\ns\n=\n\\sqrt{7.33}\n\\approx\n2.71\n\\]\n(Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#basic-rules-of-probability",
-    "href": "study-guides/week04-standard-scores.html#basic-rules-of-probability",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "4. Basic Rules of Probability",
-    "text": "4. Basic Rules of Probability\nA valid probability must satisfy:\n\\[\n0\\le p\\le1.\n\\]\nProbability can be expressed as:\n\na fraction;\na decimal;\na percentage;\na proportion.\n\nExamples:\n\\[\n\\frac{1}{2}=0.50=50\\%.\n\\]\nA probability cannot be negative and cannot exceed 1 (Privitera, 2018, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#why-n-1",
+    "href": "study-guides/week04-standard-scores.html#why-n-1",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "4. Why (n-1)?",
+    "text": "4. Why (n-1)?\nThe lecture gives two complementary explanations.\n\nEstimation explanation\nSamples do not fully represent populations, especially at the rare and extreme ends. As a result, sample spread tends to underestimate population spread. Dividing by (n-1) instead of (n) makes the variance estimate larger and improves its performance as an estimate of population variance (Sigal, 2026).\n\n\nDegrees-of-freedom explanation\nDegrees of freedom also refers to the number of values that are independent and “free to vary.”\nIf the mean and all but one score are known, the final score is determined.\nThus:\n\\[\ndf=n-1.\n\\]"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#probability-and-relative-frequency",
-    "href": "study-guides/week04-standard-scores.html#probability-and-relative-frequency",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "5. Probability and Relative Frequency",
-    "text": "5. Probability and Relative Frequency\nThe 2024 edition makes the connection especially explicit:\n\nA relative frequency is the probability of an outcome’s occurrence when frequencies are distributed across all possible outcomes (Privitera, 2024).\n\nFor two fair coins:\n\n\n\nOutcome\n(f(x))\n(p(x))\n\n\n\n\nHH\n1\n.25\n\n\nHT or TH\n2\n.50\n\n\nTT\n1\n.25\n\n\n\nThe frequencies sum to the sample space:\n\\[\n1+2+1=4.\n\\]\nThe probabilities sum to:\n\\[\n0.25+0.50+0.25=1.00.\n\\]\nThis connection links Week 4 directly back to the frequency distributions introduced earlier in the course."
+    "objectID": "study-guides/week04-standard-scores.html#the-problem-with-raw-scores",
+    "href": "study-guides/week04-standard-scores.html#the-problem-with-raw-scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "5. The Problem With Raw Scores",
+    "text": "5. The Problem With Raw Scores\nA raw score in isolation is difficult to interpret.\nA score such as:\n\\[\nX=53\n\\]\ncould be:\n\nlow;\naverage;\nhigh;\n\ndepending on the distribution.\nTo interpret a raw score, we need to know:\n\nthe center;\nthe spread.\n\nThe lecture frames this as the core motivation for standard scores (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#mutually-exclusive-outcomes",
-    "href": "study-guides/week04-standard-scores.html#mutually-exclusive-outcomes",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "6. Mutually Exclusive Outcomes",
-    "text": "6. Mutually Exclusive Outcomes\nTwo outcomes are mutually exclusive when they cannot occur together.\nFor one coin flip, heads and tails are mutually exclusive.\nTherefore:\n\\[\np(H\\cap T)=0.\n\\]\nIf two outcomes are mutually exclusive, the probability of either one occurring is found with the additive rule:\n\\[\np(A\\cup B)=p(A)+p(B).\n\\]\nThis rule applies only when the outcomes cannot overlap (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#what-is-a-standard-score",
+    "href": "study-guides/week04-standard-scores.html#what-is-a-standard-score",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "6. What Is a Standard Score?",
+    "text": "6. What Is a Standard Score?\nA standard score combines information about:\n\ncenter;\nspread;\n\ninto a single number.\nMore formally, the lecture describes a standard score as a mean deviation standardized by an average measure of variability (Sigal, 2026).\nA standard score tells us two things:\n\nDirection\nIs the score above or below the mean?\nDistance\nHow many standard-deviation units separate the score from the mean?"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#independent-outcomes",
-    "href": "study-guides/week04-standard-scores.html#independent-outcomes",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "7. Independent Outcomes",
-    "text": "7. Independent Outcomes\nTwo outcomes are independent when the occurrence of one does not change the probability of the other.\nFor two independent outcomes:\n\\[\np(A\\cap B)=p(A)p(B).\n\\]\nExample:\nIf:\n\\[\np(A)=0.80\n\\]\nand:\n\\[\np(B)=0.80,\n\\]\nthen:\n\\[\np(A\\cap B)=0.80(0.80)=0.64.\n\\]\nThe 2024 text uses this logic to show how repeated independent selections combine multiplicatively."
+    "objectID": "study-guides/week04-standard-scores.html#standard-scores-as-relative-position",
+    "href": "study-guides/week04-standard-scores.html#standard-scores-as-relative-position",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "7. Standard Scores as Relative Position",
+    "text": "7. Standard Scores as Relative Position\nA standard score re-expresses a raw score in terms of the distribution it belongs to.\nThis is important because:\n\\[\nX=80\n\\]\ndoes not have the same meaning in every distribution.\nIf one class has:\n\\[\nM=70,\\quad SD=5,\n\\]\nthen:\n\\[\nX=80\n\\]\nis:\n\\[\nz=\\frac{80-70}{5}=2.\n\\]\nThat is two standard deviations above the mean.\nBut if another class has:\n\\[\nM=80,\\quad SD=10,\n\\]\nthen the same raw score corresponds to:\n\\[\nz=0.\n\\]\nThe raw score is identical, but the relative standing is not."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#complementary-outcomes",
-    "href": "study-guides/week04-standard-scores.html#complementary-outcomes",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "8. Complementary Outcomes",
-    "text": "8. Complementary Outcomes\nTwo outcomes are complementary when together they exhaust all possible outcomes.\nThus:\n\\[\np(A)+p(B)=1.\n\\]\nTherefore:\n\\[\np(A)=1-p(B).\n\\]\nExamples include:\n\npass / fail;\nwin / lose, assuming no tie;\nheads / tails.\n\nComplementary probabilities are often useful when it is easier to calculate the probability of the opposite outcome."
+    "objectID": "study-guides/week04-standard-scores.html#what-is-a-z-score",
+    "href": "study-guides/week04-standard-scores.html#what-is-a-z-score",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "8. What Is a z Score?",
+    "text": "8. What Is a z Score?\nA z score is a specific kind of standard score.\nThe lecture defines z scores as a parameterization that transforms a distribution to:\n\\[\n\\mu=0\n\\]\nand:\n\\[\n\\sigma=1.\n\\]\nFor a population:\n\\[\nz=\\frac{X-\\mu}{\\sigma}.\n\\]\nFor a sample:\n\\[\nz=\\frac{X-\\bar{x}}{s}.\n\\]\nA z score is therefore a raw deviation divided by a standard deviation (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#conditional-outcomes",
-    "href": "study-guides/week04-standard-scores.html#conditional-outcomes",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "9. Conditional Outcomes",
-    "text": "9. Conditional Outcomes\nTwo outcomes are conditional when the probability of one outcome depends on another outcome.\nConditional probability is written:\n\\[\np(A\\mid B),\n\\]\nread as:\n\nthe probability of (A), given that (B) occurred.\n\nThe basic conditional-probability formula is:\n\\[\np(A\\mid B)\n=\n\\frac{p(A\\cap B)}{p(B)}.\n\\]\nThe key conceptual change is the sample space.\nOnce we condition on (B), we no longer consider all cases—only the cases for which (B) is true (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#interpreting-the-sign-of-z",
+    "href": "study-guides/week04-standard-scores.html#interpreting-the-sign-of-z",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "9. Interpreting the Sign of z",
+    "text": "9. Interpreting the Sign of z\nThe sign tells us direction.\n\nPositive\n\\[\nz&gt;0\n\\]\nmeans the score is above the mean.\n\n\nNegative\n\\[\nz&lt;0\n\\]\nmeans the score is below the mean.\n\n\nZero\n\\[\nz=0\n\\]\nmeans the score is exactly at the mean."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#worked-conditional-probability-example",
-    "href": "study-guides/week04-standard-scores.html#worked-conditional-probability-example",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "10. Worked Conditional-Probability Example",
-    "text": "10. Worked Conditional-Probability Example\nThe 2024 edition uses a hypothetical table of 200 mothers classified by hospital type and insurance status.\nFor women giving birth in public hospitals:\n\n130 gave birth in public hospitals;\n80 of those were uninsured.\n\nTherefore:\n\\[\np(\\text{Uninsured}\\mid \\text{Public})\n=\n\\frac{80}{130}\n\\approx0.62.\n\\]\nThis differs from:\n\\[\np(\\text{Uninsured}\\cap \\text{Public})\n=\n\\frac{80}{200}\n=\n0.40.\n\\]\nThe first is conditional because the sample space has been restricted to the public-hospital group."
+    "objectID": "study-guides/week04-standard-scores.html#interpreting-the-magnitude-of-z",
+    "href": "study-guides/week04-standard-scores.html#interpreting-the-magnitude-of-z",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "10. Interpreting the Magnitude of z",
+    "text": "10. Interpreting the Magnitude of z\nThe absolute value tells us the distance from the mean.\nExamples:\n\\[\nz=+0.5\n\\]\nmeans half a standard deviation above the mean.\n\\[\nz=-1\n\\]\nmeans one standard deviation below the mean.\n\\[\nz=+2\n\\]\nmeans two standard deviations above the mean.\nThe lecture explicitly emphasizes that a z score places the raw score into standard deviation units (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#bayess-theorem",
-    "href": "study-guides/week04-standard-scores.html#bayess-theorem",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "11. Bayes’s Theorem",
-    "text": "11. Bayes’s Theorem\nThe 2024 edition extends conditional probability with Bayes’s theorem:\n\\[\np(A\\mid B)\n=\n\\frac{p(B\\mid A)p(A)}{p(B)}.\n\\]\nBayes’s theorem relates:\n\na conditional probability;\nthe reverse conditional probability;\nthe marginal probability of (A);\nthe marginal probability of (B).\n\nAt this stage, the main goal is conceptual:\n\nBayes’s theorem updates the probability of one outcome after taking another observed condition into account.\n\nThis becomes especially important later in statistical inference (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#quick-example-exam-score",
+    "href": "study-guides/week04-standard-scores.html#quick-example-exam-score",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "11. Quick Example: Exam Score",
+    "text": "11. Quick Example: Exam Score\nSuppose:\n\\[\nM=65,\\quad SD=10,\\quad X=83.\n\\]\nThen:\n\\[\nz\n=\n\\frac{83-65}{10}\n=\n1.8.\n\\]\nInterpretation:\n\nThe score is 1.8 standard deviations above the mean."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#random-variables",
-    "href": "study-guides/week04-standard-scores.html#random-variables",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "12. Random Variables",
-    "text": "12. Random Variables\nA random variable represents the possible numerical outcomes of a random process.\nExamples:\n\nnumber of errors on a test;\nnumber of symptoms;\nnumber of items remembered;\nnumber of successful trials.\n\nA random variable is not a single observed value. It represents the set of possible outcomes that could occur (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#which-z-score-is-closest-to-the-mean",
+    "href": "study-guides/week04-standard-scores.html#which-z-score-is-closest-to-the-mean",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "12. Which z Score Is Closest to the Mean?",
+    "text": "12. Which z Score Is Closest to the Mean?\nSuppose the options are:\n\n(z=+0.50)\n(z=+1.00)\n(z=-1.00)\n(z=-2.00)\n(z=-0.25)\n\nThe score closest to the mean is:\n\\[\nz=-0.25.\n\\]\nWhy?\nBecause the mean corresponds to:\n\\[\nz=0,\n\\]\nand (-0.25) has the smallest absolute distance from 0."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#probability-distributions",
-    "href": "study-guides/week04-standard-scores.html#probability-distributions",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "13. Probability Distributions",
-    "text": "13. Probability Distributions\nA probability distribution lists the possible outcomes of a random variable and the probability of each outcome.\nA valid probability distribution satisfies:\n\\[\n0\\le p(x)\\le1\n\\]\nfor every outcome, and:\n\\[\n\\sum p(x)=1.\n\\]\nExample:\n\n\n\n(x)\n1\n2\n3\n4\n5\n\n\n\n\n(p(x))\n.250\n.350\n.175\n.125\n.100\n\n\n\nCheck:\n\\[\n.250+.350+.175+.125+.100=1.00.\n\\]"
+    "objectID": "study-guides/week04-standard-scores.html#standard-scores-vs.-z-scores",
+    "href": "study-guides/week04-standard-scores.html#standard-scores-vs.-z-scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "13. Standard Scores vs. z Scores",
+    "text": "13. Standard Scores vs. z Scores\nThe Week 4 worksheet explicitly asks whether standardized scores and z scores are the same.\nThey are related, but not identical.\nA standard score is the broader category.\nA z score is one particular standardized scale with:\n\\[\nM=0,\\quad SD=1.\n\\]\nOther standardized scales can use different means and standard deviations.\nExamples from the lecture include:\n\nIQ-like scale: (M=100, SD=15)\nT-score scale: (M=50, SD=10)\nSAT-like scale: (M=500, SD=100)\n\n(Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#expected-value",
-    "href": "study-guides/week04-standard-scores.html#expected-value",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "14. Expected Value",
-    "text": "14. Expected Value\nThe expected value is the mean of a probability distribution.\nIt is:\n\\[\n\\mu=\\sum xp(x).\n\\]\nFor each possible outcome:\n\nmultiply the outcome value by its probability;\nsum the products.\n\nThe expected value is sometimes called the long-term mean because it describes the average outcome expected across a very large number of repetitions (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#what-is-a-normal-distribution",
+    "href": "study-guides/week04-standard-scores.html#what-is-a-normal-distribution",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "14. What Is a Normal Distribution?",
+    "text": "14. What Is a Normal Distribution?\nThe lecture describes the normal distribution as a theoretical curve that is often approximated by real data (Sigal, 2026).\nIt is defined by two parameters:\n\na mean;\na standard deviation.\n\nThe mean determines the center.\nThe standard deviation determines the width."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#expected-value-example",
-    "href": "study-guides/week04-standard-scores.html#expected-value-example",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "15. Expected Value Example",
-    "text": "15. Expected Value Example\nSuppose the probabilities of forgetting 0, 1, 2, or 3 items are:\n\n\n\nItems forgotten\nProbability\n\n\n\n\n0\n.24\n\n\n1\n.16\n\n\n2\n.40\n\n\n3\n.20\n\n\n\nThen:\n\\[\n\\mu\n=\n0(.24)+1(.16)+2(.40)+3(.20).\n\\]\nSo:\n\\[\n\\mu=1.56.\n\\]\nThe interpretation is not that a person can literally forget 1.56 items.\nIt means that across many repetitions, the long-term average would approach 1.56 items (Privitera, 2024)."
+    "objectID": "study-guides/week04-standard-scores.html#properties-of-the-normal-distribution",
+    "href": "study-guides/week04-standard-scores.html#properties-of-the-normal-distribution",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "15. Properties of the Normal Distribution",
+    "text": "15. Properties of the Normal Distribution\nThe lecture emphasizes four practical properties:\n\nbell-shaped and single-peaked;\nsymmetrical about the mean;\n100% of scores fall under the curve;\nasymptotic tails extend indefinitely (Sigal, 2026).\n\nThe 2018 textbook provides a more detailed eight-property version, including theoretical definition, equal mean/median/mode, total area of 1, and asymptotic tails (Privitera, 2018)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#variance-of-a-probability-distribution",
-    "href": "study-guides/week04-standard-scores.html#variance-of-a-probability-distribution",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "16. Variance of a Probability Distribution",
-    "text": "16. Variance of a Probability Distribution\nThe 2024 edition extends Week 3’s variance idea to probability distributions.\nThe definitional formula is:\n\\[\n\\sigma^2\n=\n\\sum (x-\\mu)^2p(x).\n\\]\nThis is a probability-weighted version of squared deviation from the mean.\nThe standard deviation is:\n\\[\n\\sigma\n=\n\\sqrt{\\sigma^2}.\n\\]\nThus probability distributions also have:\n\na center;\na spread."
+    "objectID": "study-guides/week04-standard-scores.html#from-histogram-to-normal-curve",
+    "href": "study-guides/week04-standard-scores.html#from-histogram-to-normal-curve",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "16. From Histogram to Normal Curve",
+    "text": "16. From Histogram to Normal Curve\nThe lecture uses a sequence of height histograms to show how an empirical distribution can increasingly resemble a smooth bell-shaped curve as:\n\nmore observations are collected;\nbins become narrower;\nthe distribution is viewed as a density rather than a few coarse frequency blocks.\n\nThe visual progression on slides 22–24 is important because it shows that a normal curve is a model of a distribution, not simply a decorative line drawn on top of data (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#binomial-probability-distributions",
-    "href": "study-guides/week04-standard-scores.html#binomial-probability-distributions",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "17. Binomial Probability Distributions",
-    "text": "17. Binomial Probability Distributions\nA binomial distribution applies when the random variable has two possible outcomes.\nExamples:\n\nsuccess / failure;\nyes / no;\nremembered / forgotten;\nheads / tails.\n\nIf:\n\n(n) = number of trials;\n(p) = probability of the outcome of interest;\n(q=1-p),\n\nthen:\n\\[\n\\mu=np,\n\\]\n\\[\n\\sigma^2=npq,\n\\]\nand:\n\\[\n\\sigma=\\sqrt{npq}.\n\\]\nThe 2024 edition uses these formulas as shortcuts for two-outcome probability distributions."
+    "objectID": "study-guides/week04-standard-scores.html#normal-does-not-mean-exact",
+    "href": "study-guides/week04-standard-scores.html#normal-does-not-mean-exact",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "17. Normal Does Not Mean Exact",
+    "text": "17. Normal Does Not Mean Exact\nThe lecture explicitly treats the normal distribution as theoretical.\nReal data may approximate the curve rather than match it perfectly.\nThe 2018 textbook makes the same point: behavioral data rarely fit the mathematical normal distribution exactly; the normal model is useful when the data are approximately normal (Privitera, 2018)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#why-the-normal-distribution-matters",
-    "href": "study-guides/week04-standard-scores.html#why-the-normal-distribution-matters",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "18. Why the Normal Distribution Matters",
-    "text": "18. Why the Normal Distribution Matters\nThe 2018 edition connects probability directly to the normal distribution.\nMany behavioral variables are treated as approximately normal because:\n\nmost observations cluster near the center;\nrelatively few observations occur at the extremes.\n\nThis allows probability to be represented as area under a smooth curve (Privitera, 2018).\nThe normal distribution is also called:\n\nGaussian;\nbell-shaped;\nsymmetrical."
+    "objectID": "study-guides/week04-standard-scores.html#what-is-the-standard-normal-distribution",
+    "href": "study-guides/week04-standard-scores.html#what-is-the-standard-normal-distribution",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "18. What Is the Standard Normal Distribution?",
+    "text": "18. What Is the Standard Normal Distribution?\nIf every score in a normal distribution is converted to z scores, the result is the standard normal distribution.\nIt always has:\n\\[\n\\mu=0\n\\]\nand:\n\\[\n\\sigma=1.\n\\]\nThis is also called:\n\nthe z distribution;\nthe standard normal curve.\n\n(Sigal, 2026; Privitera, 2018)"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#eight-characteristics-of-the-normal-distribution",
-    "href": "study-guides/week04-standard-scores.html#eight-characteristics-of-the-normal-distribution",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "19. Eight Characteristics of the Normal Distribution",
-    "text": "19. Eight Characteristics of the Normal Distribution\nThe 2018 edition identifies eight characteristics.\n\nThe normal distribution is mathematically defined.\nIt is theoretical.\nMean, median, and mode are located together at the 50th percentile.\nIt is symmetrical.\nThe mean can take any value.\nThe standard deviation can take any positive value.\nTotal area under the curve equals 1.00.\nThe tails are asymptotic.\n\nThese characteristics explain why the normal curve is useful for probability calculations (Privitera, 2018)."
+    "objectID": "study-guides/week04-standard-scores.html#the-3-sigma-rule",
+    "href": "study-guides/week04-standard-scores.html#the-3-sigma-rule",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "19. The 3-Sigma Rule",
+    "text": "19. The 3-Sigma Rule\nThe lecture uses approximate proportions:\n\nabout 34% between the mean and (+1SD);\nabout 14% between (+1SD) and (+2SD);\nabout 2% beyond (+2SD).\n\nBy symmetry, the same applies on the negative side.\nThis gives the familiar empirical-rule approximation:\n\nabout 68% within (1SD);\nabout 95% within (2SD);\nabout 99.7% within (3SD)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#symmetry",
-    "href": "study-guides/week04-standard-scores.html#symmetry",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "20. Symmetry",
-    "text": "20. Symmetry\nIn a normal distribution:\n\\[\nM=Md=Mo.\n\\]\nHalf the area lies below the mean:\n\\[\n0.50,\n\\]\nand half lies above:\n\\[\n0.50.\n\\]\nBecause the curve is symmetrical, equal distances above and below the mean correspond to equal areas.\nThis symmetry greatly simplifies probability calculations."
+    "objectID": "study-guides/week04-standard-scores.html#area-under-the-curve-as-probability",
+    "href": "study-guides/week04-standard-scores.html#area-under-the-curve-as-probability",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "20. Area Under the Curve as Probability",
+    "text": "20. Area Under the Curve as Probability\nThe lecture makes the graphical interpretation explicit:\n\nProbability is represented by area under the normal curve (Sigal, 2026).\n\nThus:\n\nlarger area = larger probability;\nsmaller tail area = rarer score;\ntotal area under the curve = 1.\n\nThis links distribution geometry directly to probability."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#area-under-the-curve",
-    "href": "study-guides/week04-standard-scores.html#area-under-the-curve",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "21. Area Under the Curve",
-    "text": "21. Area Under the Curve\nFor a normal distribution:\n\\[\n\\text{total area}=1.00.\n\\]\nThus area corresponds directly to probability.\nFor example:\n\\[\n0.50\n\\]\nof the area lies on either side of the mean.\nThe 2018 text connects this to the empirical rule introduced earlier:\n\nabout 68% within 1 SD;\nabout 95% within 2 SD;\nabout 99.7% within 3 SD."
+    "objectID": "study-guides/week04-standard-scores.html#what-the-z-table-tells-us",
+    "href": "study-guides/week04-standard-scores.html#what-the-z-table-tells-us",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "21. What the z Table Tells Us",
+    "text": "21. What the z Table Tells Us\nThe z table provides proportions associated with z scores.\nThe lecture uses a table with:\n\nArea between Mean and z\nArea beyond z\n\n(see Lecture 4, slide 31).\nThe 2018 text labels these as:\n\nColumn B: area between the mean and z;\nColumn C: area beyond z toward the tail (Privitera, 2018)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#asymptotic-tails",
-    "href": "study-guides/week04-standard-scores.html#asymptotic-tails",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "22. Asymptotic Tails",
-    "text": "22. Asymptotic Tails\nThe tails of a normal curve approach the horizontal axis but never touch it.\nThis means that:\n\nextremely unusual scores remain theoretically possible;\nprobability becomes very small in the tails;\nthe curve extends indefinitely in both directions."
+    "objectID": "study-guides/week04-standard-scores.html#why-only-positive-z-values",
+    "href": "study-guides/week04-standard-scores.html#why-only-positive-z-values",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "22. Why Only Positive z Values?",
+    "text": "22. Why Only Positive z Values?\nThe worksheet asks why the standard normal table includes only positive values.\nThe answer:\n\nBecause the standard normal distribution is symmetrical.\n\nThe area associated with:\n\\[\nz=+1.2\n\\]\nmirrors the area associated with:\n\\[\nz=-1.2.\n\\]\nListing both would be redundant (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#the-statistical-norm",
-    "href": "study-guides/week04-standard-scores.html#the-statistical-norm",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "23. The Statistical Norm",
-    "text": "23. The Statistical Norm\nThe 2018 edition introduces the idea of the statistical norm.\nApproximately 95% of normally distributed scores lie within:\n\\[\n\\pm2SD\n\\]\nof the mean.\nScores farther than roughly 2 SD from the mean are statistically less common.\nThis is a statistical definition of unusualness, not a judgment about whether a person or behavior is socially, clinically, or morally “normal” (Privitera, 2018)."
+    "objectID": "study-guides/week04-standard-scores.html#can-a-proportion-be-negative",
+    "href": "study-guides/week04-standard-scores.html#can-a-proportion-be-negative",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "23. Can a Proportion Be Negative?",
+    "text": "23. Can a Proportion Be Negative?\nNo.\nA probability or proportion must satisfy:\n\\[\n0\\le p\\le1.\n\\]\nThe smallest possible proportion is:\n\\[\n0.\n\\]\nThe worksheet answer key explicitly reinforces this point (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#why-standardize",
-    "href": "study-guides/week04-standard-scores.html#why-standardize",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "24. Why Standardize?",
-    "text": "24. Why Standardize?\nNormal distributions can have different means and standard deviations.\nFor example:\n\nExam A: (M=70, SD=5)\nExam B: (M=80, SD=10)\n\nA raw score of 85 does not have the same relative meaning in both distributions.\nStandardization solves this problem by expressing raw scores in standard deviation units."
+    "objectID": "study-guides/week04-standard-scores.html#a-graphical-strategy",
+    "href": "study-guides/week04-standard-scores.html#a-graphical-strategy",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "24. A Graphical Strategy",
+    "text": "24. A Graphical Strategy\nThe lecture strongly recommends:\n\nAlways draw a diagram for z-score probability problems (Sigal, 2026).\n\nA useful workflow is:\n\ndraw the normal curve;\nmark the mean;\nlocate the relevant z score;\nshade the requested area;\ndecide whether the problem asks for:\n\narea between mean and z;\ntail area;\narea below z;\narea above z;\narea between two z scores.\n\n\nThis visual step helps prevent table-lookup mistakes."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#the-standard-normal-distribution",
-    "href": "study-guides/week04-standard-scores.html#the-standard-normal-distribution",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "25. The Standard Normal Distribution",
-    "text": "25. The Standard Normal Distribution\nThe standard normal distribution has:\n\\[\n\\mu=0\n\\]\nand:\n\\[\n\\sigma=1.\n\\]\nScores on the horizontal axis are expressed as z scores.\nA z score tells us how many standard deviations a score lies above or below the mean (Privitera, 2018)."
+    "objectID": "study-guides/week04-standard-scores.html#basic-procedure",
+    "href": "study-guides/week04-standard-scores.html#basic-procedure",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "25. Basic Procedure",
+    "text": "25. Basic Procedure\nTo find the probability associated with a raw score:\n\nStep 1\nConvert the raw score to z.\n\n\nStep 2\nLook up the z score in the z table.\n\n\nStep 3\nUse the appropriate area column based on the diagram.\n(Sigal, 2026)"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#the-z-transformation",
-    "href": "study-guides/week04-standard-scores.html#the-z-transformation",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "26. The z Transformation",
-    "text": "26. The z Transformation\nFor a population:\n\\[\nz=\\frac{x-\\mu}{\\sigma}.\n\\]\nFor a sample:\n\\[\nz=\\frac{x-M}{SD}.\n\\]\nInterpretation:\n\n(z=0): at the mean;\n(z=+1): one SD above the mean;\n(z=-1): one SD below the mean;\n(z=+2): two SD above the mean.\n\nThe sign indicates direction; the magnitude indicates distance."
+    "objectID": "study-guides/week04-standard-scores.html#example-proportion-below-a-score",
+    "href": "study-guides/week04-standard-scores.html#example-proportion-below-a-score",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "26. Example: Proportion Below a Score",
+    "text": "26. Example: Proportion Below a Score\nSuppose:\n\\[\n\\mu=40,\\quad \\sigma=10,\\quad X=35.\n\\]\nThen:\n\\[\nz\n=\n\\frac{35-40}{10}\n=\n-0.5.\n\\]\nThe area between the mean and (z=0.50) is approximately:\n\\[\n0.1915.\n\\]\nTherefore the area below:\n\\[\nz=-0.50\n\\]\nis:\n\\[\n0.5000-0.1915\n=\n0.3085.\n\\]\nSo the proportion below (X=35) is:\n\\[\n0.3085.\n\\]\nThis is the correct answer to the lecture concept check (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#worked-z-score-example",
-    "href": "study-guides/week04-standard-scores.html#worked-z-score-example",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "27. Worked z-Score Example",
-    "text": "27. Worked z-Score Example\nSuppose:\n\\[\nM=12,\\quad SD=2,\\quad x=14.\n\\]\nThen:\n\\[\nz\n=\n\\frac{14-12}{2}\n=\n1.00.\n\\]\nSo a raw score of 14 is:\n\none standard deviation above the mean.\n\nThis is the central meaning of a z score (Privitera, 2018)."
+    "objectID": "study-guides/week04-standard-scores.html#example-between-two-scores",
+    "href": "study-guides/week04-standard-scores.html#example-between-two-scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "27. Example: Between Two Scores",
+    "text": "27. Example: Between Two Scores\nSuppose:\n\\[\nM=195,\\quad SD=30,\n\\]\nand we want the percentage between:\n\\[\nX=165\n\\]\nand:\n\\[\nX=225.\n\\]\nConvert:\n\\[\nz_{165}\n=\n\\frac{165-195}{30}\n=\n-1,\n\\]\nand:\n\\[\nz_{225}\n=\n\\frac{225-195}{30}\n=\n+1.\n\\]\nThe area between (z=-1) and (z=+1) is approximately:\n\\[\n0.6826\n\\]\nor about:\n\\[\n68\\%.\n\\]"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#z-scores-preserve-relative-position",
-    "href": "study-guides/week04-standard-scores.html#z-scores-preserve-relative-position",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "28. z Scores Preserve Relative Position",
-    "text": "28. z Scores Preserve Relative Position\nSuppose two people have different raw scores in different distributions.\nA z score allows us to compare how unusual each score is relative to its own distribution.\nThis is why standard scores are useful when:\n\nvariables use different measurement units;\ndifferent tests have different means and standard deviations;\nresearchers want a common scale."
+    "objectID": "study-guides/week04-standard-scores.html#example-below-the-mean",
+    "href": "study-guides/week04-standard-scores.html#example-below-the-mean",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "28. Example: Below the Mean",
+    "text": "28. Example: Below the Mean\nFor any normal distribution:\n\\[\np(X&lt;M)=0.50.\n\\]\nThe mean divides the normal curve into two equal halves."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#what-the-z-table-represents",
-    "href": "study-guides/week04-standard-scores.html#what-the-z-table-represents",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "29. What the z Table Represents",
-    "text": "29. What the z Table Represents\nThe 2018 edition introduces the unit normal table, or z table.\nThe table links z scores to areas under the standard normal curve.\nIn the text’s table:\n\nColumn A lists z scores;\nColumn B lists area between the mean and z;\nColumn C lists area from z toward the tail.\n\nBecause the normal curve is symmetric, areas for positive and negative z scores mirror one another."
-  },
-  {
-    "objectID": "study-guides/week04-standard-scores.html#two-steps-for-locating-a-probability",
-    "href": "study-guides/week04-standard-scores.html#two-steps-for-locating-a-probability",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "30. Two Steps for Locating a Probability",
-    "text": "30. Two Steps for Locating a Probability\nTo locate the probability of a raw score in a normal distribution:\n\nStep 1\nConvert the raw score to a z score.\n\n\nStep 2\nUse the z table to find the relevant area.\nThis general strategy applies whether the question asks for a probability:\n\nabove a score;\nbelow a score;\nbetween two scores (Privitera, 2018)."
-  },
-  {
-    "objectID": "study-guides/week04-standard-scores.html#probability-above-a-score",
-    "href": "study-guides/week04-standard-scores.html#probability-above-a-score",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "31. Probability Above a Score",
-    "text": "31. Probability Above a Score\nSuppose:\n\\[\nM=8,\\quad SD=2,\\quad x=12.\n\\]\nThen:\n\\[\nz=\\frac{12-8}{2}=2.\n\\]\nThe tail area beyond:\n\\[\nz=2.00\n\\]\nis approximately:\n\\[\np=.0228.\n\\]\nSo the probability of a score greater than 12 is about 2.28% (Privitera, 2018)."
-  },
-  {
-    "objectID": "study-guides/week04-standard-scores.html#probability-below-a-score",
-    "href": "study-guides/week04-standard-scores.html#probability-below-a-score",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "32. Probability Below a Score",
-    "text": "32. Probability Below a Score\nSuppose a raw score converts to:\n\\[\nz=0.50.\n\\]\nThe area between the mean and (z=0.50) is:\n\\[\n0.1915.\n\\]\nBecause 0.5000 lies below the mean:\n\\[\np(X&lt;x)\n=\n0.5000+0.1915\n=\n0.6915.\n\\]\nThe diagram on page 29 of the 2018 chapter visually shows this logic: the shaded region includes the entire lower half of the curve plus the area between the mean and (z=.50)."
-  },
-  {
-    "objectID": "study-guides/week04-standard-scores.html#probability-in-a-tail-below-the-mean",
-    "href": "study-guides/week04-standard-scores.html#probability-in-a-tail-below-the-mean",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "33. Probability in a Tail Below the Mean",
-    "text": "33. Probability in a Tail Below the Mean\nSuppose:\n\\[\nz=-0.92.\n\\]\nBy symmetry, use the same tail area as:\n\\[\nz=+0.92.\n\\]\nThe 2018 example gives:\n\\[\np=.1788.\n\\]\nThe negative sign identifies which side of the mean the score lies on; it does not imply a negative probability."
-  },
-  {
-    "objectID": "study-guides/week04-standard-scores.html#probability-between-two-scores",
-    "href": "study-guides/week04-standard-scores.html#probability-between-two-scores",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "34. Probability Between Two Scores",
-    "text": "34. Probability Between Two Scores\nSuppose one score is:\n\\[\nz=-1\n\\]\nand the other is:\n\\[\nz=+1.\n\\]\nThe area between the mean and (z=1) is:\n\\[\n0.3413.\n\\]\nBy symmetry:\n\\[\n0.3413+0.3413=0.6826.\n\\]\nThus approximately 68.26% of scores lie between (z=-1) and (z=+1).\nThis matches the familiar empirical-rule approximation."
+    "objectID": "study-guides/week04-standard-scores.html#example-below-1sd",
+    "href": "study-guides/week04-standard-scores.html#example-below-1sd",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "29. Example: Below (+1SD)",
+    "text": "29. Example: Below (+1SD)\nIf:\n\\[\nz=+1,\n\\]\nthen the cumulative area below it is approximately:\n\\[\n0.8413.\n\\]\nSo about:\n\\[\n84\\%\n\\]\nof scores lie below (+1SD).\nThis matches the Week 4 worksheet answer key (Sigal, 2026)."
   },
   {
     "objectID": "study-guides/week04-standard-scores.html#from-percentile-to-z-score",
     "href": "study-guides/week04-standard-scores.html#from-percentile-to-z-score",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "35. From Percentile to z Score",
-    "text": "35. From Percentile to z Score\nSometimes the probability is known and the raw cutoff is unknown.\nFor example:\n\nWhat raw score defines the top 10%?\n\nThe procedure reverses the earlier steps.\n\nStep 1\nUse the z table to identify the z score for the target tail probability.\n\n\nStep 2\nConvert the z score back into a raw score."
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "30. From Percentile to z Score",
+    "text": "30. From Percentile to z Score\nThe lecture notes that the z table can be used in reverse.\nIf we know a percentile or tail probability, we can find the z score that corresponds to it.\nExample:\n\nWhat z score has 17% of scores above it?\n\nLook for approximately:\n\\[\n0.17\n\\]\nin the tail area column.\nThe corresponding z score is about:\n\\[\nz\\approx0.95.\n\\]\n(Sigal, 2026)"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#solving-for-a-raw-score",
-    "href": "study-guides/week04-standard-scores.html#solving-for-a-raw-score",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "36. Solving for a Raw Score",
-    "text": "36. Solving for a Raw Score\nStarting with:\n\\[\nz=\\frac{x-M}{SD},\n\\]\nsolve for (x):\n\\[\nx=M+z(SD).\n\\]\nIf:\n\\[\nM=100,\\quad SD=15,\\quad z=1.28,\n\\]\nthen:\n\\[\nx\n=\n100+1.28(15)\n=\n119.2.\n\\]\nThus approximately 119.2 is the cutoff for the top 10% in that distribution (Privitera, 2018)."
+    "objectID": "study-guides/week04-standard-scores.html#from-z-score-back-to-a-raw-score",
+    "href": "study-guides/week04-standard-scores.html#from-z-score-back-to-a-raw-score",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "31. From z Score Back to a Raw Score",
+    "text": "31. From z Score Back to a Raw Score\nStarting with:\n\\[\nz=\\frac{X-\\mu}{\\sigma},\n\\]\nsolve for (X):\n\\[\nX=\\mu+z\\sigma.\n\\]\nThis allows us to find a raw-score cutoff for a known percentile or probability."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#bottom-tail-cutoffs",
-    "href": "study-guides/week04-standard-scores.html#bottom-tail-cutoffs",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "37. Bottom-Tail Cutoffs",
-    "text": "37. Bottom-Tail Cutoffs\nFor a bottom-tail cutoff, the z score is negative.\nIf the bottom 25% corresponds approximately to:\n\\[\nz=-0.675,\n\\]\nand:\n\\[\nM=100,\\quad SD=15,\n\\]\nthen:\n\\[\nx\n=\n100+(-0.675)(15)\n=\n89.875.\n\\]\nRounded:\n\\[\nx\\approx89.88.\n\\]\nThe sign of z tells us whether the cutoff lies above or below the mean."
+    "objectID": "study-guides/week04-standard-scores.html#worksheet-algebra-example",
+    "href": "study-guides/week04-standard-scores.html#worksheet-algebra-example",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "32. Worksheet Algebra Example",
+    "text": "32. Worksheet Algebra Example\nThe worksheet includes a rearrangement problem using:\n\\[\nz=2.42.\n\\]\nThe answer key solves:\n\\[\n2.42\n=\n\\frac{x-100}{15/\\sqrt{25}}.\n\\]\nBecause:\n\\[\n\\frac{15}{\\sqrt{25}}\n=\n\\frac{15}{5}\n=\n3,\n\\]\nwe get:\n\\[\n2.42\n=\n\\frac{x-100}{3}.\n\\]\nThus:\n\\[\n7.26=x-100,\n\\]\nand:\n\\[\nx=107.26.\n\\]\nThis problem reinforces algebraic manipulation of standardized-score formulas (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#a-major-difference-between-the-2018-and-2024-editions",
-    "href": "study-guides/week04-standard-scores.html#a-major-difference-between-the-2018-and-2024-editions",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "38. A Major Difference Between the 2018 and 2024 Editions",
-    "text": "38. A Major Difference Between the 2018 and 2024 Editions\nThe two supplied Chapter 5 readings are not simply revised versions of the same chapter structure.\n\n2018 Chapter 5\nEmphasizes:\n\nsimple probability;\nnormal distributions;\nstandard normal distribution;\nz scores;\nunit normal table;\nlocating probabilities;\nlocating cutoff scores.\n\n\n\n2024 Chapter 5\nExpands probability into:\n\nrelative frequency;\nmultiple-outcome relationships;\nconditional probability;\nBayes’s theorem;\nprobability distributions;\nexpected value;\nvariance of probability distributions;\nbinomial distributions.\n\nThe 2024 edition moves normal distributions and standard-score material elsewhere in the book’s organization.\nFor this Study Guide, both are retained because both were supplied as Week 4 readings."
+    "objectID": "study-guides/week04-standard-scores.html#why-standardization-helps-comparison",
+    "href": "study-guides/week04-standard-scores.html#why-standardization-helps-comparison",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "33. Why Standardization Helps Comparison",
+    "text": "33. Why Standardization Helps Comparison\nConverting to z removes the original units.\nThe lecture gives the example of two variables with very different means and standard deviations. After conversion, both become:\n\\[\nM=0,\\quad SD=1.\n\\]\nThis means scores on different measurement scales can be compared in terms of relative standing (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#conceptual-bridge-to-inferential-statistics",
-    "href": "study-guides/week04-standard-scores.html#conceptual-bridge-to-inferential-statistics",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "39. Conceptual Bridge to Inferential Statistics",
-    "text": "39. Conceptual Bridge to Inferential Statistics\nThese topics connect directly to later inferential statistics.\nProbability allows us to ask:\n\nHow likely is an outcome?\n\nProbability distributions allow us to ask:\n\nHow likely is each possible value?\n\nStandardization allows us to ask:\n\nHow unusual is this score relative to its distribution?\n\nNormal-curve areas allow us to ask:\n\nWhat proportion of scores should fall beyond this point?\n\nLater hypothesis tests build on exactly this logic."
+    "objectID": "study-guides/week04-standard-scores.html#comparing-different-variables",
+    "href": "study-guides/week04-standard-scores.html#comparing-different-variables",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "34. Comparing Different Variables",
+    "text": "34. Comparing Different Variables\nThe lecture gives examples such as:\n\nsocial anxiety;\nheight;\nemotional intelligence.\n\nSuppose one person’s scores convert to:\n\nsocial anxiety: (z=-0.5)\nheight: (z=0.3)\nemotional intelligence: (z=2.0)\n\nThen the interpretation is:\n\nsomewhat below average on social anxiety;\nnear average on height;\nwell above average on emotional intelligence.\n\nThe original units are different, but z scores place all three on a common relative scale."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#key-terms",
-    "href": "study-guides/week04-standard-scores.html#key-terms",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "40. Key Terms",
-    "text": "40. Key Terms\n\n\n\n\n\n\n\nTerm\nPlain-language explanation\n\n\n\n\nProbability\nLikelihood that an outcome occurs.\n\n\nRandom event\nEvent whose outcome can vary.\n\n\nFixed event\nEvent whose outcome does not vary.\n\n\nSample space\nComplete set of possible outcomes.\n\n\nRelative frequency\nProportion of observations in a category; equivalent to probability in a probability distribution.\n\n\nMutually exclusive\nOutcomes that cannot occur together.\n\n\nIndependent\nOne outcome does not affect the probability of another.\n\n\nComplementary\nOutcomes whose probabilities sum to 1.\n\n\nConditional probability\nProbability of an outcome given that another outcome occurred.\n\n\nBayes’s theorem\nFormula relating conditional and marginal probabilities.\n\n\nRandom variable\nVariable representing possible numerical outcomes of a random process.\n\n\nProbability distribution\nProbabilities associated with all possible outcomes of a random variable.\n\n\nExpected value\nMean or long-term average of a probability distribution.\n\n\nBinomial distribution\nProbability distribution for a variable with two possible outcomes.\n\n\nNormal distribution\nSymmetric bell-shaped theoretical distribution.\n\n\nStandard normal distribution\nNormal distribution with mean 0 and SD 1.\n\n\nz score\nNumber of standard deviations a score lies above or below the mean.\n\n\nz transformation\nFormula converting a raw score to a standard score.\n\n\nUnit normal table\nTable linking z scores to areas/probabilities under the standard normal curve.\n\n\nAsymptotic\nApproaching an axis indefinitely without touching it.\n\n\nStatistical norm\nIn the 2018 text, scores within about 2 SD of the mean in a normal distribution."
+    "objectID": "study-guides/week04-standard-scores.html#converting-to-a-new-standardized-scale",
+    "href": "study-guides/week04-standard-scores.html#converting-to-a-new-standardized-scale",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "35. Converting to a New Standardized Scale",
+    "text": "35. Converting to a New Standardized Scale\nSuppose a raw score has:\n\\[\nz=+2.\n\\]\nWe want to express that same relative position on a new scale with:\n\\[\nM=100,\\quad SD=50.\n\\]\nThen:\n\\[\nX\n=\n100+2(50)\n=\n200.\n\\]\nSo a z score of (+2) corresponds to a raw score of:\n\\[\n200\n\\]\non the new metric."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#probability-misunderstandings",
-    "href": "study-guides/week04-standard-scores.html#probability-misunderstandings",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "41. Probability Misunderstandings",
-    "text": "41. Probability Misunderstandings\n\n“If there are two possible outcomes, each must have probability .50.”\nNo. Two outcomes can have unequal probabilities.\n\n\n“A probability can be negative.”\nNo.\n\n\n“If two outcomes cannot both occur, they are independent.”\nNo. Mutually exclusive and independent mean different things.\n\n\n“Conditional probability uses the same denominator as ordinary probability.”\nNot necessarily. Conditioning changes the sample space.\n\n\n“Expected value is what must happen next.”\nNo. It is a long-term average, not a prediction of the next single observation."
+    "objectID": "study-guides/week04-standard-scores.html#real-world-standardized-scales",
+    "href": "study-guides/week04-standard-scores.html#real-world-standardized-scales",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "36. Real-World Standardized Scales",
+    "text": "36. Real-World Standardized Scales\nThe lecture highlights several familiar standardized metrics:\n\nIQ: (M=100, SD=15)\nT scores: (M=50, SD=10)\nSAT-like scores: (M=500, SD=100)\n\nThese are all examples of changing the scale while preserving relative position (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#normal-distribution-misunderstandings",
-    "href": "study-guides/week04-standard-scores.html#normal-distribution-misunderstandings",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "42. Normal-Distribution Misunderstandings",
-    "text": "42. Normal-Distribution Misunderstandings\n\n“Normal means socially or clinically normal.”\nNo. Here, normal refers to a mathematical distribution.\n\n\n“All real data are exactly normal.”\nNo. The normal distribution is theoretical; empirical data may approximate it.\n\n\n“A z score of −2 means a negative raw score.”\nNo. It means the score is two standard deviations below the mean.\n\n\n“A negative z score means negative probability.”\nNo. Probabilities remain between 0 and 1.\n\n\n“A higher raw score always means better relative performance.”\nNot across different distributions. Relative standing depends on the mean and standard deviation."
+    "objectID": "study-guides/week04-standard-scores.html#a-crucial-distinction",
+    "href": "study-guides/week04-standard-scores.html#a-crucial-distinction",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "37. A Crucial Distinction",
+    "text": "37. A Crucial Distinction\nOne of the most important Week 4 ideas is:\n\nConverting scores to z does not change the shape of the distribution (Sigal, 2026).\n\nIf the original distribution is positively skewed, the z-score distribution will still be positively skewed.\nStandardization changes:\n\ncenter;\nscale.\n\nIt does not change:\n\nrank order;\nrelative spacing;\ndistribution shape."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-simple-probability",
-    "href": "study-guides/week04-standard-scores.html#practice-simple-probability",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "43. Practice: Simple Probability",
-    "text": "43. Practice: Simple Probability\nA bag contains:\n\n4 red balls;\n3 blue balls;\n3 green balls.\n\nCalculate:\n\n(p())\n(p())\n(p()), assuming colors are mutually exclusive categories\n(p())"
+    "objectID": "study-guides/week04-standard-scores.html#worked-skewed-example",
+    "href": "study-guides/week04-standard-scores.html#worked-skewed-example",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "38. Worked Skewed Example",
+    "text": "38. Worked Skewed Example\nThe lecture uses:\n\\[\nX=\n\\{10,10,10,10,10,10,10,10,11,11,11,14,14,16,19\\}.\n\\]\nThe distribution is positively skewed.\nThe lecture gives:\n\\[\n\\bar{x}=11.73\n\\]\nand:\n\\[\ns=2.76.\n\\]\nAfter converting all raw scores to z scores, the new distribution has:\n\\[\n\\bar{z}=0\n\\]\nand:\n\\[\ns_z=1.\n\\]\nBut the histogram remains positively skewed.\nThe lecture explicitly states:\n\nThis data has not been “normalized” (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-relationships-between-outcomes",
-    "href": "study-guides/week04-standard-scores.html#practice-relationships-between-outcomes",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "44. Practice: Relationships Between Outcomes",
-    "text": "44. Practice: Relationships Between Outcomes\nIdentify each relationship:\n\nHeads and tails on a single coin flip.\nHeads on the first and second flip of a fair coin.\nPass and fail when no other result is possible.\nPassing an exam given that a student attended a preparatory course.\n\nUse:\n\nmutually exclusive;\nindependent;\ncomplementary;\nconditional."
+    "objectID": "study-guides/week04-standard-scores.html#distribution-shape",
+    "href": "study-guides/week04-standard-scores.html#distribution-shape",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "39. Distribution Shape",
+    "text": "39. Distribution Shape\nThe worksheet dataset is:\n\\[\nX=\n\\{22,22,27,30,25,28,24,29,21,25,32,38,32,33,35,48,44\\}.\n\\]\nThe answer key describes it as positively skewed, with most scores concentrated in the lower range, especially around 20–25 (Sigal, 2026).\nThe worksheet answer key also gives:\n\\[\nM=30.29\n\\]\nand:\n\\[\nSD=7.64.\n\\]"
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-expected-value",
-    "href": "study-guides/week04-standard-scores.html#practice-expected-value",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "45. Practice: Expected Value",
-    "text": "45. Practice: Expected Value\nSuppose:\n\n\n\n(x)\n0\n1\n2\n\n\n\n\n(p(x))\n.20\n.50\n.30\n\n\n\nCalculate:\n\\[\n\\mu=\\sum xp(x).\n\\]\nThen explain why the expected value does not need to be an observed value."
+    "objectID": "study-guides/week04-standard-scores.html#standardizing-the-worksheet-dataset",
+    "href": "study-guides/week04-standard-scores.html#standardizing-the-worksheet-dataset",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "40. Standardizing the Worksheet Dataset",
+    "text": "40. Standardizing the Worksheet Dataset\nIf the worksheet scores are standardized, the resulting z-score distribution has:\n\\[\nM=0\n\\]\nand:\n\\[\nSD=1.\n\\]\nBut its positive skew remains.\nThis is another application of the distinction between:\n\nstandardization;\nnormalization."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-z-scores",
-    "href": "study-guides/week04-standard-scores.html#practice-z-scores",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "46. Practice: z Scores",
-    "text": "46. Practice: z Scores\nSuppose:\n\\[\nM=50,\\quad SD=10.\n\\]\nCalculate the z score for:\n\n(x=50)\n(x=60)\n(x=35)\n(x=70)\n\nThen interpret each in words."
+    "objectID": "study-guides/week04-standard-scores.html#store-count-example",
+    "href": "study-guides/week04-standard-scores.html#store-count-example",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "41. Store-Count Example",
+    "text": "41. Store-Count Example\nThe worksheet asks about counts of people entering a store.\nAssume:\n\\[\nM=975,\\quad SD=15.\n\\]\n\nBetween 960 and 990\nThese values are:\n\\[\nz=-1\n\\]\nand:\n\\[\nz=+1.\n\\]\nSo approximately:\n\\[\n68\\%\n\\]\nof counts lie between them.\n\n\nBelow 975\nBecause 975 is the mean:\n\\[\n50\\%\n\\]\nlie below it.\n\n\nBelow 990\nBecause:\n\\[\n990=975+15,\n\\]\nwe have:\n\\[\nz=+1.\n\\]\nThus approximately:\n\\[\n84\\%\n\\]\nlie below 990.\nThese are the worksheet-key answers (Sigal, 2026)."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-raw-scores-from-z-scores",
-    "href": "study-guides/week04-standard-scores.html#practice-raw-scores-from-z-scores",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "47. Practice: Raw Scores From z Scores",
-    "text": "47. Practice: Raw Scores From z Scores\nSuppose:\n\\[\nM=70,\\quad SD=8.\n\\]\nFind the raw score associated with:\n\n(z=0)\n(z=+1)\n(z=-1.5)\n(z=+2)\n\nUse:\n\\[\nx=M+z(SD).\n\\]"
+    "objectID": "study-guides/week04-standard-scores.html#common-errors-with-z-scores",
+    "href": "study-guides/week04-standard-scores.html#common-errors-with-z-scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "42. Common Errors With z Scores",
+    "text": "42. Common Errors With z Scores\n\n“A negative z score means a bad score.”\nNo. It only means the score lies below the mean.\n\n\n“A larger raw score always means better relative performance.”\nNo. Relative standing depends on the mean and standard deviation.\n\n\n“A z score is the only type of standard score.”\nNo. It is one specific standardized scale.\n\n\n“Standardizing makes a distribution normal.”\nNo. It preserves distribution shape.\n\n\n“The z table only applies to positive raw scores.”\nNo. It is based on symmetry around (z=0).\n\n\n“A negative z score implies a negative probability.”\nNo. Probabilities remain between 0 and 1.\n\n\n“If z = 0, the raw score must be 0.”\nNo. (z=0) means the raw score equals the mean."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#practice-areas-under-the-curve",
-    "href": "study-guides/week04-standard-scores.html#practice-areas-under-the-curve",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "48. Practice: Areas Under the Curve",
-    "text": "48. Practice: Areas Under the Curve\nWithout calculating exact values first, decide whether each probability should be:\n\nless than .50;\nequal to .50;\ngreater than .50.\n\n\n(p(z&gt;1.00))\n(p(z&lt;0))\n(p(z&lt;1.00))\n(p(-1&lt;z&lt;1))\n\nThen use a z table if one is available."
+    "objectID": "study-guides/week04-standard-scores.html#questions-a-ta-should-be-ready-to-answer",
+    "href": "study-guides/week04-standard-scores.html#questions-a-ta-should-be-ready-to-answer",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "43. Questions a TA Should Be Ready to Answer",
+    "text": "43. Questions a TA Should Be Ready to Answer\n\n“Why bother converting to z?”\nBecause raw scores are hard to interpret without context. z expresses a score relative to its distribution.\n\n\n“Why divide by SD?”\nBecause the standard deviation defines the distribution’s unit of spread. Dividing by SD expresses distance from the mean in common units.\n\n\n“Why is the mean of z always 0?”\nBecause standardization subtracts the original mean from every score.\n\n\n“Why is the SD of z always 1?”\nBecause the deviations are divided by the original standard deviation.\n\n\n“Why can we use only positive values in the table?”\nBecause the normal distribution is symmetric.\n\n\n“Why should I draw the curve?”\nBecause most z-table mistakes come from choosing the wrong area.\n\n\n“Why does a skewed distribution stay skewed after standardization?”\nBecause standardization is a linear transformation."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#basic-z-scores",
+    "href": "study-guides/week04-standard-scores.html#basic-z-scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "44. Basic z Scores",
+    "text": "44. Basic z Scores\nSuppose:\n\\[\nM=60,\\quad SD=8.\n\\]\nCalculate z for:\n\n(X=60)\n(X=68)\n(X=44)\n(X=72)\n\nInterpret each result."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#closest-to-the-mean",
+    "href": "study-guides/week04-standard-scores.html#closest-to-the-mean",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "45. Closest to the Mean",
+    "text": "45. Closest to the Mean\nWhich is closest to the mean?\n\n(z=0.80)\n(z=-0.10)\n(z=1.25)\n(z=-1.00)\n\nExplain your reasoning."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#reverse-transformation",
+    "href": "study-guides/week04-standard-scores.html#reverse-transformation",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "46. Reverse Transformation",
+    "text": "46. Reverse Transformation\nSuppose:\n\\[\nM=50,\\quad SD=12.\n\\]\nFind the raw score for:\n\n(z=0)\n(z=1)\n(z=-1.5)\n(z=2)\n\nUse:\n\\[\nX=M+z(SD).\n\\]"
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#normal-curve-areas",
+    "href": "study-guides/week04-standard-scores.html#normal-curve-areas",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "47. Normal-Curve Areas",
+    "text": "47. Normal-Curve Areas\nWithout using a table first, decide whether each area should be:\n\nless than .50;\nequal to .50;\ngreater than .50.\n\n\n(p(z&gt;1))\n(p(z&lt;0))\n(p(z&lt;1))\n(p(-1&lt;z&lt;1))\n\nThen verify using the table."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#standardization-and-shape",
+    "href": "study-guides/week04-standard-scores.html#standardization-and-shape",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "48. Standardization and Shape",
+    "text": "48. Standardization and Shape\nSuppose a distribution is strongly positively skewed.\nAfter converting every score to z:\n\nwhat is the new mean?\nwhat is the new SD?\nwhat happens to the skew?\nhas the distribution been normalized?"
   },
   {
     "objectID": "study-guides/week04-standard-scores.html#conceptual-self-check",
     "href": "study-guides/week04-standard-scores.html#conceptual-self-check",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
     "section": "49. Conceptual Self-Check",
-    "text": "49. Conceptual Self-Check\nBefore moving on, you should be able to explain:\n\nwhat probability measures;\nwhy the sample space matters;\nwhy probabilities range from 0 to 1;\nhow relative frequency connects to probability;\nhow mutually exclusive and independent outcomes differ;\nhow conditional probability changes the sample space;\nwhat Bayes’s theorem does conceptually;\nwhat a probability distribution represents;\nwhat expected value means;\nwhy a normal distribution is useful for probability;\nwhy the normal distribution is theoretical;\nwhat symmetry implies;\nwhy area under the curve corresponds to probability;\nwhat a z score measures;\nwhy standardization is useful;\nhow to convert between raw scores and z scores;\nhow the z table links standard scores to probabilities;\nhow to find a cutoff score from a desired percentile."
+    "text": "49. Conceptual Self-Check\nBefore moving on, you should be able to explain:\n\nwhy raw scores need context;\nwhat a standard score represents;\nhow z scores combine center and spread;\nhow to compute and interpret z;\nwhy the standard normal distribution has mean 0 and SD 1;\nwhy normal-curve area can be interpreted as probability;\nhow the z table is organized;\nwhy the z table only needs positive entries;\nwhy drawing the curve helps;\nhow to calculate areas below, above, and between z scores;\nhow to reverse from probability to z;\nhow to reverse from z to raw score;\nhow standardization makes different variables comparable;\nwhy standardized scores are not all z scores;\nwhy standardizing does not change distribution shape."
   },
   {
-    "objectID": "study-guides/week04-standard-scores.html#readings",
-    "href": "study-guides/week04-standard-scores.html#readings",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "50. Readings",
-    "text": "50. Readings\n\nRequired readings supplied for Week 4\n\nPrivitera, G. J. (2018), Chapter 5: Probability, Normal Distributions, and z Scores.\nPrivitera, G. J. (2024), Chapter 5: Probability.\n\nAt present, no lecture notes, tutorial, worksheet, or exercise materials have been supplied for Week 4. This guide should therefore be treated as a reading-based version that can be revised once additional course materials become available."
+    "objectID": "study-guides/week04-standard-scores.html#lecture-and-worksheet",
+    "href": "study-guides/week04-standard-scores.html#lecture-and-worksheet",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "50. Lecture and Worksheet",
+    "text": "50. Lecture and Worksheet\n\nSigal, M. (2026, October 5). PSYC 210: Introduction to data analysis—Lecture 4: Standard scores [Lecture slides]. Simon Fraser University.\nSigal, M. (2026). PSYC 210 Lecture 4 worksheet [Course worksheet]. Simon Fraser University.\nSigal, M. (2026). PSYC 210 Lecture 4 worksheet key [Answer key]. Simon Fraser University."
+  },
+  {
+    "objectID": "study-guides/week04-standard-scores.html#required-reading",
+    "href": "study-guides/week04-standard-scores.html#required-reading",
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "51. Required Reading",
+    "text": "51. Required Reading\nThe lecture identifies Chapter 5 as the reading for probability and standard scores and assigns practice problems 5, 8, 11, 14, 20, and 27 (Sigal, 2026).\nThe supplied textbook readings are:\n\nPrivitera (2018), Chapter 5: Probability, Normal Distributions, and z Scores.\nPrivitera (2024), Chapter 5: Probability.\n\nThe 2018 edition aligns closely with the lecture’s focus on normal distributions and z scores. The 2024 edition expands probability more broadly into conditional probability, Bayes’s theorem, probability distributions, expected value, and binomial distributions. Those topics are useful background, but the lecture itself centers Week 4 much more strongly on standard scores, the normal curve, and z-table interpretation."
   },
   {
     "objectID": "study-guides/week04-standard-scores.html#references",
     "href": "study-guides/week04-standard-scores.html#references",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "51. References",
-    "text": "51. References\nPrivitera, G. J. (2018). Essential statistics for the behavioral sciences (2nd ed.). SAGE.\nPrivitera, G. J. (2024). Statistics for the behavioral sciences (4th ed.). SAGE."
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "52. References",
+    "text": "52. References\nPrivitera, G. J. (2018). Essential statistics for the behavioral sciences (2nd ed.). SAGE.\nPrivitera, G. J. (2024). Statistics for the behavioral sciences (4th ed.). SAGE.\nSigal, M. (2026, October 5). PSYC 210: Introduction to data analysis—Lecture 4: Standard scores [Lecture slides]. Simon Fraser University.\nSigal, M. (2026). PSYC 210 Lecture 4 worksheet [Course worksheet]. Simon Fraser University.\nSigal, M. (2026). PSYC 210 Lecture 4 worksheet key [Answer key]. Simon Fraser University."
   },
   {
     "objectID": "study-guides/week04-standard-scores.html#week-4-takeaway",
     "href": "study-guides/week04-standard-scores.html#week-4-takeaway",
-    "title": "Week 04 — Probability, Normal Distributions, and Standard Scores",
-    "section": "52. Week 4 Takeaway",
-    "text": "52. Week 4 Takeaway\nProbability provides the bridge from describing observed data to reasoning about what is likely or unlikely.\nThe core logic is:\n\nProbability quantifies uncertainty.\n\nThe 2024 reading develops that logic through outcome relationships, conditional probability, probability distributions, expected value, and binomial models.\nThe 2018 reading connects the same logic to the normal distribution and shows how standard scores translate raw observations into a common scale.\nThe most important conceptual move is this:\n\nA raw score becomes much more informative when we know where it falls relative to a distribution.\n\nThat idea—especially through z scores and probability—will become central to inferential statistics in later weeks."
+    "title": "Week 04 — Standard Scores, Normal Distributions, and Probability",
+    "section": "53. Week 4 Takeaway",
+    "text": "53. Week 4 Takeaway\nThe central idea of Week 4 is relative position.\nA raw score tells us what was observed.\nA z score tells us:\n\nWhere that observation sits relative to the rest of its distribution.\n\nThe core formula is:\n\\[\nz=\\frac{X-\\mu}{\\sigma}.\n\\]\nFrom there:\n\nthe sign tells us direction;\nthe magnitude tells us distance;\nthe standard normal distribution gives us a common scale;\nthe z table converts distance into probability.\n\nMost importantly:\n\nStandardizing a distribution changes its location and scale, but not its shape.\n\nThat distinction becomes essential as the course moves into probability, sampling distributions, and inferential statistics."
   },
   {
     "objectID": "study-guides/week02-data-types-visualization.html",
@@ -840,25 +847,214 @@
     "text": "Weight: 10%\nDue: October 9, 2026, 11:59 PM"
   },
   {
-    "objectID": "assignments/assignment01.html#assignment-materials",
-    "href": "assignments/assignment01.html#assignment-materials",
-    "title": "Assignment 1",
-    "section": "Assignment Materials",
-    "text": "Assignment Materials\nDetailed assignment instructions to be added when available."
+    "objectID": "assignments/assignment01.html#original-submission-requirements",
+    "href": "assignments/assignment01.html#original-submission-requirements",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "Original submission requirements",
+    "text": "Original submission requirements\nYour final submission must be uploaded to Canvas by 11:59 PM on October 9. Name the file:\nPSYC210-A1_LASTNAME_FIRSTINITIAL\nSubmit a single PDF file. Write your name, the name of your TA, and your tutorial section (e.g., D102) in the document. Show your work where appropriate and briefly answer each question."
   },
   {
-    "objectID": "assignments/assignment01.html#preparation",
-    "href": "assignments/assignment01.html#preparation",
-    "title": "Assignment 1",
-    "section": "Preparation",
-    "text": "Preparation\nTo be developed from the relevant course materials."
+    "objectID": "assignments/assignment01.html#study-guides-used-in-assignment-1",
+    "href": "assignments/assignment01.html#study-guides-used-in-assignment-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "Study Guides used in Assignment 1",
+    "text": "Study Guides used in Assignment 1\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types, Frequency Distributions, and Visualization\nWeek 03 — Central Tendency, Shape, and Variability"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis question tests whether you can read summation notation correctly and apply the operations in the correct order. The main challenge is not arithmetic; it is deciding what is done first.\nSeveral expressions look very similar but mean different things. For example:\n\n\\([\\sum(x_i)]^2\\) means sum first, then square the total.\n\\(\\sum(x_i)^2\\) means square each \\(x_i\\) value first, then sum.\n\\(\\sum(x_i-y_i)\\) means subtract within each paired row, then sum.\n\\((\\sum x_i)(\\sum y_i)\\) means find two separate sums, then multiply them."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it",
+    "href": "assignments/assignment01.html#how-to-approach-it",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\n\nWrite the two vectors in parallel so that each \\(x_i\\) stays paired with the corresponding \\(y_i\\).\nFor each subquestion, translate the notation into words before calculating.\nUse BEDMAS/PEDMAS:\n\nbrackets/parentheses;\nexponents;\nmultiplication/division;\naddition/subtraction.\n\nFor a and b, simply add the values in the requested vector.\nFor c and d, calculate the sum first and square only after the summation is complete.\nFor e, calculate each paired difference \\(x_i-y_i\\), then add the differences.\nFor f, calculate each paired product \\(x_iy_i\\), then add the products.\nFor g and h, square each individual value first, then sum the squared values.\nFor i, calculate the paired differences, sum those differences, then square the final sum.\nFor j, calculate \\(\\sum x_i\\) and \\(\\sum y_i\\) separately, then multiply the two totals.\nFor k, add 3 to each \\(x_i\\), square each transformed value, then sum.\nFor l, pay close attention to the denominator: evaluate \\(2^2\\) according to order of operations, apply the division to each \\(y_i\\), and then sum.\n\n\nStudy Guide sections\n\nWeek 01 §11 — Fundamental Mathematics\nWeek 01 §12 — Summation Notation\nWeek 01 §13 — Worked Summation Example\nWeek 02 §1 — Review: Summation Notation"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to explain how adding the same constant to every score affects:\n\nthe center of the distribution, represented by the mean; and\nthe spread of the distribution, represented by the standard deviation.\n\nThe explanation matters. You should not only state what happens; you should show that you understand why."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-1",
+    "href": "assignments/assignment01.html#how-to-approach-it-1",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nRepresent the transformed score as:\n\\[\nY_i=X_i+5.\n\\]\nThen consider the two statistics separately.\nFor the mean, ask: if every score is shifted upward by exactly the same amount, what happens to the average?\nFor standard deviation, remember that it is based on distances from the mean. Compare:\n\\[\nX_i-M_X\n\\]\nwith\n\\[\n(X_i+5)-(M_X+5).\n\\]\nSimplify the second expression and use that result to explain whether the distances from the mean change.\n\nStudy Guide sections\n\nWeek 03 §15 — How the Mean Changes\nWeek 03 §33 — What Happens When Scores Are Transformed?"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis is a conceptual question about causal inference. You need to identify the design feature or combination of features that makes a true experiment different from designs in which variables are merely observed or participants are not randomly assigned.\nThen you need to explain why that difference matters for cause-and-effect reasoning."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-2",
+    "href": "assignments/assignment01.html#how-to-approach-it-2",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nCompare the three designs by asking:\n\nIs an independent variable manipulated?\nAre participants randomly assigned to conditions?\nIs there a comparison or control condition?\nCould pre-existing differences between participants explain the result?\n\nA strong answer connects the design feature to the logic of ruling out alternative explanations. Do not stop at saying “experiments can show causation.” Explain how the design helps isolate the effect of the independent variable.\n\nStudy Guide sections\n\nWeek 01 §9 — Three Basic Research Designs\nWeek 01 §21 — Tutorial Preparation"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nFor each variable, you must do two things:\n\nidentify its measurement scale: nominal, ordinal, interval, or ratio;\nbriefly justify that classification from the properties of the variable.\n\nDo not classify a variable simply because it contains numbers. Ask what those numbers actually mean."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-3",
+    "href": "assignments/assignment01.html#how-to-approach-it-3",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nFor each variable, work through this decision sequence:\n\nAre the values merely different categories?\nCan those categories be placed in a meaningful order?\nIf the variable is numerical, do equal numerical differences represent equal differences in the measured quantity?\nDoes zero represent a genuine absence of the measured quantity?\n\nUse those properties in your justification. A good justification is usually one sentence explaining the key feature that determines the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §6 — Ordinal Variables\nWeek 02 §7 — Interval Variables\nWeek 02 §32 — Important Terms"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nThis question asks you to classify two different variables using the four scales of measurement."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-4",
+    "href": "assignments/assignment01.html#how-to-approach-it-4",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nTreat the variables separately.\nFor reaction time, ask whether the values have equal units and whether zero has a meaningful interpretation.\nFor handedness, ask whether the categories have any inherent order or whether they simply identify different groups.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §32 — Important Terms"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to classify the recorded variable, not the underlying concept of income in the abstract."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-5",
+    "href": "assignments/assignment01.html#how-to-approach-it-5",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nNotice that the survey does not record each person’s exact income. Instead, it places respondents into categories.\nAsk:\n\nDo the categories have a meaningful order?\nDo the recorded category labels provide exact, equal numerical distances between respondents?\nWould arithmetic using category labels preserve the information actually collected?\n\nUse those questions to identify the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §6 — Ordinal Variables\nWeek 02 §33 — Common Misunderstandings"
+  },
+  {
+    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
+    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "What this question is asking you to do",
+    "text": "What this question is asking you to do\nYou need to:\n\nidentify the overall shape of the distribution from the verbal description; and\ndraw a rough graph showing that shape."
+  },
+  {
+    "objectID": "assignments/assignment01.html#how-to-approach-it-6",
+    "href": "assignments/assignment01.html#how-to-approach-it-6",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "How to approach it",
+    "text": "How to approach it\nTranslate the description into a frequency pattern:\n\nLocate where most observations are concentrated.\nLocate the few extreme observations.\nDecide which side has the longer, thinner tail.\nRemember that skew is named for the direction of the tail, not the side containing most observations.\nDraw a simple sketch:\n\nhorizontal axis = weekly gaming hours;\nvertical axis = frequency;\nshow the large cluster and the sparse extreme values.\n\n\n\nStudy Guide sections\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §23 — Frequency Polygons\nWeek 03 §18 — Distribution Shape and Skewness\nWeek 03 §20 — Other Distribution Shapes"
+  },
+  {
+    "objectID": "assignments/assignment01.html#a-measurement-scales",
+    "href": "assignments/assignment01.html#a-measurement-scales",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8a — Measurement scales",
+    "text": "8a — Measurement scales\n\nWhat you need to do\nClassify film rating and Year separately.\n\n\nHow to do it\nFor each variable, ask whether it represents:\n\ncategories only;\nordered categories;\nequal intervals;\na meaningful zero.\n\nDo not assume that a variable is ratio simply because it is represented by numbers.\n\n\nStudy Guide\n\nWeek 02 §4 — The Four Scales of Measurement"
+  },
+  {
+    "objectID": "assignments/assignment01.html#b-total-frequencies",
+    "href": "assignments/assignment01.html#b-total-frequencies",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8b — Total frequencies",
+    "text": "8b — Total frequencies\n\nWhat you need to do\nFind:\n\nthe total number of G films;\nthe total number of PG films;\nthe total number of PG13 films;\nthe total number of R films;\nthe grand total of all films.\n\n\n\nHow to do it\nAdd each rating column down the table. Then add the four column totals together.\nUse a second check: sum each year’s row total and confirm that the resulting grand total matches the total obtained from the columns.\n\n\nStudy Guide\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
+  },
+  {
+    "objectID": "assignments/assignment01.html#c-percentages",
+    "href": "assignments/assignment01.html#c-percentages",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8c — Percentages",
+    "text": "8c — Percentages\n\nWhat you need to do\nConvert each rating’s frequency into a percentage of all films.\n\n\nHow to do it\nFor each rating:\n\\[\np=\\frac{f}{n}\n\\]\nand then:\n\\[\n\\%=p\\times100.\n\\]\nCheck that the four percentages sum to approximately 100%, allowing for rounding.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
+  },
+  {
+    "objectID": "assignments/assignment01.html#d-visualization",
+    "href": "assignments/assignment01.html#d-visualization",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8d — Visualization",
+    "text": "8d — Visualization\n\nWhat you need to do\nGraph the counts of films by rating using a graph appropriate for the variable.\n\n\nHow to do it\n\nIdentify the measurement type of film rating.\nChoose a graph appropriate for categorical/discrete data.\nPut film-rating categories on the horizontal axis.\nPut frequency/count on the vertical axis.\nUse the totals calculated in 8b as the plotted values.\nLabel both axes and give the graph a clear title.\n\n\n\nStudy Guide\n\nWeek 02 graphing sections on bar charts, histograms, and frequency polygons\nWeek 02 §35 — Practice Questions, especially Graph Choice"
+  },
+  {
+    "objectID": "assignments/assignment01.html#e-describe-the-visualization",
+    "href": "assignments/assignment01.html#e-describe-the-visualization",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8e — Describe the visualization",
+    "text": "8e — Describe the visualization\n\nWhat you need to do\nDescribe the pattern visible in the graph and briefly justify your description.\n\n\nHow to do it\nCompare the heights of the category bars. Ask whether one category dominates, whether categories are relatively balanced, or whether there is another obvious pattern.\nBe cautious about applying terminology such as positive or negative skew to a categorical graph, because skewness is most naturally used for ordered quantitative distributions.\n\n\nStudy Guide\n\nWeek 02 §25 — Graphs Can Clarify—and Mislead"
+  },
+  {
+    "objectID": "assignments/assignment01.html#f-most-popular-rating",
+    "href": "assignments/assignment01.html#f-most-popular-rating",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8f — Most popular rating",
+    "text": "8f — Most popular rating\n\nWhat you need to do\nIdentify the film-rating category with the highest total frequency and report its count.\n\n\nHow to do it\nCompare the four totals from 8b. The category with the highest frequency is the mode or modal category.\n\n\nStudy Guide\n\nWeek 02 §29 — The Mode\nWeek 03 §2 — The Mode"
+  },
+  {
+    "objectID": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
+    "href": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "8g — Evaluate the citizen’s claim",
+    "text": "8g — Evaluate the citizen’s claim\n\nWhat you need to do\nUse the data to decide whether the citizen’s statement is supported.\n\n\nHow to do it\nTranslate the claim into something testable using the table. Compare:\n\nthe R-rated count;\nthe R-rated percentage;\nthe counts and percentages of the other categories;\nthe modal category.\n\nBase the conclusion only on the fictional dataset provided. Do not make a broader claim about real movie releases.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values\nWeek 02 §29 — The Mode"
+  },
+  {
+    "objectID": "assignments/assignment01.html#a-mean",
+    "href": "assignments/assignment01.html#a-mean",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9a — Mean",
+    "text": "9a — Mean\n\nWhat you need to do\nCalculate the average AM score separately for the distracted and not-distracted groups.\n\n\nHow to do it\nFor each group:\n\\[\nM=\\frac{\\sum X}{n}.\n\\]\n\nAdd all scores in that group.\nCount the number of observations.\nDivide the sum by \\(n\\).\nKeep the two groups separate throughout the calculation.\n\n\n\nStudy Guide\n\nWeek 02 §27 — The Mean\nWeek 03 §1 — Why Do We Need Measures of Center?"
+  },
+  {
+    "objectID": "assignments/assignment01.html#b-range",
+    "href": "assignments/assignment01.html#b-range",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9b — Range",
+    "text": "9b — Range\n\nWhat you need to do\nCalculate the range of scores separately for each group.\n\n\nHow to do it\nFor each group:\n\nidentify the maximum score;\nidentify the minimum score;\ncalculate:\n\n\\[\n\\text{Range}=X_{\\max}-X_{\\min}.\n\\]\n\n\nStudy Guide\n\nWeek 03 §22 — The Range"
+  },
+  {
+    "objectID": "assignments/assignment01.html#c-standard-deviation",
+    "href": "assignments/assignment01.html#c-standard-deviation",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9c — Standard deviation",
+    "text": "9c — Standard deviation\n\nWhat you need to do\nCalculate the standard deviation separately for each group.\n\n\nHow to do it\nFor each group:\n\ncalculate the mean;\ncalculate each deviation \\(X_i-M\\);\nsquare each deviation;\nadd the squared deviations to obtain \\(SS\\);\ndetermine whether the course expects the sample or population variance formula for this dataset;\ndivide by the appropriate denominator;\ntake the square root of the variance to obtain the standard deviation.\n\nShow enough intermediate work that the calculation can be followed.\n\n\nStudy Guide\n\nWeek 03 §24 — From Deviation to Variance\nWeek 03 §39 — Important Terms\nWeek 03 §42 — Practice Questions"
+  },
+  {
+    "objectID": "assignments/assignment01.html#d-median-and-mode",
+    "href": "assignments/assignment01.html#d-median-and-mode",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9d — Median and mode",
+    "text": "9d — Median and mode\n\nWhat you need to do\nFind both the median and the mode for each group.\n\n\nHow to do it\nFor each group, first sort the scores from smallest to largest.\nFor the median:\n\nidentify the middle position;\napply the appropriate procedure for the number of observations;\nfollow the course convention where interpolation is required.\n\nFor the mode:\n\ncount how often each score appears;\nidentify the most frequent score or scores;\nnote whether the distribution is unimodal, bimodal, multimodal, or nonmodal if relevant.\n\n\n\nStudy Guide\n\nWeek 03 §2 — The Mode\nWeek 03 §3 — The Median\nWeek 03 §4 — Median With an Even Number of Scores"
+  },
+  {
+    "objectID": "assignments/assignment01.html#e-75th-percentile",
+    "href": "assignments/assignment01.html#e-75th-percentile",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9e — 75th percentile",
+    "text": "9e — 75th percentile\n\nWhat you need to do\nFind the score corresponding to the 75th percentile separately for each group.\n\n\nHow to do it\n\nOrder the scores.\nUse cumulative frequency to locate the point containing 75% of observations.\nApply the course’s percentile/interpolation procedure, not a different software default.\nRemember that the 75th percentile is the third quartile, \\(Q_3\\).\n\n\n\nStudy Guide\n\nWeek 03 §5 — The Course’s Interpolated Median Formula\nWeek 03 §23 — Interquartile Range"
+  },
+  {
+    "objectID": "assignments/assignment01.html#f-compare-the-two-groups",
+    "href": "assignments/assignment01.html#f-compare-the-two-groups",
+    "title": "Assignment 1 — Guide and Preparation",
+    "section": "9f — Compare the two groups",
+    "text": "9f — Compare the two groups\n\nWhat you need to do\nUse the descriptive statistics you have already calculated to discuss how the two groups differ and whether the pattern is consistent with the prediction about distraction.\n\n\nHow to do it\nBring together the results from 9a–9e. Compare:\n\nmean;\nmedian;\nmode where informative;\nrange;\nstandard deviation;\n75th percentile;\nany visible differences in the distributions.\n\nThen ask whether these descriptive summaries consistently point in the direction predicted by the study.\nKeep the conclusion at the correct level: this assignment provides descriptive statistics. Do not claim statistical significance unless an inferential statistical test has actually been conducted.\n\n\nStudy Guide\n\nWeek 03 §36 — What Should Be Reported Together?\nWeek 03 §38 — How the Concepts Fit Together"
   },
   {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignments",
     "section": "",
-    "text": "The course includes two assignments. Detailed instructions can be added when the assignment sheets are available.\n\nAssignment 1 — 10%, due October 9, 2026\nAssignment 2 — 15%, due November 27, 2026"
+    "text": "The course includes two assignments. Each assignment page provides the assignment schedule together with study guidance linked to the relevant Study Guides.\n\nAssignment 1 — Guide and Preparation — 10%, due October 9, 2026\nAssignment 2 — 15%, due November 27, 2026"
   },
   {
     "objectID": "resources/index.html",
@@ -1909,236 +2105,5 @@
     "title": "Week 11 — Categorical Data Analysis / Course Wrap-Up",
     "section": "Reading",
     "text": "Reading\nPrivitera (2018), Chapter 14"
-  },
-  {
-    "objectID": "assignments/assignment01.html#study-guides",
-    "href": "assignments/assignment01.html#study-guides",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "Study Guides",
-    "text": "Study Guides\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types, Frequency Distributions, and Visualization\nWeek 03 — Central Tendency, Shape, and Variability"
-  },
-  {
-    "objectID": "assignments/assignment01.html#a-measurement-scales",
-    "href": "assignments/assignment01.html#a-measurement-scales",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8a — Measurement scales",
-    "text": "8a — Measurement scales\n\nWhat you need to do\nClassify film rating and Year separately.\n\n\nHow to do it\nFor each variable, ask whether it represents:\n\ncategories only;\nordered categories;\nequal intervals;\na meaningful zero.\n\nDo not assume that a variable is ratio simply because it is represented by numbers.\n\n\nStudy Guide\n\nWeek 02 §4 — The Four Scales of Measurement"
-  },
-  {
-    "objectID": "assignments/assignment01.html#b-total-frequencies",
-    "href": "assignments/assignment01.html#b-total-frequencies",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8b — Total frequencies",
-    "text": "8b — Total frequencies\n\nWhat you need to do\nFind:\n\nthe total number of G films;\nthe total number of PG films;\nthe total number of PG13 films;\nthe total number of R films;\nthe grand total of all films.\n\n\n\nHow to do it\nAdd each rating column down the table. Then add the four column totals together.\nUse a second check: sum each year’s row total and confirm that the resulting grand total matches the total obtained from the columns.\n\n\nStudy Guide\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
-  },
-  {
-    "objectID": "assignments/assignment01.html#c-percentages",
-    "href": "assignments/assignment01.html#c-percentages",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8c — Percentages",
-    "text": "8c — Percentages\n\nWhat you need to do\nConvert each rating’s frequency into a percentage of all films.\n\n\nHow to do it\nFor each rating:\n\\[\np=\\frac{f}{n}\n\\]\nand then:\n\\[\n\\%=p\\times100.\n\\]\nCheck that the four percentages sum to approximately 100%, allowing for rounding.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values"
-  },
-  {
-    "objectID": "assignments/assignment01.html#d-visualization",
-    "href": "assignments/assignment01.html#d-visualization",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8d — Visualization",
-    "text": "8d — Visualization\n\nWhat you need to do\nGraph the counts of films by rating using a graph appropriate for the variable.\n\n\nHow to do it\n\nIdentify the measurement type of film rating.\nChoose a graph appropriate for categorical/discrete data.\nPut film-rating categories on the horizontal axis.\nPut frequency/count on the vertical axis.\nUse the totals calculated in 8b as the plotted values.\nLabel both axes and give the graph a clear title.\n\n\n\nStudy Guide\n\nWeek 02 graphing sections on bar charts, histograms, and frequency polygons\nWeek 02 §35 — Practice Questions, especially Graph Choice"
-  },
-  {
-    "objectID": "assignments/assignment01.html#e-describe-the-graph",
-    "href": "assignments/assignment01.html#e-describe-the-graph",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8e — Describe the graph",
-    "text": "8e — Describe the graph\nReview Week 02 §25 — Graphs Can Clarify—and Mislead.\nDescribe the relative heights of the categories. Because the display is categorical, do not automatically apply continuous-distribution terms such as positive or negative skew."
-  },
-  {
-    "objectID": "assignments/assignment01.html#f-most-popular-rating",
-    "href": "assignments/assignment01.html#f-most-popular-rating",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8f — Most popular rating",
-    "text": "8f — Most popular rating\n\nWhat you need to do\nIdentify the film-rating category with the highest total frequency and report its count.\n\n\nHow to do it\nCompare the four totals from 8b. The category with the highest frequency is the mode or modal category.\n\n\nStudy Guide\n\nWeek 02 §29 — The Mode\nWeek 03 §2 — The Mode"
-  },
-  {
-    "objectID": "assignments/assignment01.html#g-evaluate-the-claim",
-    "href": "assignments/assignment01.html#g-evaluate-the-claim",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8g — Evaluate the claim",
-    "text": "8g — Evaluate the claim\nUse the frequency and percentage ideas in Week 02 §13 together with the mode.\nTranslate the citizen’s statement into something the table can test. Compare the relevant count and percentage with the other categories and the total. Base the conclusion only on the supplied fictional data."
-  },
-  {
-    "objectID": "assignments/assignment01.html#a-mean",
-    "href": "assignments/assignment01.html#a-mean",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9a — Mean",
-    "text": "9a — Mean\n\nWhat you need to do\nCalculate the average AM score separately for the distracted and not-distracted groups.\n\n\nHow to do it\nFor each group:\n\\[\nM=\\frac{\\sum X}{n}.\n\\]\n\nAdd all scores in that group.\nCount the number of observations.\nDivide the sum by \\(n\\).\nKeep the two groups separate throughout the calculation.\n\n\n\nStudy Guide\n\nWeek 02 §27 — The Mean\nWeek 03 §1 — Why Do We Need Measures of Center?"
-  },
-  {
-    "objectID": "assignments/assignment01.html#b-range",
-    "href": "assignments/assignment01.html#b-range",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9b — Range",
-    "text": "9b — Range\n\nWhat you need to do\nCalculate the range of scores separately for each group.\n\n\nHow to do it\nFor each group:\n\nidentify the maximum score;\nidentify the minimum score;\ncalculate:\n\n\\[\n\\text{Range}=X_{\\max}-X_{\\min}.\n\\]\n\n\nStudy Guide\n\nWeek 03 §22 — The Range"
-  },
-  {
-    "objectID": "assignments/assignment01.html#c-standard-deviation",
-    "href": "assignments/assignment01.html#c-standard-deviation",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9c — Standard deviation",
-    "text": "9c — Standard deviation\n\nWhat you need to do\nCalculate the standard deviation separately for each group.\n\n\nHow to do it\nFor each group:\n\ncalculate the mean;\ncalculate each deviation \\(X_i-M\\);\nsquare each deviation;\nadd the squared deviations to obtain \\(SS\\);\ndetermine whether the course expects the sample or population variance formula for this dataset;\ndivide by the appropriate denominator;\ntake the square root of the variance to obtain the standard deviation.\n\nShow enough intermediate work that the calculation can be followed.\n\n\nStudy Guide\n\nWeek 03 §24 — From Deviation to Variance\nWeek 03 §39 — Important Terms\nWeek 03 §42 — Practice Questions"
-  },
-  {
-    "objectID": "assignments/assignment01.html#d-median-and-mode",
-    "href": "assignments/assignment01.html#d-median-and-mode",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9d — Median and mode",
-    "text": "9d — Median and mode\n\nWhat you need to do\nFind both the median and the mode for each group.\n\n\nHow to do it\nFor each group, first sort the scores from smallest to largest.\nFor the median:\n\nidentify the middle position;\napply the appropriate procedure for the number of observations;\nfollow the course convention where interpolation is required.\n\nFor the mode:\n\ncount how often each score appears;\nidentify the most frequent score or scores;\nnote whether the distribution is unimodal, bimodal, multimodal, or nonmodal if relevant.\n\n\n\nStudy Guide\n\nWeek 03 §2 — The Mode\nWeek 03 §3 — The Median\nWeek 03 §4 — Median With an Even Number of Scores"
-  },
-  {
-    "objectID": "assignments/assignment01.html#e-75th-percentile",
-    "href": "assignments/assignment01.html#e-75th-percentile",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9e — 75th percentile",
-    "text": "9e — 75th percentile\n\nWhat you need to do\nFind the score corresponding to the 75th percentile separately for each group.\n\n\nHow to do it\n\nOrder the scores.\nUse cumulative frequency to locate the point containing 75% of observations.\nApply the course’s percentile/interpolation procedure, not a different software default.\nRemember that the 75th percentile is the third quartile, \\(Q_3\\).\n\n\n\nStudy Guide\n\nWeek 03 §5 — The Course’s Interpolated Median Formula\nWeek 03 §23 — Interquartile Range"
-  },
-  {
-    "objectID": "assignments/assignment01.html#f-compare-the-groups",
-    "href": "assignments/assignment01.html#f-compare-the-groups",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9f — Compare the groups",
-    "text": "9f — Compare the groups\nReview\n\nWeek 03 §36 — What Should Be Reported Together?\nWeek 03 §38 — How the Concepts Fit Together\n\nThis is an interpretation question. Compare the groups using the descriptive statistics already calculated: mean, median, mode where informative, range, standard deviation, 75th percentile, and any obvious distributional differences.\nThen decide whether those descriptive summaries are consistent with the stated prediction. Do not describe the difference as statistically significant unless an inferential test has actually been conducted."
-  },
-  {
-    "objectID": "assignments/assignment01.html#original-submission-requirements",
-    "href": "assignments/assignment01.html#original-submission-requirements",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "Original submission requirements",
-    "text": "Original submission requirements\nYour final submission must be uploaded to Canvas by 11:59 PM on October 9. Name the file:\nPSYC210-A1_LASTNAME_FIRSTINITIAL\nSubmit a single PDF file. Write your name, the name of your TA, and your tutorial section (e.g., D102) in the document. Show your work where appropriate and briefly answer each question."
-  },
-  {
-    "objectID": "assignments/assignment01.html#study-guides-used-in-assignment-1",
-    "href": "assignments/assignment01.html#study-guides-used-in-assignment-1",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "Study Guides used in Assignment 1",
-    "text": "Study Guides used in Assignment 1\n\nWeek 01 — Course Introduction and Basic Concepts\nWeek 02 — Data Types, Frequency Distributions, and Visualization\nWeek 03 — Central Tendency, Shape, and Variability"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nThis question tests whether you can read summation notation correctly and apply the operations in the correct order. The main challenge is not arithmetic; it is deciding what is done first.\nSeveral expressions look very similar but mean different things. For example:\n\n\\([\\sum(x_i)]^2\\) means sum first, then square the total.\n\\(\\sum(x_i)^2\\) means square each \\(x_i\\) value first, then sum.\n\\(\\sum(x_i-y_i)\\) means subtract within each paired row, then sum.\n\\((\\sum x_i)(\\sum y_i)\\) means find two separate sums, then multiply them."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it",
-    "href": "assignments/assignment01.html#how-to-approach-it",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\n\nWrite the two vectors in parallel so that each \\(x_i\\) stays paired with the corresponding \\(y_i\\).\nFor each subquestion, translate the notation into words before calculating.\nUse BEDMAS/PEDMAS:\n\nbrackets/parentheses;\nexponents;\nmultiplication/division;\naddition/subtraction.\n\nFor a and b, simply add the values in the requested vector.\nFor c and d, calculate the sum first and square only after the summation is complete.\nFor e, calculate each paired difference \\(x_i-y_i\\), then add the differences.\nFor f, calculate each paired product \\(x_iy_i\\), then add the products.\nFor g and h, square each individual value first, then sum the squared values.\nFor i, calculate the paired differences, sum those differences, then square the final sum.\nFor j, calculate \\(\\sum x_i\\) and \\(\\sum y_i\\) separately, then multiply the two totals.\nFor k, add 3 to each \\(x_i\\), square each transformed value, then sum.\nFor l, pay close attention to the denominator: evaluate \\(2^2\\) according to order of operations, apply the division to each \\(y_i\\), and then sum.\n\n\nStudy Guide sections\n\nWeek 01 §11 — Fundamental Mathematics\nWeek 01 §12 — Summation Notation\nWeek 01 §13 — Worked Summation Example\nWeek 02 §1 — Review: Summation Notation"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-1",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nYou need to explain how adding the same constant to every score affects:\n\nthe center of the distribution, represented by the mean; and\nthe spread of the distribution, represented by the standard deviation.\n\nThe explanation matters. You should not only state what happens; you should show that you understand why."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-1",
-    "href": "assignments/assignment01.html#how-to-approach-it-1",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nRepresent the transformed score as:\n\\[\nY_i=X_i+5.\n\\]\nThen consider the two statistics separately.\nFor the mean, ask: if every score is shifted upward by exactly the same amount, what happens to the average?\nFor standard deviation, remember that it is based on distances from the mean. Compare:\n\\[\nX_i-M_X\n\\]\nwith\n\\[\n(X_i+5)-(M_X+5).\n\\]\nSimplify the second expression and use that result to explain whether the distances from the mean change.\n\nStudy Guide sections\n\nWeek 03 §15 — How the Mean Changes\nWeek 03 §33 — What Happens When Scores Are Transformed?"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-2",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nThis is a conceptual question about causal inference. You need to identify the design feature or combination of features that makes a true experiment different from designs in which variables are merely observed or participants are not randomly assigned.\nThen you need to explain why that difference matters for cause-and-effect reasoning."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-2",
-    "href": "assignments/assignment01.html#how-to-approach-it-2",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nCompare the three designs by asking:\n\nIs an independent variable manipulated?\nAre participants randomly assigned to conditions?\nIs there a comparison or control condition?\nCould pre-existing differences between participants explain the result?\n\nA strong answer connects the design feature to the logic of ruling out alternative explanations. Do not stop at saying “experiments can show causation.” Explain how the design helps isolate the effect of the independent variable.\n\nStudy Guide sections\n\nWeek 01 §9 — Three Basic Research Designs\nWeek 01 §21 — Tutorial Preparation"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-3",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nFor each variable, you must do two things:\n\nidentify its measurement scale: nominal, ordinal, interval, or ratio;\nbriefly justify that classification from the properties of the variable.\n\nDo not classify a variable simply because it contains numbers. Ask what those numbers actually mean."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-3",
-    "href": "assignments/assignment01.html#how-to-approach-it-3",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nFor each variable, work through this decision sequence:\n\nAre the values merely different categories?\nCan those categories be placed in a meaningful order?\nIf the variable is numerical, do equal numerical differences represent equal differences in the measured quantity?\nDoes zero represent a genuine absence of the measured quantity?\n\nUse those properties in your justification. A good justification is usually one sentence explaining the key feature that determines the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §6 — Ordinal Variables\nWeek 02 §7 — Interval Variables\nWeek 02 §32 — Important Terms"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-4",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nThis question asks you to classify two different variables using the four scales of measurement."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-4",
-    "href": "assignments/assignment01.html#how-to-approach-it-4",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nTreat the variables separately.\nFor reaction time, ask whether the values have equal units and whether zero has a meaningful interpretation.\nFor handedness, ask whether the categories have any inherent order or whether they simply identify different groups.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §5 — Nominal Variables\nWeek 02 §32 — Important Terms"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-5",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nYou need to classify the recorded variable, not the underlying concept of income in the abstract."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-5",
-    "href": "assignments/assignment01.html#how-to-approach-it-5",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nNotice that the survey does not record each person’s exact income. Instead, it places respondents into categories.\nAsk:\n\nDo the categories have a meaningful order?\nDo the recorded category labels provide exact, equal numerical distances between respondents?\nWould arithmetic using category labels preserve the information actually collected?\n\nUse those questions to identify the scale.\n\nStudy Guide sections\n\nWeek 02 §4 — The Four Scales of Measurement\nWeek 02 §6 — Ordinal Variables\nWeek 02 §33 — Common Misunderstandings"
-  },
-  {
-    "objectID": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
-    "href": "assignments/assignment01.html#what-this-question-is-asking-you-to-do-6",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "What this question is asking you to do",
-    "text": "What this question is asking you to do\nYou need to:\n\nidentify the overall shape of the distribution from the verbal description; and\ndraw a rough graph showing that shape."
-  },
-  {
-    "objectID": "assignments/assignment01.html#how-to-approach-it-6",
-    "href": "assignments/assignment01.html#how-to-approach-it-6",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "How to approach it",
-    "text": "How to approach it\nTranslate the description into a frequency pattern:\n\nLocate where most observations are concentrated.\nLocate the few extreme observations.\nDecide which side has the longer, thinner tail.\nRemember that skew is named for the direction of the tail, not the side containing most observations.\nDraw a simple sketch:\n\nhorizontal axis = weekly gaming hours;\nvertical axis = frequency;\nshow the large cluster and the sparse extreme values.\n\n\n\nStudy Guide sections\n\nWeek 02 §12 — Ungrouped Frequency Distributions\nWeek 02 §23 — Frequency Polygons\nWeek 03 §18 — Distribution Shape and Skewness\nWeek 03 §20 — Other Distribution Shapes"
-  },
-  {
-    "objectID": "assignments/assignment01.html#e-describe-the-visualization",
-    "href": "assignments/assignment01.html#e-describe-the-visualization",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8e — Describe the visualization",
-    "text": "8e — Describe the visualization\n\nWhat you need to do\nDescribe the pattern visible in the graph and briefly justify your description.\n\n\nHow to do it\nCompare the heights of the category bars. Ask whether one category dominates, whether categories are relatively balanced, or whether there is another obvious pattern.\nBe cautious about applying terminology such as positive or negative skew to a categorical graph, because skewness is most naturally used for ordered quantitative distributions.\n\n\nStudy Guide\n\nWeek 02 §25 — Graphs Can Clarify—and Mislead"
-  },
-  {
-    "objectID": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
-    "href": "assignments/assignment01.html#g-evaluate-the-citizens-claim",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "8g — Evaluate the citizen’s claim",
-    "text": "8g — Evaluate the citizen’s claim\n\nWhat you need to do\nUse the data to decide whether the citizen’s statement is supported.\n\n\nHow to do it\nTranslate the claim into something testable using the table. Compare:\n\nthe R-rated count;\nthe R-rated percentage;\nthe counts and percentages of the other categories;\nthe modal category.\n\nBase the conclusion only on the fictional dataset provided. Do not make a broader claim about real movie releases.\n\n\nStudy Guide\n\nWeek 02 §13 — Frequency, Proportion, Percentage, and Cumulative Values\nWeek 02 §29 — The Mode"
-  },
-  {
-    "objectID": "assignments/assignment01.html#f-compare-the-two-groups",
-    "href": "assignments/assignment01.html#f-compare-the-two-groups",
-    "title": "Assignment 1 — Guide and Preparation",
-    "section": "9f — Compare the two groups",
-    "text": "9f — Compare the two groups\n\nWhat you need to do\nUse the descriptive statistics you have already calculated to discuss how the two groups differ and whether the pattern is consistent with the prediction about distraction.\n\n\nHow to do it\nBring together the results from 9a–9e. Compare:\n\nmean;\nmedian;\nmode where informative;\nrange;\nstandard deviation;\n75th percentile;\nany visible differences in the distributions.\n\nThen ask whether these descriptive summaries consistently point in the direction predicted by the study.\nKeep the conclusion at the correct level: this assignment provides descriptive statistics. Do not claim statistical significance unless an inferential statistical test has actually been conducted.\n\n\nStudy Guide\n\nWeek 03 §36 — What Should Be Reported Together?\nWeek 03 §38 — How the Concepts Fit Together"
   }
 ]
