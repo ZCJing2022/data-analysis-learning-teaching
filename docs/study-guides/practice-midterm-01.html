@@ -1,0 +1,1988 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Practice Midterm Exam 1 — Weeks 1–6 – Data Analysis: Learning &amp; Teaching</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-445b8638c3d06994fee0907d791121c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Data Analysis: Learning &amp; Teaching</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../study-guides/index.html"> 
+<span class="menu-text">Study Guides</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../assignments/index.html"> 
+<span class="menu-text">Assignments</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../resources/index.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Practice Exam Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#exam-instructions" id="toc-exam-instructions" class="nav-link active" data-scroll-target="#exam-instructions">Exam Instructions</a></li>
+  <li><a href="#section-a-multiple-choice" id="toc-section-a-multiple-choice" class="nav-link" data-scroll-target="#section-a-multiple-choice">Section A — Multiple Choice</a></li>
+  <li><a href="#section-b-integrated-short-answer" id="toc-section-b-integrated-short-answer" class="nav-link" data-scroll-target="#section-b-integrated-short-answer">Section B — Integrated Short Answer</a></li>
+  <li><a href="#coverage-check" id="toc-coverage-check" class="nav-link" data-scroll-target="#coverage-check">Coverage Check</a></li>
+  <li><a href="#coverage-reminder" id="toc-coverage-reminder" class="nav-link" data-scroll-target="#coverage-reminder">Coverage Reminder</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Practice Midterm Exam 1 — Weeks 1–6</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="exam-instructions" class="level1">
+<h1>Exam Instructions</h1>
+<p><strong>Recommended time: 120 minutes.</strong></p>
+<p>This practice examination is designed to simulate the PSYC 210 midterm and deliberately mixes material from Weeks 1–6.</p>
+<ul>
+<li><strong>Section A:</strong> 38 multiple-choice questions</li>
+<li><strong>Section B:</strong> 5 mixed Assignment-Style / Integrated problems</li>
+<li>Try each item before opening its answer.</li>
+<li>Each answer is hidden initially; click <strong>Answer</strong> to reveal it.</li>
+<li>Use the course formula sheet and z table where appropriate.</li>
+</ul>
+</section>
+<section id="section-a-multiple-choice" class="level1">
+<h1>Section A — Multiple Choice</h1>
+<section id="question-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
+<p><strong>Week 1</strong></p>
+<p>A researcher randomly assigns participants to a quiet or noisy study condition and measures recall. What design is this?</p>
+<ul>
+<li><strong>A.</strong> Experimental</li>
+<li><strong>B.</strong> Quasi-experimental</li>
+<li><strong>C.</strong> Correlational</li>
+<li><strong>D.</strong> Case study</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. Experimental</strong></p>
+<p>Random assignment plus manipulation makes this a true experiment.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-2" class="level3">
+<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
+<p><strong>Week 6</strong></p>
+<p>Using μ=80, SE=3.00, and x̄=86.00, what is Z_obt?</p>
+<ul>
+<li><strong>A.</strong> 2.00</li>
+<li><strong>B.</strong> 1.00</li>
+<li><strong>C.</strong> 0.50</li>
+<li><strong>D.</strong> 3.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 2.00</strong></p>
+<p>The observed mean is exactly two standard errors above the null mean.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-3" class="level3">
+<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
+<p><strong>Week 2</strong></p>
+<p>A variable ranges from 12 to 92 and is divided into 10 bins. What is the raw bin width?</p>
+<ul>
+<li><strong>A.</strong> 8</li>
+<li><strong>B.</strong> 10</li>
+<li><strong>C.</strong> 6</li>
+<li><strong>D.</strong> 12</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 8</strong></p>
+<p>(92-12)/10 = 8.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-4" class="level3">
+<h3 class="anchored" data-anchor-id="question-4">Question 4</h3>
+<p><strong>Week 5</strong></p>
+<p>Two independent fair coins are flipped. What is P(two Heads)?</p>
+<ul>
+<li><strong>A.</strong> .25</li>
+<li><strong>B.</strong> .50</li>
+<li><strong>C.</strong> .75</li>
+<li><strong>D.</strong> 1.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. .25</strong></p>
+<p>.5×.5=.25.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-5" class="level3">
+<h3 class="anchored" data-anchor-id="question-5">Question 5</h3>
+<p><strong>Week 1</strong></p>
+<p>Given X={4,7,5,9,6,8}, what is Σxᵢ from i=2 through i=5?</p>
+<ul>
+<li><strong>A.</strong> 27</li>
+<li><strong>B.</strong> 29</li>
+<li><strong>C.</strong> 25</li>
+<li><strong>D.</strong> 39</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 27</strong></p>
+<p>The required values are [7, 5, 9, 6], which sum to 27.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-6" class="level3">
+<h3 class="anchored" data-anchor-id="question-6">Question 6</h3>
+<p><strong>Week 1</strong></p>
+<p>Which statement is inferential?</p>
+<ul>
+<li><strong>A.</strong> The sample mean was 18.4</li>
+<li><strong>B.</strong> The sample contained 75 students</li>
+<li><strong>C.</strong> University students generally have mean stress above 18</li>
+<li><strong>D.</strong> The largest observed score was 31</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: C. University students generally have mean stress above 18</strong></p>
+<p>Inferential statistics generalize from a sample to a wider population.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-7" class="level3">
+<h3 class="anchored" data-anchor-id="question-7">Question 7</h3>
+<p><strong>Week 5</strong></p>
+<p>Which pair is dependent?</p>
+<ul>
+<li><strong>A.</strong> Two fair coin flips</li>
+<li><strong>B.</strong> Two die rolls</li>
+<li><strong>C.</strong> Two card draws with replacement</li>
+<li><strong>D.</strong> Two card draws without replacement</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: D. Two card draws without replacement</strong></p>
+<p>Without replacement, the first draw changes the remaining composition.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-8" class="level3">
+<h3 class="anchored" data-anchor-id="question-8">Question 8</h3>
+<p><strong>Week 4</strong></p>
+<p>The area between the mean and z=.50 is .1915. What is P(Z&lt;-.50)?</p>
+<ul>
+<li><strong>A.</strong> .3085</li>
+<li><strong>B.</strong> .1915</li>
+<li><strong>C.</strong> .5000</li>
+<li><strong>D.</strong> .6915</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. .3085</strong></p>
+<p>.5000-.1915=.3085.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-9" class="level3">
+<h3 class="anchored" data-anchor-id="question-9">Question 9</h3>
+<p><strong>Week 3</strong></p>
+<p>For X={3,4,4,5,9}, what is the mean?</p>
+<ul>
+<li><strong>A.</strong> 5.0</li>
+<li><strong>B.</strong> 6.0</li>
+<li><strong>C.</strong> 4.0</li>
+<li><strong>D.</strong> 25</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 5.0</strong></p>
+<p>The sum is 25 and 25/5 = 5.0.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-10" class="level3">
+<h3 class="anchored" data-anchor-id="question-10">Question 10</h3>
+<p><strong>Week 2</strong></p>
+<p>For the same data, what is the cumulative frequency at X=2?</p>
+<ul>
+<li><strong>A.</strong> 6</li>
+<li><strong>B.</strong> 3</li>
+<li><strong>C.</strong> 7</li>
+<li><strong>D.</strong> 10</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 6</strong></p>
+<p>There are 6 observations equal to 2 or less.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-11" class="level3">
+<h3 class="anchored" data-anchor-id="question-11">Question 11</h3>
+<p><strong>Week 6</strong></p>
+<p>For a nondirectional test of whether a treatment changes μ from 80, which hypotheses are correct?</p>
+<ul>
+<li><strong>A.</strong> H0: μ=80; H1: μ≠80</li>
+<li><strong>B.</strong> H0: μ≠80; H1: μ=80</li>
+<li><strong>C.</strong> H0: x̄=80; H1: x̄≠80</li>
+<li><strong>D.</strong> H0: μ&gt;80; H1: μ&lt;80</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. H0: μ=80; H1: μ≠80</strong></p>
+<p>The hypotheses concern the population mean and a nondirectional alternative uses ≠.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-12" class="level3">
+<h3 class="anchored" data-anchor-id="question-12">Question 12</h3>
+<p><strong>Week 1</strong></p>
+<p>For the first three values of X={4,7,5}, which pair is correct?</p>
+<ul>
+<li><strong>A.</strong> ΣX²=90; (ΣX)²=256</li>
+<li><strong>B.</strong> ΣX²=256; (ΣX)²=90</li>
+<li><strong>C.</strong> Both equal 90</li>
+<li><strong>D.</strong> Both equal 256</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. ΣX²=90; (ΣX)²=256</strong></p>
+<p>ΣX² means square each score then sum; (ΣX)² means sum first, then square.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-13" class="level3">
+<h3 class="anchored" data-anchor-id="question-13">Question 13</h3>
+<p><strong>Week 5</strong></p>
+<p>With μ=55, SE=4.50, and x̄=64.00, what is the sample-mean z score?</p>
+<ul>
+<li><strong>A.</strong> 2.00</li>
+<li><strong>B.</strong> 1.00</li>
+<li><strong>C.</strong> 0.50</li>
+<li><strong>D.</strong> 3.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 2.00</strong></p>
+<p>The sample mean is two standard errors above μ.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-14" class="level3">
+<h3 class="anchored" data-anchor-id="question-14">Question 14</h3>
+<p><strong>Week 3</strong></p>
+<p>Group A has n=15, mean=9; Group B has n=30, mean=15. What is the combined mean?</p>
+<ul>
+<li><strong>A.</strong> 13.00</li>
+<li><strong>B.</strong> 12.00</li>
+<li><strong>C.</strong> 15.00</li>
+<li><strong>D.</strong> 9.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 13.00</strong></p>
+<p>The combined mean weights each group mean by its sample size.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-15" class="level3">
+<h3 class="anchored" data-anchor-id="question-15">Question 15</h3>
+<p><strong>Week 5</strong></p>
+<p>If σ=18 and n=16, what is the standard error?</p>
+<ul>
+<li><strong>A.</strong> 4.50</li>
+<li><strong>B.</strong> 18.00</li>
+<li><strong>C.</strong> 4.00</li>
+<li><strong>D.</strong> 9.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 4.50</strong></p>
+<p>SE=σ/√n=18/4=4.50.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-16" class="level3">
+<h3 class="anchored" data-anchor-id="question-16">Question 16</h3>
+<p><strong>Week 2</strong></p>
+<p>Which variable is ratio-scaled?</p>
+<ul>
+<li><strong>A.</strong> Celsius temperature</li>
+<li><strong>B.</strong> Class rank</li>
+<li><strong>C.</strong> Reaction time in milliseconds</li>
+<li><strong>D.</strong> Eye colour</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: C. Reaction time in milliseconds</strong></p>
+<p>Reaction time has equal units and a meaningful zero.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-17" class="level3">
+<h3 class="anchored" data-anchor-id="question-17">Question 17</h3>
+<p><strong>Week 3</strong></p>
+<p>Which measure of center is most resistant to one extreme high outlier?</p>
+<ul>
+<li><strong>A.</strong> Mean</li>
+<li><strong>B.</strong> Median</li>
+<li><strong>C.</strong> Variance</li>
+<li><strong>D.</strong> Range</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Median</strong></p>
+<p>The median depends mainly on rank and is resistant to the magnitude of an extreme score.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-18" class="level3">
+<h3 class="anchored" data-anchor-id="question-18">Question 18</h3>
+<p><strong>Week 4</strong></p>
+<p>For a normal distribution with μ=90 and σ=15, where are the inflection points?</p>
+<ul>
+<li><strong>A.</strong> 75 and 105</li>
+<li><strong>B.</strong> 60 and 120</li>
+<li><strong>C.</strong> 90 and 105</li>
+<li><strong>D.</strong> 75 and 90</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 75 and 105</strong></p>
+<p>Normal-curve inflection points occur at μ±1σ.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-19" class="level3">
+<h3 class="anchored" data-anchor-id="question-19">Question 19</h3>
+<p><strong>Week 6</strong></p>
+<p>For x̄=86.00, μ=80, and σ=15, what is the effect size ES?</p>
+<ul>
+<li><strong>A.</strong> 0.400</li>
+<li><strong>B.</strong> 2.000</li>
+<li><strong>C.</strong> 3.000</li>
+<li><strong>D.</strong> 6.000</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 0.400</strong></p>
+<p>ES=(x̄-μ)/σ=6.00/15=0.400.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-20" class="level3">
+<h3 class="anchored" data-anchor-id="question-20">Question 20</h3>
+<p><strong>Week 6</strong></p>
+<p>For σ=15 and n=25, what is SE?</p>
+<ul>
+<li><strong>A.</strong> 3.00</li>
+<li><strong>B.</strong> 15.00</li>
+<li><strong>C.</strong> 5.00</li>
+<li><strong>D.</strong> 6.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 3.00</strong></p>
+<p>SE=15/5=3.00.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-21" class="level3">
+<h3 class="anchored" data-anchor-id="question-21">Question 21</h3>
+<p><strong>Week 3</strong></p>
+<p>A distribution has a long tail toward high scores. Which description is correct?</p>
+<ul>
+<li><strong>A.</strong> Negative skew; mean usually below median</li>
+<li><strong>B.</strong> Positive skew; mean usually above median</li>
+<li><strong>C.</strong> Positive skew; mean always below median</li>
+<li><strong>D.</strong> Symmetric; mean equals median</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Positive skew; mean usually above median</strong></p>
+<p>The tail points right, and high extreme values tend to pull the mean upward.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-22" class="level3">
+<h3 class="anchored" data-anchor-id="question-22">Question 22</h3>
+<p><strong>Week 2</strong></p>
+<p>For X={0,1,1,2,2,2,3,3,4,5}, what is the frequency of X=2?</p>
+<ul>
+<li><strong>A.</strong> 3</li>
+<li><strong>B.</strong> 4</li>
+<li><strong>C.</strong> 2</li>
+<li><strong>D.</strong> 10</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 3</strong></p>
+<p>The value 2 occurs 3 times.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-23" class="level3">
+<h3 class="anchored" data-anchor-id="question-23">Question 23</h3>
+<p><strong>Week 2</strong></p>
+<p>A whole-number score of 21 has which real limits?</p>
+<ul>
+<li><strong>A.</strong> 20.5 and 21.5</li>
+<li><strong>B.</strong> 20 and 22</li>
+<li><strong>C.</strong> 21 and 22</li>
+<li><strong>D.</strong> 19.5 and 22.5</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 20.5 and 21.5</strong></p>
+<p>The course convention extends 0.5 below and above the apparent whole-number score.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-24" class="level3">
+<h3 class="anchored" data-anchor-id="question-24">Question 24</h3>
+<p><strong>Week 5</strong></p>
+<p>A fair die is rolled once. What is P(1 or 2)?</p>
+<ul>
+<li><strong>A.</strong> 1/3</li>
+<li><strong>B.</strong> 1/6</li>
+<li><strong>C.</strong> 1/2</li>
+<li><strong>D.</strong> 2/3</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 1/3</strong></p>
+<p>The outcomes are mutually exclusive: 1/6+1/6=1/3.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-25" class="level3">
+<h3 class="anchored" data-anchor-id="question-25">Question 25</h3>
+<p><strong>Week 3</strong></p>
+<p>For X={8,10,10,12}, what is the sample variance approximately?</p>
+<ul>
+<li><strong>A.</strong> 2.67</li>
+<li><strong>B.</strong> 1.63</li>
+<li><strong>C.</strong> 8.00</li>
+<li><strong>D.</strong> 10.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 2.67</strong></p>
+<p>The mean is 10, SS=8, and s²=SS/(4-1)=2.67.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-26" class="level3">
+<h3 class="anchored" data-anchor-id="question-26">Question 26</h3>
+<p><strong>Week 4</strong></p>
+<p>For μ=90, σ=15, and X=105, what is z?</p>
+<ul>
+<li><strong>A.</strong> +1.00</li>
+<li><strong>B.</strong> -1.00</li>
+<li><strong>C.</strong> +2.00</li>
+<li><strong>D.</strong> +0.50</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. +1.00</strong></p>
+<p>The score is exactly one population SD above the mean.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-27" class="level3">
+<h3 class="anchored" data-anchor-id="question-27">Question 27</h3>
+<p><strong>Week 6</strong></p>
+<p>If the one-tail area beyond z=2.00 is .0228, what is the two-tailed p value?</p>
+<ul>
+<li><strong>A.</strong> .0456</li>
+<li><strong>B.</strong> .0228</li>
+<li><strong>C.</strong> .0114</li>
+<li><strong>D.</strong> .9544</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. .0456</strong></p>
+<p>Two-tailed p=2(.0228)=.0456.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-28" class="level3">
+<h3 class="anchored" data-anchor-id="question-28">Question 28</h3>
+<p><strong>Week 2</strong></p>
+<p>Age recorded as Young, Middle-aged, or Old is:</p>
+<ul>
+<li><strong>A.</strong> Nominal</li>
+<li><strong>B.</strong> Ordinal</li>
+<li><strong>C.</strong> Interval</li>
+<li><strong>D.</strong> Ratio</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Ordinal</strong></p>
+<p>The categories have a meaningful order but no equal unit spacing.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-29" class="level3">
+<h3 class="anchored" data-anchor-id="question-29">Question 29</h3>
+<p><strong>Week 5</strong></p>
+<p>Believing that black is ‘due’ after several red roulette outcomes is:</p>
+<ul>
+<li><strong>A.</strong> Law of Large Numbers</li>
+<li><strong>B.</strong> Gambler’s Fallacy</li>
+<li><strong>C.</strong> Sampling distribution</li>
+<li><strong>D.</strong> Type I error</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Gambler’s Fallacy</strong></p>
+<p>Independent prior outcomes do not make the opposite outcome due.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-30" class="level3">
+<h3 class="anchored" data-anchor-id="question-30">Question 30</h3>
+<p><strong>Week 4</strong></p>
+<p>For μ=90, σ=15, and X=60, what is z?</p>
+<ul>
+<li><strong>A.</strong> -2.00</li>
+<li><strong>B.</strong> -1.00</li>
+<li><strong>C.</strong> +1.00</li>
+<li><strong>D.</strong> +2.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-30" class="callout-30-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. -2.00</strong></p>
+<p>The score is exactly two population SDs below the mean.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-31" class="level3">
+<h3 class="anchored" data-anchor-id="question-31">Question 31</h3>
+<p><strong>Week 4</strong></p>
+<p>The area between the mean and z=1.00 is .3413. What is P(Z&lt;1.00)?</p>
+<ul>
+<li><strong>A.</strong> .8413</li>
+<li><strong>B.</strong> .1587</li>
+<li><strong>C.</strong> .3413</li>
+<li><strong>D.</strong> .6826</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-31" class="callout-31-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. .8413</strong></p>
+<p>.5000+.3413=.8413.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-32" class="level3">
+<h3 class="anchored" data-anchor-id="question-32">Question 32</h3>
+<p><strong>Week 1</strong></p>
+<p>A numerical value calculated from a sample is called a:</p>
+<ul>
+<li><strong>A.</strong> Parameter</li>
+<li><strong>B.</strong> Statistic</li>
+<li><strong>C.</strong> Population</li>
+<li><strong>D.</strong> Theory</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-32" class="callout-32-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Statistic</strong></p>
+<p>A statistic describes a sample; a parameter describes a population.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-33" class="level3">
+<h3 class="anchored" data-anchor-id="question-33">Question 33</h3>
+<p><strong>Week 6</strong></p>
+<p>For a two-tailed z test at α=.05, what are the critical values?</p>
+<ul>
+<li><strong>A.</strong> ±1.96</li>
+<li><strong>B.</strong> ±1.64</li>
+<li><strong>C.</strong> ±2.58</li>
+<li><strong>D.</strong> ±1.00</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-33" class="callout-33-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. ±1.96</strong></p>
+<p>A two-tailed .05 z test uses ±1.96.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-34" class="level3">
+<h3 class="anchored" data-anchor-id="question-34">Question 34</h3>
+<p><strong>Week 6</strong></p>
+<p>If Z_obt=2.00 in a two-tailed α=.05 test, what is the decision?</p>
+<ul>
+<li><strong>A.</strong> Reject H0</li>
+<li><strong>B.</strong> Fail to reject H0</li>
+<li><strong>C.</strong> Accept H0</li>
+<li><strong>D.</strong> Increase α</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-34" class="callout-34-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. Reject H0</strong></p>
+<p>|2.00| exceeds 1.96.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-35" class="level3">
+<h3 class="anchored" data-anchor-id="question-35">Question 35</h3>
+<p><strong>Week 1</strong></p>
+<p>What makes a scientific theory falsifiable?</p>
+<ul>
+<li><strong>A.</strong> It cannot be revised</li>
+<li><strong>B.</strong> Some possible observation could count against it</li>
+<li><strong>C.</strong> It always requires random assignment</li>
+<li><strong>D.</strong> It has already been proven true</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. Some possible observation could count against it</strong></p>
+<p>Falsifiability means evidence could in principle contradict the theory.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-36" class="level3">
+<h3 class="anchored" data-anchor-id="question-36">Question 36</h3>
+<p><strong>Week 3</strong></p>
+<p>If P75=46 and P25=28, what is the IQR?</p>
+<ul>
+<li><strong>A.</strong> 18</li>
+<li><strong>B.</strong> 72</li>
+<li><strong>C.</strong> 27</li>
+<li><strong>D.</strong> 45</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. 18</strong></p>
+<p>IQR=P75-P25, so the common shift cancels and the difference is 18.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-37" class="level3">
+<h3 class="anchored" data-anchor-id="question-37">Question 37</h3>
+<p><strong>Week 4</strong></p>
+<p>Which is a property of the normal distribution?</p>
+<ul>
+<li><strong>A.</strong> It is symmetric around its mean</li>
+<li><strong>B.</strong> Its total area exceeds 1</li>
+<li><strong>C.</strong> Its tails cross the x-axis</li>
+<li><strong>D.</strong> It is always bimodal</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-37" class="callout-37-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: A. It is symmetric around its mean</strong></p>
+<p>The normal distribution is symmetric around its mean.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="question-38" class="level3">
+<h3 class="anchored" data-anchor-id="question-38">Question 38</h3>
+<p><strong>Week 1</strong></p>
+<p>A researcher surveys 450 BC undergraduates to learn about all BC undergraduates. What is the sample?</p>
+<ul>
+<li><strong>A.</strong> All BC undergraduates</li>
+<li><strong>B.</strong> The 450 surveyed students</li>
+<li><strong>C.</strong> All Canadian students</li>
+<li><strong>D.</strong> Only students with high scores</li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-38" class="callout-38-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Correct answer: B. The 450 surveyed students</strong></p>
+<p>The sample is the subset actually observed.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="section-b-integrated-short-answer" class="level1">
+<h1>Section B — Integrated Short Answer</h1>
+<section id="integrated-problem-1" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-problem-1">Integrated Problem 1</h3>
+<p><strong>Weeks covered:</strong> 5</p>
+<p>A population has μ=50 and σ=12. Samples of n=36 are drawn.</p>
+<ol type="a">
+<li>State the mean of the sampling distribution.<br>
+</li>
+<li>Calculate the standard error.<br>
+</li>
+<li>A sample has x̄=54. Calculate its z score.<br>
+</li>
+<li>If the upper-tail area beyond z=2.00 is .0228, find P(x̄≥54).<br>
+</li>
+<li>Would x̄=54 be more or less unusual if n=9? Explain with a calculation.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>μ_x̄=50.<br>
+</li>
+<li>SE=12/sqrt(36)=2.<br>
+</li>
+<li>z=(54-50)/2=2.00.<br>
+</li>
+<li>P(x̄≥54)=.0228.<br>
+</li>
+<li>Less unusual. For n=9, SE=12/3=4 and z=(54-50)/4=1.00.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="integrated-problem-2" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-problem-2">Integrated Problem 2</h3>
+<p><strong>Weeks covered:</strong> 2, 3</p>
+<p>A dataset contains scores: 3, 5, 5, 6, 6, 6, 7, 10.</p>
+<ol type="a">
+<li>Construct the frequency values for each observed score.<br>
+</li>
+<li>Calculate the mean.<br>
+</li>
+<li>Find the median.<br>
+</li>
+<li>Find the mode.<br>
+</li>
+<li>Find the range.<br>
+</li>
+<li>Describe the likely direction of skew and state which measure of center is more resistant to the high score.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Frequencies: 3:1, 5:2, 6:3, 7:1, 10:1.<br>
+</li>
+<li>Mean = 48/8 = 6.<br>
+</li>
+<li>Median = 6.<br>
+</li>
+<li>Mode = 6.<br>
+</li>
+<li>Range = 10-3 = 7.<br>
+</li>
+<li>The high score creates a slight positive/rightward pull; the median is more resistant to that extreme value.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="integrated-problem-3" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-problem-3">Integrated Problem 3</h3>
+<p><strong>Weeks covered:</strong> 1, 5</p>
+<p>A researcher draws repeated random samples from a population.</p>
+<ol type="a">
+<li>Explain sampling error.<br>
+</li>
+<li>Define a sampling distribution of the mean.<br>
+</li>
+<li>State the three CLT properties emphasized in the course when n is sufficiently large.<br>
+</li>
+<li>Explain why increasing n reduces standard error.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Sampling error is natural sample-to-sample variation.<br>
+</li>
+<li>The sampling distribution is the distribution of all possible sample means for samples of a fixed size.<br>
+</li>
+<li>Approximately normal shape; center at μ; SD of sample means equals σ/sqrt(n).<br>
+</li>
+<li>n is in the denominator of SE=σ/sqrt(n), so larger n makes SE smaller.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="integrated-problem-4" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-problem-4">Integrated Problem 4</h3>
+<p><strong>Weeks covered:</strong> 1, 2</p>
+<p>A researcher predicts that background television reduces concentration. Sixty students are randomly assigned to study either with television or in silence. Concentration is measured as number of targets correctly identified.</p>
+<ol type="a">
+<li>State a reasonable research hypothesis.<br>
+</li>
+<li>Identify the independent and dependent variables.<br>
+</li>
+<li>Identify the research design.<br>
+</li>
+<li>Is number of targets nominal, ordinal, interval, or ratio?<br>
+</li>
+<li>Which graph would be appropriate for displaying the distribution of target counts?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Example: students studying with background television will identify fewer targets than students studying in silence.<br>
+</li>
+<li>IV: television condition; DV: number of targets correctly identified.<br>
+</li>
+<li>Experimental design.<br>
+</li>
+<li>Ratio scale (a count with a meaningful zero).<br>
+</li>
+<li>A histogram is appropriate for the quantitative score distribution.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="integrated-problem-5" class="level3">
+<h3 class="anchored" data-anchor-id="integrated-problem-5">Integrated Problem 5</h3>
+<p><strong>Weeks covered:</strong> 4, 5, 6</p>
+<p>A population has μ=100 and σ=15. Consider samples of n=25 and an observed sample mean x̄=106.</p>
+<ol type="a">
+<li>Calculate the raw-score z for an individual score X=106.<br>
+</li>
+<li>Calculate the standard error for sample means of n=25.<br>
+</li>
+<li>Calculate the sample-mean z for x̄=106.<br>
+</li>
+<li>Explain why the two z scores differ.<br>
+</li>
+<li>Which denominator belongs in the effect-size formula?</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled" title="Answer">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Answer
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-43" class="callout-43-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Raw-score z=(106-100)/15=.40.<br>
+</li>
+<li>SE=15/5=3.<br>
+</li>
+<li>Sample-mean z=(106-100)/3=2.00.<br>
+</li>
+<li>Individual scores vary by σ, while sample means vary by SE, which is smaller when n&gt;1.<br>
+</li>
+<li>Effect size uses the population SD σ, not SE.</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="coverage-check" class="level1">
+<h1>Coverage Check</h1>
+<p>This exam intentionally mixes all six weeks rather than presenting them in chronological order.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Week</th>
+<th>Core emphasis represented</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>Scientific reasoning, designs, populations/samples, notation</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>Measurement, frequency distributions, graph selection</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>Central tendency, variability, interpolation, skew</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>Normal distribution, z scores, z-table probability</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td>Probability, sampling distributions, CLT, SE</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td>NHST, p values, errors, power, effect size, CI</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="coverage-reminder" class="level1">
+<h1>Coverage Reminder</h1>
+<p>This exam includes all six weeks in mixed order.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const toc = document.querySelector("#TOC");
+  if (!toc) return;
+
+  const topLevelItems = Array.from(toc.querySelectorAll(":scope > ul > li"));
+
+  const parts = topLevelItems.filter((li) => {
+    const link = li.querySelector(":scope > a");
+    const childList = li.querySelector(":scope > ul");
+    return link && childList && /^Part\s+[IVXLCDM0-9]+\b/i.test(link.textContent.trim());
+  });
+
+  if (!parts.length) return;
+
+  function setOpen(li, open) {
+    const link = li.querySelector(":scope > a");
+    li.classList.toggle("is-open", open);
+    if (link) link.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  function openOnly(target) {
+    parts.forEach((li) => setOpen(li, li === target));
+  }
+
+  parts.forEach((li) => {
+    const link = li.querySelector(":scope > a");
+    li.classList.add("toc-collapsible-part");
+    link.classList.add("toc-part-link");
+    link.setAttribute("aria-expanded", "false");
+
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      const willOpen = !li.classList.contains("is-open");
+      if (willOpen) openOnly(li);
+      else setOpen(li, false);
+    });
+  });
+
+  function openPartForHash() {
+    if (!window.location.hash) return;
+    const matchingLink = Array.from(toc.querySelectorAll('a[href^="#"]'))
+      .find(a => a.getAttribute("href") === window.location.hash);
+    if (!matchingLink) return;
+
+    const part = matchingLink.closest("li.toc-collapsible-part");
+    if (part) openOnly(part);
+  }
+
+  openPartForHash();
+  window.addEventListener("hashchange", openPartForHash);
+
+  const observer = new MutationObserver(function () {
+    const active = toc.querySelector("a.active");
+    if (!active) return;
+    const part = active.closest("li.toc-collapsible-part");
+    if (part && !part.classList.contains("is-open")) openOnly(part);
+  });
+
+  observer.observe(toc, {
+    subtree: true,
+    attributes: true,
+    attributeFilter: ["class"]
+  });
+});
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>Data Analysis: Learning &amp; Teaching</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

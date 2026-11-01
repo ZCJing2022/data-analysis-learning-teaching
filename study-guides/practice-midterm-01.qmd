@@ -1,0 +1,827 @@
+---
+title: "Practice Midterm Exam 1 — Weeks 1–6"
+toc-depth: 2
+toc-title: "Practice Exam Contents"
+---
+
+# Exam Instructions
+
+**Recommended time: 120 minutes.**
+
+This practice examination is designed to simulate the PSYC 210 midterm and deliberately mixes material from Weeks 1–6.
+
+- **Section A:** 38 multiple-choice questions
+- **Section B:** 5 mixed Assignment-Style / Integrated problems
+- Try each item before opening its answer.
+- Each answer is hidden initially; click **Answer** to reveal it.
+- Use the course formula sheet and z table where appropriate.
+
+# Section A — Multiple Choice
+
+### Question 1
+
+**Week 1**
+
+A researcher randomly assigns participants to a quiet or noisy study condition and measures recall. What design is this?
+
+- **A.** Experimental
+- **B.** Quasi-experimental
+- **C.** Correlational
+- **D.** Case study
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Experimental**
+
+Random assignment plus manipulation makes this a true experiment.
+:::
+
+
+### Question 2
+
+**Week 6**
+
+Using μ=80, SE=3.00, and x̄=86.00, what is Z_obt?
+
+- **A.** 2.00
+- **B.** 1.00
+- **C.** 0.50
+- **D.** 3.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 2.00**
+
+The observed mean is exactly two standard errors above the null mean.
+:::
+
+
+### Question 3
+
+**Week 2**
+
+A variable ranges from 12 to 92 and is divided into 10 bins. What is the raw bin width?
+
+- **A.** 8
+- **B.** 10
+- **C.** 6
+- **D.** 12
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 8**
+
+(92-12)/10 = 8.
+:::
+
+
+### Question 4
+
+**Week 5**
+
+Two independent fair coins are flipped. What is P(two Heads)?
+
+- **A.** .25
+- **B.** .50
+- **C.** .75
+- **D.** 1.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .25**
+
+.5×.5=.25.
+:::
+
+
+### Question 5
+
+**Week 1**
+
+Given X={4,7,5,9,6,8}, what is Σxᵢ from i=2 through i=5?
+
+- **A.** 27
+- **B.** 29
+- **C.** 25
+- **D.** 39
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 27**
+
+The required values are [7, 5, 9, 6], which sum to 27.
+:::
+
+
+### Question 6
+
+**Week 1**
+
+Which statement is inferential?
+
+- **A.** The sample mean was 18.4
+- **B.** The sample contained 75 students
+- **C.** University students generally have mean stress above 18
+- **D.** The largest observed score was 31
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: C. University students generally have mean stress above 18**
+
+Inferential statistics generalize from a sample to a wider population.
+:::
+
+
+### Question 7
+
+**Week 5**
+
+Which pair is dependent?
+
+- **A.** Two fair coin flips
+- **B.** Two die rolls
+- **C.** Two card draws with replacement
+- **D.** Two card draws without replacement
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: D. Two card draws without replacement**
+
+Without replacement, the first draw changes the remaining composition.
+:::
+
+
+### Question 8
+
+**Week 4**
+
+The area between the mean and z=.50 is .1915. What is P(Z<-.50)?
+
+- **A.** .3085
+- **B.** .1915
+- **C.** .5000
+- **D.** .6915
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .3085**
+
+.5000-.1915=.3085.
+:::
+
+
+### Question 9
+
+**Week 3**
+
+For X={3,4,4,5,9}, what is the mean?
+
+- **A.** 5.0
+- **B.** 6.0
+- **C.** 4.0
+- **D.** 25
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 5.0**
+
+The sum is 25 and 25/5 = 5.0.
+:::
+
+
+### Question 10
+
+**Week 2**
+
+For the same data, what is the cumulative frequency at X=2?
+
+- **A.** 6
+- **B.** 3
+- **C.** 7
+- **D.** 10
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 6**
+
+There are 6 observations equal to 2 or less.
+:::
+
+
+### Question 11
+
+**Week 6**
+
+For a nondirectional test of whether a treatment changes μ from 80, which hypotheses are correct?
+
+- **A.** H0: μ=80; H1: μ≠80
+- **B.** H0: μ≠80; H1: μ=80
+- **C.** H0: x̄=80; H1: x̄≠80
+- **D.** H0: μ>80; H1: μ<80
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. H0: μ=80; H1: μ≠80**
+
+The hypotheses concern the population mean and a nondirectional alternative uses ≠.
+:::
+
+
+### Question 12
+
+**Week 1**
+
+For the first three values of X={4,7,5}, which pair is correct?
+
+- **A.** ΣX²=90; (ΣX)²=256
+- **B.** ΣX²=256; (ΣX)²=90
+- **C.** Both equal 90
+- **D.** Both equal 256
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. ΣX²=90; (ΣX)²=256**
+
+ΣX² means square each score then sum; (ΣX)² means sum first, then square.
+:::
+
+
+### Question 13
+
+**Week 5**
+
+With μ=55, SE=4.50, and x̄=64.00, what is the sample-mean z score?
+
+- **A.** 2.00
+- **B.** 1.00
+- **C.** 0.50
+- **D.** 3.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 2.00**
+
+The sample mean is two standard errors above μ.
+:::
+
+
+### Question 14
+
+**Week 3**
+
+Group A has n=15, mean=9; Group B has n=30, mean=15. What is the combined mean?
+
+- **A.** 13.00
+- **B.** 12.00
+- **C.** 15.00
+- **D.** 9.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 13.00**
+
+The combined mean weights each group mean by its sample size.
+:::
+
+
+### Question 15
+
+**Week 5**
+
+If σ=18 and n=16, what is the standard error?
+
+- **A.** 4.50
+- **B.** 18.00
+- **C.** 4.00
+- **D.** 9.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 4.50**
+
+SE=σ/√n=18/4=4.50.
+:::
+
+
+### Question 16
+
+**Week 2**
+
+Which variable is ratio-scaled?
+
+- **A.** Celsius temperature
+- **B.** Class rank
+- **C.** Reaction time in milliseconds
+- **D.** Eye colour
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: C. Reaction time in milliseconds**
+
+Reaction time has equal units and a meaningful zero.
+:::
+
+
+### Question 17
+
+**Week 3**
+
+Which measure of center is most resistant to one extreme high outlier?
+
+- **A.** Mean
+- **B.** Median
+- **C.** Variance
+- **D.** Range
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Median**
+
+The median depends mainly on rank and is resistant to the magnitude of an extreme score.
+:::
+
+
+### Question 18
+
+**Week 4**
+
+For a normal distribution with μ=90 and σ=15, where are the inflection points?
+
+- **A.** 75 and 105
+- **B.** 60 and 120
+- **C.** 90 and 105
+- **D.** 75 and 90
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 75 and 105**
+
+Normal-curve inflection points occur at μ±1σ.
+:::
+
+
+### Question 19
+
+**Week 6**
+
+For x̄=86.00, μ=80, and σ=15, what is the effect size ES?
+
+- **A.** 0.400
+- **B.** 2.000
+- **C.** 3.000
+- **D.** 6.000
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 0.400**
+
+ES=(x̄-μ)/σ=6.00/15=0.400.
+:::
+
+
+### Question 20
+
+**Week 6**
+
+For σ=15 and n=25, what is SE?
+
+- **A.** 3.00
+- **B.** 15.00
+- **C.** 5.00
+- **D.** 6.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 3.00**
+
+SE=15/5=3.00.
+:::
+
+
+### Question 21
+
+**Week 3**
+
+A distribution has a long tail toward high scores. Which description is correct?
+
+- **A.** Negative skew; mean usually below median
+- **B.** Positive skew; mean usually above median
+- **C.** Positive skew; mean always below median
+- **D.** Symmetric; mean equals median
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Positive skew; mean usually above median**
+
+The tail points right, and high extreme values tend to pull the mean upward.
+:::
+
+
+### Question 22
+
+**Week 2**
+
+For X={0,1,1,2,2,2,3,3,4,5}, what is the frequency of X=2?
+
+- **A.** 3
+- **B.** 4
+- **C.** 2
+- **D.** 10
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 3**
+
+The value 2 occurs 3 times.
+:::
+
+
+### Question 23
+
+**Week 2**
+
+A whole-number score of 21 has which real limits?
+
+- **A.** 20.5 and 21.5
+- **B.** 20 and 22
+- **C.** 21 and 22
+- **D.** 19.5 and 22.5
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 20.5 and 21.5**
+
+The course convention extends 0.5 below and above the apparent whole-number score.
+:::
+
+
+### Question 24
+
+**Week 5**
+
+A fair die is rolled once. What is P(1 or 2)?
+
+- **A.** 1/3
+- **B.** 1/6
+- **C.** 1/2
+- **D.** 2/3
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 1/3**
+
+The outcomes are mutually exclusive: 1/6+1/6=1/3.
+:::
+
+
+### Question 25
+
+**Week 3**
+
+For X={8,10,10,12}, what is the sample variance approximately?
+
+- **A.** 2.67
+- **B.** 1.63
+- **C.** 8.00
+- **D.** 10.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 2.67**
+
+The mean is 10, SS=8, and s²=SS/(4-1)=2.67.
+:::
+
+
+### Question 26
+
+**Week 4**
+
+For μ=90, σ=15, and X=105, what is z?
+
+- **A.** +1.00
+- **B.** -1.00
+- **C.** +2.00
+- **D.** +0.50
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. +1.00**
+
+The score is exactly one population SD above the mean.
+:::
+
+
+### Question 27
+
+**Week 6**
+
+If the one-tail area beyond z=2.00 is .0228, what is the two-tailed p value?
+
+- **A.** .0456
+- **B.** .0228
+- **C.** .0114
+- **D.** .9544
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .0456**
+
+Two-tailed p=2(.0228)=.0456.
+:::
+
+
+### Question 28
+
+**Week 2**
+
+Age recorded as Young, Middle-aged, or Old is:
+
+- **A.** Nominal
+- **B.** Ordinal
+- **C.** Interval
+- **D.** Ratio
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Ordinal**
+
+The categories have a meaningful order but no equal unit spacing.
+:::
+
+
+### Question 29
+
+**Week 5**
+
+Believing that black is 'due' after several red roulette outcomes is:
+
+- **A.** Law of Large Numbers
+- **B.** Gambler's Fallacy
+- **C.** Sampling distribution
+- **D.** Type I error
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Gambler's Fallacy**
+
+Independent prior outcomes do not make the opposite outcome due.
+:::
+
+
+### Question 30
+
+**Week 4**
+
+For μ=90, σ=15, and X=60, what is z?
+
+- **A.** -2.00
+- **B.** -1.00
+- **C.** +1.00
+- **D.** +2.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. -2.00**
+
+The score is exactly two population SDs below the mean.
+:::
+
+
+### Question 31
+
+**Week 4**
+
+The area between the mean and z=1.00 is .3413. What is P(Z<1.00)?
+
+- **A.** .8413
+- **B.** .1587
+- **C.** .3413
+- **D.** .6826
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .8413**
+
+.5000+.3413=.8413.
+:::
+
+
+### Question 32
+
+**Week 1**
+
+A numerical value calculated from a sample is called a:
+
+- **A.** Parameter
+- **B.** Statistic
+- **C.** Population
+- **D.** Theory
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Statistic**
+
+A statistic describes a sample; a parameter describes a population.
+:::
+
+
+### Question 33
+
+**Week 6**
+
+For a two-tailed z test at α=.05, what are the critical values?
+
+- **A.** ±1.96
+- **B.** ±1.64
+- **C.** ±2.58
+- **D.** ±1.00
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. ±1.96**
+
+A two-tailed .05 z test uses ±1.96.
+:::
+
+
+### Question 34
+
+**Week 6**
+
+If Z_obt=2.00 in a two-tailed α=.05 test, what is the decision?
+
+- **A.** Reject H0
+- **B.** Fail to reject H0
+- **C.** Accept H0
+- **D.** Increase α
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Reject H0**
+
+|2.00| exceeds 1.96.
+:::
+
+
+### Question 35
+
+**Week 1**
+
+What makes a scientific theory falsifiable?
+
+- **A.** It cannot be revised
+- **B.** Some possible observation could count against it
+- **C.** It always requires random assignment
+- **D.** It has already been proven true
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. Some possible observation could count against it**
+
+Falsifiability means evidence could in principle contradict the theory.
+:::
+
+
+### Question 36
+
+**Week 3**
+
+If P75=46 and P25=28, what is the IQR?
+
+- **A.** 18
+- **B.** 72
+- **C.** 27
+- **D.** 45
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 18**
+
+IQR=P75-P25, so the common shift cancels and the difference is 18.
+:::
+
+
+### Question 37
+
+**Week 4**
+
+Which is a property of the normal distribution?
+
+- **A.** It is symmetric around its mean
+- **B.** Its total area exceeds 1
+- **C.** Its tails cross the x-axis
+- **D.** It is always bimodal
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. It is symmetric around its mean**
+
+The normal distribution is symmetric around its mean.
+:::
+
+
+### Question 38
+
+**Week 1**
+
+A researcher surveys 450 BC undergraduates to learn about all BC undergraduates. What is the sample?
+
+- **A.** All BC undergraduates
+- **B.** The 450 surveyed students
+- **C.** All Canadian students
+- **D.** Only students with high scores
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: B. The 450 surveyed students**
+
+The sample is the subset actually observed.
+:::
+
+
+# Section B — Integrated Short Answer
+
+### Integrated Problem 1
+
+**Weeks covered:** 5
+
+A population has μ=50 and σ=12. Samples of n=36 are drawn.
+
+a. State the mean of the sampling distribution.  
+b. Calculate the standard error.  
+c. A sample has x̄=54. Calculate its z score.  
+d. If the upper-tail area beyond z=2.00 is .0228, find P(x̄≥54).  
+e. Would x̄=54 be more or less unusual if n=9? Explain with a calculation.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. μ_x̄=50.  
+b. SE=12/sqrt(36)=2.  
+c. z=(54-50)/2=2.00.  
+d. P(x̄≥54)=.0228.  
+e. Less unusual. For n=9, SE=12/3=4 and z=(54-50)/4=1.00.
+:::
+
+
+### Integrated Problem 2
+
+**Weeks covered:** 2, 3
+
+A dataset contains scores: 3, 5, 5, 6, 6, 6, 7, 10.
+
+a. Construct the frequency values for each observed score.  
+b. Calculate the mean.  
+c. Find the median.  
+d. Find the mode.  
+e. Find the range.  
+f. Describe the likely direction of skew and state which measure of center is more resistant to the high score.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Frequencies: 3:1, 5:2, 6:3, 7:1, 10:1.  
+b. Mean = 48/8 = 6.  
+c. Median = 6.  
+d. Mode = 6.  
+e. Range = 10-3 = 7.  
+f. The high score creates a slight positive/rightward pull; the median is more resistant to that extreme value.
+:::
+
+
+### Integrated Problem 3
+
+**Weeks covered:** 1, 5
+
+A researcher draws repeated random samples from a population.
+
+a. Explain sampling error.  
+b. Define a sampling distribution of the mean.  
+c. State the three CLT properties emphasized in the course when n is sufficiently large.  
+d. Explain why increasing n reduces standard error.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Sampling error is natural sample-to-sample variation.  
+b. The sampling distribution is the distribution of all possible sample means for samples of a fixed size.  
+c. Approximately normal shape; center at μ; SD of sample means equals σ/sqrt(n).  
+d. n is in the denominator of SE=σ/sqrt(n), so larger n makes SE smaller.
+:::
+
+
+### Integrated Problem 4
+
+**Weeks covered:** 1, 2
+
+A researcher predicts that background television reduces concentration. Sixty students are randomly assigned to study either with television or in silence. Concentration is measured as number of targets correctly identified.
+
+a. State a reasonable research hypothesis.  
+b. Identify the independent and dependent variables.  
+c. Identify the research design.  
+d. Is number of targets nominal, ordinal, interval, or ratio?  
+e. Which graph would be appropriate for displaying the distribution of target counts?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Example: students studying with background television will identify fewer targets than students studying in silence.  
+b. IV: television condition; DV: number of targets correctly identified.  
+c. Experimental design.  
+d. Ratio scale (a count with a meaningful zero).  
+e. A histogram is appropriate for the quantitative score distribution.
+:::
+
+
+### Integrated Problem 5
+
+**Weeks covered:** 4, 5, 6
+
+A population has μ=100 and σ=15. Consider samples of n=25 and an observed sample mean x̄=106.
+
+a. Calculate the raw-score z for an individual score X=106.  
+b. Calculate the standard error for sample means of n=25.  
+c. Calculate the sample-mean z for x̄=106.  
+d. Explain why the two z scores differ.  
+e. Which denominator belongs in the effect-size formula?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Raw-score z=(106-100)/15=.40.  
+b. SE=15/5=3.  
+c. Sample-mean z=(106-100)/3=2.00.  
+d. Individual scores vary by σ, while sample means vary by SE, which is smaller when n>1.  
+e. Effect size uses the population SD σ, not SE.
+:::
+
+
+# Coverage Check
+
+This exam intentionally mixes all six weeks rather than presenting them in chronological order.
+
+| Week | Core emphasis represented |
+|---:|---|
+| 1 | Scientific reasoning, designs, populations/samples, notation |
+| 2 | Measurement, frequency distributions, graph selection |
+| 3 | Central tendency, variability, interpolation, skew |
+| 4 | Normal distribution, z scores, z-table probability |
+| 5 | Probability, sampling distributions, CLT, SE |
+| 6 | NHST, p values, errors, power, effect size, CI |
+
+# Coverage Reminder
+
+This exam includes all six weeks in mixed order.

@@ -17,3 +17,10 @@ The Study Guides are organized by major course subject. Each guide will be devel
 9. [Week 09 — Introduction to Correlation](week09-correlation.qmd)
 10. [Week 10 — Introduction to Regression](week10-regression.qmd)
 11. [Week 11 — Categorical Data Analysis / Course Wrap-Up](week11-categorical-data.qmd)
+
+
+## Practice Midterm Exams
+
+- [Practice Midterm Exam 1 — Weeks 1–6](practice-midterm-01.qmd)
+- [Practice Midterm Exam 2 — Weeks 1–6](practice-midterm-02.qmd)
+- [Practice Midterm Exam 3 — Weeks 1–6](practice-midterm-03.qmd)
