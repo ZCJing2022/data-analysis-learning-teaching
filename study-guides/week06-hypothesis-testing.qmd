@@ -1850,218 +1850,303 @@ $$
 
 ## Assignment-Style Practice
 
-### Question 1 — Setting up NHST (/4)
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
 
-A population has:
+### Question 1 — Statistical hypotheses (/3)
 
+**Multiple Choice**
 
-$$
-\mu=80,\qquad \sigma=12.
-$$
+For a nondirectional test of whether a treatment changes a population mean from 100, which hypotheses are correct?
 
+- **A.** H0: mu=100; H1: mu≠100
+- **B.** H0: mu≠100; H1: mu=100
+- **C.** H0: xbar=100; H1: xbar≠100
+- **D.** H0: mu>100; H1: mu<100
 
-A researcher tests whether a training program changes scores in either direction.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. H0: mu=100; H1: mu≠100**
 
-a. State $H_0$.  
-b. State $H_1$.  
-c. Is the test one-tailed or two-tailed?  
-d. At $\alpha=.05$, what are the critical z values?
+The hypotheses are statements about the population mean.
+:::
 
-### Question 2 — Complete one-sample z test (/6)
 
-For the same population, a sample of:
+### Question 2 — One-tailed alternative (/2)
 
+**Multiple Choice**
 
-$$
-n=36
-$$
+If the researcher predicts specifically that the population mean will increase above 100, which alternative is correct?
 
+- **A.** H1: mu>100
+- **B.** H1: mu<100
+- **C.** H1: mu=100
+- **D.** H1: xbar>100 only
 
-has:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. H1: mu>100**
 
+A directional increase is represented by mu>100.
+:::
 
-$$
-\bar{x}=84.
-$$
 
+### Question 3 — Alpha (/2)
 
-a. Calculate the standard error.  
-b. Calculate $Z_{obt}$.  
-c. Make the decision at $\alpha=.05$, two-tailed.  
-d. Is the result statistically significant?  
-e. If the one-tail area beyond $|z|=2.00$ is .0228, calculate the two-tailed p value.  
-f. State the result in plain English.
+**Multiple Choice**
 
-### Question 3 — Effect size (/3)
+In this course, alpha=.05 primarily sets:
 
-Using Question 2:
+- **A.** The rejection threshold and Type I error rate
+- **B.** The effect size
+- **C.** The sample mean
+- **D.** The Type II error rate directly
 
-a. Calculate the effect size.  
-b. Classify it using the course benchmarks.  
-c. Explain why effect size answers a different question from statistical significance.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. The rejection threshold and Type I error rate**
 
-### Question 4 — Confidence interval (/4)
+Alpha sets the tolerated tail probability under H0 and the Type I error rate.
+:::
 
-Using Question 2:
 
-a. Calculate the 95% CI.  
-b. Does the null value $\mu=80$ fall inside the CI?  
-c. Is that consistent with the NHST decision?  
-d. State the repeated-sampling interpretation of a 95% CI.
+### Question 4 — Critical values (/2)
 
-### Question 5 — Errors (/4)
+**Multiple Choice**
 
-For each situation, identify the outcome.
+For a two-tailed z test with alpha=.05, what are the critical values?
 
-a. $H_0$ is true and the researcher rejects it.  
-b. $H_0$ is false and the researcher fails to reject it.  
-c. $H_0$ is true and the researcher fails to reject it.  
-d. $H_0$ is false and the researcher rejects it.
+- **A.** ±1.96
+- **B.** ±1.64
+- **C.** ±2.58
+- **D.** ±1.00
 
-### Question 6 — Power (/4)
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. ±1.96**
 
-State whether power increases or decreases when:
+A two-tailed .05 z test uses ±1.96.
+:::
 
-a. sample size increases;  
-b. alpha increases;  
-c. population standard deviation increases;  
-d. effect size increases.
 
-## Answers
+### Question 5 — Raw critical boundaries (/4)
 
-### Question 1
+**Multiple Choice**
 
-a.
+For mu=100, sigma=15, n=25, what is the standard error?
 
+- **A.** 3
+- **B.** 15
+- **C.** 5
+- **D.** 0.60
 
-$$
-H_0:\mu=80.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 3**
 
+SE=15/sqrt(25)=3.
+:::
 
-b.
 
+### Question 6 — Obtained z (/3)
 
-$$
-H_1:\mu\ne80.
-$$
+**Multiple Choice**
 
+Using mu=100, SE=3, and xbar=106, what is Z_obt?
 
-c. Two-tailed.  
-d.
+- **A.** 2.00
+- **B.** 1.00
+- **C.** 3.00
+- **D.** 0.50
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 2.00**
 
-$$
-Z_{crit}=\pm1.96.
-$$
+(106-100)/3=2.
+:::
 
 
-### Question 2
+### Question 7 — Decision (/2)
 
-a.
+**Multiple Choice**
 
+If Z_obt=2.00 in a two-tailed alpha=.05 test, what is the decision?
 
-$$
-SE
-=
-\frac{12}{\sqrt{36}}
-=
-2.
-$$
+- **A.** Reject H0
+- **B.** Fail to reject H0
+- **C.** Accept H0
+- **D.** Cannot decide
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Reject H0**
 
-b.
+|2.00| exceeds 1.96.
+:::
 
 
-$$
-Z_{obt}
-=
-\frac{84-80}{2}
-=
-2.00.
-$$
+### Question 8 — p value (/2)
 
+**Multiple Choice**
 
-c. Because:
+If the one-tail area beyond z=2.00 is .0228, what is the two-tailed p value?
 
+- **A.** .0456
+- **B.** .0228
+- **C.** .9544
+- **D.** .0114
 
-$$
-|2.00|>1.96,
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .0456**
 
+Double the one-tail area: 2(.0228)=.0456.
+:::
 
-reject $H_0$.
 
-d. Yes, statistically significant at $\alpha=.05$.
+### Question 9 — Type I (/2)
 
-e.
+**Multiple Choice**
 
+A Type I error occurs when a researcher:
 
-$$
-p=2(.0228)=.0456.
-$$
+- **A.** Rejects a true H0
+- **B.** Fails to reject a false H0
+- **C.** Rejects a false H0
+- **D.** Fails to reject a true H0
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Rejects a true H0**
 
-f. The sample mean is sufficiently unlikely under the null model to reject the hypothesis that the population mean remains 80; the training program is associated with a statistically significant difference.
+Type I error means rejecting H0 when it is actually true.
+:::
 
-### Question 3
 
-a.
+### Question 10 — Type II (/2)
 
+**Multiple Choice**
 
-$$
-ES
-=
-\frac{84-80}{12}
-=
-0.333.
-$$
+A Type II error occurs when a researcher:
 
+- **A.** Fails to reject a false H0
+- **B.** Rejects a true H0
+- **C.** Rejects a false H0
+- **D.** Fails to reject a true H0
 
-b. Small effect using the course benchmarks.  
-c. Significance evaluates how incompatible the data are with the null model; effect size describes how large the standardized mean difference is.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Fails to reject a false H0**
 
-### Question 4
+Type II error means failing to reject H0 when it is false.
+:::
 
-a.
 
+### Question 11 — Power (/2)
 
-$$
-CI
-=
-84
-\pm
-1.96(2)
-=
-84\pm3.92.
-$$
+Define power and write it in terms of $\beta$.
 
+::: {.callout-tip collapse="true" title="Answer"}
+Correctly rejecting a false $H_0$; $1-\beta$.
+:::
 
-Therefore:
 
+### Question 12 — Power factors (/4)
 
-$$
-CI=[80.08,87.92].
-$$
+Power: increase or decrease when
+a. $n$ increases
+b. $\alpha$ increases
+c. $\sigma$ increases
+d. effect size increases?
 
-
-b. No.  
-c. Yes. The corresponding two-tailed test rejects $H_0$.  
-d. Across repeated sampling, about 95% of intervals constructed with this procedure would contain the population mean.
-
-### Question 5
-
-a. Type I error.  
-b. Type II error.  
-c. Correct decision, probability $1-\alpha$.  
-d. Correct rejection; this contributes to power, $1-\beta$.
-
-### Question 6
-
-a. Increases.  
-b. Increases.  
-c. Decreases.  
+::: {.callout-tip collapse="true" title="Answer"}
+a. Increases.
+b. Increases.
+c. Decreases.
 d. Increases.
+:::
+
+
+### Question 13 — Effect size (/3)
+
+$\bar X=106,\mu=100,\sigma=15$. Calculate ES.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$ES=(106-100)/15=.40$.
+:::
+
+
+### Question 14 — Interpret ES (/2)
+
+Interpret ES from Question 13 relative to the course benchmarks.
+
+::: {.callout-tip collapse="true" title="Answer"}
+Between the small and medium reference values; describe cautiously as small-to-moderate.
+:::
+
+
+### Question 15 — 95% CI (/4)
+
+$\bar X=106,SE=3,z_{crit}=1.96$. Calculate CI.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$106\pm1.96(3)=106\pm5.88=[100.12,111.88]$.
+:::
+
+
+### Question 16 — CI and NHST (/2)
+
+Does $\mu=100$ fall inside the CI? Is this consistent with the NHST decision?
+
+::: {.callout-tip collapse="true" title="Answer"}
+100 is just outside; yes, consistent with rejecting $H_0$.
+:::
+
+
+### Question 17 — Fail to reject (/2)
+
+Why does fail to reject not prove $H_0$ true?
+
+::: {.callout-tip collapse="true" title="Answer"}
+It means evidence was insufficient to reject the model, not that the model has been proven true.
+:::
+
+
+### Question 18 — Sample size and significance (/3)
+
+Same mean difference, one study much larger $n$:
+a. smaller SE?
+b. larger $|z|$?
+c. greater power?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Larger-$n$ study.
+b. Larger-$n$ study.
+c. Larger-$n$ study.
+:::
+
+
+### Question 19 — One vs two tails (/3)
+
+Why can a justified one-tailed test have more power in the predicted direction?
+
+::: {.callout-tip collapse="true" title="Answer"}
+All of $\alpha$ is placed in one tail, reducing the critical threshold in the predicted direction.
+:::
+
+
+### Question 20 — Complete NHST problem (/8)
+
+Known population: $\mu=80,\sigma=12$. Sample: $n=36,\bar X=84$. Two-tailed $\alpha=.05$, $z_{crit}=\pm1.96$.
+a. hypotheses
+b. SE
+c. $Z_{obt}$
+d. decision
+e. p if one-tail area at $z=2$ is .0228
+f. effect size
+g. 95% CI
+h. plain-language conclusion.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. $H_0:\mu=80$, $H_1:\mu\ne80$.
+b. $SE=12/6=2$.
+c. $Z_{obt}=(84-80)/2=2$.
+d. Reject $H_0$.
+e. $.0456$.
+f. $ES=4/12=.333$.
+g. $84\pm1.96(2)=[80.08,87.92]$.
+h. The sample mean is sufficiently unlikely under the null model to reject the claim that the population mean remains 80; the treatment is associated with a statistically significant difference.
+:::
 
 ## Midterm Self-Check
 

@@ -1048,108 +1048,299 @@ There is no special Week 1 formula block beyond the notation that will reappear 
 
 ## Assignment-Style Practice
 
-### Question 1 — Summation notation (/6)
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
 
-Given:
+### Question 1 — Goals of science (/2)
 
+**Multiple Choice**
 
-$$
-x_i=\{5,8,4,7,6\},
-$$
+Which statement best describes the scientific goal illustrated by observing that longer sleep is associated with better concentration?
 
+- **A.** Describing a regularity or co-occurrence
+- **B.** Proving a causal mechanism
+- **C.** Calculating a population parameter
+- **D.** Randomly assigning participants
 
-calculate:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Describing a regularity or co-occurrence**
 
-a. $\sum x_i$  
-b. $\sum x_i^2$  
-c. $[\sum x_i]^2$  
-d. $\sum(x_i+2)$  
-e. $\sum_{i=2}^{4}x_i$  
-f. $\sum_{i=2}^{4}(2x_i)$
-
-### Question 2 — Design logic (/3)
-
-A researcher randomly assigns participants to either a caffeine condition or a placebo condition and then measures reaction time.
-
-a. What type of research design is this?  
-b. What feature makes it possible to make a stronger cause-and-effect claim?  
-c. What is the dependent variable?
-
-### Question 3 — Descriptive or inferential? (/2)
-
-A sample of 120 SFU students has a mean sleep duration of 6.7 hours.
-
-a. “The 120 students in this sample slept an average of 6.7 hours.” Is this descriptive or inferential?  
-b. “SFU students generally sleep fewer than 7 hours per night.” Is this descriptive or inferential?
-
-### Question 4 — Population and sample (/2)
-
-A psychologist wants to study test anxiety among all first-year university students in British Columbia and surveys 400 first-year students from four universities.
-
-a. What is the population?  
-b. What is the sample?
-
-### Question 5 — Variable notation (/2)
-
-Using:
+The observation describes a recurring association; it does not by itself establish causation.
+:::
 
 
-$$
-X=\{12,9,15,11,8,14\},
-$$
+### Question 2 — Theory and falsifiability (/2)
+
+**Multiple Choice**
+
+What does it mean for a theory to be falsifiable?
+
+- **A.** Some possible observation could count against it
+- **B.** It has already been proven true
+- **C.** It can never be revised
+- **D.** It must contain an equation
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Some possible observation could count against it**
+
+A falsifiable theory makes predictions that evidence could contradict.
+:::
 
 
-a. What is $x_3$?  
-b. What is $\sum_{i=2}^{5}x_i$?
+### Question 3 — Variables (/3)
 
-### Question 6 — Order of operations (/2)
+**Multiple Choice**
+
+A psychologist studies whether instrumental music while studying affects later memory. Which pairing is correct?
+
+- **A.** IV: music condition; DV: memory performance
+- **B.** IV: memory performance; DV: music condition
+- **C.** IV: study time; DV: music condition
+- **D.** IV: age; DV: music condition
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. IV: music condition; DV: memory performance**
+
+The study condition is the predictor/manipulation; memory is the outcome.
+:::
+
+
+### Question 4 — Operational definition (/2)
+
+**Multiple Choice**
+
+Which is the best operational definition of test anxiety?
+
+- **A.** Score on a specified anxiety questionnaire administered before an exam
+- **B.** A general belief that exams are stressful
+- **C.** A theory that anxiety reduces grades
+- **D.** A description of anxious behavior in society
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Score on a specified anxiety questionnaire administered before an exam**
+
+An operational definition specifies exactly how the construct will be measured.
+:::
+
+
+### Question 5 — Experimental design (/3)
+
+**Multiple Choice**
+
+Participants are randomly assigned to mindfulness training or control and then stress is measured. What design is this?
+
+- **A.** Experimental
+- **B.** Quasi-experimental
+- **C.** Correlational
+- **D.** Case study
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Experimental**
+
+Random assignment plus manipulation makes this an experiment.
+:::
+
+
+### Question 6 — Quasi-experimental design (/2)
+
+**Multiple Choice**
+
+Students voluntarily choose whether to enroll in meditation training, and stress is compared later. Which design is closest?
+
+- **A.** Quasi-experimental
+- **B.** True experimental
+- **C.** Purely descriptive
+- **D.** Randomized controlled trial
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Quasi-experimental**
+
+Self-selection means there is no random assignment.
+:::
+
+
+### Question 7 — Correlational design (/2)
+
+**Multiple Choice**
+
+A researcher measures social-media use and loneliness without manipulation. What can the study establish?
+
+- **A.** Association but not causation
+- **B.** A causal effect
+- **C.** Random assignment
+- **D.** A population parameter directly
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Association but not causation**
+
+A correlational design can establish association but not causation by itself.
+:::
+
+
+### Question 8 — Descriptive vs. inferential (/2)
+
+**Multiple Choice**
+
+Which statement is inferential?
+
+- **A.** University students generally have mean stress above 18
+- **B.** The 80 sampled students had mean stress 18.2
+- **C.** The sample had 80 participants
+- **D.** Forty participants were in each group
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. University students generally have mean stress above 18**
+
+It generalizes beyond the observed sample.
+:::
+
+
+### Question 9 — Population and sample (/2)
+
+**Multiple Choice**
+
+A researcher wants to study all BC undergraduates and surveys 600. What is the population?
+
+- **A.** All BC undergraduates
+- **B.** The 600 surveyed students
+- **C.** The five sampled universities
+- **D.** Only respondents with complete data
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. All BC undergraduates**
+
+The population is the entire target group.
+:::
+
+
+### Question 10 — Parameter and statistic (/2)
+
+**Multiple Choice**
+
+The sample mean stress score is 21.4. What is 21.4?
+
+- **A.** A statistic
+- **B.** A parameter
+- **C.** A population
+- **D.** A hypothesis
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. A statistic**
+
+A number computed from a sample is a statistic.
+:::
+
+
+### Question 11 — Indexed notation (/2)
+
+Given $X=\{11,7,14,9,12,6\}$, find $x_4$ and $x_6$.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$x_4=9$; $x_6=6$.
+:::
+
+
+### Question 12 — Restricted summation (/2)
+
+Using the same data, calculate $\sum_{i=2}^{5}x_i$.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$7+14+9+12=42$.
+:::
+
+
+### Question 13 — Sum first vs. square first (/4)
+
+Given $X=\{2,4,5\}$, calculate:
+a. $(\sum X)^2$
+b. $\sum X^2$
+c. Are they equal?
+d. Explain why.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. $(2+4+5)^2=121$.
+b. $2^2+4^2+5^2=45$.
+c. No.
+d. One squares after summing; the other squares each score before summing.
+:::
+
+
+### Question 14 — Paired products (/2)
+
+Given $X=\{2,3,5\}$ and $Y=\{4,1,2\}$, calculate $\sum X_iY_i$.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$(2)(4)+(3)(1)+(5)(2)=21$.
+:::
+
+
+### Question 15 — Sum of differences (/2)
+
+Using Question 14, calculate $\sum(X_i-Y_i)$.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$(2-4)+(3-1)+(5-2)=3$.
+:::
+
+
+### Question 16 — Constant inside a summation (/2)
+
+Given $X=\{3,6,8,2\}$, calculate $\sum(X_i+3)$. Explain why adding 3 only once to $\sum X$ is wrong.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$(3+3)+(6+3)+(8+3)+(2+3)=31$. The constant is added once per observation.
+:::
+
+
+### Question 17 — PEDMAS (/2)
 
 Evaluate:
+a. $5+2(4-1)^2$
+b. $(5+2)(4-1)^2$
 
-a. $4+3(5-2)^2$  
-b. $(4+3)(5-2)^2$
+::: {.callout-tip collapse="true" title="Answer"}
+a. 23.
+b. 63.
+:::
 
-## Answers
 
-### Question 1
+### Question 18 — Algebra (/2)
 
-a. $\sum x_i=5+8+4+7+6=30$
+Solve $12x+6=42$.
 
-b. $\sum x_i^2=25+64+16+49+36=190$
+::: {.callout-tip collapse="true" title="Answer"}
+$x=3$.
+:::
 
-c. $[\sum x_i]^2=30^2=900$
 
-d. $\sum(x_i+2)=7+10+6+9+8=40$
+### Question 19 — Absolute value and inequalities (/3)
 
-e. $\sum_{i=2}^{4}x_i=8+4+7=19$
+a. $|-7|$
+b. Is $-3<2$ true?
+c. Is $|-5|<4$ true?
 
-f. $\sum_{i=2}^{4}(2x_i)=16+8+14=38$
+::: {.callout-tip collapse="true" title="Answer"}
+a. 7.
+b. True.
+c. False.
+:::
 
-### Question 2
 
-a. Experimental design.  
-b. Random assignment combined with manipulation of the condition gives the design its stronger causal logic.  
-c. Reaction time.
+### Question 20 — Integrated research scenario (/5)
 
-### Question 3
+A researcher theorizes that background television reduces concentration. Forty participants are randomly assigned to study with television or in silence. Concentration is the number of targets correctly identified in five minutes.
+a. State a reasonable research hypothesis.
+b. Independent variable?
+c. Dependent variable?
+d. Research design?
+e. Generalizing from the 40 participants to a larger population is descriptive or inferential?
 
-a. Descriptive: it summarizes the observed sample.  
-b. Inferential: it generalizes from a sample to the broader population of SFU students.
-
-### Question 4
-
-a. All first-year university students in British Columbia.  
-b. The 400 surveyed first-year students.
-
-### Question 5
-
-a. $x_3=15$.  
-b. $9+15+11+8=43$.
-
-### Question 6
-
-a. $4+3(3^2)=4+27=31$.  
-b. $7(3^2)=7(9)=63$.
+::: {.callout-tip collapse="true" title="Answer"}
+a. Example: background television lowers concentration.
+b. Television condition.
+c. Targets correctly identified.
+d. Experimental.
+e. Inferential.
+:::
 
 ## Midterm Self-Check
 

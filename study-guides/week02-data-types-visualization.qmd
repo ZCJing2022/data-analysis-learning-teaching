@@ -1302,116 +1302,300 @@ You should also be able to calculate proportions and percentages even though the
 
 ## Assignment-Style Practice
 
-### Question 1 — Measurement scales (/4)
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
 
-Identify the scale of measurement and briefly justify each answer.
+### Question 1 — Categorical or continuous? (/4)
 
-a. Primary therapy type: CBT, psychodynamic, humanistic, other  
-b. Pain rating: Mild, Moderate, Severe  
-c. Temperature measured in Celsius  
-d. Reaction time measured in milliseconds
+**Multiple Choice**
 
-### Question 2 — Frequency table (/6)
+Which variable is continuous?
 
-Twenty students report the number of cups of coffee they drank yesterday:
+- **A.** Reaction time in milliseconds
+- **B.** Primary language
+- **C.** Letter grade
+- **D.** Psychiatric diagnosis
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Reaction time in milliseconds**
 
-$$
-0,1,2,1,3,2,0,2,1,4,2,3,1,2,0,1,3,2,1,2.
-$$
-
-
-Complete a frequency table for $X=0,1,2,3,4$ containing:
-
-- $f$
-- proportion
-- percentage
-- CF
-- cumulative percentage
-
-### Question 3 — Cumulative interpretation (/2)
-
-Using Question 2:
-
-a. How many students drank **2 cups or fewer**?  
-b. What percentage drank **3 cups or fewer**?
-
-### Question 4 — Grouping (/2)
-
-A continuous variable ranges from 12 to 87. You want approximately 10 bins.
-
-a. Calculate the raw bin width.  
-b. Choose a convenient whole-number bin width.
-
-### Question 5 — Graph choice (/3)
-
-Choose the most appropriate graph and explain why.
-
-a. Primary psychiatric diagnosis  
-b. Reaction time in milliseconds  
-c. Frequency of test scores grouped into 10-point intervals
-
-### Question 6 — Ethical visualization (/2)
-
-Two bar charts display the same group means, 72 and 75. One y-axis starts at 0; the other starts at 70.
-
-a. Which graph visually exaggerates the difference?  
-b. Why?
-
-## Answers
-
-### Question 1
-
-a. Nominal — categories with no rank order.  
-b. Ordinal — categories have an order, but spacing is not a defined unit.  
-c. Interval — equal units, but 0°C is not the absence of temperature.  
-d. Ratio — equal units and 0 ms represents no elapsed reaction time.
-
-### Question 2
-
-| $X$ | $f$ | Proportion | % | CF | Cumulative % |
-|---:|---:|---:|---:|---:|---:|
-| 0 | 3 | .15 | 15% | 3 | 15% |
-| 1 | 6 | .30 | 30% | 9 | 45% |
-| 2 | 7 | .35 | 35% | 16 | 80% |
-| 3 | 3 | .15 | 15% | 19 | 95% |
-| 4 | 1 | .05 | 5% | 20 | 100% |
-
-Checks:
+Reaction time is measured quantitatively with a defined unit.
+:::
 
 
-$$
-\sum f=20,\qquad \sum\text{Proportion}=1.00,\qquad \sum\%=100\%.
-$$
+### Question 2 — NOIR (/4)
+
+**Multiple Choice**
+
+Which variable is ratio-scaled?
+
+- **A.** Distance travelled in kilometres
+- **B.** Temperature in Celsius
+- **C.** Class rank
+- **D.** Eye colour
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Distance travelled in kilometres**
+
+Distance has equal units and a meaningful zero.
+:::
 
 
-### Question 3
+### Question 3 — Same phenomenon, different scale (/2)
 
-a. 16 students.  
-b. 95%.
+**Multiple Choice**
 
-### Question 4
+Age recorded as Young, Middle-aged, or Old is:
 
-a.
+- **A.** Ordinal
+- **B.** Ratio
+- **C.** Interval
+- **D.** Nominal
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Ordinal**
+
+The categories are ordered but not separated by equal measurement units.
+:::
 
 
-$$
-\frac{87-12}{10}=7.5.
-$$
+### Question 4 — Frequency (/2)
+
+**Multiple Choice**
+
+For X={1,2,2,3,2,4,1,2,3,2}, what is the frequency of X=2?
+
+- **A.** 5
+- **B.** 4
+- **C.** 6
+- **D.** 2
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 5**
+
+The value 2 occurs five times.
+:::
 
 
-b. A convenient width of about 8 is reasonable.
+### Question 5 — Proportion and percentage (/3)
 
-### Question 5
+**Multiple Choice**
 
-a. Bar chart — diagnosis is categorical.  
-b. Histogram or frequency polygon — reaction time is continuous.  
-c. Histogram — grouped intervals represent a continuous variable.
+Using the same data, what proportion equals 2?
 
-### Question 6
+- **A.** .50
+- **B.** .20
+- **C.** .40
+- **D.** .60
 
-a. The chart whose y-axis begins at 70.  
-b. Truncating the baseline makes a small numerical difference occupy a much larger visual distance.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .50**
+
+Five of ten observations equal 2.
+:::
+
+
+### Question 6 — Cumulative frequency (/2)
+
+**Multiple Choice**
+
+Using the same data, what is the cumulative frequency at X=2?
+
+- **A.** 7
+- **B.** 5
+- **C.** 8
+- **D.** 3
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 7**
+
+There are two 1s and five 2s, totaling seven observations at 2 or less.
+:::
+
+
+### Question 7 — Complete a frequency table (/6)
+
+**Multiple Choice**
+
+In a correctly completed frequency table, what should the final cumulative percentage equal?
+
+- **A.** 100%
+- **B.** 50%
+- **C.** 1%
+- **D.** The modal percentage
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 100%**
+
+The last row includes all observations.
+:::
+
+
+### Question 8 — Real limits (/3)
+
+**Multiple Choice**
+
+A whole-number score of 18 has which real limits?
+
+- **A.** 17.5 and 18.5
+- **B.** 17 and 19
+- **C.** 18 and 19
+- **D.** 16.5 and 18.5
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 17.5 and 18.5**
+
+The course convention extends 0.5 below and above the apparent value.
+:::
+
+
+### Question 9 — Grouping rule (/2)
+
+**Multiple Choice**
+
+A dataset ranges from 12 to 54. Should grouping be considered under the course rule of thumb?
+
+- **A.** Yes, because the range exceeds 20
+- **B.** No, because the range is below 100
+- **C.** Only for nominal data
+- **D.** Only when N<20
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Yes, because the range exceeds 20**
+
+The guide recommends grouping when the range exceeds 20.
+:::
+
+
+### Question 10 — Bin width (/2)
+
+**Multiple Choice**
+
+A variable ranges from 15 to 95 and you want 10 bins. What is the raw bin width?
+
+- **A.** 8
+- **B.** 10
+- **C.** 9.5
+- **D.** 7
+
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 8**
+
+(95-15)/10=8.
+:::
+
+
+### Question 11 — Convenient width (/2)
+
+Range 12 to 87, about 10 bins.
+a. raw width?
+b. convenient whole-number width?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. 7.5.
+b. About 8.
+:::
+
+
+### Question 12 — Graph choice (/4)
+
+Choose bar chart or histogram:
+a. Favourite genre
+b. Reaction time
+c. Mild/Moderate/Severe
+d. Exam score 0–100
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Bar.
+b. Histogram.
+c. Bar.
+d. Histogram.
+:::
+
+
+### Question 13 — Why histogram bars touch (/2)
+
+Explain.
+
+::: {.callout-tip collapse="true" title="Answer"}
+Histograms represent adjacent intervals of a continuous scale; bar-chart categories are distinct.
+:::
+
+
+### Question 14 — Frequency polygon (/2)
+
+For what kind of variable is it appropriate and what do its points represent?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Continuous data; points are typically plotted at class midpoints and connected.
+:::
+
+
+### Question 15 — Misleading y-axis (/2)
+
+Means are 72 and 75; graph starts at 70.
+a. What visual problem?
+b. What should a careful reader check?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. It exaggerates a small difference.
+b. Check baseline and scale.
+:::
+
+
+### Question 16 — Interval vs. ratio (/4)
+
+Explain why Celsius is interval and reaction time is ratio.
+
+::: {.callout-tip collapse="true" title="Answer"}
+Celsius has equal units but arbitrary zero; reaction time has equal units and a meaningful zero.
+:::
+
+
+### Question 17 — Ordinal vs. nominal (/4)
+
+Explain why diagnosis is nominal and Mild/Moderate/Severe is ordinal.
+
+::: {.callout-tip collapse="true" title="Answer"}
+Diagnosis has categories without rank; Mild/Moderate/Severe has meaningful order.
+:::
+
+
+### Question 18 — Cumulative percentage (/2)
+
+$N=50$, CF $=41$. Find cumulative percentage.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$41/50\times100=82\%$.
+:::
+
+
+### Question 19 — Integrity checks (/3)
+
+A table has $\sum f=40$, $\sum p=.96$, and $\sum\%=96\%$. Which totals are wrong and what should they be?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Proportion and percentage totals are wrong; they should be 1.00 and 100%.
+:::
+
+
+### Question 20 — Integrated categorical scenario (/6)
+
+Study location for 60 students: Home, Library, Café, Other.
+a. scale?
+b. categorical or continuous?
+c. graph?
+d. bars touch?
+e. if 18 chose Library, proportion?
+f. percentage?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Nominal.
+b. Categorical.
+c. Bar chart.
+d. No.
+e. $.30$.
+f. $30\%$.
+:::
 
 ## Midterm Self-Check
 

@@ -1889,212 +1889,292 @@ $$
 
 ## Assignment-Style Practice
 
-### Question 1 — Center and spread (/5)
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
 
-For:
+### Question 1 — Mode, median, mean (/3)
 
+**Multiple Choice**
 
-$$
-X=\{5,8,3,2,7\},
-$$
+For X={2,3,3,4,8}, which set is correct?
 
+- **A.** Mode=3, Median=3, Mean=4
+- **B.** Mode=4, Median=3, Mean=3
+- **C.** Mode=3, Median=4, Mean=3
+- **D.** Mode=8, Median=3, Mean=4
 
-calculate:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Mode=3, Median=3, Mean=4**
 
-a. mean  
-b. median  
-c. range  
-d. sample variance  
-e. sample standard deviation
+The most frequent and middle values are 3; the mean is 20/5=4.
+:::
 
-### Question 2 — Weighted mean (/2)
 
-Group A has $n=20$ and $\bar{x}=72$.  
-Group B has $n=30$ and $\bar{x}=78$.
+### Question 2 — Outlier sensitivity (/2)
 
-a. Calculate the combined mean.  
-b. Explain why simply averaging 72 and 78 would be inappropriate.
+**Multiple Choice**
 
-### Question 3 — Transformations (/4)
+If 8 is replaced by 80, which measure changes more?
 
-A class has:
+- **A.** Mean
+- **B.** Median
+- **C.** Mode
+- **D.** All equally
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Mean**
 
-$$
-\bar{x}=64,\qquad s=8,\qquad s^2=64.
-$$
+The mean is sensitive to score magnitude.
+:::
 
 
-a. Every score receives 5 bonus points. Find the new mean, SD, and variance.  
-b. Every original score is instead multiplied by 2. Find the new mean, SD, and variance.
+### Question 3 — Choosing a center (/2)
 
-### Question 4 — Skewness (/3)
+**Multiple Choice**
 
-A distribution has a long tail toward high values and a few extreme high scores.
+For a strongly positively skewed salary distribution, which center is most resistant to extreme highs?
 
-a. What is the direction of skew?  
-b. Which is usually larger, the mean or median?  
-c. Which measure of center is usually more resistant to the extreme scores?
+- **A.** Median
+- **B.** Mean
+- **C.** Range
+- **D.** Variance
 
-### Question 5 — Grouped median (/4)
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Median**
 
-A descending grouped frequency table has $n=40$. The median falls in the interval 100–109, where:
+The median depends primarily on rank.
+:::
 
 
-$$
-LL=99.5,\quad W=10,\quad f=14,\quad cf_{\text{below}}=10.
-$$
+### Question 4 — Mean (/2)
 
+**Multiple Choice**
 
-Calculate the interpolated median.
+What is the mean of X={4,7,5,8,6}?
 
-### Question 6 — IQR (/3)
+- **A.** 6
+- **B.** 5
+- **C.** 7
+- **D.** 30
 
-Using the same grouped example, suppose:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 6**
 
+The sum is 30 and 30/5=6.
+:::
 
-$$
-P_{75}=115.50,\qquad P_{25}=99.50.
-$$
 
+### Question 5 — Combined mean (/3)
 
-a. Calculate the IQR.  
-b. What portion of the distribution lies between $P_{25}$ and $P_{75}$?
+**Multiple Choice**
 
-## Answers
+Group A has n=15, mean=10; Group B has n=25, mean=14. What is the combined mean?
 
-### Question 1
+- **A.** 12.5
+- **B.** 12.0
+- **C.** 13.0
+- **D.** 24.0
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 12.5**
 
-$$
-\bar{x}
-=
-\frac{5+8+3+2+7}{5}
-=
-5.
-$$
+[15(10)+25(14)]/40=12.5.
+:::
 
 
-Ordered scores: $2,3,5,7,8$, so:
+### Question 6 — Why not average group means? (/2)
 
+**Multiple Choice**
 
-$$
-Md=5.
-$$
+Why is simply averaging the two group means inappropriate?
 
+- **A.** The group sizes are unequal
+- **B.** The means are too close
+- **C.** Means cannot be combined
+- **D.** Only medians can be weighted
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. The group sizes are unequal**
 
-$$
-\text{Range}=8-2=6.
-$$
+Unequal groups must be weighted by their sample sizes.
+:::
 
 
-Squared deviations from 5:
+### Question 7 — Interpolated median (/4)
 
+**Multiple Choice**
 
-$$
-0,9,4,9,4.
-$$
+For n=30, LL=19.5, W=5, f=9, cf_below=11, what is the interpolated median approximately?
 
+- **A.** 21.72
+- **B.** 20.00
+- **C.** 24.50
+- **D.** 15.00
 
-Thus:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 21.72**
 
+Md=19.5+5[(15-11)/9]≈21.72.
+:::
 
-$$
-SS=26.
-$$
 
+### Question 8 — Percentile interpolation (/4)
 
+**Multiple Choice**
 
-$$
-s^2
-=
-\frac{26}{4}
-=
-6.5.
-$$
+For n=30, LL=24.5, W=5, f=8, cf_below=18, what is P75 approximately?
 
+- **A.** 27.31
+- **B.** 22.50
+- **C.** 29.50
+- **D.** 24.50
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 27.31**
 
-$$
-s=\sqrt{6.5}\approx2.55.
-$$
+P75=24.5+5[(22.5-18)/8]≈27.31.
+:::
 
 
-### Question 2
+### Question 9 — Range (/2)
 
+**Multiple Choice**
 
-$$
-\bar{x}_C
-=
-\frac{20(72)+30(78)}{50}
-=
-\frac{3780}{50}
-=
-75.6.
-$$
+What is the range of X={3,5,9,12,4,7}?
 
+- **A.** 9
+- **B.** 12
+- **C.** 7
+- **D.** 3
 
-The groups have unequal sample sizes, so the larger group must receive more weight.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 9**
 
-### Question 3
+12-3=9.
+:::
 
-a. Add 5:
 
+### Question 10 — IQR (/2)
 
-$$
-\bar{x}_{new}=69,\qquad s_{new}=8,\qquad s^2_{new}=64.
-$$
+**Multiple Choice**
 
+If P75=42 and P25=28, what is the IQR?
 
-b. Multiply by 2:
+- **A.** 14
+- **B.** 70
+- **C.** 28
+- **D.** 21
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 14**
 
-$$
-\bar{x}_{new}=128,\qquad s_{new}=16,\qquad s^2_{new}=256.
-$$
+42-28=14.
+:::
 
 
-### Question 4
+### Question 11 — Sum of deviations (/2)
 
-a. Positive skew.  
-b. Mean is usually greater than median.  
+What is $\sum(X-\bar{x})$ and why does this matter for variance?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Zero. Unsquared deviations cancel, motivating squared deviations.
+:::
+
+
+### Question 12 — Sample variance and SD (/5)
+
+For $X=\{2,4,4,6\}$ find $\bar{x}$, $SS$, $s^2$, and $s$.
+
+::: {.callout-tip collapse="true" title="Answer"}
+$\bar{x}=4$; $SS=8$; $s^2=8/3\approx2.67$; $s\approx1.63$.
+:::
+
+
+### Question 13 — Why $n-1$? (/2)
+
+Explain briefly.
+
+::: {.callout-tip collapse="true" title="Answer"}
+It corrects downward bias when sample variance estimates population variance and reflects degrees of freedom.
+:::
+
+
+### Question 14 — Add a constant (/3)
+
+$\bar{x}=50,s=6,s^2=36$. Add 10 to every score. New mean, SD, variance?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Mean $=60$, SD $=6$, variance $=36$.
+:::
+
+
+### Question 15 — Multiply by a constant (/3)
+
+Using original values above, multiply every score by 3. New mean, SD, variance?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Mean $=150$, SD $=18$, variance $=324$.
+:::
+
+
+### Question 16 — Positive skew (/3)
+
+Long tail toward high scores.
+a. direction?
+b. mean vs median?
+c. more resistant center?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. Positive.
+b. Mean usually greater.
 c. Median.
-
-### Question 5
-
-
-$$
-Md
-=
-99.5
-+
-10
-\left[
-\frac{20-10}{14}
-\right]
-$$
+:::
 
 
+### Question 17 — Negative skew (/2)
 
-$$
-=
-99.5+10(0.7143)
-\approx106.64.
-$$
+Long tail toward low scores. Direction and mean/median relationship?
 
-
-### Question 6
-
-a.
+::: {.callout-tip collapse="true" title="Answer"}
+Negative; mean usually lower than median.
+:::
 
 
-$$
-IQR=115.50-99.50=16.00.
-$$
+### Question 18 — Symmetry (/2)
+
+For a symmetric unimodal distribution, expected mean/median relationship?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Approximately equal.
+:::
 
 
-b. The middle 50% of the distribution.
+### Question 19 — Kurtosis (/2)
+
+What does kurtosis mean conceptually here, and are calculations required?
+
+::: {.callout-tip collapse="true" title="Answer"}
+Peakedness/flatness; no calculation required in this course review.
+:::
+
+
+### Question 20 — Integrated summary (/6)
+
+For $X=\{3,5,5,6,6,6,7,10\}$ find:
+a. mode
+b. median
+c. mean
+d. range
+e. likely skew direction
+f. more resistant center.
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. 6.
+b. 6.
+c. $48/8=6$.
+d. 7.
+e. Slight positive pull from 10.
+f. Median.
+:::
 
 ## Midterm Self-Check
 

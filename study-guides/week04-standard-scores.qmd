@@ -1600,218 +1600,285 @@ The z table supplied with the exam is then used to translate the standardized lo
 
 ## Assignment-Style Practice
 
-### Question 1 — z-score calculations (/4)
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
 
-Suppose IQ scores are normally distributed with:
+### Question 1 — Normal-distribution properties (/4)
 
+**Multiple Choice**
 
-$$
-\mu=100,\qquad \sigma=15.
-$$
+Which is a property of the normal distribution?
 
+- **A.** It is symmetric around its mean
+- **B.** Its total area exceeds 1
+- **C.** Its tails cross the x-axis
+- **D.** It is always bimodal
 
-Calculate and interpret the z score for:
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. It is symmetric around its mean**
 
-a. $X=115$  
-b. $X=70$  
-c. $X=108$  
-d. $X=100$
+The normal distribution is symmetric around its mean.
+:::
 
-### Question 2 — Probability from a z score (/2)
 
-For a standard normal distribution:
+### Question 2 — Total area (/2)
 
-a. Approximately what proportion lies **below** $z=+1.00$?  
-b. Approximately what proportion lies **above** $z=+1.00$?
+**Multiple Choice**
 
-Use the z table values:
+What is the total area under a normal distribution?
 
-- mean-to-$z=1.00$ area = .3413
-- tail beyond $z=1.00$ = .1587
+- **A.** 1.00
+- **B.** 0.50
+- **C.** 100.00
+- **D.** It depends on sigma
 
-### Question 3 — Negative z (/2)
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 1.00**
 
-Using the same table values, find:
+The full area represents the entire probability distribution.
+:::
 
-a. $P(Z<-1.00)$  
-b. $P(Z<+1.00)$
 
-Explain why the two probabilities are different even though $|z|=1$ in both cases.
+### Question 3 — z at the mean (/2)
 
-### Question 4 — Between two scores (/3)
+**Multiple Choice**
 
-A population has:
+If X equals the population mean, what is z?
 
+- **A.** 0
+- **B.** 1
+- **C.** -1
+- **D.** Cannot be determined
 
-$$
-\mu=195,\qquad \sigma=30.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 0**
 
+The numerator X-mu equals zero.
+:::
 
-Find the approximate probability that a randomly selected score lies between 165 and 225.
 
-### Question 5 — Reverse conversion (/2)
+### Question 4 — One SD above (/2)
 
-A distribution has:
+**Multiple Choice**
 
+For mu=100, sigma=15, X=115, what is z?
 
-$$
-\mu=50,\qquad \sigma=12.
-$$
+- **A.** +1.00
+- **B.** -1.00
+- **C.** +15.00
+- **D.** +0.50
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. +1.00**
 
-Find the raw score corresponding to:
+(115-100)/15=1.
+:::
 
-a. $z=+1.5$  
-b. $z=-2.0$
 
-### Question 6 — Conceptual normal curve (/3)
+### Question 5 — Two SD below (/2)
 
-Answer briefly.
+**Multiple Choice**
 
-a. Why can a probability never be negative?  
-b. Why does the z table not need separate rows for negative z scores?  
-c. What does the total area under a normal curve equal?
+For mu=100, sigma=15, X=70, what is z?
 
-## Answers
+- **A.** -2.00
+- **B.** +2.00
+- **C.** -1.00
+- **D.** +0.50
 
-### Question 1
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. -2.00**
 
-a.
+(70-100)/15=-2.
+:::
 
 
-$$
-z=\frac{115-100}{15}=+1.00.
-$$
+### Question 6 — Non-integer z (/2)
 
+**Multiple Choice**
 
-One SD above the mean.
+For mu=50, sigma=8, X=62, what is z?
 
-b.
+- **A.** 1.50
+- **B.** 0.75
+- **C.** 2.00
+- **D.** -1.50
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 1.50**
 
-$$
-z=\frac{70-100}{15}=-2.00.
-$$
+12/8=1.5.
+:::
 
 
-Two SDs below the mean.
+### Question 7 — Relative standing (/3)
 
-c.
+**Multiple Choice**
 
+Student A has z=2.0 and Student B has z=1.0. Who has the higher relative standing?
 
-$$
-z=\frac{108-100}{15}\approx+0.53.
-$$
+- **A.** Student A
+- **B.** Student B
+- **C.** They are equal
+- **D.** Cannot be compared
 
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. Student A**
 
-About 0.53 SD above the mean.
+The larger positive z lies farther above the mean.
+:::
 
-d.
 
+### Question 8 — Closest to the mean (/2)
 
-$$
-z=0.
-$$
+**Multiple Choice**
 
+Which z score is closest to the mean?
 
-The score equals the mean.
+- **A.** 0.15
+- **B.** -1.20
+- **C.** 0.80
+- **D.** -0.40
 
-### Question 2
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. 0.15**
 
-a.
+The smallest absolute z is closest to zero.
+:::
 
 
-$$
-0.5000+0.3413=0.8413.
-$$
+### Question 9 — Below $z=+1$ (/2)
 
+**Multiple Choice**
 
-b.
+Mean-to-z=1.00 area is .3413. What is P(Z<1.00)?
 
+- **A.** .8413
+- **B.** .3413
+- **C.** .1587
+- **D.** .6826
 
-$$
-0.1587.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .8413**
 
+.5000+.3413=.8413.
+:::
 
-### Question 3
 
-a.
+### Question 10 — Above $z=+1$ (/2)
 
+**Multiple Choice**
 
-$$
-P(Z<-1.00)=0.1587.
-$$
+Using the same table value, what is P(Z>1.00)?
 
+- **A.** .1587
+- **B.** .8413
+- **C.** .3413
+- **D.** .5000
 
-b.
+::: {.callout-tip collapse="true" title="Answer"}
+**Correct answer: A. .1587**
 
+The upper tail beyond +1 is .1587.
+:::
 
-$$
-P(Z<+1.00)=0.8413.
-$$
 
+### Question 11 — Below $z=-1$ (/2)
 
-The magnitude gives distance from the mean, but the sign tells us which side of the mean the cutoff lies on.
+Find $P(Z<-1.00)$.
 
-### Question 4
+::: {.callout-tip collapse="true" title="Answer"}
+$.1587$ by symmetry.
+:::
 
 
-$$
-z_{165}=\frac{165-195}{30}=-1
-$$
+### Question 12 — Between $-1$ and $+1$ (/2)
 
+Find $P(-1<Z<1)$.
 
-and:
+::: {.callout-tip collapse="true" title="Answer"}
+$.3413+.3413=.6826$.
+:::
 
 
-$$
-z_{225}=\frac{225-195}{30}=+1.
-$$
+### Question 13 — Below $z=-.50$ (/2)
 
+Mean-to-$z=.50$ area is .1915. Find $P(Z<-.50)$.
 
-The area between $-1$ and $+1$ is approximately:
+::: {.callout-tip collapse="true" title="Answer"}
+$.5000-.1915=.3085$.
+:::
 
 
-$$
-0.6826
-$$
+### Question 14 — Above $z=+.50$ (/2)
 
+Find $P(Z>.50)$.
 
-or about 68%.
+::: {.callout-tip collapse="true" title="Answer"}
+$.3085$.
+:::
 
-### Question 5
 
-Use:
+### Question 15 — Between $-.50$ and $+.50$ (/2)
 
+Find the area.
 
-$$
-X=\mu+z\sigma.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+$.1915+.1915=.3830$.
+:::
 
 
-a.
+### Question 16 — Symmetry (/2)
 
+Why can a z table list positive magnitudes only and still handle negative z scores?
 
-$$
-X=50+1.5(12)=68.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+The distribution is symmetric; equal magnitudes mirror across the mean.
+:::
 
 
-b.
+### Question 17 — Inflection points (/3)
 
+For $\mu=60,\sigma=12$, where are the inflection points?
 
-$$
-X=50-2(12)=26.
-$$
+::: {.callout-tip collapse="true" title="Answer"}
+$48$ and $72$.
+:::
 
 
-### Question 6
+### Question 18 — Normal curve vs histogram (/2)
 
-a. Probability is a proportion and must lie between 0 and 1.  
-b. The standard normal distribution is symmetrical, so negative and positive z scores of equal magnitude have mirrored areas.  
-c. 1.00.
+Explain the difference between a normal distribution and an empirical histogram.
+
+::: {.callout-tip collapse="true" title="Answer"}
+Histogram = observed frequencies; normal distribution = theoretical probability model.
+:::
+
+
+### Question 19 — Probability limits (/2)
+
+Can probability be negative? What numerical range must it occupy?
+
+::: {.callout-tip collapse="true" title="Answer"}
+No; $0\le P\le1$.
+:::
+
+
+### Question 20 — Integrated z-table problem (/5)
+
+A population is normal with $\mu=40,\sigma=10$. For $X=35$:
+a. calculate z;
+b. use .1915 for $|z|=.50$ to find proportion below 35;
+c. proportion above 35;
+d. above or below mean?
+e. why is probability not negative?
+
+::: {.callout-tip collapse="true" title="Answer"}
+a. $z=-.50$.
+b. $.3085$.
+c. $.6915$.
+d. Below mean.
+e. z sign gives direction; probability is area.
+:::
 
 ## Midterm Self-Check
 
