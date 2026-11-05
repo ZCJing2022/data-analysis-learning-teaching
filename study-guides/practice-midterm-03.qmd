@@ -12,8 +12,8 @@ This practice examination is designed to simulate the PSYC 210 midterm and delib
 
 - **Section A:** 38 multiple-choice questions
 - **Section B:** 5 mixed Assignment-Style / Integrated problems
-- Try each item before opening its answer.
-- Each answer is hidden initially; click **Answer** to reveal it.
+- Try each item before opening its answer or explanation.
+- Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 - Use the course formula sheet and z table where appropriate.
 
 # Section A — Multiple Choice
@@ -31,11 +31,11 @@ For μ=110, σ=25, and X=135, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. +1.00**
-
-The score is exactly one population SD above the mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The score is exactly one population SD above the mean.
+:::
 ### Question 2
 
 **Week 4**
@@ -49,11 +49,11 @@ For a normal distribution with μ=110 and σ=25, where are the inflection points
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 85 and 135**
-
-Normal-curve inflection points occur at μ±1σ.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Normal-curve inflection points occur at μ±1σ.
+:::
 ### Question 3
 
 **Week 6**
@@ -67,11 +67,11 @@ Using μ=100, SE=4.20, and x̄=108.40, what is Z_obt?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 2.00**
-
-The observed mean is exactly two standard errors above the null mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The observed mean is exactly two standard errors above the null mean.
+:::
 ### Question 4
 
 **Week 2**
@@ -85,11 +85,11 @@ Participants are placed into ordered age categories—Young, Middle-aged, and Ol
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Ordinal**
-
-The categories have a meaningful order but no equal unit spacing.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The categories have a meaningful order but no equal unit spacing.
+:::
 ### Question 5
 
 **Week 1**
@@ -103,11 +103,11 @@ Suppose the target population is every undergraduate student in British Columbia
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. The 450 surveyed students**
-
-The sample is the subset actually observed.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The sample is the subset actually observed.
+:::
 ### Question 6
 
 **Week 5**
@@ -121,11 +121,11 @@ A single fair die is thrown. What is the probability of obtaining either of the 
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 1/3**
-
-The outcomes are mutually exclusive: 1/6+1/6=1/3.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The outcomes are mutually exclusive: 1/6+1/6=1/3.
+:::
 ### Question 7
 
 **Week 6**
@@ -139,11 +139,11 @@ For a nondirectional test of whether a treatment changes μ from 100, which hypo
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. H0: μ=100; H1: μ≠100**
-
-The hypotheses concern the population mean and a nondirectional alternative uses ≠.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The hypotheses concern the population mean and a nondirectional alternative uses ≠.
+:::
 ### Question 8
 
 **Week 6**
@@ -157,11 +157,11 @@ A nondirectional hypothesis test uses the standard α=.05 criterion. Which z val
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. ±1.96**
-
-A two-tailed .05 z test uses ±1.96.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A two-tailed .05 z test uses ±1.96.
+:::
 ### Question 9
 
 **Week 6**
@@ -175,11 +175,11 @@ An obtained test statistic equals +2.00 in a two-tailed test using α=.05. Based
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Reject H0**
-
-|2.00| exceeds 1.96.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+|2.00| exceeds 1.96.
+:::
 ### Question 10
 
 **Week 6**
@@ -193,11 +193,11 @@ For x̄=108.40, μ=100, and σ=21, what is the effect size ES?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 0.400**
-
-ES=(x̄-μ)/σ=8.40/21=0.400.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+ES=(x̄-μ)/σ=8.40/21=0.400.
+:::
 ### Question 11
 
 **Week 4**
@@ -211,11 +211,11 @@ For μ=110, σ=25, and X=60, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. -2.00**
-
-The score is exactly two population SDs below the mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The score is exactly two population SDs below the mean.
+:::
 ### Question 12
 
 **Week 5**
@@ -229,11 +229,11 @@ With μ=65, SE=5.00, and x̄=75.00, what is the sample-mean z score?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 2.00**
-
-The sample mean is two standard errors above μ.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The sample mean is two standard errors above μ.
+:::
 ### Question 13
 
 **Week 1**
@@ -247,11 +247,11 @@ For the first three values of X={6,9,7}, which pair is correct?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. ΣX²=166; (ΣX)²=484**
-
-ΣX² means square each score then sum; (ΣX)² means sum first, then square.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+ΣX² means square each score then sum; (ΣX)² means sum first, then square.
+:::
 ### Question 14
 
 **Week 2**
@@ -265,11 +265,11 @@ Which of the following measurements has both equal units and a meaningful zero p
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: C. Reaction time in milliseconds**
-
-Reaction time has equal units and a meaningful zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Reaction time has equal units and a meaningful zero.
+:::
 ### Question 15
 
 **Week 5**
@@ -283,11 +283,11 @@ After observing a long streak of one outcome in an independent random process, s
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Gambler's Fallacy**
-
-Independent prior outcomes do not make the opposite outcome due.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Independent prior outcomes do not make the opposite outcome due.
+:::
 ### Question 16
 
 **Week 4**
@@ -301,11 +301,11 @@ Under a standard normal curve, .1915 of the area lies between z=0 and z=.50. Wha
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .3085**
-
-.5000-.1915=.3085.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+.5000-.1915=.3085.
+:::
 ### Question 17
 
 **Week 1**
@@ -319,11 +319,11 @@ Suppose a psychological theory generates predictions about memory performance. W
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Some possible observation could count against it**
-
-Falsifiability means evidence could in principle contradict the theory.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Falsifiability means evidence could in principle contradict the theory.
+:::
 ### Question 18
 
 **Week 1**
@@ -337,11 +337,11 @@ Participants are randomly allocated to receive either a new study technique or t
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Experimental**
-
-Random assignment plus manipulation makes this a true experiment.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Random assignment plus manipulation makes this a true experiment.
+:::
 ### Question 19
 
 **Week 5**
@@ -355,11 +355,11 @@ Two independent coin tosses are made with a fair coin. What is the probability o
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .25**
-
-.5×.5=.25.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+.5×.5=.25.
+:::
 ### Question 20
 
 **Week 4**
@@ -373,11 +373,11 @@ Under a standard normal curve, the area from z=0 to z=+1.00 is .3413. What is th
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .8413**
-
-.5000+.3413=.8413.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+.5000+.3413=.8413.
+:::
 ### Question 21
 
 **Week 3**
@@ -391,11 +391,11 @@ If P75=48 and P25=30, what is the IQR?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 18**
-
-IQR=P75-P25, so the common shift cancels and the difference is 18.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+IQR=P75-P25, so the common shift cancels and the difference is 18.
+:::
 ### Question 22
 
 **Week 5**
@@ -409,11 +409,11 @@ If σ=30 and n=36, what is the standard error?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 5.00**
-
-SE=σ/√n=30/6=5.00.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+SE=σ/√n=30/6=5.00.
+:::
 ### Question 23
 
 **Week 1**
@@ -427,11 +427,11 @@ Given X={6,9,7,11,8,10}, what is Σxᵢ from i=2 through i=5?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 35**
-
-The required values are [9, 7, 11, 8], which sum to 35.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The required values are [9, 7, 11, 8], which sum to 35.
+:::
 ### Question 24
 
 **Week 2**
@@ -445,11 +445,11 @@ A whole-number score of 23 has which real limits?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 22.5 and 23.5**
-
-The course convention extends 0.5 below and above the apparent whole-number score.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The course convention extends 0.5 below and above the apparent whole-number score.
+:::
 ### Question 25
 
 **Week 4**
@@ -463,11 +463,11 @@ When treating a population as normally distributed, which statement describes a 
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. It is symmetric around its mean**
-
-The normal distribution is symmetric around its mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The normal distribution is symmetric around its mean.
+:::
 ### Question 26
 
 **Week 3**
@@ -481,11 +481,11 @@ A reaction-time dataset contains one exceptionally slow response far above every
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Median**
-
-The median depends mainly on rank and is resistant to the magnitude of an extreme score.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The median depends mainly on rank and is resistant to the magnitude of an extreme score.
+:::
 ### Question 27
 
 **Week 2**
@@ -499,11 +499,11 @@ For the same data, what is the cumulative frequency at X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 6**
-
-There are 6 observations equal to 2 or less.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+There are 6 observations equal to 2 or less.
+:::
 ### Question 28
 
 **Week 5**
@@ -517,11 +517,11 @@ In which example does the first event alter the probability distribution for the
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: D. Two card draws without replacement**
-
-Without replacement, the first draw changes the remaining composition.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Without replacement, the first draw changes the remaining composition.
+:::
 ### Question 29
 
 **Week 3**
@@ -535,11 +535,11 @@ An exam distribution contains many moderate scores and a small number of extreme
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Positive skew; mean usually above median**
-
-The tail points right, and high extreme values tend to pull the mean upward.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The tail points right, and high extreme values tend to pull the mean upward.
+:::
 ### Question 30
 
 **Week 2**
@@ -553,11 +553,11 @@ A variable ranges from 16 to 96 and is divided into 10 bins. What is the raw bin
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 8**
-
-(96-16)/10 = 8.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(96-16)/10 = 8.
+:::
 ### Question 31
 
 **Week 2**
@@ -571,11 +571,11 @@ For X={0,1,1,2,2,2,3,3,4,7}, what is the frequency of X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 3**
-
-The value 2 occurs 3 times.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The value 2 occurs 3 times.
+:::
 ### Question 32
 
 **Week 3**
@@ -589,11 +589,11 @@ For X={5,6,6,7,11}, what is the mean?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 7.0**
-
-The sum is 35 and 35/5 = 7.0.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The sum is 35 and 35/5 = 7.0.
+:::
 ### Question 33
 
 **Week 3**
@@ -607,11 +607,11 @@ Group A has n=25, mean=11; Group B has n=30, mean=17. What is the combined mean?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 14.27**
-
-The combined mean weights each group mean by its sample size.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The combined mean weights each group mean by its sample size.
+:::
 ### Question 34
 
 **Week 3**
@@ -625,11 +625,11 @@ For X={6,10,10,14}, what is the sample variance approximately?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 10.67**
-
-The mean is 10, SS=32, and s²=SS/(4-1)=10.67.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The mean is 10, SS=32, and s²=SS/(4-1)=10.67.
+:::
 ### Question 35
 
 **Week 6**
@@ -643,11 +643,11 @@ For σ=21 and n=25, what is SE?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 4.20**
-
-SE=21/5=4.20.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+SE=21/5=4.20.
+:::
 ### Question 36
 
 **Week 1**
@@ -661,11 +661,11 @@ After collecting a sample, a researcher computes its mean reaction time. A numer
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: B. Statistic**
-
-A statistic describes a sample; a parameter describes a population.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A statistic describes a sample; a parameter describes a population.
+:::
 ### Question 37
 
 **Week 1**
@@ -679,11 +679,11 @@ A researcher observes one sample but wants to draw a conclusion about people who
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: C. University students generally have mean stress above 18**
-
-Inferential statistics generalize from a sample to a wider population.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Inferential statistics generalize from a sample to a wider population.
+:::
 ### Question 38
 
 **Week 6**
@@ -697,11 +697,11 @@ A z score of magnitude 2.00 leaves .0228 in one tail of the null distribution. F
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .0456**
-
-Two-tailed p=2(.0228)=.0456.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Two-tailed p=2(.0228)=.0456.
+:::
 # Section B — Integrated Short Answer
 
 ### Integrated Problem 1
@@ -724,7 +724,9 @@ d. Ratio scale (a count with a meaningful zero).
 e. A histogram is appropriate for the quantitative score distribution.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Integrated Problem 2
 
 **Weeks covered:** 4, 5, 6
@@ -745,7 +747,9 @@ d. Individual scores vary by σ, while sample means vary by SE, which is smaller
 e. Effect size uses the population SD σ, not SE.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Integrated Problem 3
 
 **Weeks covered:** 2, 3
@@ -762,7 +766,9 @@ b. IQR=115.50-99.50=16.00.
 c. The median is based on rank and is less affected by extreme values than the mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Integrated Problem 4
 
 **Weeks covered:** 5, 6
@@ -787,7 +793,9 @@ f. ES=(84-80)/12=.333.
 g. CI=84±1.96(2)=84±3.92=[80.08,87.92].
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Integrated Problem 5
 
 **Weeks covered:** 5
@@ -808,7 +816,9 @@ d. P(x̄≥54)=.0228.
 e. Less unusual. For n=9, SE=12/3=4 and z=(54-50)/4=1.00.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 # Coverage Check
 
 This exam intentionally mixes all six weeks rather than presenting them in chronological order.

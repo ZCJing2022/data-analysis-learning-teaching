@@ -1048,7 +1048,7 @@ There is no special Week 1 formula block beyond the notation that will reappear 
 
 ## Assignment-Style Practice
 
-**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ### Question 1 — Goals of science (/2)
 
@@ -1063,11 +1063,11 @@ Which statement best describes the scientific goal illustrated by observing that
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Describing a regularity or co-occurrence**
-
-The observation describes a recurring association; it does not by itself establish causation.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The observation describes a recurring association; it does not by itself establish causation.
+:::
 ### Question 2 — Theory and falsifiability (/2)
 
 **Multiple Choice**
@@ -1081,11 +1081,11 @@ What does it mean for a theory to be falsifiable?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Some possible observation could count against it**
-
-A falsifiable theory makes predictions that evidence could contradict.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A falsifiable theory makes predictions that evidence could contradict.
+:::
 ### Question 3 — Variables (/3)
 
 **Multiple Choice**
@@ -1099,11 +1099,11 @@ A psychologist studies whether instrumental music while studying affects later m
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. IV: music condition; DV: memory performance**
-
-The study condition is the predictor/manipulation; memory is the outcome.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The study condition is the predictor/manipulation; memory is the outcome.
+:::
 ### Question 4 — Operational definition (/2)
 
 **Multiple Choice**
@@ -1117,11 +1117,11 @@ Which is the best operational definition of test anxiety?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Score on a specified anxiety questionnaire administered before an exam**
-
-An operational definition specifies exactly how the construct will be measured.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+An operational definition specifies exactly how the construct will be measured.
+:::
 ### Question 5 — Experimental design (/3)
 
 **Multiple Choice**
@@ -1135,11 +1135,11 @@ Participants are randomly assigned to mindfulness training or control and then s
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Experimental**
-
-Random assignment plus manipulation makes this an experiment.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Random assignment plus manipulation makes this an experiment.
+:::
 ### Question 6 — Quasi-experimental design (/2)
 
 **Multiple Choice**
@@ -1153,11 +1153,11 @@ Students voluntarily choose whether to enroll in meditation training, and stress
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Quasi-experimental**
-
-Self-selection means there is no random assignment.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Self-selection means there is no random assignment.
+:::
 ### Question 7 — Correlational design (/2)
 
 **Multiple Choice**
@@ -1171,11 +1171,11 @@ A researcher measures social-media use and loneliness without manipulation. What
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Association but not causation**
-
-A correlational design can establish association but not causation by itself.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A correlational design can establish association but not causation by itself.
+:::
 ### Question 8 — Descriptive vs. inferential (/2)
 
 **Multiple Choice**
@@ -1189,11 +1189,11 @@ Which statement is inferential?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. University students generally have mean stress above 18**
-
-It generalizes beyond the observed sample.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+It generalizes beyond the observed sample.
+:::
 ### Question 9 — Population and sample (/2)
 
 **Multiple Choice**
@@ -1207,11 +1207,11 @@ A researcher wants to study all BC undergraduates and surveys 600. What is the p
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. All BC undergraduates**
-
-The population is the entire target group.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The population is the entire target group.
+:::
 ### Question 10 — Parameter and statistic (/2)
 
 **Multiple Choice**
@@ -1225,11 +1225,11 @@ The sample mean stress score is 21.4. What is 21.4?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. A statistic**
-
-A number computed from a sample is a statistic.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A number computed from a sample is a statistic.
+:::
 ### Question 11 — Indexed notation (/2)
 
 Given $X=\{11,7,14,9,12,6\}$, find $x_4$ and $x_6$.
@@ -1238,7 +1238,9 @@ Given $X=\{11,7,14,9,12,6\}$, find $x_4$ and $x_6$.
 $x_4=9$; $x_6=6$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 12 — Restricted summation (/2)
 
 Using the same data, calculate $\sum_{i=2}^{5}x_i$.
@@ -1247,7 +1249,9 @@ Using the same data, calculate $\sum_{i=2}^{5}x_i$.
 $7+14+9+12=42$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 13 — Sum first vs. square first (/4)
 
 Given $X=\{2,4,5\}$, calculate:
@@ -1263,7 +1267,9 @@ c. No.
 d. One squares after summing; the other squares each score before summing.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 14 — Paired products (/2)
 
 Given $X=\{2,3,5\}$ and $Y=\{4,1,2\}$, calculate $\sum X_iY_i$.
@@ -1272,7 +1278,9 @@ Given $X=\{2,3,5\}$ and $Y=\{4,1,2\}$, calculate $\sum X_iY_i$.
 $(2)(4)+(3)(1)+(5)(2)=21$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 15 — Sum of differences (/2)
 
 Using Question 14, calculate $\sum(X_i-Y_i)$.
@@ -1281,7 +1289,9 @@ Using Question 14, calculate $\sum(X_i-Y_i)$.
 $(2-4)+(3-1)+(5-2)=3$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 16 — Constant inside a summation (/2)
 
 Given $X=\{3,6,8,2\}$, calculate $\sum(X_i+3)$. Explain why adding 3 only once to $\sum X$ is wrong.
@@ -1290,7 +1300,9 @@ Given $X=\{3,6,8,2\}$, calculate $\sum(X_i+3)$. Explain why adding 3 only once t
 $(3+3)+(6+3)+(8+3)+(2+3)=31$. The constant is added once per observation.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 17 — PEDMAS (/2)
 
 Evaluate:
@@ -1302,7 +1314,9 @@ a. 23.
 b. 63.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 18 — Algebra (/2)
 
 Solve $12x+6=42$.
@@ -1311,7 +1325,9 @@ Solve $12x+6=42$.
 $x=3$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 19 — Absolute value and inequalities (/3)
 
 a. $|-7|$
@@ -1324,7 +1340,9 @@ b. True.
 c. False.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+:::
 ### Question 20 — Integrated research scenario (/5)
 
 A researcher theorizes that background television reduces concentration. Forty participants are randomly assigned to study with television or in silence. Concentration is the number of targets correctly identified in five minutes.
@@ -1340,6 +1358,10 @@ b. Television condition.
 c. Targets correctly identified.
 d. Experimental.
 e. Inferential.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
 :::
 
 ## Midterm Self-Check

@@ -1600,7 +1600,7 @@ The z table supplied with the exam is then used to translate the standardized lo
 
 ## Assignment-Style Practice
 
-**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ### Question 1 — Normal-distribution properties (/4)
 
@@ -1615,11 +1615,11 @@ Which is a property of the normal distribution?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. It is symmetric around its mean**
-
-The normal distribution is symmetric around its mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The normal distribution is symmetric around its mean.
+:::
 ### Question 2 — Total area (/2)
 
 **Multiple Choice**
@@ -1633,11 +1633,11 @@ What is the total area under a normal distribution?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 1.00**
-
-The full area represents the entire probability distribution.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The full area represents the entire probability distribution.
+:::
 ### Question 3 — z at the mean (/2)
 
 **Multiple Choice**
@@ -1651,11 +1651,11 @@ If X equals the population mean, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 0**
-
-The numerator X-mu equals zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The numerator X-mu equals zero.
+:::
 ### Question 4 — One SD above (/2)
 
 **Multiple Choice**
@@ -1669,11 +1669,11 @@ For mu=100, sigma=15, X=115, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. +1.00**
-
-(115-100)/15=1.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(115-100)/15=1.
+:::
 ### Question 5 — Two SD below (/2)
 
 **Multiple Choice**
@@ -1687,11 +1687,11 @@ For mu=100, sigma=15, X=70, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. -2.00**
-
-(70-100)/15=-2.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(70-100)/15=-2.
+:::
 ### Question 6 — Non-integer z (/2)
 
 **Multiple Choice**
@@ -1705,11 +1705,11 @@ For mu=50, sigma=8, X=62, what is z?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 1.50**
-
-12/8=1.5.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+12/8=1.5.
+:::
 ### Question 7 — Relative standing (/3)
 
 **Multiple Choice**
@@ -1723,11 +1723,11 @@ Student A has z=2.0 and Student B has z=1.0. Who has the higher relative standin
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Student A**
-
-The larger positive z lies farther above the mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The larger positive z lies farther above the mean.
+:::
 ### Question 8 — Closest to the mean (/2)
 
 **Multiple Choice**
@@ -1741,11 +1741,11 @@ Which z score is closest to the mean?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 0.15**
-
-The smallest absolute z is closest to zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The smallest absolute z is closest to zero.
+:::
 ### Question 9 — Below $z=+1$ (/2)
 
 **Multiple Choice**
@@ -1759,11 +1759,11 @@ Mean-to-z=1.00 area is .3413. What is P(Z<1.00)?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .8413**
-
-.5000+.3413=.8413.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+.5000+.3413=.8413.
+:::
 ### Question 10 — Above $z=+1$ (/2)
 
 **Multiple Choice**
@@ -1777,11 +1777,11 @@ Using the same table value, what is P(Z>1.00)?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .1587**
-
-The upper tail beyond +1 is .1587.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The upper tail beyond +1 is .1587.
+:::
 ### Question 11 — Below $z=-1$ (/2)
 
 Find $P(Z<-1.00)$.
@@ -1790,7 +1790,9 @@ Find $P(Z<-1.00)$.
 $.1587$ by symmetry.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 12 — Between $-1$ and $+1$ (/2)
 
 Find $P(-1<Z<1)$.
@@ -1799,7 +1801,9 @@ Find $P(-1<Z<1)$.
 $.3413+.3413=.6826$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 13 — Below $z=-.50$ (/2)
 
 Mean-to-$z=.50$ area is .1915. Find $P(Z<-.50)$.
@@ -1808,7 +1812,9 @@ Mean-to-$z=.50$ area is .1915. Find $P(Z<-.50)$.
 $.5000-.1915=.3085$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 14 — Above $z=+.50$ (/2)
 
 Find $P(Z>.50)$.
@@ -1817,7 +1823,9 @@ Find $P(Z>.50)$.
 $.3085$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 15 — Between $-.50$ and $+.50$ (/2)
 
 Find the area.
@@ -1826,7 +1834,9 @@ Find the area.
 $.1915+.1915=.3830$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 16 — Symmetry (/2)
 
 Why can a z table list positive magnitudes only and still handle negative z scores?
@@ -1835,7 +1845,9 @@ Why can a z table list positive magnitudes only and still handle negative z scor
 The distribution is symmetric; equal magnitudes mirror across the mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests standardized location in a normal distribution. A z score expresses a value as the number of population standard deviations above or below the mean. Once that location is known, symmetry and the z table determine the relevant area or probability.
+:::
 ### Question 17 — Inflection points (/3)
 
 For $\mu=60,\sigma=12$, where are the inflection points?
@@ -1844,7 +1856,9 @@ For $\mu=60,\sigma=12$, where are the inflection points?
 $48$ and $72$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests standardized location in a normal distribution. A z score expresses a value as the number of population standard deviations above or below the mean. Once that location is known, symmetry and the z table determine the relevant area or probability.
+:::
 ### Question 18 — Normal curve vs histogram (/2)
 
 Explain the difference between a normal distribution and an empirical histogram.
@@ -1853,7 +1867,9 @@ Explain the difference between a normal distribution and an empirical histogram.
 Histogram = observed frequencies; normal distribution = theoretical probability model.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 19 — Probability limits (/2)
 
 Can probability be negative? What numerical range must it occupy?
@@ -1862,7 +1878,9 @@ Can probability be negative? What numerical range must it occupy?
 No; $0\le P\le1$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 20 — Integrated z-table problem (/5)
 
 A population is normal with $\mu=40,\sigma=10$. For $X=35$:
@@ -1878,6 +1896,10 @@ b. $.3085$.
 c. $.6915$.
 d. Below mean.
 e. z sign gives direction; probability is area.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
 :::
 
 ## Midterm Self-Check

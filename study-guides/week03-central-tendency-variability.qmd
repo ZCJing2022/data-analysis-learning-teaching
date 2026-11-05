@@ -1889,7 +1889,7 @@ $$
 
 ## Assignment-Style Practice
 
-**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ### Question 1 — Mode, median, mean (/3)
 
@@ -1904,11 +1904,11 @@ For X={2,3,3,4,8}, which set is correct?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Mode=3, Median=3, Mean=4**
-
-The most frequent and middle values are 3; the mean is 20/5=4.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The most frequent and middle values are 3; the mean is 20/5=4.
+:::
 ### Question 2 — Outlier sensitivity (/2)
 
 **Multiple Choice**
@@ -1922,11 +1922,11 @@ If 8 is replaced by 80, which measure changes more?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Mean**
-
-The mean is sensitive to score magnitude.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The mean is sensitive to score magnitude.
+:::
 ### Question 3 — Choosing a center (/2)
 
 **Multiple Choice**
@@ -1940,11 +1940,11 @@ For a strongly positively skewed salary distribution, which center is most resis
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Median**
-
-The median depends primarily on rank.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The median depends primarily on rank.
+:::
 ### Question 4 — Mean (/2)
 
 **Multiple Choice**
@@ -1958,11 +1958,11 @@ What is the mean of X={4,7,5,8,6}?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 6**
-
-The sum is 30 and 30/5=6.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The sum is 30 and 30/5=6.
+:::
 ### Question 5 — Combined mean (/3)
 
 **Multiple Choice**
@@ -1976,11 +1976,11 @@ Group A has n=15, mean=10; Group B has n=25, mean=14. What is the combined mean?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 12.5**
-
-[15(10)+25(14)]/40=12.5.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+[15(10)+25(14)]/40=12.5.
+:::
 ### Question 6 — Why not average group means? (/2)
 
 **Multiple Choice**
@@ -1994,11 +1994,11 @@ Why is simply averaging the two group means inappropriate?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. The group sizes are unequal**
-
-Unequal groups must be weighted by their sample sizes.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Unequal groups must be weighted by their sample sizes.
+:::
 ### Question 7 — Interpolated median (/4)
 
 **Multiple Choice**
@@ -2012,11 +2012,11 @@ For n=30, LL=19.5, W=5, f=9, cf_below=11, what is the interpolated median approx
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 21.72**
-
-Md=19.5+5[(15-11)/9]≈21.72.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Md=19.5+5[(15-11)/9]≈21.72.
+:::
 ### Question 8 — Percentile interpolation (/4)
 
 **Multiple Choice**
@@ -2030,11 +2030,11 @@ For n=30, LL=24.5, W=5, f=8, cf_below=18, what is P75 approximately?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 27.31**
-
-P75=24.5+5[(22.5-18)/8]≈27.31.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+P75=24.5+5[(22.5-18)/8]≈27.31.
+:::
 ### Question 9 — Range (/2)
 
 **Multiple Choice**
@@ -2048,11 +2048,11 @@ What is the range of X={3,5,9,12,4,7}?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 9**
-
-12-3=9.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+12-3=9.
+:::
 ### Question 10 — IQR (/2)
 
 **Multiple Choice**
@@ -2066,11 +2066,11 @@ If P75=42 and P25=28, what is the IQR?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 14**
-
-42-28=14.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+42-28=14.
+:::
 ### Question 11 — Sum of deviations (/2)
 
 What is $\sum(X-\bar{x})$ and why does this matter for variance?
@@ -2079,7 +2079,9 @@ What is $\sum(X-\bar{x})$ and why does this matter for variance?
 Zero. Unsquared deviations cancel, motivating squared deviations.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+:::
 ### Question 12 — Sample variance and SD (/5)
 
 For $X=\{2,4,4,6\}$ find $\bar{x}$, $SS$, $s^2$, and $s$.
@@ -2088,7 +2090,9 @@ For $X=\{2,4,4,6\}$ find $\bar{x}$, $SS$, $s^2$, and $s$.
 $\bar{x}=4$; $SS=8$; $s^2=8/3\approx2.67$; $s\approx1.63$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Question 13 — Why $n-1$? (/2)
 
 Explain briefly.
@@ -2097,7 +2101,9 @@ Explain briefly.
 It corrects downward bias when sample variance estimates population variance and reflects degrees of freedom.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 14 — Add a constant (/3)
 
 $\bar{x}=50,s=6,s^2=36$. Add 10 to every score. New mean, SD, variance?
@@ -2106,7 +2112,9 @@ $\bar{x}=50,s=6,s^2=36$. Add 10 to every score. New mean, SD, variance?
 Mean $=60$, SD $=6$, variance $=36$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+:::
 ### Question 15 — Multiply by a constant (/3)
 
 Using original values above, multiply every score by 3. New mean, SD, variance?
@@ -2115,7 +2123,9 @@ Using original values above, multiply every score by 3. New mean, SD, variance?
 Mean $=150$, SD $=18$, variance $=324$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+:::
 ### Question 16 — Positive skew (/3)
 
 Long tail toward high scores.
@@ -2129,7 +2139,9 @@ b. Mean usually greater.
 c. Median.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 17 — Negative skew (/2)
 
 Long tail toward low scores. Direction and mean/median relationship?
@@ -2138,7 +2150,9 @@ Long tail toward low scores. Direction and mean/median relationship?
 Negative; mean usually lower than median.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 18 — Symmetry (/2)
 
 For a symmetric unimodal distribution, expected mean/median relationship?
@@ -2147,7 +2161,9 @@ For a symmetric unimodal distribution, expected mean/median relationship?
 Approximately equal.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 19 — Kurtosis (/2)
 
 What does kurtosis mean conceptually here, and are calculations required?
@@ -2156,7 +2172,9 @@ What does kurtosis mean conceptually here, and are calculations required?
 Peakedness/flatness; no calculation required in this course review.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 20 — Integrated summary (/6)
 
 For $X=\{3,5,5,6,6,6,7,10\}$ find:
@@ -2174,6 +2192,10 @@ c. $48/8=6$.
 d. 7.
 e. Slight positive pull from 10.
 f. Median.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
 :::
 
 ## Midterm Self-Check

@@ -583,7 +583,7 @@ This is one of the most important cross-week relationships on the midterm.
 
 # Part VI — Integrated Practice
 
-**Format:** 50 problems: **25 multiple-choice** and **25 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 50 problems: **25 multiple-choice** and **25 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ## Block A — Scientific Reasoning, Variables, and Measurement
 
@@ -600,11 +600,11 @@ A researcher randomly assigns participants to caffeine or placebo and measures r
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Experimental**
-
-Random assignment plus manipulation makes this an experiment.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Random assignment plus manipulation makes this an experiment.
+:::
 ### Problem 2 — Correlation and Causation
 
 **Multiple Choice**
@@ -618,11 +618,11 @@ A study measures extroversion and GPA without manipulation. What conclusion is s
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Association but not causation**
-
-Correlational data can establish association, not causation by itself.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Correlational data can establish association, not causation by itself.
+:::
 ### Problem 3 — Population and Sample
 
 **Multiple Choice**
@@ -636,11 +636,11 @@ A study samples 300 SFU students to represent all SFU undergraduates. What is th
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. All SFU undergraduates**
-
-The population is the entire target group.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The population is the entire target group.
+:::
 ### Problem 4 — Descriptive vs. Inferential
 
 **Multiple Choice**
@@ -654,11 +654,11 @@ Which statement is inferential?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. SFU undergraduates generally have mean GPA near 3.1**
-
-It generalizes from the sample to a population.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+It generalizes from the sample to a population.
+:::
 ### Problem 5 — Falsifiability
 
 **Multiple Choice**
@@ -672,11 +672,11 @@ What makes a scientific theory falsifiable?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Some possible observation could count against it**
-
-A falsifiable theory could be contradicted by evidence.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A falsifiable theory could be contradicted by evidence.
+:::
 ### Problem 6 — Measurement Scale
 
 **Multiple Choice**
@@ -690,11 +690,11 @@ Which variable is ratio-scaled?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Reaction time in milliseconds**
-
-Reaction time has equal units and a meaningful zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Reaction time has equal units and a meaningful zero.
+:::
 ### Problem 7 — Ordinal Age
 
 **Multiple Choice**
@@ -708,11 +708,11 @@ Age recorded as Young, Middle-aged, or Old is:
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Ordinal**
-
-The categories are ordered but not equally spaced.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The categories are ordered but not equally spaced.
+:::
 ### Problem 8 — Summation
 
 **Multiple Choice**
@@ -726,11 +726,11 @@ For X={4,7,3,8,6}, what is sum X?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 28**
-
-4+7+3+8+6=28.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+4+7+3+8+6=28.
+:::
 ## Block B — Frequency Distributions and Visualization
 
 ### Problem 9 — Frequency
@@ -746,11 +746,11 @@ For X={0,1,1,2,2,2,3,4,4,4}, what is the frequency of X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 3**
-
-The value 2 occurs three times.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The value 2 occurs three times.
+:::
 ### Problem 10 — Cumulative Frequency
 
 **Multiple Choice**
@@ -764,11 +764,11 @@ Using the same data, what is cumulative frequency at X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 6**
-
-Scores 0,1,1,2,2,2 total six observations.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Scores 0,1,1,2,2,2 total six observations.
+:::
 ### Problem 11 — Real Limits
 
 **Multiple Choice**
@@ -782,11 +782,11 @@ A score recorded as 21 to the nearest whole number has which real limits?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 20.5 and 21.5**
-
-The course convention uses ±0.5 around the apparent value.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The course convention uses ±0.5 around the apparent value.
+:::
 ### Problem 12 — Bin Width
 
 **Multiple Choice**
@@ -800,11 +800,11 @@ A variable ranges 20 to 100 and you want 10 bins. What is bin width?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 8**
-
-(100-20)/10=8.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(100-20)/10=8.
+:::
 ### Problem 13 — Graph Choice
 
 **Multiple Choice**
@@ -818,11 +818,11 @@ Which graph is most appropriate for favourite study location?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Bar chart**
-
-Study location is categorical.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Study location is categorical.
+:::
 ### Problem 14 — Histogram Logic
 
 **Multiple Choice**
@@ -836,11 +836,11 @@ Why do histogram bars normally touch?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. They represent adjacent intervals on a continuous scale**
-
-Continuous intervals are adjacent.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Continuous intervals are adjacent.
+:::
 ### Problem 15 — Misleading Axis
 
 **Multiple Choice**
@@ -854,11 +854,11 @@ A bar chart comparing means 72 and 75 starts the y-axis at 70. Main concern?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. It can visually exaggerate the difference**
-
-A truncated y-axis exaggerates apparent differences.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A truncated y-axis exaggerates apparent differences.
+:::
 ### Problem 16 — Cumulative Percentage
 
 **Multiple Choice**
@@ -872,11 +872,11 @@ A frequency table has N=40 and CF=30. What is cumulative percentage?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 75%**
-
-30/40×100=75%.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+30/40×100=75%.
+:::
 ## Block C — Central Tendency, Variability, and Shape
 
 ### Problem 17 — Center Measures
@@ -892,11 +892,11 @@ For X={2,3,3,4,8}, which set is correct?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Mode=3, Median=3, Mean=4**
-
-The mode and median are 3; the mean is 4.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The mode and median are 3; the mean is 4.
+:::
 ### Problem 18 — Outlier Resistance
 
 **Multiple Choice**
@@ -910,11 +910,11 @@ Which center is more resistant to one extreme high outlier?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Median**
-
-The median is based on rank.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The median is based on rank.
+:::
 ### Problem 19 — Combined Mean
 
 **Multiple Choice**
@@ -928,11 +928,11 @@ Group A: n=10, mean=8. Group B: n=30, mean=14. Combined mean?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 12.5**
-
-[10(8)+30(14)]/40=12.5.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+[10(8)+30(14)]/40=12.5.
+:::
 ### Problem 20 — Interpolated Median
 
 **Multiple Choice**
@@ -946,11 +946,11 @@ For n=40, LL=99.5, W=10, f=14, cf_below=10, median approximately?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 106.64**
-
-99.5+10[(20-10)/14]≈106.64.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+99.5+10[(20-10)/14]≈106.64.
+:::
 ### Problem 21 — IQR
 
 **Multiple Choice**
@@ -964,11 +964,11 @@ If P75=115.5 and P25=99.5, what is IQR?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 16**
-
-115.5-99.5=16.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+115.5-99.5=16.
+:::
 ### Problem 22 — Sample Variance
 
 **Multiple Choice**
@@ -982,11 +982,11 @@ For X={2,4,4,6}, what is sample variance approximately?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 2.67**
-
-Mean=4, SS=8, s²=8/3≈2.67.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Mean=4, SS=8, s²=8/3≈2.67.
+:::
 ### Problem 23 — Adding a Constant
 
 **Multiple Choice**
@@ -1000,11 +1000,11 @@ Mean=50, SD=6. Add 10 to every score. New mean and SD?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Mean 60, SD 6**
-
-Adding a constant shifts center but not spread.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Adding a constant shifts center but not spread.
+:::
 ### Problem 24 — Multiplying by a Constant
 
 **Multiple Choice**
@@ -1018,11 +1018,11 @@ Mean=50, SD=6. Multiply every score by 3. New mean and SD?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Mean 150, SD 18**
-
-Multiplication by 3 scales both mean and SD by 3.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Multiplication by 3 scales both mean and SD by 3.
+:::
 ### Problem 25 — Skewness
 
 **Multiple Choice**
@@ -1036,11 +1036,11 @@ A distribution has a long tail toward high values. Which description is correct?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Positive skew; mean usually greater than median**
-
-The tail points positive, and high extremes pull the mean upward.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The tail points positive, and high extremes pull the mean upward.
+:::
 ## Block D — Normal Distribution and z Scores
 
 ### Problem 26 — Normal Distribution
@@ -1051,7 +1051,9 @@ List four properties of a normal distribution.
 Any four: bell-shaped, symmetric, unimodal, asymptotic, total area 1.00, inflection points at $\mu\pm1\sigma$, predictable SD-based proportions.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests standardized location in a normal distribution. A z score expresses a value as the number of population standard deviations above or below the mean. Once that location is known, symmetry and the z table determine the relevant area or probability.
+:::
 ### Problem 27 — z Score Above the Mean
 
 For $\mu=100,\sigma=15,X=130$, calculate and interpret z.
@@ -1060,7 +1062,9 @@ For $\mu=100,\sigma=15,X=130$, calculate and interpret z.
 $z=(130-100)/15=2$; two SDs above mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 28 — z Score Below the Mean
 
 For $\mu=50,\sigma=8,X=42$, calculate and interpret z.
@@ -1069,7 +1073,9 @@ For $\mu=50,\sigma=8,X=42$, calculate and interpret z.
 $z=(42-50)/8=-1$; one SD below mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 29 — Distance from the Mean
 
 Student A has $z=1.2$ and B has $z=-0.3$. Who is farther from the mean?
@@ -1078,7 +1084,9 @@ Student A has $z=1.2$ and B has $z=-0.3$. Who is farther from the mean?
 Student A because $|1.2|>|-.3|$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 30 — Normal-Curve Areas
 
 Mean-to-$z=1.00$ area is .3413. Find:
@@ -1092,7 +1100,9 @@ b. $.1587$
 c. $.1587$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 31 — Area Between ±1
 
 Using .3413, find $P(-1<Z<1)$.
@@ -1101,7 +1111,9 @@ Using .3413, find $P(-1<Z<1)$.
 $.6826$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Problem 32 — Areas at ±0.50
 
 Mean-to-$z=.50$ area is .1915. Find:
@@ -1113,7 +1125,9 @@ a. $.3085$
 b. $.3085$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 33 — Negative z and Probability
 
 Explain why negative z does not imply negative probability.
@@ -1124,7 +1138,9 @@ Explain why negative z does not imply negative probability.
 z sign shows direction from mean; probability is an area between 0 and 1.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests selection of the correct probability rule. Use addition for mutually exclusive OR events, multiplication for independent AND events, and conditional reasoning when one event changes what is known about another. The correct answer follows the relationship stated in the question.
+:::
 ## Block E — Probability, Sampling, and the CLT
 
 ### Problem 34 — OR Probability
@@ -1135,7 +1151,9 @@ A fair die is rolled once. Find $P(1\text{ or }2)$.
 $1/3\approx.333$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests selection of the correct probability rule. Use addition for mutually exclusive OR events, multiplication for independent AND events, and conditional reasoning when one event changes what is known about another. The correct answer follows the relationship stated in the question.
+:::
 ### Problem 35 — AND Probability
 
 Two independent fair coins are flipped. Find probability of two Heads.
@@ -1144,7 +1162,9 @@ Two independent fair coins are flipped. Find probability of two Heads.
 $.25$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests selection of the correct probability rule. Use addition for mutually exclusive OR events, multiplication for independent AND events, and conditional reasoning when one event changes what is known about another. The correct answer follows the relationship stated in the question.
+:::
 ### Problem 36 — Independent vs. Dependent Events
 
 Explain independent vs dependent card draws using replacement vs no replacement.
@@ -1153,7 +1173,9 @@ Explain independent vs dependent card draws using replacement vs no replacement.
 Replacement preserves probabilities; without replacement the first draw changes the remaining composition.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests selection of the correct probability rule. Use addition for mutually exclusive OR events, multiplication for independent AND events, and conditional reasoning when one event changes what is known about another. The correct answer follows the relationship stated in the question.
+:::
 ### Problem 37 — LLN vs. Gambler's Fallacy
 
 Explain the Law of Large Numbers and distinguish it from the Gambler's Fallacy.
@@ -1162,7 +1184,9 @@ Explain the Law of Large Numbers and distinguish it from the Gambler's Fallacy.
 LLN: long-run relative frequency approaches theoretical probability. Gambler's Fallacy: prior independent outcomes make a future result “due.”
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests selection of the correct probability rule. Use addition for mutually exclusive OR events, multiplication for independent AND events, and conditional reasoning when one event changes what is known about another. The correct answer follows the relationship stated in the question.
+:::
 ### Problem 38 — Sampling Error
 
 Define sampling error.
@@ -1171,7 +1195,9 @@ Define sampling error.
 Natural sample-to-sample variation in a statistic.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests sampling-distribution logic. Sample means vary from sample to sample, and their standard deviation is the standard error, σ/√n. A sample-mean z therefore measures distance from μ in standard-error units rather than raw-score standard-deviation units.
+:::
 ### Problem 39 — Sampling Distribution
 
 Define the sampling distribution of the mean.
@@ -1180,7 +1206,9 @@ Define the sampling distribution of the mean.
 Distribution of all possible sample means for random samples of a fixed size.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Problem 40 — Sampling-Distribution Parameters
 
 $\mu=100,\sigma=15,n=25$. Find sampling-distribution mean and SE.
@@ -1189,7 +1217,9 @@ $\mu=100,\sigma=15,n=25$. Find sampling-distribution mean and SE.
 $\mu_{\bar X}=100$; $SE=15/5=3$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Problem 41 — Sample-Mean z and Tail Area
 
 Using Problem 40, $\bar X=106$. Calculate z and, if upper-tail area beyond $z=2$ is .0228, find $P(\bar X\ge106)$.
@@ -1200,7 +1230,9 @@ Using Problem 40, $\bar X=106$. Calculate z and, if upper-tail area beyond $z=2$
 $z=(106-100)/3=2$; probability $=.0228$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ## Block F — Hypothesis Testing, Effect Size, CI, and Power
 
 ### Problem 42 — Statistical Hypotheses
@@ -1211,7 +1243,9 @@ For a nondirectional test of whether a treatment changes a mean from 100, state 
 $H_0:\mu=100$; $H_1:\mu\ne100$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Problem 43 — Critical Values and Decision Rule
 
 For a two-tailed z test at $\alpha=.05$, state critical values and decision rule.
@@ -1220,7 +1254,9 @@ For a two-tailed z test at $\alpha=.05$, state critical values and decision rule
 $z_{crit}=\pm1.96$; reject when $|Z_{obt}|\ge1.96$, otherwise fail to reject.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Problem 44 — SE and Obtained z
 
 $\mu=80,\sigma=12,n=36,\bar X=84$. Calculate SE and $Z_{obt}$.
@@ -1229,7 +1265,9 @@ $\mu=80,\sigma=12,n=36,\bar X=84$. Calculate SE and $Z_{obt}$.
 $SE=12/6=2$; $Z_{obt}=(84-80)/2=2$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Problem 45 — NHST Decision
 
 Using Problem 44 and $z_{crit}=\pm1.96$, make the decision.
@@ -1238,7 +1276,9 @@ Using Problem 44 and $z_{crit}=\pm1.96$, make the decision.
 Reject $H_0$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Problem 46 — Two-Tailed p Value
 
 If the one-tail area beyond $z=2$ is .0228, calculate the two-tailed p value.
@@ -1247,7 +1287,9 @@ If the one-tail area beyond $z=2$ is .0228, calculate the two-tailed p value.
 $p=2(.0228)=.0456$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Problem 47 — Effect Size
 
 Calculate effect size for Problem 44.
@@ -1256,7 +1298,9 @@ Calculate effect size for Problem 44.
 $ES=(84-80)/12=.333$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Problem 48 — Confidence Interval
 
 Calculate the 95% CI for Problem 44.
@@ -1265,7 +1309,9 @@ Calculate the 95% CI for Problem 44.
 $84\pm1.96(2)=[80.08,87.92]$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Problem 49 — Errors and Power
 
 Define Type I error, Type II error, and statistical power.
@@ -1274,7 +1320,9 @@ Define Type I error, Type II error, and statistical power.
 Type I: reject true $H_0$, probability $\alpha$. Type II: fail to reject false $H_0$, probability $\beta$. Power: correctly reject false $H_0$, probability $1-\beta$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Problem 50 — Power Factors
 
 State the usual effect on power when:
@@ -1288,6 +1336,10 @@ a. Increases.
 b. Increases.
 c. Decreases.
 d. Increases.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
 :::
 
 # Part VII — Final Exam Checklist

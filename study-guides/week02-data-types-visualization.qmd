@@ -1302,7 +1302,7 @@ You should also be able to calculate proportions and percentages even though the
 
 ## Assignment-Style Practice
 
-**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ### Question 1 — Categorical or continuous? (/4)
 
@@ -1317,11 +1317,11 @@ Which variable is continuous?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Reaction time in milliseconds**
-
-Reaction time is measured quantitatively with a defined unit.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Reaction time is measured quantitatively with a defined unit.
+:::
 ### Question 2 — NOIR (/4)
 
 **Multiple Choice**
@@ -1335,11 +1335,11 @@ Which variable is ratio-scaled?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Distance travelled in kilometres**
-
-Distance has equal units and a meaningful zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Distance has equal units and a meaningful zero.
+:::
 ### Question 3 — Same phenomenon, different scale (/2)
 
 **Multiple Choice**
@@ -1353,11 +1353,11 @@ Age recorded as Young, Middle-aged, or Old is:
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Ordinal**
-
-The categories are ordered but not separated by equal measurement units.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The categories are ordered but not separated by equal measurement units.
+:::
 ### Question 4 — Frequency (/2)
 
 **Multiple Choice**
@@ -1371,11 +1371,11 @@ For X={1,2,2,3,2,4,1,2,3,2}, what is the frequency of X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 5**
-
-The value 2 occurs five times.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The value 2 occurs five times.
+:::
 ### Question 5 — Proportion and percentage (/3)
 
 **Multiple Choice**
@@ -1389,11 +1389,11 @@ Using the same data, what proportion equals 2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .50**
-
-Five of ten observations equal 2.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Five of ten observations equal 2.
+:::
 ### Question 6 — Cumulative frequency (/2)
 
 **Multiple Choice**
@@ -1407,11 +1407,11 @@ Using the same data, what is the cumulative frequency at X=2?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 7**
-
-There are two 1s and five 2s, totaling seven observations at 2 or less.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+There are two 1s and five 2s, totaling seven observations at 2 or less.
+:::
 ### Question 7 — Complete a frequency table (/6)
 
 **Multiple Choice**
@@ -1425,11 +1425,11 @@ In a correctly completed frequency table, what should the final cumulative perce
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 100%**
-
-The last row includes all observations.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The last row includes all observations.
+:::
 ### Question 8 — Real limits (/3)
 
 **Multiple Choice**
@@ -1443,11 +1443,11 @@ A whole-number score of 18 has which real limits?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 17.5 and 18.5**
-
-The course convention extends 0.5 below and above the apparent value.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The course convention extends 0.5 below and above the apparent value.
+:::
 ### Question 9 — Grouping rule (/2)
 
 **Multiple Choice**
@@ -1461,11 +1461,11 @@ A dataset ranges from 12 to 54. Should grouping be considered under the course r
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Yes, because the range exceeds 20**
-
-The guide recommends grouping when the range exceeds 20.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The guide recommends grouping when the range exceeds 20.
+:::
 ### Question 10 — Bin width (/2)
 
 **Multiple Choice**
@@ -1479,11 +1479,11 @@ A variable ranges from 15 to 95 and you want 10 bins. What is the raw bin width?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 8**
-
-(95-15)/10=8.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(95-15)/10=8.
+:::
 ### Question 11 — Convenient width (/2)
 
 Range 12 to 87, about 10 bins.
@@ -1495,7 +1495,9 @@ a. 7.5.
 b. About 8.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 12 — Graph choice (/4)
 
 Choose bar chart or histogram:
@@ -1511,7 +1513,9 @@ c. Bar.
 d. Histogram.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 13 — Why histogram bars touch (/2)
 
 Explain.
@@ -1520,7 +1524,9 @@ Explain.
 Histograms represent adjacent intervals of a continuous scale; bar-chart categories are distinct.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 14 — Frequency polygon (/2)
 
 For what kind of variable is it appropriate and what do its points represent?
@@ -1529,7 +1535,9 @@ For what kind of variable is it appropriate and what do its points represent?
 Continuous data; points are typically plotted at class midpoints and connected.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 15 — Misleading y-axis (/2)
 
 Means are 72 and 75; graph starts at 70.
@@ -1541,7 +1549,9 @@ a. It exaggerates a small difference.
 b. Check baseline and scale.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+:::
 ### Question 16 — Interval vs. ratio (/4)
 
 Explain why Celsius is interval and reaction time is ratio.
@@ -1550,7 +1560,9 @@ Explain why Celsius is interval and reaction time is ratio.
 Celsius has equal units but arbitrary zero; reaction time has equal units and a meaningful zero.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 17 — Ordinal vs. nominal (/4)
 
 Explain why diagnosis is nominal and Mild/Moderate/Severe is ordinal.
@@ -1559,7 +1571,9 @@ Explain why diagnosis is nominal and Mild/Moderate/Severe is ordinal.
 Diagnosis has categories without rank; Mild/Moderate/Severe has meaningful order.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 18 — Cumulative percentage (/2)
 
 $N=50$, CF $=41$. Find cumulative percentage.
@@ -1568,7 +1582,9 @@ $N=50$, CF $=41$. Find cumulative percentage.
 $41/50\times100=82\%$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+:::
 ### Question 19 — Integrity checks (/3)
 
 A table has $\sum f=40$, $\sum p=.96$, and $\sum\%=96\%$. Which totals are wrong and what should they be?
@@ -1577,7 +1593,9 @@ A table has $\sum f=40$, $\sum p=.96$, and $\sum\%=96\%$. Which totals are wrong
 Proportion and percentage totals are wrong; they should be 1.00 and 100%.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 20 — Integrated categorical scenario (/6)
 
 Study location for 60 students: Home, Library, Café, Other.
@@ -1595,6 +1613,10 @@ c. Bar chart.
 d. No.
 e. $.30$.
 f. $30\%$.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
 :::
 
 ## Midterm Self-Check

@@ -1850,7 +1850,7 @@ $$
 
 ## Assignment-Style Practice
 
-**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each answer is hidden initially; click **Answer** to reveal it.
+**Format:** 20 questions: **10 multiple-choice** and **10 constructed-response**. Each **Answer** and **Explanation** is hidden initially. Open **Answer** to check your response, then open **Explanation** to review the reasoning.
 
 ### Question 1 — Statistical hypotheses (/3)
 
@@ -1865,11 +1865,11 @@ For a nondirectional test of whether a treatment changes a population mean from 
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. H0: mu=100; H1: mu≠100**
-
-The hypotheses are statements about the population mean.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+The hypotheses are statements about the population mean.
+:::
 ### Question 2 — One-tailed alternative (/2)
 
 **Multiple Choice**
@@ -1883,11 +1883,11 @@ If the researcher predicts specifically that the population mean will increase a
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. H1: mu>100**
-
-A directional increase is represented by mu>100.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A directional increase is represented by mu>100.
+:::
 ### Question 3 — Alpha (/2)
 
 **Multiple Choice**
@@ -1901,11 +1901,11 @@ In this course, alpha=.05 primarily sets:
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. The rejection threshold and Type I error rate**
-
-Alpha sets the tolerated tail probability under H0 and the Type I error rate.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Alpha sets the tolerated tail probability under H0 and the Type I error rate.
+:::
 ### Question 4 — Critical values (/2)
 
 **Multiple Choice**
@@ -1919,11 +1919,11 @@ For a two-tailed z test with alpha=.05, what are the critical values?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. ±1.96**
-
-A two-tailed .05 z test uses ±1.96.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+A two-tailed .05 z test uses ±1.96.
+:::
 ### Question 5 — Raw critical boundaries (/4)
 
 **Multiple Choice**
@@ -1937,11 +1937,11 @@ For mu=100, sigma=15, n=25, what is the standard error?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 3**
-
-SE=15/sqrt(25)=3.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+SE=15/sqrt(25)=3.
+:::
 ### Question 6 — Obtained z (/3)
 
 **Multiple Choice**
@@ -1955,11 +1955,11 @@ Using mu=100, SE=3, and xbar=106, what is Z_obt?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. 2.00**
-
-(106-100)/3=2.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+(106-100)/3=2.
+:::
 ### Question 7 — Decision (/2)
 
 **Multiple Choice**
@@ -1973,11 +1973,11 @@ If Z_obt=2.00 in a two-tailed alpha=.05 test, what is the decision?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Reject H0**
-
-|2.00| exceeds 1.96.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+|2.00| exceeds 1.96.
+:::
 ### Question 8 — p value (/2)
 
 **Multiple Choice**
@@ -1991,11 +1991,11 @@ If the one-tail area beyond z=2.00 is .0228, what is the two-tailed p value?
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. .0456**
-
-Double the one-tail area: 2(.0228)=.0456.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Double the one-tail area: 2(.0228)=.0456.
+:::
 ### Question 9 — Type I (/2)
 
 **Multiple Choice**
@@ -2009,11 +2009,11 @@ A Type I error occurs when a researcher:
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Rejects a true H0**
-
-Type I error means rejecting H0 when it is actually true.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Type I error means rejecting H0 when it is actually true.
+:::
 ### Question 10 — Type II (/2)
 
 **Multiple Choice**
@@ -2027,11 +2027,11 @@ A Type II error occurs when a researcher:
 
 ::: {.callout-tip collapse="true" title="Answer"}
 **Correct answer: A. Fails to reject a false H0**
-
-Type II error means failing to reject H0 when it is false.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+Type II error means failing to reject H0 when it is false.
+:::
 ### Question 11 — Power (/2)
 
 Define power and write it in terms of $\beta$.
@@ -2040,7 +2040,9 @@ Define power and write it in terms of $\beta$.
 Correctly rejecting a false $H_0$; $1-\beta$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 12 — Power factors (/4)
 
 Power: increase or decrease when
@@ -2056,7 +2058,9 @@ c. Decreases.
 d. Increases.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 13 — Effect size (/3)
 
 $\bar X=106,\mu=100,\sigma=15$. Calculate ES.
@@ -2065,7 +2069,9 @@ $\bar X=106,\mu=100,\sigma=15$. Calculate ES.
 $ES=(106-100)/15=.40$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 14 — Interpret ES (/2)
 
 Interpret ES from Question 13 relative to the course benchmarks.
@@ -2074,7 +2080,9 @@ Interpret ES from Question 13 relative to the course benchmarks.
 Between the small and medium reference values; describe cautiously as small-to-moderate.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 15 — 95% CI (/4)
 
 $\bar X=106,SE=3,z_{crit}=1.96$. Calculate CI.
@@ -2083,7 +2091,9 @@ $\bar X=106,SE=3,z_{crit}=1.96$. Calculate CI.
 $106\pm1.96(3)=106\pm5.88=[100.12,111.88]$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+:::
 ### Question 16 — CI and NHST (/2)
 
 Does $\mu=100$ fall inside the CI? Is this consistent with the NHST decision?
@@ -2092,7 +2102,9 @@ Does $\mu=100$ fall inside the CI? Is this consistent with the NHST decision?
 100 is just outside; yes, consistent with rejecting $H_0$.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 17 — Fail to reject (/2)
 
 Why does fail to reject not prove $H_0$ true?
@@ -2101,7 +2113,9 @@ Why does fail to reject not prove $H_0$ true?
 It means evidence was insufficient to reject the model, not that the model has been proven true.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 18 — Sample size and significance (/3)
 
 Same mean difference, one study much larger $n$:
@@ -2115,7 +2129,9 @@ b. Larger-$n$ study.
 c. Larger-$n$ study.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+:::
 ### Question 19 — One vs two tails (/3)
 
 Why can a justified one-tailed test have more power in the predicted direction?
@@ -2124,7 +2140,9 @@ Why can a justified one-tailed test have more power in the predicted direction?
 All of $\alpha$ is placed in one tail, reducing the critical threshold in the predicted direction.
 :::
 
-
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+:::
 ### Question 20 — Complete NHST problem (/8)
 
 Known population: $\mu=80,\sigma=12$. Sample: $n=36,\bar X=84$. Two-tailed $\alpha=.05$, $z_{crit}=\pm1.96$.
@@ -2146,6 +2164,10 @@ e. $.0456$.
 f. $ES=4/12=.333$.
 g. $84\pm1.96(2)=[80.08,87.92]$.
 h. The sample mean is sufficiently unlikely under the null model to reject the claim that the population mean remains 80; the treatment is associated with a statistically significant difference.
+:::
+
+::: {.callout-note collapse="true" title="Explanation"}
+This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
 :::
 
 ## Midterm Self-Check
