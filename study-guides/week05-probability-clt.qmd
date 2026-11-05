@@ -1983,7 +1983,7 @@ SE increases.
 
 ::: {.callout-note collapse="true" title="Explanation"}
 <!-- detailed-explanation-v2 -->
-This question focuses on **Larger \sigma (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
+This question focuses on **Larger $\sigma$ (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 19 — $n=1$ (/3)
 
