@@ -1320,7 +1320,10 @@ Which variable is continuous?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Reaction time is measured quantitatively with a defined unit.
+
+This question focuses on **Categorical or continuous? (/4)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 2 — NOIR (/4)
 
@@ -1338,7 +1341,10 @@ Which variable is ratio-scaled?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Distance has equal units and a meaningful zero.
+
+This question focuses on **NOIR (/4)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 3 — Same phenomenon, different scale (/2)
 
@@ -1356,7 +1362,10 @@ Age recorded as Young, Middle-aged, or Old is:
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The categories are ordered but not separated by equal measurement units.
+
+This question focuses on **Same phenomenon, different scale (/2)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 4 — Frequency (/2)
 
@@ -1374,7 +1383,10 @@ For X={1,2,2,3,2,4,1,2,3,2}, what is the frequency of X=2?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The value 2 occurs five times.
+
+This question focuses on **Frequency (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 5 — Proportion and percentage (/3)
 
@@ -1392,7 +1404,10 @@ Using the same data, what proportion equals 2?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Five of ten observations equal 2.
+
+This question focuses on **Proportion and percentage (/3)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 6 — Cumulative frequency (/2)
 
@@ -1410,7 +1425,10 @@ Using the same data, what is the cumulative frequency at X=2?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 There are two 1s and five 2s, totaling seven observations at 2 or less.
+
+This question focuses on **Cumulative frequency (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 7 — Complete a frequency table (/6)
 
@@ -1428,7 +1446,10 @@ In a correctly completed frequency table, what should the final cumulative perce
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The last row includes all observations.
+
+This question focuses on **Complete a frequency table (/6)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 8 — Real limits (/3)
 
@@ -1446,7 +1467,10 @@ A whole-number score of 18 has which real limits?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The course convention extends 0.5 below and above the apparent value.
+
+This question focuses on **Real limits (/3)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 9 — Grouping rule (/2)
 
@@ -1464,7 +1488,10 @@ A dataset ranges from 12 to 54. Should grouping be considered under the course r
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The guide recommends grouping when the range exceeds 20.
+
+This question focuses on **Grouping rule (/2)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 10 — Bin width (/2)
 
@@ -1482,7 +1509,10 @@ A variable ranges from 15 to 95 and you want 10 bins. What is the raw bin width?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 (95-15)/10=8.
+
+This question focuses on **Bin width (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 11 — Convenient width (/2)
 
@@ -1496,7 +1526,8 @@ b. About 8.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Convenient width (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 12 — Graph choice (/4)
 
@@ -1514,7 +1545,8 @@ d. Histogram.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Graph choice (/4)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 13 — Why histogram bars touch (/2)
 
@@ -1525,7 +1557,8 @@ Histograms represent adjacent intervals of a continuous scale; bar-chart categor
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Why histogram bars touch (/2)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 14 — Frequency polygon (/2)
 
@@ -1536,7 +1569,8 @@ Continuous data; points are typically plotted at class midpoints and connected.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Frequency polygon (/2)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 15 — Misleading y-axis (/2)
 
@@ -1550,7 +1584,8 @@ b. Check baseline and scale.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Misleading y-axis (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 16 — Interval vs. ratio (/4)
 
@@ -1561,7 +1596,8 @@ Celsius has equal units but arbitrary zero; reaction time has equal units and a 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Interval vs. ratio (/4)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 17 — Ordinal vs. nominal (/4)
 
@@ -1572,7 +1608,8 @@ Diagnosis has categories without rank; Mild/Moderate/Severe has meaningful order
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Ordinal vs. nominal (/4)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 18 — Cumulative percentage (/2)
 
@@ -1583,7 +1620,8 @@ $41/50\times100=82\%$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Cumulative percentage (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 19 — Integrity checks (/3)
 
@@ -1594,7 +1632,8 @@ Proportion and percentage totals are wrong; they should be 1.00 and 100%.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrity checks (/3)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 20 — Integrated categorical scenario (/6)
 
@@ -1616,9 +1655,9 @@ f. $30\%$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrated categorical scenario (/6)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
-
 ## Midterm Self-Check
 
 You should be able to:

@@ -34,7 +34,10 @@ For μ=110, σ=25, and X=135, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The score is exactly one population SD above the mean.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 2
 
@@ -52,7 +55,10 @@ For a normal distribution with μ=110 and σ=25, where are the inflection points
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Normal-curve inflection points occur at μ±1σ.
+
+A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 ### Question 3
 
@@ -70,7 +76,10 @@ Using μ=100, SE=4.20, and x̄=108.40, what is Z_obt?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The observed mean is exactly two standard errors above the null mean.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 4
 
@@ -88,7 +97,10 @@ Participants are placed into ordered age categories—Young, Middle-aged, and Ol
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The categories have a meaningful order but no equal unit spacing.
+
+This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 5
 
@@ -106,7 +118,10 @@ Suppose the target population is every undergraduate student in British Columbia
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The sample is the subset actually observed.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 6
 
@@ -124,7 +139,10 @@ A single fair die is thrown. What is the probability of obtaining either of the 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The outcomes are mutually exclusive: 1/6+1/6=1/3.
+
+First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 7
 
@@ -142,7 +160,10 @@ For a nondirectional test of whether a treatment changes μ from 100, which hypo
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The hypotheses concern the population mean and a nondirectional alternative uses ≠.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 8
 
@@ -160,7 +181,10 @@ A nondirectional hypothesis test uses the standard α=.05 criterion. Which z val
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A two-tailed .05 z test uses ±1.96.
+
+This item follows the logic of null-hypothesis significance testing. State the population claim in H0, define the competing claim in H1, and evaluate how far the observed sample result lies from the null expectation in standard-error units. Compare the obtained statistic with the critical boundary, or equivalently compare p with α. The correct conclusion is to reject or fail to reject H0—not to prove or accept it.
 :::
 ### Question 9
 
@@ -178,7 +202,10 @@ An obtained test statistic equals +2.00 in a two-tailed test using α=.05. Based
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 |2.00| exceeds 1.96.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 10
 
@@ -196,7 +223,10 @@ For x̄=108.40, μ=100, and σ=21, what is the effect size ES?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 ES=(x̄-μ)/σ=8.40/21=0.400.
+
+Effect size answers a different question from statistical significance. It standardizes the mean difference using the population SD, not the standard error, so it describes the magnitude of the effect rather than how precisely it was estimated. A result can therefore be statistically significant and still have only a small effect size. This distinction helps prevent overinterpreting a small p value.
 :::
 ### Question 11
 
@@ -214,7 +244,10 @@ For μ=110, σ=25, and X=60, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The score is exactly two population SDs below the mean.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 12
 
@@ -232,7 +265,10 @@ With μ=65, SE=5.00, and x̄=75.00, what is the sample-mean z score?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The sample mean is two standard errors above μ.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 13
 
@@ -250,7 +286,10 @@ For the first three values of X={6,9,7}, which pair is correct?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 ΣX² means square each score then sum; (ΣX)² means sum first, then square.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 14
 
@@ -268,7 +307,10 @@ Which of the following measurements has both equal units and a meaningful zero p
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Reaction time has equal units and a meaningful zero.
+
+The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 15
 
@@ -286,7 +328,10 @@ After observing a long streak of one outcome in an independent random process, s
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Independent prior outcomes do not make the opposite outcome due.
+
+First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 16
 
@@ -304,7 +349,10 @@ Under a standard normal curve, .1915 of the area lies between z=0 and z=.50. Wha
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 .5000-.1915=.3085.
+
+A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 ### Question 17
 
@@ -322,7 +370,10 @@ Suppose a psychological theory generates predictions about memory performance. W
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Falsifiability means evidence could in principle contradict the theory.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 18
 
@@ -340,7 +391,10 @@ Participants are randomly allocated to receive either a new study technique or t
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Random assignment plus manipulation makes this a true experiment.
+
+The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Question 19
 
@@ -358,7 +412,10 @@ Two independent coin tosses are made with a fair coin. What is the probability o
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 .5×.5=.25.
+
+First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 20
 
@@ -376,7 +433,10 @@ Under a standard normal curve, the area from z=0 to z=+1.00 is .3413. What is th
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 .5000+.3413=.8413.
+
+This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 21
 
@@ -394,7 +454,10 @@ If P75=48 and P25=30, what is the IQR?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 IQR=P75-P25, so the common shift cancels and the difference is 18.
+
+The target percentile represents a position in the cumulative distribution, not necessarily an observed score. Convert the percentile to a target frequency position, identify the interval containing that position, and interpolate within that interval using the course formula. For an IQR, locate P75 and P25 separately and subtract. The most common error is using the wrong cumulative-frequency row or the wrong real limit.
 :::
 ### Question 22
 
@@ -412,7 +475,10 @@ If σ=30 and n=36, what is the standard error?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 SE=σ/√n=30/6=5.00.
+
+This item shifts attention from individual scores to the behavior of sample means across repeated samples. The sampling distribution is centered at μ and has spread SE = σ/√n, so larger samples produce a narrower distribution of possible sample means. When standardizing a sample mean, divide by SE rather than the raw-score SD. That is why the same raw mean difference becomes more unusual as n increases.
 :::
 ### Question 23
 
@@ -430,7 +496,10 @@ Given X={6,9,7,11,8,10}, what is Σxᵢ from i=2 through i=5?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The required values are [9, 7, 11, 8], which sum to 35.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 24
 
@@ -448,7 +517,10 @@ A whole-number score of 23 has which real limits?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The course convention extends 0.5 below and above the apparent whole-number score.
+
+This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 25
 
@@ -466,7 +538,10 @@ When treating a population as normally distributed, which statement describes a 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The normal distribution is symmetric around its mean.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 26
 
@@ -484,7 +559,10 @@ A reaction-time dataset contains one exceptionally slow response far above every
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The median depends mainly on rank and is resistant to the magnitude of an extreme score.
+
+This item measures how far scores tend to lie from their mean. Because unsquared deviations cancel to zero, the deviations are squared before being summed; for a sample, divide by n−1 to obtain the sample variance. Taking the square root returns the measure of spread to the original units as the standard deviation. A good check is that variance cannot be negative and SD must equal the square root of the variance.
 :::
 ### Question 27
 
@@ -502,7 +580,10 @@ For the same data, what is the cumulative frequency at X=2?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 There are 6 observations equal to 2 or less.
+
+This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 28
 
@@ -520,7 +601,10 @@ In which example does the first event alter the probability distribution for the
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Without replacement, the first draw changes the remaining composition.
+
+First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 29
 
@@ -538,7 +622,10 @@ An exam distribution contains many moderate scores and a small number of extreme
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The tail points right, and high extreme values tend to pull the mean upward.
+
+The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 30
 
@@ -556,7 +643,10 @@ A variable ranges from 16 to 96 and is divided into 10 bins. What is the raw bin
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 (96-16)/10 = 8.
+
+This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 31
 
@@ -574,7 +664,10 @@ For X={0,1,1,2,2,2,3,3,4,7}, what is the frequency of X=2?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The value 2 occurs 3 times.
+
+This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 32
 
@@ -592,7 +685,10 @@ For X={5,6,6,7,11}, what is the mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The sum is 35 and 35/5 = 7.0.
+
+The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 33
 
@@ -610,7 +706,10 @@ Group A has n=25, mean=11; Group B has n=30, mean=17. What is the combined mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The combined mean weights each group mean by its sample size.
+
+A combined mean must reflect how many observations each group contributes. When sample sizes differ, simply averaging the group means gives the smaller group too much influence. The correct method weights each mean by its group size, adds those weighted totals, and divides by the combined sample size. The final answer should lie between the group means and be pulled toward the larger group.
 :::
 ### Question 34
 
@@ -628,7 +727,10 @@ For X={6,10,10,14}, what is the sample variance approximately?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The mean is 10, SS=32, and s²=SS/(4-1)=10.67.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 35
 
@@ -646,7 +748,10 @@ For σ=21 and n=25, what is SE?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 SE=21/5=4.20.
+
+This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 36
 
@@ -664,7 +769,10 @@ After collecting a sample, a researcher computes its mean reaction time. A numer
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A statistic describes a sample; a parameter describes a population.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 37
 
@@ -682,7 +790,10 @@ A researcher observes one sample but wants to draw a conclusion about people who
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Inferential statistics generalize from a sample to a wider population.
+
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 38
 
@@ -700,7 +811,10 @@ A z score of magnitude 2.00 leaves .0228 in one tail of the null distribution. F
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Two-tailed p=2(.0228)=.0456.
+
+A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 # Section B — Integrated Short Answer
 
@@ -725,7 +839,8 @@ e. A histogram is appropriate for the quantitative score distribution.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Integrated Problem 2
 
@@ -748,7 +863,8 @@ e. Effect size uses the population SD σ, not SE.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Integrated Problem 3
 
@@ -767,7 +883,8 @@ c. The median is based on rank and is less affected by extreme values than the m
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Integrated Problem 4
 
@@ -794,7 +911,8 @@ g. CI=84±1.96(2)=84±3.92=[80.08,87.92].
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Integrated Problem 5
 
@@ -817,7 +935,8 @@ e. Less unusual. For n=9, SE=12/3=4 and z=(54-50)/4=1.00.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 # Coverage Check
 

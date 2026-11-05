@@ -1907,7 +1907,10 @@ For X={2,3,3,4,8}, which set is correct?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The most frequent and middle values are 3; the mean is 20/5=4.
+
+This question focuses on **Mode, median, mean (/3)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 2 — Outlier sensitivity (/2)
 
@@ -1925,7 +1928,10 @@ If 8 is replaced by 80, which measure changes more?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The mean is sensitive to score magnitude.
+
+This question focuses on **Outlier sensitivity (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 3 — Choosing a center (/2)
 
@@ -1943,7 +1949,10 @@ For a strongly positively skewed salary distribution, which center is most resis
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The median depends primarily on rank.
+
+This question focuses on **Choosing a center (/2)**. This item measures how far scores tend to lie from their mean. Because unsquared deviations cancel to zero, the deviations are squared before being summed; for a sample, divide by n−1 to obtain the sample variance. Taking the square root returns the measure of spread to the original units as the standard deviation. A good check is that variance cannot be negative and SD must equal the square root of the variance.
 :::
 ### Question 4 — Mean (/2)
 
@@ -1961,7 +1970,10 @@ What is the mean of X={4,7,5,8,6}?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The sum is 30 and 30/5=6.
+
+This question focuses on **Mean (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 5 — Combined mean (/3)
 
@@ -1979,7 +1991,10 @@ Group A has n=15, mean=10; Group B has n=25, mean=14. What is the combined mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 [15(10)+25(14)]/40=12.5.
+
+This question focuses on **Combined mean (/3)**. A combined mean must reflect how many observations each group contributes. When sample sizes differ, simply averaging the group means gives the smaller group too much influence. The correct method weights each mean by its group size, adds those weighted totals, and divides by the combined sample size. The final answer should lie between the group means and be pulled toward the larger group.
 :::
 ### Question 6 — Why not average group means? (/2)
 
@@ -1997,7 +2012,10 @@ Why is simply averaging the two group means inappropriate?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Unequal groups must be weighted by their sample sizes.
+
+This question focuses on **Why not average group means? (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 7 — Interpolated median (/4)
 
@@ -2015,7 +2033,10 @@ For n=30, LL=19.5, W=5, f=9, cf_below=11, what is the interpolated median approx
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Md=19.5+5[(15-11)/9]≈21.72.
+
+This question focuses on **Interpolated median (/4)**. The target percentile represents a position in the cumulative distribution, not necessarily an observed score. Convert the percentile to a target frequency position, identify the interval containing that position, and interpolate within that interval using the course formula. For an IQR, locate P75 and P25 separately and subtract. The most common error is using the wrong cumulative-frequency row or the wrong real limit.
 :::
 ### Question 8 — Percentile interpolation (/4)
 
@@ -2033,7 +2054,10 @@ For n=30, LL=24.5, W=5, f=8, cf_below=18, what is P75 approximately?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 P75=24.5+5[(22.5-18)/8]≈27.31.
+
+This question focuses on **Percentile interpolation (/4)**. The target percentile represents a position in the cumulative distribution, not necessarily an observed score. Convert the percentile to a target frequency position, identify the interval containing that position, and interpolate within that interval using the course formula. For an IQR, locate P75 and P25 separately and subtract. The most common error is using the wrong cumulative-frequency row or the wrong real limit.
 :::
 ### Question 9 — Range (/2)
 
@@ -2051,7 +2075,10 @@ What is the range of X={3,5,9,12,4,7}?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 12-3=9.
+
+This question focuses on **Range (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 10 — IQR (/2)
 
@@ -2069,7 +2096,10 @@ If P75=42 and P25=28, what is the IQR?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 42-28=14.
+
+This question focuses on **IQR (/2)**. The target percentile represents a position in the cumulative distribution, not necessarily an observed score. Convert the percentile to a target frequency position, identify the interval containing that position, and interpolate within that interval using the course formula. For an IQR, locate P75 and P25 separately and subtract. The most common error is using the wrong cumulative-frequency row or the wrong real limit.
 :::
 ### Question 11 — Sum of deviations (/2)
 
@@ -2080,7 +2110,8 @@ Zero. Unsquared deviations cancel, motivating squared deviations.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sum of deviations (/2)**. This item measures how far scores tend to lie from their mean. Because unsquared deviations cancel to zero, the deviations are squared before being summed; for a sample, divide by n−1 to obtain the sample variance. Taking the square root returns the measure of spread to the original units as the standard deviation. A good check is that variance cannot be negative and SD must equal the square root of the variance.
 :::
 ### Question 12 — Sample variance and SD (/5)
 
@@ -2091,7 +2122,8 @@ $\bar{x}=4$; $SS=8$; $s^2=8/3\approx2.67$; $s\approx1.63$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sample variance and SD (/5)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 13 — Why $n-1$? (/2)
 
@@ -2102,7 +2134,8 @@ It corrects downward bias when sample variance estimates population variance and
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Why n-1? (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 14 — Add a constant (/3)
 
@@ -2113,7 +2146,8 @@ Mean $=60$, SD $=6$, variance $=36$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Add a constant (/3)**. This item measures how far scores tend to lie from their mean. Because unsquared deviations cancel to zero, the deviations are squared before being summed; for a sample, divide by n−1 to obtain the sample variance. Taking the square root returns the measure of spread to the original units as the standard deviation. A good check is that variance cannot be negative and SD must equal the square root of the variance.
 :::
 ### Question 15 — Multiply by a constant (/3)
 
@@ -2124,7 +2158,8 @@ Mean $=150$, SD $=18$, variance $=324$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests variability around the mean. Squared deviations prevent positive and negative deviations from cancelling; for a sample, divide their sum by n−1. The standard deviation is the square root of the variance, returning the result to the original measurement units.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Multiply by a constant (/3)**. This item measures how far scores tend to lie from their mean. Because unsquared deviations cancel to zero, the deviations are squared before being summed; for a sample, divide by n−1 to obtain the sample variance. Taking the square root returns the measure of spread to the original units as the standard deviation. A good check is that variance cannot be negative and SD must equal the square root of the variance.
 :::
 ### Question 16 — Positive skew (/3)
 
@@ -2140,7 +2175,8 @@ c. Median.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Positive skew (/3)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 17 — Negative skew (/2)
 
@@ -2151,7 +2187,8 @@ Negative; mean usually lower than median.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Negative skew (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 18 — Symmetry (/2)
 
@@ -2162,7 +2199,8 @@ Approximately equal.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Symmetry (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 19 — Kurtosis (/2)
 
@@ -2173,7 +2211,8 @@ Peakedness/flatness; no calculation required in this course review.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Kurtosis (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 20 — Integrated summary (/6)
 
@@ -2195,9 +2234,9 @@ f. Median.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrated summary (/6)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
-
 ## Midterm Self-Check
 
 You should be able to explain:

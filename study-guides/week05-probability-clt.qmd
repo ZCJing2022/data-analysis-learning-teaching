@@ -1695,7 +1695,10 @@ A fair six-sided die is rolled once. What is P(rolling a 4)?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 One of six equally likely outcomes is a 4.
+
+This question focuses on **Basic probability (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 2 — OR rule (/2)
 
@@ -1713,7 +1716,10 @@ On one fair die roll, what is P(1 or 2)?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The mutually exclusive probabilities add.
+
+This question focuses on **OR rule (/2)**. First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 3 — AND rule (/2)
 
@@ -1731,7 +1737,10 @@ Two independent fair coins are flipped. What is P(two Heads)?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 .5×.5=.25.
+
+This question focuses on **AND rule (/2)**. First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 4 — Independent or dependent? (/4)
 
@@ -1749,7 +1758,10 @@ Which pair is dependent?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Without replacement, the first draw changes the remaining composition.
+
+This question focuses on **Independent or dependent? (/4)**. First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 5 — Conditional probability (/2)
 
@@ -1767,7 +1779,10 @@ What does conditional probability mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 It evaluates an event under a specified known condition.
+
+This question focuses on **Conditional probability (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 6 — Law of Large Numbers (/2)
 
@@ -1785,7 +1800,10 @@ According to the Law of Large Numbers, what happens as fair-coin flips become ve
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Long-run relative frequency tends toward theoretical probability.
+
+This question focuses on **Law of Large Numbers (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 7 — Gambler's Fallacy (/2)
 
@@ -1803,7 +1821,10 @@ Believing black is 'due' after five red roulette outcomes is an example of:
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 It incorrectly assumes prior independent outcomes alter the next probability.
+
+This question focuses on **Gambler's Fallacy (/2)**. First identify the relationship between the events before doing any arithmetic. For mutually exclusive OR events, add probabilities; for independent AND events, multiply; for dependent events, the first outcome changes what follows. Conditional probability explicitly asks about an event given some known condition. The common mistake is to choose an arithmetic rule before deciding whether the events are mutually exclusive, independent, or dependent.
 :::
 ### Question 8 — Sampling error (/2)
 
@@ -1821,7 +1842,10 @@ Two random samples from the same population have different means. What explains 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Sampling error is natural sample-to-sample variation.
+
+This question focuses on **Sampling error (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 9 — Sampling distribution (/3)
 
@@ -1839,7 +1863,10 @@ What is a sampling distribution of the mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 It contains the sample means from all possible samples of a given size.
+
+This question focuses on **Sampling distribution (/3)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 10 — CLT center (/2)
 
@@ -1857,7 +1884,10 @@ If the population mean is 75, where is the sampling distribution of the mean cen
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The CLT gives the sampling-distribution mean equal to the population mean.
+
+This question focuses on **CLT center (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 11 — CLT shape (/2)
 
@@ -1868,7 +1898,8 @@ $N\ge30$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **CLT shape (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 12 — SE, $n=9$ (/2)
 
@@ -1879,7 +1910,8 @@ $SE=18/\sqrt9=6$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **SE, n=9 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 13 — SE, $n=36$ (/2)
 
@@ -1890,7 +1922,8 @@ $SE=18/\sqrt{36}=3$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **SE, n=36 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 14 — Compare SEs (/2)
 
@@ -1901,7 +1934,8 @@ Larger $n$ enlarges the denominator $\sqrt n$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Compare SEs (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 15 — Sample-mean z (/3)
 
@@ -1912,7 +1946,8 @@ $SE=15/5=3$; $z=(106-100)/3=2$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sample-mean z (/3)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 16 — Tail probability (/2)
 
@@ -1923,7 +1958,8 @@ $.0228$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Tail probability (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 17 — Larger $n$ (/2)
 
@@ -1934,7 +1970,8 @@ $|z|$ increases because SE decreases.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Larger n (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 18 — Larger $\sigma$ (/2)
 
@@ -1945,7 +1982,8 @@ SE increases.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Larger \sigma (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 19 — $n=1$ (/3)
 
@@ -1956,7 +1994,8 @@ When $n=1$, $SE=\sigma/\sqrt1=\sigma$, so $Z=(X-\mu)/\sigma$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **n=1 (/3)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 20 — Integrated sampling problem (/6)
 
@@ -1978,9 +2017,9 @@ f. If $n=9$, $SE=4$ and $z=1$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrated sampling problem (/6)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
-
 ## Midterm Self-Check
 
 You should be able to explain:

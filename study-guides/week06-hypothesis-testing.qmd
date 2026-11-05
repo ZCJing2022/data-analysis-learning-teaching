@@ -1868,7 +1868,10 @@ For a nondirectional test of whether a treatment changes a population mean from 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The hypotheses are statements about the population mean.
+
+This question focuses on **Statistical hypotheses (/3)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 2 — One-tailed alternative (/2)
 
@@ -1886,7 +1889,10 @@ If the researcher predicts specifically that the population mean will increase a
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A directional increase is represented by mu>100.
+
+This question focuses on **One-tailed alternative (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 3 — Alpha (/2)
 
@@ -1904,7 +1910,10 @@ In this course, alpha=.05 primarily sets:
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Alpha sets the tolerated tail probability under H0 and the Type I error rate.
+
+This question focuses on **Alpha (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 4 — Critical values (/2)
 
@@ -1922,7 +1931,10 @@ For a two-tailed z test with alpha=.05, what are the critical values?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A two-tailed .05 z test uses ±1.96.
+
+This question focuses on **Critical values (/2)**. The p value is the probability, assuming the null model, of observing a result at least as extreme as the one obtained. For a two-tailed test, extreme results in both directions count, so a one-tail z-table area is doubled. The resulting p value is compared with α to make the decision. It is not the probability that the null hypothesis itself is true.
 :::
 ### Question 5 — Raw critical boundaries (/4)
 
@@ -1940,7 +1952,10 @@ For mu=100, sigma=15, n=25, what is the standard error?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 SE=15/sqrt(25)=3.
+
+This question focuses on **Raw critical boundaries (/4)**. This item shifts attention from individual scores to the behavior of sample means across repeated samples. The sampling distribution is centered at μ and has spread SE = σ/√n, so larger samples produce a narrower distribution of possible sample means. When standardizing a sample mean, divide by SE rather than the raw-score SD. That is why the same raw mean difference becomes more unusual as n increases.
 :::
 ### Question 6 — Obtained z (/3)
 
@@ -1958,7 +1973,10 @@ Using mu=100, SE=3, and xbar=106, what is Z_obt?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 (106-100)/3=2.
+
+This question focuses on **Obtained z (/3)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 7 — Decision (/2)
 
@@ -1976,7 +1994,10 @@ If Z_obt=2.00 in a two-tailed alpha=.05 test, what is the decision?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 |2.00| exceeds 1.96.
+
+This question focuses on **Decision (/2)**. The p value is the probability, assuming the null model, of observing a result at least as extreme as the one obtained. For a two-tailed test, extreme results in both directions count, so a one-tail z-table area is doubled. The resulting p value is compared with α to make the decision. It is not the probability that the null hypothesis itself is true.
 :::
 ### Question 8 — p value (/2)
 
@@ -1994,7 +2015,10 @@ If the one-tail area beyond z=2.00 is .0228, what is the two-tailed p value?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Double the one-tail area: 2(.0228)=.0456.
+
+This question focuses on **p value (/2)**. The p value is the probability, assuming the null model, of observing a result at least as extreme as the one obtained. For a two-tailed test, extreme results in both directions count, so a one-tail z-table area is doubled. The resulting p value is compared with α to make the decision. It is not the probability that the null hypothesis itself is true.
 :::
 ### Question 9 — Type I (/2)
 
@@ -2012,7 +2036,10 @@ A Type I error occurs when a researcher:
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Type I error means rejecting H0 when it is actually true.
+
+This question focuses on **Type I (/2)**. This item is about the possible outcomes of a hypothesis test. Type I error means rejecting a true H0 and has probability α; Type II error means failing to reject a false H0 and has probability β. Power is 1−β, the probability of correctly detecting a real effect. Power generally rises with larger samples and larger effects, and falls when population variability is greater.
 :::
 ### Question 10 — Type II (/2)
 
@@ -2030,7 +2057,10 @@ A Type II error occurs when a researcher:
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Type II error means failing to reject H0 when it is false.
+
+This question focuses on **Type II (/2)**. This item is about the possible outcomes of a hypothesis test. Type I error means rejecting a true H0 and has probability α; Type II error means failing to reject a false H0 and has probability β. Power is 1−β, the probability of correctly detecting a real effect. Power generally rises with larger samples and larger effects, and falls when population variability is greater.
 :::
 ### Question 11 — Power (/2)
 
@@ -2041,7 +2071,8 @@ Correctly rejecting a false $H_0$; $1-\beta$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Power (/2)**. This item is about the possible outcomes of a hypothesis test. Type I error means rejecting a true H0 and has probability α; Type II error means failing to reject a false H0 and has probability β. Power is 1−β, the probability of correctly detecting a real effect. Power generally rises with larger samples and larger effects, and falls when population variability is greater.
 :::
 ### Question 12 — Power factors (/4)
 
@@ -2059,7 +2090,8 @@ d. Increases.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Power factors (/4)**. Effect size answers a different question from statistical significance. It standardizes the mean difference using the population SD, not the standard error, so it describes the magnitude of the effect rather than how precisely it was estimated. A result can therefore be statistically significant and still have only a small effect size. This distinction helps prevent overinterpreting a small p value.
 :::
 ### Question 13 — Effect size (/3)
 
@@ -2070,7 +2102,8 @@ $ES=(106-100)/15=.40$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Effect size (/3)**. Effect size answers a different question from statistical significance. It standardizes the mean difference using the population SD, not the standard error, so it describes the magnitude of the effect rather than how precisely it was estimated. A result can therefore be statistically significant and still have only a small effect size. This distinction helps prevent overinterpreting a small p value.
 :::
 ### Question 14 — Interpret ES (/2)
 
@@ -2081,7 +2114,8 @@ Between the small and medium reference values; describe cautiously as small-to-m
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Interpret ES (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 15 — 95% CI (/4)
 
@@ -2092,7 +2126,8 @@ $106\pm1.96(3)=106\pm5.88=[100.12,111.88]$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **95% CI (/4)**. A confidence interval combines the observed mean with a margin of error based on the critical value and SE. Smaller SE produces a narrower interval, while greater sampling uncertainty produces a wider one. For the corresponding two-tailed test, a null value outside a 95% interval is consistent with rejecting H0 at α=.05. The 95% refers to the long-run success rate of the interval-building procedure across repeated samples.
 :::
 ### Question 16 — CI and NHST (/2)
 
@@ -2103,7 +2138,8 @@ Does $\mu=100$ fall inside the CI? Is this consistent with the NHST decision?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **CI and NHST (/2)**. This item follows the logic of null-hypothesis significance testing. State the population claim in H0, define the competing claim in H1, and evaluate how far the observed sample result lies from the null expectation in standard-error units. Compare the obtained statistic with the critical boundary, or equivalently compare p with α. The correct conclusion is to reject or fail to reject H0—not to prove or accept it.
 :::
 ### Question 17 — Fail to reject (/2)
 
@@ -2114,7 +2150,8 @@ It means evidence was insufficient to reject the model, not that the model has b
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Fail to reject (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 18 — Sample size and significance (/3)
 
@@ -2130,7 +2167,8 @@ c. Larger-$n$ study.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sample size and significance (/3)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 19 — One vs two tails (/3)
 
@@ -2141,7 +2179,8 @@ All of $\alpha$ is placed in one tail, reducing the critical threshold in the pr
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests statistical inference. Compare the observed sample result with what would be expected if H0 were true, using the standard error, critical value, and/or p value. Effect size describes magnitude, confidence intervals describe uncertainty, and power is the chance of detecting a real effect.
+<!-- detailed-explanation-v2 -->
+This question focuses on **One vs two tails (/3)**. The p value is the probability, assuming the null model, of observing a result at least as extreme as the one obtained. For a two-tailed test, extreme results in both directions count, so a one-tail z-table area is doubled. The resulting p value is compared with α to make the decision. It is not the probability that the null hypothesis itself is true.
 :::
 ### Question 20 — Complete NHST problem (/8)
 
@@ -2167,9 +2206,9 @@ h. The sample mean is sufficiently unlikely under the null model to reject the c
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Complete NHST problem (/8)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
-
 ## Midterm Self-Check
 
 You should be able to explain and calculate:

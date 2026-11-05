@@ -1618,7 +1618,10 @@ Which is a property of the normal distribution?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The normal distribution is symmetric around its mean.
+
+This question focuses on **Normal-distribution properties (/4)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 2 — Total area (/2)
 
@@ -1636,7 +1639,10 @@ What is the total area under a normal distribution?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The full area represents the entire probability distribution.
+
+This question focuses on **Total area (/2)**. A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 ### Question 3 — z at the mean (/2)
 
@@ -1654,7 +1660,10 @@ If X equals the population mean, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The numerator X-mu equals zero.
+
+This question focuses on **z at the mean (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 4 — One SD above (/2)
 
@@ -1672,7 +1681,10 @@ For mu=100, sigma=15, X=115, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 (115-100)/15=1.
+
+This question focuses on **One SD above (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 5 — Two SD below (/2)
 
@@ -1690,7 +1702,10 @@ For mu=100, sigma=15, X=70, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 (70-100)/15=-2.
+
+This question focuses on **Two SD below (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 6 — Non-integer z (/2)
 
@@ -1708,7 +1723,10 @@ For mu=50, sigma=8, X=62, what is z?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 12/8=1.5.
+
+This question focuses on **Non-integer z (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 7 — Relative standing (/3)
 
@@ -1726,7 +1744,10 @@ Student A has z=2.0 and Student B has z=1.0. Who has the higher relative standin
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The larger positive z lies farther above the mean.
+
+This question focuses on **Relative standing (/3)**. A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 ### Question 8 — Closest to the mean (/2)
 
@@ -1744,7 +1765,10 @@ Which z score is closest to the mean?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The smallest absolute z is closest to zero.
+
+This question focuses on **Closest to the mean (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 9 — Below $z=+1$ (/2)
 
@@ -1762,7 +1786,10 @@ Mean-to-z=1.00 area is .3413. What is P(Z<1.00)?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 .5000+.3413=.8413.
+
+This question focuses on **Below z=+1 (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 10 — Above $z=+1$ (/2)
 
@@ -1780,7 +1807,10 @@ Using the same table value, what is P(Z>1.00)?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The upper tail beyond +1 is .1587.
+
+This question focuses on **Above z=+1 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 11 — Below $z=-1$ (/2)
 
@@ -1791,7 +1821,8 @@ $.1587$ by symmetry.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Below z=-1 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 12 — Between $-1$ and $+1$ (/2)
 
@@ -1802,7 +1833,8 @@ $.3413+.3413=.6826$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Between -1 and +1 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 13 — Below $z=-.50$ (/2)
 
@@ -1813,7 +1845,8 @@ $.5000-.1915=.3085$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Below z=-.50 (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 14 — Above $z=+.50$ (/2)
 
@@ -1824,7 +1857,8 @@ $.3085$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Above z=+.50 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 15 — Between $-.50$ and $+.50$ (/2)
 
@@ -1835,7 +1869,8 @@ $.1915+.1915=.3830$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Between -.50 and +.50 (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 16 — Symmetry (/2)
 
@@ -1846,7 +1881,8 @@ The distribution is symmetric; equal magnitudes mirror across the mean.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests standardized location in a normal distribution. A z score expresses a value as the number of population standard deviations above or below the mean. Once that location is known, symmetry and the z table determine the relevant area or probability.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Symmetry (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 17 — Inflection points (/3)
 
@@ -1857,7 +1893,8 @@ $48$ and $72$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests standardized location in a normal distribution. A z score expresses a value as the number of population standard deviations above or below the mean. Once that location is known, symmetry and the z table determine the relevant area or probability.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Inflection points (/3)**. A z score expresses a raw value in standard-deviation units. Subtract the population mean to obtain the signed distance from the center, then divide by the population SD; the sign gives direction and the magnitude gives distance. The z table then converts that standardized position into an area under the normal curve. A negative z score means 'below the mean,' not a negative probability.
 :::
 ### Question 18 — Normal curve vs histogram (/2)
 
@@ -1868,7 +1905,8 @@ Histogram = observed frequencies; normal distribution = theoretical probability 
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests classification, organization, or display of data. First identify the measurement scale or frequency quantity being requested, then use the matching table, calculation, or graph. The answer follows the course conventions for NOIR, frequency distributions, and visualization.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Normal curve vs histogram (/2)**. This item asks you to turn raw observations into a structured description of a distribution. Frequency counts occurrences, proportion divides by the total, and cumulative frequency adds observations up to a specified point. For grouped data, real limits and bin width define intervals consistently, while graph choice follows the variable type. A common mistake is to use the correct arithmetic with the wrong denominator or the wrong graph for the measurement scale.
 :::
 ### Question 19 — Probability limits (/2)
 
@@ -1879,7 +1917,8 @@ No; $0\le P\le1$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a distribution is summarized. The mean uses score magnitudes, the median uses rank position, and the mode uses frequency, so extreme values affect them differently. The answer uses the measure of center, spread, or shape that best matches the information given.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Probability limits (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 20 — Integrated z-table problem (/5)
 
@@ -1899,9 +1938,9 @@ e. z sign gives direction; probability is area.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrated z-table problem (/5)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
-
 ## Midterm Self-Check
 
 You should be able to:

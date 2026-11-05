@@ -1066,7 +1066,10 @@ Which statement best describes the scientific goal illustrated by observing that
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The observation describes a recurring association; it does not by itself establish causation.
+
+This question focuses on **Goals of science (/2)**. The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Question 2 — Theory and falsifiability (/2)
 
@@ -1084,7 +1087,10 @@ What does it mean for a theory to be falsifiable?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A falsifiable theory makes predictions that evidence could contradict.
+
+This question focuses on **Theory and falsifiability (/2)**. The question asks which feature of the distribution is being summarized. The mode depends on frequency, the median on rank position, and the mean on the magnitude of every score, so extreme values affect them differently. Skewness is described by the direction of the long tail, which usually pulls the mean toward it. Choose the statistic that matches both the distribution's shape and the type of summary requested.
 :::
 ### Question 3 — Variables (/3)
 
@@ -1102,7 +1108,10 @@ A psychologist studies whether instrumental music while studying affects later m
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The study condition is the predictor/manipulation; memory is the outcome.
+
+This question focuses on **Variables (/3)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 4 — Operational definition (/2)
 
@@ -1120,7 +1129,10 @@ Which is the best operational definition of test anxiety?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 An operational definition specifies exactly how the construct will be measured.
+
+This question focuses on **Operational definition (/2)**. This item tests what information the recorded values carry. Nominal values distinguish categories, ordinal values add order, interval scales add equal units with an arbitrary zero, and ratio scales also have a meaningful zero. Classify the way the variable is measured in this question, not the phenomenon in the abstract. The same phenomenon can therefore appear at different measurement levels when recorded differently.
 :::
 ### Question 5 — Experimental design (/3)
 
@@ -1138,7 +1150,10 @@ Participants are randomly assigned to mindfulness training or control and then s
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Random assignment plus manipulation makes this an experiment.
+
+This question focuses on **Experimental design (/3)**. The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Question 6 — Quasi-experimental design (/2)
 
@@ -1156,7 +1171,10 @@ Students voluntarily choose whether to enroll in meditation training, and stress
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 Self-selection means there is no random assignment.
+
+This question focuses on **Quasi-experimental design (/2)**. The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Question 7 — Correlational design (/2)
 
@@ -1174,7 +1192,10 @@ A researcher measures social-media use and loneliness without manipulation. What
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A correlational design can establish association but not causation by itself.
+
+This question focuses on **Correlational design (/2)**. The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
 ### Question 8 — Descriptive vs. inferential (/2)
 
@@ -1192,7 +1213,10 @@ Which statement is inferential?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 It generalizes beyond the observed sample.
+
+This question focuses on **Descriptive vs. inferential (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 9 — Population and sample (/2)
 
@@ -1210,7 +1234,10 @@ A researcher wants to study all BC undergraduates and surveys 600. What is the p
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 The population is the entire target group.
+
+This question focuses on **Population and sample (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 10 — Parameter and statistic (/2)
 
@@ -1228,7 +1255,10 @@ The sample mean stress score is 21.4. What is 21.4?
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
+<!-- detailed-explanation-v2 -->
 A number computed from a sample is a statistic.
+
+This question focuses on **Parameter and statistic (/2)**. The important distinction is the level at which the statement applies. A statistic summarizes the observed sample, whereas a parameter describes the population; descriptive statements stay with the observed data, while inferential statements generalize beyond them. Identify first who was actually measured and then the larger group the researcher wants to understand. This prevents the common error of reversing sample/population or statistic/parameter.
 :::
 ### Question 11 — Indexed notation (/2)
 
@@ -1239,7 +1269,8 @@ $x_4=9$; $x_6=6$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Indexed notation (/2)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 12 — Restricted summation (/2)
 
@@ -1250,7 +1281,8 @@ $7+14+9+12=42$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Restricted summation (/2)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 13 — Sum first vs. square first (/4)
 
@@ -1268,7 +1300,8 @@ d. One squares after summing; the other squares each score before summing.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sum first vs. square first (/4)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 14 — Paired products (/2)
 
@@ -1279,7 +1312,8 @@ $(2)(4)+(3)(1)+(5)(2)=21$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Paired products (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 15 — Sum of differences (/2)
 
@@ -1290,7 +1324,8 @@ $(2-4)+(3-1)+(5-2)=3$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question asks you to identify the relevant statistical concept and apply it to the information given. The worked answer shows the correct rule or calculation. For similar problems, first identify the statistical object, choose the matching rule, calculate carefully, and then interpret the result.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Sum of differences (/2)**. This question asks you to identify the statistical object involved and then apply the rule that belongs to it. A reliable sequence is: write down what is given, name what is being asked for, choose the matching definition or formula, and only then calculate. After obtaining the result, interpret it in the language of the problem rather than stopping at a number. That identify–choose–calculate–interpret sequence is useful throughout Weeks 1–6.
 :::
 ### Question 16 — Constant inside a summation (/2)
 
@@ -1301,7 +1336,8 @@ $(3+3)+(6+3)+(8+3)+(2+3)=31$. The constant is added once per observation.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Constant inside a summation (/2)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 17 — PEDMAS (/2)
 
@@ -1315,7 +1351,8 @@ b. 63.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **PEDMAS (/2)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 18 — Algebra (/2)
 
@@ -1326,7 +1363,8 @@ $x=3$.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Algebra (/2)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 19 — Absolute value and inequalities (/3)
 
@@ -1341,7 +1379,8 @@ c. False.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests mathematical notation and order of operations. The indices and parentheses determine which values are included and which operation occurs first, so expressions such as ΣX² and (ΣX)² are not interchangeable. The worked answer follows the notation and PEDMAS rules exactly.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Absolute value and inequalities (/3)**. This question tests careful reading of mathematical notation. Indices determine which observations are included, while parentheses and exponents determine the order of operations; for example, ΣX² is not the same as (ΣX)². Work from the innermost operation outward and follow the stated index limits exactly. Most mistakes here come from performing a familiar calculation rather than the operation actually written.
 :::
 ### Question 20 — Integrated research scenario (/5)
 
@@ -1361,9 +1400,9 @@ e. Inferential.
 :::
 
 ::: {.callout-note collapse="true" title="Explanation"}
-This question tests how a research scenario is translated into statistical language. Identify what was manipulated or measured, who the target population is, and whether the conclusion stays with the sample or generalizes beyond it. The answer is correct because it follows those distinctions.
+<!-- detailed-explanation-v2 -->
+This question focuses on **Integrated research scenario (/5)**. The key is to identify how the study is structured before thinking about any numbers. Ask whether a condition was manipulated, whether participants were randomly assigned, and what outcome was measured. Manipulation plus random assignment supports an experimental design; measurement without manipulation is correlational, and lack of random assignment usually points toward a quasi-experimental design. A common mistake is to infer causation merely because two variables differ or are associated.
 :::
-
 ## Midterm Self-Check
 
 You are ready for Week 1 material if you can explain, without notes:
