@@ -1,14 +1,307 @@
 ---
-title: "Assignment 2"
+title: "Assignment 2 — Guide and Preparation"
+toc: true
+toc-depth: 2
 ---
 
 **Weight:** 15%  
-**Due:** November 27, 2026, 11:59 PM
+**Due:** November 27, 2026, 11:59 PM  
+**Total:** 28 marks
 
-## Assignment Materials
+::: {.callout-important}
+## How to use this guide
 
-*Detailed assignment instructions to be added when available.*
+Each original question is followed by what you need to do, how to approach it, and links to specific Study Guide sections. This is a preparation guide, not an answer key. Complete the assignment independently. Generative AI is not allowed for this assignment.
+:::
 
-## Preparation
+## Original submission requirements
 
-*To be developed from the relevant course materials.*
+Upload a single PDF to Canvas by 11:59 PM on November 27, 2026. Name the submission **PSYC210-A2-LASTNAME_FIRSTINITIAL** (e.g., PSYC210-A2-Ripley_E). Show your work as appropriate and briefly answer each question. Follow the original assignment's academic-integrity requirements.
+
+## Study Guides for Assignment 2
+
+- [Week 05 — Probability and the Central Limit Theorem](../study-guides/week05-probability-clt.qmd)
+- [Week 06 — Hypothesis Testing](../study-guides/week06-hypothesis-testing.qmd)
+- [Week 07 — t-tests: One-Sample and Independent Measures](../study-guides/week07-t-tests-independent.qmd)
+- [Week 08 — t-tests: Dependent Measures and ANOVA](../study-guides/week08-t-tests-dependent-anova.qmd)
+
+# Question 1 — Standard error (/3)
+
+::: {.callout-note title="Original question"}
+a. Define the standard error of a statistic. In a general sense, what does it refer to/measure?  
+b. Define the standard error of the mean. What does it refer to/measure?  
+c. Describe how our interpretation of a standard error differs when it is based upon sample versus population data.
+:::
+
+## 1a — Standard error of a statistic
+
+**What you need to do:** Define standard error generally, rather than only for the mean.
+
+**How to do it:** Imagine repeatedly drawing samples of the same size and calculating a statistic (e.g., a mean or proportion) for each sample. Explain what distribution these statistics form and what the width of that distribution measures. Distinguish variation among sample statistics from variation among individual observations.
+
+**Study Guide:** [Week 05 §17 — Definition of a Sampling Distribution](../study-guides/week05-probability-clt.qmd#definition-of-a-sampling-distribution); [§25 — What Is Standard Error?](../study-guides/week05-probability-clt.qmd#what-is-standard-error); [§26 — What Standard Error Measures](../study-guides/week05-probability-clt.qmd#what-standard-error-measures).
+
+## 1b — Standard error of the mean
+
+**What you need to do:** Specialize the general definition to the sampling distribution of the mean.
+
+**How to do it:** Imagine calculating a mean for every sample of size $n$. Explain what variation among those means represents. With known population SD, the formula is $SE_{\bar X}=\sigma/\sqrt n$. Explain both components and distinguish SE from the SD of individual scores.
+
+**Study Guide:** [Week 05 §18 — Sampling Distribution of the Mean](../study-guides/week05-probability-clt.qmd#sampling-distribution-of-the-mean); [§25 — What Is Standard Error?](../study-guides/week05-probability-clt.qmd#what-is-standard-error); [§27 — Effect of Sample Size](../study-guides/week05-probability-clt.qmd#effect-of-sample-size).
+
+## 1c — Population-based versus sample-based SE
+
+**What you need to do:** Distinguish a standard error based on known population variability from one estimated using sample data.
+
+**How to do it:** Compare $\sigma/\sqrt n$ with $s/\sqrt n$. Identify the population parameter and the sample statistic, and explain the additional uncertainty when variability is estimated from a sample. Consider why the reference distribution for testing a mean changes from z to t when population SD is unknown.
+
+**Study Guide:** [Week 05 §26 — What Standard Error Measures](../study-guides/week05-probability-clt.qmd#what-standard-error-measures); [Week 07 §2 — When the Population Standard Deviation Is Unknown](../study-guides/week07-t-tests-independent.qmd#when-the-population-standard-deviation-is-unknown); [§3 — The t Distribution and Degrees of Freedom](../study-guides/week07-t-tests-independent.qmd#the-t-distribution-and-degrees-of-freedom).
+
+# Question 2 — Errors and power (/6)
+
+::: {.callout-note title="Original question"}
+An intricate part of hypothesis testing and research design is finding a balance between minimizing the risk of making a Type I error and maximizing power.
+
+a. Copy and fill-in the following chart with the appropriate names and statistical symbols:
+
+| Decision | Actual situation: $H_0$ is False | Actual situation: $H_0$ is True |
+|:--|:--|:--|
+| Fail to Reject $H_0$ | | |
+| Reject $H_0$ | | |
+
+b. Draw and label a diagram (not a table!) that visualizes these relationships.  
+c. Describe two ways that a researcher can increase the power of their study and comment on how those changes would affect your diagram.
+:::
+
+## 2a — Complete the decision table
+
+**What you need to do:** Identify the name and probability symbol for each of the four combinations of truth and decision.
+
+**How to do it:** Read the column heading (actual situation) and row heading (decision) separately. Decide whether the decision is correct or incorrect. Use the definitions of Type I and II errors and the complementary probabilities. Preserve the original column order.
+
+**Study Guide:** [Week 06 §7 — The Alpha Level](../study-guides/week06-hypothesis-testing.qmd#the-alpha-level); [§10 — Type I and Type II Errors](../study-guides/week06-hypothesis-testing.qmd#type-i-and-type-ii-errors); [§12 — Power](../study-guides/week06-hypothesis-testing.qmd#power).
+
+## 2b — Draw a labelled diagram
+
+**What you need to do:** Visualize the four outcomes graphically; do not submit another table.
+
+**How to do it:** Draw two overlapping sampling distributions of the same statistic, one under the null and one under a specified alternative. Label both curves, the horizontal statistic axis and the vertical probability-density axis. Mark the critical boundary or boundaries and the rejection/nonrejection regions. Label the corresponding probability areas with the names and symbols from 2a. An explicitly labelled one-tailed illustration is suitable; a correctly drawn two-tailed diagram is also suitable. Check that the probability areas under each curve total one.
+
+**Study Guide:** [Week 06 §8 — Critical Values and Rejection Regions](../study-guides/week06-hypothesis-testing.qmd#critical-values-and-rejection-regions); [§10 — Type I and Type II Errors](../study-guides/week06-hypothesis-testing.qmd#type-i-and-type-ii-errors); [§12 — Power](../study-guides/week06-hypothesis-testing.qmd#power); [§39 — Worksheet Review: Power and Distance Between Distributions](../study-guides/week06-hypothesis-testing.qmd#worksheet-review-power-and-distance-between-distributions).
+
+## 2c — Increase statistical power
+
+**What you need to do:** Describe two distinct ways of increasing power and relate each to your diagram.
+
+**How to do it:** For each strategy, identify what changes and what is held fixed, explain how the curves or critical boundary would change, and describe how the relevant probability areas would change. If changing alpha, explicitly explain the Type I error trade-off. Do not choose a directional test after inspecting results.
+
+**Study Guide:** [Week 06 §13 — What Increases Power?](../study-guides/week06-hypothesis-testing.qmd#what-increases-power); [§39 — Worksheet Review: Power and Distance Between Distributions](../study-guides/week06-hypothesis-testing.qmd#worksheet-review-power-and-distance-between-distributions); [Week 05 §27 — Effect of Sample Size](../study-guides/week05-probability-clt.qmd#effect-of-sample-size).
+
+# Question 3 — Mental fortitude (/7)
+
+::: {.callout-note title="Original question"}
+A test of “mental fortitude” is broadly normed and understood to have a mean of 80 and a standard deviation of 15 in the population. Students at Xavier’s School participate in a curriculum that might affect this trait due to the influence of some “bizarre curriculum”. A random sample of 16 students was taken from their school and their mean score was 96.4. Use an alpha level that pertains to a 95% chance of not making a Type I error to see if there was a difference.
+
+a. What is the null hypothesis for this test?  
+b. What is the alternative hypothesis and is this a one- or a two-tailed test?  
+c. What is the critical value for this test?  
+d. What is the observed value of the statistic for this test?  
+e. What is the effect size for this test?  
+f. What conclusion would you make about the student scores from this school? (State your finding in APA format).
+:::
+
+## 3a — Null hypothesis
+
+**What you need to do:** State the null hypothesis about the population mean for students at the school.
+
+**How to do it:** Define the population parameter, identify the benchmark from the question, and express the hypothesis in statistical notation. Do not substitute the observed sample mean for the hypothesized parameter.
+
+**Study Guide:** [Week 06 §3 — The Null and Alternative Hypotheses](../study-guides/week06-hypothesis-testing.qmd#the-null-and-alternative-hypotheses).
+
+## 3b — Alternative hypothesis and tails
+
+**What you need to do:** State the alternative and identify the number of tails.
+
+**How to do it:** Decide whether the original research question specifies a direction in advance or simply asks whether the scores differ. Choose the corresponding inequality and tail convention. Do not base the direction on the observed sample mean.
+
+**Study Guide:** [Week 06 §22 — One-Tailed and Two-Tailed Tests](../study-guides/week06-hypothesis-testing.qmd#one-tailed-and-two-tailed-tests).
+
+## 3c — Critical values
+
+**What you need to do:** Determine alpha and the rejection boundary or boundaries.
+
+**How to do it:** Convert the stated probability of not making a Type I error, conditional on the null being true, to alpha using its complement. Select the reference distribution by checking whether the population SD is known. Allocate alpha to the appropriate tail(s), consult the table, and record the critical value(s).
+
+**Study Guide:** [Week 06 §7 — The Alpha Level](../study-guides/week06-hypothesis-testing.qmd#the-alpha-level); [§8 — Critical Values and Rejection Regions](../study-guides/week06-hypothesis-testing.qmd#critical-values-and-rejection-regions); [§16 — When Is the One-Sample z Test Used?](../study-guides/week06-hypothesis-testing.qmd#when-is-the-one-sample-z-test-used).
+
+## 3d — Obtained statistic
+
+**What you need to do:** Calculate the test statistic for the sample mean.
+
+**How to do it:** Extract $\mu_0$, $\sigma$, $n$, and $\bar X$ from the question. Consider the assumptions of the known-population-SD test. Compute the standard error and standardize the observed difference:
+
+$$
+SE_{\bar X}=\frac{\sigma}{\sqrt n},\qquad
+z=\frac{\bar X-\mu_0}{SE_{\bar X}}.
+$$
+
+Show the substitutions and keep intermediate precision until the final result.
+
+**Study Guide:** [Week 06 §17 — Requirements and Assumptions](../study-guides/week06-hypothesis-testing.qmd#requirements-and-assumptions); [§18 — The z Test Statistic](../study-guides/week06-hypothesis-testing.qmd#the-z-test-statistic); [Week 05 §33 — Revisiting z](../study-guides/week05-probability-clt.qmd#revisiting-z).
+
+## 3e — Effect size
+
+**What you need to do:** Calculate and interpret the magnitude of the observed difference.
+
+**How to do it:** Use Cohen's $d$ for a one-sample z test, dividing the mean difference by the population SD, not the standard error. Explain the sign and the magnitude using the course's conventional reference points.
+
+$$
+d=\frac{\bar X-\mu_0}{\sigma}.
+$$
+
+**Study Guide:** [Week 06 §27 — Cohen's d for the One-Sample z Test](../study-guides/week06-hypothesis-testing.qmd#cohens-d-for-the-one-sample-z-test).
+
+## 3f — Decision and APA reporting
+
+**What you need to do:** Make the statistical decision and write a contextualized APA-style conclusion.
+
+**How to do it:** Compare the obtained statistic with the critical value(s). Report the appropriate p value or table-supported inequality. Include the sample mean, population benchmark, direction, test statistic, significance, and effect size. Avoid interpreting p as the probability that the null is true or claiming that the curriculum caused the difference solely from comparison to the norm.
+
+**Study Guide:** [Week 06 §20 — The p Value](../study-guides/week06-hypothesis-testing.qmd#the-p-value); [§21 — Decision Language](../study-guides/week06-hypothesis-testing.qmd#decision-language); [§36 — The PHANTOMS Checklist](../study-guides/week06-hypothesis-testing.qmd#the-phantoms-checklist).
+
+# Question 4 — The Mozart Effect (/12)
+
+::: {.callout-note title="Original question"}
+The “Mozart Effect” pertains to the hypothesis that listening to Mozart or other classical music might induce a short-term improvement on the performance of certain kinds of mental tasks in humans. A team of researchers were interested in seeing if this would apply to a general intelligence test that produces scores between 1 through 15. They do not know if listening to Mozart will improve or lower scores for this particular task but they collected data as follows:
+
+| ID | NoMoz | Moz |
+|---:|---:|---:|
+| 1 | 1 | 4 |
+| 2 | 3 | 5 |
+| 3 | 3 | 5 |
+| 4 | 3 | 6 |
+| 5 | 4 | 6 |
+| 6 | 4 | 6 |
+| 7 | 4 | 7 |
+| 8 | 4 | 7 |
+| 9 | 4 | 7 |
+| 10 | 5 | 7 |
+| 11 | 5 | 7 |
+| 12 | 7 | 7 |
+| 13 | 7 | 8 |
+| 14 | 7 | 8 |
+| 15 | 7 | 9 |
+
+1. Treating these two groups as **independent**, answer the following:
+
+    a. State the hypotheses and if this is a one- or two-tailed test.  
+    b. State your alpha value and the critical values.  
+    c. Test this hypothesis (showing your calculations).  
+    d. State your conclusion in APA style.
+
+2. Now, conduct those four steps again but treating these two groups as **dependent** (e.g., each row belongs to the same person in a repeated-measures design).
+3. Do the two tests lead to different conclusions? Comment on why or why not.
+:::
+
+The same data must be analyzed under two different study-design assumptions. The analysis follows the design, rather than choosing the test with the more favorable result.
+
+## 4.1a — Independent groups: hypotheses
+
+**What you need to do:** State hypotheses about the two population means and choose the number of tails.
+
+**How to do it:** Define group 1 and group 2 (e.g., Mozart minus NoMoz), keep the subtraction order consistent, and write hypotheses about the population mean difference. Determine directionality from the research question rather than the observed scores.
+
+**Study Guide:** [Week 07 §12 — Hypotheses and the Sampling Distribution of Mean Differences](../study-guides/week07-t-tests-independent.qmd#hypotheses-and-the-sampling-distribution-of-mean-differences).
+
+## 4.1b — Alpha and critical values
+
+**What you need to do:** State alpha and determine the critical t value(s).
+
+**How to do it:** The question leaves alpha open; a conventional pre-specified choice is .05. Keep the same alpha for both analyses. For the pooled independent test, compute $df=n_1+n_2-2$. Consult the t table using df, alpha, and the number of tails, not the z table.
+
+**Study Guide:** [Week 07 §4 — Reading the t Table](../study-guides/week07-t-tests-independent.qmd#reading-the-t-table); [§14 — The Pooled Independent-Samples t Test](../study-guides/week07-t-tests-independent.qmd#the-pooled-independent-samples-t-test).
+
+## 4.1c — Independent-samples calculation
+
+**What you need to do:** Calculate the obtained t statistic and make the decision.
+
+**How to do it:**
+
+1. Calculate the sample size, sum, mean, sum of squared deviations, sample variance, and SD for each column separately.
+2. Consider the independent-samples assumptions and the course's variance-ratio heuristic for equal group sizes. For the standard pooled calculation, justify treating the population variances as comparable. A justified Welch analysis must use Welch's own df.
+3. Calculate pooled variance and estimated SE:
+
+   $$
+   s_p^2=\frac{SS_1+SS_2}{n_1+n_2-2},\qquad
+   SE=\sqrt{\frac{s_p^2}{n_1}+\frac{s_p^2}{n_2}}.
+   $$
+
+4. Calculate $t=(\bar X_1-\bar X_2)/SE$ and compare it to the critical boundary or boundaries.
+5. Calculate pooled Cohen's $d$ if needed for the course's reporting convention.
+
+**Study Guide:** [Week 07 §13 — Why Pool the Variances?](../study-guides/week07-t-tests-independent.qmd#why-pool-the-variances); [§14 — The Pooled Independent-Samples t Test](../study-guides/week07-t-tests-independent.qmd#the-pooled-independent-samples-t-test); [§15 — Worked Example: Mental Imagery and Recall](../study-guides/week07-t-tests-independent.qmd#worked-example-mental-imagery-and-recall); [§19 — Assumptions of the Pooled Independent-Samples Test](../study-guides/week07-t-tests-independent.qmd#assumptions-of-the-pooled-independent-samples-test); [§20 — Welch's Correction](../study-guides/week07-t-tests-independent.qmd#welchs-correction-for-heterogeneous-variances).
+
+## 4.1d — Independent-samples APA conclusion
+
+**What you need to do:** Report the group comparison in APA style.
+
+**How to do it:** Give the group means and SDs, direction, obtained $t(df)$, p value or supported inequality, and effect size where appropriate. State whether the result is significant at the chosen alpha. A confidence interval is useful but not explicitly required. Match the interpretation to the assumed design.
+
+**Study Guide:** [Week 07 §16 — Mean Difference, Confidence Interval, and Effect Size](../study-guides/week07-t-tests-independent.qmd#mean-difference-confidence-interval-and-effect-size); [§21 — Reporting and Reading Software Results](../study-guides/week07-t-tests-independent.qmd#reporting-and-reading-software-results).
+
+## 4.2a — Dependent groups: hypotheses
+
+**What you need to do:** State hypotheses about the population mean paired difference and identify the tails.
+
+**How to do it:** Define $D_i=\mathrm{Moz}_i-\mathrm{NoMoz}_i$ (or consistently reverse the order). Express the hypotheses about $\mu_D$. The research question stays the same, although the unit of analysis changes.
+
+**Study Guide:** [Week 08 §2 — Recognizing a Dependent-Samples Design](../study-guides/week08-t-tests-dependent-anova.qmd#recognizing-a-dependent-samples-design); [§3 — Change as a Difference Score](../study-guides/week08-t-tests-dependent-anova.qmd#change-as-a-difference-score); [§5 — Four Steps of Hypothesis Testing](../study-guides/week08-t-tests-dependent-anova.qmd#four-steps-of-hypothesis-testing).
+
+## 4.2b — Alpha and critical values
+
+**What you need to do:** Determine the paired-test rejection boundaries.
+
+**How to do it:** Retain the same alpha and tail choice. Count complete pairs and compute $df=n-1$; $n$ is the number of pairs rather than the total number of raw scores. Look up the corresponding critical t values.
+
+**Study Guide:** [Week 08 §5 — Four Steps of Hypothesis Testing](../study-guides/week08-t-tests-dependent-anova.qmd#four-steps-of-hypothesis-testing); [Week 07 §4 — Reading the t Table](../study-guides/week07-t-tests-independent.qmd#reading-the-t-table).
+
+## 4.2c — Paired-samples calculation
+
+**What you need to do:** Calculate a t statistic from within-person difference scores.
+
+**How to do it:**
+
+1. Preserve row IDs and compute one difference per pair. Never sort the columns independently.
+2. Calculate the sum and mean of the differences.
+3. Calculate $SS_D=\sum(D_i-\bar D)^2$ and $s_D=\sqrt{SS_D/(n-1)}$.
+4. Calculate $SE_{\bar D}=s_D/\sqrt n$ and $t=(\bar D-0)/SE_{\bar D}$.
+5. Compare t with the paired-test critical values. For the course's paired Cohen's $d$, use $\bar D/s_D$, not the pooled raw-score SD.
+
+**Study Guide:** [Week 08 §3 — Change as a Difference Score](../study-guides/week08-t-tests-dependent-anova.qmd#change-as-a-difference-score); [§5 — Four Steps of Hypothesis Testing](../study-guides/week08-t-tests-dependent-anova.qmd#four-steps-of-hypothesis-testing); [§7 — Confidence Intervals and Effect Size](../study-guides/week08-t-tests-dependent-anova.qmd#confidence-intervals-and-effect-size).
+
+## 4.2d — Paired-samples APA conclusion
+
+**What you need to do:** Report the within-person comparison.
+
+**How to do it:** State the direction and magnitude of the mean change, $t(df)$, p value or supported inequality, and effect size where appropriate. Interpret the results as paired differences rather than independent groups.
+
+**Study Guide:** [Week 08 §7 — Confidence Intervals and Effect Size](../study-guides/week08-t-tests-dependent-anova.qmd#confidence-intervals-and-effect-size); [§9 — Reporting the Paired Test](../study-guides/week08-t-tests-dependent-anova.qmd#reporting-the-paired-test).
+
+## 4.3 — Compare the two tests
+
+**What you need to do:** Explain whether the statistical decisions agree and why the test statistics might differ.
+
+**How to do it:** Compare the mean differences, estimated SEs, degrees of freedom, obtained statistics and decisions. Consider how a positive association between repeated observations can remove stable individual differences from the error term. Distinguish the strength of evidence from a binary reject/fail-to-reject decision. Explain why the design determines which test is appropriate.
+
+**Study Guide:** [Week 07 §12 — Hypotheses and the Sampling Distribution of Mean Differences](../study-guides/week07-t-tests-independent.qmd#hypotheses-and-the-sampling-distribution-of-mean-differences); [Week 08 §11 — Why Pairing Can Increase Power](../study-guides/week08-t-tests-dependent-anova.qmd#why-pairing-can-increase-power); [§14 — Which Test Do I Use?](../study-guides/week08-t-tests-dependent-anova.qmd#which-test-do-i-use).
+
+# Final self-check
+
+- Distinguish standard error from SD and a known SE from an estimated SE.
+- Complete all four decision-table cells, draw a labelled diagram, and explain two power changes.
+- State population hypotheses and determine tails before inspecting results.
+- Use the correct alpha, reference distribution, critical values, and degrees of freedom.
+- Show intermediate calculation steps, retaining precision until the end.
+- Use the appropriate SD rather than SE for the effect size.
+- Keep the independent and paired analyses separate; preserve pair IDs.
+- Write APA-style conclusions and avoid unwarranted causal claims.
